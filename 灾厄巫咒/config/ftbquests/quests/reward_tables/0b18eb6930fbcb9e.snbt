@@ -1,0 +1,23 @@
+{
+	icon: "sophisticatedbackpacks:backpack"
+	id: "0B18EB6930FBCB9E"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			command: "/gamerule keepInventory true"
+			elevate_perms: true
+			icon: "sophisticatedbackpacks:everlasting_upgrade"
+			title: "开启死亡不掉落"
+			type: "command"
+		}
+		{
+			command: "/gamerule keepInventory false"
+			elevate_perms: true
+			icon: "sophisticatedbackpacks:void_upgrade"
+			title: "关闭死亡不掉落"
+			type: "command"
+		}
+	]
+	title: "调整死亡不掉落"
+}

@@ -1,0 +1,223 @@
+
+#铁砧逻辑全面解封：移除等级上限(40+)、移除累积惩罚(PWP)与双模名单过滤。
+#Anvil Unleashed: Removes Level 40 cap, Prior Work Penalty, and supports Dual-Mode filtering.
+[anvil]
+	#
+	# 是否移除铁砧限制。开启后将解锁‘过于昂贵’限制，并彻底删除累积惩罚(维修次数不再增加成本)。
+	#Whether to remove anvil limits. Unlocks 'Too Expensive' cap and deletes Prior Work Penalty.
+	removeLimit = true
+	#
+	# 名单模式设定。true: 白名单(仅名单内的物品移除限制)；false: 黑名单(名单内的物品保留原版限制，其余解除)。
+	#List Mode. true: Whitelist (only listed items unlocked); false: Blacklist (listed items kept vanilla, others unlocked).
+	whitelistMode = false
+	#
+	# 【铁砧过滤名单 - 小白语法教程】
+	#请在英文双引号 " " 内填写你需要过滤的物品，如果有多个物品，请用英文逗号 , 隔开。
+	#！警告：不要使用中文的标点符号，必须全是英文半角符号！
+	#支持以下三种填写格式：
+	#1. 指定单个物品 (直接写物品ID)："minecraft:iron_sword" (仅代表原版铁剑)
+	#2. 指定一类物品 (在前面加 # 号，这叫标签)："#minecraft:swords" (代表游戏里所有的剑)
+	#3. 指定整个模组 (在前面加 @ 号)："@create" (代表“机械动力”这个模组里的所有物品)
+	#示例大全：
+	#["minecraft:stick", "#minecraft:logs", "@farmersdelight"]
+	#(以上代码表示：指定的物品包含了“木棍”、“所有的原木”、以及“农夫乐事模组里的所有物品”)
+	#=========================================================
+	#[Anvil Filter List - Beginner's Guide]
+	#Please write the items you want to filter inside double quotes " ". If there are multiple items, separate them with a comma , .
+	#! WARNING: Only use English (half-width) punctuation !
+	#Supported formats:
+	#1. Single Item (Direct ID): "minecraft:iron_sword" (Vanilla iron sword only)
+	#2. Item Group (Prefix with #, called a Tag): "#minecraft:swords" (All swords in the game)
+	#3. Entire Mod (Prefix with @): "@create" (All items from the 'Create' mod)
+	#Examples:
+	#["minecraft:stick", "#minecraft:logs", "@farmersdelight"]
+	#(Meaning: includes "stick", "all logs", and "all items from Farmer's Delight")
+	itemList = ["enigmaticaddons:totem_of_malice"]
+
+#免税附魔机制：将‘等级扣除’重构为‘XP点数扣除’。防止高等级时因经验曲线导致巨大的额外损失。
+#Tax-Free Levels: Flattens costs by consuming XP points instead of levels to prevent high-level inflation.
+[tax_free]
+	#
+	# 是否启用经验平滑。启用后，铁砧和附魔台将根据你的当前等级扣除对应的固定XP值，而不是直接抹除等级。
+	#Enable XP smoothing. Enchanting/Anvil will consume equivalent XP points instead of raw levels.
+	enable = false
+	#
+	# 经验计算基数。设为30则：无论你100级还是1000级，扣除3级时的XP开销永远等同于从30级降至27级的数值。
+	#XP calculation base. If 30: the XP cost for 3 levels will always equal the points needed from level 30 to 27.
+	levelBase = 30
+	#
+	# 廉价重命名。开启后，在铁砧中进行纯重命名操作固定只消耗 1 级经验。
+	#Cheap renaming. Renaming an item in the anvil will always cost exactly 1 level.
+	cheapRenaming = true
+
+#【核弹级附魔拦截 - 小白语法教程】
+#底层过滤，就算其他模组(比如JEI)显示能附魔，在这里被禁止后，铁砧出来的成品也会强制变成空。
+#语法格式："目标物品 ; 附魔ID"
+#(注意：中间必须有一个英文分号 ; 隔开)
+#[左边：目标物品] 的写法和上面的铁砧名单完全一样：
+#- "minecraft:stick" (单个物品)
+#- "#minecraft:pickaxes" (加#号表示标签)
+#- "@create" (加@号表示模组)
+#[右边：附魔ID] 的写法：
+#- "minecraft:mending" (指定单个附魔)
+#- "minecraft:sharpness, minecraft:smite" (指定多个附魔，用逗号隔开)
+#- "*" 或 "ALL" (表示不限制，匹配所有的附魔)
+#示例大全：
+#["#minecraft:pickaxes ; minecraft:mending"] (所有的镐子 ; 经验修补)
+#["minecraft:stick ; *"] (木棍 ; 允许/禁止打上任何附魔)
+#["@farmersdelight ; minecraft:unbreaking, minecraft:mending"] (农夫乐事所有物品 ; 耐久和经验修补)
+#=========================================================
+#[Nuclear Interception - Beginner's Guide]
+#Hardcore filtering. Even if JEI shows it's enchantable, blocked combinations will force the anvil output to be empty.
+#Syntax: "Target Item ; Enchantment ID"
+#(Note: You MUST use an English semicolon ; to separate the item and the enchantment)
+#[Left side: Target Item] formats:
+#- "minecraft:stick" (Single item)
+#- "#minecraft:pickaxes" (Tag prefix #)
+#- "@create" (Mod prefix @)
+#[Right side: Enchantment ID] formats:
+#- "minecraft:mending" (Specific enchantment)
+#- "minecraft:sharpness, minecraft:smite" (Multiple enchantments separated by commas)
+#- "*" or "ALL" (Matches ANY enchantment)
+#Examples:
+#["#minecraft:pickaxes ; minecraft:mending"] (All pickaxes ; Mending)
+#["minecraft:stick ; *"] (Stick ; ANY enchantment)
+#["@farmersdelight ; minecraft:unbreaking, minecraft:mending"] (Farmer's Delight items ; Unbreaking & Mending)
+[enchantment]
+	#
+	# 强化引雷。开启后，引雷附魔可以在任何天气(包括晴天)下召唤闪电，等级2时效果增强。
+	#Better Channeling. Allows lightning strikes in any weather. Level 2 enhances the effect.
+	enableBetterChanneling = true
+	#
+	# 附魔白名单：强制允许这些 [物品 ; 附魔] 组合，无视原版的兼容性检查。
+	#Enchantment Whitelist: Forcibly allow these [Item ; Enchant] combinations, bypassing vanilla checks.
+	whitelist = ["#minecraft:axes; minecraft:sharpness, minecraft:smite, minecraft:bane_of_arthropods, minecraft:mob_looting, minecraft:knockback, minecraft:fire_aspect", "#curios:curio;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:tarot;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:head;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:back;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:body;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:hands;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:necklace;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:rings;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:feet;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:charm;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:talisman;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:belt;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:waist;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:scroll;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:spellstone;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse"]
+	#
+	# 附魔黑名单：严厉禁止这些组合。匹配时铁砧将无法产出成品。
+	#Enchantment Blacklist: Strictly forbid these combinations. Anvil output will be cleared.
+	blacklist = ["@create ; minecraft:mending"]
+	#
+	# 全局禁用附魔名单：直接填写附魔ID。填入这里的附魔将被彻底禁用，无论什么物品都无法在铁砧或附魔台中打上它。
+	#Global Disabled Enchantments: Direct Enchantment IDs. Listed enchantments are completely disabled globally.
+	#示例/Examples: ["minecraft:mending", "minecraft:unbreaking"]
+	disabledEnchantments = ["kineticaddons:leech", "kineticaddons:omini_tool", "kineticaddons:smelter", "kineticaddons:magic_protection"]
+
+#附魔效果的具体数值平衡设定。修改后通常无需重启，但建议重新打开容器界面。
+#Balancing values for custom enchantments. Changes usually apply without restart.
+[values]
+	#
+	# 熔炼增强：是否允许熔炼附魔直接处理容器（如潜影盒、箱子）内的矿石。
+	#Smelter Plus: Whether Smelter can process items inside containers like Shulker Boxes.
+	smelterSmeltsChests = true
+	#
+	# 熔炼附魔是否受时运影响。
+	#Does Smelter work with Fortune.
+	smelterFortune = true
+	#
+	# 熔炼增强：是否直接烤熟生物掉落物。
+	#Smelter Plus: Whether Smelter directly cooks mob drops.
+	smelterCooksMobs = true
+	#
+	# 熔炼经验倍率：熔炼产出时额外获得的经验系数 (1.0 = 原版)。
+	#Smelter XP multiplier (1.0 = Vanilla default).
+	smelterExpMultiplier = 1.0
+	#
+	# 【熔炼倍增名单 - 小白语法教程】
+	#自定义特定物品被“熔炼”附魔处理时，掉落物翻多少倍。
+	#语法格式："[倍率]x [目标物品]"
+	#(数字和x连在一起写，空一格写目标物品的ID/标签/模组)
+	#* 注意：如果不写前面的倍率，系统默认算作翻一倍 (即 2x)。
+	#[目标物品] 的写法：
+	#- "minecraft:raw_iron" (单个物品：粗铁)
+	#- "#forge:ores" (加#号表示标签：所有矿石)
+	#- "@create" (加@号表示模组：机械动力所有物品)
+	#示例大全：
+	#"2x #forge:ores" (所有矿石产出变为2倍)
+	#"3x minecraft:raw_iron" (粗铁产出变为3倍)
+	#"4x @farmersdelight" (农夫乐事所有物品变为4倍)
+	#"@create" (省略了倍率，默认把机械动力所有物品变为2倍)
+	#=========================================================
+	#[Smelter Multiplier List - Beginner's Guide]
+	#Customize the output multiplier for specific items processed by the Smelter enchantment.
+	#Syntax: "[Multiplier]x [Target Item]"
+	#(Write the number and 'x', add a space, then the target item/tag/mod)
+	#* Note: If you omit the multiplier prefix, it defaults to doubling (2x).
+	#[Target Item] formats:
+	#- "minecraft:raw_iron" (Single item: raw iron)
+	#- "#forge:ores" (Tag prefix #: all blocks with the 'ores' tag)
+	#- "@create" (Mod prefix @: all Create mod items)
+	#Examples:
+	#"2x #forge:ores" (Smelting any ore yields 2x output)
+	#"3x minecraft:raw_iron" (Smelting raw iron yields 3x output)
+	#"4x @farmersdelight" (Farmer's Delight items yield 4x output)
+	#"@create" (Multiplier omitted, defaults to 2x output for Create mod items)
+	smelterMultiplierList = []
+	#
+	# 汲取白/黑名单：配合'leechEffectBlacklistMode'使用，过滤可被攻击偷取的Buff ID。
+	#Leech Effect List: Filter list for stealable status effects using IDs.
+	leechEffectList = ["minecraft:slow_falling"]
+	#
+	# 汲取名单模式，true为黑名单。
+	#Leech list mode, true for blacklist.
+	leechEffectBlacklistMode = true
+	#
+	# 汲取概率：攻击时触发吸血或偷取Buff的几率 (0.0 = 0%, 1.0 = 100%)。
+	#Leech trigger chance (0.0 to 1.0).
+	leechTriggerChance = 0.0
+	#
+	# 吸血比例：基于造成的伤害值按比例恢复生命值。
+	#Lifesteal ratio based on damage dealt.
+	leechLifestealRatio = 0.0
+	#
+	# 偷取Buff的概率。
+	#Chance to steal Buffs.
+	leechStealChance = 0.0
+	#
+	# 第六感探测半径：潜行状态下探测并高亮生物的格数范围。
+	#Sixth Sense range: Radius in blocks to highlight entities while crouching.
+	sixthSenseRange = 32.0
+	#
+	# 第六感探测频率。
+	#Sixth Sense tick detection rate.
+	sixthSenseTickRate = 10
+	#
+	# 万能工具速：工具在挖掘不匹配的方块时的基础速度。
+	#Omni-Tool speed: Base mining speed on non-matching blocks.
+	omniToolSpeed = 50.0
+	#
+	# 启蒙附魔经验倍率。
+	#Enlightenment XP multiplier.
+	enlightenmentExpMult = 0.125
+	#
+	# 易碎诅咒耐久消耗倍率。
+	#Breaking Curse durability consumption multiplier.
+	breakingCurseMult = 1.0
+	#
+	# 第六感颜色：玩家 (默认白色)。
+	#Sixth Sense Color: Player (Default White).
+	sixthSenseColorPlayer = 16777215
+	#
+	# 第六感颜色：友好生物 (默认绿色)。
+	#Sixth Sense Color: Friendly (Default Green).
+	sixthSenseColorFriendly = 65280
+	#
+	# 第六感颜色：中立生物 (默认黄色)。
+	#Sixth Sense Color: Neutral (Default Yellow).
+	sixthSenseColorNeutral = 16776960
+	#
+	# 第六感颜色：水生生物 (默认淡蓝色)。
+	#Sixth Sense Color: Water (Default Light Blue).
+	sixthSenseColorWater = 65535
+	#
+	# 第六感颜色：怪物 (默认红色)。
+	#Sixth Sense Color: Monster (Default Red).
+	sixthSenseColorMonster = 16711680
+	#
+	# 第六感颜色：自定义生物类 (默认亮紫色)。
+	#Sixth Sense Color: Custom Mobs (Default Magenta).
+	sixthSenseColorCustom = 16711935
+	#
+	# 自定义高亮生物名单 (直接填写生物的ID，如："minecraft:warden")。
+	#List of mobs for custom color highlighting (using entity IDs).
+	sixthSenseCustomMobs = ["minecraft:warden", "minecraft:wither", "minecraft:ender_dragon", "minecraft:elder_guardian", "goety:skull_lord", "goety:bone_lord", "goety:crone", "goety:brood_mother", "goety:minister", "goety:wither_necromancer", "goety:redstone_monstrosity", "goety:vizier", "goety:apostle", "goety:ender_keeper", "goetyawaken:ghost_necromancer", "goetyawaken:parched_necromancer", "goetyawaken:mooshroom_monstrosity", "goetyawaken:nameless_one", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "cataclysm:ender_guardian", "cataclysm:ancient_remnant", "cataclysm:scylla", "cataclysm:leviathan", "cataclysm:ignis", "cataclysm:maledictus", "twilightforest:naga", "twilightforest:lich", "twilightforest:alpha_yeti", "twilightforest:snow_queen", "twilightforest:knight_phantom", "twilightforest:ur_ghast", "twilightforest:minoshroom", "twilightforest:hydra"]
+

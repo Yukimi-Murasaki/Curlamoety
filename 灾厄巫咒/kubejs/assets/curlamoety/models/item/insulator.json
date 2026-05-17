@@ -1,0 +1,18 @@
+{
+    "loader": "forge:separate_transforms",
+    "gui_light": "front",
+    "base": {
+        "parent": "curlamoety:item/3d/insulator"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "curlamoety:item/gui/insulator"
+        },
+        "fixed": {
+            "parent": "curlamoety:item/3d/insulator"
+        },
+        "ground": {
+            "parent": "curlamoety:item/3d/insulator"
+        }
+    }
+}

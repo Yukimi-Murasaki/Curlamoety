@@ -1,0 +1,18 @@
+{
+    "loader": "forge:separate_transforms",
+    "gui_light": "front",
+    "base": {
+        "parent": "curlamoety:item/3d/mary_sue_staff"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "curlamoety:item/gui/mary_sue_staff"
+        },
+        "fixed": {
+            "parent": "curlamoety:item/3d/mary_sue_staff"
+        },
+        "ground": {
+            "parent": "curlamoety:item/3d/mary_sue_staff"
+        }
+    }
+}

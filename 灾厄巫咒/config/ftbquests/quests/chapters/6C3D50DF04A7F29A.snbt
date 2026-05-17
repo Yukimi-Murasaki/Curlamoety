@@ -1,0 +1,2353 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6C3D50DF04A7F29A"
+	group: "2ECA59494C73C5F0"
+	icon: "sophisticatedbackpacks:backpack"
+	id: "6C3D50DF04A7F29A"
+	images: [{
+		height: 5.0d
+		image: "touhou_little_maid:textures/gui/altar_icon.png"
+		rotation: 0.0d
+		width: 5.0d
+		x: 3.5d
+		y: 19.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7F94BEF042BB18C1"]
+			description: [
+				"&e该任务线可以为不熟悉精妙背包内容的玩家提供教程"
+				""
+				"精妙背包左侧面有一列&e升级槽&f，可以放入多种辅助性的&e升级插件&f。右侧面相对应地会出现这些插件的&e配置选项&f。同时右上角的齿轮按钮可以打开背包自身的&e设置页面&f。"
+				""
+				"把一个装物品的背包，逐渐打造成一个多功能随身助手吧"
+				""
+				"潜行右键可以放在地上，作为功能性容器，也可以担任自动收集，压缩等功能"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "6239B78B5E51E6E6"
+			progression_mode: "linear"
+			rewards: [{
+				id: "08CCE19A5FABC995"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "第一章：普通的背包……第五百九十一章：杀神无悔"
+			tasks: [{
+				id: "07C6E759C7DE81AB"
+				type: "checkmark"
+			}]
+			title: "精妙背包任务线"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			id: "53281BAD320B1409"
+			rewards: [
+				{
+					id: "0C93273808D04D62"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+				{
+					id: "7A223338F0F6B152"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5275720D3D541537"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53281BAD320B1409"]
+			id: "69B7D1878ED96F3E"
+			rewards: [
+				{
+					id: "75E2B30389AF4024"
+					item: "sophisticatedbackpacks:compacting_upgrade"
+					type: "item"
+				}
+				{
+					id: "4C3161431FB7AAC3"
+					item: "sophisticatedbackpacks:refill_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "77F4187600D46613"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69B7D1878ED96F3E"]
+			id: "6FDCF98E9CC0F923"
+			rewards: [
+				{
+					id: "0568B34201154505"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "761A4496B89143EA"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B80895E92201AB1"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FDCF98E9CC0F923"]
+			id: "4FA8E54E74733013"
+			rewards: [
+				{
+					id: "3CE3BC14BC892D0D"
+					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "06B0A6795617FDC4"
+					item: "sophisticatedbackpacks:anvil_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "27577AEE3E90599F"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FA8E54E74733013"]
+			id: "68A08BC449B0B60D"
+			rewards: [
+				{
+					id: "5CDB4D9669B12C5C"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+					type: "item"
+				}
+				{
+					id: "4AC9060347B21D6F"
+					item: "sophisticatedbackpacks:advanced_jukebox_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "24C6D0368B29C2F9"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"&e储罐升级&f可以将背包的两排格子转换为&e流体储存空间&f，从而在背包内存储流体，原版包括水、岩浆、牛奶、经验，诡厄巫法增添了液态虚空。存储量的大小根据背包的大小和堆叠倍率决定。"
+				""
+				"当一个储罐升级从升级槽取下时，其内部储存的流体会&e保存&f起来不消失，同时背包的空间仍旧会释放出来，这意味着通过&e切换不同的储罐升级&f，你可以使用同样的两排空间同时存储不同液体。"
+				""
+				"水、岩浆、牛奶、液态虚空这些可以&e桶装&f的液体可以直接通过UI与储罐交互，你可以直接从储罐升级的UI上把液体倒进去或者取出来，或者打开它的配置页面进行存取。但是如果你需要大规模存取液体，&e液泵升级&f会更方便，经过设置它可以做到&e自动&f地进行液体的存入或者取出。"
+				""
+				"而经验只能通过&e经验泵升级&f来存取。众所周知，经验等级越低的情况下，每级经验的量越少，因此当你需要按等级消耗经验的时候，你当前等级越低，经验消耗越少，反之亦然。经验泵升级就是为此而生的！另一方面，经验泵还会在为你身上或手上带有&e经验修补&f的物品自动提供经验。"
+			]
+			hide_dependency_lines: true
+			icon: "sophisticatedbackpacks:tank_upgrade"
+			id: "4DBD1FF27D5BE7DD"
+			rewards: [
+				{
+					id: "0F58A371A11E740B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 10
+					id: "1AD57253888EA625"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			subtitle: "这不是背包，这是液罐，大液罐"
+			tasks: [
+				{
+					id: "1BCF89F34517B1C8"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+				{
+					id: "65FF0D7E5F207946"
+					item: "sophisticatedbackpacks:pump_upgrade"
+					type: "item"
+				}
+				{
+					id: "3D612D10D0B0A82A"
+					item: "sophisticatedbackpacks:xp_pump_upgrade"
+					type: "item"
+				}
+			]
+			title: "流体存储"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"&e拾取升级&f可以&e计划性地&f将拾取到的物品自动放入背包，&e磁铁升级&f则再次基础上可以直接吸取一定范围内的物品。高级的升级则会拥有更多的筛选项（磁铁还会有更大的范围）。"
+				""
+				"作为搭配，&e虚空升级&f如果设置成&e在GUI内工作&f可以将背包内匹配的物品自动&e销毁&f，否则它只能销毁通过其他设备——比如漏斗——输入进来的物品。而&e压制升级&f则可以将物品压缩，压缩的标准是将该物品以2*2或3*3全相同配方进行合成，在配置筛选项时要注意，按照这个标准&4木板做成工作台也是压缩&f。"
+			]
+			hide_dependency_lines: true
+			icon: "sophisticatedbackpacks:pickup_upgrade"
+			id: "3A3FFDE057222B32"
+			rewards: [{
+				count: 81
+				id: "36E1CF5A10CFDBDA"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			subtitle: "还可以用于机器收集"
+			tasks: [
+				{
+					icon: "sophisticatedbackpacks:pickup_upgrade"
+					id: "3FC4DF7B505A6B0B"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "43AA8BBB8E8DF7BD"
+					item: "sophisticatedbackpacks:void_upgrade"
+					type: "item"
+				}
+				{
+					id: "5C35DB11F4A36E1E"
+					item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+					type: "item"
+				}
+			]
+			title: "物品管理"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"喂食升级可以&e自动喂食&f玩家食物，这个喂食过程是&e瞬间完成&f的，可以避免进食过程带来的消耗时间、降低速度等一系列问题，在用连锁破坏大规模采掘、还有战斗过程中都帮助极大。"
+				""
+				""
+				"一个小建议是，喂食升级对背包堆叠升级没有需求，因此你可以在将堆叠升级全部给一个主背包的情况下，另做一个低配的副背包来插入喂食升级（以及其他不需求堆叠倍率的升级），从而为主背包空出插升级槽的空间。"
+			]
+			hide_dependency_lines: true
+			id: "1ED317B826050AE2"
+			rewards: [{
+				count: 16
+				id: "0427DFB1602D33C8"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
+			subtitle: "《摩登时代》"
+			tasks: [{
+				id: "10A8105CB51E7AF3"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"自动补货手中的物品，在进行搭建工作的时候很有用，尽管自动替换模组也可以做到类似的效果，但是补货升级的优点是它是从背包中提取的，因此可以节约物品栏的空间。"
+				""
+				"此外还可以补货箭来让你的背包成为巨大的箭袋，补货不死图腾来让你的背包成为复活币存储器……"
+			]
+			hide_dependency_lines: true
+			id: "6865AA0E763F2A15"
+			rewards: [{
+				count: 10
+				id: "3793839DF0BD0BEC"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "人形铺路机"
+			tasks: [{
+				id: "060C81E8DFAE0CF1"
+				item: "sophisticatedbackpacks:advanced_refill_upgrade"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["6239B78B5E51E6E6"]
+			description: ["这类升级可以让你在背包中使用工作方块，尤其特殊的是铁砧升级，因为不具备实际的方块，所以使用它不用担心像普通的铁砧那样损坏铁砧。"]
+			hide_dependency_lines: true
+			id: "67AF80F1F23E5916"
+			rewards: [{
+				id: "0A2579E515983046"
+				item: "enigmaticaddons:forger_gem"
+				type: "item"
+			}]
+			subtitle: "基地车，展开"
+			tasks: [
+				{
+					id: "3E46BF9FBD7DE3F4"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+				{
+					id: "7E091C6B1B028059"
+					item: "sophisticatedbackpacks:anvil_upgrade"
+					type: "item"
+				}
+				{
+					id: "3E8689EF35A6E1FF"
+					item: "sophisticatedbackpacks:smelting_upgrade"
+					type: "item"
+				}
+			]
+			title: "包内工作室"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"永恒升级能让你的背包不可摧毁，即使掉进虚空也会漂浮起来。"
+				""
+				"但是实际上背包就算被摧毁，其内部的物品也不会受到影响。每个背包一旦打开，就会被赋予一个专属的ID，根据这个ID，你可以把背包原封不动地“找回”。"
+				""
+				"查询背包：/sophisticatedbackpacks list 列出背包的信息，根据这些信息你能确定哪个背包是你丢的那个，然后点击背包来获取背包的ID"
+				""
+				"获取背包：/sophisticatedbackpacks give <玩家名> <背包ID>"
+			]
+			icon: "sophisticatedbackpacks:everlasting_upgrade"
+			id: "7E2ADA8A475B36C0"
+			rewards: [{
+				id: "2258688B20CCF00B"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			subtitle: "如果我说它的功能是可以被取代的"
+			tasks: [{
+				id: "354294311F3A1381"
+				type: "checkmark"
+			}]
+			title: "永恒升级"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["716A6E0E3D4DF73B"]
+			description: [
+				"&e该任务线可以为不熟悉简单村民模组的玩家提供教程"
+				""
+				"在不触发CarryOn模组抱起生物的情况下（比如手持物品），潜行右键将村民&e变成物品&f装进物品栏，这些村民可以放进该模组的各种工作设施中为你工作，这些设施的功能并不会超过原版的村民所能干的。"
+			]
+			icon: "easy_villagers:villager"
+			id: "73F31CEE9A44F7CC"
+			progression_mode: "linear"
+			rewards: [{
+				id: "7917347118A909B4"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "奴役村民实在可耻"
+			tasks: [{
+				id: "30A0601186B5F5EC"
+				type: "checkmark"
+			}]
+			title: "简单村民任务线"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73F31CEE9A44F7CC"]
+			description: [
+				"村民繁殖所内放入2个村民后，提供食物，村民便会开始繁殖，生下的小村民放入培育所就会开始成长（理所当然地，可以用漏斗进行“人”流）。"
+				""
+				"培育所的GUI内只有4个格子可以用于成长，但是方块本身还可以容纳1个小村民，所以可以同时培育5个村民。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:brown_bed"
+			id: "174DD0E6DFF2D42F"
+			rewards: [{
+				count: 12
+				id: "25E777804286D7E8"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "我现在就要看着你们两个在我面前交配"
+			tasks: [
+				{
+					id: "401FD03778573347"
+					item: "easy_villagers:breeder"
+					type: "item"
+				}
+				{
+					id: "3B43A0586FA848B7"
+					item: "easy_villagers:incubator"
+					type: "item"
+				}
+			]
+			title: "村民增殖"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73F31CEE9A44F7CC"]
+			description: ["放入村民和工作站以后，村民便会转职并提供交易，和在外面没有区别。交易的刷新变得更方便了，只需要按下UI上方的按钮，或者按下（默认是）C键。"]
+			hide_dependency_lines: true
+			id: "170450125725453A"
+			rewards: [
+				{
+					count: 16
+					id: "307100C39E5032C6"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "4CDFBABAC0BA7AED"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+				{
+					id: "74E5F1C402EA7D26"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+			]
+			subtitle: "像不像哥布林帮你重铸的样子"
+			tasks: [{
+				id: "4E8A562B3706D568"
+				item: "easy_villagers:trader"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73F31CEE9A44F7CC"]
+			description: ["通过放入村民、金苹果、原版的任意形态虚弱药水，转化所可以将僵尸感染村民然后救治的过程一次性完成"]
+			hide_dependency_lines: true
+			id: "0C58BF234866691B"
+			rewards: [
+				{
+					id: "5048875408DCEE62"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:weakness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DAAC951F5968264"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
+			subtitle: "还不多谢谢我？"
+			tasks: [{
+				id: "3B6718F60FE20DDC"
+				item: "easy_villagers:converter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73F31CEE9A44F7CC"]
+			description: ["将恐吓式刷铁机浓缩进一格"]
+			hide_dependency_lines: true
+			id: "6CF659DC3D71BFA0"
+			rewards: [
+				{
+					count: 3
+					id: "30443FCAEF08FDAB"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0074038E24694B80"
+					item: "minecraft:poppy"
+					type: "item"
+				}
+			]
+			subtitle: "白色僵尸刷怪塔"
+			tasks: [{
+				id: "250A11BE8E386AE7"
+				item: "easy_villagers:iron_farm"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73F31CEE9A44F7CC"]
+			description: [
+				"将种子放进去就会生长。非傻子的村民放入其中便会转职为村民并自动采收农作物。"
+				""
+				"虽然农夫乐事提供了能快速生长的沃土，但是它胜在能自动。"
+			]
+			hide_dependency_lines: true
+			id: "3B370ACC841B775A"
+			rewards: [
+				{
+					id: "544659D2E99A5450"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "542A481CC2932E4F"
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+				{
+					id: "0BBF5B251ABA355D"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "56DD42FAC619E6F2"
+					item: "minecraft:potato"
+					type: "item"
+				}
+			]
+			subtitle: "羊毛出在羊身上"
+			tasks: [{
+				id: "5F1D6AD94E5BA1E8"
+				item: "easy_villagers:farmer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["170450125725453A"]
+			description: ["放入村民和工作站后，打开GUI选择指定的交易，所需的物品流入交易所后就会自动进行交易。"]
+			id: "2942CA30CC5AA30F"
+			rewards: [{
+				count: 64
+				id: "50D727A62BC59C46"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "村民自己交易"
+			tasks: [{
+				id: "72B3246AB4D375FA"
+				item: "easy_villagers:auto_trader"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63C562642F4A50E8"]
+			description: [
+				"&e你知道我想说什么"
+				""
+				"飞行器通用知识："
+				""
+				"1.飞行器要放置在完整方块上，并且需要足够大的空间。"
+				""
+				"2.飞行器起飞之前需要起步，改良式起落架可以加快这个过程，WS控制前进后退，AD转向，空格上升Shift下降，脱离载具在别的键，默认R。"
+				""
+				"3.飞行器有耐久，过快的速度碰到物块或者受到攻击都会降低耐久，耐久耗尽之后，飞行器会变回物品状态，不用担心它会坏掉"
+				""
+				"4.坐在飞行器上时，按物品栏会打开飞机的页面，可以装配武器和强化组件，填充燃料，存放货物。发动机发动的飞行器都需要烧燃料。飞行器的武器消耗货物中类型符合的弹药。飞行器耐久耗尽变为物品形态时，货物会掉落，其他物品会一同保存在飞行器内。"
+			]
+			hide_dependent_lines: true
+			icon: "immersive_aircraft:biplane"
+			id: "1B9AA1E66D25A846"
+			progression_mode: "linear"
+			rewards: [{
+				id: "7D581650FFE2D82D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "刚翻过了几座山，又跨过了几条河"
+			tasks: [{
+				id: "040E17D271897DFB"
+				type: "checkmark"
+			}]
+			title: "沉浸式飞机任务线"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["起步需要长按前进来推动，速度一般"]
+			id: "756C48D14E7F7305"
+			rewards: [
+				{
+					id: "6EE3F8BCFBF23041"
+					item: "immersive_aircraft:propeller"
+					type: "item"
+				}
+				{
+					id: "3DE341D72B38F780"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			subtitle: "能 工 智 人"
+			tasks: [{
+				id: "17D6B8D7531BCA85"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: [
+				"操纵比较特别的家伙。"
+				""
+				"空格前进，W让飞机低头，S让飞机抬头，速度很快。"
+			]
+			id: "50969ADF146E62D9"
+			rewards: [
+				{
+					id: "554C663BC736045A"
+					item: "immersive_aircraft:improved_landing_gear"
+					type: "item"
+				}
+				{
+					id: "26FB1CF5B74DDDD0"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			subtitle: "莱特兄弟"
+			tasks: [{
+				id: "4B1D6F0A84A24623"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["非常原始的飞行器，便宜，速度很慢"]
+			id: "5DCE0CCC7FB907F1"
+			rewards: [
+				{
+					count: 10
+					id: "2EE3CE7706C33314"
+					item: "minecraft:scaffolding"
+					type: "item"
+				}
+				{
+					id: "476B0526D0D5BF72"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			subtitle: "简直就是原始人"
+			tasks: [{
+				id: "2A47E9C515DAF429"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["操纵简单，起飞方便，速度缓慢"]
+			id: "52E656BC261F36FD"
+			rewards: [
+				{
+					id: "6F4636FDBC9722E8"
+					item: "immersive_aircraft:gyroscope"
+					type: "item"
+				}
+				{
+					id: "54CB0E4C8746B019"
+					item: "immersive_aircraft:hull"
+					type: "item"
+				}
+			]
+			subtitle: "看，热气球"
+			tasks: [{
+				id: "4C114C48C4A89BC0"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["50969ADF146E62D9"]
+			description: ["可以漂浮于水面的飞机，操纵方式与双翼机相同，速度也很快"]
+			id: "50B0EE9085E402AE"
+			rewards: [
+				{
+					id: "64D08D4BB0851986"
+					item: "immersive_aircraft:steel_boiler"
+					type: "item"
+				}
+				{
+					id: "6FC209033FF092C0"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			subtitle: "水陆两栖"
+			tasks: [{
+				id: "27F1FE65E1458AB3"
+				item: "immersive_aircraft:bamboo_hopper"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["52E656BC261F36FD"]
+			description: ["非常缓慢但是载货量巨大的飞艇，只可惜载货量完全没什么用"]
+			id: "6CEA5D372BBA1403"
+			rewards: [
+				{
+					id: "128DF99618031086"
+					item: "immersive_aircraft:hull_reinforcement"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "17DC1AD6E8C86C86"
+					item: "immersive_aircraft:sail"
+					type: "item"
+				}
+			]
+			subtitle: "又慢又沉"
+			tasks: [{
+				id: "3DE78D5DA1D14689"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6CEA5D372BBA1403"]
+			description: [
+				"沉重、雄伟、全副武装。"
+				""
+				"基础速度其实挺不错，并且拥有6个升级槽位，上限很高。"
+				""
+				"&7这么大一艘战舰谁看了不迷糊啊。"
+			]
+			id: "2513A8D50D3CEDEB"
+			rewards: [{
+				id: "37784316CE33975C"
+				item: "immersive_aircraft:nether_engine"
+				type: "item"
+			}]
+			subtitle: "Kirov Reporting"
+			tasks: [{
+				id: "75487AA524F90E34"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: [""]
+			id: "01FD1F66260B9FA9"
+			rewards: [{
+				count: 32
+				id: "7BE468835D7524E4"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "脚收一下，让一让"
+			tasks: [{
+				id: "6F0DDE616B7FA0C1"
+				item: "immersive_aircraft:improved_landing_gear"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: [""]
+			id: "6793FA436FD7D5D1"
+			rewards: [{
+				id: "235D345E5E932710"
+				item: "immersive_aircraft:boiler"
+				type: "item"
+			}]
+			subtitle: "是润滑油，我加了润滑油"
+			tasks: [{
+				id: "60C90006E9A31327"
+				item: "immersive_aircraft:industrial_gears"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["可以抵消飞行时风的吹动，飞行更省心"]
+			id: "7912C65A1120C878"
+			rewards: [{
+				count: 10
+				id: "75A2C278BD78AEA1"
+				item: {
+					Count: 1
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "航向稳定，请保持"
+			tasks: [{
+				id: "348A9ABB8B2E50E3"
+				item: "immersive_aircraft:gyroscope"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7912C65A1120C878"]
+			description: ["会在屏幕右下角显示仪表盘UI"]
+			id: "09E1FC36F814E32C"
+			rewards: [{
+				count: 3
+				id: "33B6FA77347EA560"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "启动启动启动全部启动，还有这~个"
+			tasks: [{
+				id: "1F5A9A8B2B0CFEB5"
+				item: "immersive_aircraft:gyroscope_dials"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7912C65A1120C878"]
+			description: ["会在驾驶舱前方添加一个电子显示屏"]
+			id: "643FDECCD9953335"
+			rewards: [{
+				count: 2
+				id: "55EC485A4E8DD0DD"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			subtitle: "目标已锁定！"
+			tasks: [{
+				id: "5B00E3991C4F2337"
+				item: "immersive_aircraft:gyroscope_hud"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: [""]
+			id: "3464C7A75E9E05DE"
+			rewards: [{
+				count: 5
+				id: "4713F897348E3085"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			subtitle: "滋点尿看看能不能跑"
+			tasks: [{
+				id: "7822DE678BE59923"
+				item: "immersive_aircraft:eco_engine"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: [""]
+			id: "1C4FFA8C6FCE67E8"
+			rewards: [
+				{
+					id: "62E84D1BD8DB6828"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "051DFD180DF50079"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "动！力！强！劲！"
+			tasks: [{
+				id: "32128D90A7A07D0F"
+				item: "immersive_aircraft:nether_engine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			id: "4345DCC9953B74BF"
+			rewards: [
+				{
+					id: "4539A174173ACB91"
+					item: "immersive_aircraft:engine"
+					type: "item"
+				}
+				{
+					id: "5CC9DCD0E1749DC7"
+					item: {
+						Count: 1
+						id: "minecraft:paper"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"账单：欠款114514煤炭\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "便宜没好货"
+			tasks: [{
+				id: "160E73E042CF70F7"
+				item: "immersive_aircraft:steel_boiler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["让加速更快"]
+			id: "317C426B7F31E70B"
+			rewards: [{
+				count: 10
+				id: "21CD05229523905F"
+				item: {
+					Count: 1
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "纵享丝滑"
+			tasks: [{
+				id: "64CC258B6C6F472B"
+				item: "immersive_aircraft:enhanced_propeller"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			id: "0F04ABD59DE598E9"
+			rewards: [{
+				count: 32
+				id: "57BA5E75E943FDFA"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "不然可能会有一些漏液漏气的现象"
+			tasks: [{
+				id: "0902DDE327C75564"
+				item: "immersive_aircraft:sturdy_pipes"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["伤害不高，射点也很散"]
+			id: "0C7C7BE1E5EA675B"
+			rewards: [{
+				count: 16
+				id: "4F6AF7BDA2589134"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			subtitle: "Heavy~ Machinegun"
+			tasks: [{
+				id: "7AD9594D5C296B86"
+				item: "immersive_aircraft:rotary_cannon"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["只能向前发射，实用性堪忧"]
+			id: "3097D9DAF671DFE3"
+			rewards: [{
+				count: 64
+				id: "686A10A9C12C8524"
+				item: "minecraft:arrow"
+				type: "item"
+			}]
+			subtitle: "我的散弹3贯通3呢"
+			tasks: [{
+				id: "6DFB2FC918501C66"
+				item: "immersive_aircraft:heavy_crossbow"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			description: ["虽然伤害高，但投掷TNT还是很奢侈的，复制TNT复制的又不是物品"]
+			id: "01EA874AD461E3CF"
+			rewards: [{
+				count: 16
+				id: "269EF764A35F03CA"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			subtitle: "我有很多熟人"
+			tasks: [{
+				id: "215609424E0EF8C5"
+				item: "immersive_aircraft:bomb_bay"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			id: "0208D172C9414377"
+			rewards: [{
+				count: 16
+				id: "796DC485D36248C4"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			subtitle: "你是武器吗，我觉得我是"
+			tasks: [{
+				id: "0CF96C0253B451ED"
+				item: "immersive_aircraft:telescope"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B9AA1E66D25A846"]
+			id: "61804441F5B4B595"
+			rewards: [{
+				id: "25213C0DDB859148"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "停，再硬我这飞机拿不回来了"
+			tasks: [{
+				id: "4E17C5DFD61A5A0A"
+				item: "immersive_aircraft:hull_reinforcement"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["40A0B7A09CB70CB7"]
+			description: ["其实更偏向于收集指南，一部分牌的效果受到调整"]
+			icon: "tarotcards:tarot_deck"
+			id: "3981FF3BBFB00884"
+			progression_mode: "linear"
+			rewards: [{
+				id: "69C93540DA732A97"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "占卜？不，这是对未来的宣判"
+			tasks: [{
+				id: "39DEB01C2F3BC7C1"
+				type: "checkmark"
+			}]
+			title: "塔罗牌任务线"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3981FF3BBFB00884"]
+			description: ["这些卡牌有助于你前期更快地发展或者更方便地探索"]
+			icon: "minecraft:grass_block"
+			id: "180B3DDBC052243F"
+			progression_mode: "linear"
+			rewards: [{
+				id: "2DBB80389D61A614"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "懒人力量"
+			tasks: [{
+				id: "370639838E521701"
+				type: "checkmark"
+			}]
+			title: "初期卡牌"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			description: ["可以通过制作获得，或在祸水澡堂中有概率发现"]
+			hide_dependency_lines: true
+			id: "0D12F90D2BB20CC6"
+			rewards: [
+				{
+					count: 4
+					id: "009F94571B7BDBF9"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3CE31DACE2D7DBAC"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "节衣缩食"
+			tasks: [{
+				id: "70838A65ADBDA943"
+				item: {
+					Count: 1
+					id: "tarotcards:temperance"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			hide_dependency_lines: true
+			id: "66322847BB5F27D9"
+			rewards: [
+				{
+					count: 12
+					id: "141C32E0DF840436"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1517AF9185C03E1F"
+					item: {
+						Count: 1
+						id: "curlamoety:silver_rapier"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "goety_revelation:reality_piercer"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:sharpness"
+									lvl: 2s
+								}
+							]
+							RepairCost: 3
+							Unbreakable: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "并不会失去视力"
+			tasks: [{
+				id: "4BBE3DB05D43CFFA"
+				item: {
+					Count: 1
+					id: "tarotcards:the_chariot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			hide_dependency_lines: true
+			id: "528B60DC6292E5C8"
+			rewards: [
+				{
+					id: "182241EE94C5ACC7"
+					item: "easy_villagers:trader"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "59642DCB4D2A493B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "虚构的英雄"
+			tasks: [{
+				id: "4D85E3631BE365C4"
+				item: {
+					Count: 1
+					id: "tarotcards:the_emperor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			description: ["持续性为3格内生物喂食繁殖或者成长所需的食物（不产生实际消耗）"]
+			hide_dependency_lines: true
+			id: "1A9D2D6099A54965"
+			rewards: [
+				{
+					count: 2
+					id: "701DE53EAFE8D310"
+					item: "minecraft:pig_spawn_egg"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "07E16C339ED71134"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "见我发情"
+			tasks: [{
+				id: "62F938B68C51DD3C"
+				item: {
+					Count: 1
+					id: "tarotcards:the_empress"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			hide_dependency_lines: true
+			id: "3EFA4612EDED8736"
+			rewards: [{
+				count: 8
+				id: "1663C922AB9E91DE"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "夜行者之眼"
+			tasks: [{
+				id: "0A83AAA91C46E190"
+				item: {
+					Count: 1
+					id: "tarotcards:the_moon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			hide_dependency_lines: true
+			id: "2FE72EA0EF5EA720"
+			rewards: [
+				{
+					count: 8
+					id: "51AAEA8FB09BCE68"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "71BABA50811641AD"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+			]
+			subtitle: "“时运”之轮，但是加幸运值"
+			tasks: [{
+				id: "0ED24D38484697BF"
+				item: {
+					Count: 1
+					id: "tarotcards:wheel_of_fortune"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			description: [
+				"并不提倡单独行动，所以这张卡的数值大幅削弱了（原来纯超模）"
+				""
+				"{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4C9709D59DC8DC68\" } }"
+			]
+			hide_dependency_lines: true
+			id: "03DEAD85667DF92E"
+			rewards: [{
+				count: 8
+				id: "57E39D2EE0468EA2"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "独行之人"
+			tasks: [{
+				id: "6FA3EF86EBFF5BC7"
+				item: {
+					Count: 1
+					id: "tarotcards:the_hermit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["180B3DDBC052243F"]
+			hide_dependency_lines: true
+			id: "1FBB4F864FA2D4E9"
+			rewards: [
+				{
+					count: 12
+					id: "7ADC084E064B8BBA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "43AABAD4D44FAAB5"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "5BB207AF1B2AD085"
+					item: "minecraft:wolf_spawn_egg"
+					type: "item"
+				}
+			]
+			subtitle: "笨鸟先飞"
+			tasks: [{
+				id: "60AE03C4E53FBBE1"
+				item: {
+					Count: 1
+					id: "tarotcards:the_fool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			hide_dependency_lines: true
+			id: "6344171DD7AD55A9"
+			rewards: [
+				{
+					id: "17A36AF7753D6CB9"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7DB54DD90940E205"
+					item: "trials:wind_charge"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4E44E42DBF933730"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "传奇耐摔王"
+			tasks: [{
+				id: "530A76357EC50217"
+				item: {
+					Count: 1
+					id: "tarotcards:the_tower"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"180B3DDBC052243F"
+				"384C7CEB4BC34ED9"
+			]
+			description: ["这些卡牌将会进一步拓展你的能力"]
+			icon: "minecraft:netherrack"
+			id: "394BCAF1FBA55267"
+			progression_mode: "linear"
+			rewards: [{
+				count: 2
+				id: "3518D97AA559CB0C"
+				item: "goety:magic_fabric"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "阿卡纳的祝福"
+			tasks: [{
+				id: "095D6A3807C824F4"
+				type: "checkmark"
+			}]
+			title: "进阶卡牌"
+			x: 8.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "6C00CB82A7FD73A1"
+			rewards: [
+				{
+					id: "3A2BF5A64FA8881B"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6ECF1E2407B340AA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "脚踏多条船？！"
+			tasks: [{
+				id: "146F73BF09B14812"
+				item: {
+					Count: 1
+					id: "tarotcards:the_lovers"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			description: ["{ \"text\": \"除了合成还可以击败暮色巫妖获取\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4AD15B92F52F5B65\" } }"]
+			hide_dependency_lines: true
+			id: "0153C100B11E1A03"
+			rewards: [
+				{
+					count: 8
+					id: "6DFA230ED4CC687D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "0BC1CDC8ED8EF151"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "78CF4C85864D3051"
+					item: {
+						Count: 1
+						id: "minecraft:golden_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:sweeping"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:knockback"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:fire_aspect"
+									lvl: 20s
+								}
+							]
+							RepairCost: 8
+							display: {
+								Name: "{\"text\":\"红色魔术师\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "迈达斯之手"
+			tasks: [{
+				id: "1A007A6F70934EB0"
+				item: {
+					Count: 1
+					id: "tarotcards:the_magician"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			hide_dependency_lines: true
+			id: "79AC6D00076A56DB"
+			rewards: [
+				{
+					id: "3A2DC763C2104907"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "43BE622EDA2A0A2E"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "牺牲成就未来"
+			tasks: [{
+				id: "7B8A4A44A4A0E14C"
+				item: {
+					Count: 1
+					id: "tarotcards:the_hanged_man"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			description: ["&8非常遗憾，原版多重射击叠加等级没用"]
+			hide_dependency_lines: true
+			id: "6D9023C0B3C09018"
+			rewards: [
+				{
+					count: 20
+					id: "2FEBE906C8D5AF43"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7585C46041CD746D"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "4BBA6F2131B0B9F4"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Charged: 0b
+							ChargedProjectiles: [ ]
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:multishot"
+								lvl: 10s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"绿色法皇\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "更多的经验就是你的魔法"
+			tasks: [{
+				id: "136045B5B32C3DEE"
+				item: {
+					Count: 1
+					id: "tarotcards:the_hierophant"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5DA8CBAFD9F17B09\" } }"]
+			hide_dependency_lines: true
+			id: "73387A617DE0E02D"
+			rewards: [
+				{
+					count: 8
+					id: "5C7312F2CB53F120"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "15085992FDE0EA9F"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "5D72F720B9F3E56C"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "成长的奇迹"
+			tasks: [{
+				id: "6882D3676240D124"
+				item: {
+					Count: 1
+					id: "tarotcards:the_high_priestess"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["394BCAF1FBA55267"]
+			description: ["这些卡牌将赐予你更强大的战斗能力，它们需要杀死强大的生灵才可以拥有"]
+			hide_dependent_lines: true
+			icon: "minecraft:nether_bricks"
+			id: "1FEF42A90D922191"
+			progression_mode: "linear"
+			rewards: [{
+				id: "134A331658A31101"
+				item: "goety:magic_fabric"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "天赐之威"
+			tasks: [{
+				id: "3141A15BF8C1E154"
+				type: "checkmark"
+			}]
+			title: "中后期卡牌"
+			x: 13.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			hide_dependency_lines: true
+			id: "19C39CB79A768ACB"
+			rewards: [{
+				count: 8
+				id: "2EA740A7B3A8861D"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "光合作用！"
+			tasks: [{
+				id: "1902A186B4A29FA0"
+				item: {
+					Count: 1
+					id: "tarotcards:the_sun"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			dependency_requirement: "one_started"
+			hide_dependency_lines: false
+			id: "153E45FCA9C9B9E0"
+			rewards: [
+				{
+					count: 16
+					id: "4CA75CD6D908BB75"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "3F25086CD8A6484F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "494064CDF3885B8F"
+					item: {
+						Count: 1
+						id: "curlamoety:platinum_punch"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 2s
+								}
+								{
+									id: "goety_revelation:reality_piercer"
+									lvl: 5s
+								}
+							]
+							RepairCost: 3
+							Unbreakable: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "手可摘星辰"
+			tasks: [{
+				id: "17D70E8EAEE1F43A"
+				item: {
+					Count: 1
+					id: "tarotcards:the_star"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			description: [
+				"高贵的限伤后独立增伤"
+				""
+				"&4你需要背负诅咒之力才能获得这张卡牌"
+				"{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"042A2EF65593FF91\" } }"
+			]
+			id: "02B053C688E99177"
+			rewards: [
+				{
+					count: 16
+					id: "5D93F52A87FF6CCD"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "44C6C3DFC3E2A956"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "吾即死神"
+			tasks: [{
+				id: "735AA7E69C15CCEB"
+				item: {
+					Count: 1
+					id: "tarotcards:death"
+					tag: {
+						deactivated: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			hide_dependency_lines: false
+			id: "5B916689C5626C08"
+			rewards: [
+				{
+					count: 16
+					id: "7499DBCDF0C7823B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "273395A68286012B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "以直报怨"
+			tasks: [{
+				id: "0745C8023C5704F5"
+				item: {
+					Count: 1
+					id: "tarotcards:justice"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			description: [
+				"限伤后计算"
+				"{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6A2C983359A5D6F2\" } }"
+			]
+			hide_dependency_lines: false
+			id: "0A01A9B3E49B6C96"
+			rewards: [
+				{
+					count: 16
+					id: "50044D15AACC324E"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "6FF9B8AC8CDAD4AF"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "洞察明晰"
+			tasks: [{
+				id: "3AE3D5E6D067744F"
+				item: {
+					Count: 1
+					id: "tarotcards:judgement"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			id: "7C8A3FEB32638F33"
+			rewards: [
+				{
+					id: "65E7A3F1C78A1708"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "565E9C0B94781368"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "掌控之中"
+			tasks: [{
+				id: "1BBB9C6C6799BD71"
+				item: {
+					Count: 1
+					id: "tarotcards:the_world"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"256DFC7EF8B68AB4\" } }"]
+			id: "26A1BB11D37923BD"
+			rewards: [
+				{
+					id: "4B6A901024EF6AA3"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "74EDB4E60E5D6F29"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "堕落之引"
+			tasks: [{
+				id: "7BCCEE257E57F24A"
+				item: {
+					Count: 1
+					id: "tarotcards:the_devil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1FEF42A90D922191"]
+			description: ["&4你需要背负诅咒之力才能获得这张牌"]
+			id: "5468F33260490068"
+			rewards: [
+				{
+					id: "3BA8634BC44929D6"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "50AD42AF66637CFE"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "逆袭之力"
+			tasks: [{
+				id: "1EE7F632D574F9AC"
+				item: {
+					Count: 1
+					id: "tarotcards:strength"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["10976BDEDDCEFC51"]
+			icon: "touhou_little_maid:maid_spawn_egg"
+			id: "6E1D90F5AAECB7B3"
+			progression_mode: "linear"
+			rewards: [{
+				id: "5508D4DDEA555866"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "从见习女仆到家政全能"
+			tasks: [{
+				id: "453AC9955D21872F"
+				type: "checkmark"
+			}]
+			title: "车万女仆任务线"
+			x: 0.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6E1D90F5AAECB7B3"]
+			description: [
+				"P点是车万女仆模组的基础能量，需要注意的是，物品形式的P点与作为能量的P点是&e不同&r的。"
+				""
+				"在主世界会自然刷新女仆妖精，它们是一种危害较小的烦人精，会直接掉落能量P点。"
+				""
+				"在战利品箱中可能发现物品形式的P点，将它投掷在地上以后就会爆裂出能量P点，就像附魔之瓶那样。"
+				""
+				"手持御币（博丽的御币或者风祝的御币）时，屏幕左上角会显示玩家所存储的P点量，上限5。又考虑到物品形式的P点在本包中也有一定作用，所以不要把P点全部丢掉。"
+			]
+			id: "470147F2B38DCCC2"
+			rewards: [{
+				id: "04F07775C691A067"
+				item: {
+					Count: 1
+					id: "touhou_little_maid:hakurei_gohei"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "幻想乡能量"
+			tasks: [{
+				id: "3F37FE619D26DD56"
+				item: "touhou_little_maid:power_point"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["470147F2B38DCCC2"]
+			description: ["召唤女仆妖精来为你作战，她们战斗力不强，但是可爱"]
+			id: "47BBC83910677FD3"
+			rewards: [{
+				id: "4606176AC58FE40D"
+				item: "touhou_little_maid:power_point"
+				type: "item"
+			}]
+			subtitle: "baka~baka~"
+			tasks: [{
+				id: "0E07A8EDCA36B11A"
+				item: "goetyawaken:fairy_focus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["470147F2B38DCCC2"]
+			description: [
+				"祭坛是车万女仆的核心内容之一，它是一个多方块结构，用20个红色羊毛与18个任意原木搭建祭坛结构，然后用御币右键指定的羊毛块即可创建祭坛。可以参考指南书《记忆中的幻想乡》。"
+				"{image:ftbquests:textures/quests.touhou_alter_1.png width:100 height:100 align:center}"
+				"                    &7搭建示例"
+				"{image:ftbquests:textures/quests.touhou_alter_2.png width:100 height:100 align:center}"
+				"                   &7激活示例"
+				""
+				"在祭坛的6根原木柱上按配方放置物品（无序）即可消耗P点来进行祭坛合成。"
+			]
+			icon: "minecraft:red_wool"
+			id: "09604468B071EEC3"
+			rewards: [{
+				count: 3
+				id: "47CDC6126F5166C1"
+				item: "touhou_little_maid:power_point"
+				type: "item"
+			}]
+			subtitle: "神明居所"
+			tasks: [{
+				advancement: "touhou_little_maid:base/build_altar"
+				criterion: ""
+				id: "1AA42041A69D28B7"
+				type: "advancement"
+			}]
+			title: "祭坛"
+			x: 3.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6A394098A90120A7"]
+			description: ["女仆需要女仆床才可以睡觉休息，女仆睡觉会增加好感度"]
+			id: "7CCE6E68B73C2F5E"
+			rewards: [{
+				count: 4
+				id: "7B6C803FAA902821"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Zzzz"
+			tasks: [{
+				id: "7ADEAA7AC9119F23"
+				item: "touhou_little_maid:maid_bed"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["09604468B071EEC3"]
+			description: [
+				"在祭坛上用煤，铁，金，青金石，红石，钻石各一个即可召唤一名未驯服的女仆。"
+				""
+				"要驯服女仆需要喂食蛋糕，本包中，&e切片蛋糕，切片皇家蛋糕，切片永恒蛋糕也可以用于驯服女仆&r。"
+				""
+				"女仆可以像玩家一样穿戴盔甲、饰品，使用武器，还可以进行一些生成工作。与玩家不同的是，她还以装备女仆专有饰品（它们有些非常强力，比如绀珠之药），以及可以手持御币来发射弹幕进行攻击（需要设置相应的工作模式）。"
+				""
+				"女仆被闪电劈中时，限一次，增加20点最大生命值"
+				""
+				"&4对于七咒玩家来说，由于七重咒只对自己生效，让女仆保护自己是一个不错的方案。"
+			]
+			id: "1B8DB38AA35124E3"
+			rewards: [{
+				id: "34AA017130736826"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			subtitle: "聆听我的召唤~"
+			tasks: [{
+				advancement: "touhou_little_maid:base/spawn_maid"
+				criterion: ""
+				id: "79726E95D6B29B14"
+				type: "advancement"
+			}]
+			title: "召唤女仆"
+			x: 5.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["1B8DB38AA35124E3"]
+			description: [
+				"女仆会根据某些行为增加或者减少好感度"
+				""
+				"减少好感度：被主人攻击，死亡"
+				""
+				"增加好感度的主要手段："
+				""
+				"1.吃东西。女仆在工作时会定时进食，为工作餐；休息时进食会增加更多好感度；女仆还会偷吃零食柜中的食物。"
+				""
+				"2.睡觉。根据时刻表，女仆在睡眠时间，在女仆床进行完整的睡眠会增加好感度。"
+				""
+				"3.游玩。根据时刻表，女仆在休息时间，可以与女仆家具互动游玩，增加好感度。"
+				""
+				"女仆提升好感度等级会获得更强大的属性，更多的饰品栏。"
+			]
+			icon: "touhou_little_maid:favorability_tool_add"
+			id: "6A394098A90120A7"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "27A6FAFE196A41C7"
+					item: "touhou_little_maid:snack_cabinet"
+					type: "item"
+				}
+				{
+					id: "459E2F73581E81C5"
+					item: "touhou_little_maid:picnic_basket"
+					type: "item"
+				}
+			]
+			subtitle: "嘎啦给木里不是这样的！"
+			tasks: [{
+				id: "768730995DC4CB0A"
+				type: "checkmark"
+			}]
+			title: "女仆好感度"
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6A394098A90120A7"]
+			description: [
+				"棋类包括五子棋，中国象棋，国际象棋，女仆可以与主人一起下棋"
+				""
+				"其他包括电脑，书架，电子琴。"
+			]
+			icon: "touhou_little_maid:gomoku"
+			id: "53C2F0F505636D7C"
+			rewards: [{
+				id: "0D53CE6100CF5918"
+				item: "touhou_little_maid:gomoku"
+				type: "item"
+			}]
+			subtitle: "劳逸结合"
+			tasks: [{
+				id: "79A82057CE30EDF3"
+				type: "checkmark"
+			}]
+			title: "游玩家具"
+			x: 8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1B8DB38AA35124E3"]
+			description: ["女仆需要坐垫或者船才可以钓鱼"]
+			id: "7C795305C502365B"
+			rewards: [{
+				count: 4
+				id: "14831DEF8B8F9B77"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "坐下来休息一下吧"
+			tasks: [{
+				id: "6EBFEFF83DB43C63"
+				item: {
+					Count: 1
+					id: "touhou_little_maid:chair"
+					tag: {
+						ModelId: "touhou_little_maid:cushion"
+						MountedHeight: 0.0d
+						TameableCanRide: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["6A394098A90120A7"]
+			description: [
+				"女仆死亡后会变成胶卷，胶卷可以在祭坛上消耗材料复活，或者放入神龛，消耗生命复活。"
+				""
+				"白狐卷轴可以寻找女仆墓碑。"
+			]
+			id: "18CE6712B94F640F"
+			rewards: [
+				{
+					id: "2CBE82AC2C3937B8"
+					item: "touhou_little_maid:shrine"
+					type: "item"
+				}
+				{
+					id: "697456545B547FC2"
+					item: "touhou_little_maid:white_fox_scroll"
+					type: "item"
+				}
+			]
+			subtitle: "酒狐！没有你我怎么活啊！"
+			tasks: [{
+				id: "519C663018EEEE8A"
+				item: "touhou_little_maid:film"
+				type: "item"
+			}]
+			title: "女仆死亡"
+			x: 8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["1B8DB38AA35124E3"]
+			description: [
+				"文文的相机可以把一个女仆“封印”到相片里，使用相片可以把女仆再放出来。"
+				""
+				"副手持有相片，主手持凿子可以对着黏土块进行雕刻，将其变成这个女仆的雕像；在雕像下方点火可以将雕像烤成手办。"
+			]
+			id: "191DEFD330B3D0E6"
+			rewards: [
+				{
+					id: "394847383C13FFAE"
+					item: {
+						Count: 1
+						id: "touhou_little_maid:chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7981903B8BB39ECE"
+					item: "minecraft:clay"
+					type: "item"
+				}
+			]
+			subtitle: "是二向箔打击？！"
+			tasks: [{
+				id: "326A93F6F1767C76"
+				item: {
+					Count: 1
+					id: "touhou_little_maid:camera"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["1B8DB38AA35124E3"]
+			description: ["女仆背包有小中大三种普通背包，可以在祭坛上制作。此外还有工作台、熔炉等特殊功能的背包，可以在战利品箱中发现。"]
+			icon: "touhou_little_maid:maid_backpack_small"
+			id: "740B27DEAC5CE388"
+			progression_mode: "linear"
+			rewards: [{
+				id: "26606E5254728E0E"
+				item: "touhou_little_maid:maid_backpack_small"
+				type: "item"
+			}]
+			subtitle: "你为什么背上小书包~"
+			tasks: [{
+				id: "7B6D7D3193305EE2"
+				type: "checkmark"
+			}]
+			title: "女仆背包"
+			x: 5.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["470147F2B38DCCC2"]
+			description: [
+				"抗性穿透：100%护甲穿透，100%附魔穿透"
+				"强化解除：攻击命中敌人时，驱散对方大部分常见正面效果"
+				"神速之舞：任意手持有时获得神速之舞效果，增加移动速度、飞行速度、攻击速度、多段跳，降低重力"
+				""
+				"可以升级为玛丽苏的枝杖+"
+			]
+			id: "2587E0D3C9C9CBAA"
+			rewards: [
+				{
+					id: "68DECD9E96423C89"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:lore_fragment"
+						tag: {
+							display: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A15A52B115D95E6"
+					item: "enigmaticlegacy:lore_inscriber"
+					type: "item"
+				}
+			]
+			subtitle: "得让你过上幸福快乐的生活了"
+			tasks: [{
+				id: "03375F7C3CBC81A9"
+				item: {
+					Count: 1
+					id: "curlamoety:mary_sue_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.5d
+		}
+	]
+	title: "辅助模组攻略"
+}

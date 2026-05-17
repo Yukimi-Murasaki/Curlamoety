@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1B83FEEDD0DEB75B"
+	group: "64A85F1CF1963E94"
+	hide_quest_until_deps_complete: true
+	icon: "goety_revelation:puzzle_item"
+	id: "1B83FEEDD0DEB75B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["00CD105D89C2503C"]
+			description: [
+				"可以通过黑暗秘典的巫法启示录-终末谣言章节来查看大致的流程"
+				""
+				"&6你的实力赢得了冥教之神，亚波伦的认可，如今，祂将天启七印，连同祂那未竟的登神夙愿，一同托付于你"
+			]
+			id: "568F66F13C5822C8"
+			progression_mode: "linear"
+			rewards: [{
+				id: "214A962E56A5C041"
+				item: "goety:ring_of_want"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "登神之路困难重重，吾辈必将克服"
+			tasks: [{
+				id: "0A168B462D1D4A8B"
+				item: {
+					Count: 1
+					id: "goety_revelation:revelation"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "登神之阶"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["568F66F13C5822C8"]
+			description: [
+				"由三个维度最珍稀之物凝结而成，你穿越三个维度，永不屈服的意志令你坚不可摧"
+				""
+				"&6你将以这份意志对抗世界，世界绝不容许真神的诞生"
+			]
+			id: "1C5BB300A9BD1C9D"
+			progression_mode: "linear"
+			rewards: [{
+				count: 12
+				id: "04E790FE1499403B"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			subtitle: "足矣对抗整个世界的意志"
+			tasks: [{
+				id: "77686281F55F8F43"
+				item: "goety_revelation:dimensional_will"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["568F66F13C5822C8"]
+			description: [
+				"去四个不同的仪式制作四个终末启示之语"
+				""
+				"手持终末启示之语，长按右键，混沌之谜将在你的眼前展开，将谜底置于魔法仪式的祭坛基座上，在祭坛上放置空聚晶即可获得神秘碎片"
+			]
+			id: "775F0ABAB49C50B9"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "57D446EA79ACA319"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:lore_fragment"
+						tag: {
+							display: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "444331F362C49DBF"
+					item: "enigmaticlegacy:lore_inscriber"
+					type: "item"
+				}
+			]
+			subtitle: "世界的谜题"
+			tasks: [{
+				id: "56EFD679080F6507"
+				item: "goety_revelation:puzzle_item"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["775F0ABAB49C50B9"]
+			description: [
+				"按&e&lT&r可以暂停时间并在暂停的时间里对敌人造成百分比伤害"
+				""
+				"&6若神不永恒，则不足矣存在于世"
+				""
+				"将四个神秘碎片放置在魔法仪式的祭坛基座上，将空聚晶放于祭坛上获得永恒物品，然后用四个钟表放在祭坛基座上，将永恒物品放于祭坛上获得永恒怀表"
+			]
+			id: "0D8140F5E5FC1A32"
+			progression_mode: "linear"
+			rewards: [{
+				id: "0C0056D2761F402C"
+				item: "enigmaticlegacy:cosmic_cake"
+				type: "item"
+			}]
+			subtitle: "让刹那陷入永恒的力量"
+			tasks: [{
+				id: "5F52840D814D70B0"
+				item: "goety_revelation:eternal_watch"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EF62FB603BDD9FB"]
+			description: [
+				"你，终末的神明"
+				"你的刹那便是永恒，你随手抛出的一片灵魂便拥有无穷的份量"
+				"魔法对于你来说简单过于呼吸"
+				"一切的生灵将对你俯首"
+			]
+			id: "0A2164F3B9D3747A"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "46B3AFF960E10BB6"
+					item: "minecraft:command_block"
+					type: "item"
+				}
+				{
+					id: "2ECE53D6362689CA"
+					item: "sophisticatedbackpacks:infinity_upgrade"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "宿命的休止符"
+			tasks: [{
+				id: "65180364063FAF80"
+				item: {
+					Count: 1
+					id: "goety_revelation:halo_of_the_end"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:binding_curse"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "终末神明"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0D8140F5E5FC1A32"
+				"775F0ABAB49C50B9"
+				"1C5BB300A9BD1C9D"
+			]
+			description: [
+				"&6仪式的地点，直面终焉的虚无，用微缩的终末之城开启登神的阶梯，你需要展现，敢于一度放弃这整个世界的勇气"
+				""
+				"仪式需要搭建在末地y<10的位置，仪式里需要用4个展示框展示4个终末之谜的谜底，将&6对抗世界的意志&f（维度意志），&6让刹那陷入永恒的力量&f（永恒怀表），四个神秘碎片，&6划破真实的蛰针&f（恶煌蛰针）放置在祭坛基座上，将&6冥教的神格（晋升之环）放置在祭坛上，然后，展现你&6放弃整个世界的勇气&f（献祭自己的生命）并&6拥抱永恒&f仪式就会开始。"
+			]
+			icon: "minecraft:end_stone"
+			id: "6EF62FB603BDD9FB"
+			progression_mode: "linear"
+			rewards: [{
+				id: "6784310027AE6C64"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			subtitle: "直面终焉的虚无"
+			tasks: [
+				{
+					count: 16L
+					id: "1C48850AD5C913E9"
+					item: { Count: 16, id: "minecraft:end_stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "08A0833CB47539FD"
+					item: { Count: 8, id: "minecraft:purpur_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2C2FC7B53F69B8DD"
+					item: { Count: 4, id: "minecraft:end_rod" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "751BE44BA3E1966B"
+					item: { Count: 4, id: "minecraft:item_frame" }
+					type: "item"
+				}
+			]
+			title: "终末仪式"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "终末之谜"
+}

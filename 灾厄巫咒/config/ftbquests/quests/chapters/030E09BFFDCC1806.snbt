@@ -1,0 +1,348 @@
+{
+	autofocus_id: "25B7D03F39C42990"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "030E09BFFDCC1806"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "030E09BFFDCC1806"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"&f诡厄巫法是模组的主要内容，并与&e灾变、农夫乐事、暮色森林等&f有联动"
+				""
+				"&7诡厄巫法是一款以灾厄村民为主题的魔法模组，玩家要扮演一名黑魔法师，结识死灵法师、新刌民等伙伴，运用灵魂能量之力，并逐步发掘冥教的真相&r"
+			]
+			icon: "goety:dark_hat"
+			id: "5EED30D9047E0F30"
+			rewards: [{
+				id: "3CA8390A41082E94"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.2d
+			subtitle: "证明自己更像一名唤魔者，而非神秘使"
+			tasks: [{
+				id: "2A403D68A687CAC5"
+				title: "检查标记"
+				type: "checkmark"
+			}]
+			title: "诡厄巫法"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"灾变是一款制作精良的探索模组，包含多个大型结构及其内部设计精美的BOSS"
+				""
+				"推荐使用&e探险家指南针&f来寻找这些结构"
+			]
+			icon: "cataclysm:flame_eye"
+			id: "54592F49570A1C76"
+			rewards: [{
+				id: "0D49C93A1B49435C"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.2d
+			subtitle: "卡↓拉↑米↓提→啊不对"
+			tasks: [{
+				id: "3340AB78CC4B95F2"
+				title: "检查标记"
+				type: "checkmark"
+			}]
+			title: "灾变"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"神秘遗物加入了许多饰品，最具代表性的便是七咒之戒。"
+				""
+				"尽管七咒之戒给予了很多强大的诅咒，但是其所拥有的独特物品可以让七咒之戒玩家上限远高于非七咒玩家和救赎之戒玩家。一些独特物品需要玩家&499.5%的时间&f佩戴七咒之戒才可以使用，&4如果想要完整体验这些独特物品请尽快戴上七咒之戒"
+			]
+			icon: "enigmaticlegacy:cursed_ring"
+			id: "73F9AF462737E0A8"
+			rewards: [{
+				id: "0A9EFB73A1CA9BA1"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.2d
+			subtitle: "申必遗物"
+			tasks: [{
+				id: "03EFBA715D884753"
+				type: "checkmark"
+			}]
+			title: "神秘遗物"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"Carry On模组"
+				""
+				"当玩家&e双手均不持有物品且距离较近&r时，&l&e潜行并右键&r可以抱起一些物体，如非敌对生物、篝火、简单村民的方块等"
+				""
+				"如果想要避免触发，任意手拿上物品即可（简单村民一些交互也要通过&l&e潜行右键&r完成）"
+			]
+			icon: "minecraft:saddle"
+			id: "5B97866C708A8827"
+			rewards: [{
+				id: "4AA83904512EBDFB"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "抱起来"
+			tasks: [{
+				id: "2F6B9FC3F5F22FA7"
+				title: "检查标记"
+				type: "checkmark"
+			}]
+			title: "搬运模组"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"简单村民让你可以通过潜行右键将村民变成物品放入背包（它们在背包里也会哼哼），并将它们放入该模组设计的各种方块设施中，来更加方便简单地完成与村民的交互（刷铁，交易，繁殖，骨折，农耕）"
+				""
+				"收起村民的判定优先级低于抱起，但是判定距离略远，站得稍远可以避免抱起村民，或者干脆任意一只手拿个物品。（方块设施也是哦）"
+			]
+			icon: "easy_villagers:villager"
+			id: "769761F2B8F75CE0"
+			rewards: [{
+				id: "0BF66D63C2F1F2C4"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "资本主义这块儿"
+			tasks: [{
+				id: "4BE687906FE0F976"
+				type: "checkmark"
+			}]
+			title: "简单村民"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"本模组提供了可以自选附魔的高级附魔台和再此基础上能够对已附魔的物品进行附魔修改的进阶高级附魔台，让附魔更轻松"
+				""
+				"小贴士：进阶高级附魔台搭配&e精妙背包&f的&e储罐升级&f以及&e经验泵升级&f可以实现压低等级，然后在低等级下少量多次地进行附魔，从而节省经验"
+			]
+			icon: "enchantinginfuser:advanced_enchanting_infuser"
+			id: "1551BF444FD241A5"
+			subtitle: "刷经验修补真的很辛苦的"
+			tasks: [{
+				id: "3FF9075EB50016A2"
+				type: "checkmark"
+			}]
+			title: "附魔灌注台"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: ["添加了四轴飞行器，螺旋桨飞机乃至飞艇"]
+			icon: "immersive_aircraft:biplane"
+			id: "6FAF03ED542F052C"
+			rewards: [{
+				id: "435EB6080C9705A6"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "跑图好帮手"
+			tasks: [{
+				id: "63110CCE298366C3"
+				type: "checkmark"
+			}]
+			title: "沉浸式飞机"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"这是一个以诡厄巫法为主，暮色森林、灾变、神秘遗物为辅的轻量级整合包。添加的农夫乐事是为了神秘遗物的附属神秘佳肴，不会过度干扰主要内容。"
+				""
+				"&n&e一般的下划线字体为可点击链接"
+				""
+				"&e&o&n斜体+下划线字体意味着隐藏的内容"
+				""
+				"{ \"text\": \"比如说，点击这里\", \"italic\":\"true\", \"color\":\"gold\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"65A92B1BC21C7468\" } }"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:dark_wand"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+			}
+			id: "25B7D03F39C42990"
+			rewards: [
+				{
+					id: "50216077496675EA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/gamerule keepInventory true"
+					elevate_perms: true
+					id: "651767C53CD78DE3"
+					title: "开启死亡不掉落"
+					type: "command"
+				}
+			]
+			size: 2.0d
+			subtitle: "感谢你打开这个整合包"
+			tasks: [{
+				id: "3E88552E8071B745"
+				type: "checkmark"
+			}]
+			title: "开始之前"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["恭喜你找到一个没什么用的隐藏，学会了吗？去找到更多吧！"]
+			id: "65A92B1BC21C7468"
+			invisible: true
+			rewards: [{
+				count: 6
+				id: "58C5689F23BE1A53"
+				item: {
+					Count: 1
+					id: "refinedstorage:cover"
+					tag: {
+						Item: {
+							Count: 1b
+							id: "minecraft:dirt"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "哦咩铁多"
+			tasks: [{
+				id: "5345B9C1CB998A17"
+				type: "checkmark"
+			}]
+			title: "就像这样"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: ["地牢浮现之时完全基于原版添加了将近40个设计精美的建筑结构，并且根据其中的奖励丰厚程度添加了不同强度的自定义&8&m（变态）&r敌怪，鼓励玩家外出探索"]
+			icon: {
+				Count: 1
+				id: "minecraft:filled_map"
+				tag: {
+					map: 2
+				}
+			}
+			id: "0729F20E3AF8A1BC"
+			rewards: [{
+				id: "21E54B3C7F696F0D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "诸君，我喜欢探索"
+			tasks: [{
+				id: "77AF12DD8F16E778"
+				type: "checkmark"
+			}]
+			title: "地牢浮现之时"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: ["让玩家可以召唤小女仆，小女仆能做一些简单的工作，玩家可以与小女仆培养感情，让她们变得更强大。"]
+			icon: "touhou_little_maid:maid_spawn_egg"
+			id: "3CA58AA6F2B356AE"
+			rewards: [{
+				id: "5F094583C66EB5BF"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "酒狐，帮我搭个祭坛"
+			tasks: [{
+				id: "10B7B36FC70C4E10"
+				type: "checkmark"
+			}]
+			title: "车万女仆"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: [
+				"本包已经对快捷键做出一定调整，为保证您的游玩体验，请按照喜好修改按键。"
+				"以下会先介绍部分按键，一些按键会在将要用到时介绍"
+				""
+				"1.大部分功能较为边缘的按键已经解绑，光影相关按键由于按下后影响较大，也已解绑"
+				""
+				"2.部分已修改重要按键：&l&eN&r键打开任务书，&l&eAlt + G&r打开饰品栏"
+				""
+				"3.部分未修改重要按键：&l&eV&r键缩放视角，&l&eF4&r键开启自由视角（灵魂出窍），&l&e~&r键连锁采集"
+				""
+				"4.JEI的使用，JEI是一套信息获取模组，物品栏中对物品按&l&eR&r可以查看来源，按&l&eU&r可以查看用途；已经在JEI页面中时，还可以&l&e左键&r查看来源，&l&e右键&r查看用途。物品栏右侧的JEI列表可以输入文字来查找搜寻物品"
+				""
+				"5.玉Jade模组，会在屏幕上方显示光标所指方块/实体的信息，如果发现功能异常，请查看其相关快捷键来调整"
+			]
+			icon: "immersive_aircraft:industrial_gears"
+			id: "031779F73A3BDC76"
+			rewards: [{
+				id: "7998551B97678F64"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "工欲善其事必先利其器"
+			tasks: [{
+				id: "1466AD18D75FC37C"
+				type: "checkmark"
+			}]
+			title: "游戏设置"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["25B7D03F39C42990"]
+			description: ["暮色森林是非常经典的老牌维度模组"]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "313ED74551F522A3"
+			shape: "circle"
+			size: 1.2d
+			subtitle: "童年的纸飞机又飞回到我手中"
+			tasks: [{
+				id: "25E8E0146441B04C"
+				type: "checkmark"
+			}]
+			title: "暮色森林"
+			x: 2.0d
+			y: -2.5d
+		}
+	]
+	title: "游玩之前"
+}

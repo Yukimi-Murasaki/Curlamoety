@@ -1,0 +1,766 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7692F0340EF58681"
+	group: "389115935D73552A"
+	icon: "goety_revelation:curios_storage_crystal"
+	id: "7692F0340EF58681"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			icon: "curlamoety:old_necklace"
+			id: "018C89B3047DE0BB"
+			progression_mode: "linear"
+			rewards: [{
+				id: "0F9FA16C0C0B28BD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "提供较多巫法强度，灵魂洄流，幸运值"
+			tasks: [{
+				id: "48354C83BDCC9E04"
+				type: "checkmark"
+			}]
+			title: "项链系列"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["018C89B3047DE0BB"]
+			description: ["{ \"text\": \"获取途径\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5FCB86A1BBF9EE00\" } }"]
+			icon: "curlamoety:old_necklace"
+			id: "656650152924B5DF"
+			rewards: [{
+				count: 4
+				id: "0A4798EDFF84D7ED"
+				item: "goety:magic_emerald"
+				type: "item"
+			}]
+			subtitle: "据说这是你爷爷留下来的……"
+			tasks: [{
+				id: "4815965541BF58CE"
+				item: "curlamoety:old_necklace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["656650152924B5DF"]
+			icon: "curlamoety:soul_necklace"
+			id: "66EF95874C67D090"
+			rewards: [{
+				id: "0147C365E5B20CBD"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "不，带上它不会让你被诅咒"
+			tasks: [{
+				id: "57B1E3AD86BE6157"
+				item: "curlamoety:soul_necklace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66EF95874C67D090"]
+			id: "23C31F2ED80CE682"
+			rewards: [{
+				id: "30802F5A2CDB6C93"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "它在渴望鲜活的生命"
+			tasks: [{
+				id: "7678B87C34398FCD"
+				item: "curlamoety:death_necklace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23C31F2ED80CE682"]
+			id: "298EB90A2137F013"
+			rewards: [
+				{
+					id: "02816567B2F8F87D"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "7AB4CD1093ADAF18"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "可惜，你并没有创造出破碎之环"
+			tasks: [{
+				id: "6D1FD08B5036AC9B"
+				item: "curlamoety:faith_necklace"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35542704CE85F80F"]
+			icon: "curlamoety:explorer_gloves"
+			id: "04025055C206D674"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "提供物理、魔法、距离多方面的加成"
+			tasks: [{
+				id: "1C70E4A8B5BC9CCA"
+				type: "checkmark"
+			}]
+			title: "手套系列"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04025055C206D674"]
+			description: ["{ \"text\": \"获取途径\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"35542704CE85F80F\" } }"]
+			icon: "curlamoety:explorer_gloves"
+			id: "29C83DFF0A605D14"
+			rewards: [{
+				id: "568E8AD86691F360"
+				item: "enigmaticaddons:earth_heart_fragment"
+				type: "item"
+			}]
+			subtitle: "坚韧耐用"
+			tasks: [{
+				id: "18CEA18EB87EC795"
+				item: "curlamoety:explorer_gloves"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"29C83DFF0A605D14"
+				"7CF69F9C459324A4"
+			]
+			id: "5B7EE2A6B31C7C74"
+			rewards: [{
+				id: "4EEE69643D080AF4"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "去吧，探索更加广阔的天地"
+			tasks: [{
+				id: "4B366EB020FD7B6F"
+				item: "curlamoety:pioneer_gloves"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B7EE2A6B31C7C74"]
+			id: "08A04443D35B3134"
+			rewards: [{
+				id: "1684C4C55885BF7A"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			subtitle: "似乎是机械义肢"
+			tasks: [{
+				id: "325A3D6021926BB4"
+				item: "curlamoety:conqueror_gloves"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["08A04443D35B3134"]
+			id: "1B6982A8586FBE93"
+			rewards: [{
+				id: "2DDB912AB3194DCE"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+			subtitle: "元 素 之 握"
+			tasks: [{
+				id: "6788FC99337785F4"
+				item: "curlamoety:elemental_gloves"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["300FE4F1E27EDEEC"]
+			icon: "curlamoety:evil_ring"
+			id: "357CC9BB040AE3A2"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "提供大量的巫法加成，七咒玩家专属"
+			tasks: [{
+				id: "7ED83090D16972F4"
+				type: "checkmark"
+			}]
+			title: "戒指系列"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["357CC9BB040AE3A2"]
+			description: [
+				"&4七咒玩家使用复仇邪魂以合成"
+				"{ \"text\": \"获取途径\", \"color\":\"light_purple\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"300FE4F1E27EDEEC\" } }"
+			]
+			id: "23B8D84FECC2DD6B"
+			rewards: [{
+				count: 2
+				id: "74F6D334CF9211B2"
+				item: "enigmaticaddons:earth_heart_fragment"
+				type: "item"
+			}]
+			subtitle: "我身上有恶灵！"
+			tasks: [{
+				id: "1167FD255005FF3C"
+				item: "curlamoety:evil_ring"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["23B8D84FECC2DD6B"]
+			id: "130781EDFFE3AE88"
+			rewards: [
+				{
+					id: "7CCAF7BE8E75F0C3"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4CBB665A5201BBA4"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+			]
+			subtitle: "我立于百万生命之上"
+			tasks: [{
+				id: "3AD45E22E9C90A50"
+				item: "curlamoety:blood_ring"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5665EC007DB0FE6C"]
+			id: "1219A8735CD5A04B"
+			rewards: [
+				{
+					id: "78260AED4563D15B"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "7ECFEEE143EC7AAC"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+			]
+			subtitle: "改邪归正"
+			tasks: [{
+				id: "0D4624294865A353"
+				item: "curlamoety:stella_ring"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			icon: "curlamoety:hiker_boots"
+			id: "5B47050D1E6804B8"
+			shape: "square"
+			size: 2.0d
+			subtitle: "一些别的饰品"
+			tasks: [{
+				id: "6C5455B8BB992BF0"
+				type: "checkmark"
+			}]
+			title: "其它"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B47050D1E6804B8"]
+			id: "2483F00DC7D630C7"
+			rewards: [{
+				id: "592A2BEDDDC038C2"
+				item: "enigmaticaddons:earth_heart_fragment"
+				type: "item"
+			}]
+			subtitle: "足力健专业老人鞋"
+			tasks: [{
+				id: "580C69C9138B722D"
+				item: "curlamoety:hiker_boots"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2483F00DC7D630C7"]
+			id: "218B5ECF8B620F40"
+			rewards: [{
+				id: "61A73FFA6362AF40"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "氮气加速"
+			tasks: [{
+				id: "6E42167E109EAA95"
+				item: "curlamoety:runner_boots"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B47050D1E6804B8"]
+			description: [
+				"{ \"text\": \"获取途径\", \"color\":\"light_purple\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"300FE4F1E27EDEEC\" } }"
+				""
+				"地灵之诺的青春版，同时也是地灵之诺的前置饰品"
+			]
+			id: "7E2177DD7687210A"
+			rewards: [{
+				id: "6ADBCDE6A6020DF1"
+				item: "goety:magic_emerald"
+				type: "item"
+			}]
+			subtitle: "卖掉了~"
+			tasks: [{
+				id: "103F7ED6C2BA9890"
+				item: "curlamoety:faded_promise"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			description: ["&e请务必浏览此页，以获取一些对游戏过程大有帮助的饰品"]
+			icon: "enigmaticlegacy:lore_inscriber"
+			id: "57791D8DB3B43457"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "此部分展示包中的自定义饰品"
+			tasks: [{
+				id: "339C91778926EC6B"
+				type: "checkmark"
+			}]
+			title: "自制饰品"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			description: ["合成获得"]
+			id: "7CF69F9C459324A4"
+			rewards: [{
+				id: "1863C7C294EC4FF7"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						RepairCost: 0
+						Unbreakable: 1b
+						display: {
+							Name: "{\"text\":\"猛火\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "上得了厅堂，下得了厨房"
+			tasks: [{
+				id: "42A7C559D7DE0AC1"
+				item: "curlamoety:kitchen_gloves"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4121020B2FA081DF"]
+			description: [""]
+			icon: "curlamoety:witch_amulet_tier1"
+			id: "7AF9AE8720C8A778"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "提供巧手效果并解锁一些特殊交互"
+			tasks: [{
+				id: "41E9B3063741D398"
+				type: "checkmark"
+			}]
+			title: "女巫护身符系列"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7AF9AE8720C8A778"]
+			id: "443D215B21FD552B"
+			rewards: [
+				{
+					count: 3
+					id: "742F5958AF690209"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "38833AC1D55AA8F9"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					description: "佩戴*初级女巫护身符*后，在女巫撰写桌处用*纸*记下笔记"
+					icon: "curlamoety:papers_t1"
+					id: "0D66DF51F459F446"
+					title: "知识点：初学笔记的获取"
+					type: "toast"
+				}
+			]
+			subtitle: "欢迎来到女巫学校，上课请做好笔记哦"
+			tasks: [{
+				id: "6DC212FE2205A2C2"
+				item: "curlamoety:witch_amulet_tier1"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["443D215B21FD552B"]
+			id: "1D216118471C66A8"
+			rewards: [
+				{
+					count: 2
+					id: "27CFD1CB13C06A3F"
+					item: "enigmaticlegacy:thicc_scroll"
+					type: "item"
+				}
+				{
+					id: "5EF4221FB47B0E6A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					description: "佩戴*中级女巫护身符*后，在女巫撰写桌处用*空白卷轴*记下笔记"
+					icon: "curlamoety:papers_t2"
+					id: "2DC846EC3AD4580D"
+					title: "知识点：实验笔记的获取"
+					type: "toast"
+				}
+			]
+			subtitle: "酿造，轻而易举啊"
+			tasks: [{
+				id: "348BE8DD0DB8E2CB"
+				item: "curlamoety:witch_amulet_tier2"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1D216118471C66A8"]
+			description: ["{ \"text\": \"链接：女巫仪式\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6C763528AA8C1B26\" } }"]
+			id: "0D10F90054C328EF"
+			rewards: [
+				{
+					count: 2
+					id: "6B32E1C355141D29"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					id: "260F601D89B99258"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					description: "佩戴*高级女巫护身符*后，在女巫撰写桌处用*书*记下笔记"
+					icon: "curlamoety:papers_t3"
+					id: "782006CD606CE6D5"
+					title: "知识点：研究笔记的获取"
+					type: "toast"
+				}
+			]
+			subtitle: "还好，学酿造不用做答辩"
+			tasks: [{
+				id: "3926FBB3DB8AC8D9"
+				item: "curlamoety:witch_amulet_tier3"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0D10F90054C328EF"]
+			id: "62A98C7ADCFA1973"
+			rewards: [
+				{
+					id: "62CCA98D54D64D7C"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					id: "4BB582A8414F3094"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					description: "佩戴*特级女巫护身符*后，在女巫撰写桌处用*禁书碎片*记下笔记"
+					icon: "curlamoety:papers_t4"
+					id: "605D22F031E69C33"
+					title: "知识点：梦呓碎片的获取"
+					type: "toast"
+				}
+			]
+			subtitle: "我柜子动了我不玩了"
+			tasks: [{
+				id: "015A63E509AA4F37"
+				item: "curlamoety:witch_amulet_tier4"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["62A98C7ADCFA1973"]
+			id: "4CC8C92004C60F6F"
+			rewards: [
+				{
+					id: "2D0E95787F4730F1"
+					item: "goety:unholy_fabric"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "14EA795D3A10F69B"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "37F4D13CF10A768F"
+					item: "curlamoety:calamitas_plushie"
+					type: "item"
+				}
+				{
+					description: "佩戴*至尊女巫护身符*后，在女巫撰写桌处用*不洁布料*见证湮灭"
+					icon: "curlamoety:annihilation_ashes"
+					id: "662863BD3A86D988"
+					title: "终焉已至……"
+					type: "toast"
+				}
+			]
+			subtitle: "想体验一下四级烧伤吗"
+			tasks: [{
+				id: "325D926B79553B6D"
+				item: "curlamoety:witch_amulet_tier5"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5B47050D1E6804B8"]
+			description: ["多功能的前期饰品，既可以增加资源获取，也可以提高生存进攻能力，也能对恩赐卷轴进行较大的补强"]
+			id: "7FB6B902A5448CEC"
+			rewards: [{
+				count: 16
+				id: "1AF1FF3FF29E41A4"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:luck"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "命运女神与你同在"
+			tasks: [{
+				id: "5005655FDF5C3285"
+				item: "curlamoety:desperate_attempt"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"60BD013B3CAD6878"
+				"0F01FF72C09F5025"
+			]
+			description: ["{ \"text\": \"初学者腰带\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"60BD013B3CAD6878\" } }"]
+			id: "5CCF1B5F961506DD"
+			rewards: [{
+				id: "384A09D426A2648D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "装下更多！"
+			tasks: [{
+				id: "76A315F36812A6A5"
+				item: "curlamoety:belt_of_glorious"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60BD013B3CAD6878"]
+			hide_dependent_lines: true
+			icon: "cataclysm:belt_of_beginner"
+			id: "0F01FF72C09F5025"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "关于灾变饰品以及饰品栏位"
+			tasks: [{
+				id: "033783F24CD4E96F"
+				type: "checkmark"
+			}]
+			title: "灾变饰品拓展"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F01FF72C09F5025"]
+			id: "0EEFAAAE695BCFE7"
+			rewards: [{
+				id: "12DA229402B4519C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "嘻嘻，我一定要活下去呀"
+			tasks: [{
+				id: "1515DC4DFE50C8C8"
+				item: "curlamoety:survivor_will"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["10748D131B4FE8AC"]
+			icon: "curlamoety:gloomy_circlet"
+			id: "18B0552E2A550765"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "提供巫法强度、灵魂亲和、巫法半径和范围加成"
+			tasks: [{
+				id: "69F2D06AD8E71DD2"
+				type: "checkmark"
+			}]
+			title: "头环系列"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["18B0552E2A550765"]
+			description: ["{ \"text\": \"获取途径\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3EC0BC781E2949E3\" } }"]
+			id: "4C67AF0FE0441D80"
+			rewards: [{
+				id: "661BB945DA02F5F6"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "掉色了"
+			tasks: [{
+				id: "37DC3F915CA7918E"
+				item: "curlamoety:gloomy_circlet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4C67AF0FE0441D80"]
+			id: "0D3844F71228DF12"
+			rewards: [{
+				id: "516142271A52A165"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "仰望皓月"
+			tasks: [{
+				id: "5BCDF94EDAA4AEE1"
+				item: "curlamoety:moon_circlet"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0D3844F71228DF12"]
+			description: ["{ \"text\": \"链接：暮色仪式\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5AD85DEBD7F8DD13\" } }"]
+			id: "344FB7959B4FF5E9"
+			rewards: [{
+				id: "0CA04B010370C22A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "那么，最终BOSS在哪里"
+			tasks: [{
+				id: "39A92EC41D64D6E2"
+				item: "curlamoety:twilight_crown"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["130781EDFFE3AE88"]
+			id: "5665EC007DB0FE6C"
+			rewards: [
+				{
+					id: "51DC9117E0934E01"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "10B0A53D82F14130"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			subtitle: "我主宰一切魔法"
+			tasks: [{
+				id: "278B966E7A8BC5A4"
+				item: "curlamoety:dominator_ring"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+	]
+	title: "饰品典藏室"
+}

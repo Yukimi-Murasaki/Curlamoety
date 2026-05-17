@@ -1,0 +1,4726 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "159EFE38E5630005"
+	group: "2ECA59494C73C5F0"
+	icon: "minecraft:emerald"
+	id: "159EFE38E5630005"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			dependencies: ["38168500AB4AA3D1"]
+			description: ["在右侧消耗容器兑换64k磁盘，或者使用主世界灾变素材兑换创造磁盘"]
+			hide_dependent_lines: true
+			icon: "refinedstorage:storage_housing"
+			id: "2A649853ED144FF3"
+			progression_mode: "linear"
+			rewards: [{
+				id: "37FB6D426ADAD120"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "1216FE80B99B3343"
+				type: "checkmark"
+			}]
+			title: "精致存储磁盘兑换"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "0E8EDC6BB77E3D6E"
+			rewards: [{
+				id: "7A17C80914D40490"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "59942E9002C2A13B"
+				item: "metalbarrels:gold_barrel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "655784E0710AFC6F"
+			rewards: [{
+				id: "7F63F2AEE0717606"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "341AA29A5FCF35A9"
+				item: { Count: 8, id: "ironchest:iron_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "1668A90369989208"
+			rewards: [{
+				id: "52D1BA797075CA26"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "61089ECC79F7BCF7"
+				item: { Count: 8, id: "metalbarrels:iron_barrel" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "64CD534EE894DC3B"
+			rewards: [{
+				id: "75192A2C33A39EB5"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "6376C066810A4EF7"
+				item: { Count: 4, id: "ironchest:gold_chest" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "1BAAC43C2CCC19BB"
+			rewards: [{
+				id: "269102566E2873E4"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "50C79845B69C02E7"
+				item: { Count: 2, id: "ironchest:diamond_chest" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "14325A67967EEC19"
+			rewards: [{
+				id: "51C197C7C60CF9F6"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "0B8C6BF809C7C14E"
+				item: "metalbarrels:diamond_barrel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			id: "3E168D05EA546AFB"
+			rewards: [{
+				id: "1952C79BEFE72288"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4C94D4202AC43160"
+				item: "metalbarrels:netherite_barrel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2A649853ED144FF3"]
+			icon: "refinedstorage:creative_storage_disk"
+			id: "795DE17D8ECEF1A2"
+			rewards: [
+				{
+					id: "343083E2220CDA62"
+					item: "refinedstorage:creative_storage_disk"
+					type: "item"
+				}
+				{
+					id: "02FF6961F329277A"
+					item: "refinedstorage:creative_fluid_storage_disk"
+					type: "item"
+				}
+			]
+			subtitle: "无限容纳"
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "16A7ADB23FFBA15C"
+					item: { Count: 4, id: "cataclysm:witherite_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "712FAFC8AEA1763E"
+					item: { Count: 2, id: "cataclysm:essence_of_the_storm" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "4BE1C864CB3DC567"
+					item: { Count: 2, id: "goety_cataclysm:abyss_essence" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "6A9C4F11F65758A9"
+					item: { Count: 2, id: "cataclysm:cursium_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "0310C118DFDB5D4B"
+					item: { Count: 4, id: "cataclysm:ancient_metal_ingot" }
+					type: "item"
+				}
+			]
+			title: "创造磁盘"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["25B7D03F39C42990"]
+			hide_dependent_lines: true
+			icon: "minecraft:command_block"
+			id: "184A1556FF010D04"
+			progression_mode: "linear"
+			rewards: [{
+				id: "0AE71260053C6DA8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "世界规则的齿轮"
+			tasks: [{
+				id: "2590E61517EFAFC4"
+				type: "checkmark"
+			}]
+			title: "法则之力"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			description: ["控制时间"]
+			id: "6152A75CCB46A3DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "683D67C5C357DC26"
+				table_id: 4702949485233739353L
+				type: "choice"
+			}]
+			subtitle: "Made In Heaven!"
+			tasks: [{
+				consume_items: true
+				id: "280EC5AE250B00F0"
+				item: "minecraft:clock"
+				type: "item"
+			}]
+			title: "时间之力"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["258D192FDA2B9041"]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "enigmaticlegacy:void_stone"
+				tag: { }
+			}
+			id: "1A868AA7411EF153"
+			rewards: [{
+				id: "077B9548773DE902"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "这里的货物从异次元偷渡而来"
+			tasks: [{
+				id: "7818DA1555E2F40C"
+				type: "checkmark"
+			}]
+			title: "神秘旅客"
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1A868AA7411EF153"]
+			description: ["抽取你想要的属性的神秘护身符，同时也是提供额外的护身符用于合成不同的升级"]
+			icon: "enigmaticlegacy:unwitnessed_amulet"
+			id: "16A64FAE9C8346D2"
+			rewards: [{
+				id: "2396C9063DFF43A7"
+				item: "enigmaticlegacy:unwitnessed_amulet"
+				type: "item"
+			}]
+			subtitle: "抽奖时间~"
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "1A65B02EBAEC0BE5"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "085B9CDF51A2B7C9"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "无主护身符"
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			description: ["随机传送来碰碰运气"]
+			icon: "minecraft:ender_pearl"
+			id: "16772CE94AAE1DA5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14844EE065A4521E"
+				table_id: 454757883733537171L
+				type: "choice"
+			}]
+			subtitle: "希望那里是安全的"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "3D3AE6F5F4C34E82"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			title: "随机传送"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			description: [
+				"回到上一次死亡地点"
+				""
+				"&7（tpmaster back）"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "2583CEEEE0192772"
+			rewards: [{
+				command: "/tpmaster back"
+				elevate_perms: true
+				icon: "minecraft:skeleton_skull"
+				id: "3437F400EBFAA000"
+				title: "回到上个死亡地点"
+				type: "command"
+			}]
+			subtitle: "回去，向它们复仇"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "5D9E602E8DC06B76"
+				item: { Count: 5, id: "minecraft:dirt" }
+				type: "item"
+			}]
+			title: "回到死亡地点"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			description: [
+				"将你的当前位置设置为第0个家，如果自己输命令可以使用更多编号"
+				""
+				"&7(tpmaster sethome 编号)"
+			]
+			icon: "minecraft:red_bed"
+			id: "604E5EB1093586BC"
+			rewards: [{
+				command: "/tpmaster sethome"
+				elevate_perms: true
+				icon: "minecraft:red_bed"
+				id: "6CF27F74C8ACE97F"
+				title: "将当前位置设置为家"
+				type: "command"
+			}]
+			subtitle: "玩家 愿意安顿下来"
+			tasks: [{
+				consume_items: true
+				id: "336FB13614AB48B7"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			title: "标记为家"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			description: [
+				"传送回0号家，和设置家相似的，自己输入的话可以用更多编号（请先进行设定家）"
+				""
+				"&7(tpmaster home 编号)"
+			]
+			icon: "enigmaticlegacy:twisted_mirror"
+			id: "5390C0C85B8FD9BA"
+			rewards: [{
+				command: "/tpmaster home"
+				elevate_perms: true
+				icon: "enigmaticlegacy:twisted_mirror"
+				id: "54949AB7DF60023E"
+				title: "传送回家"
+				type: "command"
+			}]
+			subtitle: "拿玻璃当魔镜吗，哈基作者，你这家伙"
+			tasks: [{
+				consume_items: true
+				id: "740D5FFB055BB48A"
+				item: "minecraft:glass_pane"
+				type: "item"
+			}]
+			title: "传送回家"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["184A1556FF010D04"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "14E40C8D3E4B899F"
+			rewards: [{
+				command: "/kill @s"
+				elevate_perms: true
+				icon: "minecraft:wither_skeleton_skull"
+				id: "13BC3E9D7695C7EF"
+				type: "command"
+			}]
+			subtitle: "实在是万不得已"
+			tasks: [{
+				id: "1EB8389386455DA1"
+				type: "checkmark"
+			}]
+			title: "自杀"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["184A1556FF010D04"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "1A6A85ACF1E8B153"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E586191D759AC33"
+				table_id: 799647770884164510L
+				type: "choice"
+			}]
+			subtitle: "也许你会想要多一点挑战？"
+			tasks: [{
+				id: "3C2E8A8169E5A49F"
+				type: "checkmark"
+			}]
+			title: "调整死亡不掉落"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A946582B399CE2E"
+			progression_mode: "linear"
+			rewards: [{
+				id: "6469047B91938899"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "343BEB6EC1AE44B7"
+				type: "checkmark"
+			}]
+			title: "商品收购"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "5835A544EEC357AE"
+			rewards: [{
+				count: 20
+				id: "1AF62F99D0A07833"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "直接出售农作物的3倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "24A1FB0BE6736AB4"
+				item: "farmersdelight:cabbage_rolls"
+				type: "item"
+			}]
+			title: "卷心菜卷"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["18442EC41414DB90"]
+			description: [
+				"用绿宝石购入实用物资"
+				""
+				"第一行：矿物"
+				"第二行：建材"
+				"第三行：生物资源"
+			]
+			hide_dependent_lines: true
+			icon: "minecraft:emerald"
+			id: "211851B9163DF3EA"
+			progression_mode: "linear"
+			rewards: [{
+				id: "23337BA833A43F39"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "价格实惠，童叟无欺"
+			tasks: [{
+				id: "24C66487C0C8B104"
+				type: "checkmark"
+			}]
+			title: "实用小店"
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:quartz_block"
+			id: "2FB60531B45D8FAF"
+			rewards: [{
+				count: 64
+				id: "4931D6CDD7C682F4"
+				item: "minecraft:quartz_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "64702EE9C57DA5EC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "石英块"
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"384C7CEB4BC34ED9"
+			]
+			icon: "minecraft:lapis_block"
+			id: "2EB54423940D7EAC"
+			rewards: [{
+				count: 4
+				id: "0B1BA52288920C5E"
+				item: "minecraft:lapis_block"
+				type: "item"
+			}]
+			subtitle: "拿去刷魔法石英花"
+			tasks: [{
+				consume_items: true
+				count: 6L
+				id: "69CD908C1115E0F5"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "青金石块"
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"384C7CEB4BC34ED9"
+			]
+			icon: "minecraft:redstone_block"
+			id: "195928F83810C904"
+			rewards: [{
+				count: 6
+				id: "089279B98EDCD503"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "174C16706E3A9CB8"
+				item: { Count: 10, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			title: "红石块"
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"5CC37056C406861A"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "3A4CBB0E45E942F0"
+			rewards: [{
+				count: 12
+				id: "39929A11068E60A3"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "2AC74603C96B0900"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "铁锭"
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"5CC37056C406861A"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "7E0121867460052C"
+			rewards: [{
+				count: 12
+				id: "4C4F6E97A16A4C22"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 24L
+				id: "68F00A98099655A6"
+				item: { Count: 24, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			title: "金锭"
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"384C7CEB4BC34ED9"
+			]
+			icon: "minecraft:copper_block"
+			id: "69E59D2B7F37A13C"
+			rewards: [{
+				count: 4
+				id: "4BA8BB5744F4C87E"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "72733F79639713A9"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "铜块"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:oak_log"
+			id: "04D6B4907EEE7F3F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19A9A8C81C012345"
+				table_id: 1905268988264268853L
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "2F71FA7A53AC1851"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "原木"
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:glass"
+			id: "037E6B40DB918F65"
+			rewards: [{
+				count: 64
+				id: "2C350DDF18381D2E"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "70A5712CE63D3EB5"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "玻璃"
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:stone_bricks"
+			id: "51FACC0A27D05139"
+			rewards: [{
+				count: 64
+				id: "0B6800087076B9A6"
+				item: "minecraft:stone_bricks"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "7B1291A52B3FE10B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "石砖"
+			x: 3.5d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:lantern"
+			id: "5F31F3781C4BDA0D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "432283491076A7EE"
+				table_id: 9189537646791179909L
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "5F89F447AC96DC87"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "照明物"
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			description: ["七咒玩家可以通过击败远古守护者和守护者来获取这些物品"]
+			icon: "minecraft:heart_of_the_sea"
+			id: "1818B7EF754EB2C2"
+			rewards: [
+				{
+					count: 3
+					id: "13962A7A8BB92157"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2DCA872C977C3636"
+					item: "minecraft:nautilus_shell"
+					title: "赠品"
+					type: "item"
+				}
+				{
+					id: "0E0BA5AF93EB4238"
+					item: "minecraft:conduit"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "30482D98B847A9C6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "海洋之心"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["384C7CEB4BC34ED9"]
+			description: ["需要进入下界才会开张"]
+			hide_dependent_lines: true
+			icon: "minecraft:nether_star"
+			id: "639B1545CDA3D21E"
+			progression_mode: "linear"
+			rewards: [{
+				id: "535180AA1A874339"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "走过路过不要错过"
+			tasks: [{
+				id: "7EEEF9C8B47E89C6"
+				type: "checkmark"
+			}]
+			title: "珍稀限购"
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "sophisticatedbackpacks:stack_upgrade_tier_4"
+			id: "7CECBC163AB0976F"
+			rewards: [{
+				id: "6BCF5E95B840E7F6"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			subtitle: "人形仓库"
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "7A52745EF09CB24B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 24L
+					id: "0035979AD0E1C68F"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+			]
+			title: "堆叠升级t4"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: {
+				Count: 1
+				id: "minecraft:bee_nest"
+				tag: {
+					BlockEntityTag: {
+						Bees: [
+							{
+								EntityData: {
+									AbsorptionAmount: 0.0f
+									Age: 0
+									AngerTime: 0
+									Attributes: [
+										{
+											Base: 0.1d
+											Name: "caelus:fall_flying"
+										}
+										{
+											Base: 0.08d
+											Name: "forge:entity_gravity"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor_toughness"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor"
+										}
+										{
+											Base: 0.30000001192092896d
+											Name: "minecraft:generic.movement_speed"
+										}
+										{
+											Base: 2.0d
+											Name: "minecraft:generic.attack_damage"
+										}
+										{
+											Base: 48.0d
+											Modifiers: [{
+												Amount: -0.05652582825233093d
+												Name: "Random spawn bonus"
+												Operation: 1
+												UUID: [I;
+													-193456773
+													-510243148
+													-1965832849
+													-1083326666
+												]
+											}]
+											Name: "minecraft:generic.follow_range"
+										}
+										{
+											Base: 0.0d
+											Name: "forge:step_height_addition"
+										}
+									]
+									BalmData: { }
+									CanUpdate: 1b
+									CitadelData: { }
+									ForcedAge: 0
+									ForgeCaps: {
+										"cataclysm:charge_cap": {
+											ChargeDamage: 0.0f
+											ChargeTime: 0
+											KnockbackSpeed: 0.0f
+											dx: 0.0f
+											dz: 0.0f
+											isCharge: 0b
+											timer: 0
+										}
+										"cataclysm:hook_cap": {
+											hasHook: 0b
+										}
+										"cataclysm:parry_cap": {
+											frame: 0
+										}
+										"cataclysm:render_rush_cap": {
+											damage: 0.0f
+											isRush: 0b
+											timer: 0
+										}
+										"cataclysm:tentacle_cap": {
+											getLastTentacleID: 0
+											hasTentacle: 0b
+										}
+										"curios:inventory": {
+											Curios: [ ]
+										}
+										"goety:misc": {
+											ambientSoundTime: 0
+											clientTargetID: 0
+											customSpinTexture: "textures/entity/trident_riptide.png"
+											freezeLevel: 0
+											mobTargetID: 0
+											shakeTime: 0
+											shieldCool: 0
+											shieldTime: 0
+											shields: 0
+										}
+									}
+									ForgeData: { }
+									HasNectar: 0b
+									HasStung: 0b
+									Health: 10.0f
+									InLove: 0
+									Invulnerable: 0b
+									PersistenceRequired: 0b
+									"forge:spawn_type": "SPAWN_EGG"
+									id: "minecraft:bee"
+								}
+								MinOccupationTicks: 600
+								TicksInHive: 674
+							}
+							{
+								EntityData: {
+									AbsorptionAmount: 0.0f
+									Age: 0
+									AngerTime: 0
+									Attributes: [
+										{
+											Base: 0.1d
+											Name: "caelus:fall_flying"
+										}
+										{
+											Base: 0.08d
+											Name: "forge:entity_gravity"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor_toughness"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor"
+										}
+										{
+											Base: 0.30000001192092896d
+											Name: "minecraft:generic.movement_speed"
+										}
+										{
+											Base: 2.0d
+											Name: "minecraft:generic.attack_damage"
+										}
+										{
+											Base: 48.0d
+											Modifiers: [{
+												Amount: -0.010591833001604718d
+												Name: "Random spawn bonus"
+												Operation: 1
+												UUID: [I;
+													1870136073
+													614679355
+													-1403350967
+													-1649267434
+												]
+											}]
+											Name: "minecraft:generic.follow_range"
+										}
+										{
+											Base: 0.0d
+											Name: "forge:step_height_addition"
+										}
+									]
+									BalmData: { }
+									CanUpdate: 1b
+									CitadelData: { }
+									ForcedAge: 0
+									ForgeCaps: {
+										"cataclysm:charge_cap": {
+											ChargeDamage: 0.0f
+											ChargeTime: 0
+											KnockbackSpeed: 0.0f
+											dx: 0.0f
+											dz: 0.0f
+											isCharge: 0b
+											timer: 0
+										}
+										"cataclysm:hook_cap": {
+											hasHook: 0b
+										}
+										"cataclysm:parry_cap": {
+											frame: 0
+										}
+										"cataclysm:render_rush_cap": {
+											damage: 0.0f
+											isRush: 0b
+											timer: 0
+										}
+										"cataclysm:tentacle_cap": {
+											getLastTentacleID: 0
+											hasTentacle: 0b
+										}
+										"curios:inventory": {
+											Curios: [ ]
+										}
+										"goety:misc": {
+											ambientSoundTime: 0
+											clientTargetID: 0
+											customSpinTexture: "textures/entity/trident_riptide.png"
+											freezeLevel: 0
+											mobTargetID: 0
+											shakeTime: 0
+											shieldCool: 0
+											shieldTime: 0
+											shields: 0
+										}
+									}
+									ForgeData: { }
+									HasNectar: 0b
+									HasStung: 0b
+									Health: 10.0f
+									InLove: 0
+									Invulnerable: 0b
+									PersistenceRequired: 0b
+									"forge:spawn_type": "SPAWN_EGG"
+									id: "minecraft:bee"
+								}
+								MinOccupationTicks: 600
+								TicksInHive: 662
+							}
+							{
+								EntityData: {
+									AbsorptionAmount: 0.0f
+									Age: 0
+									AngerTime: 0
+									Attributes: [
+										{
+											Base: 0.1d
+											Name: "caelus:fall_flying"
+										}
+										{
+											Base: 0.08d
+											Name: "forge:entity_gravity"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor_toughness"
+										}
+										{
+											Base: 0.0d
+											Name: "minecraft:generic.armor"
+										}
+										{
+											Base: 0.30000001192092896d
+											Name: "minecraft:generic.movement_speed"
+										}
+										{
+											Base: 2.0d
+											Name: "minecraft:generic.attack_damage"
+										}
+										{
+											Base: 48.0d
+											Modifiers: [{
+												Amount: -0.022326529922748084d
+												Name: "Random spawn bonus"
+												Operation: 1
+												UUID: [I;
+													-856562640
+													164057050
+													-1200877828
+													-1805469030
+												]
+											}]
+											Name: "minecraft:generic.follow_range"
+										}
+										{
+											Base: 0.0d
+											Name: "forge:step_height_addition"
+										}
+									]
+									BalmData: { }
+									CanUpdate: 1b
+									CitadelData: { }
+									ForcedAge: 0
+									ForgeCaps: {
+										"cataclysm:charge_cap": {
+											ChargeDamage: 0.0f
+											ChargeTime: 0
+											KnockbackSpeed: 0.0f
+											dx: 0.0f
+											dz: 0.0f
+											isCharge: 0b
+											timer: 0
+										}
+										"cataclysm:hook_cap": {
+											hasHook: 0b
+										}
+										"cataclysm:parry_cap": {
+											frame: 0
+										}
+										"cataclysm:render_rush_cap": {
+											damage: 0.0f
+											isRush: 0b
+											timer: 0
+										}
+										"cataclysm:tentacle_cap": {
+											getLastTentacleID: 0
+											hasTentacle: 0b
+										}
+										"curios:inventory": {
+											Curios: [ ]
+										}
+										"goety:misc": {
+											ambientSoundTime: 0
+											clientTargetID: 0
+											customSpinTexture: "textures/entity/trident_riptide.png"
+											freezeLevel: 0
+											mobTargetID: 0
+											shakeTime: 0
+											shieldCool: 0
+											shieldTime: 0
+											shields: 0
+										}
+									}
+									ForgeData: { }
+									HasNectar: 0b
+									HasStung: 0b
+									Health: 10.0f
+									InLove: 0
+									Invulnerable: 0b
+									PersistenceRequired: 0b
+									"forge:spawn_type": "SPAWN_EGG"
+									id: "minecraft:bee"
+								}
+								MinOccupationTicks: 600
+								TicksInHive: 650
+							}
+						]
+					}
+					BlockStateTag: {
+						honey_level: "5"
+					}
+				}
+			}
+			id: "3C48CCCED37DE201"
+			rewards: [{
+				count: 3
+				id: "59C817865DC2BCCF"
+				item: {
+					Count: 1
+					id: "minecraft:bee_nest"
+					tag: {
+						BlockEntityTag: {
+							Bees: [
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 0.1d
+												Name: "caelus:fall_flying"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor_toughness"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 2.0d
+												Name: "minecraft:generic.attack_damage"
+											}
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: -0.05652582825233093d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														-193456773
+														-510243148
+														-1965832849
+														-1083326666
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										CitadelData: { }
+										ForcedAge: 0
+										ForgeCaps: {
+											"cataclysm:charge_cap": {
+												ChargeDamage: 0.0f
+												ChargeTime: 0
+												KnockbackSpeed: 0.0f
+												dx: 0.0f
+												dz: 0.0f
+												isCharge: 0b
+												timer: 0
+											}
+											"cataclysm:hook_cap": {
+												hasHook: 0b
+											}
+											"cataclysm:parry_cap": {
+												frame: 0
+											}
+											"cataclysm:render_rush_cap": {
+												damage: 0.0f
+												isRush: 0b
+												timer: 0
+											}
+											"cataclysm:tentacle_cap": {
+												getLastTentacleID: 0
+												hasTentacle: 0b
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+											"goety:misc": {
+												ambientSoundTime: 0
+												clientTargetID: 0
+												customSpinTexture: "textures/entity/trident_riptide.png"
+												freezeLevel: 0
+												mobTargetID: 0
+												shakeTime: 0
+												shieldCool: 0
+												shieldTime: 0
+												shields: 0
+											}
+										}
+										ForgeData: { }
+										HasNectar: 0b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 600
+									TicksInHive: 674
+								}
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 0.1d
+												Name: "caelus:fall_flying"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor_toughness"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 2.0d
+												Name: "minecraft:generic.attack_damage"
+											}
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: -0.010591833001604718d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														1870136073
+														614679355
+														-1403350967
+														-1649267434
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										CitadelData: { }
+										ForcedAge: 0
+										ForgeCaps: {
+											"cataclysm:charge_cap": {
+												ChargeDamage: 0.0f
+												ChargeTime: 0
+												KnockbackSpeed: 0.0f
+												dx: 0.0f
+												dz: 0.0f
+												isCharge: 0b
+												timer: 0
+											}
+											"cataclysm:hook_cap": {
+												hasHook: 0b
+											}
+											"cataclysm:parry_cap": {
+												frame: 0
+											}
+											"cataclysm:render_rush_cap": {
+												damage: 0.0f
+												isRush: 0b
+												timer: 0
+											}
+											"cataclysm:tentacle_cap": {
+												getLastTentacleID: 0
+												hasTentacle: 0b
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+											"goety:misc": {
+												ambientSoundTime: 0
+												clientTargetID: 0
+												customSpinTexture: "textures/entity/trident_riptide.png"
+												freezeLevel: 0
+												mobTargetID: 0
+												shakeTime: 0
+												shieldCool: 0
+												shieldTime: 0
+												shields: 0
+											}
+										}
+										ForgeData: { }
+										HasNectar: 0b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 600
+									TicksInHive: 662
+								}
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 0.1d
+												Name: "caelus:fall_flying"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor_toughness"
+											}
+											{
+												Base: 0.0d
+												Name: "minecraft:generic.armor"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 2.0d
+												Name: "minecraft:generic.attack_damage"
+											}
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: -0.022326529922748084d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														-856562640
+														164057050
+														-1200877828
+														-1805469030
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										CitadelData: { }
+										ForcedAge: 0
+										ForgeCaps: {
+											"cataclysm:charge_cap": {
+												ChargeDamage: 0.0f
+												ChargeTime: 0
+												KnockbackSpeed: 0.0f
+												dx: 0.0f
+												dz: 0.0f
+												isCharge: 0b
+												timer: 0
+											}
+											"cataclysm:hook_cap": {
+												hasHook: 0b
+											}
+											"cataclysm:parry_cap": {
+												frame: 0
+											}
+											"cataclysm:render_rush_cap": {
+												damage: 0.0f
+												isRush: 0b
+												timer: 0
+											}
+											"cataclysm:tentacle_cap": {
+												getLastTentacleID: 0
+												hasTentacle: 0b
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+											"goety:misc": {
+												ambientSoundTime: 0
+												clientTargetID: 0
+												customSpinTexture: "textures/entity/trident_riptide.png"
+												freezeLevel: 0
+												mobTargetID: 0
+												shakeTime: 0
+												shieldCool: 0
+												shieldTime: 0
+												shields: 0
+											}
+										}
+										ForgeData: { }
+										HasNectar: 0b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 600
+									TicksInHive: 650
+								}
+							]
+						}
+						BlockStateTag: {
+							honey_level: "5"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "3蜜蜂5蜂蜜"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "3423565FE8BB9EF8"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "蜂巢"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "minecraft:sniffer_egg"
+			id: "71AFD36F3C4593D3"
+			rewards: [{
+				count: 4
+				id: "78D4864BA16D8F76"
+				item: "minecraft:sniffer_egg"
+				type: "item"
+			}]
+			subtitle: "如果你不想自己考古"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "2936BC7C59BBDCEC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "嗅探兽蛋"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["42952B4B0CE9F8F6"]
+			hide_dependent_lines: true
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 11
+					}
+				}
+				id: "goety:brew_bag"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 11
+					}
+				}
+			}
+			id: "349A79EF2048B6F7"
+			rewards: [{
+				id: "523FF484E50C8290"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "充满不祥的气息"
+			tasks: [{
+				id: "3C85EF4E7ACC1029"
+				type: "checkmark"
+			}]
+			title: "诡异巫商"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"26A37DB3B0DA0DB7"
+			]
+			description: [
+				"90%概率吃出禁书碎片，10%概率吃出禁书片段"
+				""
+				"稳定获取禁书片段推荐刷骷髅领主"
+			]
+			icon: "goetydelight:forbidden_soup_bun"
+			id: "6AA5220BF4A31993"
+			rewards: [{
+				count: 3
+				id: "29BFCD76F2D6D25F"
+				item: "goetydelight:forbidden_soup_bun"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "58A52A0BC32C5D73"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "幽匿灌汤包"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"54652BAD5F6A8F82"
+				"3D052D2D34CE48E8"
+				"0D9BEC07A5D91FBC"
+				"64C6B9125932885D"
+			]
+			icon: "goety:mystic_core"
+			id: "7D3F7C29DBF208EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "565F13906A6F886F"
+				table_id: 582258935116387719L
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "673E3B4D7D4CE82B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "自选核心"
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["349A79EF2048B6F7"]
+			icon: "goety:jade"
+			id: "1D87A6F404B4F8CF"
+			rewards: [{
+				count: 4
+				id: "51A6DDFE59D31C7C"
+				item: "goety:jade"
+				type: "item"
+			}]
+			subtitle: "真·绿宝石"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "7418EB949BE95AD9"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "玉"
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["349A79EF2048B6F7"]
+			icon: "goety:treasure_pouch"
+			id: "776C9B378DC1005F"
+			rewards: [{
+				id: "2C4341CA6368801A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "来看看运气吧"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "197DF36FE95B71AA"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "宝藏袋"
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"0EA0E092A346F368"
+			]
+			description: ["购买含有女巫、术士、异教徒的刷怪笼"]
+			hide_until_deps_complete: true
+			icon: "minecraft:crying_obsidian"
+			id: "3441C7C1FD3E5B86"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "290C3D769861365B"
+					item: {
+						Count: 1
+						id: "goety:flame_capture"
+						tag: {
+							mob: "minecraft:witch"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EF7C401001C49EC"
+					item: {
+						Count: 1
+						id: "goety:flame_capture"
+						tag: {
+							mob: "goety:heretic"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CAABD01AB9ECAEA"
+					item: {
+						Count: 1
+						id: "goety:flame_capture"
+						tag: {
+							mob: "goety:warlock"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "用于产出召唤使徒的材料"
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "7B8D20B7C6FCE71D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "3DAEBC2B180A6853"
+					item: "goety:dark_ingot"
+					type: "item"
+				}
+			]
+			title: "安息祭品"
+			x: 15.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["1A868AA7411EF153"]
+			icon: {
+				Count: 1
+				id: "enigmaticaddons:artificial_flower"
+				tag: { }
+			}
+			id: "4B328744901FD676"
+			rewards: [{
+				id: "759C11F5FD3FDF47"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:artificial_flower"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "限量购买"
+			tasks: [
+				{
+					consume_items: true
+					id: "3EE38515B1B67AA7"
+					item: "minecraft:oxeye_daisy"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "3E131A37B2A0EEEE"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "720C6B700AAA8B41"
+					item: { Count: 64, id: "minecraft:lapis_lazuli" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "1077E0B5652723D1"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "1F2E049390CF7EF4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "魔法石英花"
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: {
+				Count: 1
+				id: "minecraft:white_shulker_box"
+				tag: {
+					BlockEntityTag: {
+						Items: [
+							{
+								Count: 64b
+								Slot: 0b
+								id: "minecraft:white_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 1b
+								id: "minecraft:light_gray_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 2b
+								id: "minecraft:gray_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 3b
+								id: "minecraft:black_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 4b
+								id: "minecraft:brown_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 5b
+								id: "minecraft:red_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 6b
+								id: "minecraft:orange_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 7b
+								id: "minecraft:yellow_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 8b
+								id: "minecraft:lime_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 9b
+								id: "minecraft:green_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 10b
+								id: "minecraft:cyan_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 11b
+								id: "minecraft:light_blue_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 12b
+								id: "minecraft:blue_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 13b
+								id: "minecraft:purple_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 14b
+								id: "minecraft:magenta_concrete"
+							}
+							{
+								Count: 64b
+								Slot: 15b
+								id: "minecraft:pink_concrete"
+							}
+						]
+						id: "minecraft:shulker_box"
+					}
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"混凝土 全家分享装\"}"
+					}
+				}
+			}
+			id: "3F81BB8E23F0A38A"
+			rewards: [{
+				id: "6BA59D170C68F26A"
+				item: {
+					Count: 1
+					id: "minecraft:white_shulker_box"
+					tag: {
+						BlockEntityTag: {
+							Items: [
+								{
+									Count: 64b
+									Slot: 0b
+									id: "minecraft:white_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 1b
+									id: "minecraft:light_gray_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 2b
+									id: "minecraft:gray_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 3b
+									id: "minecraft:black_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 4b
+									id: "minecraft:brown_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 5b
+									id: "minecraft:red_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 6b
+									id: "minecraft:orange_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 7b
+									id: "minecraft:yellow_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 8b
+									id: "minecraft:lime_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 9b
+									id: "minecraft:green_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 10b
+									id: "minecraft:cyan_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 11b
+									id: "minecraft:light_blue_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 12b
+									id: "minecraft:blue_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 13b
+									id: "minecraft:purple_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 14b
+									id: "minecraft:magenta_concrete"
+								}
+								{
+									Count: 64b
+									Slot: 15b
+									id: "minecraft:pink_concrete"
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"混凝土 全家分享装\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "26C9001C69DBCA28"
+				item: { Count: 5, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			title: "混凝土"
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:rabbit_foot"
+			id: "68AE27143A9591F8"
+			rewards: [{
+				count: 3
+				id: "6D6CD5553E74B7FD"
+				item: "minecraft:rabbit_foot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "6415D310F1EEE97E"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "兔子脚"
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:ink_sac"
+			id: "7DB313080ABAC25C"
+			rewards: [{
+				count: 4
+				id: "6DEAFA3D912340CC"
+				item: "minecraft:ink_sac"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "1ADA4BA62F84EBA8"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "墨囊"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "enigmaticlegacy:unwitnessed_amulet"
+			id: "5045706DB1E18AD1"
+			rewards: [{
+				command: "/curios add charm @s 1"
+				elevate_perms: true
+				id: "57C2E2C63A4AB6CD"
+				title: "增加一个护符栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "38CA540F100B4E2E"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "07DBC6F1E5B53A3D"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "183D5EAFBE58D234"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加护符栏位"
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "enigmaticlegacy:golden_ring"
+			id: "483C9F535FDCC066"
+			rewards: [{
+				command: "/curios add ring @s 1"
+				elevate_perms: true
+				id: "7CDD9017B1EB15E3"
+				title: "增加一个戒指栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "6CCB072CEEE02D30"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "7E40C09703EAEE46"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "6BBC8448D6B849E8"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加戒指栏位"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:oak_fence"
+			id: "74FB0D1954679A49"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1342DA4EDC639418"
+				table_id: 2338455874096413812L
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "40FF30235B207603"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "牲畜领养"
+			x: 0.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "30BD76A1A6B36856"
+			rewards: [{
+				id: "2B18043C1D3D24F6"
+				item: {
+					Count: 1
+					id: "goety:flame_capture"
+					tag: {
+						mob: "minecraft:wither_skeleton"
+					}
+				}
+				title: "捕捉笼（凋灵骷髅）"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "1CC6A5D73143136D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3C88E01C90006E06"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "4D8B8985ACFBADBD"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			title: "凋灵骷髅捕捉笼"
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"5D683F2A352AD29F"
+				"300FE4F1E27EDEEC"
+			]
+			description: ["&4设置佩戴七咒之戒的时间占比为100%"]
+			hide_until_deps_complete: true
+			icon: "enigmaticlegacy:cursed_ring"
+			id: "0D69C6C1D8C0BD02"
+			rewards: [{
+				command: "/setnoringtime @s 0"
+				elevate_perms: true
+				id: "3BD9379FDA21F912"
+				title: "将未佩戴七咒之戒度过的时间设为0"
+				type: "command"
+			}]
+			subtitle: "如果你不排斥作弊的话……"
+			tasks: [
+				{
+					consume_items: true
+					id: "06ED56EE0DC11965"
+					item: "goety_revelation:ascension_halo"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6891555B50667C37"
+					item: "enigmaticaddons:primeval_cube"
+					type: "item"
+				}
+			]
+			title: "神之力"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "betterfurnacesreforged:extreme_upgrade"
+			id: "73C73B9FD3F54E6F"
+			rewards: [
+				{
+					id: "3BEBDD70C4B18A19"
+					item: "betterfurnacesreforged:ultimate_furnace"
+					type: "item"
+				}
+				{
+					id: "1B424CD3D9BCD9ED"
+					item: "betterfurnacesreforged:ultimate_forge"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "74FCCCCDBD19ED09"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 640L
+					id: "44AECB5375BC5079"
+					item: { Count: 640, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 640L
+					id: "36EE4A6E55D2E9DD"
+					item: { Count: 640, id: "minecraft:cobbled_deepslate" }
+					type: "item"
+				}
+			]
+			title: "终极烧炼"
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"7B07241CF4BB0F0C"
+			]
+			icon: "goetydelight:toxic_meal"
+			id: "50A322C932C5F67B"
+			rewards: [{
+				id: "5771D4FD866FC82B"
+				item: "goetydelight:toxic_meal"
+				type: "item"
+			}]
+			subtitle: "你真的要买这个？"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "6E4953FC0190BD49"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "毒物饭"
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "goety:dark_hat"
+			id: "031F3B711350F9CA"
+			rewards: [{
+				command: "/curios add head @s 1"
+				elevate_perms: true
+				id: "0B176BFF5812B042"
+				title: "增加一个头饰栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "5F0524E2FE39499C"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "25D47A3986FB67E1"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "51926C3D932772C9"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加头饰栏位"
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "goety:dark_robe"
+			id: "61E758A8315A3606"
+			rewards: [{
+				command: "/curios add body @s 1"
+				elevate_perms: true
+				id: "0473613AA70E3645"
+				title: "增加一个胸饰栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "2C36944185113D91"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "4421839B2A50E492"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "1E23C42BEB48F4C6"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加胸饰栏位"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "1013CCB13E88E9BF"
+			rewards: [{
+				count: 40
+				id: "27A16A9A3E328AF1"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "5FD66A683C3A9187"
+				item: { Count: 64, id: "farmersdelight:carrot_crate" }
+				type: "item"
+			}]
+			title: "胡萝卜"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "386980E44FCD501E"
+			rewards: [{
+				count: 40
+				id: "63D7A29974A65536"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "17A3A87280ABA97D"
+				item: "farmersdelight:cabbage_crate"
+				type: "item"
+			}]
+			title: "卷心菜"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "79E0A79EC0997E65"
+			rewards: [{
+				count: 40
+				id: "0A463C065F3B61AB"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "45D1B92BB1249A75"
+				item: "farmersdelight:potato_crate"
+				type: "item"
+			}]
+			title: "马铃薯"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "0E91FA7A57606CF2"
+			rewards: [{
+				count: 40
+				id: "345AE7D7DB69ED77"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "2824757DD59BF3AF"
+				item: "farmersdelight:beetroot_crate"
+				type: "item"
+			}]
+			title: "甜菜根"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "24582218E0AE3343"
+			rewards: [{
+				count: 40
+				id: "10EDB011AEDA4B63"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "6A27A3DEE3D23C5F"
+				item: "farmersdelight:tomato_crate"
+				type: "item"
+			}]
+			title: "番茄"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "23615A96C82F4521"
+			rewards: [{
+				count: 40
+				id: "341EF6E899AF6011"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "大约是卖给村民的2倍价格"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "37B9F2E20C0B0E0F"
+				item: "farmersdelight:onion_crate"
+				type: "item"
+			}]
+			title: "洋葱"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			id: "2BE97A89959B3BB8"
+			rewards: [{
+				count: 40
+				id: "6E9B8B3C38F473B1"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "3254929D5D094AE5"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:enigmatic_fruit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "神秘果"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "curlamoety:soul_necklace"
+			id: "73284FE4532E2475"
+			rewards: [{
+				command: "/curios add necklace @s 1"
+				elevate_perms: true
+				id: "2A3E46C2C0C6D31F"
+				title: "增加一个项链栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "734F0644595B3549"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "00347ACFFE5FB1CD"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "58BA7D2482515E1B"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加项链栏位"
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"78A15F5DE83BCFA5\" } }"]
+			id: "166499017BDE76A9"
+			rewards: [
+				{
+					id: "58B2BFE3E95B490A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B88B1CB21F14B85"
+					table_id: 3630152718938234611L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "7B7656705798A3A1"
+				item: "trials:trial_key"
+				type: "item"
+			}]
+			title: "试炼钥匙收购"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"78A15F5DE83BCFA5\" } }"]
+			id: "2B3FEFE5AF71FCFE"
+			rewards: [
+				{
+					count: 2
+					id: "6966826DFE7CBA35"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B3F7938AF02B4C0"
+					table_id: 3630152718938234611L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13C788BBFB7703AB"
+					table_id: 3630152718938234611L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "290355D5C42AB2E8"
+					table_id: 747494226645644266L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "3ABFA8145C377C6E"
+				item: "trials:trial_key_ominous"
+				type: "item"
+			}]
+			title: "不祥钥匙收购"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"198C5D346D075A73\" } }"]
+			id: "7ECCB49B5FAAC67A"
+			rewards: [
+				{
+					count: 3
+					id: "470A6C26ECB1BE2A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CB67EEC6F9CF357"
+					table_id: 3630152718938234611L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00B0A69F25C01B28"
+					table_id: 747494226645644266L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CFEF2916C784D6D"
+					table_id: 4067254390882571475L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "335E9A9DA0BCCAAB"
+				item: "goetyawaken:cursed_trial_key"
+				type: "item"
+			}]
+			title: "诅咒钥匙收购"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0A946582B399CE2E"]
+			description: ["{ \"text\": \"链接：获取途径\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"145AB5262CEFE286\" } }"]
+			id: "5028769FD2C57B87"
+			rewards: [
+				{
+					count: 3
+					id: "4E69497569D0F0A6"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FDFD30F49C1B5A1"
+					table_id: 99346562287769627L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "019F210C174714B0"
+					table_id: 99346562287769627L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EFC1A950F641CB3"
+					table_id: 99346562287769627L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "0C23FC565DDD9055"
+				item: "goety:void_key"
+				type: "item"
+			}]
+			title: "虚空钥匙收购"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"4CC8C92004C60F6F"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_golden_apple"
+				tag: {
+					CustomBrewEffects: [{
+						Amplifier: 3b
+						BrewId: "effect.goety.purify_debuff"
+						Duration: 0
+					}]
+					CustomPotionEffects: [
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 21
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:health_boost"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 5
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:strength"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1
+							Id: 6
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:instant_health"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 900
+							Id: 10
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:regeneration"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 11
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:resistance"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 81
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:repulsive"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 85
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:photosynthesis"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 14
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:invisibility"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 84
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:frosty_aura"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 3
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:haste"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 1
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:speed"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 79
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:flame_hands"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 80
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:venomous_hands"
+						}
+					]
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"上古附魔金苹果\"}"
+					}
+				}
+			}
+			id: "4C5B799E08C7D874"
+			rewards: [{
+				count: 4
+				id: "282B2B6ABBCE0E21"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_golden_apple"
+					tag: {
+						CustomBrewEffects: [{
+							Amplifier: 3b
+							BrewId: "effect.goety.purify_debuff"
+							Duration: 0
+						}]
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 21
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:health_boost"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 5
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:strength"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1
+								Id: 6
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:instant_health"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 10
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:regeneration"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 11
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:resistance"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 81
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:repulsive"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 85
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:photosynthesis"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 14
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:invisibility"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 84
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:frosty_aura"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 3
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:haste"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 1
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:speed"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 79
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:flame_hands"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 80
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:venomous_hands"
+							}
+						]
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"上古附魔金苹果\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "含有大量药水效果"
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "51841402BFAFA4F4"
+					item: { Count: 4, id: "curlamoety:papers_t4" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "252D0671706281C5"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3A42EC50816A36EE"
+					item: "curlamoety:annihilation_ashes"
+					type: "item"
+				}
+			]
+			title: "上古附魔金苹果"
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"4CC8C92004C60F6F"
+			]
+			icon: {
+				Count: 1
+				id: "goety:gas_brew"
+				tag: {
+					Aquatic: 0b
+					AreaOfEffect: 3
+					CustomBrew: 1b
+					CustomBrewEffects: [
+						{
+							Amplifier: 3b
+							BrewId: "effect.goety.purify_buff"
+							Duration: 0
+						}
+						{
+							Amplifier: 3b
+							BrewId: "effect.goety.strip"
+							Duration: 0
+						}
+					]
+					CustomPotionColor: 5464160
+					CustomPotionEffects: [
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 4
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "minecraft:mining_fatigue"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 37
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "goety:sapped"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 18
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "minecraft:weakness"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 2
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "minecraft:slowness"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [ ]
+							Duration: 1800
+							Id: 65
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "goety:nyctophobia"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 900
+							Id: 20
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "minecraft:wither"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 600
+							Id: 49
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "goety:cursed"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 900
+							Id: 63
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "goety:ender_ground"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 900
+							Id: 50
+							ShowIcon: 1b
+							ShowParticles: 1b
+							"forge:id": "goety:freezing"
+						}
+					]
+					FireProof: 0b
+					Lingering: 1.0f
+					Quaff: 0
+					RepairCost: 0
+					Velocity: 0.0f
+					display: {
+						Name: "{\"text\":\"远古诅咒药云酿\"}"
+					}
+				}
+			}
+			id: "3DA0A8BCF53219F5"
+			rewards: [{
+				count: 4
+				id: "79B89ED55BDAAC4A"
+				item: {
+					Count: 1
+					id: "goety:gas_brew"
+					tag: {
+						Aquatic: 0b
+						AreaOfEffect: 3
+						CustomBrew: 1b
+						CustomBrewEffects: [
+							{
+								Amplifier: 3b
+								BrewId: "effect.goety.purify_buff"
+								Duration: 0
+							}
+							{
+								Amplifier: 3b
+								BrewId: "effect.goety.strip"
+								Duration: 0
+							}
+						]
+						CustomPotionColor: 5464160
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 4
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "minecraft:mining_fatigue"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 37
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "goety:sapped"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 18
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "minecraft:weakness"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 2
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "minecraft:slowness"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [ ]
+								Duration: 1800
+								Id: 65
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "goety:nyctophobia"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 20
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "minecraft:wither"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 600
+								Id: 49
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "goety:cursed"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 63
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "goety:ender_ground"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 50
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "goety:freezing"
+							}
+						]
+						FireProof: 0b
+						Lingering: 1.0f
+						Quaff: 0
+						RepairCost: 0
+						Velocity: 0.0f
+						display: {
+							Name: "{\"text\":\"远古诅咒药云酿\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "含有大量药水效果"
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "71280B9AADD3784A"
+					item: { Count: 4, id: "curlamoety:papers_t4" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "625A28AAC479036D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "50B774943C047F14"
+					item: "curlamoety:annihilation_ashes"
+					type: "item"
+				}
+			]
+			title: "远古诅咒药云酿"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"4CC8C92004C60F6F"
+			]
+			icon: {
+				Count: 1
+				id: "goety:brew"
+				tag: {
+					Aquatic: 0b
+					AreaOfEffect: 0
+					CustomBrew: 1b
+					CustomBrewEffects: [{
+						Amplifier: 3b
+						BrewId: "effect.goety.purify_debuff"
+						Duration: 0
+					}]
+					CustomPotionColor: 3692632
+					CustomPotionEffects: [
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 21
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:health_boost"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 5
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:strength"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1
+							Id: 6
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:instant_health"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 900
+							Id: 10
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:regeneration"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 11
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:resistance"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 81
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:repulsive"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 85
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:photosynthesis"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 14
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:invisibility"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 1800
+							Id: 84
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:frosty_aura"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 3
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:haste"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 1
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:speed"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 79
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:flame_hands"
+						}
+						{
+							Ambient: 0b
+							Amplifier: 3b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 3600
+							Id: 80
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "goety:venomous_hands"
+						}
+					]
+					FireProof: 0b
+					Lingering: 0.0f
+					Quaff: 24
+					RepairCost: 0
+					Velocity: 0.0f
+					display: {
+						Name: "{\"text\":\"远古荣耀精酿\"}"
+					}
+				}
+			}
+			id: "01F5339BB4FB1B13"
+			rewards: [{
+				count: 4
+				id: "12A497823EF2A6C2"
+				item: {
+					Count: 1
+					id: "goety:brew"
+					tag: {
+						Aquatic: 0b
+						AreaOfEffect: 0
+						CustomBrew: 1b
+						CustomBrewEffects: [{
+							Amplifier: 3b
+							BrewId: "effect.goety.purify_debuff"
+							Duration: 0
+						}]
+						CustomPotionColor: 3692632
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 21
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:health_boost"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 5
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:strength"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1
+								Id: 6
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:instant_health"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 10
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:regeneration"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 11
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:resistance"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 81
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:repulsive"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 85
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:photosynthesis"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 14
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:invisibility"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 1800
+								Id: 84
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:frosty_aura"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 3
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:haste"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 1
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "minecraft:speed"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 79
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:flame_hands"
+							}
+							{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 3600
+								Id: 80
+								ShowIcon: 0b
+								ShowParticles: 0b
+								"forge:id": "goety:venomous_hands"
+							}
+						]
+						FireProof: 0b
+						Lingering: 0.0f
+						Quaff: 24
+						RepairCost: 0
+						Velocity: 0.0f
+						display: {
+							Name: "{\"text\":\"远古荣耀精酿\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "含有大量药水效果"
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "00F9937589719B93"
+					item: { Count: 4, id: "curlamoety:papers_t4" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "3A067A39B7FF605F"
+					item: { Count: 16, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5B8DAACBE6E83BC8"
+					item: "curlamoety:annihilation_ashes"
+					type: "item"
+				}
+			]
+			title: "远古荣耀精酿"
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"052B1D29EF40D5B5"
+			]
+			icon: "goety:dark_scroll"
+			id: "6A123B28391772B5"
+			rewards: [{
+				id: "4B805EDE01BFFD4A"
+				item: "goety:dark_scroll"
+				type: "item"
+			}]
+			subtitle: "宰相！留下你的红宝石"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "3CA6A4B6E7D9B937"
+				item: { Count: 32, id: "goety:magic_emerald" }
+				type: "item"
+			}]
+			title: "黑暗卷轴兑换"
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"211851B9163DF3EA"
+				"45A7D81C025C0DAF"
+			]
+			icon: "curlamoety:blueprint_autochopping"
+			id: "174DFDE36E12FF06"
+			rewards: [{
+				id: "3F04E9F79A7788F1"
+				item: "curlamoety:blueprint_autochopping"
+				type: "item"
+			}]
+			subtitle: "解放双手"
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "083C3AB7FA05DEAF"
+					item: { Count: 20, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 20L
+					id: "53C55D596E955815"
+					item: { Count: 20, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "5A8818AB0BD5086C"
+					item: { Count: 32, id: "minecraft:emerald" }
+					type: "item"
+				}
+			]
+			title: "自动切菜机"
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"6EA0E32FA6B81C61"
+			]
+			icon: "curlamoety:blueprint_autobrazier"
+			id: "756E6CBF529378AF"
+			rewards: [
+				{
+					count: 25
+					id: "17CBCA1629C59BD1"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+				{
+					id: "5E52D7FB195B27DC"
+					item: "curlamoety:blueprint_autobrazier"
+					type: "item"
+				}
+				{
+					id: "3C1CE0F193FAD6B4"
+					item: {
+						Count: 1
+						id: "minecraft:written_book"
+						tag: {
+							author: "黑暗机器有限公司"
+							pages: [
+								"{\"text\":\"机器可交互处（南面）：\\nMachine's Interacions\\n(South):\\n\\n投料口 Inlet\\n\\n手动开关 Manul Switch\\n\\n出料口 Outlet\\n\\n员工通道 Staff Channel\"}"
+								"{\"text\":\"准备工作：\\nPreprations:\\n\\n将连接宝石与您的灵魂方舟绑定后，放入机器底层的诅咒之笼中（可从员工通道进入）\\n\\nAfter binding the Transfer Gem with your Soul Ark, place them into the Cursed Cage at the bottom of the machine.(You can get there through staff channel)\"}"
+								"{\"text\":\"机器操作：\\nMachine's Operations:\\n\\n将素材分别从不同投料口放入，之后按下手动开关，机器便会开始工作。\\nPut ingredients into different inlets , and stress the manual switch, then the machine will run.\"}"
+							]
+							resolved: 1b
+							title: "自动亡灵火炉说明书"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "请充分阅读说明书"
+			tasks: [
+				{
+					consume_items: true
+					id: "5AF4ADFFE1626022"
+					item: "goety:necro_brazier"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 60L
+					id: "460B0C59C2110C3F"
+					item: { Count: 60, id: "goety:cursed_ingot" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "2054E95CA824BA53"
+					item: { Count: 64, id: "goety:magic_emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 25L
+					id: "299DAE274D57BF2A"
+					item: { Count: 25, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			title: "自动亡灵火炉"
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"349A79EF2048B6F7"
+				"302E752E9CE87179"
+			]
+			description: [
+				"由于冰火收集器已被修改为&4玩家直接伤害&r，它的使用变得不方便了，而&e项链系列的饰品可以提供更方便高效的灵魂能量自动回复"
+				""
+				"其实是利用冰火收集器的自动灵魂能量生产站"
+				""
+				"先从发电球底部的开口，在&e4块錾制阴影石中间的位置&r放置冰火收集器"
+				""
+				"以南为正面，拉下建筑左边拉杆会开始放置假人，拉下建筑右边拉杆会启动冰火收集器"
+			]
+			icon: "curlamoety:blueprint_powerstation"
+			id: "0465533B73E83452"
+			rewards: [{
+				id: "6587C5B99CCFBA5E"
+				item: "curlamoety:blueprint_powerstation"
+				type: "item"
+			}]
+			subtitle: "从此出门在外不会Low Power"
+			tasks: [
+				{
+					consume_items: true
+					count: 48L
+					id: "31E6A316EB4A2D93"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "79FF70851A894E08"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "5156189BDFD5A3CC"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 20L
+					id: "1221750BF3FEA1F2"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "发电站"
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["349A79EF2048B6F7"]
+			description: [
+				"在坩埚附近养一只黑猫可以增加装瓶数，顺便点缀你的生活"
+				""
+				"这把超维权杖里装了一只未驯服的黑猫，记得放出来之前要确保她没有路逃跑"
+			]
+			icon: "goety:feline_amulet"
+			id: "70240AA0707C55D7"
+			rewards: [{
+				id: "29A8B795F02730C2"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:extradimensional_scepter"
+					tag: {
+						Damage: 0
+						ExtradimensionalEntity: {
+							AbsorptionAmount: 0.0f
+							Age: 0
+							Air: 300s
+							AncientGlint: 0b
+							ArmorDropChances: [
+								0.085f
+								0.085f
+								0.085f
+								0.085f
+							]
+							ArmorItems: [
+								{ }
+								{ }
+								{ }
+								{ }
+							]
+							Attributes: [
+								{
+									Base: 3.0d
+									Name: "minecraft:generic.attack_damage"
+								}
+								{
+									Base: 0.08d
+									Name: "forge:entity_gravity"
+								}
+								{
+									Base: 16.0d
+									Modifiers: [{
+										Amount: 0.07753695215135743d
+										Name: "Random spawn bonus"
+										Operation: 1
+										UUID: [I;
+											-1484039319
+											-226341207
+											-1181543628
+											540346373
+										]
+									}]
+									Name: "minecraft:generic.follow_range"
+								}
+								{
+									Base: 0.30000001192092896d
+									Name: "minecraft:generic.movement_speed"
+								}
+								{
+									Base: 0.1d
+									Name: "caelus:fall_flying"
+								}
+								{
+									Base: 0.0d
+									Name: "minecraft:generic.armor"
+								}
+								{
+									Base: 0.0d
+									Name: "minecraft:generic.armor_toughness"
+								}
+								{
+									Base: 0.0d
+									Name: "forge:step_height_addition"
+								}
+							]
+							BalmData: { }
+							Brain: {
+								memories: { }
+							}
+							CanPickUpLoot: 0b
+							CanUpdate: 1b
+							CitadelData: { }
+							CollarColor: 14b
+							CustomerBrain: {
+								memories: { }
+							}
+							DeathTime: 0s
+							FallDistance: 0.0f
+							FallFlying: 0b
+							Fire: -1s
+							ForcedAge: 0
+							ForgeCaps: {
+								"cataclysm:charge_cap": {
+									ChargeDamage: 0.0f
+									ChargeTime: 0
+									KnockbackSpeed: 0.0f
+									dx: 0.0f
+									dz: 0.0f
+									isCharge: 0b
+									timer: 0
+								}
+								"cataclysm:hook_cap": {
+									hasHook: 0b
+								}
+								"cataclysm:parry_cap": {
+									frame: 0
+								}
+								"cataclysm:render_rush_cap": {
+									damage: 0.0f
+									isRush: 0b
+									timer: 0
+								}
+								"cataclysm:tentacle_cap": {
+									getLastTentacleID: 0
+									hasTentacle: 0b
+								}
+								"curios:inventory": {
+									Curios: [ ]
+								}
+								"ending_library:endinglib_cap": { }
+								"ending_library:endinglib_living_cap": { }
+								"goety:misc": {
+									ambientSoundTime: 0
+									clientTargetID: 0
+									customSpinTexture: "textures/entity/trident_riptide.png"
+									freezeLevel: 0
+									mobTargetID: 0
+									shakeTime: 0
+									shieldCool: 0
+									shieldTime: 0
+									shields: 0
+								}
+								"goetydelight:customer_order_item_list": {
+									CustomerOrderItems: [ ]
+								}
+							}
+							ForgeData: { }
+							GlintTextureType: "ancient"
+							GoetyDelightCustomerEnterCustomerModeCooldown: 0L
+							GoetyDelightCustomerInventory: [ ]
+							GoetyDelightCustomerMode: 0b
+							GoetyDelightCustomerSatietyValue: 0.0f
+							HandDropChances: [
+								0.085f
+								0.085f
+							]
+							HandItems: [
+								{ }
+								{ }
+							]
+							Health: 10.0f
+							HurtByTimestamp: 0
+							HurtTime: 0s
+							InLove: 0
+							Invulnerable: 0b
+							LeftHanded: 0b
+							Motion: [
+								0.012417757554620502d
+								0.24813599859094576d
+								0.0d
+							]
+							OnGround: 0b
+							PersistenceRequired: 0b
+							PortalCooldown: 0
+							Pos: [
+								231.50516618147049d
+								66.7531999805212d
+								134.30000001192093d
+							]
+							Rotation: [
+								182.02716f
+								0.0f
+							]
+							Sitting: 0b
+							"forge:spawn_type": "SPAWN_EGG"
+							variant: "minecraft:all_black"
+						}
+						ExtradimensionalType: "minecraft:cat"
+						ExtradimensionalValid: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "女巫的心头好"
+			tasks: [
+				{
+					consume_items: true
+					id: "5C5ADB46918120EC"
+					item: {
+						Count: 1
+						id: "enigmaticaddons:extradimensional_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0DEBC154D0055267"
+					item: "goety:feline_amulet"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1AAD205ED15E84E5"
+					item: "goety:witch_hat"
+					type: "item"
+				}
+			]
+			title: "黑猫"
+			x: 18.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"639B1545CDA3D21E"
+				"2F33BE43B5F1A150"
+				"4060E879681F0CA4"
+			]
+			icon: "goety_revelation:curios_storage_crystal"
+			id: "112758E362E51384"
+			rewards: [{
+				command: "/curios add curio @s 1"
+				elevate_perms: true
+				id: "76EF32B79BD15889"
+				title: "增加一个通用栏位"
+				type: "command"
+			}]
+			subtitle: "需要击败原版两个boss才可以兑换"
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "3C574D8B11FF5950"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "57B79CA9DEB6F8ED"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "35F247F734CD27B9"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					id: "5A7D71A8CE58BBD7"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "增加通用栏位"
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["211851B9163DF3EA"]
+			icon: "minecraft:coal_block"
+			id: "34E3EF90291648A8"
+			rewards: [{
+				count: 4
+				id: "2479B48C8F353B3E"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "0916E0BFC6E92EDC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "煤炭块"
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"1A868AA7411EF153"
+				"300FE4F1E27EDEEC"
+			]
+			description: ["{ \"text\": \"首次获得后可以兑换\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"300FE4F1E27EDEEC\" } }"]
+			icon: "curlamoety:evil_spirit"
+			id: "65E1A14C5D9B3259"
+			rewards: [{
+				id: "2D1F5CB0B2E0EC7B"
+				item: "curlamoety:evil_spirit"
+				type: "item"
+			}]
+			subtitle: "再生兑换"
+			tasks: [
+				{
+					count: 4L
+					id: "1DA2894BEFF6BEAD"
+					item: { Count: 4, id: "goety:ectoplasm" }
+					type: "item"
+				}
+				{
+					id: "10826890F951A2C0"
+					item: "enigmaticlegacy:evil_essence"
+					type: "item"
+				}
+			]
+			title: "复仇邪魂"
+			x: 16.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1A868AA7411EF153"
+				"5FCB86A1BBF9EE00"
+			]
+			description: ["{ \"text\": \"首次获得后可以兑换\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5FCB86A1BBF9EE00\" } }"]
+			icon: "curlamoety:old_necklace"
+			id: "62F27A108E98C7FA"
+			rewards: [{
+				id: "2AE7A0FF46E92687"
+				item: "curlamoety:old_necklace"
+				type: "item"
+			}]
+			subtitle: "再生兑换"
+			tasks: [
+				{
+					id: "4A244CF7521B1655"
+					item: { Count: 4, id: "goety:ectoplasm" }
+					type: "item"
+				}
+				{
+					id: "7B6918A7496FE68D"
+					item: "goety:cursed_ingot"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0124592906926614"
+					item: { Count: 3, id: "minecraft:chain" }
+					type: "item"
+				}
+			]
+			title: "老旧项链"
+			x: 18.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1A868AA7411EF153"
+				"35542704CE85F80F"
+			]
+			description: ["{ \"text\": \"首次获得后可以兑换\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"35542704CE85F80F\" } }"]
+			icon: "curlamoety:explorer_gloves"
+			id: "0305022F211EFA28"
+			rewards: [{
+				id: "7A43AFE7CABFF79C"
+				item: "curlamoety:explorer_gloves"
+				type: "item"
+			}]
+			subtitle: "再生兑换"
+			tasks: [
+				{
+					count: 3L
+					id: "3AE4CB1A2E41DAD7"
+					item: { Count: 3, id: "minecraft:leather" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0ADAD572D5434FCE"
+					item: { Count: 2, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "探险家手套"
+			x: 19.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1A868AA7411EF153"
+				"10748D131B4FE8AC"
+			]
+			description: ["{ \"text\": \"首次获得后可以兑换\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"10748D131B4FE8AC\" } }"]
+			icon: "curlamoety:gloomy_circlet"
+			id: "28AE6AB7837B14FD"
+			rewards: [{
+				id: "4BB32FA6D6ABE875"
+				item: "curlamoety:gloomy_circlet"
+				type: "item"
+			}]
+			subtitle: "再生兑换"
+			tasks: [
+				{
+					count: 3L
+					id: "7685EB4AEDE08267"
+					item: { Count: 3, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "345054B56245015A"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+			]
+			title: "晦色头环"
+			x: 21.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0926589670C73D9B"
+				"349A79EF2048B6F7"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goetydelight:night_heart_pea_soup"
+			}
+			id: "00EEA79B15E711BC"
+			rewards: [{
+				count: 3
+				id: "3FCFBFB4D256EECE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+						}
+					}
+					id: "goetydelight:night_heart_pea_soup"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "73E906C45D4E2864"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "12D5E47ABBED6667"
+					item: "goety:soul_emerald"
+					type: "item"
+				}
+				{
+					id: "6E01BE70D70E06D6"
+					item: "goety:ectoplasm"
+					type: "item"
+				}
+			]
+			title: "暗夜之心豌豆汤"
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"74C70C6E802CBB5B"
+				"349A79EF2048B6F7"
+			]
+			icon: "goetydelight:ruby_hard_candy"
+			id: "7CB9534179647ECB"
+			rewards: [{
+				id: "494FBE8919C7EBD3"
+				item: "goetydelight:ruby_hard_candy"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "00DAC96F36705F0B"
+				item: { Count: 32, id: "goety:magic_emerald" }
+				type: "item"
+			}]
+			title: "红宝石硬糖"
+			x: 16.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"349A79EF2048B6F7"
+				"76EFCC2A1CCA323D"
+			]
+			icon: "goetydelight:lichs_chaos_stew"
+			id: "48D7CEE619A3DDAF"
+			rewards: [{
+				count: 3
+				id: "12DF5E35FD97BFF5"
+				item: "goetydelight:lichs_chaos_stew"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "7F620D9FBD6A6971"
+					item: { Count: 32, id: "goety:magic_emerald" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "17D9944C680355C9"
+					item: { Count: 4, id: "goety:forbidden_fragment" }
+					type: "item"
+				}
+				{
+					id: "133273B4B40546B7"
+					item: "easy_villagers:villager"
+					type: "item"
+				}
+			]
+			title: "巫妖乱炖"
+			x: 18.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"349A79EF2048B6F7"
+				"0187DB28EC134E1A"
+			]
+			icon: "goetydelight:sundae_of_the_philosophers_potion"
+			id: "27F0612775606FE8"
+			rewards: [{
+				id: "3BB313AEA5414A67"
+				item: "goetydelight:sundae_of_the_philosophers_potion"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "389461694B25A729"
+					item: { Count: 32, id: "goety:magic_emerald" }
+					type: "item"
+				}
+				{
+					id: "4D78C3EF22E28D15"
+					item: { Count: 4, id: "goety:forbidden_fragment" }
+					type: "item"
+				}
+				{
+					id: "7DC3E00B0C68BF03"
+					item: "easy_villagers:villager"
+					type: "item"
+				}
+			]
+			title: "贤者灵药圣代"
+			x: 19.5d
+			y: 5.0d
+		}
+	]
+	title: "兑换所"
+}

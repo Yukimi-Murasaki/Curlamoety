@@ -1,0 +1,30 @@
+{
+	icon: "minecraft:ender_pearl"
+	id: "064F9FE2C6BEF193"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			command: "/tpmaster away 10000 true"
+			elevate_perms: true
+			icon: "immersive_aircraft:biplane"
+			title: "传送一万格"
+			type: "command"
+		}
+		{
+			command: "/tpmaster away 5000 true"
+			elevate_perms: true
+			icon: "minecraft:minecart"
+			title: "传送五千格"
+			type: "command"
+		}
+		{
+			command: "/tpmaster away 2000 true"
+			elevate_perms: true
+			icon: "minecraft:leather_horse_armor"
+			title: "传送两千格"
+			type: "command"
+		}
+	]
+	title: "随机传送"
+}

@@ -1,0 +1,18 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "goety_revelation:item/ender_keeper_sword_normal"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "goety_revelation:item/gui/ender_keeper_sword"
+		},
+		"fixed": {
+			"parent": "goety_revelation:item/gui/ender_keeper_sword"
+		},
+		"ground": {
+			"parent": "goety_revelation:item/gui/ender_keeper_sword"
+		}
+	}
+}

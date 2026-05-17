@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "curlamoety:block/blackmage_souls_statue_1"
+        },
+        "facing=east": {
+            "model": "curlamoety:block/blackmage_souls_statue_1",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "curlamoety:block/blackmage_souls_statue_1",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "curlamoety:block/blackmage_souls_statue_1",
+            "y": 270
+        }
+    }
+}

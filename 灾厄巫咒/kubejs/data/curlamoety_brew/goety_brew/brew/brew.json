@@ -1,0 +1,111 @@
+{
+  "plugin" : "Goety Revelation",
+  "expanded" : {
+    "capacity" : [
+      {
+        "item" : "enigmaticlegacy:astral_dust",
+        "level" : 5
+      },
+      {
+        "item" : "minecraft:nether_star",
+        "level" : 5
+      },
+      {
+        "item" : "cataclysm:lava_power_cell",
+        "level" : 5
+      },
+      {
+        "item" : "cataclysm:witherite_ingot",
+        "level" : 5
+      },
+      {
+        "item" : "twilightforest:fiery_blood",
+        "level" : 5
+      },
+      {
+        "item" : "twilightforest:fiery_tears",
+        "level" : 5
+      },
+      {
+        "item" : "goety:unholy_blood",
+        "level" : 6
+      },
+      {
+        "item" : "cataclysm:essence_of_the_storm",
+        "level" : 6
+      },
+      {
+        "item" : "cataclysm:cursium_ingot",
+        "level" : 6
+      },
+      {
+        "item" : "goety_cataclysm:abyss_essence",
+        "level" : 6
+      },
+      {
+        "item" : "goety:void_echo",
+        "level" : 6
+      },
+      {
+        "item" : "curlamoety:brimstone_orb",
+        "level" : 7
+      }
+    ],
+    "catalysts" : [
+      {
+        "type" : "normal_item",
+        "item" : "enigmaticaddons:ichor_droplet",
+        "effect" : "enigmaticaddons:pure_resistance",
+        "capacityExtra": 9,
+        "soulCost" : 200,
+        "duration" : 1800
+      },
+      {
+        "type" : "normal_item",
+        "item" : "cataclysm:monstrous_horn",
+        "effect" : "cataclysm:monstrous",
+        "capacityExtra": 2,
+        "soulCost" : 100,
+        "duration" : 1800
+      },
+      {
+        "type" : "normal_item",
+        "item" : "enigmaticdelicacy:sticky_pie_slice",
+        "effect" : "enigmaticdelicacy:xp_boost",
+        "soulCost" : 50,
+        "duration" : 3600
+      },
+      {
+        "type" : "normal_item",
+        "item" : "minecraft:quartz",
+        "effect" : "goetyawaken:enchantment_sharpness",
+        "capacityExtra": 1,
+        "soulCost" : 50,
+        "duration" : 1800
+      }
+    ],
+    "augmentation" : [
+      {
+        "item" : "enigmaticdelicacy:enigmatic_seed",
+        "modifier" : "duration",
+        "level" : 3
+      },
+      {
+        "item" : "curlamoety:perfect_matter",
+        "modifier" : "amplifier",
+        "level" : 3
+      },
+      {
+        "item" : "curlamoety:annihilation_ashes",
+        "modifier" : "duration",
+        "level" : 4
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "goety_revelation"
+    }
+  ]
+} 

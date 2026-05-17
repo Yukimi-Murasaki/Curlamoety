@@ -1,0 +1,51 @@
+{
+	icon: {
+		Count: 1
+		id: "twilightforest:ender_bow"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "57AF906E8237C49D"
+	loot_size: 1
+	order_index: 18
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:triple_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:seeker_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:ice_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:ender_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "暮色四大弓"
+}

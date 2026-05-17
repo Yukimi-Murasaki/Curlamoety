@@ -1,0 +1,19 @@
+{
+    "variants":{
+        "facing=north":{
+            "model":"curlamoety:block/witch_desk",
+            "y":180
+        },
+        "facing=east":{
+            "model":"curlamoety:block/witch_desk",
+            "y":270
+        },
+        "facing=south":{
+            "model":"curlamoety:block/witch_desk"
+        },
+        "facing=west":{
+            "model":"curlamoety:block/witch_desk",
+            "y":90
+        }
+    }
+}

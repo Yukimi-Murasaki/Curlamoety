@@ -1,0 +1,13 @@
+# 是否显示游戏启动耗时。
+# Whether to show the game startup time.
+show_startup_time = true
+# 是否显示当前登录账号信息。
+# Whether to show the current login account information.
+show_login_info = true
+# 整体信息显示的左侧 X 坐标。
+# The X coordinate for the entire info display.
+anchor_x = 2
+# 整体信息显示的顶部 Y 坐标。
+# The Y coordinate for the entire info display.
+anchor_y = 2
+

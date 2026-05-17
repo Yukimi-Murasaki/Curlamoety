@@ -1,0 +1,51 @@
+{
+	icon: {
+		Count: 1
+		id: "twilightforest:fortification_scepter"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "2F72E66C816CFAA2"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:twilight_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:lifedrain_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:zombie_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:fortification_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "随机权杖"
+}

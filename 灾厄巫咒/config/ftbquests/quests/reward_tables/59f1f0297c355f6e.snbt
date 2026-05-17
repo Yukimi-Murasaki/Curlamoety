@@ -1,0 +1,25 @@
+{
+	icon: "refinedstorage:crafting_grid"
+	id: "59F1F0297C355F6E"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "refinedstorage:white_crafting_grid" }
+		{ item: "refinedstorage:orange_crafting_grid" }
+		{ item: "refinedstorage:magenta_crafting_grid" }
+		{ item: "refinedstorage:crafting_grid" }
+		{ item: "refinedstorage:yellow_crafting_grid" }
+		{ item: "refinedstorage:lime_crafting_grid" }
+		{ item: "refinedstorage:pink_crafting_grid" }
+		{ item: "refinedstorage:gray_crafting_grid" }
+		{ item: "refinedstorage:light_gray_crafting_grid" }
+		{ item: "refinedstorage:cyan_crafting_grid" }
+		{ item: "refinedstorage:purple_crafting_grid" }
+		{ item: "refinedstorage:blue_crafting_grid" }
+		{ item: "refinedstorage:brown_crafting_grid" }
+		{ item: "refinedstorage:green_crafting_grid" }
+		{ item: "refinedstorage:red_crafting_grid" }
+		{ item: "refinedstorage:black_crafting_grid" }
+	]
+	title: "自选颜色合成终端"
+}

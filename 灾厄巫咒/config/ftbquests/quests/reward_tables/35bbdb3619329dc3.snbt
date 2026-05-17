@@ -1,0 +1,60 @@
+{
+	icon: {
+		Count: 1
+		id: "goety:cursed_knight_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "35BBDB3619329DC3"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "_"
+	}
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "goety:cursed_knight_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "goety:cursed_knight_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "goety:cursed_knight_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "goety:cursed_knight_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "诅咒骑士盔甲"
+}

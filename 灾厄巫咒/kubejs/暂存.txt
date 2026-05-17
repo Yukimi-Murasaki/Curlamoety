@@ -1,0 +1,115 @@
+    .removeLoot('diamond_sword')
+    .removeLoot('diamond_helmet')
+    .removeLoot('diamond_chestplate')
+    .removeLoot('diamond_leggings')
+    .removeLoot('diamond_boots')
+    .removeLoot('golden_axe')
+    .removeLoot('golden_sword')
+    .removeLoot('golden_pickaxe')
+    .removeLoot('golden_boots')
+    .removeLoot('golden_chestplate')
+    .removeLoot('golden_leggings')
+    .removeLoot('golden_hoe')
+    .removeLoot('leather_horse_armor')
+    .removeLoot('iron_horse_armor')
+    .removeLoot('diamond_horse_armor')
+    .removeLoot('golden_horse_armor')
+
+        "goetytwilight:cave_troll_servant" = "minecraft:generic.attack_damage;30"
+		"goetytwilight:giant_miner_servant" = "minecraft:generic.attack_damage;39"
+		"goetytwilight:winter_wolf_servant" = "minecraft:generic.attack_damage;12"
+		"goetytwilight:stable_ice_core_servant" = "minecraft:generic.attack_damage;6"
+		"goetytwilight:snow_guardian_servant" = "minecraft:generic.attack_damage;9"
+		"goetytwilight:slime_beetle_servant" = "minecraft:generic.attack_damage;8"
+		"goetytwilight:pinch_beetle_servant" = "minecraft:generic.attack_damage;8"
+        "goetytwilight:mist_wolf_servant" = "minecraft:generic.attack_damage;12"
+		"goetytwilight:ice_crystal_servant" = "minecraft:generic.attack_damage;15"
+		"goetytwilight:fire_beetle_servant" = "minecraft:generic.attack_damage;8"
+		"goetytwilight:carminite_golem_servant" = "minecraft:generic.attack_damage;27"
+		"goetytwilight:blockchain_goblin_servant" = "minecraft:generic.attack_damage;16"
+		"goetytwilight:goblin_knight_upper_servant" = "minecraft:generic.attack_damage;16"
+		"goetytwilight:goblin_knight_lower_servant" = "minecraft:generic.attack_damage;8"
+		"goetytwilight:towerwood_borer_servant" = "minecraft:generic.attack_damage;75"
+		"goetytwilight:death_tome_servant" = "minecraft:generic.attack_damage;10"
+
+
+CuriosJSEvents.registerRenderer(event=>{
+    event.register(
+        'curlamoety:elemental_gloves',
+        context => {
+            let {
+                stack,
+                slotContext,
+                matrixStack,
+                renderLayerParent,
+                renderTypeBuffer,
+                light,
+                limbSwing,
+                limbSwingAmount,
+                partialTicks,
+                ageInTicks,
+                netHeadYaw,
+                headPitch
+            } = context
+            let { modelManager } = Client
+            let entity = slotContext.entity()
+            let model = modelManager.getModel(new ModelResourceLocation(stack.id, "curlamoety:models/curios/elemental_gloves.json"))
+            matrixStack.pushPose()
+            CuriosRenderer.translateIfSneaking(matrixStack, entity)
+            matrixStack.mulPose(RotationAxis.YP.deg(limbSwing))
+            matrixStack.mulPose(RotationAxis.XP.deg(limbSwingAmount))
+            Client.itemRenderer.render(
+                stack,
+                'third_person_right_hand',
+                false,
+                matrixStack,
+                renderTypeBuffer,
+                light,
+                OverlayTexture.NO_OVERLAY,
+                model
+            )
+            matrixStack.popPose()
+        }
+    )
+})
+
+ItemEvents.entityInteracted('stick',event=>{
+    let {player,target} = event
+    if(target==null||!target.isLiving())return;
+    let item1 = target.getItemBySlot("mainhand")
+    let item2 = target.getItemBySlot("offhand")
+    let item3 = target.getItemBySlot("head")
+    let item4 = target.getItemBySlot("chest")
+    let item5 = target.getItemBySlot("legs")
+    let item6 = target.getItemBySlot("feet")
+    if(item1 == null){
+        player.tell("no")
+    }else{
+        player.tell(item1.displayName)
+    }
+    if(item2 == null){
+        player.tell("no")
+    }else{
+        player.tell(item2.displayName)
+    }
+    if(item3 == null){
+        player.tell("no")
+    }else{
+        player.tell(item3.displayName)
+    }
+    if(item4 == null){
+        player.tell("no")
+    }else{
+        player.tell(item4.displayName)
+    }
+    if(item5 == null){
+        player.tell("no")
+    }else{
+        player.tell(item5.displayName)
+    }
+    if(item6 == null){
+        player.tell("no")
+    }else{
+        player.tell(item6.displayName)
+    }
+})

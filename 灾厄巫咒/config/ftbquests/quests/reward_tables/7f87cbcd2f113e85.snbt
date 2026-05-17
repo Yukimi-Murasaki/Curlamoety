@@ -1,0 +1,19 @@
+{
+	icon: "minecraft:lantern"
+	id: "7F87CBCD2F113E85"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 64, item: "minecraft:torch" }
+		{ count: 64, item: "minecraft:lantern" }
+		{ count: 64, item: "minecraft:sea_lantern" }
+		{ count: 64, item: "minecraft:glowstone" }
+		{ count: 64, item: "minecraft:ochre_froglight" }
+		{ count: 64, item: "minecraft:verdant_froglight" }
+		{ count: 64, item: "minecraft:pearlescent_froglight" }
+		{ count: 64, item: "minecraft:redstone_lamp" }
+		{ count: 64, item: "trials:waxed_copper_bulb" }
+		{ count: 64, item: "minecraft:shroomlight" }
+	]
+	title: "自选照明物"
+}

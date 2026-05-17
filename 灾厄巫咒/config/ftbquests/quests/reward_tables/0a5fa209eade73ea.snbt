@@ -1,0 +1,105 @@
+{
+	icon: "enigmaticaddons:primeval_cube"
+	id: "0A5FA209EADE73EA"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "enigmaticlegacy:golem_heart"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 3s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"大地赐予你坚韧和勇气\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "enigmaticlegacy:ocean_stone"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:depth_strider"
+						lvl: 3s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"大海赐予你自由与洞察\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "enigmaticaddons:revival_leaf"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:thorns"
+						lvl: 3s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"森林赐予你生命和繁荣\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "enigmaticaddons:forgotten_ice"
+				tag: {
+					Enchantments: [{
+						id: "enigmaticaddons:frost_protection"
+						lvl: 4s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"雪山赐予你耐心和冷静\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "enigmaticlegacy:angel_blessing"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:feather_falling"
+						lvl: 4s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"天空赐予你迅捷和果敢\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "enigmaticaddons:lost_engine"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:channeling"
+						lvl: 1s
+					}]
+					RepairCost: 1
+					display: {
+						Name: "{\"text\":\"失落引擎大人把你腿打断\"}"
+					}
+				}
+			}
+		}
+	]
+	title: "随机主世界术石"
+}

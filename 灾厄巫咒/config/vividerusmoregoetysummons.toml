@@ -1,0 +1,154 @@
+
+["Riding Felsteed Focus"]
+	#Riding Felsteed Cost
+	#Range: > 0
+	ridingFelsteedCost = 100
+	#Riding Felsteed Summon Down
+	#Range: 0 ~ 72000
+	ridingFelsteedSummonDown = 20
+	#Max Riding Felsteeds
+	#Range: > 1
+	ridingFelsteedLimit = 2
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	ridingFelsteedTime = 30
+	#Riding Felsteed Cooldown
+	#Range: > 0
+	ridingFelsteedCoolDown = 300
+
+["FallenKnight Spell"]
+	#FallenKnight Servant Summon Down
+	#Range: 0 ~ 72000
+	fallenKnightSummonDown = 120
+	#FallenKnight Spell Cost
+	#Range: > 0
+	fallenKnightCost = 60
+	#Max FallenKnight Servants
+	#Range: > 2
+	fallenKnightLimit = 10
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	fallenKnightTime = 20
+	#FallenKnight Spell Cooldown
+	#Range: > 0
+	fallenKnightCoolDown = 800
+
+["Skeleton Horse Focus"]
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	skeletonHorseTime = 20
+	#Skeleton Horse Cost
+	#Range: > 0
+	skeletonHorseCost = 20
+	#Skeleton Horse Summon Down
+	#Range: 0 ~ 72000
+	skeletonHorseSummonDown = 20
+	#Max Skeleton Horses
+	#Range: > 1
+	skeletonHorseLimit = 10
+	#Skeleton Horse Cooldown
+	#Range: > 0
+	skeletonHorseCoolDown = 300
+
+["Riding Lord Felsteed Focus"]
+	#Riding Lord Felsteed Cost
+	#Range: > 0
+	ridingLordFelsteedCost = 300
+	#Riding Lord Felsteed Summon Down
+	#Range: 0 ~ 72000
+	ridingLordFelsteedSummonDown = 20
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	ridingLordFelsteedTime = 50
+	#Riding Lord Felsteed Cooldown
+	#Range: > 0
+	ridingLordFelsteedCoolDown = 300
+	#Max Riding Lord Felsteeds
+	#Range: > 1
+	ridingLordFelsteedLimit = 1
+
+["Chaos Army Spell"]
+	#Chaos Army Servant Summon Down
+	#Range: 0 ~ 72000
+	chaosArmySummonDown = 120
+	#Max Chaos Army Servants
+	#Range: > 1
+	chaosArmyLimit = 20
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	chaosArmyTime = 20
+	#Chaos Army Spell Cooldown
+	#Range: > 0
+	chaosArmyCoolDown = 700
+	#Chaos Army Spell Cost
+	#Range: > 0
+	chaosArmyCost = 30
+
+["Thrashing Spell"]
+	#Thrashing Spell Cooldown
+	#Range: > 0
+	thrashingCoolDown = 1200
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	thrashingTime = 60
+	#Thrashing Servant Summon Down
+	#Range: 0 ~ 72000
+	thrashingSummonDown = 200
+	#Max Thrashing Servants
+	#Range: > 1
+	thrashingLimit = 5
+	#Thrashing Spell Cost
+	#Range: > 0
+	thrashingCost = 50
+
+["NightStalker Spell"]
+	#NightStalker Spell Cooldown
+	#Range: > 0
+	nightStalkerCoolDown = 1200
+	#NightStalker Spell Cost
+	#Range: > 0
+	nightStalkerCost = 400
+	#NightStalker Servant Summon Down
+	#Range: 0 ~ 72000
+	nightStalkerSummonDown = 200
+	#Max NightStalker Servants
+	#Range: > 1
+	nightStalkerLimit = 2
+	#Time to cast
+	#Range: 0 ~ 72000
+	nightStalkerTime = 40
+
+["Necromancer Spell"]
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	necromancerTime = 20
+	#Necromancer Spell Cooldown
+	#Range: > 0
+	necromancerCoolDown = 1000
+	#Necromancer Spell Cost
+	#Range: > 0
+	necromancerCost = 500
+	#Necromancer Servant Summon Down
+	#Range: 0 ~ 72000
+	necromancerSummonDown = 320
+	#Max Necromancer Servants
+	#Range: > 1
+	necromancerLimit = 2
+
+["Lifestealer Spell"]
+	#Max Lifestealer Servants
+	#Range: > 1
+	lifestealerLimit = 1
+	#Lifestealer Spell Cost
+	#Range: > 0
+	lifestealerCost = 1200
+	#Lifestealer Servant Summon Down
+	#Range: 0 ~ 72000
+	lifestealerSummonDown = 600
+	#Lifestealer Spell Cooldown
+	#Range: > 0
+	lifestealerCoolDown = 3000
+	#Time to cast (100 seconds)
+	#Range: 0 ~ 72000
+	lifestealerTime = 200
+

@@ -1,0 +1,5 @@
+# Allows recipes to be loaded in parallel, independently of each other. If you're experiencing recipe loading issues during your build, disable this.
+# 
+UseAsyncRecipesLoader = true
+# Launches the Speed Benchmark when the server starts, namely at the moment of the first tick
+BenchmarkMode = false

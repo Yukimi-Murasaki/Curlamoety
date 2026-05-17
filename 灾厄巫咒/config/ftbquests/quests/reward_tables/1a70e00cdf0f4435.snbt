@@ -1,0 +1,21 @@
+{
+	icon: "minecraft:oak_log"
+	id: "1A70E00CDF0F4435"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 64, item: "minecraft:oak_log" }
+		{ count: 64, item: "minecraft:spruce_log" }
+		{ count: 64, item: "minecraft:birch_log" }
+		{ count: 64, item: "minecraft:jungle_log" }
+		{ count: 64, item: "minecraft:acacia_log" }
+		{ count: 64, item: "minecraft:dark_oak_log" }
+		{ count: 64, item: "minecraft:mangrove_log" }
+		{ count: 64, item: "minecraft:cherry_log" }
+		{ count: 64, item: "goety:rotten_log" }
+		{ count: 64, item: "goety:windswept_log" }
+		{ count: 64, item: "goety:pine_log" }
+		{ count: 64, item: "goety:chorus_log" }
+	]
+	title: "自选原木"
+}

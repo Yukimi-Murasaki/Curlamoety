@@ -1,0 +1,19 @@
+{
+	icon: "goety:warlock_sash"
+	id: "7524121AC3ACF13E"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ item: "goety:warlock_sash" }
+		{
+			item: {
+				Count: 1
+				id: "goety:infernal_tome"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "亚波伦还是使徒"
+}

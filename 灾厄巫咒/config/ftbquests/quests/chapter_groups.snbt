@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "64A85F1CF1963E94", title: "主要内容" }
+		{ id: "2ECA59494C73C5F0", title: "辅助内容" }
+		{ id: "389115935D73552A", title: "收藏馆" }
+	]
+}

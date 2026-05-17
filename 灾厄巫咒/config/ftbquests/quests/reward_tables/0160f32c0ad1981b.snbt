@@ -1,0 +1,14 @@
+{
+	icon: "enigmaticlegacy:etherium_ore"
+	id: "0160F32C0AD1981B"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ item: "enigmaticdelicacy:etherium_ore", weight: 3.0f }
+		{ count: 2, item: "enigmaticlegacy:etherium_ore", weight: 4.0f }
+		{ count: 4, item: "enigmaticlegacy:astral_dust", weight: 5.0f }
+		{ item: "enigmaticlegacy:void_pearl" }
+		{ item: "enigmaticlegacy:eye_of_nebula" }
+	]
+	title: "随机末地奖励"
+}

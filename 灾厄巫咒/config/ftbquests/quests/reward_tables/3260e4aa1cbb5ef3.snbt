@@ -1,0 +1,15 @@
+{
+	icon: "betterfurnacesreforged:raw_ore_processing_upgrade"
+	id: "3260E4AA1CBB5EF3"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ count: 4, item: "minecraft:deepslate_iron_ore", weight: 5.0f }
+		{ count: 3, item: "minecraft:deepslate_gold_ore", weight: 3.0f }
+		{ count: 3, item: "minecraft:deepslate_lapis_ore", weight: 5.0f }
+		{ count: 3, item: "minecraft:deepslate_redstone_ore", weight: 4.0f }
+		{ item: "minecraft:deepslate_diamond_ore" }
+		{ item: "minecraft:ancient_debris", weight: 0.5f }
+	]
+	title: "随机矿物"
+}

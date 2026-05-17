@@ -1,0 +1,261 @@
+#Pale Golem Servant limit per player
+#Range: > 1
+paleGolemLimit = 4
+#Warden Servant limit per player
+#Range: > 2
+wardenServantLimit = 2
+#Wight Servant limit per player (default: 4)
+#Range: > 1
+wightServantLimit = 4
+#Creeper Servant limit per player (default: 32)
+#Range: > 1
+creeperServantLimit = 32
+#Caerbannog Rabbit Servant limit per player (default: 16)
+#Range: > 1
+caerbannogRabbitServantLimit = 16
+#Wraith Necromancer limit per player (default: 2)
+#Range: > 1
+wraithNecromancerLimit = 2
+#Enderman Servant limit per player (default: 16)
+#Range: > 1
+endermanServantLimit = 16
+#Tormentor Servant limit per player (default: 8)
+#Range: > 1
+tormentorServantLimit = 8
+#Shulker Servant limit per player (default: 8)
+#Range: > 1
+shulkerServantLimit = 8
+#Wither Servant limit per player (default: 2)
+#Range: > 1
+witherServantLimit = 2
+#Ender Keeper Servant limit per player (default: 1)
+#Range: > 1
+enderKeeperServantLimit = 2
+#Apostle Servant limit per player (default: 2)
+#Range: > 1
+apostleServantLimit = 2
+#Callback Apostle feature - enables pre-nerf apostle abilities (default: true)
+callbackApostle = true
+#Allow Apostles to summon armored Zombie Piglin Brutes (default: false)
+apostleSummonArmoredZombiePiglin = false
+#Enable Apostle Servant Armor Renderer(default: true)
+enableApostleServantArmorRenderer = true
+#Mushroom Monstrosity damage cap as a percentage of max health (default: 0.05 = 5%)
+#Range: 0.0 ~ 1.0
+mushroomMonstrosityDamageCap = 0.05
+#Mushroom Monstrosity limit per player (default: 1)
+#Range: > 1
+mushroomMonstrosityLimit = 1
+#Angry Mooshroom limit per player (default: 16)
+#Range: > 1
+angryMooshroomLimit = 16
+#Maid Fairy Servant limit per player (default: 64)
+#Range: > 1
+maidFairyServantLimit = 64
+#Fairy Focus soul cost (default: 4)
+#Range: > 0
+fairyFocusSoulCost = 4
+#Fairy Focus cast duration in ticks (default: 40 - 2 seconds)
+#Range: > 0
+fairyFocusCastDuration = 40
+#Fairy Focus cooldown in ticks (default: 80 - 4 seconds)
+#Range: > 0
+fairyFocusCooldown = 80
+#Whether Obsidian Monolith should glow (default: true)
+obsidianMonolithGlow = true
+#Creeper Focus soul cost (default: 32)
+#Range: > 0
+creeperFocusSoulCost = 32
+#Creeper Focus cast duration in ticks (default: 40)
+#Range: > 0
+creeperFocusCastDuration = 40
+#Creeper Focus cooldown in ticks (default: 200)
+#Range: > 0
+creeperFocusCooldown = 200
+#Stare Focus soul cost (default: 48)
+#Range: > 0
+stareFocusSoulCost = 48
+#Stare Focus cast duration in ticks (default: 80)
+#Range: > 0
+stareFocusCastDuration = 80
+#Stare Focus cooldown in ticks (default: 600)
+#Range: > 0
+stareFocusCooldown = 600
+#Torment Focus soul cost (default: 48)
+#Range: > 0
+tormentFocusSoulCost = 48
+#Torment Focus cast duration in ticks (default: 80)
+#Range: > 0
+tormentFocusCastDuration = 80
+#Torment Focus cooldown in ticks (default: 600)
+#Range: > 0
+tormentFocusCooldown = 600
+#Shulker Missile Focus soul cost (default: 16)
+#Range: > 0
+shulkerMissileFocusSoulCost = 16
+#Shulker Missile Focus cast duration in ticks (default: 0)
+#Range: > 0
+shulkerMissileFocusCastDuration = 0
+#Shulker Missile Focus cooldown in ticks (default: 100)
+#Range: > 0
+shulkerMissileFocusCooldown = 100
+#Mushroom Missile Focus soul cost (default: 32)
+#Range: > 0
+mushroomMissileFocusSoulCost = 32
+#Mushroom Missile Focus cast duration in ticks (default: 20)
+#Range: > 0
+mushroomMissileFocusCastDuration = 20
+#Mushroom Missile Focus cooldown in ticks (default: 100)
+#Range: > 0
+mushroomMissileFocusCooldown = 100
+#Infestation Focus soul cost (default: 8)
+#Range: > 0
+infestationFocusSoulCost = 8
+#Infestation Focus cast duration in ticks (default: 0)
+#Range: > 0
+infestationFocusCastDuration = 0
+#Infestation Focus cooldown in ticks (default: 60)
+#Range: > 0
+infestationFocusCooldown = 60
+#Killer Spell soul cost (default: 8)
+#Range: > 0
+killerSpellSoulCost = 8
+#Killer Spell cast duration in ticks (default: 40)
+#Range: > 0
+killerSpellCastDuration = 40
+#Killer Spell cooldown in ticks (default: 160)
+#Range: > 0
+killerSpellCooldown = 160
+#Killer Spell summon down duration in ticks (default: 160)
+#Range: > 0
+killerSpellSummonDownDuration = 160
+#Wololo Focus soul cost (default: 1)
+#Range: > 0
+wololoFocusSoulCost = 1
+#Wololo Focus cast duration in ticks (default: 60)
+#Range: > 0
+wololoFocusCastDuration = 60
+#Wololo Focus cooldown in ticks (default: 140)
+#Range: > 0
+wololoFocusCooldown = 140
+#Blood Rain Focus soul cost (default: 16)
+#Range: > 0
+bloodRainFocusSoulCost = 16
+#Blood Rain Focus cast duration in ticks (default: 80 - 4 seconds)
+#Range: > 0
+bloodRainFocusCastDuration = 80
+#Blood Rain Focus cooldown in ticks (default: 80 - 4 seconds)
+#Range: > 0
+bloodRainFocusCooldown = 80
+#Desert Plagues Focus soul cost (default: 64)
+#Range: > 0
+desertPlaguesFocusSoulCost = 64
+#Desert Plagues Focus cast duration in ticks (default: 200 - 10 seconds)
+#Range: > 0
+desertPlaguesFocusCastDuration = 200
+#Desert Plagues Focus cooldown in ticks (default: 1200 - 60 seconds)
+#Range: > 0
+desertPlaguesFocusCooldown = 1200
+#Agony Focus soul cost (default: 16)
+#Range: > 0
+agonyFocusSoulCost = 16
+#Agony Focus cast up duration in ticks (default: 0)
+#Range: > 0
+agonyFocusCastUp = 0
+#Agony Focus cooldown in ticks (default: 200)
+#Range: > 0
+agonyFocusCooldown = 200
+#Truth Seeker base damage (default: 12.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+truthSeekerDamage = 12.0
+#Truth Seeker attack speed (default: 0.8)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+truthSeekerAttackSpeed = 0.8
+#Frost Scythe base damage (default: 8.5)
+#Range: 0.0 ~ 1.7976931348623157E308
+frostScytheDamage = 8.5
+#Frost Scythe attack speed (default: 0.6)
+#Range: 0.0 ~ 1.7976931348623157E308
+frostScytheAttackSpeed = 0.6
+#Glaive base damage (default: 8.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+glaiveDamage = 8.0
+#Glaive attack speed (default: 1.2)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+glaiveAttackSpeed = 1.2
+#Grave Bane base damage (default: 8.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+graveBaneDamage = 8.0
+#Grave Bane attack speed (default: 1.2)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+graveBaneAttackSpeed = 1.2
+#Sun Grace base damage (default: 9.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+sunGraceDamage = 9.0
+#Sun Grace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+sunGraceAttackSpeed = 0.5
+#Mace base damage (default: 9.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+maceDamage = 9.0
+#Mace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+maceAttackSpeed = 0.5
+#Moo Shroom Mace base damage (default: 15.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+mooShroomMaceDamage = 15.0
+#Moo Shroom Mace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+mooShroomMaceAttackSpeed = 0.5
+#Claymore base damage (default: 10.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+claymoreDamage = 10.0
+#Claymore attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+claymoreAttackSpeed = 0.6
+#Starless Night base damage (default: 15.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+starlessNightDamage = 15.0
+#Starless Night attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+starlessNightAttackSpeed = 0.6
+#Obsidian Claymore base damage (default: 14.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+obsidianClaymoreDamage = 14.0
+#Obsidian Claymore attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+obsidianClaymoreAttackSpeed = 0.6
+#Enderman Servant blacklisted blocks that cannot be picked up. Default: Minecraft's unbreakable blocks, chests, barrels, and shulker boxes
+endermanServantBlacklist = ["minecraft:bedrock", "minecraft:command_block", "minecraft:chain_command_block", "minecraft:repeating_command_block", "minecraft:barrier", "minecraft:structure_block", "minecraft:structure_void", "minecraft:crafting_table"]
+#Should Poisonous Mooshroom Block heal special owners (Mushroom Monstrosity, Angry Mooshroom, Mushroom Monstrosity Hostile)? Default: true
+allowPoisonousMushroomHealSpecialOwners = true
+#Should Mooshroom Monstrosity be allowed to plant poisonous mushrooms? Default: true
+allowMushroomMonstrosityPlantPoisonousMushroom = true
+#Enable boss music for Wraith Necromancer. Default: true
+wraithNecromancerBossMusic = true
+#Enable legacy music for Wraith Necromancer. Default: false
+wraithNecromancerLegacyMusic = false
+#Enable boss music for rosity. Default: true
+mushroomMonstrosityBossMusic = true
+#Enable boss music for Parched Necromancer. Default: true
+parchedNecromancerBossMusic = true
+#Default time limit for Mushroom Monstrosity dynamic shield in ticks (default: 10)
+#Range: > 0
+mushroomDynamicShieldDefaultLimitTime = 5
+#Enable Blastling Enhancement(default: true)
+enableBlastlingEnhancement = true
+#Enable Snareling Enhancement(default: true)
+enableSnarelingEnhancement = true
+#Enable Watchling Enhancement(default: true)
+enableWatchlingEnhancement = true
+#Enable Squall Golem Enhancement(default: true)
+enableSquallGolemEnhancement = true
+#Enable Leapleaf Enhancement(default: true)
+enableLeapleafEnhancement = true
+#Enable Wildfire Enhancement(default: true)
+enableWildfireEnhancement = true
+#Enable Piker Enhancement(default: true)
+enablePikerEnhancement = true
+#Enable Brood Mother Enhancement(default: true)
+enableBroodMotherEnhancement = true
+

@@ -1,0 +1,968 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21C2C08BA5DA46FD"
+	group: "2ECA59494C73C5F0"
+	icon: {
+		Count: 1
+		id: "minecraft:diamond_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "21C2C08BA5DA46FD"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E83A391921C9611"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "在这个世界，不是虾仁，就是背虾"
+			tasks: [{
+				id: "2A0569CDA7FDBD27"
+				type: "checkmark"
+			}]
+			title: "怪物猎人"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "2BBCAAA360254638"
+			rewards: [
+				{
+					count: 16
+					id: "3D0EDE4E19814DAC"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "0456AE2A195EE2B0"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "734A3018ABDEDD20"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "14D4511A54DE59F6"
+					item: {
+						Count: 1
+						id: "curlamoety:zombie_arm"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:looting"
+								lvl: 2s
+							}]
+							RepairCost: 1
+							Unbreakable: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀100只僵尸"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "27A6CB0C2FAE1B35"
+				type: "kill"
+				value: 100L
+			}]
+			title: "生化危机"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "37C68FA142B1A3E6"
+			rewards: [
+				{
+					count: 16
+					id: "4BBA8DFF0BC54CA9"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "74AC3159DD6C3B5E"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5B0E014FF02013C2"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "51FBEF133A6C7DDE"
+					item: {
+						Count: 1
+						id: "curlamoety:skeleton_leg"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:knockback"
+								lvl: 2s
+							}]
+							RepairCost: 1
+							Unbreakable: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀100只骷髅"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "2AF1A671F651C345"
+				type: "kill"
+				value: 100L
+			}]
+			title: "埋骨者"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "27F1CB0AE9373466"
+			rewards: [
+				{
+					count: 16
+					id: "5342AD1982A86F15"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "38946CD285DE0A77"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "74CC758D438592B7"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "69C457C586EB680E"
+					item: {
+						Count: 1
+						id: "curlamoety:nuke_hammer"
+						tag: {
+							Damage: 0
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀50只苦力怕"
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "6E83E7D9CACAB82B"
+				type: "kill"
+				value: 50L
+			}]
+			title: "拆弹专家"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "5A2126F0ABA5DD5D"
+			rewards: [
+				{
+					count: 24
+					id: "2CA7A43DA87CFC7B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "538A01CDA0E75293"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "14E5CA6D8995331F"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "6E6A2095370CF78D"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:ender_slayer"
+						tag: {
+							Damage: 0
+							RepairCost: 8
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"末影之屠\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀50只末影人"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "6200DDDEB8AF1531"
+				type: "kill"
+				value: 50L
+			}]
+			title: "暗影终结"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			id: "21C87AA45E4F3FF2"
+			rewards: [
+				{
+					count: 16
+					id: "248E10B6ECF33979"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "3E19C215D3F3C6DC"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1613CEAE6C71074F"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "2B1CFE019CE38D6B"
+					item: {
+						Count: 1
+						id: "goety_revelation:venomous_spider_whip"
+						tag: {
+							Damage: 0
+							RepairCost: 8
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"毒蛛长鞭\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀50只蜘蛛"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "79685F43F0CAC38D"
+				type: "kill"
+				value: 50L
+			}]
+			title: "杀虫剂"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "50EBA606EA2F94BC"
+			rewards: [
+				{
+					count: 32
+					id: "3D72657D362FA811"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "75FEF0487A80B41E"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "45C6F2D440D55CA5"
+					item: "trials:ominous_bottle"
+					type: "item"
+				}
+				{
+					id: "7652B2601F4405B2"
+					item: "goety:ominous_orb"
+					type: "item"
+				}
+			]
+			subtitle: "击杀50个掠夺者"
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "6DE6FF3CF95C6BBD"
+				type: "kill"
+				value: 50L
+			}]
+			title: "强盗行径"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "6093C37213A4855D"
+			rewards: [
+				{
+					count: 24
+					id: "1AEE4E0220247C3A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "398C5A6F242F0956"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "72753341A5A2A48A"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "57A1404773067C2E"
+					item: {
+						Count: 1
+						id: "minecraft:golden_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:looting"
+									lvl: 5s
+								}
+							]
+							RepairCost: 10
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"贪婪虚荣\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀100只僵尸主人"
+			tasks: [{
+				entity: "minecraft:zombified_piglin"
+				id: "509C858D44D7E7B8"
+				type: "kill"
+				value: 100L
+			}]
+			title: "地狱屠夫"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "5D3DA20D50C10DEE"
+			rewards: [
+				{
+					count: 32
+					id: "2E2727EC158F51D5"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "196E03C7A668AA9E"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "3E6C9E8E3CE04495"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "2AAB7946AA708FDE"
+					item: {
+						Count: 1
+						id: "curlamoety:wither_flamberge"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:fire_aspect"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:looting"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:sweeping"
+									lvl: 3s
+								}
+							]
+							Unbreakable: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "击杀50只凋灵骷髅"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "005C95263ADBE8A7"
+				type: "kill"
+				value: 50L
+			}]
+			title: "要塞劫掠"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			description: ["寂灭之星由凋灵2.5%掉落，用于制作恶煌蛰针（伪物）、凋灵寂灭聚晶"]
+			id: "4994966F119B62D4"
+			rewards: [
+				{
+					id: "34A4903643DF4B65"
+					item: "goety_revelation:quietus_star"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "138759719FA88796"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2449F320071FD174"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "击杀42只凋灵"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "48D0331D9740C56C"
+				type: "kill"
+				value: 42L
+			}]
+			title: "寂灭时刻"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "minecraft:crafting_table"
+			id: "4B20BD54D0571099"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "我是贝尔·格利尔斯……"
+			tasks: [{
+				id: "41300FA58710EF32"
+				type: "checkmark"
+			}]
+			title: "生存大师"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "5F3E2782BDF0E095"
+			rewards: [{
+				id: "770E784647CF89A6"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			subtitle: "游玩100日"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "79657459D6A19327"
+				stat: "minecraft:play_time"
+				title: "游玩100天"
+				type: "stat"
+				value: 2400000
+			}]
+			title: "时过境迁"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			id: "00C9F7B33E75A5B0"
+			rewards: [
+				{
+					count: 32
+					id: "0446DE141904E074"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "66C12A807EA7065B"
+					item: "easy_villagers:auto_trader"
+					type: "item"
+				}
+				{
+					id: "5BB44C0B96BC264B"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "与村民交易300次"
+			tasks: [{
+				icon: "easy_villagers:villager"
+				id: "335721F7006AD296"
+				stat: "minecraft:traded_with_villager"
+				type: "stat"
+				value: 300
+			}]
+			title: "交易大师"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			id: "0A62D5DA6DB33A43"
+			rewards: [
+				{
+					count: 16
+					id: "3364DE38FC2AD251"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "559BF310E7D81231"
+					item: "farmersdelight:roasted_mutton_chops"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "049D9ED6254139D9"
+					item: "farmersdelight:honey_glazed_ham"
+					type: "item"
+				}
+				{
+					id: "0B6A71B3546BBA23"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "繁殖动物50次"
+			tasks: [{
+				icon: "minecraft:wheat"
+				id: "6428F465548D2D49"
+				stat: "minecraft:animals_bred"
+				type: "stat"
+				value: 50
+			}]
+			title: "种群壮大"
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			id: "51F891C114AB822D"
+			rewards: [
+				{
+					id: "0917155EE7F5B859"
+					item: "enigmaticdelicacy:bloody_custard"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "784C49A8458F8819"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "总计杀死500只生物"
+			tasks: [{
+				id: "16F6BF593AC9252F"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 500
+			}]
+			title: "鲜血铸就"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			id: "03587744DFDF6228"
+			rewards: [
+				{
+					id: "263DDB08E8F7722B"
+					item: "enigmaticdelicacy:etherium_stove"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7E86D69FF3429866"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			subtitle: "吃遍Minecraft所有食物"
+			tasks: [{
+				advancement: "minecraft:husbandry/balanced_diet"
+				criterion: ""
+				id: "7C2A7CEBF3DAE91A"
+				type: "advancement"
+			}]
+			title: "美食家"
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			id: "1C3F439BB0072DB9"
+			rewards: [{
+				id: "740847E791D2CB90"
+				item: "goetyawaken:shadow_shrieker"
+				type: "item"
+			}]
+			subtitle: "让育母蜘蛛击败一只监守者"
+			tasks: [{
+				advancement: "goetydelight:get_parasitized_warden"
+				criterion: ""
+				id: "5A28D34425DD23BF"
+				type: "advancement"
+			}]
+			title: "弱者的复仇"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			description: ["本包调整了巨兽的召唤上限"]
+			icon: "goety:terminus_scroll"
+			id: "514EF86B7B7188B2"
+			rewards: [
+				{
+					id: "7B7C263B52E78FD9"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "7FA3E9BD82B7B357"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+				{
+					id: "661F58BCBD57F678"
+					item: "goety:dark_metal_block"
+					type: "item"
+				}
+			]
+			subtitle: "召唤每一种巨兽"
+			tasks: [
+				{
+					advancement: "goety:goety/summon_redstone_monstrosity"
+					criterion: ""
+					id: "67F347AF333A71BA"
+					type: "advancement"
+				}
+				{
+					advancement: "goety_cataclysm:summon_netherite_monstrosity"
+					criterion: ""
+					icon: "goety_cataclysm:netherite_monstrosity_head"
+					id: "252043E9BE9D8A0F"
+					type: "advancement"
+				}
+				{
+					advancement: "goetyawaken:mushroom_monstrosity"
+					criterion: ""
+					icon: "goetyawaken:mooshroom_monstrosity_head"
+					id: "6E40941AB4EA7ABA"
+					type: "advancement"
+				}
+			]
+			title: "巨物喜好症"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["403298F53892C2CE"]
+			id: "7B1E06489F44B25A"
+			invisible: true
+			progression_mode: "linear"
+			rewards: [
+				{
+					count: 3
+					id: "22DB2465B5C72CF0"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "77077B7DDACCD480"
+					item: "enigmaticdelicacy:divine_fruit_pie"
+					type: "item"
+				}
+			]
+			subtitle: "在绝望的时刻，以冒险者的姿态回应"
+			tasks: [{
+				id: "64912A5E0267C92B"
+				item: "enigmaticaddons:despair_insignia"
+				type: "item"
+			}]
+			title: "绝望的反击"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "minecraft:chest"
+			id: "6FB4C1F1B3E5E8DA"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "我的……都是我的……"
+			tasks: [{
+				id: "337245E14F62E492"
+				type: "checkmark"
+			}]
+			title: "奇珍异宝"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			id: "296AB9DC16ECE86A"
+			rewards: [
+				{
+					id: "44140230F0507CD6"
+					item: "enigmaticaddons:primeval_cube"
+					type: "item"
+				}
+				{
+					id: "01E8F15888621C96"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "收集每一种普通术石"
+			tasks: [{
+				advancement: "enigmaticlegacy:main/all_spellstones"
+				criterion: ""
+				id: "51128F545E3B370B"
+				type: "advancement"
+			}]
+			title: "石之自由"
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			id: "69C362CF3D61B80D"
+			rewards: [
+				{
+					id: "257F81B5AB9B9338"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "3EB0EBC479CC7A51"
+					item: "metalbarrels:netherite_barrel"
+					type: "item"
+				}
+			]
+			subtitle: "打开100个战利品箱"
+			tasks: [{
+				advancement: "lootr:100loot"
+				criterion: ""
+				id: "0EF5F4BA6E63547C"
+				type: "advancement"
+			}]
+			title: "百次"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			id: "6109100EB37E2FE0"
+			rewards: [
+				{
+					id: "7DA980303F9BEBBB"
+					item: "goety:unholy_blood"
+					type: "item"
+				}
+				{
+					id: "7437A50B3A02CA48"
+					item: "goety_revelation:broken_halo"
+					type: "item"
+				}
+				{
+					id: "0F2E1BD3ECC92FD2"
+					item: "goetyawaken:obsidian_tear"
+					type: "item"
+				}
+			]
+			subtitle: "让你的仆从击败使徒"
+			tasks: [{
+				advancement: "goety:goety/servant_kill_apostle"
+				criterion: ""
+				id: "7D4AC1EB0F89D813"
+				type: "advancement"
+			}]
+			title: "天选之子"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			id: "72E6180E363CB71B"
+			rewards: [
+				{
+					id: "2736FD03DEA77A3C"
+					item: "goety:soul_ruby"
+					type: "item"
+				}
+				{
+					id: "320662FE1DA07553"
+					item: "goetydelight:royal_cake_block"
+					type: "item"
+				}
+				{
+					id: "09985611449997BE"
+					item: "goetydelight:viziers_cookbook"
+					type: "item"
+				}
+				{
+					id: "6A31BFCEE493DB6F"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "让你的仆从击败灾厄宰相维齐尔"
+			tasks: [{
+				advancement: "goety:goety/servant_kill_vizier"
+				criterion: ""
+				id: "3E5D2073E3E00162"
+				type: "advancement"
+			}]
+			title: "起义时刻"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goetyawaken:mooshroom_mace"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "512DD3E024EA702D"
+			rewards: [
+				{
+					count: 5
+					id: "64E5D916A55FC780"
+					item: "goetyawaken:superaggregated_mycelial_circuit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E9F441F2FD8235A"
+					item: "goety:dark_metal_block"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4C8612B2783851F4"
+					item: "goetyawaken:soul_sapphire"
+					type: "item"
+				}
+				{
+					id: "44E9BBD34839E0DB"
+					item: {
+						Count: 1
+						id: "goetyawaken:mooshroom_mace"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "让你的仆从击败哞菇巨兽"
+			tasks: [{
+				advancement: "goetyawaken:sporearm_race"
+				criterion: ""
+				id: "03A63FE01E2FE461"
+				type: "advancement"
+			}]
+			title: "黑魔法师与巨像"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			id: "7FB3B16EE38A4F11"
+			rewards: [
+				{
+					count: 4
+					id: "378F8EFA535B9B8C"
+					item: "goety:unholy_fabric"
+					type: "item"
+				}
+				{
+					id: "01BBBAC2B1ED5435"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "5DA7B72F62263E06"
+					item: "goetydelight:sugar_scepter"
+					type: "item"
+				}
+			]
+			subtitle: "收集所有原版聚晶"
+			tasks: [{
+				advancement: "goety:goety/craft_all_focus"
+				criterion: ""
+				id: "1D95D3AFB81BA72E"
+				title: "全能法师"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			id: "4A34EDF36708221A"
+			rewards: [
+				{
+					id: "7CC8A9F793510026"
+					item: "goety_revelation:doom_medal"
+					type: "item"
+				}
+				{
+					id: "6AE31344706EB5C8"
+					item: "goety_revelation:ascension_halo"
+					type: "item"
+				}
+				{
+					id: "237A1F97E7E5CF03"
+					item: "goetyawaken:obsidian_tear"
+					type: "item"
+				}
+				{
+					id: "0ED06063E4254B55"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:cosmic_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "让你的仆从击败亚波伦"
+			tasks: [{
+				advancement: "goety_revelation:servant_kill_apollyon"
+				criterion: ""
+				id: "2B59030475635452"
+				type: "advancement"
+			}]
+			title: "逆伐神明"
+			x: 8.0d
+			y: 3.0d
+		}
+	]
+	title: "挑战任务"
+}

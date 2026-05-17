@@ -1,0 +1,173 @@
+ServerEvents.tags('item',event=>{
+    //苍白金属-银
+    event.add('forge:ingots/silver','goety:pale_steel_ingot')
+
+    //女仆蛋糕
+    event.add('touhou_little_maid:maid_tamed_item','farmersdelight:cake_slice')
+    event.add('touhou_little_maid:maid_tamed_item','goetydelight:royal_cake')
+    event.add('touhou_little_maid:maid_tamed_item','enigmaticdelicacy:cosmic_cake_slice')
+    event.add('touhou_little_maid:maid_tamed_item','twilightforest:experiment_115')
+
+    //手套：镰刀
+    event.add('forge:tools/scythes','goetyawaken:frost_scythe')
+
+    //手套：锤
+    event.add('forge:tools/hammers','cataclysm:infernal_forge')
+    event.add('forge:tools/hammers','cataclysm:void_forge')
+    event.add('forge:tools/hammers','cataclysm:infernal_forge')
+    event.add('forge:tools/hammers','goetyawaken:mace')
+    event.add('forge:tools/hammers','goetyawaken:sun_grace')
+    event.add('forge:tools/hammers','goetyawaken:mushroom_mace')
+    event.add('forge:tools/hammers','curlamoety:nuke_hammer')
+    event.add('forge:tools/hammers','trials:mace')
+    event.add('forge:tools/hammers','goety:philosophers_mace')
+
+    //手套：阔剑
+    event.add('gloves:claymore','goetyawaken:claymore')
+    event.add('gloves:claymore','goetyawaken:obsidian_claymore')
+    event.add('gloves:claymore','enigmaticlegacy:etherium_sword')
+    event.add('gloves:claymore','goetyawaken:starless_night')
+    event.add('gloves:claymore','goety:blade_of_ender')
+    event.add('gloves:claymore','cataclysm:the_incinerator')
+    event.add('gloves:claymore','goety_revelation:valettein')
+    event.add('gloves:claymore','goety_revelation:broken_ender_keeper')
+    event.add('gloves:claymore','goety_revelation:ender_keeper_sword')
+    event.add('gloves:claymore','twilightforest:giant_sword')
+
+    //末影剑类
+    event.add('curlamoety:eksword','goetyawaken:starless_night')
+    event.add('curlamoety:eksword','goety_revelation:broken_ender_keeper')
+    event.add('curlamoety:eksword','goety_revelation:ender_keeper_sword')
+    event.add('curlamoety:eksword','goety:blade_of_ender')
+
+    //手套：平底锅
+    event.add('gloves:pan','farmersdelight:skillet')
+    event.add('gloves:pan','enigmaticlegacy:eldritch_pan')
+
+    //金属粒
+    event.add('forge:nuggets','cataclysm:ancient_metal_nugget')
+    event.add('forge:nuggets','cataclysm:black_steel_nugget')
+
+    //完美物质
+    event.add('perfect:poison_small','goety:venomous_fang')
+    event.add('perfect:poison_small','minecraft:poisonous_potato')
+    event.add('perfect:poison_small','minecraft:pufferfish')
+    event.add('perfect:poison_small','minecraft:spider_eye')
+    event.add('perfect:poison_small','goety:poison_quill_seed')
+    event.add('perfect:fire_small','minecraft:blaze_powder')
+    event.add('perfect:fire_small','minecraft:magma_block')
+    event.add('perfect:fire_small','minecraft:fire_charge')
+    event.add('perfect:fire_small','cataclysm:dying_ember')
+    event.add('perfect:ice_small','minecraft:ice')
+    event.add('perfect:ice_small','goetydelight:ectoplasmic_melon')
+    event.add('perfect:poison_big','goety_revelation:spider_fang')
+    event.add('perfect:poison_big','goetydelight:toxic_meal')
+    event.add('perfect:fire_big','cataclysm:burning_ashes')
+    event.add('perfect:fire_big','cataclysm:ignitium_ingot')
+    event.add('perfect:fire_big','betterfurnacesreforged:netherhot_conductor_block')
+    event.add('perfect:fire_big','cataclysm:lava_power_cell')
+    event.add('perfect:ice_big','minecraft:packed_ice')
+    event.add('perfect:ice_big','goetydelight:ectoplasmic_melon_block')
+
+    //暗夜催化剂
+    event.add('necro:night_catalyst','goety:night_beacon')
+    event.add('necro:night_catalyst','goety:heart_of_the_night')
+
+    //护身符（灾变）
+    event.add('curios:talisman','goety:feline_amulet')
+    event.add('curios:talisman','goety:star_amulet')
+    event.add('curios:talisman','goety:targeting_monocle')
+    event.add('curios:talisman','goetyawaken:gatling_charm')
+    event.add('curios:talisman','goety_revelation:amulet_of_slime')
+    event.add('curios:talisman','goety_revelation:gold_feather')
+    event.add('curios:talisman','curlamoety:witch_amulet_tier1')
+    event.add('curios:talisman','curlamoety:witch_amulet_tier2')
+    event.add('curios:talisman','curlamoety:witch_amulet_tier3')
+    event.add('curios:talisman','curlamoety:witch_amulet_tier4')
+    event.add('curios:talisman','curlamoety:witch_amulet_tier5')
+
+    //戒指（灾变）
+    event.add('curios:rings','goety:ring_of_thirst')
+    event.add('curios:rings','goety:ring_of_want')
+    event.add('curios:rings','goety:ring_of_the_forge')
+    event.add('curios:rings','goety:ring_of_force')
+    event.add('curios:rings','goety:ring_of_the_dragon')
+    event.add('curios:rings','enigmaticlegacy:magnet_ring')
+    event.add('curios:rings','enigmaticlegacy:super_magnet_ring')
+    event.add('curios:rings','enigmaticlegacy:ender_ring')
+
+    //囚犯镐
+    event.add('forge:tools','curlamoety:prisoner_pickaxe')
+    event.add('forge:tools/pickaxes','curlamoety:prisoner_pickaxe')
+    event.add('minecraft:tools','curlamoety:prisoner_pickaxe')
+    event.add('minecraft:pickaxes','curlamoety:prisoner_pickaxe')
+
+    //叶绿破坏者
+    event.add('forge:tools',"curlamoety:chlorophium_breaker")
+    event.add('forge:tools/pickaxes',"curlamoety:chlorophium_breaker")
+    event.add('forge:tools/axes',"curlamoety:chlorophium_breaker")
+    event.add('forge:tools/shovels',"curlamoety:chlorophium_breaker")
+    event.add('forge:tools/hoes',"curlamoety:chlorophium_breaker")
+    event.add('minecraft:tools',"curlamoety:chlorophium_breaker")
+    event.add('minecraft:pickaxes',"curlamoety:chlorophium_breaker")
+    event.add('minecraft:axes',"curlamoety:chlorophium_breaker")
+    event.add('minecraft:shovels',"curlamoety:chlorophium_breaker")
+    event.add('minecraft:hoes',"curlamoety:chlorophium_breaker")
+
+    //工具
+    event.add('forge:tools','curlamoety:zombie_arm')
+    event.add('forge:tools','curlamoety:wither_flamberge')
+    event.add('forge:tools','curlamoety:nuke_hammer')
+    event.add('forge:tools','curlamoety:silver_rapier')
+    event.add('forge:tools','curlamoety:skeleton_leg')
+    event.add('forge:tools','curlamoety:platinum_punch')
+    event.add('forge:tools','curlamoety:glass_pickaxe')
+    event.add('forge:tools','curlamoety:glass_axe')
+    event.add('forge:tools','curlamoety:glass_hoe')
+    event.add('forge:tools','curlamoety:glass_shovel')
+    event.add('forge:tools','curlamoety:magician_hand')
+
+    //分解台·物品
+    event.add("twilightforest:banned_uncraftables","goety_cataclysm:netherite_plating")
+    event.add("twilightforest:banned_uncraftables","goety_cataclysm:ancient_plating")
+    event.add("twilightforest:banned_uncraftables","tarotcards:the_emperor")
+    event.add("twilightforest:banned_uncraftables",'goetyawaken:vanguard_champion_spawn_egg')
+    event.add("twilightforest:banned_uncraftables",'betterfurnacesreforged:raw_ore_processing_upgrade')
+    event.add("twilightforest:banned_uncraftables",'betterfurnacesreforged:ultimate_ore_processing_upgrade')
+    event.add("twilightforest:banned_uncraftables",'betterfurnacesreforged:ultimate_furnace')
+    event.add("twilightforest:banned_uncraftables",'betterfurnacesreforged:ultimate_forge')
+    event.add("twilightforest:banned_uncraftables",'betterfurnacesreforged:iron_conductor_block')
+    event.add("twilightforest:banned_uncraftables","goety:soul_transfer")
+    event.add("twilightforest:banned_uncraftables","goety:soul_candlestick")
+    event.add("twilightforest:banned_uncraftables","goety:cursed_ingot")
+    event.add("twilightforest:banned_uncraftables","goety:empty_focus")
+    event.add("twilightforest:banned_uncraftables","goety:magic_emerald")
+    event.add("twilightforest:banned_uncraftables","goety:savage_tooth")
+    event.add("twilightforest:banned_uncraftables","enigmaticdelicacy:etherium_stove")
+    event.add("twilightforest:banned_uncraftables","goety_revelation:dimensional_will")
+    event.add("twilightforest:banned_uncraftables","minecraft:reinforced_deepslate")
+    event.add("twilightforest:banned_uncraftables","enigmaticdelicacy:infinisoil")
+    event.add("twilightforest:banned_uncraftables","sophisticatedbackpacks:stack_upgrade_tier_4")
+    event.add("twilightforest:banned_uncraftables","cataclysm:abyssal_sacrifice")
+    //分解台·材料
+    event.add("twilightforest:banned_uncrafting_ingredients",'enigmaticdelicacy:astral_sapling')
+    event.add("twilightforest:banned_uncrafting_ingredients",'goety:night_beacon')
+    event.add("twilightforest:banned_uncrafting_ingredients",'goety:heart_of_the_night')
+    event.add("twilightforest:banned_uncrafting_ingredients","minecraft:barrier")
+
+    //传送石
+    event.add('waystones:waystones',"waystones:portstone")
+    event.add('waystones:waystones',"waystones:sharestone")
+    event.add('waystones:waystones',"waystones:end_stone_waystone")
+    event.add('waystones:waystones',"waystones:blackstone_waystone")
+    event.add('waystones:waystones',"waystones:deepslate_waystone")
+    
+})
+
+ServerEvents.tags('block',event=>{
+    event.add('minecraft:wither_immune','goetyawaken:nether_reactor_core')
+})
+
+ServerEvents.tags('entity_type',event=>{
+    //event.add('curlamoety:stealable','minecraft:zombie')
+})

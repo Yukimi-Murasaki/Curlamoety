@@ -1,0 +1,14 @@
+{
+	icon: "goety:dark_ingot"
+	id: "3871CA51BBB414D3"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ count: 4, item: "goety:cursed_ingot", weight: 10.0f }
+		{ count: 3, item: "goety:dark_ingot", weight: 2.0f }
+		{ count: 2, item: "goety:dark_ingot", weight: 3.0f }
+		{ count: 4, item: "goety:pale_steel_ingot", weight: 8.0f }
+		{ count: 4, item: "goety:jade", weight: 8.0f }
+	]
+	title: "随机巫法矿物"
+}

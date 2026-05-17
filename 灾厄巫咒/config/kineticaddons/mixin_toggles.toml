@@ -1,0 +1,82 @@
+# KineticAddons 核心注入机制控制面板
+# KineticAddons Mixin Toggles
+# 格式: Module.ClassName = true/false
+# Format: Module.ClassName = true/false
+# 注意: 修改此文件后必须重启游戏才能生效
+# Notice: Restart required after changes
+
+# [核心重构: 铁砧、附魔与属性]
+# [Core Refactoring: Anvil & Enchantment]
+
+# 铁砧核心机制重构:
+# 1. 移除等级上限: 彻底解除原版 40 级的“过于昂贵”限制，允许无限次锻造。
+# 2. 移除累积惩罚(PWP): 修复铁砧修理次数越多经验消耗越贵的机制，保持合理的固定消耗。
+# 3. 附魔拦截解除: 解除硬核模式或特定模组对物品附魔的强行拦截。
+# Anvil Core Mechanics Refactoring:
+# 1. Level Cap Removal: Completely removes the vanilla 40-level "Too Expensive" limit.
+# 2. No Prior Work Penalty (PWP): Removes the compounding XP cost for repeated repairs.
+# 3. Interception Bypass: Bypasses hardcoded enchantment restrictions.
+anvilenchantment.AnvilEnchantmentCoreMixin$AnvilMenuFix = true
+
+# 铁砧界面优化: 从 GUI 渲染层面彻底抹除“过于昂贵”的红色警告文本。
+# Anvil UI Optimization: Removes the red 'Too Expensive' warning text from the GUI.
+anvilenchantment.AnvilMixin$AnvilScreenFix = true
+
+# 附魔经验消耗平滑化:
+# 1. 免税附魔: 修改原版的经验等级扣除逻辑，改为直接扣除对应的经验点数。
+# 2. 线性消耗: 防止高等级玩家在附魔时损失过多经验，实现绝对公平的等级转换比。
+# Smooth Enchantment XP Cost:
+# 1. Tax-Free Enchanting: Deducts flat XP points instead of entire XP levels.
+# 2. Linear Cost: Prevents high-level players from losing disproportionate amounts of XP.
+anvilenchantment.AnvilEnchantmentCoreMixin$PlayerFix = true
+
+# 附魔台平滑消耗注入: 配合免税附魔逻辑，修改附魔台服务端的经验扣除机制。
+# Enchanting Table Cost Injection: Modifies server-side deduction to support tax-free enchanting.
+anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentMenuFix = true
+
+# 附魔系统解限与过滤:
+# 1. 突破等级上限: 解除原版附魔最高等级限制。
+# 2. 智能双模过滤: 支持基于 ID、Tag 或所属模组的黑/白名单机制，精准控制附魔可用性。
+# Enchantment Uncapping & Filtering:
+# 1. Max Level Unlock: Removes hardcoded vanilla enchantment level caps.
+# 2. Smart Filtering: Supports ID/Tag/Mod-based blacklists and whitelists for precise control.
+anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentFix = true
+
+# 跨模组兼容支持: 将附魔过滤规则与白名单逻辑注入至底层 Helper，确保其他模组的附魔机制正常工作。
+# Cross-Mod Compatibility: Injects filtering rules into the base Helper to ensure modded enchanters work correctly.
+anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentHelperFix = true
+
+# 第六感附魔 (Sixth Sense):
+# 1. 潜行透视: 玩家潜行时激活生物透视描边效果。
+# 2. 动态渲染: 支持基于实体类型或敌对状态的自定义颜色渲染。
+# Sixth Sense Enchantment:
+# 1. Sneak Wallhack: Activates entity glowing outlines when the player sneaks.
+# 2. Dynamic Rendering: Supports custom colors based on entity type or hostility.
+anvilenchantment.mixin.client.EntityGlowingMixin = true
+
+# [其他核心机制]
+# [Other Core Mechanics]
+
+# 真·无限弓: 拥有无限附魔的弓在背包中没有任何箭矢时，依然可以拉弓射击。
+# True Infinity Bow: Infinity bows can be drawn and fired even with zero arrows in the inventory.
+anvilenchantment.ItemAndBlockBehaviorMixin$BowItemFix = true
+
+# 无限流体桶: 赋予流体桶无限属性，支持无限次吸水与倒水而不被消耗。
+# Infinite Fluid Bucket: Grants buckets infinite properties, allowing endless filling and emptying.
+anvilenchantment.InfinityBucketMixins = true
+
+# 万能采集: 允许通过特定附魔（如精准采集等）直接采集树叶等脆弱方块。
+# Universal Harvesting: Allows harvesting fragile blocks like leaves with specific enchantments.
+anvilenchantment.ItemAndBlockBehaviorMixin$BlockFix = true
+
+# 易碎附魔逻辑: 修改物品耐久计算机制，支持易碎或特殊耐久损耗规则判定。
+# Fragile Enchantment Logic: Modifies item durability mechanics to support fragile or special wear rules.
+anvilenchantment.ItemAndBlockBehaviorMixin$ItemStackFix = true
+
+# 自动熔炼支持: 允许“熔炼”类附魔在挖掘方块和开启战利品箱时直接生效。
+# Auto-Smelt Support: Allows smelting enchantments to trigger directly during mining and looting.
+anvilenchantment.ItemAndBlockBehaviorMixin$ServerPlayerGameModeFix = true
+
+# 引雷优化: 强化三叉戟的引雷天气判定逻辑，放宽雷雨天气的严苛要求。
+# Channeling Tweaks: Optimizes Trident Channeling weather checks, relaxing the strict thunderstorm requirement.
+anvilenchantment.ItemAndBlockBehaviorMixin$ThrownTridentFix = true

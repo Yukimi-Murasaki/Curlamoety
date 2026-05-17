@@ -1,0 +1,23 @@
+{
+    "calamitas_laugh":{
+        "category":"neutral",
+        "subtitle":"calamitas_laugh.sub",
+        "sounds":[
+            "curlamoety:calamitas_laugh"
+        ]
+    },
+    "building":{
+        "category":"neutral",
+        "subtitle":"building.sub",
+        "sounds":[
+            "curlamoety:building"
+        ]
+    },
+    "dice":{
+        "category":"neutral",
+        "subtitle":"dice.sub",
+        "sounds":[
+            "curlamoety:dice"
+        ]
+    }
+}

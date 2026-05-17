@@ -1,0 +1,5541 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0AD2953BDFA9B464"
+	group: "389115935D73552A"
+	icon: {
+		Count: 1
+		id: "patchouli:guide_book"
+		tag: {
+			"patchouli:book": "goety:black_book"
+		}
+	}
+	id: "0AD2953BDFA9B464"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["23D2BA6114F0F2D9"]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:dark_wand"
+			}
+			id: "3503920AABD62C73"
+			rewards: [
+				{
+					id: "61C1246AD56EE983"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+				{
+					id: "6370DACE87EB76F5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "工欲善其事，必先利其器"
+			tasks: [{
+				id: "346D2DFE3FE8A55C"
+				title: "魔杖收藏"
+				type: "checkmark"
+			}]
+			title: "魔杖收集"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"不同种类的仪式需要不同的环境、物块、甚至时间天气"
+				""
+				"用物块来伪造环境，可以让一个仪式在不属于它的环境里进行，依靠这个性质，你可以建造出一个“浓缩的世界”"
+			]
+			hide_dependent_lines: true
+			icon: "goety:dark_altar"
+			id: "5ABBF5A2301F43CC"
+			rewards: [
+				{
+					id: "07027053DDA23AAC"
+					item: "goety:dark_altar"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6DCA6904DF613D82"
+					item: "goety:pedestal"
+					type: "item"
+				}
+				{
+					id: "6A3F803182FC2C21"
+					item: "goety:cursed_cage"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "我的仪式遍布全世界"
+			tasks: [{
+				id: "43A1AE7945F57DD1"
+				type: "checkmark"
+			}]
+			title: "仪式搭建"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["489AD2801A7D29E6"]
+			description: ["法帽法袍不仅是施法的助力，也是你保护自己的一种手段，即使佩戴七咒之戒，全套的法帽法袍也会让对应类型的敌人对你中立。"]
+			hide_dependent_lines: true
+			icon: "goety:dark_hat"
+			id: "22C1ADD5578BBE62"
+			rewards: [{
+				count: 16
+				id: "5FDC6097A5AAA113"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "人靠衣装马靠鞍"
+			tasks: [{
+				id: "7BCAFFDBF8423FD7"
+				type: "checkmark"
+			}]
+			title: "法帽法袍收集"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F8AB5209DEB719E"]
+			description: ["这里收录了所有可以获取的聚晶，那些能够出现在主线的大多都是较为好用的聚晶"]
+			hide_dependent_lines: true
+			icon: "goety:empty_focus"
+			id: "103DC4F1BEC126AA"
+			rewards: [{
+				id: "7E3C1B3D4CC979D4"
+				item: "goety:empty_focus"
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "到底要选哪个呢，到底要选哪个呢"
+			tasks: [{
+				id: "5FE32DE5282B377F"
+				type: "checkmark"
+			}]
+			title: "聚晶收集"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "135CD08656D66EDC"
+			rewards: [{
+				count: 2
+				id: "344D804B30039A54"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C2701085900D350"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:dark_wand"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["用于打造装备饰品的仪式，炼药锅需要装有岩浆"]
+			icon: "minecraft:anvil"
+			id: "3F72F379E02600B9"
+			rewards: [{
+				count: 4
+				id: "5D3BC2F29BD80244"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "魔法加工厂"
+			tasks: [
+				{
+					id: "274F1B59E9B31892"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7CECAB1F5F8374B5"
+					item: { Count: 2, id: "minecraft:furnace" }
+					type: "item"
+				}
+				{
+					id: "5B94EAFA48B0D2C5"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "4F1DAEFA568906D9"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "锻造仪式"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3F72F379E02600B9"]
+			description: ["锻造仪式的进阶版，炼药锅需要装有岩浆"]
+			icon: "minecraft:smithing_table"
+			id: "7017AA915B3123FC"
+			rewards: [{
+				id: "6F04E92FF1492663"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "神之锻造间"
+			tasks: [
+				{
+					id: "3B5469EE4DA7C536"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					id: "48122C9FD26401A9"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "7CE421064C1C044B"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "4B7998A61082599B"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+				{
+					id: "600695C67D8E9088"
+					item: "goety_revelation:runestone_engraved_table"
+					type: "item"
+				}
+			]
+			title: "大师锻造仪式"
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["用于注入魔法的仪式，能够为书本或者物品附魔"]
+			icon: "minecraft:enchanting_table"
+			id: "3D04D893A585A491"
+			rewards: [{
+				id: "4CEE1519337C5903"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "魔力注入器"
+			tasks: [
+				{
+					id: "6E441B91AE934158"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0E7E51FF5F404162"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					id: "30B8C205169F3524"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+				{
+					id: "6B146F40597FD491"
+					item: "minecraft:writable_book"
+					type: "item"
+				}
+			]
+			title: "魔法仪式"
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"台阶只要不是木头即可，花盆不是空的即可，需要夜晚才可以进行仪式"
+				""
+				"{ \"text\": \"链接：操控时间\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6152A75CCB46A3DB\" } }"
+			]
+			icon: "minecraft:sculk"
+			id: "6B97765F6F1CEE96"
+			rewards: [{
+				id: "2669293E4DBCB652"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "死亡在此凝聚成型"
+			tasks: [
+				{
+					count: 16L
+					id: "66289952FF9E7511"
+					item: "minecraft:sculk"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1386868EDCB1A084"
+					item: { Count: 16, id: "minecraft:cobblestone_slab" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4A962391186811CE"
+					item: { Count: 8, id: "minecraft:flower_pot" }
+					type: "item"
+				}
+			]
+			title: "死灵仪式"
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B97765F6F1CEE96"]
+			description: ["阅读过禁书卷轴就是大师死灵仪式了"]
+			id: "472EA2A16AE0D12F"
+			rewards: [{
+				id: "0F276713A2C0CB7B"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "无名死者之王"
+			tasks: [{
+				id: "712A20C20F024111"
+				item: "goety:forbidden_scroll"
+				type: "item"
+			}]
+			title: "大师死灵仪式"
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["用于化静为动的仪式"]
+			icon: "goety:animation_core"
+			id: "6924F47B74440EB7"
+			rewards: [{
+				count: 4
+				id: "20687772F3648E37"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "化静为动"
+			tasks: [
+				{
+					id: "29B5CCEF74CA6F2F"
+					item: "minecraft:carved_pumpkin"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "70BBC3651EF2635F"
+					item: { Count: 15, id: "minecraft:ladder" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "67BAAD7171C9B9E0"
+					item: { Count: 15, id: "minecraft:rail" }
+					type: "item"
+				}
+			]
+			title: "活力仪式"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"在y=32及以下即可完成大地仪式"
+				""
+				"或者用&e1&r个锻造台，&e8&r个紫水晶块和&e16&r个深板岩的任意变种"
+			]
+			icon: "minecraft:amethyst_block"
+			id: "4F0A1D0F3F08DE43"
+			rewards: [{
+				count: 4
+				id: "1CB28525755B1C2C"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			subtitle: "地脉之力"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "720CDD471E089F4A"
+				ignore_dimension: false
+				position: [I;
+					-30000000
+					-64
+					-30000000
+				]
+				size: [I;
+					60000000
+					96
+					60000000
+				]
+				title: "深入地下"
+				type: "location"
+			}]
+			title: "大地仪式"
+			x: 20.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"在能够下雪的寒冷群系即可完成冰霜仪式"
+				""
+				"或者用&e4&r个极寒冰灯，&e8&r个雪块，&e16&r个任意类型的冰块（极寒冰灯自身可以冻水成冰）"
+			]
+			icon: "goety:freezing_lamp"
+			id: "51DA58E1D426B679"
+			rewards: [{
+				count: 4
+				id: "41A8063E2167F26D"
+				item: "goety:freezing_lamp"
+				type: "item"
+			}]
+			subtitle: "凝结冰霜之力"
+			tasks: [{
+				id: "0D1D1EDB251EC00B"
+				item: "minecraft:snowball"
+				type: "item"
+			}]
+			title: "冰霜仪式"
+			x: 24.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"在y=128及以上直接就可以完成天空仪式"
+				""
+				"或者用&e4&r个平滑金块，&e8&r个大理石的任意变种，&e16&r个玉瓦"
+			]
+			icon: "goety:marble"
+			id: "113F213BEE658CA3"
+			rewards: [{
+				count: 4
+				id: "150BD5A9156628D2"
+				item: "goety:jade"
+				type: "item"
+			}]
+			subtitle: "天空极为极限"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "60EB865611D29688"
+				ignore_dimension: false
+				position: [I;
+					-30000000
+					128
+					-30000000
+				]
+				size: [I;
+					60000000
+					191
+					60000000
+				]
+				title: "探访高空"
+				type: "location"
+			}]
+			title: "天空仪式"
+			x: 28.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["113F213BEE658CA3"]
+			description: [
+				"条件最苛刻的仪式"
+				""
+				"仪式首先需要是天空仪式，在此条件下加上指定的方块，天气为雷暴且仪式必须暴露在天空之下"
+				""
+				"&e通过天空仪式可以手动召唤雷暴"
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"29DEE9F795190A0B\" } }"
+			]
+			icon: "minecraft:lightning_rod"
+			id: "5088B139583B6A5C"
+			rewards: [{
+				id: "5A4CA7928E89B55B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "I am the storm that is APPROOOOOOOOACHING"
+			tasks: [
+				{
+					count: 4L
+					id: "06F6971CC244F719"
+					item: { Count: 4, id: "minecraft:lightning_rod" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "6924D9B89FF7051D"
+					item: { Count: 12, id: "minecraft:copper_block" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "71A30B5F1DBB3F60"
+					item: { Count: 20, id: "minecraft:chain" }
+					type: "item"
+				}
+			]
+			title: "风暴仪式"
+			x: 31.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["如果在海平面以下的深海群系之中就可以完成深渊仪式，或者你也可以用16个海晶石的任意变种，16个花岗岩的任意变种，4个海晶灯，并令祭坛方块含水来搭建深渊仪式。"]
+			icon: "minecraft:prismarine_bricks"
+			id: "273E327BE9AEDF20"
+			rewards: [{
+				count: 4
+				id: "5626FC97BF536775"
+				item: "minecraft:sea_lantern"
+				type: "item"
+			}]
+			subtitle: "洋流汇聚于此"
+			tasks: [{
+				biome: "minecraft:deep_ocean"
+				id: "2CED888794857B77"
+				title: "访问深海群系"
+				type: "biome"
+			}]
+			title: "深渊仪式"
+			x: 35.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"384C7CEB4BC34ED9"
+				"5ABBF5A2301F43CC"
+			]
+			description: ["必须在下界举行，玄武岩和黑石都支持任意变种"]
+			icon: "minecraft:blackstone"
+			id: "655C3AEF9BB2CF7F"
+			rewards: [{
+				count: 2
+				id: "1BEF3DFDB174EE18"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "这是进阶，那普通下界仪式呢"
+			tasks: [
+				{
+					count: 4L
+					id: "6B34E415BB6A7060"
+					item: { Count: 4, id: "minecraft:glowstone" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2EFDCB5B36D1DB02"
+					item: { Count: 8, id: "minecraft:basalt" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2B1730D27FE89833"
+					item: "minecraft:blackstone"
+					type: "item"
+				}
+			]
+			title: "进阶下界仪式"
+			x: 38.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["655C3AEF9BB2CF7F"]
+			description: ["必须在下界举行，下界砖也可以是红色下界砖"]
+			icon: "minecraft:nether_bricks"
+			id: "7E60D97C9778A1F3"
+			rewards: [{
+				id: "53C22BFD665CA1BF"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			subtitle: "实际上和进阶下界仪式并不是递进关系"
+			tasks: [
+				{
+					count: 4L
+					id: "3DD5347FEE0361D6"
+					item: { Count: 4, id: "minecraft:wither_skeleton_skull" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "512D728B0B77E6EE"
+					item: { Count: 8, id: "minecraft:soul_sand" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "377C3E93F35EC07E"
+					item: { Count: 8, id: "minecraft:nether_wart" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5F7166ADFFC66FBC"
+					item: { Count: 32, id: "minecraft:nether_bricks" }
+					type: "item"
+				}
+			]
+			title: "专家下界仪式"
+			x: 38.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["实际需求的是灵魂火，所以用灵魂土也是可以的"]
+			icon: "minecraft:crying_obsidian"
+			id: "1EA0956210EA5F7E"
+			rewards: [{
+				id: "33571C3F176ED086"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一个仪式还能领两份任务奖励"
+			tasks: [
+				{
+					id: "3CD42A0428CDF760"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2066ECAB867EB326"
+					item: { Count: 4, id: "minecraft:soul_sand" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6C06E524E6684A2C"
+					item: { Count: 8, id: "minecraft:crying_obsidian" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7C2E091B05B356FD"
+					item: { Count: 16, id: "minecraft:obsidian" }
+					type: "item"
+				}
+			]
+			title: "安息仪式"
+			x: 39.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5ABBF5A2301F43CC"
+				"3FB77176A54F547A"
+			]
+			description: ["必须在末地举行，紫珀块可以是任意变种"]
+			icon: "goety:void_block"
+			id: "425C12A195696941"
+			rewards: [{
+				id: "6D5724EB6C35B2C4"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+			subtitle: "凝固虚空之能"
+			tasks: [
+				{
+					count: 16L
+					id: "444D9D8CBB9E0AF4"
+					item: { Count: 16, id: "goety:void_block" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "4D34C67E9F93C78D"
+					item: { Count: 32, id: "minecraft:purpur_block" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "33436EB75092E71A"
+					item: { Count: 64, id: "minecraft:end_stone_bricks" }
+					type: "item"
+				}
+			]
+			title: "末地仪式"
+			x: 42.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "793BFB9295F9C73F"
+			rewards: [
+				{
+					id: "7FAC6BA39E2A75E2"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7988BE67CCE782B2"
+					item: "goety:ice_spike_focus"
+					type: "item"
+				}
+				{
+					id: "44CDDC87A5978B3C"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "13D971FE82652EE4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:frost_staff"
+				}
+				type: "item"
+			}]
+			x: 24.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["793BFB9295F9C73F"]
+			id: "7CED091BF4AF5473"
+			rewards: [
+				{
+					id: "3BF751AF0788E251"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "12DBF3835D6DD628"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "24465EF5B162B47C"
+					item: "goety:frost_nova_focus"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "32A9C400991C0731"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety_revelation:frostbloom_staff"
+				}
+				type: "item"
+			}]
+			x: 24.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "3755C608FEE369D3"
+			rewards: [
+				{
+					id: "44AAE72C6C9B76C3"
+					item: "goety:barricade_focus"
+					type: "item"
+				}
+				{
+					id: "2459D8E34AF94DBC"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "61976C1C11536A6A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "66C5758618AC08F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:geo_staff"
+				}
+				type: "item"
+			}]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "2A0DD9966EB8B7C1"
+			rewards: [
+				{
+					id: "15490F469186E915"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7BE0D2B1A643C7FB"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "4A66F4E09B59F673"
+					item: "goety:steaming_focus"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3FEE7E32D948CFBE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:abyss_staff"
+				}
+				type: "item"
+			}]
+			x: 35.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "16D8BCF17E370A05"
+			rewards: [
+				{
+					id: "22882EE72BEB9150"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "572B8CB91D87888D"
+					item: "goety:launch_focus"
+					type: "item"
+				}
+				{
+					id: "55A60FEC35250132"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "63D4A79209DA5647"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:wind_staff"
+				}
+				type: "item"
+			}]
+			x: 28.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "10EA40578A37486D"
+			rewards: [
+				{
+					id: "446E620FD927C388"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "3D31E2AE2750691F"
+					item: "goety:thunderbolt_focus"
+					type: "item"
+				}
+				{
+					id: "54CFC04B627823A0"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6DA874AC18963B1D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:storm_staff"
+				}
+				type: "item"
+			}]
+			x: 31.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "0C56A385C44519DA"
+			rewards: [{
+				id: "60FE68D2572E3E32"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55B82B789F5DA266"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:nether_staff"
+				}
+				type: "item"
+			}]
+			x: 38.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			hide_dependency_lines: true
+			id: "73267351596B2021"
+			rewards: [
+				{
+					id: "1C3D15B7EB8C899E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "31410AB6B19EB50B"
+					item: "goety:overgrowth_focus"
+					type: "item"
+				}
+				{
+					id: "5CF6257E104DBF5E"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "251748A017CA70C2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:wild_staff"
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			hide_dependency_lines: true
+			id: "76A201989C9D8C76"
+			rewards: [
+				{
+					count: 2
+					id: "2420B61646529F76"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "117587C6BDB86A52"
+					item: "goety:banish_focus"
+					type: "item"
+				}
+				{
+					id: "5715E39C737ED614"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14A83C12A6B985D3"
+					item: "enigmaticlegacy:astral_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "280CCF8BC226504B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:void_staff"
+				}
+				type: "item"
+			}]
+			x: 42.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "01ACDCBFBB7DDDEF"
+			rewards: [{
+				id: "166C8A962A2E0DEB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F965CCF3465C0E8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:necro_staff"
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01ACDCBFBB7DDDEF"]
+			id: "0166C979C0A24A22"
+			rewards: [{
+				id: "7156A140FDDBC382"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EFED92A0047CA51"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:nameless_staff"
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			description: [
+				"不详核心"
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D1254ED61D2A68F\" } }"
+			]
+			hide_dependency_lines: true
+			id: "33D856C7D70B4B08"
+			rewards: [
+				{
+					id: "21242ED371137811"
+					item: "goety:evoker_servant_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "5203627F8F600F81"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "542CE6757AA9CBC9"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05DEF18844AEE601"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:ominous_staff"
+				}
+				type: "item"
+			}]
+			x: 45.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: [""]
+			icon: "goety:mystic_core"
+			id: "1724FAC63B73DA8E"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "一些其他的仪式类型也在这里介绍"
+			tasks: [{
+				id: "531B2E2496C1C834"
+				type: "checkmark"
+			}]
+			title: "系别：魔法"
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "goety:rotting_focus"
+			id: "5E796849BEB86455"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "黑暗的亡灵"
+			tasks: [{
+				id: "52BE0BDA2DB31B9B"
+				type: "checkmark"
+			}]
+			title: "系别：亡灵"
+			x: 12.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:grass_block"
+			id: "6DC983B4379AA8EB"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "大自然的动植物们"
+			tasks: [{
+				id: "7E1299E9174F5859"
+				type: "checkmark"
+			}]
+			title: "系别：荒野"
+			x: 16.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:amethyst_block"
+			id: "7F4912620F709BF6"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "479C8C1FB569277C"
+				type: "checkmark"
+			}]
+			title: "系别：占卜"
+			x: 20.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "goety:ice_cube"
+			id: "004415FBB50E1EE3"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0B094A154593C97C"
+				type: "checkmark"
+			}]
+			title: "系别：冰霜"
+			x: 24.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "goety:wind_core"
+			id: "79D9065F41D17F16"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0ADFDEBE4B68CC4C"
+				type: "checkmark"
+			}]
+			title: "系别：烈风"
+			x: 28.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "goety:lightning_focus"
+			id: "2681ABEDBEA002EA"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "787486AF35DE8D5D"
+				type: "checkmark"
+			}]
+			title: "系别：风暴"
+			x: 31.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:heart_of_the_sea"
+			id: "238BA7208FB91875"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "海底的生灵"
+			tasks: [{
+				id: "5D732A0EBE047A73"
+				type: "checkmark"
+			}]
+			title: "系别：深渊"
+			x: 35.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:netherrack"
+			id: "69EC84B313DA7F93"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "炽热与灵魂之地"
+			tasks: [{
+				id: "05D86166357E5698"
+				type: "checkmark"
+			}]
+			title: "系别：下界"
+			x: 38.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:ender_pearl"
+			id: "66C2FD491E44A55D"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "末影的生灵"
+			tasks: [{
+				id: "7629CA574798F075"
+				type: "checkmark"
+			}]
+			title: "系别：虚空"
+			x: 42.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "minecraft:totem_of_undying"
+			id: "178C6EBBDA39C19E"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "你的同学"
+			tasks: [{
+				id: "2D23671339B80037"
+				type: "checkmark"
+			}]
+			title: "系别：灾厄"
+			x: 45.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["113F213BEE658CA3"]
+			description: ["天空仪式，将两种蘑菇任意一个放置，以及一个钟放置于祭坛基座，下界岩放置于祭坛上"]
+			icon: "minecraft:lightning_rod"
+			id: "29DEE9F795190A0B"
+			rewards: [{
+				count: 4
+				id: "1667B636CFCD66D3"
+				item: "minecraft:lightning_rod"
+				type: "item"
+			}]
+			subtitle: "装逼遭雷劈"
+			tasks: [
+				{
+					id: "403BE348FE8F0ABB"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "5D0DB879B7A8F00C"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					id: "13062B33777B4B0C"
+					item: "minecraft:red_mushroom"
+					type: "item"
+				}
+				{
+					id: "5F10C274ABFC10B4"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+			]
+			title: "召唤雷暴"
+			x: 28.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				""
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"489AD2801A7D29E6\" } }"
+			]
+			id: "20F3E31A266347F6"
+			rewards: [{
+				count: 2
+				id: "6D032E8A682AE1F7"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "08E5CF1BE29ABEF7"
+					item: "goety:dark_hat"
+					type: "item"
+				}
+				{
+					id: "4C46D53FDEA8D69C"
+					item: "goety:dark_robe"
+					type: "item"
+				}
+			]
+			title: "黑暗法装"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				"术士腰带的升级，勉强是个法袍，让术士对你中立"
+				""
+				"在诅咒注入器上转化为变体"
+			]
+			id: "005904048517F993"
+			rewards: [{
+				count: 16
+				id: "1A2076987FDC6C8B"
+				item: "goety:wartful_egg"
+				type: "item"
+			}]
+			subtitle: "腰带太单薄了不是吗"
+			tasks: [{
+				id: "3A1D6FD22A96C89C"
+				item: "goety:warlock_robe"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				"两件均可在诅咒注入器上转化为变体"
+				""
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"061E6DE8C8541501\" } }"
+			]
+			id: "73081F2EFB02C58C"
+			rewards: [{
+				count: 8
+				id: "4B175754167970CC"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "48CBE6154AA09406"
+					item: "goety:witch_hat"
+					type: "item"
+				}
+				{
+					id: "6D1EEB3E3DEA0221"
+					item: "goety:witch_robe"
+					type: "item"
+				}
+			]
+			title: "女巫套装"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				"死灵王冠和冰霜长袍/深渊长袍分别有联动效果"
+				""
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E12ED55AC776FF4\" } }"
+			]
+			id: "4F6D2F5D9EA82589"
+			rewards: [{
+				id: "433101A22A33BDF7"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5056512FC5430D0D"
+					item: "goety:necro_crown"
+					type: "item"
+				}
+				{
+					id: "5A51A3B418BA9C9D"
+					item: "goety:necro_cape"
+					type: "item"
+				}
+			]
+			title: "死灵法装"
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F6D2F5D9EA82589"]
+			description: [
+				""
+				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"08D38FF8D2430ED4\" } }"
+			]
+			id: "0367F6DAE5673938"
+			rewards: [{
+				id: "7833BAAD112E7A47"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "63A43B766C3AF868"
+					item: "goety:nameless_crown"
+					type: "item"
+				}
+				{
+					id: "10B068DBA9CB5E27"
+					item: "goety:nameless_cape"
+					type: "item"
+				}
+			]
+			title: "无名衣冠"
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [""]
+			id: "580CA98248304E35"
+			rewards: [{
+				id: "56C96CD544E1BFBC"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一条项链假装自己是法帽"
+			tasks: [
+				{
+					id: "7B9C44E46C21B550"
+					item: "goety:amethyst_necklace"
+					type: "item"
+				}
+				{
+					id: "4B428EC143EB7005"
+					item: "goety:geo_robe"
+					type: "item"
+				}
+			]
+			title: "地卜法装"
+			x: 20.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["让大自然的动植物对你中立"]
+			id: "7EF9259636868FC5"
+			rewards: [
+				{
+					id: "5DF062D070FBAE6C"
+					item: "goety:mauling_focus"
+					type: "item"
+				}
+				{
+					id: "4CE1D36BF03AF1A1"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "动物国里有大狗嚼，叮咚鸡，踩踩背……个鬼啊"
+			tasks: [
+				{
+					id: "6F56F9D7896D915C"
+					item: "goety:wild_crown"
+					type: "item"
+				}
+				{
+					id: "465C0A7C26392CFD"
+					item: "goety:wild_robe"
+					type: "item"
+				}
+			]
+			title: "荒野法装"
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["长袍可以在诅咒注入器上转化为变体"]
+			id: "22F0858D33CB2889"
+			rewards: [
+				{
+					id: "747F36C40579F52B"
+					item: "goety:hail_focus"
+					type: "item"
+				}
+				{
+					id: "4E784D9500957E6F"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "Let it go~Let it go"
+			tasks: [
+				{
+					id: "0A06CAF848D0124F"
+					item: "goety:frost_crown"
+					type: "item"
+				}
+				{
+					id: "4F2F557A65166F1B"
+					item: "goety:frost_robe"
+					type: "item"
+				}
+			]
+			title: "冰霜法装"
+			x: 24.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["有防摔，还可以"]
+			id: "77508A936EB9CBFE"
+			rewards: [{
+				id: "485987D23D46906E"
+				item: "goety:whirlwind_focus"
+				type: "item"
+			}]
+			subtitle: "狂风呼啸，站在你面前的是一位真正的唤魔者"
+			tasks: [
+				{
+					id: "4CFB165F0D0FE044"
+					item: "goety:wind_crown"
+					type: "item"
+				}
+				{
+					id: "3419FBB92B7D1645"
+					item: "goety:wind_robe"
+					type: "item"
+				}
+			]
+			title: "烈风法装"
+			x: 28.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			id: "63120FEA11208136"
+			rewards: [
+				{
+					id: "621CA86801F167F4"
+					item: "goety:tunnel_focus"
+					type: "item"
+				}
+				{
+					id: "61FD34034DCCC321"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:channeling"
+								lvl: 1s
+							}]
+							RepairCost: 17
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"阎魔刀\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "If you want it, then you have to craft it."
+			tasks: [
+				{
+					id: "67398A98C305C15B"
+					item: "goety:storm_crown"
+					type: "item"
+				}
+				{
+					id: "22837722555259C7"
+					item: "goety:storm_robe"
+					type: "item"
+				}
+			]
+			title: "风暴法装"
+			x: 31.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["让海洋生物对你中立"]
+			id: "23DFC4FCF81AB41A"
+			rewards: [
+				{
+					id: "609D38B7F7ECCFA5"
+					item: "goety:guardian_focus"
+					type: "item"
+				}
+				{
+					id: "3746282FFD43DDF1"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "这是我吃过最好吃的美味蟹堡"
+			tasks: [
+				{
+					id: "2C292C871C780D92"
+					item: "goety:abyss_crown"
+					type: "item"
+				}
+				{
+					id: "3BB00B6D10DA7DED"
+					item: "goety:abyss_robe"
+					type: "item"
+				}
+			]
+			title: "深渊法装"
+			x: 35.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				"让下界生物对你中立"
+				""
+				"长袍可以在诅咒注入器上转化为变体"
+			]
+			id: "219F18C8E4193291"
+			rewards: [
+				{
+					count: 2
+					id: "6EB1E295EDD0EFDC"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "0E6822C22B6A3A65"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "3F37D3F840A82C00"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			subtitle: "无底坑之王，欠费版"
+			tasks: [
+				{
+					id: "323EDE6D0D2C5240"
+					item: "goety:nether_crown"
+					type: "item"
+				}
+				{
+					id: "48118D7A11ADED8F"
+					item: "goety:nether_robe"
+					type: "item"
+				}
+			]
+			title: "下界法装"
+			x: 38.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["让末地生物对你中立"]
+			id: "7F826C0D5C6374B6"
+			rewards: [
+				{
+					id: "6D19FFEB9A889DB2"
+					item: "goety:watching_focus"
+					type: "item"
+				}
+				{
+					id: "2EDF284C2A525B47"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60BF617C1F45F1E0"
+					item: "enigmaticlegacy:astral_dust"
+					type: "item"
+				}
+			]
+			subtitle: "现在你也是末影人"
+			tasks: [
+				{
+					id: "2E5FF2ED10A4B240"
+					item: "goety:void_crown"
+					type: "item"
+				}
+				{
+					id: "5067898E94402232"
+					item: "goety:void_robe"
+					type: "item"
+				}
+			]
+			title: "虚空法装"
+			x: 42.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			id: "61EABE2F2C59D793"
+			rewards: [{
+				id: "683E99882A339E5C"
+				item: "goety:vexing_focus"
+				type: "item"
+			}]
+			subtitle: "你们真是害苦了我呀"
+			tasks: [
+				{
+					id: "3E792FD835B34274"
+					item: "goety:grand_turban"
+					type: "item"
+				}
+				{
+					id: "33B9682D20B10903"
+					item: "goety:grand_robe"
+					type: "item"
+				}
+			]
+			title: "华丽法装"
+			x: 45.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: ["两件均可以在诅咒注入器上转化为变体"]
+			id: "79E513D1DE66F831"
+			rewards: [{
+				id: "1FD19376C803467F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5899180365F7190C"
+					item: "goety:unholy_hat"
+					type: "item"
+				}
+				{
+					id: "3F0F0631F29610E8"
+					item: "goety:unholy_robe"
+					type: "item"
+				}
+			]
+			title: "不洁法装"
+			x: 39.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "74BBDCE1E50AA11A"
+			rewards: [{
+				id: "74CE35160F3CD59F"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "就是打火石"
+			tasks: [{
+				id: "10DED21AE257AB70"
+				item: "goety:ignite_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "00931EA172CCFFDE"
+			rewards: [{
+				id: "3C91CCE7C3D00469"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "马戏团表演"
+			tasks: [{
+				id: "375FA9C5ED05B544"
+				item: "goety:fire_breath_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "22E4AE0C82666AAA"
+			rewards: [{
+				id: "2975B787E588C109"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "法师基础之魔法飞弹"
+			tasks: [{
+				id: "6B402F7236D1D91B"
+				item: "goety:soul_bolt_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21CE0E994B382681"
+			rewards: [{
+				id: "7E17D0DB657C8EFB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "灵魂束可以被升级你能吗"
+			tasks: [{
+				id: "6AF4E5A463C338A4"
+				item: "goety:magic_bolt_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			description: ["召唤分身，分身可以分散敌人的注意，抵挡伤害，如果装备了幻术师长袍或者无名长袍，则分身将能够实际造成伤害"]
+			id: "6160B8C262443331"
+			rewards: [{
+				id: "4DC7DB47511523FE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "这些都是分身"
+			tasks: [{
+				id: "6266D1D4BD7F858F"
+				item: "goety:illusion_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["22C1ADD5578BBE62"]
+			description: [
+				"可以在诅咒注入器上转化为变体"
+				""
+				"让玩家的隐身更加彻底：隐藏武器与盔甲，大幅缩短敌人索敌距离"
+				""
+				"强化幻象聚晶：让幻象的箭矢可以造成少量伤害，并且释放时使自身隐身"
+			]
+			id: "59BFE083E53A6987"
+			rewards: [{
+				count: 4
+				id: "68E6C6612086D4A6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78EBF5D4747875D6"
+				item: "goety:illusion_robe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1A34DE826B54CE26"
+			rewards: [{
+				id: "183D81D5957B7849"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "一闪一闪亮晶晶"
+			tasks: [{
+				id: "1101BF30E416D44C"
+				item: "goety:soul_light_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "142A2626AD5D1F75"
+			rewards: [{
+				id: "4C4D156634E350AF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "更亮更好用"
+			tasks: [{
+				id: "5851ABD89D331ADF"
+				item: "goety:glow_light_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "19050DA0260E8983"
+			rewards: [{
+				id: "2B30B584AEABA65D"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Craft巫法"
+			tasks: [{
+				id: "16C5F773A2E7725B"
+				item: "goety:crafting_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "41821C3F4F180979"
+			rewards: [{
+				id: "5311695CEDA3FEF7"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "我现在还硬邦邦地站着啊！"
+			tasks: [{
+				id: "5228C26960A65E00"
+				item: "goety:iron_hide_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0A109551C748EF3E"
+			rewards: [{
+				id: "24761E0A4FDAB12F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "好悬没给我李宁踹开线"
+			tasks: [{
+				id: "7675DE9C2FB7EBB7"
+				item: "goety:bulwark_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "32A85523EF5708B1"
+			rewards: [{
+				id: "129E5A7BBF0D2D2A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "拜托，你很弱诶"
+			tasks: [{
+				id: "4FCC75F0DD063B5C"
+				item: "goety:weakening_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0DADF757B881165F"
+			rewards: [{
+				id: "3EB6824899603550"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "优化！"
+			tasks: [{
+				id: "5723932FB66E2AE8"
+				item: "goety:soul_heal_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "622ED254B362F1ED"
+			rewards: [{
+				id: "39FA18A24832C07B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "圣！光！爆！发！"
+			tasks: [{
+				id: "73286D35709C18EC"
+				item: "goety:shockwave_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			icon: "goety:arrow_rain_focus"
+			id: "325924D6083CCA51"
+			subtitle: "由于会引发崩溃，已禁用获取"
+			tasks: [{
+				id: "0EF044569C389185"
+				type: "checkmark"
+			}]
+			title: "箭雨聚晶"
+			x: 3.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5344BB668B1AFAD6"
+			rewards: [{
+				id: "0B8D475E256E2805"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "原力与你同在"
+			tasks: [{
+				id: "4B862CD91C6D4E22"
+				item: "goety:telekinesis_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5B4AC76A6AB8A8FD"
+			rewards: [{
+				id: "51D51825A2FFDB73"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "机枪手，阵线左移5厘米"
+			tasks: [{
+				id: "150A2E40503AE61F"
+				item: "goety:command_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4CC5DFFD28D96194"
+			rewards: [{
+				id: "4EC40672AAC81CD1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "裹甲衔枚，伺机而行"
+			tasks: [{
+				id: "21A0571318C12E99"
+				item: "goety:order_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3612317482A215A1"
+			rewards: [{
+				id: "1184BE8ED93DBAA1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我听到你了"
+			tasks: [{
+				id: "43A46B2673D4C0F3"
+				item: "goety:sonic_boom_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "270D7ABEBA37959A"
+			rewards: [{
+				id: "7B7E9A3E0BF4C417"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "幻影致命光！"
+			tasks: [{
+				id: "2ED7454E587C1E2F"
+				item: "goety:corruption_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "059914C0E6C93C50"
+			rewards: [{
+				id: "6C4F7F44CA6EF628"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Brains"
+			tasks: [{
+				id: "774485EFAF53A3E9"
+				item: "goety:rotting_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "61E8108BD06D35B6"
+			rewards: [{
+				id: "020F0E11FEDB8AF1"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "现在你有了一髅筐的仆从"
+			tasks: [{
+				id: "482BCDEBEEED588A"
+				item: "goety:osseous_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1CE8D9EE4A873F31"
+			rewards: [{
+				id: "10EA793C841A3CA7"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "骨冷灵火"
+			tasks: [{
+				id: "6AB21E0770AB632F"
+				item: "goety:ghost_fire_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0FDD67469811C1BF"
+			rewards: [{
+				id: "52D05BE4ADB9FA4F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "死神来了"
+			tasks: [{
+				id: "348AB3A49E29F04C"
+				item: "goety:reaping_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "66BACEF6AD4D2BFA"
+			rewards: [{
+				id: "54B5CD54C03BE49D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "你可真是个骇人精"
+			tasks: [{
+				id: "7867A13A07C7A3A2"
+				item: "goety:spooky_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4D6559043D2B569B"
+			rewards: [{
+				id: "21EB7CE2A66641C5"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "查寝时间到了"
+			tasks: [{
+				id: "2D3EE0A0E89883CC"
+				item: "goety:phantasm_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4709BE05099FBD0A"
+			rewards: [{
+				id: "255A82788AD67A26"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "捅死你捅死你捅死你"
+			tasks: [{
+				id: "7F6953037ED14B91"
+				item: "goety:vanguard_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "02DECC8DAD3E1D55"
+			rewards: [{
+				id: "1FB6ABF74AB77E94"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "小锤40大锤80"
+			tasks: [{
+				id: "79E1C98CE73717C4"
+				item: "goety:blackguard_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5C72A7383B4CF2D5"
+			rewards: [{
+				id: "5BE0A1D3D656C3A8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "本单要吸管"
+			tasks: [{
+				id: "5F1212D45302005E"
+				item: "goety:leeching_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6C321606657C74E1"
+			rewards: [{
+				count: 2
+				id: "05715B63434BF0B0"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "阿瓦达啃大瓜！"
+			tasks: [{
+				id: "1557765ADCE9B399"
+				item: "goety:killing_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4B5BEBD8B2E681AD"
+			rewards: [{
+				id: "3F2B96E7A161B8AD"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "叟，叟没了就好一点了，可以庄~心地这个骷髅头"
+			tasks: [{
+				id: "0145CD8954BEDA16"
+				item: "goety:skull_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5FDB0BD5E12BF551"
+			rewards: [{
+				id: "4C4914DA3B98FBAC"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "你们别偷我东西"
+			tasks: [{
+				id: "01835627A0F0924F"
+				item: "goety_cataclysm:desert_raid_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "302959A1327791C2"
+			rewards: [{
+				id: "4C8D885E846E4926"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "至死不渝"
+			tasks: [{
+				id: "132664C16A0A0B9B"
+				item: "goety_cataclysm:cursed_grave_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "475588AE59833495"
+			rewards: [{
+				id: "5FA1AC89713A3A8B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "充满安全感"
+			tasks: [{
+				id: "76B21074965EB448"
+				item: "goety_cataclysm:cursed_cairn_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "76D6DC4C98E3EE8C"
+			rewards: [{
+				id: "03077E2003BD9394"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "曾经守卫监牢，现在守护着你"
+			tasks: [{
+				id: "6365EA7B5C35F8D2"
+				item: "goety_cataclysm:cursed_tomb_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "61C368658AEE4084"
+			rewards: [{
+				id: "047DEEF41D1B90AC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "嗡嗡嗡嗡嗡嗡"
+			tasks: [{
+				id: "342D7EFDC0109311"
+				item: "goety:swarm_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21C1B36CFA8E050D"
+			rewards: [{
+				id: "5B010C066C5466BF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "有毒箭机关"
+			tasks: [{
+				id: "7D3B17611A641E02"
+				item: "goety:poison_dart_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7BEBAC4DC07B087D"
+			rewards: [{
+				id: "19D513C6D886334E"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "我可不想被勾住衣服"
+			tasks: [{
+				id: "43183D8F4CF4A952"
+				item: "goety:blossoming_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "71FC7045E3FBE85D"
+			rewards: [{
+				id: "558E0A6BE299FF06"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "失败的曼"
+			tasks: [{
+				id: "2023959F49D50122"
+				item: "goety:grapple_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3CDAEB027D07F482"
+			rewards: [{
+				id: "4655A6057A98EE02"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "大狗大狗嚼嚼嚼"
+			tasks: [{
+				id: "3FCCDC6F1EC5DA48"
+				item: "goety:hunting_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6A6AB212A20D0784"
+			rewards: [{
+				id: "296221550883BB7E"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "ДРА"
+			tasks: [{
+				id: "2B9E7E851EBE8DE6"
+				item: "goety:mauling_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "784BEF4055AB7B6E"
+			rewards: [{
+				id: "2C6B9650614F024E"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "传说有一种史莱姆只会融化衣服"
+			tasks: [{
+				id: "0FC673FA586686A4"
+				item: "goety:slimy_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "75F00550CF6830D0"
+			rewards: [{
+				id: "0625002769E4ED1C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "准备，放置，植物"
+			tasks: [{
+				id: "1A1882D496D9EDD3"
+				item: "goety:overgrowth_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "000A9E43E78F1335"
+			rewards: [{
+				id: "67F911C216B8F260"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "森林之怒"
+			tasks: [{
+				id: "6D5238084D6C5443"
+				item: "goety:entangling_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "43A66F47AB910B82"
+			rewards: [{
+				id: "3D68434131D8365F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "召唤召唤师师"
+			tasks: [{
+				id: "3F1D153DD24CD840"
+				item: "goety:whispering_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "64D51A0E31C758A0"
+			rewards: [{
+				id: "2E157BA8DB0DEACE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "腾子"
+			tasks: [{
+				id: "74C4B2A2CB70430F"
+				item: "goety:leaping_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3D3D36881659F421"
+			rewards: [{
+				id: "6AE3C3374C345358"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "王负剑！王负剑！"
+			tasks: [{
+				id: "7C7ECEB61220CEB0"
+				item: "goety:barricade_focus"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "46936B35C6F879A3"
+			rewards: [{
+				id: "22322B89115D62EF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "崩溃大陆"
+			tasks: [{
+				id: "2BE11BAC06475179"
+				item: "goety:quaking_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6832984C00FE7D83"
+			rewards: [{
+				id: "0EE4F92E8985349B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "采集好帮手"
+			tasks: [{
+				id: "4FB384C17E77DC33"
+				item: "goety:pulverize_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "63D508BF939C1217"
+			rewards: [{
+				id: "2251D0D5852A033C"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "全体都有，向右~转~"
+			tasks: [{
+				id: "64978164F770253D"
+				item: "goety:rotation_focus"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "327DB58349022E62"
+			rewards: [{
+				id: "656046E547AFAC2A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "采矿激光"
+			tasks: [{
+				id: "4EDDAADFA35C0CBE"
+				item: "goety:burrowing_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7F6425AC8DC9CF1B"
+			rewards: [{
+				id: "1B1BD011ED2BDD5F"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "用心，去聆听"
+			tasks: [{
+				id: "33244F82676144B7"
+				item: "goety:sensing_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0C60EE71178D1D0E"
+			rewards: [{
+				id: "3BC73E7B1D82236A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "土豆爆炸！"
+			tasks: [{
+				id: "444501CA9A81665C"
+				item: "goety:scatter_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "12796BCB4BC57B1F"
+			rewards: [{
+				id: "241C6A6C0A66E63A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "地球之怒"
+			tasks: [{
+				id: "071688DE4F4FF557"
+				item: "goety:eruption_focus"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "712B8B4EC1DF7535"
+			rewards: [{
+				id: "37EFD9E429990ADE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "听我说蟹蟹泥"
+			tasks: [{
+				id: "1D89568518992579"
+				item: "goety_cataclysm:amethyst_cluster_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1F56AC7C5E10C589"
+			rewards: [{
+				id: "32DAD771F78A0744"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我是远古遗魂"
+			tasks: [{
+				id: "74179D665DA6314C"
+				item: "goety_cataclysm:desert_crush_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4BB39DE2F7AE22E3"
+			rewards: [{
+				id: "47AC88DCAB5950FA"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "冰风酋长"
+			tasks: [{
+				id: "5AB3F98DB5A0100C"
+				item: "goety:frost_breath_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3A4D49306CDD6C70"
+			rewards: [{
+				id: "7E4A8BD4935FE17C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "地国の吹雪"
+			tasks: [{
+				id: "24DCCDB0E4EE2B24"
+				item: "goety:ice_spike_focus"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "520595CF6733801F"
+			rewards: [{
+				id: "0D83924EB223C299"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "冷冷的冰雨在脸上胡乱的拍"
+			tasks: [{
+				id: "40B0AF9D8B0D4474"
+				item: "goety:ice_storm_focus"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2287BE0E71DA00E2"
+			rewards: [{
+				id: "5ADA0E20F8CFF482"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "雪~花飘飘，北风潇~潇"
+			tasks: [{
+				id: "5415E97A0136EAEE"
+				item: "goety:hail_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "020D76E57BACC1DD"
+			rewards: [{
+				id: "293186BFB6F57470"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "当心头顶"
+			tasks: [{
+				id: "2609AFECE20322AA"
+				item: "goety:iceology_focus"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			icon: "goety:blizzard_focus"
+			id: "3CAF31A496A5C6A6"
+			subtitle: "由于会引发崩溃，已禁用获取"
+			tasks: [{
+				id: "27CF894DD6EA6E32"
+				type: "checkmark"
+			}]
+			title: "暴雪聚晶"
+			x: 24.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2185DEA6A0B93CFF"
+			rewards: [{
+				id: "1B0A5311FFF6BCB3"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "冻得邦邦硬"
+			tasks: [{
+				id: "203B578672253928"
+				item: "goety:chilling_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "00747254C7074B7D"
+			rewards: [{
+				id: "7198279E0B68B022"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "寒冰菇+樱桃炸弹"
+			tasks: [{
+				id: "101C0F2680388735"
+				item: "goety:frost_nova_focus"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0D8AF64FB101F647"
+			rewards: [{
+				id: "0D7DFC2558B79658"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "雪傀儡是什么垃圾"
+			tasks: [{
+				id: "325C6DB058DD0057"
+				item: "goety:frostborn_focus"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "707491299524D9F4"
+			rewards: [
+				{
+					count: 9
+					id: "05E9CAACA07B01D1"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "687ABEFB8A18B4FE"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "608B64E12CCCAC4A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "45B5069F9F050095"
+					item: "enigmaticaddons:earth_heart_fragment"
+					type: "item"
+				}
+				{
+					id: "1364925F6F0D3FD0"
+					item: "goetyawaken:bakasmusic_disc"
+					type: "item"
+				}
+			]
+			subtitle: "⑨(ᗜˬᗜ)⑨"
+			tasks: [{
+				id: "65FA00FC4899BA77"
+				item: "goety_revelation:ice_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2C8047F41CDF6B68"
+			rewards: [{
+				id: "6911ADFE1AE8F91D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "激流？不需要了"
+			tasks: [{
+				id: "36D9D3A6DD60B87A"
+				item: "goety:launch_focus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "61437AEEE2BDE1BC"
+			rewards: [{
+				id: "76F7645629315FC1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "helicopter~helicopter~"
+			tasks: [{
+				id: "769856488155DE16"
+				item: "goety:flying_focus"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "15225DBFFAD1F8F5"
+			rewards: [{
+				id: "2FEFB5A93777DA25"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "落地云"
+			tasks: [{
+				id: "7052AF981B1C439F"
+				item: "goety:cushion_focus"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "487EE6AFDC252983"
+			rewards: [{
+				id: "4DA154EDA56751DE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "cos旋风人"
+			tasks: [{
+				id: "12C488A3E135C7C3"
+				item: "goety:whirlwind_focus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5E36A620AF67065F"
+			rewards: [{
+				id: "104542A47D4CB308"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "幻影忍者前情提要"
+			tasks: [{
+				id: "5AE38A77AB9C50AE"
+				item: "goety:cyclone_focus"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "118874017DA1C50E"
+			rewards: [{
+				id: "221356E8C86FFEE0"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Lv5上升气流"
+			tasks: [{
+				id: "30E7E23281E50B62"
+				item: "goety:updraft_focus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6E529DFF9AA9476C"
+			rewards: [{
+				id: "19BD68B8402006D3"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "退！退！退！"
+			tasks: [{
+				id: "0E4E80E70FF16423"
+				item: "goety:wind_blast_focus"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5B65BA5212F628DA"
+			rewards: [{
+				id: "2CBEBFC80072B006"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "颤栗の龙卷"
+			tasks: [{
+				id: "13998409E9C81171"
+				item: "goety:trembling_focus"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "27C85AE3945FC964"
+			rewards: [{
+				id: "61AC3CBC8B793FCA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Rua，杀戮光环"
+			tasks: [{
+				id: "58120EAF9C4FF02B"
+				item: "goety_cataclysm:sandstorm_focus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2152DD3A20774507"
+			rewards: [{
+				id: "03D3D486797431EF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Unit Speed Upgraded"
+			tasks: [{
+				id: "4DC54905396785B1"
+				item: "goety:charge_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4B4A54B34EAB75AC"
+			rewards: [{
+				id: "1A6892CCB1129832"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "酥酥麻麻"
+			tasks: [{
+				id: "5F85538751A047DA"
+				item: "goety:shocking_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21DDBAF4AE441816"
+			rewards: [{
+				id: "3E606972642A4EC8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Tesla Suit Ready"
+			tasks: [{
+				id: "1052DF1DCF4F190C"
+				item: "goety:thunderbolt_focus"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3936AE76EEF00D75"
+			rewards: [{
+				id: "713813A337B5F11B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "诶闪电苦力怕怎么直接死了"
+			tasks: [{
+				id: "2842218017EA772C"
+				item: "goety:lightning_focus"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3A31354977084D37"
+			rewards: [{
+				id: "3DC438F87BB4832B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "磁球"
+			tasks: [{
+				id: "6DEA503AC23BE829"
+				item: "goety:electrocute_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4C47ABCACE464F76"
+			rewards: [{
+				id: "6A0CB24C5F74ADBB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "天气预报，大到暴雨"
+			tasks: [{
+				id: "43DED8BE4989E2F3"
+				item: "goety:monsoon_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5AEAB8D5188DC365"
+			rewards: [{
+				id: "385E6D4912F323BB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "释·放·自·我"
+			tasks: [{
+				id: "0836DA7F52A7A9A2"
+				item: "goety:discharge_focus"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "063872040D4D3A4B"
+			rewards: [{
+				id: "0E3AFD2A85A1EAE1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "神速力"
+			tasks: [{
+				id: "3BF8EFA94CF7A0B9"
+				item: "goety:bolting_focus"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6417FC6AAA6DE904"
+			rewards: [{
+				id: "5C92D9A672B9FEC8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "检测到入侵者，开始排除"
+			tasks: [{
+				id: "3C0E9F6CD9C4E155"
+				item: "goety_cataclysm:death_laser_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "16D27ED37E983DA7"
+			rewards: [{
+				id: "7CC4D4D6A002ED49"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "宙斯之矛"
+			tasks: [{
+				id: "0A862EA561617281"
+				item: "goety_cataclysm:lightning_spear_focus"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4A76EAE9FCED10DE"
+			rewards: [{
+				id: "1E3F3F1279366EE8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我命令你退下"
+			tasks: [{
+				id: "7254956578B29FEA"
+				item: "goety_cataclysm:thunder_rage_focus"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1D6ABB53BCFB0A0C"
+			rewards: [{
+				id: "1F419951DF213DFA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "水遁·水龙弹"
+			tasks: [{
+				id: "12D7761CDCE1FD40"
+				item: "goety_cataclysm:storm_serpent_focus"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4EC7D89F43A4E98F"
+			rewards: [{
+				id: "3FF87EF0CFBBB477"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "高压水枪"
+			tasks: [{
+				id: "1FAB9F3D5B447F77"
+				item: "goety:water_jet_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7822F1A069648016"
+			rewards: [{
+				count: 4
+				id: "1B5CF3F21F1EC6DC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "弹弹弹，弹走鱼尾纹"
+			tasks: [{
+				id: "084EB0F3A6A69709"
+				item: "goety:bouncy_bubble_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3571D3C4DCE4F230"
+			rewards: [{
+				id: "568D0475B8DA7439"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "水之力X火之力"
+			tasks: [{
+				id: "5A2EDA33D1CEE8DF"
+				item: "goety:steaming_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2D8C5400B8A65195"
+			rewards: [{
+				id: "1E2349C1DAA2A8FE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "大戟把"
+			tasks: [{
+				id: "65389D21C5D721D2"
+				item: "goety:trident_storm_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7F1E93450F0E098F"
+			rewards: [{
+				id: "47502D1BFA3B053A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我盯着你呢"
+			tasks: [{
+				id: "3D9AB659C76671EA"
+				item: "goety:prisma_beam_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "45DA8E0CB9026824"
+			rewards: [{
+				id: "14DBE5DB2A873906"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我派了一群守卫者盯着你"
+			tasks: [{
+				id: "3924F082457F1709"
+				item: "goety:guardian_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1D9A549DA1A59C9E"
+			rewards: [{
+				id: "6D3A63A4226BDEF5"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "异形来的"
+			tasks: [{
+				id: "559DE0F3620DF600"
+				item: "goety:biomine_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "60C0C874C85B2146"
+			rewards: [{
+				id: "41B1A1486F170FB5"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "如果大海能够~带走我的哀愁"
+			tasks: [{
+				id: "343AF2B728A7A501"
+				item: "goety:tidal_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2A029D5BCB7BC733"
+			rewards: [{
+				id: "4337FB6CC1BA2AAE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "左舷发现鱼雷"
+			tasks: [{
+				id: "402223061E770AC7"
+				item: "goety_cataclysm:abyssal_mine_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7B524BA583A03BFC"
+			rewards: [{
+				id: "62C5492C71C3D070"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "当心脚下"
+			tasks: [{
+				id: "1B4CCCF9DDCDAFEA"
+				item: "goety_cataclysm:abyssal_beam_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "328AA5051B19726F"
+			rewards: [{
+				id: "01459431771CFBF0"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "你是逃不掉的~"
+			tasks: [{
+				id: "0DF94C05E918947C"
+				item: "goety_cataclysm:abyssal_orb_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7C3DBF1CAC2736F9"
+			rewards: [{
+				id: "299DADAABC4AE55A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "水箭魔法书"
+			tasks: [{
+				id: "756FBC9C9BD94859"
+				item: "goety_cataclysm:water_spear_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "24FC1A6CA1D3E08A"
+			rewards: [{
+				id: "04A023EAE41BE6A3"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "为什么它不能帮我钓鱼"
+			tasks: [{
+				id: "40607AD794106551"
+				item: "goety_cataclysm:sunken_swell_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5C584CEDD37880A7"
+			rewards: [{
+				id: "1C74405B9E363F99"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "他们要捅的可不是鱼"
+			tasks: [{
+				id: "5B1C651F603D5045"
+				item: "goety_cataclysm:sunken_current_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21803A16E3CB4D61"
+			rewards: [{
+				id: "71082FF23B4F53E9"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "利维坦力量的一块碎片"
+			tasks: [{
+				id: "5217187F9075CD15"
+				item: "goety_cataclysm:sunken_tribune_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1481F83B8D794B23"
+			rewards: [{
+				id: "0AE71DD9509AA05B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "里面有多少肉"
+			tasks: [{
+				id: "20139DEE406AFD70"
+				item: "goety_cataclysm:kakourgos_focus"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2DD91BE7038A220A"
+			rewards: [{
+				id: "402F38D4964AD8CC"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "或许可以试试投掷章鱼来缠住对手"
+			tasks: [{
+				id: "4C466F15D346F8AF"
+				item: "goety_cataclysm:polemistis_focus"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "569273508DE8B442"
+			rewards: [{
+				id: "0BBBEE55CBC4AF26"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "谁不喜欢可爱的水母妹呢"
+			tasks: [{
+				id: "7CCEA6B9BF07BBBB"
+				item: "goety_cataclysm:kyria_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4A50DBAC85ACA2DC"
+			rewards: [{
+				id: "14ACCB854CB64324"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "法师入门之火球术"
+			tasks: [{
+				id: "79DB4271B2FC018C"
+				item: "goety:fireball_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "542B72663C0A4594"
+			rewards: [{
+				id: "3B89BA2FCB48955F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "幸运的是，它不会产生岩浆"
+			tasks: [{
+				id: "403B94A17C9A8D8D"
+				item: "goety:lavaball_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0A174782459051B2"
+			rewards: [{
+				id: "3992F3CDD392FF6D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "疯狂喷气机"
+			tasks: [{
+				id: "1787657D243139B3"
+				item: "goety:bombardment_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5178CDD0563D941C"
+			rewards: [{
+				id: "2F86CCEA572B4307"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "末日光景"
+			tasks: [{
+				id: "4C92F6F4FCEF7269"
+				item: "goety:meteor_shower_focus"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "07ACCEBA6EB8BE19"
+			rewards: [{
+				id: "6118C1B68CFAB979"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "岩浆海？不，是岩浆怪海"
+			tasks: [{
+				id: "47C76CC70C10E438"
+				item: "goety:magma_bomb_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "67C5EB77E49D1286"
+			subtitle: "狂野，震撼远重"
+			tasks: [{
+				id: "1E151C1B3477B049"
+				item: "goety:fire_blast_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "69B630499290E7CE"
+			rewards: [{
+				id: "14193F32693B4471"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "热气球升空咯"
+			tasks: [{
+				id: "5E781DF737740DA6"
+				item: "goety:flame_strike_focus"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0417CC099184443B"
+			rewards: [{
+				id: "1CB09AEA6B4517CE"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "咳痰喘"
+			tasks: [{
+				id: "7D9A4800B073EA00"
+				item: "goety:wither_skull_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "39FBF231508439E6"
+			rewards: [{
+				id: "4A76BBB76A596E76"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "鬼哭狼嚎"
+			tasks: [{
+				id: "78165DC7ECCE1E70"
+				item: "goety:ghastly_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "60E3F9D9DB5EF580"
+			rewards: [{
+				id: "526DDAE7AF45E142"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "与火共舞"
+			tasks: [{
+				id: "0B3CC9556D15D1AF"
+				item: "goety:blazing_focus"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "59082B01076FA8D2"
+			rewards: [{
+				id: "3C437957ABC1BA3B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "飞沙走石"
+			tasks: [{
+				id: "2FDCDEECB7E43AAD"
+				item: "goety_cataclysm:ashen_breath_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "079F00D1AA05663B"
+			rewards: [{
+				id: "569CB51EA184E471"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "炎魔借我力量"
+			tasks: [{
+				id: "4C74CA5351DF86A7"
+				item: "goety_cataclysm:extinct_flame_focus"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3D1A66CD2F24248A"
+			rewards: [{
+				id: "27BF0395D1D8F8D1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Hellsing!"
+			tasks: [{
+				id: "03EA2FD047C06953"
+				item: "goety_cataclysm:flare_bomb_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3A755CA881FA259E"
+			rewards: [{
+				id: "2F6F5E3FCAB78755"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "专业团队"
+			tasks: [{
+				id: "2C5941264DA95468"
+				item: "goety_revelation:heretic_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7CF493F491FCAF57"
+			rewards: [{
+				id: "20CB0641DC252DCD"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71E746B23774C075"
+				item: "goety_revelation:wither_quietus_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "41BA2A1CDDF9CBC2"
+			rewards: [{
+				id: "144C4516D413F47B"
+				item: "enigmaticlegacy:quote_player"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DE92D83E0C62A9A"
+				item: "goety_revelation:revelation_focus"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5EDAD2211196DC55"
+			rewards: [{
+				id: "2D9526DBB1ED9807"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "听我号令"
+			tasks: [{
+				id: "104BBA2C57A3A3DB"
+				item: "goety:call_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0ADBDA154FDF8068"
+			rewards: [{
+				id: "72C53885B5CD5FCA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "随我冲锋"
+			tasks: [{
+				id: "210C30473534BAD7"
+				item: "goety:troop_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "64342ECBC12010B6"
+			rewards: [{
+				id: "6C38B1A01C3633FE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "各就各位"
+			tasks: [{
+				id: "2274053572C0D615"
+				item: "goety:recall_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "621F2E9036DFE040"
+			rewards: [{
+				id: "2D4B1ED644B2FCBD"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我真的需要它吗"
+			tasks: [{
+				id: "4AE49E628D816AE9"
+				item: "goety:ender_chest_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "57571DDE3F78D0EC"
+			rewards: [{
+				id: "11DD39E450D47DEF"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我先去看一眼"
+			tasks: [{
+				id: "2C174ACE64387A95"
+				item: "goety:end_walk_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "32798EF9BB223634"
+			rewards: [{
+				id: "7333900240FE3B0F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一眨眼就到了"
+			tasks: [{
+				id: "36C8CECAF74F78B1"
+				item: "goety:blink_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "61C1850C6280FAC6"
+			rewards: [{
+				id: "0388A82F89603E39"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我是谁，我在哪儿"
+			tasks: [{
+				id: "5E4945120956EC81"
+				item: "goety:banish_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6903C55B2AEB7EC3"
+			rewards: [{
+				id: "7B3C069BBFE9B7D2"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "溶解之物"
+			tasks: [{
+				id: "3D60A9D64EC7F9B0"
+				item: "goety:tunnel_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "43D0628F59380C6D"
+			rewards: [{
+				id: "17880B5F9DAF3F3F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "黑洞"
+			tasks: [{
+				id: "4BA82BBBD04EF0CA"
+				item: "goety:rupture_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1368FEFC56F3335B"
+			rewards: [{
+				id: "0D2B8C0B872505F1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "你瞅啥"
+			tasks: [{
+				id: "34785CCE12B3B7E9"
+				item: "goety:watching_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "567BC66B86C2F2DB"
+			rewards: [{
+				id: "3A1DDCDDC9BA837A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "掷弹兵之歌"
+			tasks: [{
+				id: "4474CD51E911295A"
+				item: "goety:blasting_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "50B51DAE3063F299"
+			rewards: [{
+				id: "75B2400382FF1763"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "迷惑灵迷惑行为大赏"
+			tasks: [{
+				id: "30CEC1E04DE7A540"
+				item: "goety:snaring_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "448EB545C5FA8496"
+			rewards: [{
+				id: "39FC4F461CF6A6FC"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "末地版尖牙"
+			tasks: [{
+				id: "6F09A21FBBF65EF3"
+				item: "goety_cataclysm:void_rune_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1C1BFFECC6E13608"
+			rewards: [{
+				id: "7FAA292691A841A1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "黑洞，但是青春版"
+			tasks: [{
+				id: "769218D4269055D2"
+				item: "goety_cataclysm:void_vortex_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["用于烹饪一些特殊食物的仪式"]
+			icon: "goetydelight:cursed_ingot_pot"
+			id: "49686220965CB2E1"
+			rewards: [{
+				id: "4B656135BFE798B1"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "真·黑暗料理"
+			tasks: [
+				{
+					count: 2L
+					id: "6468C5AC810D6611"
+					item: { Count: 2, id: "minecraft:smoker" }
+					type: "item"
+				}
+				{
+					id: "63FFDAB22507F994"
+					item: "goetydelight:cursed_ingot_pot"
+					type: "item"
+				}
+				{
+					id: "3E4E85B186A27307"
+					item: "goetydelight:shade_stove"
+					type: "item"
+				}
+			]
+			title: "烹饪仪式"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "524B86E770DBB7B4"
+			rewards: [{
+				id: "5F91889D2C8D161C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "现在该让它们感受一下痛苦了"
+			tasks: [{
+				id: "5CE2856D1A58BA03"
+				item: "goety:vexing_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "73BF6C8950E7D3A7"
+			rewards: [{
+				id: "23763C5C35F17DE3"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "“咔嚓”"
+			tasks: [{
+				id: "48628105AF6986FC"
+				item: "goety:biting_focus"
+				type: "item"
+			}]
+			x: 45.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "55A28EC4814B8D00"
+			rewards: [{
+				id: "580940113ACE5E8E"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "当心高空抛物"
+			tasks: [{
+				id: "7F2A4DCF11D58915"
+				item: "goety:teeth_focus"
+				type: "item"
+			}]
+			x: 46.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "73C6BE78DDB60F2E"
+			rewards: [{
+				id: "5222FAE346CDB189"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "地板是熔岩……啊不，地刺"
+			tasks: [{
+				id: "62C18D0A79E289B5"
+				item: "goety:feast_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21DDFF504A4DC3D8"
+			rewards: [{
+				id: "20861AB28C186E76"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "想玩神庙逃亡吗"
+			tasks: [{
+				id: "25154374A2D8975B"
+				item: "goety:shredding_focus"
+				type: "item"
+			}]
+			x: 46.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "74974F99B258752F"
+			rewards: [{
+				id: "06C49C24A526B678"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我是飞刀大师"
+			tasks: [{
+				id: "0A5DC186ADF1352B"
+				item: "goety:sword_focus"
+				type: "item"
+			}]
+			x: 45.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "79F7D18CBB826741"
+			rewards: [{
+				id: "0C1D292C42133558"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一闪一闪亮晶晶，满地都是小太阳"
+			tasks: [{
+				id: "00F4C4D90835B11D"
+				item: "goety:illuminate_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "55553DF5C7ED9D77"
+			rewards: [{
+				id: "3B2D56EEC5F3B91D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "巨人总是愿意助你一臂之力"
+			tasks: [{
+				id: "2747A35158B03805"
+				item: "goety:earth_punch_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7213D9DB4759D2C2"
+			rewards: [{
+				id: "6EC8606490EADB93"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "最终聚集于此的星辰"
+			tasks: [{
+				id: "2084C37C6AAF315C"
+				item: "goety:stellar_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2A237A7D2E0F7662"
+			rewards: [{
+				id: "13BA77E04FB46276"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "虚空之烈焰"
+			tasks: [{
+				id: "5996AE4D2552C5A7"
+				item: "goety:void_flash_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4DF0E63F524D4636"
+			rewards: [{
+				id: "086F07F46BF2FF05"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "装逼我让你飞起来"
+			tasks: [{
+				id: "4D7632F90579C954"
+				item: "goetyawaken:shulker_missile_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "78E515DBFFED1795"
+			rewards: [{
+				id: "4203F0FB12DA8C8E"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "悄悄地，潜入战场~"
+			tasks: [{
+				id: "64680AD79C092E43"
+				item: "goetyawaken:creeper_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "542F7EECFCFC0796"
+			rewards: [{
+				id: "3006195587F7A5E9"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "“黑”奴"
+			tasks: [{
+				id: "2BE720A78984FC59"
+				item: "goetyawaken:stare_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0BD0534EE6551F5F"
+			rewards: [{
+				id: "1919D8F31F53DC3A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "只要你还活着，痛苦就永远不会离你而去"
+			tasks: [{
+				id: "4527C6B7337FE9A5"
+				item: "goetyawaken:torment_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4080F7756C12CEA8"
+			rewards: [{
+				id: "1D7B38C2426E5D6B"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "当见到一只就说明有一窝了"
+			tasks: [{
+				id: "5844BB1D541A27BF"
+				item: "goetyawaken:infestation_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "00D40D74292238E5"
+			rewards: [{
+				id: "55A451D926892F33"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "这个杀手不太冷"
+			tasks: [{
+				id: "0C80C9494B2FB069"
+				item: "goetyawaken:killer_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "43181D4C343D0DA1"
+			rewards: [{
+				id: "38594AE2DE5F24CE"
+				item: "minecraft:blue_dye"
+				type: "item"
+			}]
+			subtitle: "来玩井字棋吗"
+			tasks: [{
+				id: "3155D6CC87C9B010"
+				item: "goetyawaken:wololo_focus"
+				type: "item"
+			}]
+			x: 45.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "776C435B25A55807"
+			rewards: [{
+				id: "3AB7ABEDCF60F1D4"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "罪恶与不洁之雨"
+			tasks: [{
+				id: "0F26B928814FEFF6"
+				item: "goetyawaken:blood_rain_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "61F01B5A6AE4EE2A"
+			rewards: [{
+				id: "34C5D22A54806A07"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "死亡者的怨怒"
+			tasks: [{
+				id: "6BE6914466861DD2"
+				item: "goetyawaken:agony_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "673B9B7C70B71666"
+			rewards: [{
+				id: "05781F34A4A7D37B"
+				item: "goetyawaken:superaggregated_mycelial_circuit"
+				type: "item"
+			}]
+			subtitle: "是蕈航导弹！"
+			tasks: [{
+				id: "068804FFBCB6C732"
+				item: "goetyawaken:mushroom_missile_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "723B3E8F8F84ADD9"
+			rewards: [{
+				id: "4188E9812CB93F3F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "有如审判日降临"
+			tasks: [{
+				id: "1B061000189BFF67"
+				item: "goetyawaken:desert_plagues_focus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"在丛林即可完成增生仪式"
+				""
+				"&e或者&r用&e32&r个任意树叶，&e16&r个增生之根，&e16&r个任意覆苔方块（苔石，苔石砖等）"
+			]
+			icon: "minecraft:oak_leaves"
+			id: "3B7B2C2060F544AF"
+			rewards: [{
+				count: 16
+				id: "5CA5621B689255CF"
+				item: "minecraft:moss_block"
+				type: "item"
+			}]
+			subtitle: "倾听生长的声音"
+			tasks: [{
+				biome: "minecraft:jungle"
+				id: "56DCD869E0965078"
+				title: "访问丛林群系"
+				type: "biome"
+			}]
+			title: "增生仪式"
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0382FD3614F58057"
+			rewards: [{
+				id: "3C545A5F60F93027"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "shooting!"
+			tasks: [{
+				id: "132EC0D6EB18EFCC"
+				item: "goety:razor_wind_focus"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4EAE8EADB392BD3B"
+			subtitle: "Warning:Lightning storm created"
+			tasks: [{
+				id: "126204F2CEE88AE2"
+				item: "goety:thunderstorm_focus"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "00137C1A3B188B19"
+			rewards: [{
+				id: "0233518813C8E4AA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "就像孤魂尸鬼那样"
+			tasks: [{
+				id: "7B9098274C4795F8"
+				item: "goety:carrion_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "366B241AADEA3803"
+			rewards: [{
+				id: "5BE408D28906EC90"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "还有触手Play"
+			tasks: [{
+				id: "151FE74013DA0586"
+				item: "goety:water_whip_focus"
+				type: "item"
+			}]
+			x: 36.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "712493167CB80A4C"
+			rewards: [{
+				id: "0EA35A1D652A2C25"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "噼里啪啦噼里啪啦"
+			tasks: [{
+				id: "6D56C2F3583CA0FF"
+				item: "goety:surging_focus"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "344F0B649F09590C"
+			rewards: [{
+				id: "320E68F476A1D0DB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "地动山摇！"
+			tasks: [{
+				id: "4DF59D287A904854"
+				item: "goety_cataclysm:earth_shake_focus"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6A03834D1E881822"
+			rewards: [{
+				id: "5CB2B77CA3FCA74E"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "才不是baka"
+			tasks: [{
+				id: "4F6BE6CB9C339522"
+				item: "goetyawaken:fairy_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4D8B75BCEA151E64"
+			rewards: [{
+				count: 8
+				id: "6478458DCCDBB308"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "岩浆驱动！"
+			tasks: [{
+				id: "5E9392540C64D7A6"
+				item: "goety:ministrous_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1257E2209087CAA7"
+			rewards: [{
+				id: "0A60ADC029AEBF4A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "咒魂之力！"
+			tasks: [{
+				id: "2398D4667DC367EC"
+				item: "goety_cataclysm:battlefield_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			icon: "goety:witch_hat"
+			id: "74142C151C1EDC1E"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "严格来说不是一个系别，术士和女巫可以划分到这里"
+			tasks: [{
+				id: "46BDEEAB9578646B"
+				type: "checkmark"
+			}]
+			title: "系别：女巫"
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"本包新增仪式，除任务指定方块外，无额外需求"
+				""
+				"用于合成女巫相关物品"
+			]
+			icon: "goety:witch_hat"
+			id: "6C763528AA8C1B26"
+			rewards: [{
+				id: "45CF4A39DCB4D8C3"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我要成为女巫之王"
+			tasks: [
+				{
+					id: "71F2D0D2D1658A24"
+					item: "goety:witch_cauldron"
+					type: "item"
+				}
+				{
+					id: "26313B3D164C3D85"
+					item: "goety:witch_pole"
+					type: "item"
+				}
+				{
+					id: "72CE97F2819D32D5"
+					item: "goety:haunted_jug"
+					type: "item"
+				}
+				{
+					id: "28D301F7B8A7C890"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "6FA0B1367E653158"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+				{
+					id: "5E7B039DA85C31ED"
+					item: "curlamoety:witch_desk"
+					type: "item"
+				}
+			]
+			title: "女巫仪式"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3503920AABD62C73"]
+			id: "6387E29A1A5C7312"
+			rewards: [{
+				id: "09E672811D22A9CC"
+				item: "minecraft:brown_mushroom"
+				type: "item"
+			}]
+			subtitle: "我也要当法杖吗"
+			tasks: [{
+				id: "6FD5226FBAB5C8CD"
+				item: "goety:witch_pole"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "388AB24A60584558"
+			rewards: [{
+				id: "1F9C0E4A85D66B5D"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "圣光，降下惩罚吧"
+			tasks: [{
+				id: "0508612F0C5DC375"
+				item: "goetyawaken:heaven_rift_focus"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5B444359C73239EE"
+			rewards: [{
+				id: "53AD6E74E75B472A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "We~ are~ the CHAMPION, my friend"
+			tasks: [{
+				id: "1D4877C47048E8E6"
+				item: "goetyawaken:champion_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0A796749C32D34C3"
+			rewards: [{
+				id: "3D2E529ECCCF3305"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Made In Heaven!"
+			tasks: [{
+				id: "2F6DD5FB83CF0AFE"
+				item: "goetytwilight:time_clock_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "320DE9218B7AD400"
+			rewards: [{
+				id: "7434554DAC053291"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "The Hand!"
+			tasks: [{
+				id: "59D09E7D980FFA11"
+				item: "goetytwilight:annihilation_cube_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2AF1B57E3D379D29"
+			rewards: [{
+				id: "24FF524351058EB4"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "请不要~哭~泣~"
+			tasks: [{
+				id: "181C7A29813B544D"
+				item: "goetytwilight:sorrow_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "63CFA85E80F67DF5"
+			rewards: [{
+				id: "1DDE17C00CA356C8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "止戈立场！"
+			tasks: [{
+				id: "4EA4B96109CA6F46"
+				item: "goetytwilight:seal_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "27CD126F11C0E49F"
+			rewards: [{
+				id: "211C05C20B7819C2"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "以牙还牙！"
+			tasks: [{
+				id: "3B66F8513DB474EC"
+				item: "goetytwilight:twilight_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "27DBFE40D1017BF1"
+			rewards: [{
+				id: "227ADD665792B719"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我的老大可是斧头帮"
+			tasks: [{
+				id: "1332454F853DC5A1"
+				item: "goetytwilight:phantom_axe_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "7EB5B5AE264D26EC"
+			rewards: [{
+				id: "3DFA064AD93DD168"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "当心锋利边缘"
+			tasks: [{
+				id: "20F68D24943ADD16"
+				item: "goetytwilight:paper_knife_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5D396BE139C3AFFB"
+			rewards: [{
+				count: 4
+				id: "7DEE8148FE2DCDA0"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "北极冰为什么魔法系仆从只有附属有啊"
+			tasks: [{
+				id: "61AAA4CE2BBFEEE5"
+				item: "goetytwilight:tome_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5DD283C9C3EE4E58"
+			rewards: [{
+				id: "2DCC90E05FF78ADA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "当年塔主就是这么变成恶魂的"
+			tasks: [{
+				id: "72F3A226BFEDE0F3"
+				item: "goetytwilight:arsenopyrite_focus"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0D95D8D204BE66D9"
+			rewards: [{
+				id: "0CA9E874A76F9303"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "冻住！不许走"
+			tasks: [{
+				id: "23973FA71CB087C3"
+				item: "goetytwilight:frost_bomb_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "21853CC9D77888BA"
+			rewards: [{
+				id: "4A0D9C8DA49BCF36"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "这些护卫非常地“酷”"
+			tasks: [{
+				id: "2D1A91497AD22D89"
+				item: "goetytwilight:snow_guardian_focus"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "29316C86B14EC93D"
+			rewards: [{
+				id: "4919AA3D4E550F2A"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "极地冰灵青春mini抢先体验版"
+			tasks: [{
+				id: "3F64D401D79EB7E0"
+				item: "goetytwilight:stable_ice_core_focus"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "138392C5D5460E6D"
+			rewards: [{
+				id: "021D0E257D44B480"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Let it go~Let it go~"
+			tasks: [{
+				id: "6B37A0BF030F85C9"
+				item: "goetytwilight:ice_crystal_focus"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3085E1C4F77D84F1"
+			rewards: [{
+				id: "130D53B890AF8151"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "生人勿近"
+			tasks: [{
+				id: "13573D6C843A849A"
+				item: "goetytwilight:acid_rain_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3C9C24AC4D61FA75"
+			rewards: [{
+				id: "1585C14BD102ABE2"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2190B449594AB8AC"
+				item: "goetytwilight:thorn_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5316A4E36577D99A"
+			rewards: [{
+				count: 4
+				id: "1F97FE508F9F76DC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "聆听自然"
+			tasks: [{
+				id: "30F01507A0B4BA0D"
+				item: "goetytwilight:skeleton_druid_focus"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4FF52FBA0BDF7F47"
+			rewards: [{
+				count: 4
+				id: "3DF40FFB5EE77A0C"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "夏天到了哦~"
+			tasks: [{
+				id: "3AD1EFEA6198AD06"
+				item: "goetytwilight:mosquito_swarm_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "713EE4C87099E196"
+			rewards: [{
+				count: 4
+				id: "3E325E4451CDA911"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "毒锥（确信）"
+			tasks: [{
+				id: "4E869ADEF144A1CD"
+				item: "goetytwilight:nature_bolt_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "69B9DB27CC56E6B1"
+			rewards: [{
+				count: 2
+				id: "08E13CB11F6D62F6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "噗叽啪"
+			tasks: [{
+				id: "04F829C07E4020A0"
+				item: "goetytwilight:slime_bomb_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3AD4068525F02FBF"
+			rewards: [{
+				id: "62F2183E6C90E07C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "举高高~"
+			tasks: [{
+				id: "7B0AF2352FE2C824"
+				item: "goetytwilight:cave_troll_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5A0DC05AD5A545C7"
+			rewards: [{
+				count: 2
+				id: "3A8C227487D2E7A4"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "一盘散沙"
+			tasks: [{
+				id: "42A64F1E65845669"
+				item: "goetytwilight:kobold_focus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "27E9EAEAD18713B4"
+			rewards: [{
+				id: "640F8A48EE8DA926"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "黑狼……特别黑的"
+			tasks: [{
+				id: "49D27F909ED98588"
+				item: "goetytwilight:alpha_wolf_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "217C0D8566A58BF2"
+			rewards: [{
+				id: "70415C9F44A94FB9"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我纯爱战士一刀一个牛头人"
+			tasks: [{
+				id: "53F76729AB0770BF"
+				item: "goetytwilight:minotaur_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "334DF7BA1C88B004"
+			rewards: [{
+				id: "38B93330926C0FAA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "炼狱结界青春版"
+			tasks: [{
+				id: "6A71D27C7C633B48"
+				item: "goetytwilight:ward_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "695EB734A66D8CC9"
+			rewards: [{
+				id: "36834BA7870127E8"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "这里还有什么傀儡是我需要认识的吗"
+			tasks: [{
+				id: "2B7871B09EAC55C4"
+				item: "goetytwilight:carminite_golem_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "6A29DCF87280E96E"
+			rewards: [{
+				id: "06E47A1AE2176C03"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我是九头蛇"
+			tasks: [{
+				id: "4276627A6A761BC6"
+				item: "goetytwilight:blast_bomb_focus"
+				type: "item"
+			}]
+			x: 37.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1760C93BF2493423"
+			rewards: [{
+				id: "2537FCAC03D70399"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "乌合之众"
+			tasks: [{
+				id: "64A631C5597D5E89"
+				item: "goetytwilight:goblin_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1F942AA29EF51445"
+			rewards: [{
+				id: "6C027F094F2A1FDA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "全副武装的……乌合之众"
+			tasks: [{
+				id: "2736541C5B2BD100"
+				item: "goetytwilight:knight_order_focus"
+				type: "item"
+			}]
+			x: 45.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "26F0167BA71C54CF"
+			rewards: [{
+				id: "263BDCB39AAA9325"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "谁说链锤一定要有链"
+			tasks: [{
+				id: "3522594320079F99"
+				item: "goetytwilight:destruction_focus"
+				type: "item"
+			}]
+			x: 46.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "40DDC3F13E5F7D51"
+			rewards: [{
+				id: "298E61F9E8D7CB1F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "这是另一个我，然后又一个，好多个"
+			tasks: [{
+				id: "6A7DBD5DF640C50E"
+				item: "goetytwilight:giant_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1A4D9B44C193683E"
+			rewards: [{
+				id: "7EC45986E878E632"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "让我访问！"
+			tasks: [{
+				id: "20585D26F913CF2C"
+				item: "goetyawaken:access_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "39AECCEB50F2842B"
+			rewards: [{
+				id: "37DBCBD26230A8C7"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "biu~"
+			tasks: [{
+				id: "315D9824FB423EE5"
+				item: "goetyawaken:death_ray_focus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"仪式必须在暮色森林维度中进行"
+				""
+				"用于一些暮色森林配方"
+			]
+			icon: "twilightforest:twilight_oak_sapling"
+			id: "5AD85DEBD7F8DD13"
+			rewards: [
+				{
+					id: "7291E863B9528AB7"
+					item: "twilightforest:ironwood_block"
+					type: "item"
+				}
+				{
+					id: "2147874FFB7EB8D9"
+					item: "twilightforest:steeleaf_block"
+					type: "item"
+				}
+			]
+			subtitle: "暮光的魔法"
+			tasks: [
+				{
+					count: 16L
+					id: "007A1EFBB95BBE4B"
+					item: { Count: 16, id: "twilightforest:twilight_oak_log" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0DF22DA1E619711C"
+					item: { Count: 16, id: "twilightforest:twilight_oak_leaves" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44A30173DBA613DB"
+					item: { Count: 4, id: "twilightforest:ironwood_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "464810AF40157D7A"
+					item: { Count: 4, id: "twilightforest:steeleaf_block" }
+					type: "item"
+				}
+			]
+			title: "暮色仪式"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"用于召唤无名者及无名者仆从的仪式"
+				""
+				"需要在终焉高原进行"
+			]
+			icon: "goety:night_beacon"
+			id: "5D776562BD0CC3D4"
+			rewards: [
+				{
+					id: "6A7FABD7855854D4"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "2BFB7CDEC1363953"
+					item: "goety:forbidden_fragment"
+					type: "item"
+				}
+			]
+			subtitle: "恭候那位大人的最高礼仪"
+			tasks: [
+				{
+					id: "4FA94DF49AE51114"
+					item: "goety:night_beacon"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "09D87746BA679670"
+					item: { Count: 4, id: "goety:dark_metal_block" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2A2100BD3F576E73"
+					item: { Count: 8, id: "minecraft:sculk_catalyst" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "66BC3AA2071FF715"
+					item: { Count: 16, id: "goety:skull_pile" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3A80764BA71BBEDF"
+					item: { Count: 64, id: "minecraft:sculk" }
+					type: "item"
+				}
+			]
+			title: "永夜仪式"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "14F770BDF82D4040"
+			rewards: [{
+				id: "31ACA19D6F1F1F2C"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "猪突猛进！"
+			tasks: [{
+				id: "70C6C5021AE46B4C"
+				item: "goety:hogging_focus"
+				type: "item"
+			}]
+			x: 38.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: ["用于制作晋升披萨"]
+			icon: "enigmaticdelicacy:divine_fruit_pie_block"
+			id: "260A8DEE83092082"
+			rewards: [{
+				id: "44526579FFE1D9D9"
+				item: "farmersdelight:wheat_dough"
+				type: "item"
+			}]
+			subtitle: "神之料理台"
+			tasks: [
+				{
+					id: "2D1651AF0E28C60A"
+					item: "goetydelight:night_stove"
+					type: "item"
+				}
+				{
+					id: "7E2F7E5FEF9D2B88"
+					item: "enigmaticdelicacy:etherium_stove"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "390472013254C8EF"
+					item: { Count: 2, id: "goetydelight:cursed_ingot_pot" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "305E60B40095763A"
+					item: { Count: 2, id: "farmersdelight:cutting_board" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1C1E74BADF7161B6"
+					item: { Count: 16, id: "minecraft:cauldron" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "37C2047C5BB76A99"
+					item: { Count: 16, id: "minecraft:lava_bucket" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "331B614302276D22"
+					item: { Count: 64, id: "minecraft:smoker" }
+					type: "item"
+				}
+			]
+			title: "神厨仪式"
+			x: 4.5d
+			y: -3.0d
+		}
+	]
+	title: "魔法师的宝库"
+}
