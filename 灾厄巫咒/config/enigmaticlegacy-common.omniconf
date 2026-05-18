@@ -401,10 +401,10 @@
     I:CosmicScrollUnchosenKnockbackBonus=100
 
     # Damage increase provided by Scroll of a Thousand Curses for each curse, as percentage. [range: 0 ~ 32768, default: 4, synchronized: yes]
-    I:CursedScrollDamageBoost=3
+    I:CursedScrollDamageBoost=5
 
     # Mining speed increase provided by Scroll of a Thousand Curses for each curse, as percentage. [range: 0 ~ 32768, default: 7, synchronized: yes]
-    I:CursedScrollMiningBoost=6
+    I:CursedScrollMiningBoost=5
 
     # Health regeneration increase provided by Scroll of a Thousand Curses for each curse, as percentage. [range: 0 ~ 32768, default: 4, synchronized: yes]
     I:CursedScrollRegenBoost=4

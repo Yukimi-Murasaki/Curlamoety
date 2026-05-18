@@ -13247,11 +13247,24 @@
 			dependencies: ["016F4B7AA6566720"]
 			description: ["将暗影尖啸体放置在有灵魂能量供给的诅咒之笼上方，然后用深邃回响碎片右键暗影尖啸体，就可以消耗碎片及10000灵魂能量，召唤一只你自己的监守者仆从"]
 			id: "49D224F6674146D3"
-			rewards: [{
-				id: "093FF7BC64EB180F"
-				item: "goetyawaken:profound_echoing_shard"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "431DD1C88C1EE504"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "44A0E7FB653AFA7A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0ED73D30DEE481A6"
+					item: "goety:dark_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "属于你自己的牢大"
 			tasks: [{
 				id: "379E6F87A29B973A"

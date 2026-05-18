@@ -1,185 +1,187 @@
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.28
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 11 (amd64) version 10.0
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 17.0.15, Microsoft
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: 1.20.1
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Config File: D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\CustomSkinLoader.json
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GameProfile
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.28
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 38
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "GameProfile", "type": "GameProfile" }, { "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://api.minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
-[2026-05-17 17:04:11] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
-[2026-05-17 17:04:11] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Loading Yukimi_Murasaki's profile.
-[2026-05-17 17:04:11] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'GameProfile'.
-[2026-05-17 17:04:11] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:11] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'Mojang'.
-[2026-05-17 17:04:11] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
-[2026-05-17 17:04:11] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: ["Yukimi_Murasaki"]
-[2026-05-17 17:04:11] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 81)
-[2026-05-17 17:04:11] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: [ {
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.28
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 11 (amd64) version 10.0
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 17.0.15, Microsoft
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: 1.20.1
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Config File: D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\CustomSkinLoader.json
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GameProfile
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.28
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 38
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "GameProfile", "type": "GameProfile" }, { "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://api.minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
+[2026-05-18 11:15:58] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
+[2026-05-18 11:15:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Loading Yukimi_Murasaki's profile.
+[2026-05-18 11:15:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'GameProfile'.
+[2026-05-18 11:15:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:15:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'Mojang'.
+[2026-05-18 11:15:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2026-05-18 11:15:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: ["Yukimi_Murasaki"]
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 81)
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: [ {
   "id" : "b653d31fa739434dab3254803566166b",
   "name" : "Yukimi_Murasaki"
 } ]
-[2026-05-17 17:04:11] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://sessionserver.mojang.com/session/minecraft/profile/b653d31fa739434dab3254803566166b'.
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 625)
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 625 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\aff9c4ded8d488cd76194755dade1ba6413f987a' , Expire: 1779008672)
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://sessionserver.mojang.com/session/minecraft/profile/b653d31fa739434dab3254803566166b'.
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 625)
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 625 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\aff9c4ded8d488cd76194755dade1ba6413f987a' , Expire: 1779074179)
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {
   "id" : "b653d31fa739434dab3254803566166b",
   "name" : "Yukimi_Murasaki",
   "properties" : [ {
     "name" : "textures",
-    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc3OTAwODY1NTQyOSwKICAicHJvZmlsZUlkIiA6ICJiNjUzZDMxZmE3Mzk0MzRkYWIzMjU0ODAzNTY2MTY2YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJZdWtpbWlfTXVyYXNha2kiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYzNTM4NGEzYzg2YTBhNGJjYTNhMTc1YzI3YjVkMGU0MDE5ZTZiMTlhMjU4MmIyMTI3NDJkYTg3YjIyODkzOCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc3OTA3NDE2NDc5MSwKICAicHJvZmlsZUlkIiA6ICJiNjUzZDMxZmE3Mzk0MzRkYWIzMjU0ODAzNTY2MTY2YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJZdWtpbWlfTXVyYXNha2kiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYzNTM4NGEzYzg2YTBhNGJjYTNhMTc1YzI3YjVkMGU0MDE5ZTZiMTlhMjU4MmIyMTI3NDJkYTg3YjIyODkzOCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
   } ],
   "profileActions" : [ ]
 }
-[2026-05-17 17:04:12] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 3/14 Try to load profile from 'LittleSkin'.
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Yukimi_Murasaki.json'.
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 2)
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 2 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\db0a8dc34a40f3a380f13c3ca6abc5e9a72b7d47' , Expire: 1779008747)
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {}
-[2026-05-17 17:04:12] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
-[2026-05-17 17:04:12] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 4/14 Try to load profile from 'BlessingSkin'.
-[2026-05-17 17:04:12] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://skin.prinzeugen.net/Yukimi_Murasaki.json'.
-[2026-05-17 17:04:13] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 17:04:13] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:13] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 5/14 Try to load profile from 'ElyBy'.
-[2026-05-17 17:04:13] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://skinsystem.ely.by/textures/Yukimi_Murasaki'.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 500)
-[2026-05-17 17:04:14] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 6/14 Try to load profile from 'SkinMe'.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://www.skinme.cc/uniskin/Yukimi_Murasaki.json'.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request http://www.skinme.cc/uniskin/Yukimi_Murasaki.json (Exception: java.net.UnknownHostException: www.skinme.cc)
-[2026-05-17 17:04:14] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 7/14 Try to load profile from 'TLauncher'.
-[2026-05-17 17:04:14] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://auth.tlauncher.org/skin/profile/texture/login/Yukimi_Murasaki'.
-[2026-05-17 17:04:15] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
-[2026-05-17 17:04:15] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\b05002e5ad65ee7a6e9af76164431d47c77714aa' , Expire: 1779008746)
-[2026-05-17 17:04:15] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
-[2026-05-17 17:04:15] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 8/14 Try to load profile from 'GlitchlessGames'.
-[2026-05-17 17:04:15] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=Yukimi_Murasaki'.
-[2026-05-17 17:04:17] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 17:04:17] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:17] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 9/14 Try to load profile from 'LocalSkin'.
-[2026-05-17 17:04:17] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 17:04:17] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 10/14 Try to load profile from 'MinecraftCapes'.
-[2026-05-17 17:04:17] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.minecraftcapes.net/profile/b653d31fa739434dab3254803566166b'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 241 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1' , Expire: 0)
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"animatedCape":false,"capeGlint":false,"upsideDown":false,"animated_cape_url":null,"cape_url":null,"ear_url":null,"textures":{"_IMPORTANT":"We are removing base64 textures, please use the above parameters instead.","cape":null,"ears":null}}
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 11/14 Try to load profile from 'OptiFine'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://optifine.net/capes/Yukimi_Murasaki.png'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 12/14 Try to load profile from 'Wynntils'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://athena.wynntils.com/user/getInfo'.
-[2026-05-17 17:04:18] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: {"uuid":"b653d31f-a739-434d-ab32-54803566166b"}
-[2026-05-17 17:04:19] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
-[2026-05-17 17:04:19] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 17:04:19] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 13/14 Try to load profile from 'CloakPlus'.
-[2026-05-17 17:04:19] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://161.35.130.99/capes/Yukimi_Murasaki.png'.
-[2026-05-17 17:04:22] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 17:04:22] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 17:04:22] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 14/14 Try to load profile from 'Cosmetica'.
-[2026-05-17 17:04:22] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.cosmetica.cc/get/cloak?username=Yukimi_Murasaki&uuid=b653d31f-a739-434d-ab32-54803566166b&nothirdparty'.
-[2026-05-17 17:04:23] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
-[2026-05-17 17:04:23] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 17:04:23] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Yukimi_Murasaki's profile loaded.
-[2026-05-17 17:04:23] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938 , Model: slim , CapeUrl: null  , Expiry: 1779008693)
-[2026-05-17 20:36:51] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Loading Yukimi_Murasaki's profile.
-[2026-05-17 20:36:51] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'GameProfile'.
-[2026-05-17 20:36:51] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:51] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'Mojang'.
-[2026-05-17 20:36:51] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://sessionserver.mojang.com/session/minecraft/profile/b653d31fa739434dab3254803566166b'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 625)
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 625 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\aff9c4ded8d488cd76194755dade1ba6413f987a' , Expire: 1779021432)
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {
+[2026-05-18 11:15:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 3/14 Try to load profile from 'LittleSkin'.
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Yukimi_Murasaki.json'.
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 2)
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 2 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\db0a8dc34a40f3a380f13c3ca6abc5e9a72b7d47' , Expire: 1779074253)
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {}
+[2026-05-18 11:15:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
+[2026-05-18 11:15:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 4/14 Try to load profile from 'BlessingSkin'.
+[2026-05-18 11:15:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://skin.prinzeugen.net/Yukimi_Murasaki.json'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:16:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 5/14 Try to load profile from 'ElyBy'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://skinsystem.ely.by/textures/Yukimi_Murasaki'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 149)
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\4c53bcee21c05886b8d4da3af94c721612f442b5' , Expire: 1779074250)
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
+[2026-05-18 11:16:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 6/14 Try to load profile from 'SkinMe'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://www.skinme.cc/uniskin/Yukimi_Murasaki.json'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request http://www.skinme.cc/uniskin/Yukimi_Murasaki.json (Exception: java.net.UnknownHostException: www.skinme.cc)
+[2026-05-18 11:16:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 7/14 Try to load profile from 'TLauncher'.
+[2026-05-18 11:16:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://auth.tlauncher.org/skin/profile/texture/login/Yukimi_Murasaki'.
+[2026-05-18 11:16:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
+[2026-05-18 11:16:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\b05002e5ad65ee7a6e9af76164431d47c77714aa' , Expire: 1779074256)
+[2026-05-18 11:16:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
+[2026-05-18 11:16:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 8/14 Try to load profile from 'GlitchlessGames'.
+[2026-05-18 11:16:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=Yukimi_Murasaki'.
+[2026-05-18 11:16:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:16:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:16:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 9/14 Try to load profile from 'LocalSkin'.
+[2026-05-18 11:16:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:16:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 10/14 Try to load profile from 'MinecraftCapes'.
+[2026-05-18 11:16:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.minecraftcapes.net/profile/b653d31fa739434dab3254803566166b'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 241 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1' , Expire: 0)
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"animatedCape":false,"capeGlint":false,"upsideDown":false,"animated_cape_url":null,"cape_url":null,"ear_url":null,"textures":{"_IMPORTANT":"We are removing base64 textures, please use the above parameters instead.","cape":null,"ears":null}}
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 11/14 Try to load profile from 'OptiFine'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://optifine.net/capes/Yukimi_Murasaki.png'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 12/14 Try to load profile from 'Wynntils'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://athena.wynntils.com/user/getInfo'.
+[2026-05-18 11:16:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: {"uuid":"b653d31f-a739-434d-ab32-54803566166b"}
+[2026-05-18 11:16:04] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
+[2026-05-18 11:16:04] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:16:04] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 13/14 Try to load profile from 'CloakPlus'.
+[2026-05-18 11:16:04] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://161.35.130.99/capes/Yukimi_Murasaki.png'.
+[2026-05-18 11:16:05] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:16:05] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:16:05] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 14/14 Try to load profile from 'Cosmetica'.
+[2026-05-18 11:16:05] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.cosmetica.cc/get/cloak?username=Yukimi_Murasaki&uuid=b653d31f-a739-434d-ab32-54803566166b&nothirdparty'.
+[2026-05-18 11:16:06] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
+[2026-05-18 11:16:06] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:16:06] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Yukimi_Murasaki's profile loaded.
+[2026-05-18 11:16:06] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938 , Model: slim , CapeUrl: null  , Expiry: 1779074196)
+[2026-05-18 11:27:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Loading Yukimi_Murasaki's profile.
+[2026-05-18 11:27:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'GameProfile'.
+[2026-05-18 11:27:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:27:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'Mojang'.
+[2026-05-18 11:27:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://sessionserver.mojang.com/session/minecraft/profile/b653d31fa739434dab3254803566166b'.
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 625)
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 625 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\aff9c4ded8d488cd76194755dade1ba6413f987a' , Expire: 1779074898)
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {
   "id" : "b653d31fa739434dab3254803566166b",
   "name" : "Yukimi_Murasaki",
   "properties" : [ {
     "name" : "textures",
-    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc3OTAyMTQxNDQwOSwKICAicHJvZmlsZUlkIiA6ICJiNjUzZDMxZmE3Mzk0MzRkYWIzMjU0ODAzNTY2MTY2YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJZdWtpbWlfTXVyYXNha2kiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYzNTM4NGEzYzg2YTBhNGJjYTNhMTc1YzI3YjVkMGU0MDE5ZTZiMTlhMjU4MmIyMTI3NDJkYTg3YjIyODkzOCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc3OTA3NDg4Mzg1MCwKICAicHJvZmlsZUlkIiA6ICJiNjUzZDMxZmE3Mzk0MzRkYWIzMjU0ODAzNTY2MTY2YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJZdWtpbWlfTXVyYXNha2kiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYzNTM4NGEzYzg2YTBhNGJjYTNhMTc1YzI3YjVkMGU0MDE5ZTZiMTlhMjU4MmIyMTI3NDJkYTg3YjIyODkzOCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
   } ],
   "profileActions" : [ ]
 }
-[2026-05-17 20:36:52] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 3/14 Try to load profile from 'LittleSkin'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Yukimi_Murasaki.json'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 2)
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 2 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\db0a8dc34a40f3a380f13c3ca6abc5e9a72b7d47' , Expire: 1779021507)
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {}
-[2026-05-17 20:36:52] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 4/14 Try to load profile from 'BlessingSkin'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://skin.prinzeugen.net/Yukimi_Murasaki.json'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 20:36:52] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 5/14 Try to load profile from 'ElyBy'.
-[2026-05-17 20:36:52] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://skinsystem.ely.by/textures/Yukimi_Murasaki'.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 500)
-[2026-05-17 20:36:53] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 6/14 Try to load profile from 'SkinMe'.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://www.skinme.cc/uniskin/Yukimi_Murasaki.json'.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request http://www.skinme.cc/uniskin/Yukimi_Murasaki.json (Exception: java.net.UnknownHostException: www.skinme.cc)
-[2026-05-17 20:36:53] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 7/14 Try to load profile from 'TLauncher'.
-[2026-05-17 20:36:53] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://auth.tlauncher.org/skin/profile/texture/login/Yukimi_Murasaki'.
-[2026-05-17 20:36:54] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
-[2026-05-17 20:36:54] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\b05002e5ad65ee7a6e9af76164431d47c77714aa' , Expire: 1779021508)
-[2026-05-17 20:36:54] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
-[2026-05-17 20:36:54] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 8/14 Try to load profile from 'GlitchlessGames'.
-[2026-05-17 20:36:54] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=Yukimi_Murasaki'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 9/14 Try to load profile from 'LocalSkin'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 10/14 Try to load profile from 'MinecraftCapes'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.minecraftcapes.net/profile/b653d31fa739434dab3254803566166b'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 241 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1' , Expire: 0)
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"animatedCape":false,"capeGlint":false,"upsideDown":false,"animated_cape_url":null,"cape_url":null,"ear_url":null,"textures":{"_IMPORTANT":"We are removing base64 textures, please use the above parameters instead.","cape":null,"ears":null}}
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 11/14 Try to load profile from 'OptiFine'.
-[2026-05-17 20:36:57] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://optifine.net/capes/Yukimi_Murasaki.png'.
-[2026-05-17 20:36:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 20:36:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 20:36:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 12/14 Try to load profile from 'Wynntils'.
-[2026-05-17 20:36:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://athena.wynntils.com/user/getInfo'.
-[2026-05-17 20:36:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: {"uuid":"b653d31f-a739-434d-ab32-54803566166b"}
-[2026-05-17 20:36:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
-[2026-05-17 20:36:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
-[2026-05-17 20:36:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 13/14 Try to load profile from 'CloakPlus'.
-[2026-05-17 20:36:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://161.35.130.99/capes/Yukimi_Murasaki.png'.
-[2026-05-17 20:37:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
-[2026-05-17 20:37:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 20:37:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 14/14 Try to load profile from 'Cosmetica'.
-[2026-05-17 20:37:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.cosmetica.cc/get/cloak?username=Yukimi_Murasaki&uuid=b653d31f-a739-434d-ab32-54803566166b&nothirdparty'.
-[2026-05-17 20:37:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
-[2026-05-17 20:37:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
-[2026-05-17 20:37:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Yukimi_Murasaki's profile loaded.
-[2026-05-17 20:37:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938 , Model: slim , CapeUrl: null  , Expiry: 1779021451)
+[2026-05-18 11:27:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 3/14 Try to load profile from 'LittleSkin'.
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Yukimi_Murasaki.json'.
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 2)
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 2 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\db0a8dc34a40f3a380f13c3ca6abc5e9a72b7d47' , Expire: 1779074971)
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {}
+[2026-05-18 11:27:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
+[2026-05-18 11:27:58] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 4/14 Try to load profile from 'BlessingSkin'.
+[2026-05-18 11:27:58] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://skin.prinzeugen.net/Yukimi_Murasaki.json'.
+[2026-05-18 11:27:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:27:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:27:59] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 5/14 Try to load profile from 'ElyBy'.
+[2026-05-18 11:27:59] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://skinsystem.ely.by/textures/Yukimi_Murasaki'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 149)
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\4c53bcee21c05886b8d4da3af94c721612f442b5' , Expire: 1779074973)
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
+[2026-05-18 11:28:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 6/14 Try to load profile from 'SkinMe'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://www.skinme.cc/uniskin/Yukimi_Murasaki.json'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request http://www.skinme.cc/uniskin/Yukimi_Murasaki.json (Exception: java.net.UnknownHostException: www.skinme.cc)
+[2026-05-18 11:28:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 7/14 Try to load profile from 'TLauncher'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://auth.tlauncher.org/skin/profile/texture/login/Yukimi_Murasaki'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 149 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\b05002e5ad65ee7a6e9af76164431d47c77714aa' , Expire: 1779074971)
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938","metadata":{"model":"slim"}}}
+[2026-05-18 11:28:00] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 8/14 Try to load profile from 'GlitchlessGames'.
+[2026-05-18 11:28:00] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=Yukimi_Murasaki'.
+[2026-05-18 11:28:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:28:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:28:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 9/14 Try to load profile from 'LocalSkin'.
+[2026-05-18 11:28:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:28:01] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 10/14 Try to load profile from 'MinecraftCapes'.
+[2026-05-18 11:28:01] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.minecraftcapes.net/profile/b653d31fa739434dab3254803566166b'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 241 , Path: 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1' , Expire: 0)
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\灾厄巫咒\CustomSkinLoader\caches\ce09077fb97f5256bc65e3e4f404f0e0855578f1'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Content: {"animatedCape":false,"capeGlint":false,"upsideDown":false,"animated_cape_url":null,"cape_url":null,"ear_url":null,"textures":{"_IMPORTANT":"We are removing base64 textures, please use the above parameters instead.","cape":null,"ears":null}}
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 11/14 Try to load profile from 'OptiFine'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://optifine.net/capes/Yukimi_Murasaki.png'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 12/14 Try to load profile from 'Wynntils'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://athena.wynntils.com/user/getInfo'.
+[2026-05-18 11:28:02] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Payload: {"uuid":"b653d31f-a739-434d-ab32-54803566166b"}
+[2026-05-18 11:28:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
+[2026-05-18 11:28:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Profile not found.
+[2026-05-18 11:28:03] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 13/14 Try to load profile from 'CloakPlus'.
+[2026-05-18 11:28:03] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'http://161.35.130.99/capes/Yukimi_Murasaki.png'.
+[2026-05-18 11:28:04] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2026-05-18 11:28:04] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:28:04] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: 14/14 Try to load profile from 'Cosmetica'.
+[2026-05-18 11:28:04] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.cosmetica.cc/get/cloak?username=Yukimi_Murasaki&uuid=b653d31f-a739-434d-ab32-54803566166b&nothirdparty'.
+[2026-05-18 11:28:05] [Yukimi_Murasaki/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 403)
+[2026-05-18 11:28:05] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2026-05-18 11:28:05] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: Yukimi_Murasaki's profile loaded.
+[2026-05-18 11:28:05] [Yukimi_Murasaki/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/ff35384a3c86a0a4bca3a175c27b5d0e4019e6b19a2582b212742da87b228938 , Model: slim , CapeUrl: null  , Expiry: 1779074915)

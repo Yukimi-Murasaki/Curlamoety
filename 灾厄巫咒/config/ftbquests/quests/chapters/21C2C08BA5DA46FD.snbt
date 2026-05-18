@@ -619,11 +619,23 @@
 		}
 		{
 			id: "1C3F439BB0072DB9"
-			rewards: [{
-				id: "740847E791D2CB90"
-				item: "goetyawaken:shadow_shrieker"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1B3167979807AD2C"
+					item: "goetydelight:full_spider_feast"
+					type: "item"
+				}
+				{
+					id: "09A2675C174F7E8E"
+					item: "goetydelight:boat_stuffed_roasted_warden_block"
+					type: "item"
+				}
+				{
+					id: "22C49536BCDCCDEF"
+					item: "goetydelight:soul_convergence_room"
+					type: "item"
+				}
+			]
 			subtitle: "让育母蜘蛛击败一只监守者"
 			tasks: [{
 				advancement: "goetydelight:get_parasitized_warden"
