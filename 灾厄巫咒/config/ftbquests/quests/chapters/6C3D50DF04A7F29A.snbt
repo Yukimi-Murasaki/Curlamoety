@@ -2028,24 +2028,6 @@
 		}
 		{
 			dependencies: ["470147F2B38DCCC2"]
-			description: ["召唤女仆妖精来为你作战，她们战斗力不强，但是可爱"]
-			id: "47BBC83910677FD3"
-			rewards: [{
-				id: "4606176AC58FE40D"
-				item: "touhou_little_maid:power_point"
-				type: "item"
-			}]
-			subtitle: "baka~baka~"
-			tasks: [{
-				id: "0E07A8EDCA36B11A"
-				item: "goetyawaken:fairy_focus"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 17.5d
-		}
-		{
-			dependencies: ["470147F2B38DCCC2"]
 			description: [
 				"祭坛是车万女仆的核心内容之一，它是一个多方块结构，用20个红色羊毛与18个任意原木搭建祭坛结构，然后用御币右键指定的羊毛块即可创建祭坛。可以参考指南书《记忆中的幻想乡》。"
 				"{image:ftbquests:textures/quests.touhou_alter_1.png width:100 height:100 align:center}"

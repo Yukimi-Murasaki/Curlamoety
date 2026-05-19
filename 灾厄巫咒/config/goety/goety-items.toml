@@ -186,16 +186,16 @@
 		[Curios.Robes.Neutral]
 			#If 'windSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			windSetMobNeutralHealth = 150.0
+			windSetMobNeutralHealth = 200.0
 			#If 'voidSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			voidSetMobNeutralHealth = 150.0
+			voidSetMobNeutralHealth = 500.0
 			#If 'frostSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			frostSetMobNeutralHealth = 150.0
+			frostSetMobNeutralHealth = 200.0
 			#If 'geoSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			geoSetMobNeutralHealth = 150.0
+			geoSetMobNeutralHealth = 200.0
 			#Whether wearing both Geo Robe and Amethyst Necklace will cause certain mobs to be neutral, Default: true
 			geoSetMobNeutral = true
 			#Whether wearing both Witch Robe and Hat will cause Witches and Warlocks to be neutral, Default: true
@@ -208,22 +208,22 @@
 			voidSetMobNeutral = true
 			#If 'necroSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			necroSetUndeadNeutralHealth = 150.0
+			necroSetUndeadNeutralHealth = 200.0
 			#Whether wearing both Nameless Cape and Crown will cause Undead mobs to be neutral, Default: true
 			namelessSetUndeadNeutral = true
 			#If 'stormSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			stormSetMobNeutralHealth = 150.0
+			stormSetMobNeutralHealth = 200.0
 			#Whether wearing both Abyss Robe and Crown will cause certain mobs to be neutral, Default: true
 			abyssSetMobNeutral = true
 			#If 'wildSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			wildSetMobNeutralHealth = 150.0
+			wildSetMobNeutralHealth = 200.0
 			#Whether wearing both Necro Cape and Crown will cause Undead mobs to be neutral, Default: true
 			necroSetUndeadNeutral = true
 			#If 'namelessSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			namelessSetUndeadNeutralHealth = 150.0
+			namelessSetUndeadNeutralHealth = 500.0
 			#Whether wearing both Wild Robe and Crown will cause certain mobs to be neutral, Default: true
 			wildSetMobNeutral = true
 			#Whether wearing both Nether Robe and Crown will cause certain mobs to be neutral, Default: true
@@ -232,12 +232,12 @@
 			stormSetMobNeutral = true
 			#If 'netherSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			netherSetMobNeutralHealth = 150.0
+			netherSetMobNeutralHealth = 300.0
 			#Whether wearing a Nether Robe will cause Witches and Warlocks to be neutral, Default: true
 			netherRobeWitchNeutral = true
 			#If 'abyssSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			abyssSetMobNeutralHealth = 150.0
+			abyssSetMobNeutralHealth = 200.0
 			#Whether wearing a Warlock Robe will cause Witches and Warlocks to be neutral, Default: true
 			warlockRobeWitchNeutral = true
 

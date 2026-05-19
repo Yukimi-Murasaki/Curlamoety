@@ -30,7 +30,7 @@
 				draugrArmor = 3.0
 				#How much Max Health Draugr Servants have, Default: 28.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				draugrHealth = 112.0
+				draugrHealth = 140.0
 
 			[Attributes."Summoned Mobs".Draugr."Aptrgangr Servant"]
 				#How much Max Health Aptrgangr Servants have, Default: 160.0
@@ -49,7 +49,7 @@
 			[Attributes."Summoned Mobs".Draugr."Royal Draugr Servant"]
 				#How much Max Health Royal Draugr Servants have, Default: 30.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				royalDraugrHealth = 120.0
+				royalDraugrHealth = 150.0
 				#How much natural Armor Royal Draugr Servants have, Default: 5.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				royalDraugrArmor = 5.0
@@ -60,7 +60,7 @@
 			[Attributes."Summoned Mobs".Draugr."Elite Draugr Servant"]
 				#How much Max Health Elite Draugr Servants have, Default: 32.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				eliteDraugrHealth = 96.0
+				eliteDraugrHealth = 160.0
 				#How much damage Elite Draugr Servants melee attack deals, Default: 5.0
 				#Range: 1.0 ~ 1.7976931348623157E308
 				eliteDraugrMeleeDamage = 15.0
@@ -90,13 +90,13 @@
 				ignitedRevenantArmor = 12.0
 				#How much Max Health Ignited Revenant Servants have, Default: 80.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				ignitedRevenantHealth = 400.0
+				ignitedRevenantHealth = 1600.0
 				#How much damage Ignited Revenant Servants range attack deals, Default: 5.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				ignitedRevenantRangeDamage = 20.0
+				ignitedRevenantRangeDamage = 40.0
 				#How much damage Ignited Revenant Servants melee attack deals, Default: 6.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				ignitedRevenantMeleeDamage = 15.0
+				ignitedRevenantMeleeDamage = 30.0
 
 			[Attributes."Summoned Mobs".Ignited."Ignited Berserker Servant"]
 				#How much damage Ignited Berserker Servants melee attack deals, Default: 7.5

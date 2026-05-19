@@ -1,5 +1,14 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "goety:black_book": {
+      "viewedEntries": [
+        "goety:goeticlegacy/night_cube",
+        "goety:mutations/wildfire"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

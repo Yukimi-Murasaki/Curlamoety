@@ -214,8 +214,8 @@
 			"curlamoety.silver_rapier" = 4.5
 			"curlamoety.skeleton_leg" = 8
 			"curlamoety.platinum_punch" = 3
-			"curlamoety.mary_sue_staff" = 10
-			"curlamoety.mary_sue_staff_plus" = 20
+			"curlamoety.mary_sue_staff" = 7
+			"curlamoety.mary_sue_staff_plus" = 16
 			"curlamoety.inspiration_wand" = 4
 			"curlamoety.shikishin_wand" = 6
 			"cataclysm.coral_spear" = 9
@@ -265,7 +265,7 @@
 			"curlamoety.skeleton_leg" = 1.4
 			"curlamoety.platinum_punch" = 6
 			"curlamoety.mary_sue_staff" = 1.4
-			"curlamoety.mary_sue_staff_plus" = 1.8
+			"curlamoety.mary_sue_staff_plus" = 1.5
 			"curlamoety.inspiration_wand" = 2
 			"curlamoety.shikishin_wand" = 2
 
@@ -350,7 +350,10 @@
 		"minecraft.shulker" = "minecraft:generic.max_health;300"
 		"minecraft.ghast" = "minecraft:generic.max_health;20"
 		"minecraft.warden" = "minecraft:generic.max_health;1000"
-		"cataclysm.ignited_berserker" = "minecraft:generic.max_health;130"
+		"cataclysm.draugr" = "minecraft:generic.max_health;140"
+		"cataclysm.royal_draugr" = "minecraft:generic.max_health;150"
+		"cataclysm.elite_draugr" = "minecraft:generic.max_health;160"
+		"cataclysm.ignited_berserker" = "minecraft:generic.max_health;195"
 		"cataclysm.watcher" = "minecraft:generic.max_health;300"
 		"cataclysm.Hippocamtus" = "minecraft:generic.max_health;850"
 		"cataclysm.cindaria" = "minecraft:generic.max_health;600"

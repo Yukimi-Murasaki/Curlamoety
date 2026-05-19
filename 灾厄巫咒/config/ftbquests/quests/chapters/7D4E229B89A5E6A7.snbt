@@ -1,0 +1,5007 @@
+{
+	autofocus_id: "42952B4B0CE9F8F6"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7D4E229B89A5E6A7"
+	group: "64A85F1CF1963E94"
+	icon: {
+		Count: 1
+		id: "patchouli:guide_book"
+		tag: {
+			"patchouli:book": "goety:black_book"
+		}
+	}
+	id: "7D4E229B89A5E6A7"
+	images: [
+		{
+			height: 3.0d
+			image: "goety:item/witch_hat"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			height: 3.0d
+			image: "goety:item/empty_focus"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			height: 3.0d
+			image: "goetydelight:textures/mob_effect/servant_reinforcement.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			height: 5.0d
+			image: "goety:item/full_totem"
+			rotation: 0.0d
+			width: 5.0d
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			height: 5.0d
+			image: "minecraft:item/echo_shard"
+			rotation: 0.0d
+			width: 5.0d
+			x: 18.0d
+			y: -0.5d
+		}
+		{
+			height: 5.0d
+			image: "goety:item/black_book"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1E0EF342251627BE"]
+			description: [
+				"由灾厄村民研发与使用的材料，其定位和外观与“银”相近，因此本包中可以将其作为银使用。"
+				""
+				"能用于制作一些灾厄系列的工具。"
+			]
+			id: "4663D113E65B8563"
+			rewards: [{
+				count: 3
+				id: "1F085B2ADE7917B0"
+				item: "goety:pale_steel_ingot"
+				type: "item"
+			}]
+			subtitle: "灾厄之银"
+			tasks: [{
+				id: "4692E17128048944"
+				item: "goety:pale_steel_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1E0EF342251627BE"]
+			description: [
+				"通过仪式可以将村民转化为新刌民"
+				""
+				"新刌民可以像&e村民一样&r繁殖，成长，这些刌民可以通过训练来变成不同职业，最终成为你的军队。"
+				""
+				"训练需要&e不祥火炬&r，类似仪式的不同类型，当不祥火炬周围放置了若干指定的方块时，它便可以让新刌民训练成对应的职业"
+				""
+				"新刌民有概率拥有&d魔法资质&r，拥有魔法资质的新刌民将穿着紫色衣服，只有拥有魔法资质的新刌民才可以被训练成魔法职业"
+				""
+				"不祥神像则可以绑定你的新刌民，并为绑定的仆从提供&e复活&r服务"
+			]
+			id: "0E3A47C0E7C02C49"
+			rewards: [
+				{
+					count: 2
+					id: "6AEF07E316BDFEBE"
+					item: "easy_villagers:villager"
+					type: "item"
+				}
+				{
+					id: "68AAC8FFB25D09E5"
+					item: {
+						Count: 1
+						id: "goety:rampaging_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "属于你的军队"
+			tasks: [
+				{
+					id: "5D360E27A7E2E7EC"
+					item: "goety:ominous_pyre"
+					type: "item"
+				}
+				{
+					id: "061635B8BC719A46"
+					item: "goety:ominous_idol"
+					type: "item"
+				}
+			]
+			title: "新刌民"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: ["诡厄巫法中有许多与灾厄村民相关的技术"]
+			icon: {
+				Count: 1
+				id: "minecraft:white_banner"
+				tag: {
+					BlockEntityTag: {
+						Patterns: [
+							{
+								Color: 9
+								Pattern: "mr"
+							}
+							{
+								Color: 8
+								Pattern: "bs"
+							}
+							{
+								Color: 7
+								Pattern: "cs"
+							}
+							{
+								Color: 8
+								Pattern: "bo"
+							}
+							{
+								Color: 15
+								Pattern: "ms"
+							}
+							{
+								Color: 8
+								Pattern: "hh"
+							}
+							{
+								Color: 8
+								Pattern: "mc"
+							}
+							{
+								Color: 15
+								Pattern: "bo"
+							}
+						]
+						id: "minecraft:banner"
+					}
+					HideFlags: 32
+					display: {
+						Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+					}
+				}
+			}
+			id: "1E0EF342251627BE"
+			rewards: [{
+				id: "221749B120CFFA28"
+				item: "trials:ominous_bottle"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "&7你知道的，诡厄巫法是一款以灾厄村民为主题的魔法模组……"
+			tasks: [
+				{
+					id: "18A1D6C8C9BC0614"
+					title: "灾厄之秘"
+					type: "checkmark"
+				}
+				{
+					id: "7B1146AC02123ADA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1E0EF342251627BE"]
+			description: [
+				"诡厄巫法的袭击&4非常危险&r，众多不同的法师蜂拥而至，劫掠兽披上下界合金的铠甲，巨大的红石傀儡与红石巨兽撼天动地……这也是为什么本模组加入了试炼密室模组，提前更新1.21的不祥之瓶来避免意外获得不祥之兆。此外，利用诡厄巫法加入的不祥护符，也可以手动吸收和释放不祥之兆。"
+				""
+				"当&e玩家自身拥有的灵魂能量较多&r时，灾厄村民们将会发现这个偷学他们技艺的窃贼，并时不时派出一只&4灾厄猎杀小队&r围剿玩家，通过激活尖啸方尖碑，可以阻止灾厄猎杀。"
+			]
+			icon: "trials:ominous_bottle"
+			id: "4AB0DD1187229840"
+			rewards: [
+				{
+					id: "759CCEF08E03A945"
+					item: "goety:alarming_charm"
+					type: "item"
+				}
+				{
+					id: "39BD7FB4324ACC91"
+					item: "goety:ominous_charm"
+					type: "item"
+				}
+			]
+			subtitle: "被发现了被发现了被发现了被发现了"
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "0897521D914CCBE5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "灾厄猎杀与袭击"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4AB0DD1187229840"]
+			description: [
+				"&7筑起一座京观来让袭击者担惊受怕（不是）"
+				""
+				"像信标那样搭建一座金字塔，将诅咒之笼和尖啸方尖碑放置在顶端，塔身上再额外摆上高头骨，当方尖碑下的诅咒之笼拥有能量源，且至少有一个高头骨在正确的位置上时，尖啸方尖碑上的眼睛会亮起，这样它就可以阻止一定范围内的灾厄猎杀发生，&e高头骨越多，范围越大&r。"
+				""
+				"使用高头骨可以酿造带有猎杀据止效果的药酿，阻止灾厄猎杀发生"
+				""
+				"{image:ftbquests:textures/quests.shriek_obelisk.png width:100 height:100 align:center}"
+				"                     &7摆放案例"
+			]
+			id: "69BEA87D75FA685D"
+			rewards: [
+				{
+					count: 3
+					id: "090CA42C9602037D"
+					item: "goety:tall_skull"
+					type: "item"
+				}
+				{
+					id: "42996ED5227356FB"
+					item: "trials:ominous_bottle"
+					type: "item"
+				}
+				{
+					id: "5139EA1C53A1783B"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			subtitle: "散布恐惧吧"
+			tasks: [{
+				id: "5B94AD50438945E1"
+				item: "goety:shriek_obelisk"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4AB0DD1187229840"]
+			description: ["摇动这个钟将会把周围的袭击者全部汇聚起来，便于你将他们一网打尽。"]
+			id: "69F9F877E1ED58CC"
+			rewards: [
+				{
+					id: "1B1C899E774E7FD1"
+					item: "trials:ominous_bottle"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0B2103D4B2068A73"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "全体目光向我看齐"
+			tasks: [{
+				id: "2BFDD4E6857F0293"
+				item: "goety:hook_bell"
+				type: "item"
+			}]
+			title: "召集之钟"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4AB0DD1187229840"]
+			description: [
+				"会在袭击或者灾厄猎杀中出现，能够鼓舞其他袭击者。"
+				""
+				"它的手杖会格挡伤害，格挡过多伤害会破碎，这种情况下击杀他掉落不祥碎片。如果在不打碎手杖的情况下击杀则会直接掉落不详核心。"
+				""
+				"&e由于诡厄巫法配置文件时常由于不明原因自动重置，因此本包加入了巨兽呼叫机作为敌对红石巨兽的召唤物，由灾厄教父掉落1个"
+				"{ \"text\": \"红石巨兽\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2C5F0C990D139C46\" } }"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:ominous_staff"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+			}
+			id: "7D1254ED61D2A68F"
+			rewards: [
+				{
+					id: "5A5F245BA2EDB862"
+					item: "goety:ominous_orb"
+					type: "item"
+				}
+				{
+					id: "6593484F38CA3289"
+					item: "curlamoety:monstrosity_caller"
+					type: "item"
+				}
+			]
+			subtitle: "胡子气歪"
+			tasks: [{
+				advancement: "goety:goety/kill_a_minister"
+				criterion: ""
+				id: "5753199B42F2F9D5"
+				type: "advancement"
+			}]
+			title: "灾厄教父"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["76887FFBCC9335F9"]
+			description: ["&7你意识到生物的体内蕴含着灵魂的能量，这些能量驱动了唤魔者的巫术、监守者的尖啸……甚至是更加光怪陆离的魔法"]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "42952B4B0CE9F8F6"
+			progression_mode: "linear"
+			rewards: [{
+				id: "2E734438531BE2C1"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "——————劫掠——————"
+			tasks: [{
+				id: "44D06B10004E004C"
+				type: "checkmark"
+			}]
+			title: "黑暗魔法"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: [
+				"可以在探险者指南针搜索“埋葬仪式”来查找。"
+				""
+				"沙漠之中，周围由几个暗影石砖质的柱子围成的地形，中间会有一个骷髅头颅，可以找到若干可疑的沙子，有概率扫出诡厄巫法的一些材料（运气好有禁书碎片）。柱子底下会有一共两个尸壳刷怪笼。"
+				""
+				"刨开沙子，底下会有黑曜石，哭泣黑曜石和一个诅咒之笼"
+			]
+			icon: "minecraft:suspicious_sand"
+			id: "13CCDA1EBFA1B609"
+			rewards: [
+				{
+					id: "6BA62B442360F9EA"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "4937F95FE339F38B"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 100
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "这里面有什么呢……尸壳！"
+			tasks: [{
+				id: "1AF1A13DA5C66670"
+				structure: "goety:buried_ritual"
+				type: "structure"
+			}]
+			title: "埋葬仪式"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: [
+				"可以在探险者指南针中搜索“墓地”来查找。"
+				""
+				"由诅咒栅栏包围和暗影石砖包围的墓园，含有多个坟墓状建筑，挖开坟墓底下的灰化土可以发现宝箱——或者是黑狼刷怪笼。"
+				""
+				"宝箱之外，墓园里也含有许多有用的物品，现成的缠魂树木和插在花盆里的缠魂树苗，围绕墓园的大量诅咒栅栏可以用于合成诅咒之笼，还有祭坛基座，骷髅头颅……就连黑狼也可以用于献祭并召唤一个强大的，能够随着世界天数增长而获得增幅的永久仆从（送的蛋是为了防止脸黑没有刷怪笼）"
+			]
+			icon: "goety:cursed_bars"
+			id: "58B5D45B8ECD9900"
+			rewards: [
+				{
+					id: "2CEC4F2ADE2E7F94"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 100
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0755CDC70D8F1476"
+					item: "goety:black_wolf_spawn_egg"
+					type: "item"
+				}
+			]
+			subtitle: "这分明就是新手大礼包啊"
+			tasks: [{
+				icon: "minecraft:map"
+				id: "335ED58AAE30435B"
+				structure: "goety:graveyard"
+				title: "发现墓地"
+				type: "structure"
+			}]
+			title: "掘墓"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["22F2C9A90322A01F"]
+			description: [
+				"由于冰火收集器已被修改为&4玩家直接伤害&r，它的使用变得不方便了，而&e项链系列的饰品可以提供更方便高效的灵魂能量自动回复"
+				""
+				"&m冰火收集器在接到红石信号后会在上方生成冰火焰，这些火焰在灼烧敌人时可以为收集器的主人（放置者）提供灵魂能量"
+				""
+				"&m利用不会死亡的训练人偶和自动的红石信号，即可源源不断地自动化提供灵魂能量，但是&e要记得放置区块载入器保持区块加载"
+				""
+				"{ \"text\": \"点击此处，你可以给这个装置买一个好看的外包\",\"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0465533B73E83452\" } }"
+			]
+			id: "302E752E9CE87179"
+			rewards: [
+				{
+					id: "350680E6ED3C9D94"
+					item: "dummmmmmy:target_dummy"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "267B6A41C5A5ACAC"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+			]
+			size: 0.75d
+			subtitle: "默哀3秒钟"
+			tasks: [{
+				id: "7C2E8CC1E3CFA328"
+				item: "goety:ice_bouquet_trap"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: [
+				"根之图腾，以及另一个物品&e灵魂图腾&f可以存储最多100（10000）点灵魂能量，灵魂能量是诡厄巫法的基础能源，可以用于仪式、施法、烧炼黑暗金属等等。"
+				""
+				"通过在工作台&e将图腾与材料合成&r可以获得一些黑暗材料，这个过程将消耗图腾中的1点灵魂能量，如果能量为0则消耗图腾本身（灵魂图腾会变成耗尽的灵魂图腾，可以用一个灵魂火把或灵魂灯笼填充）这个过程相比使用诅咒注入器&4更贵&r，但是速度&e更快更方便&r，尤其是阴影石这个需求量大合成也不会额外损耗的配方。"
+			]
+			id: "22F2C9A90322A01F"
+			rewards: [
+				{
+					id: "6A8B2C5212C20491"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 100
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1F8C8479BB827826"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "204F0EC73A8DE264"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "goety:soul_eater"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "生物的魔力"
+			tasks: [{
+				id: "64C022F52BED04CF"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "灵魂能量"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42952B4B0CE9F8F6"]
+			description: [
+				"&7你感到好奇，是什么能量使得这个笼子可以源源不断地构造生物的躯体"
+				""
+				"当诅咒注入器放在一个刷怪笼上方时，它可以吸收刷怪笼中的黑暗能量，像篝火一样把物品“烤”成黑暗的版本。这个过程是免费的，而且相较于&4合成&f，它往往能以&e更低的成本&f为你转化黑暗材料（最高立省87.5%！）。"
+				"{image:ftbquests:textures/quests.infuser.png width:100 height:100 align:center}"
+				"            &7示例，包括自动化和收集"
+				""
+				"对着诅咒注入器按下JEI的&e“查看用途”&f键，可以查看诅咒注入器的转化列表。"
+				""
+				"&e获得墓穴砖后，可以升级成阴咒注入器，能够同时处理更多物品，并能将黑曜石转化为墓穴石"
+			]
+			icon: "minecraft:spawner"
+			id: "07F981C69026659A"
+			rewards: [
+				{
+					id: "1C6F9925D5F006B2"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "13D63481835DBF91"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					id: "5A84A78AE40D7BF6"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "4FDDD07F57D128C6"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "73FCDCFFED67A6DB"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+			]
+			subtitle: "从刷怪笼中攫取黑暗的能量"
+			tasks: [{
+				id: "0C391CCC8D843111"
+				item: "goety:cursed_infuser"
+				type: "item"
+			}]
+			title: "诅咒注入器"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["22F2C9A90322A01F"]
+			description: [
+				"孤魂尸鬼是一种稀有的敌怪，它会在玩家拥有较高灵魂能量时刷新在玩家附近，这时候&4浓雾凭空而生，期间鬼影绰绰&f。"
+				""
+				"它会不断传送来让玩家难以防备，召唤尸蛆和尸蝇干扰玩家。它的攻击命中会给予短时间的禁疗，并且窃取玩家的灵魂能量来治疗自身。在玩家处于低矮空间内时，还会伏地爬行来避免受阻。"
+				""
+				"击杀它会掉落独有素材暗影精粹，暗影精粹可以自我复制，和制作一些很有帮助的东西。"
+				""
+				"&e在安息仪式上，用墓穴石和灵质可以主动召唤孤魂尸鬼"
+				""
+				"使用暗影精粹可以酿造带有尸鬼据止效果的药酿，阻止尸鬼自然产生"
+			]
+			icon: "goety:shadow_essence"
+			id: "182B0AC732643909"
+			rewards: [
+				{
+					count: 2
+					id: "25F5152E6B13EFC2"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "15EA2B6C658E4623"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "发现你了"
+			tasks: [{
+				advancement: "goety:goety/kill_a_wight"
+				criterion: ""
+				id: "72815DEF9E9F2B1D"
+				type: "advancement"
+			}]
+			title: "孤魂尸鬼"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["182B0AC732643909"]
+			description: [
+				"暗兽是一只通过活力仪式召唤的永久仆从，召唤它需要阅读作祟卷轴。"
+				""
+				"暗兽属于荒野仆从，不仅拥有强悍的生命与攻击，还可以间歇性给予自身生命回复III，你也可以通过喂食肉类来治疗它。"
+				""
+				"并且随着世界天数的增长，暗兽还会获得额外的力量、抗性提升和吸血能力，以至于单挑一些BOSS也不在话下。"
+				""
+				"如果它意外身亡，也不用担心，暗兽死亡时掉落&e咆哮之魂&f，对黑狼使用即可复活暗兽。大部分诡厄巫法的昂贵永久召唤物都会有类似的复活方式。"
+				""
+				"&7哈哈，这不是我们生鱼馄饨的梦魇寻踪兽吗，下次记得标明出处"
+			]
+			icon: "goety:howling_soul"
+			id: "3A897BC0F76BE5CC"
+			rewards: [
+				{
+					count: 16
+					id: "5780BB0AFD97085F"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "06BB2EF0A72E622A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "6271C33F5FE483DE"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			subtitle: "咆哮吧，暗夜的梦魇"
+			tasks: [{
+				advancement: "goety:goety/convert_black_beast"
+				criterion: ""
+				id: "2F0A98DCF8B2D77D"
+				type: "advancement"
+			}]
+			title: "召唤暗兽"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["182B0AC732643909"]
+			description: [
+				"灵魂修补器可以消耗下方的诅咒之笼中的灵魂能量来为放在修补器重的物品回复耐久，不过这个过程有些缓慢。"
+				""
+				"&7而且由于附魔注入器模组的加入，经验修补附魔并不再这么珍稀"
+			]
+			id: "7D4FDD1B86568740"
+			rewards: [
+				{
+					count: 2
+					id: "0744C71D6BA5040A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "12F3C37DDF7B8C93"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "用灵魂能量来维修"
+			tasks: [{
+				id: "4B54D21C16E1D438"
+				item: "goety:soul_mender"
+				type: "item"
+			}]
+			title: "灵魂修补器"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"22F2C9A90322A01F"
+				"07F981C69026659A"
+			]
+			dependency_requirement: "one_completed"
+			id: "296DFEAC7E2C558B"
+			rewards: [
+				{
+					count: 4
+					id: "651287F4D9610258"
+					item: "goety:ectoplasm"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4BCECE0311A62F76"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "巫法的基石"
+			tasks: [
+				{
+					id: "12AA9322A635AF09"
+					item: "goety:shade_stone"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "656B6BBA389621E6"
+					item: "goety:haunted_log"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "719211BB73DFAFF7"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+				{
+					id: "77535E27F51483D7"
+					item: "goety:cursed_ingot"
+					type: "item"
+				}
+				{
+					id: "533D3A62C068C22D"
+					item: "goety:magic_emerald"
+					type: "item"
+				}
+			]
+			title: "黑暗素材"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: ["这些布料也是诡厄巫法素材的重要组成部分"]
+			id: "6E12CDCBDE3FDF0A"
+			rewards: [
+				{
+					count: 8
+					id: "7F577A6C07DDB227"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2530EDE3BA5AFABD"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "硬的不行来软的"
+			tasks: [
+				{
+					id: "3C807A7FCE8B8F34"
+					item: "goety:dark_fabric"
+					type: "item"
+				}
+				{
+					id: "42275237B37AA9EF"
+					item: "goety:magic_fabric"
+					type: "item"
+				}
+				{
+					id: "75D06D3A14084BCC"
+					item: "goety:occult_fabric"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DE9F0F8365C0413"
+					item: "goety:spirit_fabric"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52B512D152A979AD"
+					item: "goety:gale_fabric"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20EA81BF4A18D799"
+					item: "goety:chill_fabric"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "巫法布料"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: [
+				"&e药酿是诡厄巫法中极为强大的一套体系，它可以做到在一瓶药中汇聚多个4级甚至5级的药水效果"
+				""
+				"书籍&e《女巫药酿学》&r会展示基础的酿药步骤和各种药材的效果"
+				""
+				"酿药需要在底下有热源，内部有水的女巫坩埚中，&e依次加入容量剂、催化剂、增强剂&r，最后使用坩埚大勺右键搅拌坩埚（这是一个确认动作），然后坩埚会从周围的有能量源的&e诅咒蜡烛&r吸取灵魂能量来完成酿造。"
+				""
+				"不按规则往坩埚里丢东西会让坩埚内的液体&4报废&r，用瓶子乘出变成拒绝之瓶，用桶乘出会变成普通的水"
+				""
+				"请注意，将贵重物品丢进烧开的坩埚会永久失去它"
+				""
+				"{image:ftbquests:textures/quests.witch_brew.png width:100 height:100 align:center}"
+				"           &7示例：一套可用的女巫坩埚"
+			]
+			id: "500A9197561C0DB3"
+			rewards: [{
+				id: "73CA0BC5768247CB"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:witches_brew"
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "另一种炼药方式"
+			tasks: [
+				{
+					id: "4738D28F87DD80A9"
+					item: "goety:witch_cauldron"
+					type: "item"
+				}
+				{
+					id: "0E333E408C7EF286"
+					item: "goety:cauldron_ladle"
+					type: "item"
+				}
+			]
+			title: "女巫的药酿"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["500A9197561C0DB3"]
+			description: ["最多生效3个，放置在坩埚5格内会降低10点灵魂消耗，聊胜于无"]
+			id: "4B19913DE5AD150D"
+			rewards: [
+				{
+					count: 4
+					id: "3CE1611E889EC753"
+					item: "goety:soul_candlestick"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DBC59B697BC2D94"
+					item: "goety:cursed_cage"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78D4DD0066BE2B1A"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+			]
+			subtitle: "节能之杖"
+			tasks: [{
+				id: "4915033D90BAF4F7"
+				item: "goety:witch_pole"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["500A9197561C0DB3"]
+			description: [
+				"当你你酿造出了第一瓶巧手药水（或者把你的女巫酿造学放进暗夜立方），你就可以用它来激活女巫护身符"
+				""
+				"女巫护身符除了提供&e巧手&r效果，还可以搭配&e女巫撰写桌&r来写下一些&e笔记&r，这些笔记可以&5合成书本，来告诉你一些秘密"
+				""
+				"&e制作女巫撰写桌需要朽木和蘑菇，请尝试这么做：在佩戴初级女巫护身符护身符后，用腐肉右键任意原木，用水瓶右键朽木"
+				""
+				"{ \"text\": \"点击前往女巫护身符系列任务线\", \"color\":\"gold\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7AF9AE8720C8A778\" } }"
+				""
+				"{ \"text\": \"点击查看女巫仪式\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6C763528AA8C1B26\" } }"
+			]
+			icon: "curlamoety:witch_amulet_tier1"
+			id: "4121020B2FA081DF"
+			rewards: [
+				{
+					id: "206D1AAC8DA7ED1B"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "616E94C6D56D0000"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "-快到锅里来！-你才到锅里去"
+			tasks: [{
+				id: "0543195526C6A349"
+				item: "curlamoety:witch_amulet_tier1_inactive"
+				type: "item"
+			}]
+			title: "女巫拓展"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4121020B2FA081DF"]
+			description: [
+				"可以消耗自身耐久复制粗金，并且可以吸收主人灵魂能量自我修复"
+				""
+				"&e本包调整了配方，现在贤者之石不再需要击败使徒，而是作为女巫拓展的产物"
+				""
+				"&e尝试使用混合修补物来“修复”贤者之石吧"
+			]
+			id: "2B17D3CA49E52F0A"
+			rewards: [
+				{
+					id: "420CCD54EFD2E7C0"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42CB77076F0B520D"
+					item: "goety:dark_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "传说中的哲人石"
+			tasks: [{
+				id: "07A728E9F14401C2"
+				item: {
+					Count: 1
+					id: "goety:philosophers_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "贤者之石"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["500A9197561C0DB3"]
+			description: [
+				"女巫的长袍是一个随身酿造台，按&l&eCtrl+V&r可以打开，女巫帽子可以大幅加快它的速度"
+				""
+				"女巫长袍拥有极高的魔抗，可以用来对抗墓穴的骷髅领主。"
+				""
+				"穿戴全套女巫套装让女巫对你中立，并可以用绿宝石交易。"
+			]
+			id: "061E6DE8C8541501"
+			rewards: [{
+				count: 8
+				id: "7429D5251E471AB7"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			subtitle: "你现在看起来很会酿药"
+			tasks: [
+				{
+					id: "3FE44A353C29D4BA"
+					item: "goety:witch_hat"
+					type: "item"
+				}
+				{
+					id: "6E86AB9F7D92EE47"
+					item: "goety:witch_robe"
+					type: "item"
+				}
+			]
+			title: "女巫套装"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B17D3CA49E52F0A"]
+			description: [
+				"可以轻易破坏一切的工具，尤其是能够直接摧毁使徒的黑曜石柱"
+				""
+				"尽管它的配方只含有镐和锹，但是它是&e万能挖掘工具"
+				""
+				"&e可以通过仪式制成不可破坏"
+			]
+			id: "3A068C792F5080D1"
+			rewards: [{
+				count: 64
+				id: "11CB75CF91E4DC64"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "《元 始 杵》"
+			tasks: [{
+				id: "1BD78C77E2F43D8C"
+				item: {
+					Count: 1
+					id: "goety:philosophers_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "贤者之锤"
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["16CA521A656244AB"]
+			description: [
+				"佩戴女巫长袍会增加1装瓶数，女巫帽概率增加1装瓶数，巫婆帽概率增加2装瓶数"
+				""
+				"每装取20瓶药酿会提高熟练度，最多增加10装瓶数（默认为5，本整合包上调了数量），可以通过大量酿造无效果药酿来刷熟练度"
+				""
+				"在坩埚周围存在驯服的黑猫也会增加1装瓶数"
+				"{ \"text\": \"点击购买一只黑猫\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70240AA0707C55D7\" } }"
+				""
+				"&e巧手效果（该效果对应的催化剂：女巫帽）&r每级增加1装瓶数"
+				""
+				"苹果、金苹果、附魔金苹果也可以作为药酿的载体，不过用苹果装的药酿不会显示效果，且药水的“豪饮”不会生效"
+			]
+			icon: {
+				Count: 1
+				id: "goety:brew"
+				tag: {
+					Aquatic: 0b
+					AreaOfEffect: 0
+					CustomBrew: 1b
+					CustomPotionColor: 2445989
+					CustomPotionEffects: [{
+						Ambient: 0b
+						Amplifier: 0b
+						CurativeItems: [{
+							Count: 1b
+							id: "minecraft:milk_bucket"
+						}]
+						Duration: 1800
+						Id: 22
+						ShowIcon: 1b
+						ShowParticles: 1b
+						"forge:id": "minecraft:absorption"
+					}]
+					FireProof: 0b
+					Lingering: 0.0f
+					Quaff: 0
+					Velocity: 0.0f
+				}
+			}
+			id: "74EBA07BD06C9AE6"
+			rewards: [
+				{
+					count: 5
+					id: "2668EC74E08FD4BC"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "45CB09E6CC212462"
+					item: {
+						Count: 1
+						id: "minecraft:apple"
+						tag: {
+							CustomPotionEffects: [{
+								Ambient: 0b
+								Amplifier: 3b
+								CurativeItems: [{
+									Count: 1b
+									id: "minecraft:milk_bucket"
+								}]
+								Duration: 900
+								Id: 19
+								ShowIcon: 1b
+								ShowParticles: 1b
+								"forge:id": "minecraft:poison"
+							}]
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"毒苹果\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "一锅更比六瓶强"
+			tasks: [{
+				id: "270B9CE5FC37D782"
+				type: "checkmark"
+			}]
+			title: "如何提高女巫精酿的装瓶数"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["16CA521A656244AB"]
+			description: [
+				"与原版类似，延长时效、增加效果等级、更改为喷溅甚至滞留等等"
+				""
+				"与容量剂相似的，同类的增强剂也&e必须根据级别从低到高按次序投入&r，不过不同类型的增强剂之间没有顺序限制"
+				""
+				"&e本包魔改拓展的增强剂："
+				"效果等级第四级：完美物质"
+				"持续时间第四级：神秘种"
+				"持续时间第五级：湮灭余烬"
+			]
+			id: "11AAB89AA92F1B1D"
+			rewards: [
+				{
+					id: "7112E08090C50B1A"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "169992BC6FD0689A"
+					item: "minecraft:prismarine"
+					type: "item"
+				}
+			]
+			subtitle: "加强效果"
+			tasks: [
+				{
+					id: "061F1FE67C221472"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "27E97EC5D174963D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "增强剂"
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["16CA521A656244AB"]
+			description: [
+				"鸡蛋：赋予富饶效果，喷溅型一次性生效，立刻清除动物繁殖冷却"
+				""
+				"可可：赋予爱效果，喷溅型一次性生效，让动物立刻繁殖，较为特殊的是，爱效果可以让幼年动物与成年动物发生繁殖，并且繁殖行为会让幼年动物立即成年"
+				""
+				"禁品草方块：赋予邪恶之眼效果，让自身16格内可以刷怪，并且效果等级越高刷怪速率越快"
+				""
+				"树苗，仙人掌：在落点立刻种植植物，喷溅型一次性生效，用于快速增产"
+				""
+				"骨粉：催熟作物，喷溅型一次性生效，较为特殊的是，它可以作用于下界疣"
+				""
+				"钻石：赋予机遇效果，增加自身时运等级"
+			]
+			id: "610FAB3847741482"
+			progression_mode: "linear"
+			rewards: [{
+				id: "10DE333DACB37F8F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "先人指路"
+			tasks: [{
+				id: "2FC8528178C9272B"
+				type: "checkmark"
+			}]
+			title: "一些较为常用的非原版效果"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5F9A0433560BF1A3"]
+			description: [
+				"催化剂将赋予药酿具体的效果，催化剂的种类非常丰富，除了可以给予各种状态，还可以用于环境交互（比如吸水，催生，挖掘等等）"
+				""
+				"可以通过&eJEI查询女巫坩埚用途或者翻阅女巫酿造学书籍&r来查看效果"
+			]
+			icon: "minecraft:blaze_powder"
+			id: "16CA521A656244AB"
+			rewards: [
+				{
+					id: "659E5DA1E2BC41EC"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "5D02F21819FE2266"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "57482897B2FE0220"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "78F68A59662E81C5"
+					item: "minecraft:scute"
+					type: "item"
+				}
+			]
+			subtitle: "效果的核心"
+			tasks: [{
+				id: "09144FE1B99D2550"
+				type: "checkmark"
+			}]
+			title: "催化剂"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["500A9197561C0DB3"]
+			description: [
+				"容量剂是为药水提供药材容量的药材，它们必须先于其他材料投入，如果在投料中途追加容量剂，药酿会&4报废&r。"
+				""
+				"从加入下界疣开始，药酿会拥有4点基础容量，之后&e根据级别从低到高按顺序依次&r投入更高级的容量剂（下界疣-绯红菌-砰砰疣……依此类推），会进一步增加容量，但是不按顺序投放会使药酿&4报废&r。"
+				""
+				"容量的限制："
+				"①&e催化剂&r的&e总容量值&r不超过容量上限"
+				"②&e催化剂与增强剂&r的&e总数量&r不超过容量上限"
+				""
+				"&e本包魔改的容量剂："
+				"lv0-4：不变"
+				"lv5：除原版灵魂红宝石外，还有：星尘，下界之星，熔岩动力电池，凋灵合金锭，炽热之血，炽热之泪"
+				"lv6：除原版不洁之血外，还有：风暴精华，咒魂锭，渊没精华，虚空回响"
+				"lv7：硫火宝珠"
+			]
+			id: "5F9A0433560BF1A3"
+			rewards: [
+				{
+					id: "455B4AB3392DE577"
+					item: "minecraft:crimson_fungus"
+					type: "item"
+				}
+				{
+					id: "72F761F3F27C5133"
+					item: "goety:snap_warts"
+					type: "item"
+				}
+			]
+			subtitle: "药剂的起点"
+			tasks: [{
+				id: "03751393A6591DE5"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			title: "容量剂"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5D47D64E81D71636"]
+			description: ["让方块破碎，变成组成它们的原材料或者碎裂的形态。可以帮助获取一些资源。"]
+			hide_dependency_lines: true
+			id: "7252ABC1F61B9D2C"
+			rewards: [
+				{
+					id: "34800EE6A68C738C"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "4294AF07E28FF4AB"
+					item: "minecraft:amethyst_block"
+					type: "item"
+				}
+			]
+			subtitle: "这让你想到砧板"
+			tasks: [{
+				id: "43BE9534B62DFCFE"
+				item: "goety:pulverize_focus"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: ["攻击速度很快的匕首，杀死生物会获取更多的灵魂能量"]
+			id: "5AD0D72D7C6026E8"
+			rewards: [
+				{
+					id: "2A312ED8F80FA495"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 100
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0832A9552A158A49"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "法师小帮手"
+			tasks: [{
+				id: "11A5BB25431BE0BE"
+				item: {
+					Count: 1
+					id: "goety:fanged_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5D47D64E81D71636"]
+			description: [
+				"铁皮聚晶会给予铁皮效果，每级增加4点护甲值，尤其是七咒玩家更需要能从危险中保护自身的能力"
+				""
+				"&4警告：铁皮聚晶附魔之后不享受巫法强度的加成"
+			]
+			hide_dependency_lines: true
+			id: "09BAAFA3B9FF89F7"
+			rewards: [{
+				count: 4
+				id: "09D0375D8D16BEF9"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "自我保护"
+			tasks: [{
+				id: "58D25EF9F3301F25"
+				item: "goety:iron_hide_focus"
+				type: "item"
+			}]
+			title: "铁皮聚晶"
+			x: 6.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"聚晶包可以在腰带栏位或者物品栏里直接工作，按&l&eCtrl+C&r可以打开它并存放聚晶，存放在其中的聚晶可以被&e聚晶圆环&r直接调用"
+				""
+				"两个聚晶包加上额外的皮革可以制作&e多晶大袋&f，它能装下更多聚晶，但是&4请注意合成不会继承包里的聚晶"
+				""
+				"{ \"text\": \"点击查看聚晶收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"103DC4F1BEC126AA\" } }"
+			]
+			id: "2F8AB5209DEB719E"
+			rewards: [
+				{
+					id: "55F1069C1B2F8335"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 11
+							}
+						}
+						id: "goety:focus_bag"
+					}
+					type: "item"
+				}
+				{
+					id: "4BED6B177FDE02AC"
+					item: "goety:rotation_focus"
+					type: "item"
+				}
+			]
+			subtitle: "把聚晶装起来"
+			tasks: [{
+				id: "7CA53160A64799B3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 11
+							slot: 0
+						}
+					}
+					id: "goety:focus_bag"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"升级过的魔杖在使用对应系别的聚晶时效果会更强"
+				""
+				"{ \"text\": \"点击查看魔杖收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3503920AABD62C73\" } }"
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:dark_wand"
+			}
+			id: "23D2BA6114F0F2D9"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "0C2D06E4F0B193AA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "31EA82CBBBE5B622"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "368B162BA5E1B516"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "通过各种类型的仪式来制作更加高级的魔杖"
+			tasks: [{
+				id: "4654896A284C712B"
+				type: "checkmark"
+			}]
+			title: "更多的魔杖"
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5D47D64E81D71636"]
+			description: [
+				"召唤唤魔者尖刺来撕咬你的敌人，在前期拥有不错的强度"
+				""
+				"此外可以搭配渴望戒指来获取头颅"
+			]
+			hide_dependency_lines: true
+			id: "4AFDC3223AE6F24D"
+			rewards: [
+				{
+					id: "3BA6E3E4EF29EEE3"
+					item: "goety:soul_emerald"
+					type: "item"
+				}
+				{
+					id: "2442D754F09490FA"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "你已经是个合格的唤魔者了"
+			tasks: [{
+				id: "7EFB8255046A570B"
+				item: "goety:biting_focus"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5D47D64E81D71636"]
+			description: [
+				"&e震撼聚晶（最推荐）出伤快频率高，尽管基础伤害低但是由于巫法强度是定值加成，较低的基础面板影响很小"
+				""
+				"灵魂束装载在无名魔杖上会增强为死灵束，基础伤害大大提升，但是强效附魔所提升的伤害不会因此增加"
+				""
+				"冰刺聚晶可以发射冰锥，数值与灵魂束相近，伤害较低，但是弹幕速度更快，在巫法强度加成较高时会更好用"
+			]
+			hide_dependency_lines: true
+			icon: "goety:shocking_focus"
+			id: "4F63D7FE3F4479DE"
+			rewards: [
+				{
+					id: "3337CBB389A5FCE6"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "32CA65A4C8DC93C5"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "简单而有效"
+			tasks: [
+				{
+					id: "40463095423B750D"
+					item: "goety:soul_bolt_focus"
+					type: "item"
+				}
+				{
+					id: "6878B18EAD4D43BE"
+					item: "goety:ice_spike_focus"
+					type: "item"
+				}
+				{
+					id: "7FF16D15343B9ADB"
+					item: "goety:shocking_focus"
+					type: "item"
+				}
+			]
+			title: "简单输出聚晶"
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"使用魔法攻击时，视线将自动追踪目标"
+				""
+				"或者按下&e&lG&r锁定一个目标进行追踪"
+			]
+			id: "19CE53D2C3E365D1"
+			rewards: [{
+				count: 2
+				id: "6688347FA26FEDC4"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "666这个入是桂"
+			tasks: [{
+				id: "6EDE932A1BDF0B57"
+				item: "goety:targeting_monocle"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"命令聚晶和敕令聚晶可以命令你的仆从移动，命令聚晶只能作用一个，敕令聚晶可以作用多个"
+				""
+				"此外还有&e召集聚晶&f和&e军团聚晶&f，可以命令仆从进行传送，分别可以作用一个仆从和一类仆从全体"
+				""
+				"与仆从相关的基本知识："
+				""
+				"诡厄巫法的仆从，需要用法杖&l&e左键&r仆从切换状态，&l&e潜行左键&r强制销毁仆从（会被野猎指南替伤，请注意），&l&eB&r键命令所有仆从停火，“&e.&r”键可以直接销毁所有非永久的仆从，贵重仆从需要进行一次确认。"
+				""
+				"仆从在佩戴对应系别的魔法头饰时获得永久寿命，佩戴对应系别的魔法袍时获得消耗主人灵魂恢复生命的能力，使用对应系别的法杖召唤时召唤数量增加，受到“强效”加成时获得相应等级的“强健”效果，增加攻击伤害。"
+				""
+				"仆从不受到七咒之戒的诅咒削弱，因此&6对于中前期的七咒玩家来说是极为强大的助力，初期仆从推荐：骨质聚晶，狩猎聚晶，猛击聚晶，小兽聚晶"
+			]
+			icon: "goety:command_focus"
+			id: "4C9709D59DC8DC68"
+			rewards: [
+				{
+					id: "287A9BA8028A6868"
+					item: "goety:command_focus"
+					type: "item"
+				}
+				{
+					id: "18EBF28686B448B8"
+					item: {
+						Count: 1
+						id: "tarotcards:the_hermit"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "这不是我们第四强的职业吗"
+			tasks: [
+				{
+					id: "68CAAB1AF5F830BC"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "2D21EABB9B7FE127"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+			]
+			title: "召唤师的素养"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: [
+				"将聚晶放入法杖中，然后就可以长按&l&e右键&r进行施法了"
+				""
+				"&l&eCtrl+Z&r可以打开手中法杖的聚晶槽，或者按&l&eZ&r打开“聚晶圆环”来快速地切换"
+				""
+				"魔法的增强：大部分聚晶可以附魔&e“强效”&r（默认上限3级），这会增加聚晶的效果数值，比如伤害，状态的等级等。&e除此以外，通过食用红宝石硬糖可以永久提升1级强效，至多3次&r。"
+				""
+				"“巫法强度”是由诡厄巫法启示录引入的属性，其计算方式可以这样看待：每1点巫法强度提升1级强效等级，而巫法强度乘数会让强效的最终等级提升一个百分比。&e需要注意的是，由于冰山代码，巫法强度数值的生效比较混乱，有些聚晶附魔以后才能生效，有些聚晶附魔以后无法生效，&b请自行尝试&r。启示录引入的其他属性大多也与其对应的附魔有着类似的关系。"
+				""
+				"&e请注意，法杖可以附魔“咒术增幅”"
+				""
+				"&6副手持有法杖时，近战伤害还会提升25%。"
+				""
+				"&b该整合包为了加强魔法，加入了一些能够提供巫法强度的饰品，并且对仆从的数值进行了加强"
+				""
+				"{ \"text\": \"点击展开老旧项链的升级路线\", \"color\":\"gold\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"018C89B3047DE0BB\" } }"
+			]
+			id: "5FCB86A1BBF9EE00"
+			rewards: [
+				{
+					id: "7EC58BF378973C24"
+					item: "goety:ignite_focus"
+					type: "item"
+				}
+				{
+					id: "1F28F7532D578C1B"
+					item: "goety:soul_light_focus"
+					type: "item"
+				}
+				{
+					id: "14DCDC9E960032E4"
+					item: "goety:crafting_focus"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "19E6B6A43E93ECC6"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "goety:potency"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2215CB005A2999C5"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "goeticlegacy:wand_power"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67B2ACC59FDDBC9D"
+					item: "curlamoety:old_necklace"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "这是什么，神秘时代？"
+			tasks: [{
+				id: "4DBCDA1ECF784EFC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:dark_wand"
+				}
+				type: "item"
+			}]
+			title: "施法！"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4C9709D59DC8DC68"]
+			description: [
+				"亲善之书能够让你和仆从不再伤害到某个（种）生物。"
+				"怨恨之书能够让你的仆从主动攻击某个（种）生物。"
+				"坚守之书能够让你的仆从不再响应你的召唤命令。"
+				""
+				"使用方法：左键添加，右键空地查看名单，右键目标删除。不潜行的操作作用于个体，潜行的操作作用于整个种类。"
+			]
+			id: "3F9000B40EE92F34"
+			rewards: [{
+				id: "361A42F8E85B39F1"
+				item: "goety:order_focus"
+				type: "item"
+			}]
+			subtitle: "小本本记下来"
+			tasks: [
+				{
+					id: "45D8ED5FFFBDAED3"
+					item: "goety:grimoire_of_goodwill"
+					type: "item"
+				}
+				{
+					id: "1EDD348F8AC35062"
+					item: "goety:grimoire_of_grudges"
+					type: "item"
+				}
+				{
+					id: "2AAFE0A4D290211F"
+					item: "goety:grimoire_of_grounding"
+					type: "item"
+				}
+			]
+			title: "黑白名单"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C9709D59DC8DC68"]
+			description: [
+				"&l&e右键&r仆从时，给予它抗性提升II，铁皮V，生命提升III，生命恢复III，敏捷I，并净化它的虚弱和侵蚀"
+				""
+				"它能记录交互仆从强健等级的最大值，之后再使用时，如果目标仆从身上的强健低于这个等级，则会给予相同等级的强健（至少给予I级）"
+				""
+				"&e可以升级为式神魔棒&r，给予的生命提升提高到V，生命恢复提高到IV，并额外给予与强健同等级的附魔：锋利，骇人之恶III，治愈光环II，敏捷II"
+				""
+				"&8&m（原定计划是把强健以外的追加效果做成附魔但是不知道为什么没法工作）"
+			]
+			id: "6E46D0AD794F98E0"
+			rewards: [
+				{
+					id: "495DE794080DB839"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "5B67A3A10CE72797"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "你是否苦于不用聚晶召唤的仆从没有强健"
+			tasks: [{
+				id: "6957B9EDE6193B1F"
+				item: {
+					Count: 1
+					id: "curlamoety:inspiration_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C9709D59DC8DC68"]
+			description: [
+				"奥术方匣可以携带仆从，&l&e左键&r仆从会将其收入方匣，长按&e&l右键&r放出。"
+				""
+				"仆从会根据生命值占据奥术方匣的容量，默认占用1栏位，生命值高于75占用2栏位，生命值高于150占用4栏位，生命值高于300则占用全部栏位。"
+				""
+				"放出仆从的同时会消耗1点耐久，如果仆从生命值高于300则放出时耗尽耐久。"
+				""
+				"耐久耗尽（剩余1点）时方匣会损坏，但是这不会让物品消失，只是不可使用，可以用末影珍珠修复，或者用修补类附魔修复。"
+			]
+			icon: {
+				Count: 1
+				id: "goety:esoteric_tesseract"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5CADC0B20A783CFB"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					id: "5D737190EDF06C14"
+					item: {
+						Count: 1
+						id: "goety:esoteric_tesseract"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:mending"
+									lvl: 1s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					description: "这其实是个占位符"
+					icon: {
+						Count: 1
+						id: "goety:esoteric_tesseract"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4AEC9A8290C807D9"
+					title: "奥术方匣是好东西"
+					type: "toast"
+				}
+			]
+			subtitle: "“手握”千军万马"
+			tasks: [
+				{
+					id: "5E15DAEF67F321A5"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "21750211A92970BA"
+					item: "goety:flame_capture"
+					type: "item"
+				}
+			]
+			title: "携带仆从"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4C9709D59DC8DC68"]
+			description: [
+				"大部分人形仆从可以通过右键交互来装备盔甲，但对于那些低价值的仆从来说，这么做有些浪费了"
+				""
+				"这个戒指可以让召唤的僵尸和骷髅仆从自带盔甲，从而使它们免于阳光的烧灼"
+			]
+			hide_dependency_lines: false
+			id: "779DA82E1D997F08"
+			rewards: [
+				{
+					id: "108BD0C21EBB773C"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					id: "1448E7B183D6D8CE"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "全副武装"
+			tasks: [{
+				id: "25F9C63F51D9B2BC"
+				item: "goety:ring_of_the_forge"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: [
+				"可以容纳图腾作为灵魂供能设施。"
+				""
+				"捕捉笼可以捕捉刷怪笼，然后放进诅咒之笼，诅咒之笼就会变成新的刷怪笼。"
+			]
+			id: "4D075B365BBE6EF9"
+			rewards: [
+				{
+					id: "715D50BEEFDEA8C5"
+					item: "goety:flame_capture"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "60192E697B08AF41"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "36FBC73EFFD0328C"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"幻化用头部：刷怪笼\"}"
+							}
+							"transmog:transmogItem": {
+								Count: 1b
+								id: "minecraft:spawner"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "黑暗容纳之所"
+			tasks: [{
+				id: "1AC1E11521D14CD3"
+				item: "goety:cursed_cage"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4663D113E65B8563"]
+			description: [
+				"登山镐，或者说冰镐，自带对冰精准采集的能力，不过对其他方块，它不具备镐的挖掘能力。右键方块的侧面会将使用者向上抬升。"
+				""
+				"除了铁质，还有钻石和黑暗金属锭的材质。"
+			]
+			id: "00C42672C4DBE757"
+			rewards: [{
+				id: "4F32DCFF967430C5"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "你已经学会爬山了，现在去爬珠峰吧"
+			tasks: [{
+				id: "5D8688471B8D1978"
+				item: {
+					Count: 1
+					id: "goety:iron_ice_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "登山镐"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3CF7E89008411F29"]
+			description: [
+				"等级为下界合金，但是效率为0，因此这把镐挖不动任何需要镐子挖掘的东西，而镐子本身的效率属性不影响囚犯的开采效率"
+				""
+				"当给予囚犯时，清除然后重新给予囚犯等同于镐子效率附魔等级+1的急迫效果"
+			]
+			id: "0F24A03980CC6571"
+			rewards: [{
+				id: "762C2321EF1CA8DC"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "好好工作"
+			tasks: [{
+				id: "5C7EC16A0C304A77"
+				item: {
+					Count: 1
+					id: "curlamoety:prisoner_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4663D113E65B8563"]
+			description: [
+				"这个手铐能够抓捕村民以及流浪商人，把它们变成囚犯（属于你的刌民也可以抓捕囚犯）。"
+				""
+				"手持存储有一个未注册箱子的坐标的指路石，与囚犯交互，囚犯便会注册这一箱子，这样，囚犯会将自己持有的物品放入注册的箱子中。"
+				""
+				"如果把镐子给予被囚犯，那么囚犯就可以进行自动挖矿，这个挖矿行为会根据附近的矿石方块和自己持有的镐子挖掘能力，&e凭空&r生产矿产。&e虽然不会消耗矿石，但是会消耗镐子的耐久&r，高级、稀有的矿石，生产的速率会降低"
+				""
+				"产出矿物的速率与镐子的&e效率附魔等级、囚犯身上的急迫效果等级相关&r，但是与镐子的&e挖掘效率属性无关&r"
+				""
+				"&7囚犯的饥饿机制已关闭"
+			]
+			id: "3CF7E89008411F29"
+			rewards: [{
+				id: "11D6B4D1267435B8"
+				item: "goety:raiding_chest"
+				type: "item"
+			}]
+			subtitle: "奴役村民是可耻的！"
+			tasks: [{
+				id: "176B69BCAD6284CA"
+				item: "goety:ominous_shackles"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: ["可以从大部分敌对生物身上偷取物品，每个生物限一次"]
+			hide_dependency_lines: true
+			id: "04B02BAA2865B2B5"
+			rewards: [{
+				id: "337F8B5E483116EB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "STEEEEAAAAAAL!"
+			tasks: [{
+				id: "1A879B4812BDAB89"
+				item: {
+					Count: 1
+					id: "curlamoety:magician_hand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: ["提升运动能力的腰带，虽然效果有限，但是作为前期饰品已经很有用了，并且会提供一个护符栏位"]
+			hide_dependency_lines: true
+			id: "71BFFA4EA3988A58"
+			rewards: [
+				{
+					id: "3AA22D42976BA632"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "3A9146149A985D2B"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "旅行者之靴——的变体旅者腰带——的精神续作，但是青春版"
+			tasks: [{
+				id: "05EE325131D5FBBB"
+				item: "goety:wayfarers_belt"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3022563E838057E3"]
+			description: [
+				"具有范围打击能力的钉头锤，与暗卫手中是同款。"
+				""
+				"后续可以升级为具有治愈光环的日之恩惠。"
+			]
+			id: "3527F5F3C882144C"
+			rewards: [{
+				id: "5C60BD9B799CCA22"
+				item: "minecraft:sunflower"
+				type: "item"
+			}]
+			subtitle: "我就是暗卫"
+			tasks: [{
+				id: "2745F14A8348DD33"
+				item: {
+					Count: 1
+					id: "goetyawaken:mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3022563E838057E3"]
+			description: [
+				"可以大范围攻击敌人和3*3挖掘方块的工具（对不起，我已经有连锁挖矿了），属于重型工具"
+				""
+				"手持大锤右键铁块，可以把铁块打成一个破损的铁砧（便宜没好货）"
+			]
+			id: "6C4C8B5FFA792DB8"
+			rewards: [{
+				id: "56EDB217888D1A06"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "80！"
+			tasks: [{
+				id: "18FA0A30FBBB79F6"
+				item: {
+					Count: 1
+					id: "goety:great_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3022563E838057E3"]
+			description: [
+				"沉重、缓慢、巨大，拥有真实横扫的特点，没有攻击目标时也可以发动横扫攻击，并且横扫攻击对所有目标均可以造成全额伤害。属于重型工具。"
+				""
+				"后续可以升级为更大更重的黑曜石阔剑，以及饱含虚空之力的无星之夜。"
+			]
+			id: "2E113E58098E8686"
+			rewards: [{
+				count: 2
+				id: "0BAA5C760DE20D99"
+				item: "minecraft:crying_obsidian"
+				type: "item"
+			}]
+			subtitle: "纯正的战士才能举起的巨剑"
+			tasks: [{
+				id: "3C2B5F9B0E10CFA8"
+				item: {
+					Count: 1
+					id: "goetyawaken:claymore"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: ["具有5重射击的弩，适合对付大片敌人"]
+			id: "566469E1CE30D441"
+			rewards: [
+				{
+					id: "327B3AC4F4C5AAE9"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:quick_charge"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "135BC93138C53431"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "在下如果不懂音乐，那我也略懂一些武艺"
+			tasks: [{
+				id: "71E0736E2894AD38"
+				item: {
+					Count: 1
+					id: "goetyawaken:harp_crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: [
+				"距离更长，并且挖掘方块会将掉落物直接传送进背包，对于在岩浆旁边挖矿很有帮助"
+				""
+				"拥有钻石镐的性能，但是价格便宜"
+			]
+			id: "37448F9FD711CDBA"
+			rewards: [
+				{
+					id: "23631A9BD591F02F"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63A5DBAC4B95B159"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "挖矿如探囊取物"
+			tasks: [{
+				id: "35902718232FC0AD"
+				item: {
+					Count: 1
+					id: "goety:eerie_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: ["用它砍树或者杀死生物会让使用速度越来越快"]
+			id: "367E1BD992E52397"
+			rewards: [{
+				count: 16
+				id: "755F137B2854C0AA"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "羊刀叠起来了"
+			tasks: [{
+				id: "77C55FF5A0917B11"
+				item: {
+					Count: 1
+					id: "goety:rampaging_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"为渴望戒指附魔“渴望”后，它可以增加使用聚晶杀死敌人的掉落物数量，就像抢夺那样。"
+				""
+				"&e渴望戒指可以让唤魔者尖牙杀死敌怪后掉落头颅"
+				""
+				"&6它似乎还有什么奇特的作用……"
+			]
+			hide_dependency_lines: true
+			id: "6900CE9A8C8F795E"
+			rewards: [
+				{
+					id: "38C396838D4D7BDC"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "goety:wanting"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7D167223CFBC2702"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A4B82DF66FCAEA3"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "662C299AFA457820"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "155FAFDA94F0A3A8"
+					item: "minecraft:ink_sac"
+					type: "item"
+				}
+			]
+			subtitle: "内心深处的欲望"
+			tasks: [{
+				id: "5CAA1374D6CA2EEE"
+				item: "goety:ring_of_want"
+				type: "item"
+			}]
+			title: "渴望戒指"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3022563E838057E3"]
+			description: [
+				"一把较慢但是更长的武器，与先锋手中是同款"
+				""
+				"后续可以升级为能够翻倍亡灵杀手效果的弑墓者"
+				""
+				"{ \"text\": \"或者升级为胧切\", \"color\":\"yellow\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E24F6859819F441\" } }"
+			]
+			hide_dependent_lines: true
+			id: "222F233DC44DE6E9"
+			rewards: [{
+				id: "0F087FCDE76C994C"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			subtitle: "我就是先锋"
+			tasks: [{
+				id: "3C16CEF4D3036DC5"
+				item: {
+					Count: 1
+					id: "goetyawaken:glaive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: ["能同时挖掘两个方块，并且在挖掘时有概率挖出尸体（僵尸或者骷髅的掉落物）"]
+			id: "727F42F4F7BEE8F9"
+			rewards: [{
+				id: "16CA1896B03F0D14"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "刚好躺下一个人"
+			tasks: [{
+				id: "0C323CF11013D44F"
+				item: {
+					Count: 1
+					id: "goety:graverobber_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: [
+				"锤、镰刀、阔剑属于重型武器，它们在装备对应的手套时会增加攻击速度（可叠加），并且在副手为空时会增加攻击速度（大剑除外）"
+				""
+				"本包中的征服者手套和元素手套会包含这三种武器手套的效果，并且额外适配一些武器（例如灾变的炼狱锻锤）。"
+			]
+			icon: "goety:thrash_glove"
+			id: "3022563E838057E3"
+			progression_mode: "linear"
+			rewards: [{
+				id: "0F47741FEF0DA8F4"
+				item: "goety:thrash_glove"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "需要更大的力气"
+			tasks: [{
+				id: "1B7AAD70B3352E19"
+				type: "checkmark"
+			}]
+			title: "重武器与手套"
+			x: 13.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"使用诅咒金属锭可以制作多种有特殊能力的工具，就像神秘锭制作的元素工具那样。"
+				""
+				"它们有钻石级别的工具性能，性价比很高"
+			]
+			icon: "minecraft:anvil"
+			id: "0DF052CF3B237FE7"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "5592EA46C18EE310"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "02E78DF85810AA42"
+					item: {
+						Count: 1
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "元素工具说是（）"
+			tasks: [{
+				id: "42674F261D7D68C1"
+				type: "checkmark"
+			}]
+			title: "神奇妙妙工具"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: ["击杀动物时，可以掉落大量材料，相当于抢夺IV"]
+			hide_dependency_lines: false
+			id: "3A266DE58CCB7D00"
+			rewards: [
+				{
+					count: 64
+					id: "72B4848E319C26E5"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "4CF93184917AAFCB"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "滑，平，刚"
+			tasks: [{
+				id: "09F2E0480CE3253A"
+				item: {
+					Count: 1
+					id: "goety:hunters_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37EEAADA0F32E33B"]
+			description: ["烈风核心是赋予推力和气流的核心"]
+			id: "3D052D2D34CE48E8"
+			rewards: [
+				{
+					id: "04C3F359B2CE300D"
+					item: "goety:wind_core"
+					type: "item"
+				}
+				{
+					id: "64C8C019E65CE391"
+					item: "goety:hail_focus"
+					type: "item"
+				}
+			]
+			subtitle: "起风了"
+			tasks: [{
+				id: "563296C295B6EE34"
+				item: "goety:wind_core"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D052D2D34CE48E8"]
+			description: [
+				"非常有用的机动聚晶，可以快速发动，灵活位移，搭载在暴风魔杖上可以延长距离"
+				""
+				"&4当巫法强度过高时会呈现出较为严重的偏移现象"
+			]
+			hide_dependency_lines: true
+			id: "70E5B211035B160F"
+			rewards: [{
+				count: 8
+				id: "76F651758386C199"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "冲刺，冲刺，冲！"
+			tasks: [{
+				id: "72430011A2AC95FF"
+				item: "goety:launch_focus"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"魔法核心是一类次级素材，可以衍生出各种聚晶、装备等"
+				""
+				"{ \"text\": \"完成全部魔法核心的制作任务后可以到商店兑换\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D3F7C29DBF208EE\" } }"
+			]
+			hide_dependency_lines: false
+			icon: "goety:empty_focus"
+			id: "37EEAADA0F32E33B"
+			progression_mode: "linear"
+			rewards: [{
+				id: "174AB4FB51264DE1"
+				item: "goety:empty_focus"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "凝固的魔力"
+			tasks: [{
+				id: "6902322F9C44C8A2"
+				type: "checkmark"
+			}]
+			title: "魔法核心"
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: ["能够提供高贵的次数盾，如果在末日终结之前提前放一次的话……"]
+			hide_dependency_lines: true
+			id: "66FC4608E84A3701"
+			rewards: [{
+				id: "188BB24CF46888AD"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "暮色巫妖的影子在你的身上显现"
+			tasks: [{
+				id: "0AD119C2CB2B2916"
+				item: "goety:bulwark_focus"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["37EEAADA0F32E33B"]
+			description: ["神秘核心是赋予魔能和威力的核心。"]
+			id: "64C6B9125932885D"
+			rewards: [
+				{
+					id: "3C72C5775A8695CD"
+					item: "goety:mystic_core"
+					type: "item"
+				}
+				{
+					id: "58626AC42BCA7745"
+					item: "goety:teeth_focus"
+					type: "item"
+				}
+			]
+			subtitle: "我想起来了，我，我不是唤魔者，我是神秘使啊！"
+			tasks: [{
+				id: "70DBF6233384C27F"
+				item: "goety:mystic_core"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["64C6B9125932885D"]
+			description: [
+				"当末影访问讲台放置于内含灵魂源的诅咒之笼上时，它可以读取周围2格内的虚空回响书架上摆放的末影存储书，并允许你通过讲台存取物品"
+				""
+				"它的功能类似RS，末影存储书对标RS的磁盘因此可以将磁盘制作成末影存储书。优点是远程存取所需要的访问聚晶比RS的无线发送器+维度卡+无线终端便宜得多"
+				""
+				"&6缺点则是其功能性远逊于RS，并且本包已经对RS的造价进行优化，因此在此并不推荐制作末影访问存储"
+				""
+				"&e访问聚晶和无线终端非常相似，可以快捷键访问，本包选择直接将其作为获取无线终端的另一种方式"
+			]
+			id: "1C15D7FB4852EA5D"
+			rewards: [
+				{
+					id: "638497BCDA12D9B5"
+					item: "goetyawaken:access_focus"
+					type: "item"
+				}
+				{
+					id: "4B9C3C395160B87B"
+					item: "goetyawaken:ender_storage_book_emerald"
+					type: "item"
+				}
+			]
+			subtitle: "我们狗踢也要有自己的RS"
+			tasks: [
+				{
+					id: "7F9D012CB2D73A4C"
+					item: "goetyawaken:ender_access_lectern"
+					type: "item"
+				}
+				{
+					id: "45D29AC87F61BAC8"
+					item: "goetyawaken:echoing_ender_shelf"
+					type: "item"
+				}
+			]
+			title: "末影存储·进化"
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["64C6B9125932885D"]
+			description: [
+				"强力的辅助聚晶，给予一大片目标降低攻击力的虚弱效果和增加受到伤害的侵蚀效果"
+				""
+				"侵蚀效果每级增加20%所受伤害，初始为5级，每1级强效增加1级侵蚀，辅助增伤的能力十分强悍"
+			]
+			hide_dependency_lines: true
+			id: "365E1E48492C7CFB"
+			rewards: [{
+				count: 8
+				id: "2C0F7C1079EE1C0A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "放弃抵抗，尽快投降"
+			tasks: [{
+				id: "0C8A64A9135127DB"
+				item: "goety:weakening_focus"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["365E1E48492C7CFB"]
+			description: ["将弱化聚晶制作成古代铜锣，在沙漠中使用，即可召唤焦骸死灵法师，它会掉落禁咒碎片，可以制作让亡灵生物免受日光灼烧的圣物匣，以及一些其他有用的东西"]
+			icon: "goetyawaken:ancient_gong"
+			id: "1112F53EA3A8A5D4"
+			rewards: [{
+				id: "598CD128D004100A"
+				item: "goetyawaken:taboo_fragment"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "古代守密人"
+			tasks: [{
+				id: "39A458865867FDCD"
+				item: "goetyawaken:taboo_fragment"
+				type: "item"
+			}]
+			title: "焦骸死灵法师"
+			x: 10.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0D9BEC07A5D91FBC"]
+			description: ["召唤狼群为你作战，它们迅捷且凶猛，并且兼容其他系别"]
+			hide_dependency_lines: true
+			id: "0D99396CCBD7516D"
+			rewards: [
+				{
+					count: 8
+					id: "6604864A1A0A713C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "3C1B6991A145B76B"
+					item: "minecraft:beef"
+					type: "item"
+				}
+			]
+			subtitle: "小家伙们，开饭啦"
+			tasks: [{
+				id: "7CD47D0B8CBE104C"
+				item: "goety:hunting_focus"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["37EEAADA0F32E33B"]
+			description: ["饥饿核心是赋予吞噬之欲望的核心"]
+			id: "0D9BEC07A5D91FBC"
+			rewards: [
+				{
+					id: "00FB41F84455B8D5"
+					item: "goety:hunger_core"
+					type: "item"
+				}
+				{
+					id: "73B6678B21D056C0"
+					item: "goety:leeching_focus"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1EC51D808D0569B9"
+				item: "goety:hunger_core"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"019603FFC9139EE0"
+				"54652BAD5F6A8F82"
+				"052B1D29EF40D5B5"
+			]
+			description: [
+				"最强大的召唤聚晶之一"
+				""
+				"能够召唤手持棒槌与盾牌的重装僵尸，狠狠痛击你的敌人"
+				""
+				"缺点是移动缓慢，召唤吟唱时间长"
+				""
+				"{ \"text\": \"灵魂红宝石的获取途径\",\"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"052B1D29EF40D5B5\" } }"
+			]
+			hide_dependency_lines: true
+			id: "534B444A69593E32"
+			rewards: [
+				{
+					id: "5CC2F11FD6DA2C0D"
+					item: "goety:troop_focus"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "021BB89CE5DBD001"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					id: "2FD2BB011ADEA867"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "势不可当的战士"
+			tasks: [{
+				id: "0E6D303AFE0683F1"
+				item: "goety:blackguard_focus"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["37EEAADA0F32E33B"]
+			description: ["活力核心是赋予动力与生命的核心，可以用于制作一些仆从聚晶，以及将一些制造傀儡的多方块结构激活"]
+			id: "54652BAD5F6A8F82"
+			rewards: [
+				{
+					id: "09E975064B3D42B5"
+					item: "goety:animation_core"
+					type: "item"
+				}
+				{
+					id: "320BD059ADDB576C"
+					item: "goety:osseous_focus"
+					type: "item"
+				}
+			]
+			subtitle: "动画世界"
+			tasks: [{
+				id: "152BCA626E1DA472"
+				item: "goety:animation_core"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54652BAD5F6A8F82"]
+			description: [
+				"小兽聚晶是新起之秀，虽然小兽身板并不出色，但是较快的攻击速度可以让它在战斗中占到不小的优势"
+				""
+				"装备紫水晶项链和占卜长袍可以让聚晶召唤的小兽由石质增强到红石质，&4但是目前红石小兽存在召唤时不会被施加强健的缺陷"
+				""
+				"同时，小兽聚晶也具备造价低廉的巨大优势，不管是大地仪式，小兽聚晶，还是占卜系的饰品，都非常好做"
+			]
+			hide_dependency_lines: true
+			id: "4B0368E9D85A5629"
+			rewards: [{
+				count: 8
+				id: "272B69286FF2AE93"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			subtitle: "小怪兽大麻烦"
+			tasks: [{
+				id: "7D2B966EE3ED39DE"
+				item: "goety:ministrous_focus"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["54652BAD5F6A8F82"]
+			description: ["手持盾牌与长矛的骷髅战士，行动缓慢但是威力十足"]
+			hide_dependency_lines: true
+			id: "178E4CF27558CB60"
+			rewards: [
+				{
+					id: "3EE85D05FD4295D2"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					id: "43F41343E659A11E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "马其顿方阵，准备！"
+			tasks: [{
+				id: "05F077AAA42486F0"
+				item: "goety:vanguard_focus"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"拥有接近钻石级别的物理防护，以及额外的爆炸、火焰、魔法抗性，灵魂消耗减免，不错的巫法强度加成，并且价格便宜"
+				""
+				"该仪式中不可破坏词条不会继承"
+			]
+			id: "019603FFC9139EE0"
+			rewards: [
+				{
+					count: 5
+					id: "62F7A4921CC8D194"
+					item: "goety:cursed_ingot"
+					type: "item"
+				}
+				{
+					id: "391D76FB0CFD9D52"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "343EA37F1EEF2A3F"
+					item: "goety_revelation:gold_feather"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "巫师的铠甲"
+			tasks: [
+				{
+					id: "473DCCC3501F85EC"
+					item: {
+						Count: 1
+						id: "goety:black_iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7958F29A23EFEB07"
+					item: {
+						Count: 1
+						id: "goety:black_iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36231715FF0123D7"
+					item: {
+						Count: 1
+						id: "goety:black_iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6719D9FFC3E947DE"
+					item: {
+						Count: 1
+						id: "goety:black_iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "黑铁套装"
+			x: 15.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4D075B365BBE6EF9"]
+			description: [
+				"黑暗仪式是一种特殊的合成方式，将&e黑暗祭坛&r放置在&e诅咒之笼&f上，诅咒之笼内放入&e供能物品&f（图腾、连接水晶），这样祭坛的眼睛会亮起，这意味着祭坛已经可用了。"
+				""
+				"在祭坛的检测范围内放置&e祭坛基座&f，按照配方先在祭坛基座上放置配材（紧靠这祭坛基座的投掷器能够把物品直接放置到祭坛基座上），最后在黑暗祭坛上放置主材，即可开始仪式，如果仪式过程不受干扰，且灵魂能量供给充足，仪式结束后就能获得你的产物。"
+				""
+				"仪式有多种类型，需要祭坛周围有一定量特定的物块，有的需要处于合适的地点、时间、天气，还有的需要玩家阅读（使用）过某些文本。这些条件均可以在&e黑暗秘典&f中查阅。或者："
+				""
+				"{ \"text\": \"点击查看仪式收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5ABBF5A2301F43CC\" } }"
+				""
+				"&e值得注意的是，只要条件不冲突，多种仪式类型可以&l共存&f。"
+				""
+				"&e空手&l潜行右键&r祭坛可以显示祭坛的有效检测范围（注意不要抱起来了）。"
+				""
+				"祭坛和基座有黑暗石，大理石，或者原版石砖等各种变体，这些变体可以无影响地混用。"
+				""
+				"{image:ftbquests:textures/quests.ritual.png width:100 height:100 align:center}"
+				"          &7一个尚未具备仪式类型的示例"
+			]
+			icon: "goety:dark_altar"
+			id: "4CFBD3F812B6AB7E"
+			rewards: [
+				{
+					count: 5
+					id: "206053EBC0AA83CE"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1AE967A11AA8EA35"
+					item: "goety:cursed_ingot"
+					type: "item"
+				}
+				{
+					id: "077EAACA18EE862D"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 100
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/curios add necklace @s 1"
+					elevate_perms: true
+					id: "68F449E620A4489E"
+					title: "添加一个项链栏位"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "这不是注魔吗"
+			tasks: [
+				{
+					id: "17B7B414DCA89559"
+					item: "goety:dark_altar"
+					type: "item"
+				}
+				{
+					id: "3A3D2096115DE2EB"
+					item: "goety:cursed_cage"
+					type: "item"
+				}
+				{
+					id: "3AB4F4AB76F696BD"
+					item: "goety:pedestal"
+					type: "item"
+				}
+			]
+			title: "黑暗仪式"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"21亿mB水的梦想（）"
+				""
+				"除了可以用容器乘出，还会自动为5*5范围内的女巫坩埚加水，和为着火的玩家灭火。"
+			]
+			id: "1902C5E62EA608E9"
+			rewards: [{
+				id: "24DC9BBCCDE9151F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "无垠之水"
+			tasks: [{
+				id: "0DDF50DA6B650966"
+				item: "goety:haunted_jug"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"可以降低聚晶的灵魂消耗和施法时间"
+				""
+				"各个巫法系别拥有专属的法帽法袍，在降低灵魂消耗和施法时间的基础上，还可以让仆从永续存在并利用主人的灵魂能量自我治疗，额外增强部分聚晶的效果，以及让对应种类的&e敌怪对自己中立&r。"
+				""
+				"&e请注意，法帽法袍分别可以附魔“破势”和“戍卫”"
+				""
+				"此外，佩戴法帽、法袍还会增加对应系别的巫法强度，并且根据总穿戴数提升一定的&e防护性能&r（同系的变体和上下位仅计算一件，上位会提供更高一些的加成）"
+				""
+				"{ \"text\": \"点击查看法帽法袍收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"22C1ADD5578BBE62\" } }"
+			]
+			id: "489AD2801A7D29E6"
+			rewards: [
+				{
+					id: "78141AD06188ECA7"
+					item: "goety:iron_hide_focus"
+					type: "item"
+				}
+				{
+					id: "7FA1905286A30A50"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "goeticlegacy:bulwark"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "法师的标配穿搭，是饰品哦"
+			tasks: [
+				{
+					id: "762755835548FB9F"
+					item: "goety:dark_hat"
+					type: "item"
+				}
+				{
+					id: "11BE8341F9F4A19C"
+					item: "goety:dark_robe"
+					type: "item"
+				}
+			]
+			title: "法帽与法袍"
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: ["在探险的过程中偶尔会见到各式各样的卷轴，阅读了以后便会学会新的知识。这些知识可以在黑暗秘典中查阅"]
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "6DF7C15E2E5F666F"
+			rewards: [
+				{
+					count: 5
+					id: "24DBFF184FBE754C"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5AD52BB6A13F0396"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			subtitle: "前人的智慧"
+			tasks: [{
+				id: "4CF272A2A9FA0F4D"
+				type: "checkmark"
+			}]
+			title: "魔法文献"
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["489AD2801A7D29E6"]
+			description: [
+				"可以大幅强化隐身状态的效果，隐藏盔甲和武器，大幅缩短敌怪的侦测范围，这使得隐身能够做到“如入无人之境”"
+				""
+				"无名长袍会继承这一效果"
+			]
+			id: "0DE72EE0D519293B"
+			rewards: [{
+				id: "0E79226A68CA7824"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_invisibility"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "现在你还看得见我吗"
+			tasks: [{
+				id: "1DFFA1295A4EE4D0"
+				item: "goety:illusion_robe"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["489AD2801A7D29E6"]
+			description: [
+				"死灵法师套装可以强化死灵系的聚晶，死灵系的仆从可以学会一些新的能力，骷髅将射出虚弱的箭矢，而僵尸将能够将击杀的其他亡灵诏安。"
+				""
+				"并且，让生命值低于200的敌对亡灵生物变得中立（即使是戴着七咒之戒！），这对野外生存有很大的帮助。"
+				""
+				"不过，代价是玩家在阳光下会变得虚弱且饥饿（至少不会烧起来）"
+				""
+				"&e死灵系具有不少中后期的强力的仆从，当玩家实力达到一定水平以后，发展死灵系是绝佳的选择"
+			]
+			id: "6E12ED55AC776FF4"
+			rewards: [
+				{
+					id: "5E5B932F57F47929"
+					item: "goety:spooky_focus"
+					type: "item"
+				}
+				{
+					id: "5E3C1833F52EC5E9"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "啊，平静的夜晚"
+			tasks: [
+				{
+					id: "5C1F2DF634A2AE83"
+					item: "goety:necro_crown"
+					type: "item"
+				}
+				{
+					id: "4D129C5012C540AA"
+					item: "goety:necro_cape"
+					type: "item"
+				}
+			]
+			title: "死灵套装"
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["489AD2801A7D29E6"]
+			description: [
+				"紫水晶项链可以让小兽仆从永续存在"
+				""
+				"穿戴占卜长袍以让石头小兽升级为红石小兽，&4但是红石小兽目前存在召唤时不会被施加强健的缺陷"
+				""
+				"&e由于小兽聚晶、占卜套装和大地仪式造价低廉，而小兽战斗力不俗，占卜系成为了前期优选"
+			]
+			id: "6CD6631B8A6D2772"
+			rewards: [{
+				id: "30C0A010AF5429D9"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "和我的小兽打打招呼吧"
+			tasks: [
+				{
+					id: "1840A199FC625C6A"
+					item: "goety:amethyst_necklace"
+					type: "item"
+				}
+				{
+					id: "7C8C4A043474D7CF"
+					item: "goety:geo_robe"
+					type: "item"
+				}
+			]
+			title: "占卜套装"
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6E12ED55AC776FF4"
+				"78126C1B21A616F2"
+			]
+			description: [
+				"阅读埋葬卷轴后你学会了召唤死灵法师仆从"
+				""
+				"这些仆从拥有使用法杖发射弹幕和召唤仆从的能力，可以将它们身上没有的死灵系召唤聚晶给它们来扩充它们的召唤池。常态右键它可以手动让它召唤，这样召唤出来的仆从将直属于玩家。"
+				""
+				"死灵法师死亡时，若主人身上有空的灵魂罐，死灵法师的灵魂就会被收纳进灵魂瓮中，对着骷髅右键使用灵魂罐就会复活死灵法师。"
+				""
+				"如果对着一只死灵法师使用灵魂罐会强化它，最多强化两次。"
+				""
+				"灵魂罐也可以对流浪者、溺尸等僵尸骷髅变体使用，这回使它们变成对应的死灵法师变体，不过一部分变体使用单独的灵魂罐"
+				""
+				"诡厄灾变增加了苦寒监牢的死灵法师变体，魂尸死灵法师，其可以召唤更为强大的魂尸类仆从。"
+			]
+			icon: "goety:soul_jar"
+			id: "4E6836A097D9A4EE"
+			rewards: [{
+				id: "7A2C627745874744"
+				item: "goety:empty_soul_jar"
+				type: "item"
+			}]
+			subtitle: "要是防晒就好了"
+			tasks: [{
+				id: "54C3FAD10536DADB"
+				type: "checkmark"
+			}]
+			title: "死灵法师"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["23D2BA6114F0F2D9"]
+			description: ["PS：一定要试试死灵杖召唤苦力怕"]
+			id: "78126C1B21A616F2"
+			rewards: [
+				{
+					id: "3F05196A446B4BD8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7256C4BABDC5098F"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					id: "3BC246C4721A0D67"
+					item: "goetyawaken:creeper_focus"
+					type: "item"
+				}
+			]
+			subtitle: "死灵法师入门"
+			tasks: [{
+				id: "0AE8D71EF3744B89"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:necro_staff"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: ["能够从林地府邸战利品箱中获取，解锁蹂躏者仪式，允许拥有自己的劫掠兽"]
+			icon: "goety:ravaging_scroll"
+			id: "41BBE7BD9EC28024"
+			rewards: [{
+				id: "1B32E2FEE6873FFA"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "刌民秘密采访"
+			tasks: [
+				{
+					id: "5E8CD8947BB21FF2"
+					item: "goety:ravaging_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_ravaging_scroll"
+					criterion: ""
+					id: "6969DB8AEE8F166A"
+					type: "advancement"
+				}
+			]
+			title: "劫掠卷轴"
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: [
+				"从沙漠神殿箱子开出的卷轴"
+				""
+				"埋葬卷轴会解锁亡灵法师仆从的制作，先锋卷轴会解锁先锋和暗卫聚晶的制作"
+			]
+			id: "1506D298E42AE88B"
+			rewards: [
+				{
+					count: 2
+					id: "3E78F2688605B5BB"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "329FF7A3DEFF1B83"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "已收录进《法老精选》"
+			tasks: [
+				{
+					id: "5D47A2A70E6C5128"
+					item: "goety:buried_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/unlock_necromancer"
+					criterion: ""
+					id: "666B82B1ACCFCC9F"
+					type: "advancement"
+				}
+				{
+					id: "0B2AF5BA84AC151A"
+					item: "goety:front_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_front_scroll"
+					criterion: ""
+					id: "259E4CFCF717AAD9"
+					type: "advancement"
+				}
+			]
+			title: "埋葬卷轴与先锋卷轴"
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: ["可以在诡厄巫法觉醒的混沌监牢，灾厄城堡，荒漠迷城等结构的战利品箱中开出，也可以仪式合成。能够解锁最高级的灾厄村民技术"]
+			id: "707D8946928BC64D"
+			rewards: [
+				{
+					id: "0AF47028EE47C159"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "5E0CA23C6B13BBA2"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "灾厄皇室的终极秘密"
+			tasks: [
+				{
+					id: "0F69E47DAA4B5A28"
+					item: "goetyawaken:royal_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goetyawaken:royal_research_completed"
+					criterion: ""
+					id: "63094E6AC6B01C00"
+					optional_task: true
+					type: "advancement"
+				}
+			]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: ["可以在要塞图书馆及远古城市获取，用于解锁红石傀儡的召唤"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "751E5B493A39F40D"
+			rewards: [{
+				id: "488C688DF64F3BA5"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "War Never Changes"
+			tasks: [
+				{
+					id: "693CBF6B7C8A8B86"
+					item: "goety:warred_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_warred_scroll"
+					criterion: ""
+					id: "7087D9294FE30C7F"
+					type: "advancement"
+				}
+			]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: [
+				"在烈风祠堂、天际系列战舰中可以获取，解锁呼啸傀儡和共振晶体的制作"
+				""
+				""
+				""
+				"&4又贵又废"
+			]
+			id: "6F7DC4574580F351"
+			rewards: [
+				{
+					id: "50C24E5302DEA5BE"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "2BE6B5C21B4B2C40"
+					item: "goety:jade"
+					type: "item"
+				}
+			]
+			subtitle: "狂风呼啸，站在你面前的是一个真正的风力发电机"
+			tasks: [
+				{
+					id: "75E30C79782B487A"
+					item: "goety:mistral_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_mistral_scroll"
+					criterion: ""
+					id: "6E339F14DE4A55B4"
+					type: "advancement"
+				}
+			]
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6DF7C15E2E5F666F"]
+			description: ["在丛林神庙的箱子里可以开出，解锁唤腾者和腾跃之叶的制作方式"]
+			id: "0AB9EA24E768951F"
+			rewards: [
+				{
+					id: "3AF417EA3C04D0B2"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "22F123D2DF5E8F4A"
+					item: "goety:corpse_blossom"
+					type: "item"
+				}
+				{
+					id: "51D5D0F1D4AB92D8"
+					item: "goety:animation_core"
+					type: "item"
+				}
+			]
+			subtitle: "丛林开始焦躁不安"
+			tasks: [
+				{
+					id: "3C01996D9336FA9D"
+					item: "goety:floral_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_floral_scroll"
+					criterion: ""
+					id: "49D9196270D4BBB7"
+					type: "advancement"
+				}
+			]
+			x: 13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5D49C4E35DB45FD9"
+				"6DF7C15E2E5F666F"
+			]
+			description: [
+				"掌握无名魔杖和无名套装的制作方法"
+				""
+				"&e推荐通过骷髅领主刷取片段"
+				""
+				"&6同时也是召唤启示录使徒的材料之一"
+			]
+			id: "44EA4DA8F2B8A993"
+			rewards: [
+				{
+					id: "496E715FF7472D7F"
+					item: "goety:forbidden_fragment"
+					type: "item"
+				}
+				{
+					id: "1DC9FBB3D4C81D8A"
+					item: "goety:heart_of_the_night"
+					type: "item"
+				}
+			]
+			subtitle: "远古的死灵秘卷"
+			tasks: [{
+				id: "0B4DADE500C7FAA2"
+				item: "goety:forbidden_scroll"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6E12ED55AC776FF4"
+				"44EA4DA8F2B8A993"
+			]
+			description: [
+				"&7传说中最强大的死灵法师——无名者"
+				""
+				"死灵套装的全面升级，更强大，不再有副作用，中立血线更高，但是需要阅读昂贵的禁书卷轴"
+			]
+			id: "08D38FF8D2430ED4"
+			rewards: [
+				{
+					count: 4
+					id: "0627F40E613C89E4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "17F02465EDB73D7F"
+					item: {
+						Count: 1
+						id: "goety:black_iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04F624EA486D1942"
+					item: {
+						Count: 1
+						id: "goety:black_iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2806AD638677912D"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F68B21B0710DE4A"
+					item: "goety:cursed_metal_block"
+					type: "item"
+				}
+			]
+			subtitle: "那位大人，他，回来了"
+			tasks: [
+				{
+					id: "02556A51EE8A93E9"
+					item: "goety:nameless_crown"
+					type: "item"
+				}
+				{
+					id: "4159E790E374EE3C"
+					item: "goety:nameless_cape"
+					type: "item"
+				}
+			]
+			title: "无名套装"
+			x: 15.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"78126C1B21A616F2"
+				"44EA4DA8F2B8A993"
+			]
+			id: "20C90C09E8FDCCED"
+			rewards: [
+				{
+					count: 4
+					id: "170149DF85DE5E87"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "063EA91E91844961"
+					item: {
+						Count: 1
+						id: "goety:black_iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5018FC2B2915B9AC"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+			]
+			subtitle: "生死权能"
+			tasks: [{
+				id: "4B349FA59101A71A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
+					}
+					id: "goety:nameless_staff"
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5D49C4E35DB45FD9"]
+			description: [
+				"其上会快速刷新符合当前环境的敌怪，&e非常适合用于在繁茂洞穴刷紫水晶巨蟹&r。"
+				""
+				"可以蔓延土块及同化普通的草方块。极其易燃，在阳光下会自燃，而且火焰会极速蔓延。回收时记得使用精准采集。"
+				""
+				"除了直接使用，还可以用于酿造“邪恶之眼”效果的女巫精酿（战争药水），有助于刷恶魂。"
+			]
+			id: "696C7AE17D366F46"
+			rewards: [{
+				count: 8
+				id: "5F6BA50FA89C2529"
+				item: "goety:forbidden_grass"
+				type: "item"
+			}]
+			subtitle: "刷怪笼？不需要了……"
+			tasks: [{
+				id: "014DAC2BE6D3529D"
+				item: "goety:forbidden_grass"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26A37DB3B0DA0DB7"]
+			description: ["远古城市的箱子中可以开到禁书碎片和禁书片段，除了制作成禁书卷轴来阅读，还可以制作禁品草方块等物品"]
+			id: "5D49C4E35DB45FD9"
+			rewards: [{
+				id: "7FF65E160E2C79F0"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "远古的只言片语"
+			tasks: [{
+				id: "1C1FC25FA8DB4D3F"
+				item: "goety:forbidden_piece"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["019603FFC9139EE0"]
+			description: [
+				"远古城市是巫法的圣地，一只监守者体内蕴含着足足20000灵魂能量，亡灵火炉只有在深暗之域才能工作，灵魂方舟需求着回响的碎片，禁书的片段在宝箱中静静沉睡"
+				""
+				"&e强烈推荐先做一部分幽魂套装来帮助探索古城"
+				""
+				"&4由于本包为监守者增加了回响碎片掉落，觉醒添加的回响碎片配方已整改"
+			]
+			icon: "minecraft:sculk_sensor"
+			id: "26A37DB3B0DA0DB7"
+			rewards: [
+				{
+					id: "14ED41E0FBE410A0"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6D63194D21DE897B"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					id: "6E9D41653F02429F"
+					item: "minecraft:lodestone"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3D04609579EE744F"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:earth_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "4F927664822F6D46"
+					item: "minecraft:white_carpet"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "45A4FF59ABD22121"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "58EB0441E5A32609"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"幻化用头部：强化深板岩\"}"
+							}
+							"transmog:transmogItem": {
+								Count: 1b
+								id: "minecraft:reinforced_deepslate"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "深暗之域里隐藏着远古的宝藏"
+			tasks: [{
+				id: "14BBAB5FB2928108"
+				structure: "minecraft:ancient_city"
+				type: "structure"
+			}]
+			title: "远古城市"
+			x: 18.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26A37DB3B0DA0DB7"]
+			description: ["从此你不再需要为了一点点灵魂能量而辛苦杀敌，不过，更大的收获还在后头"]
+			icon: "minecraft:sculk_shrieker"
+			id: "016F4B7AA6566720"
+			rewards: [
+				{
+					count: 5
+					id: "2F673BFB7132EECF"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F416DCC08DA078B"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "150AE5299F0734C6"
+					item: "enigmaticlegacy:darkest_scroll"
+					type: "item"
+				}
+				{
+					id: "3B361613F1E8DB2E"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "强大的守卫终于倒下"
+			tasks: [{
+				id: "60A8A18BC2AD087C"
+				item: "goetydelight:gathering_soul_embryos"
+				type: "item"
+			}]
+			title: "监守者"
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["016F4B7AA6566720"]
+			description: ["将暗影尖啸体放置在有灵魂能量供给的诅咒之笼上方，然后用深邃回响碎片右键暗影尖啸体，就可以消耗碎片及10000灵魂能量，召唤一只你自己的监守者仆从"]
+			id: "49D224F6674146D3"
+			rewards: [
+				{
+					id: "431DD1C88C1EE504"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "44A0E7FB653AFA7A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0ED73D30DEE481A6"
+					item: "goety:dark_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "属于你自己的牢大"
+			tasks: [{
+				id: "379E6F87A29B973A"
+				item: "goetyawaken:shadow_shrieker"
+				type: "item"
+			}]
+			title: "监守者仆从"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26A37DB3B0DA0DB7"]
+			description: [
+				"灵魂方舟就如同巫妖的魂匣，它是主人的外带灵魂图腾，可以存储足足100'000灵魂能量，并且每10'000点灵魂能量可以在濒死进行奥术复活，带主人回家。"
+				""
+				"当连接宝石与灵魂方舟绑定后，连接宝石将可以像图腾一样放进诅咒之笼中，调用灵魂方舟的能量进行供能。"
+			]
+			id: "4D24FF5921DA30F0"
+			rewards: [
+				{
+					count: 16
+					id: "4291B96B3B733A75"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "585F43A00E65FDFB"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					command: "/curios add scroll @s 1"
+					elevate_perms: true
+					id: "01AC08478BCBCEE5"
+					title: "增加一个卷轴栏位"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "极限模式毁灭者"
+			tasks: [{
+				id: "777552ADD4E603CD"
+				item: "goety:arca"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4D24FF5921DA30F0"]
+			description: ["当灵魂吸收器放置在灵魂方舟上时，它可以将图腾中的灵魂能量转移到方舟内，也可以将一些物品粉碎成灵魂能量"]
+			id: "6B97B4E55081AC83"
+			rewards: [
+				{
+					id: "3C8A94D04713D159"
+					item: {
+						Count: 1
+						id: "goety:totem_of_souls"
+						tag: {
+							"Max Souls": 10000
+							Souls: 10000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74AD66BF52056516"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "505F3CDEF45AA303"
+					item: "minecraft:sculk_catalyst"
+					type: "item"
+				}
+			]
+			subtitle: "现金转存"
+			tasks: [{
+				id: "32B7F4EEA8EC9FE3"
+				item: "goety:soul_absorber"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43D1D60EF0B6E8DB"]
+			description: [
+				"黑暗铁砧上强化物品永远不会太贵，并且附魔等级可以突破上限。"
+				""
+				"&e注意事项，保护附魔每级4%减伤，总计最高80%。专项保护与保护共用这个80%的乘区，因此全套共计保护20即可，不需要再叠加专项保护。"
+				""
+				"当黑暗铁砧发生破损，它会从下方的诅咒之笼中吸收1000灵魂能量来修复自身"
+				""
+				"&7由于黑暗铁砧并未直接调用原版铁砧的工作方式而是模仿原版铁砧的全新工作方块，其他模组的一些需要铁砧的操作不能在黑暗铁砧上进行，例如锻造者宝石的不可破坏锻造"
+			]
+			icon: "goety:dark_anvil"
+			id: "0C019555AB97DED9"
+			rewards: [
+				{
+					id: "508D2774386B549E"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "2179BA86F25A72CB"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 6s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "神奇之砧"
+			tasks: [{
+				id: "7CA44A8CE40C108A"
+				item: "goety:dark_anvil"
+				type: "item"
+			}]
+			title: "黑暗铁砧"
+			x: 23.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6EA0E32FA6B81C61"]
+			description: [
+				"黑暗金属锭是诡厄巫法原版最高级的金属"
+				""
+				"由黑暗锭制作的工具可以吸收玩家的灵魂能量来自我修复&7（虚空金属：这我熟）"
+			]
+			id: "43D1D60EF0B6E8DB"
+			rewards: [
+				{
+					count: 4
+					id: "2E7A35FB6C28B0F0"
+					item: "goety:dark_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0D25AB7AF832A2FA"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "纯粹至暗的金属"
+			tasks: [{
+				id: "24857C52AD6C9224"
+				item: "goety:dark_ingot"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43D1D60EF0B6E8DB"]
+			description: [
+				"拥有黑暗金属锭自带灵魂修补特性"
+				""
+				"更有力的弓，拉弓略慢，箭矢速度是普通弓的1.6倍。"
+			]
+			id: "0AE9026D3B5DFFC7"
+			rewards: [
+				{
+					id: "4E868633DFE3CABE"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79C76B71345D0378"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "终于，无限与修补兼得"
+			tasks: [{
+				id: "2ED6650319A04B72"
+				item: {
+					Count: 1
+					id: "goetyawaken:dark_netherite_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"43D1D60EF0B6E8DB"
+				"222F233DC44DE6E9"
+			]
+			description: [
+				"攻击生物概率额外掉落灵质与坟尘"
+				""
+				"&e击杀死灵法师类生物时，掉落黏质"
+			]
+			id: "6E24F6859819F441"
+			rewards: [
+				{
+					id: "48B1B6FBE5AC70F3"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					description: "胧切杀死死灵法师类敌人时，掉落黏质"
+					icon: "goetyawaken:mucilage"
+					id: "393757A9943FD520"
+					title: "知识点：黏质的获取"
+					type: "toast"
+				}
+			]
+			subtitle: "斩断月光"
+			tasks: [{
+				id: "3841E8800FC6D18F"
+				item: {
+					Count: 1
+					id: "goetyawaken:moonlight_cut"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 22.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["26A37DB3B0DA0DB7"]
+			description: [
+				"亡灵火炉可以将其中按照正确配方摆放的材料熔炼成黑暗金属锭（本包还可以兼职烧极恶锭），它需要处于深暗之域并且有能量源才可以工作（如果没有灵魂能量，它会直接摧毁材料）。材料除了直接放置，&e以掉落物形态从上方落入火炉亦可。"
+				""
+				"其供能通过灵魂蜡烛进行，当灵魂蜡烛在亡灵火炉的有效范围内时，它可以从它下方的诅咒之笼里调用灵魂能量供给亡灵火炉。一个火炉可以被多个蜡烛供给，一个蜡烛也可以供给多个火炉，这不会影响每个蜡烛供给每个火炉的速度。"
+				""
+				"{image:ftbquests:textures/quests.necro_brazier.png width:100 height:100 align:center}"
+				"        &7示例，大量的蜡烛有助于加快速度"
+				""
+				"如何获取制作所需的头颅？"
+				""
+				"{ \"text\": \"方法1：渴望戒指\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6900CE9A8C8F795E\" } }"
+				""
+				"{ \"text\": \"方法2：行刑者之斧\", \"color\":\"gold\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2FC296DEA4FE36C1\" } }"
+				""
+				"{ \"text\": \"点击前往购买一台自动的亡灵火炉\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"756E6CBF529378AF\" } }"
+			]
+			icon: "goety:necro_brazier"
+			id: "6EA0E32FA6B81C61"
+			rewards: [
+				{
+					count: 8
+					id: "024DC507BA912506"
+					item: "goety:cursed_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6BE7BED9D0F90F1E"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2A004B0804BBEA51"
+					item: "minecraft:sculk"
+					type: "item"
+				}
+			]
+			subtitle: "黑暗之力熔于一炉"
+			tasks: [
+				{
+					id: "6279A2733CE3A54F"
+					item: "goety:necro_brazier"
+					type: "item"
+				}
+				{
+					id: "4C508C9095B19E2F"
+					item: "goety:soul_candlestick"
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26A37DB3B0DA0DB7"]
+			description: [
+				"黑铁套的中间升级之一，相较于黑暗套，灵魂折扣和防护属性，但是拥有额外的攻击伤害加成，并且对远古城市特攻，可以免疫黑暗、免疫尖啸声波、不再触发幽匿尖啸体。"
+				""
+				"&e先制作幽魂盔甲的一部分组件可以减小你继续探索古城的阻力，你也可以选择依靠巫法系盔甲的高魔抗击败监守者来获取回响碎片"
+			]
+			id: "6FC4F1462F002BF7"
+			rewards: [
+				{
+					id: "47DD4FE0B1DF9AC5"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "62C7E321D34FDD66"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+			]
+			subtitle: "鬼魅之影"
+			tasks: [
+				{
+					id: "78B73C6E6CF95B09"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7ACFCCCB8FC32B09"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58D20F575CAE25AC"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CF50A097A4844CF"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "幽魂套装"
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6FC4F1462F002BF7"
+				"43D1D60EF0B6E8DB"
+			]
+			description: ["幽魂套装的升级，提供了更高的魔法物理加成，并且具有定时施加次数盾的能力&m（神圣套）"]
+			id: "045423095F8A2F87"
+			rewards: [
+				{
+					id: "5D8E98E5CBE694DD"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "1AA4F34ADD3A46A0"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:earth_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "无息无形"
+			tasks: [
+				{
+					id: "239A9493048BC15A"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D70D71DDC9212BC"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "267692DBD8A6494D"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74C9FA78B830C93B"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "渊魄黑魔法师套装"
+			x: 18.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"43D1D60EF0B6E8DB"
+				"082231051F6FDAFB"
+			]
+			description: [
+				"与渊魄黑魔法师套装属性相近，不是对古城特攻而是拥有爬墙和吸血的能力"
+				""
+				"{ \"text\": \"点击查看该套装的前置\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"082231051F6FDAFB\" } } "
+			]
+			id: "438431236AC19960"
+			rewards: [
+				{
+					id: "42B30AACCA80BF91"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "1FF4048EB07E198A"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:earth_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "嗜血如命"
+			tasks: [
+				{
+					id: "710C5DC21FFE1AF2"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B44FEA5ADC62244"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F62627A82699EC4"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15D7B08BC7ACFC83"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "神经蚀刻者黑魔法师套装"
+			x: 19.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["43D1D60EF0B6E8DB"]
+			description: [
+				"黑铁套的全面升级版，如果是诡厄巫法原版这就是最强盔甲，可惜这不是诡厄原版"
+				""
+				"对比启示录的两件魔法套有更高一些的护甲值，但是没有它们的伤害加成"
+				""
+				"该仪式中不可破坏词条不会继承"
+			]
+			id: "362C5370190E6BBC"
+			rewards: [
+				{
+					id: "51177700C0D164E2"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "3A77E18A8944FB79"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:earth_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "诡厄巫法原版最强盔甲"
+			tasks: [
+				{
+					id: "47AD639AC015F72E"
+					item: {
+						Count: 1
+						id: "goety:dark_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2064BA5B3D8854D3"
+					item: {
+						Count: 1
+						id: "goety:dark_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50C774A0F47FE6D5"
+					item: {
+						Count: 1
+						id: "goety:dark_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A05AB3F73FE2238"
+					item: {
+						Count: 1
+						id: "goety:dark_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "黑暗套装"
+			x: 21.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6A75056C4CACD7F9"
+				"019603FFC9139EE0"
+			]
+			description: ["黑铁套的升级之一，不需要黑暗金属就可以有接近黑暗金属套装的属性，具有攀爬能力，攀爬能力可以按&l&eCtrl+N&r开关。"]
+			hide_dependent_lines: true
+			id: "082231051F6FDAFB"
+			rewards: [
+				{
+					count: 4
+					id: "4A074EB5EF0611C6"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "17ACE6F1D1149412"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "183D2D2BE8F9EC23"
+					item: "goety:spider_nest"
+					type: "item"
+				}
+			]
+			subtitle: "阴暗地攀爬"
+			tasks: [
+				{
+					id: "3CEA0303A8ED90D4"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64C87BECE10B5794"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CF878EF774E9195"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "400A02B9C2E723FB"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "蜘蛛套装"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"029E4CF9EF2DDF30"
+				"751E5B493A39F40D"
+			]
+			description: [
+				"用被隐匿的蓝图在仪式上合成，需要先学习战争卷轴才可以阅读（&m&7将被隐匿的蓝图做成卷饼吃掉也可以达到阅读终结卷轴的效果&r卷饼目前有bug）"
+				""
+				"{ \"text\": \"点击查看隐匿蓝图获取\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"029E4CF9EF2DDF30\" } }"
+				""
+				"允许激活三种巨兽的召唤多方块结构。"
+			]
+			id: "78E9423835E29DA7"
+			subtitle: "我便是末日"
+			tasks: [{
+				id: "7A8328DFB37E3EA7"
+				item: "goety:terminus_scroll"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0DF052CF3B237FE7"]
+			description: ["拥有连锁挖掘木头，以及诡异之镐同款的传送掉落物性质"]
+			id: "7FC97886FDF19DE8"
+			rewards: [{
+				id: "48DCAD8F7A0AED74"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "呃，虽然我已经有连锁了……"
+			tasks: [{
+				id: "1ABF0843F58CD383"
+				item: {
+					Count: 1
+					id: "goety_revelation:eerie_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: [
+				"&7反转了我也是略猫区"
+				""
+				"让你拥有猫的性质：驱赶苦力怕和幻翼"
+				""
+				"{ \"text\": \"此外，可以用于在商店兑换黑猫\", \"color\":\"yellow\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70240AA0707C55D7\" } }"
+			]
+			hide_dependency_lines: true
+			id: "476D4F7223D0B880"
+			subtitle: "你这个略猫区"
+			tasks: [{
+				id: "3D0062F3A5D7728C"
+				item: "goety:feline_amulet"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FCB86A1BBF9EE00"]
+			description: [
+				"此任务往右为&e推荐使用&r的聚晶，其获取难度一般与下方的任务相对应。上排为&e辅助功能型&r聚晶，下排为&e输出召唤型&r聚晶"
+				""
+				"{ \"text\": \"点击查看聚晶收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"103DC4F1BEC126AA\" } } "
+			]
+			icon: "goety:empty_focus"
+			id: "5D47D64E81D71636"
+			rewards: [{
+				count: 3
+				id: "58ED4B2C92A243DC"
+				item: "goety:empty_focus"
+				type: "item"
+			}]
+			subtitle: "魔法的威力，来感受下吧"
+			tasks: [{
+				id: "19EC42B6AE380330"
+				type: "checkmark"
+			}]
+			title: "聚晶推荐"
+			x: 4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["052B1D29EF40D5B5"]
+			description: ["强力的中期聚晶，直接在敌人脚下召唤尖牙，在面对大群敌人时效果极佳"]
+			id: "3D0B3437991F95D8"
+			rewards: [
+				{
+					id: "263E4552CE8F48D3"
+					item: "goety:ominous_shard"
+					type: "item"
+				}
+				{
+					id: "76E4EC44ECB8B074"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "52BC42D89E78F449"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "一口把你头咬掉"
+			tasks: [{
+				id: "630F6AFE6B1FC842"
+				item: "goety:feast_focus"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1FA51989ED25DF67"]
+			description: ["长时间内，大范围牵引并伤害敌人，能够快速清场"]
+			id: "41AFC22276E4123C"
+			rewards: [{
+				id: "44C2CEE025C5BD79"
+				item: "goety:hook_bell"
+				type: "item"
+			}]
+			subtitle: "全都不许跑！"
+			tasks: [{
+				id: "177BB57098189FCA"
+				item: "goety:rupture_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4CFBD3F812B6AB7E"]
+			description: ["虚化方块，可以帮助你快速穿过障碍或寻找一些隐藏的箱子"]
+			hide_dependency_lines: true
+			id: "72DD5542991E5AA9"
+			rewards: [{
+				id: "0F13E5573BA29C5B"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "溶解之物？"
+			tasks: [{
+				id: "540D9AF778AC12AA"
+				item: "goety:tunnel_focus"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["54652BAD5F6A8F82"]
+			description: ["具有稳定远程能力的仆从"]
+			hide_dependency_lines: true
+			id: "5FDA1025E0BBFE08"
+			rewards: [{
+				count: 4
+				id: "1DB053FEA2BA0B45"
+				item: "goety:magic_emerald"
+				type: "item"
+			}]
+			subtitle: "弓箭手，放箭！"
+			tasks: [{
+				id: "3E676E302BF6234A"
+				item: "goety:osseous_focus"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"470147F2B38DCCC2"
+				"54652BAD5F6A8F82"
+			]
+			description: ["召唤女仆妖精来为你作战，暂且不论战斗力，她们非常可爱"]
+			hide_dependency_lines: true
+			id: "47BBC83910677FD3"
+			rewards: [{
+				id: "4606176AC58FE40D"
+				item: "touhou_little_maid:power_point"
+				type: "item"
+			}]
+			subtitle: "baka~baka~"
+			tasks: [{
+				id: "0E07A8EDCA36B11A"
+				item: "goetyawaken:fairy_focus"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3D052D2D34CE48E8"]
+			hide_dependency_lines: true
+			icon: "goety:arrow_rain_focus"
+			id: "6CE340DA9DEDCD18"
+			ignore_reward_blocking: true
+			progression_mode: "flexible"
+			rewards: [{
+				count: 4
+				id: "5C07DC2F8053A59F"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "加特林医生，你要做什么"
+			tasks: [
+				{
+					id: "5663610585EF3FC7"
+					item: "goety:arrow_rain_focus"
+					type: "item"
+				}
+				{
+					id: "2DF0D79C3E6EAE3A"
+					item: "goetyawaken:gatling_charm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "箭雨聚晶"
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: ["主要功能是刷史莱姆，顺便帮你防摔的护符"]
+			id: "1FD9579546B8F35E"
+			rewards: [{
+				id: "7B992815D47FD421"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "你是说，无限史莱姆？"
+			tasks: [{
+				id: "2DA70E3C1021A7E7"
+				item: "goety_revelation:amulet_of_slime"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["290C0F2F3694C067"]
+			description: [
+				"最强伤害聚晶"
+				""
+				"&e当主手持有某些特定武器，副手使用法杖释放腐化聚晶时，主手武器的伤害能够加成给腐化聚晶"
+			]
+			id: "3FE5726EAEA5C9B5"
+			rewards: [
+				{
+					id: "084E46CF8BE6ECDB"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "3489252319E852D8"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+			]
+			subtitle: "请输入文本"
+			tasks: [{
+				id: "005C3FF0139D778D"
+				item: "goety:corruption_focus"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3FE5726EAEA5C9B5"]
+			description: ["听不懂，总之百分比伤害"]
+			id: "7BA8ECD55FB4684C"
+			rewards: [{
+				id: "201DD38D17DC0260"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			subtitle: "这位更是重量级"
+			tasks: [{
+				id: "68808F822878F1B8"
+				item: "goety_revelation:wither_quietus_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1FA51989ED25DF67"]
+			description: ["末影人仆从可以从世界中为你寻找并搬回来指定的矿物方块"]
+			id: "0395312636D42471"
+			rewards: [{
+				id: "719BAD343A8956DE"
+				item: "minecraft:deepslate_diamond_ore"
+				type: "item"
+			}]
+			subtitle: "我们不生产矿，我们只是大自然的搬运工"
+			tasks: [{
+				id: "1A0E9E0C2B218A3E"
+				item: "goetyawaken:stare_focus"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"43D1D60EF0B6E8DB"
+				"4D24FF5921DA30F0"
+			]
+			description: [
+				"或许是时候了，去探索那深藏的冥教之秘"
+				""
+				"&4如果你认为自己已经成长得足够强大，那就用这双手，撕碎你路上的阻碍"
+				""
+				"{ \"text\": \"去挑战使徒吧\", \"color\":\"gold\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2989FC20D513CE91\" } }"
+			]
+			icon: "goety_revelation:broken_halo"
+			id: "21E4DE748D41CD0D"
+			progression_mode: "linear"
+			rewards: [
+				{
+					id: "2FA6EED4D4D291D0"
+					item: "goety:warlock_sash"
+					type: "item"
+				}
+				{
+					id: "045BC2D1EFBE7C6A"
+					item: {
+						Count: 1
+						id: "goety:infernal_tome"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "你下定决心了吗"
+			tasks: [{
+				id: "002D29702B967F46"
+				type: "checkmark"
+			}]
+			title: "冥教的秘密"
+			x: 25.0d
+			y: -0.5d
+		}
+	]
+	title: "黑暗魔法"
+}

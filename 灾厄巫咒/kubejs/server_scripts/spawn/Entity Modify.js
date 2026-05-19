@@ -32,10 +32,13 @@ EntityEvents.spawned(event=>{
             entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",4,"multiply_total")
             entity.setHealth(max_health)
         }
+    }else if(entity.type == "goety:cairn_necromancer"||entity.type == "goety:mossy_necromancer"||entity.type == "goety:necromancer"||entity.type == "goety_cataclysm:draugr_necromancer"){
+        entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.4,"multiply_total")
+        entity.setHealth(max_health)
     }else if(entity.type == "goetyawaken:hostile_twilight_goat"||entity.type == "goetyawaken:hostile_gnasher"||entity.type == "goetyawaken:frozen_zombie"||entity.type == "goetyawaken:jungle_zombie"||entity.type == "goetyawaken:sunken_skeleton"||entity.type == "goetyawaken:hostile_wildfire"||entity.type == "goety:maverick"||entity.type == "goety:reprobate"){
         entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
         entity.setHealth(max_health)
-    }else if(entity.type == "goety:cairn_necromancer"||entity.type == "goety:mossy_necromancer"||entity.type == "goetyawaken:hostile_drowned_necromancer"||entity.type == "goetyawaken:hostile_drowned_necromancer"||entity.type == "goety:necromancer"||entity.type == "goety:wither_necromancer"||entity.type == "goety:trampler"||entity.type == "goety:preacher"||entity.type == "goety:piker"||entity.type == "goety:crusher"||entity.type == "goety:cryologer"||entity.type == "goety_cataclysm:draugr_necromancer"||entity.type == "goetyawaken:arch_illusioner"||entity.type == "goetyawaken:wraith_necromancer"){
+    }else if(entity.type == "goetyawaken:hostile_drowned_necromancer"||entity.type == "goety:wither_necromancer"||entity.type == "goety:trampler"||entity.type == "goety:preacher"||entity.type == "goety:piker"||entity.type == "goety:crusher"||entity.type == "goety:cryologer"||entity.type == "goetyawaken:arch_illusioner"||entity.type == "goetyawaken:wraith_necromancer"){
         entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.6,"multiply_total")
         entity.setHealth(max_health)
     }else if(entity.type == "goety:warlock"||entity.type == "goety:heretic"){

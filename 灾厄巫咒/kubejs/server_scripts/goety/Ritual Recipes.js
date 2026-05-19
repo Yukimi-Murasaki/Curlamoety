@@ -1638,7 +1638,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
 
     //独行者仆从
     event.recipes.goety.ritual('goety:jei_dummy/none','goety:convert_tamed',[
-        'goety:soul_emerald'
+        'goety:awakened_emerald_block'
     ])
     .activationItem('goety:mystic_core')
     .craftType('witch')
