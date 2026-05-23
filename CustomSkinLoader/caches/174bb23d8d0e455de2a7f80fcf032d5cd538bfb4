@@ -1,9 +1,0 @@
-{
-  "id" : "8f7bcc9896d74afebcd41738bcd71158",
-  "name" : "xinjimu",
-  "properties" : [ {
-    "name" : "textures",
-    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc3OTE4MDMxNTQ2NywKICAicHJvZmlsZUlkIiA6ICI4ZjdiY2M5ODk2ZDc0YWZlYmNkNDE3MzhiY2Q3MTE1OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4aW5qaW11IiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FlNWQzN2E5YTNmMzRiNzc0YmVlNjkzMGRhMzIwMjViYmE1YWExZTkzN2JlOTk5ZTkxNDczYmY3ZWM1NDkzNzMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
-  } ],
-  "profileActions" : [ ]
-}
