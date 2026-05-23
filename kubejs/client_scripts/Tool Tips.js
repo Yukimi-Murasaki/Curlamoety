@@ -1007,4 +1007,12 @@ ItemEvents.tooltip(event=>{
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_sketch_guide")))
     })
 
+    event.addAdvanced('#goeticlegacy:can_sacrifice',(item,addAdvanced,text)=>{//献祭提示
+        text.add(1,Text.green(Text.translate("curlamoety.lang.can_sacrifice")))
+    })
+
+    event.addAdvanced('#curlamoety:light_curio',(item,addAdvanced,text)=>{//光源饰品
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.light_curio")))
+    })
+
 })

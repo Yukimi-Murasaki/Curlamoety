@@ -499,7 +499,7 @@ BlockEvents.rightClicked((event) => {
             }
         }
     }else if(block.id == 'twilightforest:underbrick'){//暮色森林
-        if(item.id == 'twilightforest:phantom_helmet'||item.id == 'twilightforest:phantom_chestplate'){//幻影骑士
+        if(item.id == 'curlamoety:phantom_slag'){//幻影骑士
             if(kuLevel.isStructureAtLocation(block.pos,'twilightforest:knight_stronghold')){
                 item.count --
                 let block1 = level.getBlock(x,y+1,z)

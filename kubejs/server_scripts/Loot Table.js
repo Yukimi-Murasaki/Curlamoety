@@ -2074,7 +2074,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('minecraft:diamond').withChance(6)
     ])
     event
-    .addLootTableModifier('catalysm:chests/acropolis_treasure')//卫城
+    .addLootTableModifier('cataclysm:chests/acropolis_treasure')//卫城
     .addWeightedLoot([1,2],[
         Item.of('enigmaticlegacy:ocean_stone').withChance(9),
         Item.of('goety:abyss_crown').withChance(1),
@@ -2092,7 +2092,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('heart_of_the_sea').withChance(1)
     ])
     event
-    .addLootTableModifier('catalysm:chests/frosted_prison_treasure')//苦寒监牢
+    .addLootTableModifier('cataclysm:chests/frosted_prison_treasure')//苦寒监牢
     .addWeightedLoot([2],[
         Item.of('goety:frost_robe').withChance(1),
         Item.of('goety:frost_crown').withChance(1),

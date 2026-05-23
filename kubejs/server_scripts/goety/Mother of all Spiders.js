@@ -47,6 +47,7 @@ EntityEvents.hurt(event=>{
                 summon.setPosition(x,y,z)
                 summon.spawn()
                 summon.setOwnerId(actual.getOwnerId())
+                summon.setCustomName(Text.translate("curlamoety.lang.mother_guard"))
                 summon.potionEffects.add("minecraft:resistance",1200,3)
                 summon.potionEffects.add("minecraft:strength",1200,9)
                 summon.potionEffects.add("minecraft:health_boost",1200,9)

@@ -51,13 +51,13 @@
 [sanguinary_handbook]
 	#仆从伤害基础倍率加成 [默认: 0.18]
 	#Range: 0.0 ~ 100.0
-	baseDamageMultiplier = 0.25
+	baseDamageMultiplier = 0.18
 	#狂战护符每点缺失生命值比率提供的伤害加成 [默认: 0.35]
 	#Range: 0.0 ~ 100.0
 	berserkMissingHealthFactor = 0.5
 	#千咒卷轴基础伤害加成系数 [默认: 0.55]
 	#Range: 0.0 ~ 100.0
-	cursedScrollFactor = 0.75
+	cursedScrollFactor = 0.55
 	#千咒卷轴每层诅咒提供的伤害加成 [默认: 0.06]
 	#Range: 0.0 ~ 100.0
 	cursedPerCurseFactor = 0.06
@@ -75,73 +75,76 @@
 	venomousAmplifier = 0
 	#RALLIED 效果等级 [默认: 3]
 	#Range: 0 ~ 255
-	ralliedAmplifier = 4
+	ralliedAmplifier = 3
 	#IRON_HIDE 效果等级 [默认: 1]
 	#Range: 0 ~ 255
-	ironHideAmplifier = 2
+	ironHideAmplifier = 1
 
 #---- 启示之证 ----
 [the_acknowledgment]
 	#攻击使目标着火的秒数 [默认: 5]
 	#Range: 0 ~ 100
 	fireSeconds = 5
+	#仆从受到的伤害系数（1.0 = 无减伤，0.95 = 减伤 5%） [默认: 0.95]
+	#Range: 0.0 ~ 1.0
+	servantDamageReduction = 0.95
 
 #---- 恩惠之典 ----
 [the_bless]
 	#攻击使目标着火的秒数 [默认: 8]
 	#Range: 0 ~ 100
-	fireSeconds = 10
+	fireSeconds = 8
 	#腐蚀概率分母（1/x，默认 6 = 16.7%） [默认: 6]
 	#Range: 1 ~ 100
-	corrosionChanceDenominator = 5
+	corrosionChanceDenominator = 6
 	#腐蚀效果时长（ticks） [默认: 80]
 	#Range: 1 ~ 72000
-	corrosionDuration = 100
+	corrosionDuration = 80
 	#玩家额外无敌帧 [默认: 15]
 	#Range: 0 ~ 200
-	playerInvulExtra = 20
+	playerInvulExtra = 15
 	#仆从额外无敌帧 [默认: 15]
 	#Range: 0 ~ 200
-	servantInvulExtra = 20
+	servantInvulExtra = 15
 
 #---- 无止之言 ----
 [the_infinitum]
 	#轻蔑之约联动：攻击伤害加成比率 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
-	eldritchAmuletAttackDamage = 0.1
+	eldritchAmuletAttackDamage = 0.07
 	#轻蔑之约联动：魔法伤害乘数加成 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
-	eldritchAmuletMagicDamage = 0.1
+	eldritchAmuletMagicDamage = 0.07
 	#荒芜之负联动：最大生命加成比率 [默认: 0.18]
 	#Range: 0.0 ~ 100.0
-	desolationRingMaxHealth = 0.25
+	desolationRingMaxHealth = 0.18
 	#混沌之傲联动：护甲加成比率 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
-	chaosElytraArmor = 0.1
+	chaosElytraArmor = 0.07
 	#混沌之傲联动：盔甲韧性加成比率 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
-	chaosElytraArmorToughness = 0.1
+	chaosElytraArmorToughness = 0.07
 	#暴戾之咒联动：魔法攻击无敌帧削减 [默认: 3.5]
 	#Range: 0.0 ~ 100.0
-	violenceScrollInvulReduction = 5.0
+	violenceScrollInvulReduction = 3.5
 	#暴戾之咒联动：仆从攻击无敌帧削减 [默认: 3.5]
 	#Range: 0.0 ~ 100.0
-	violenceScrollServantInvulReduction = 5.0
+	violenceScrollServantInvulReduction = 3.5
 	#饕餮之锅联动：每独特击杀增加的盔甲韧性 [默认: 0.35]
 	#Range: 0.0 ~ 100.0
-	eldritchPanArmorToughnessPerKill = 0.5
+	eldritchPanArmorToughnessPerKill = 0.35
 	#禁忌之果联动：最终伤害乘数加成 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
-	forbiddenFruitFinalDamage = 0.1
+	forbiddenFruitFinalDamage = 0.07
 	#对高血量目标（血量大于阈值时）的伤害倍率 [默认: 1.3]
 	#Range: 0.0 ~ 100.0
-	hugeHealthDamageMultiplier = 1.4
+	hugeHealthDamageMultiplier = 1.3
 	#高血量判定阈值（目标最大生命 / 玩家最大生命） [默认: 5.0]
 	#Range: 1.0 ~ 1000.0
 	hugeHealthThreshold = 50.0
 	#攻击给予负面效果的概率（未持无止之言时） [默认: 0.4]
 	#Range: 0.0 ~ 1.0
-	debuffChance = 0.5
+	debuffChance = 0.4
 	#深渊强化状态下的移动速度加成 [默认: 0.18]
 	#Range: 0.0 ~ 10.0
 	abyssBoostMovementSpeed = 0.18
@@ -153,7 +156,7 @@
 [the_twist]
 	#对高血量目标（血量大于阈值时）的伤害倍率 [默认: 1.5]
 	#Range: 0.0 ~ 100.0
-	hugeHealthDamageMultiplier = 1.25
+	hugeHealthDamageMultiplier = 1.2
 	#高血量判定阈值（目标最大生命 / 玩家最大生命） [默认: 5.0]
 	#Range: 1.0 ~ 1000.0
 	hugeHealthThreshold = 20.0
@@ -166,15 +169,15 @@
 
 #---- 不洁卷轴 ----
 [unholy_scroll_content]
-	#仆从伤害乘数公式前系数 [默认: 3.5]
+	#仆从伤害乘数公式前系数（乘法模式 MULTIPLY_BASE） [默认: 2.45]
 	#Range: 0.0 ~ 100.0
-	servantDamageCoefficient = 3.5
+	servantDamageCoefficient = 2.45
 	#仆从伤害乘数公式分母 [默认: 60.0]
 	#Range: 1.0 ~ 10000.0
 	servantDamageDivisor = 60.0
-	#仆从无敌帧削减公式前系数 [默认: 1.2]
+	#仆从无敌帧削减公式前系数（乘法模式 MULTIPLY_BASE） [默认: 0.84]
 	#Range: 0.0 ~ 100.0
-	servantInvulCoefficient = 1.2
+	servantInvulCoefficient = 0.84
 	#仆从无敌帧削减公式分母 [默认: 100.0]
 	#Range: 1.0 ~ 10000.0
 	servantInvulDivisor = 100.0
@@ -183,49 +186,49 @@
 [thunder_scroll_content]
 	#闪电链基础跳跃次数 [默认: 4]
 	#Range: 1 ~ 100
-	baseJumps = 6
+	baseJumps = 4
 	#闪电链基础索敌半径 [默认: 6.0]
 	#Range: 1.0 ~ 128.0
-	baseRadius = 8.0
+	baseRadius = 6.0
 	#闪电链基础伤害倍率 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
-	baseDamageMultiplier = 1.0
+	baseDamageMultiplier = 0.8
 	#每次跳跃伤害衰减倍率 [默认: 0.7]
 	#Range: 0.0 ~ 1.0
-	chainDecay = 0.75
+	chainDecay = 0.7
 	#水中跳跃时的伤害衰减倍率 [默认: 0.9]
 	#Range: 0.0 ~ 1.0
-	waterDecay = 0.95
+	waterDecay = 0.9
 	#雷雨天半径额外增加量 [默认: 1.5]
 	#Range: 0.0 ~ 64.0
-	thunderRadiusBonus = 2.0
+	thunderRadiusBonus = 1.5
 	#雷雨天跳跃次数乘数 [默认: 1.5]
 	#Range: 1.0 ~ 10.0
-	thunderJumpsMultiplier = 2.0
+	thunderJumpsMultiplier = 1.5
 	#雷雨天伤害倍率乘数 [默认: 1.3]
 	#Range: 0.0 ~ 10.0
-	thunderDamageMultiplier = 1.5
+	thunderDamageMultiplier = 1.3
 	#持风暴法杖时跳跃次数乘数 [默认: 1.3]
 	#Range: 1.0 ~ 10.0
-	staffJumpsMultiplier = 1.5
+	staffJumpsMultiplier = 1.3
 	#持风暴法杖时半径乘数 [默认: 1.3]
 	#Range: 1.0 ~ 10.0
-	staffRadiusMultiplier = 1.5
+	staffRadiusMultiplier = 1.3
 	#持风暴法杖时伤害倍率乘数 [默认: 1.3]
 	#Range: 0.0 ~ 10.0
-	staffDamageMultiplier = 1.5
+	staffDamageMultiplier = 1.3
 
 #---- 无尽贪婪卷轴 ----
 [avarice_scroll_content]
 	#玩家击杀时掉落绿宝石的基础概率 [默认: 0.12]
 	#Range: 0.0 ~ 1.0
-	emeraldBaseChance = 0.15
+	emeraldBaseChance = 0.12
 	#仆从击杀时概率乘数（作用于基础概率） [默认: 0.65]
 	#Range: 0.0 ~ 1.0
 	emeraldServantKillMultiplier = 0.75
 	#looting = floor(luck / divisor) [默认: 2.5]
 	#Range: 0.5 ~ 100.0
-	luckToLootingDivisor = 5.0
+	luckToLootingDivisor = 2.5
 
 #---- 建筑师的青睐 ----
 [cosmic_scroll]
@@ -246,37 +249,37 @@
 [blessing_scroll]
 	#仆从伤害倍率：每幸运值增加的比例 [默认: 0.02]
 	#Range: 0.0 ~ 10.0
-	servantDamageLuckFactor = 0.04
+	servantDamageLuckFactor = 0.02
 	#闪避率：每幸运值增加的比例 [默认: 0.015]
 	#Range: 0.0 ~ 1.0
 	dodgeLuckFactor = 0.01
 	#触发概率基础部分 [默认: 0.20]
 	#Range: 0.0 ~ 1.0
-	triggerChanceBase = 0.25
+	triggerChanceBase = 0.2
 	#触发概率增益幅度 [默认: 0.4]
 	#Range: 0.0 ~ 1.0
-	triggerChanceScale = 0.5
+	triggerChanceScale = 0.4
 	#触发概率增益分母（指数衰减） [默认: 40.0]
 	#Range: 1.0 ~ 1000.0
 	triggerChanceDivisor = 35.0
 	#效果等级第一档幸运门槛 [默认: 18]
 	#Range: 0 ~ 1000
-	effectLevelThreshold1 = 15
+	effectLevelThreshold1 = 18
 	#效果等级第二档幸运门槛 [默认: 42]
 	#Range: 0 ~ 1000
-	effectLevelThreshold2 = 35
+	effectLevelThreshold2 = 42
 	#效果等级第三档幸运门槛 [默认: 72]
 	#Range: 0 ~ 1000
-	effectLevelThreshold3 = 60
+	effectLevelThreshold3 = 72
 	#仆从无敌帧削减最大值 [默认: 12]
 	#Range: 0 ~ 100
-	servantInvulReductionMax = 15
+	servantInvulReductionMax = 12
 	#每幸运值提供的无敌帧削减量 [默认: 1]
 	#Range: 0 ~ 100
 	servantInvulReductionPerLuck = 1
 	#触发冷却（毫秒） [默认: 600 = 0.6秒]
 	#Range: 0 ~ 100000
-	cooldownMillis = 500
+	cooldownMillis = 600
 
 #---- 无知诅咒卷轴 ----
 [cursed_xp_scroll]
@@ -291,31 +294,31 @@
 [escape_scroll]
 	#免死后缚骨效果时长（ticks） [默认: 6000 = 5分钟]
 	#Range: 1 ~ 72000
-	cooldownTicks = 2400
+	cooldownTicks = 6000
 	#免死后仆从随机传送半径（格） [默认: 32]
 	#Range: 1 ~ 256
-	teleportRadius = 16
+	teleportRadius = 32
 
 #---- 千咒卷轴 ----
 [cursed_scroll]
 	#千咒卷轴内容物伤害系数（相对于原版值的比例） [默认: 0.35]
 	#Range: 0.0 ~ 10.0
-	servantDamageFactor = 0.5
+	servantDamageFactor = 0.35
 
 #---- 创造者的恩赐 ----
 [fabulous_scroll]
 	#风之法杖加成倍数 [默认: 1.3]
 	#Range: 0.0 ~ 10.0
-	staffBonusMultiplier = 1.5
+	staffBonusMultiplier = 1.3
 	#摔落缓冲气垫半径 [默认: 2.2]
 	#Range: 0.0 ~ 100.0
-	cushionRadius = 2.5
+	cushionRadius = 2.2
 	#缓冲气垫持续时长（ticks） [默认: 120]
 	#Range: 1 ~ 72000
 	cushionDuration = 120
 	#死亡风爆半径 [默认: 4.5]
 	#Range: 0.0 ~ 100.0
-	windHornRadius = 5.0
+	windHornRadius = 4.5
 	#死亡风爆持续时长（ticks） [默认: 8]
 	#Range: 1 ~ 72000
 	windHornDuration = 8
@@ -324,37 +327,37 @@
 	windHornPotency = 1
 	#仆从受伤时生成龙卷风概率 [默认: 0.3]
 	#Range: 0.0 ~ 1.0
-	cycloneChance = 0.4
+	cycloneChance = 0.3
 	#龙卷风基础伤害 [默认: 3]
 	#Range: 0 ~ 10000
-	cyclonePotency = 4
+	cyclonePotency = 3
 	#龙卷风持续时长（ticks） [默认: 500]
 	#Range: 1 ~ 72000
-	cycloneDuration = 600
+	cycloneDuration = 500
 	#龙卷风基础半径 [默认: 1.3]
 	#Range: 0.0 ~ 100.0
-	cycloneRadius = 1.5
+	cycloneRadius = 1.3
 	#仆从受伤时吹飞周围敌人概率 [默认: 0.12]
 	#Range: 0.0 ~ 1.0
-	windBlastChance = 0.15
+	windBlastChance = 0.12
 	#吹飞范围 [默认: 4]
 	#Range: 1 ~ 100
 	windBlastRange = 4
 	#玩家攻击触发风刃概率 [默认: 0.40]
 	#Range: 0.0 ~ 1.0
-	playerRazorChance = 0.5
+	playerRazorChance = 0.4
 	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.5]
 	#Range: 0.0 ~ 100.0
-	playerRazorDamageRatio = 0.6
+	playerRazorDamageRatio = 0.5
 	#玩家风刃半径 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
 	playerRazorRadius = 0.8
 	#仆从攻击触发风刃概率 [默认: 0.60]
 	#Range: 0.0 ~ 1.0
-	servantRazorChance = 0.75
+	servantRazorChance = 0.6
 	#仆从风刃伤害比例（相对攻击伤害） [默认: 1.0]
 	#Range: 0.0 ~ 100.0
-	servantRazorDamageRatio = 1.25
+	servantRazorDamageRatio = 1
 	#仆从风刃半径 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
 	servantRazorRadius = 0.8
@@ -366,10 +369,10 @@
 [heaven_scroll]
 	#风之法杖加成倍数 [默认: 1.3]
 	#Range: 0.0 ~ 10.0
-	staffBonusMultiplier = 1.5
+	staffBonusMultiplier = 1.3
 	#摔落缓冲气垫半径 [默认: 2.2]
 	#Range: 0.0 ~ 100.0
-	cushionRadius = 2.5
+	cushionRadius = 2.2
 	#缓冲气垫持续时长（ticks） [默认: 120]
 	#Range: 1 ~ 72000
 	cushionDuration = 120
@@ -378,7 +381,7 @@
 	fallDamageMultiplier = 0.25
 	#死亡风爆半径 [默认: 4.5]
 	#Range: 0.0 ~ 100.0
-	windHornRadius = 5.0
+	windHornRadius = 4.5
 	#死亡风爆持续时长（ticks） [默认: 8]
 	#Range: 1 ~ 72000
 	windHornDuration = 8
@@ -387,37 +390,37 @@
 	windHornPotency = 1
 	#仆从受伤时生成龙卷风概率 [默认: 0.15]
 	#Range: 0.0 ~ 1.0
-	cycloneChance = 0.2
+	cycloneChance = 0.15
 	#龙卷风基础伤害 [默认: 1]
 	#Range: 0 ~ 10000
-	cyclonePotency = 2
+	cyclonePotency = 1
 	#龙卷风持续时长（ticks） [默认: 320]
 	#Range: 1 ~ 72000
-	cycloneDuration = 400
+	cycloneDuration = 320
 	#龙卷风基础半径 [默认: 1.0]
 	#Range: 0.0 ~ 100.0
-	cycloneRadius = 1.2
+	cycloneRadius = 1
 	#仆从受伤时吹飞周围敌人概率 [默认: 0.12]
 	#Range: 0.0 ~ 1.0
-	windBlastChance = 0.15
+	windBlastChance = 0.12
 	#吹飞范围 [默认: 4]
 	#Range: 1 ~ 100
 	windBlastRange = 4
 	#玩家攻击触发风刃概率 [默认: 0.25]
 	#Range: 0.0 ~ 1.0
-	playerRazorChance = 0.3
+	playerRazorChance = 0.25
 	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.35]
 	#Range: 0.0 ~ 100.0
-	playerRazorDamageRatio = 0.4
+	playerRazorDamageRatio = 0.35
 	#玩家风刃半径 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
 	playerRazorRadius = 0.8
 	#仆从攻击触发风刃概率 [默认: 0.40]
 	#Range: 0.0 ~ 1.0
-	servantRazorChance = 0.5
+	servantRazorChance = 0.4
 	#仆从风刃伤害比例（相对攻击伤害） [默认: 0.65]
 	#Range: 0.0 ~ 100.0
-	servantRazorDamageRatio = 0.75
+	servantRazorDamageRatio = 0.65
 	#仆从风刃半径 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
 	servantRazorRadius = 0.8
@@ -517,28 +520,32 @@
 [violence_scroll]
 	#虚空法杖加成倍数 [默认: 1.3]
 	#Range: 0.0 ~ 10.0
-	staffBonusMultiplier = 1.5
+	staffBonusMultiplier = 1.3
 	#攻击触发虚空震击概率 [默认: 0.28]
 	#Range: 0.0 ~ 1.0
-	voidShockChance = 0.35
+	voidShockChance = 0.28
 	#每层诅咒伤害增幅 [默认: 0.15]
 	#Range: 0.0 ~ 10.0
-	curseDamageFactor = 0.2
+	curseDamageFactor = 0.15
 	#虚空震击额外半径 [默认: 0.4]
 	#Range: 0.0 ~ 100.0
-	voidShockExtraRadius = 0.5
+	voidShockExtraRadius = 0.4
 	#仆从受伤触发增益概率 [默认: 0.20]
 	#Range: 0.0 ~ 1.0
-	servantBuffChance = 0.25
+	servantBuffChance = 0.2
 	#仆从增益基础时长（ticks） [默认: 50]
 	#Range: 1 ~ 72000
-	servantBuffBaseDuration = 60
+	servantBuffBaseDuration = 50
 	#每层诅咒增加时长（ticks） [默认: 15]
 	#Range: 1 ~ 72000
-	servantBuffDurationPerCurse = 20
+	servantBuffDurationPerCurse = 15
 	#击杀能量恢复 [默认: 12]
 	#Range: 0 ~ 10000
-	energyRecovery = 15
+	energyRecovery = 12
+	#是否启用施加诅咒标记功能 [默认: false]
+	enableCurseMark = false
+	#是否启用击杀充能功能 [默认: false]
+	enableEnergyCharge = false
 
 #---- 永恒智慧卷轴 ----
 [xp_scroll]
@@ -559,22 +566,22 @@
 	digSpeedBoost = 5.0
 	#烈风法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	windPotency = 2
+	windPotency = 1
 	#风暴法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	stormPotency = 2
+	stormPotency = 1
 
 #---- 烈阳之核 ----
 [blazing_core]
 	#下界仆从护甲加成 [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	servantArmorBonus = 8.0
+	servantArmorBonus = 6.0
 	#下界仆从盔甲韧性加成 [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	servantToughnessBonus = 8.0
+	servantToughnessBonus = 6.0
 	#下界法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	netherPotency = 2
+	netherPotency = 1
 
 #---- 创造之心 ----
 [enigmatic_item]
@@ -586,43 +593,43 @@
 [etherium_core]
 	#以太护盾阈值倍率 [默认: 1.35]
 	#Range: 0.0 ~ 10.0
-	shieldThresholdMultiplier = 1.5
+	shieldThresholdMultiplier = 1.35
 	#护盾启动持续时间（ticks） [默认: 35]
 	#Range: 1 ~ 72000
-	shieldDuration = 40
+	shieldDuration = 35
 	#护甲加成倍率（MULTIPLY_BASE） [默认: 0.10 = +10%]
 	#Range: 0.0 ~ 10.0
-	armorBonus = 0.2
+	armorBonus = 0.1
 	#盔甲韧性加成倍率（MULTIPLY_BASE） [默认: 0.20 = +20%]
 	#Range: 0.0 ~ 10.0
-	toughnessBonus = 0.4
+	toughnessBonus = 0.2
 	#击退抗性（ADDITION） [默认: 0.40]
 	#Range: 0.0 ~ 1.0
-	knockbackResistance = 0.5
+	knockbackResistance = 0.4
 
 #---- 星云之眼 ----
 [eye_of_nebula]
 	#魔法伤害加成（ADDITION） [默认: 0.10 = +10%]
 	#Range: 0.0 ~ 10.0
-	magicDamageBonus = 0.15
+	magicDamageBonus = 0.1
 	#魔法伤害无敌帧削减 [默认: 3]
 	#Range: 0 ~ 100
-	magicInvulReduction = 2
+	magicInvulReduction = 3
 	#受到魔法伤害倍率 [默认: 0.55 = -45%]
 	#Range: 0.0 ~ 10.0
-	magicDamageTakenMultiplier = 0.45
+	magicDamageTakenMultiplier = 0.55
 
 #---- 忘却冰晶 ----
 [forgotten_ice]
 	#寒蔽效果等级 [默认: 1]
 	#Range: 0 ~ 255
-	chillHideAmplifier = 2
+	chillHideAmplifier = 1
 	#冰霜仆从攻击力加成（MULTIPLY_TOTAL） [默认: 0.45 = +45%]
 	#Range: 0.0 ~ 10.0
-	frostDamageMultiplier = 0.6
+	frostDamageMultiplier = 0.45
 	#冰霜仆从护甲加成（ADDITION） [默认: 4.5]
 	#Range: 0.0 ~ 100.0
-	frostArmorBonus = 6.0
+	frostArmorBonus = 4.5
 	#玩家冰冻伤害倍率 [默认: 1.25]
 	#Range: 0.0 ~ 10.0
 	playerFreezeDamageMultiplier = 1.25
@@ -631,97 +638,97 @@
 	servantFreezeDamageMultiplier = 1.15
 	#冰冻效果时长（ticks） [默认: 50]
 	#Range: 1 ~ 72000
-	freezingDuration = 60
+	freezingDuration = 50
 	#硬冻结触发概率 [默认: 0.12]
 	#Range: 0.0 ~ 1.0
-	hardFreezeChance = 0.15
+	hardFreezeChance = 0.12
 	#硬冻结时长（ticks） [默认: 80]
 	#Range: 1 ~ 72000
-	hardFreezeDuration = 100
+	hardFreezeDuration = 80
 	#硬冻结等级 [默认: 1]
 	#Range: 0 ~ 255
-	hardFreezeAmplifier = 2
+	hardFreezeAmplifier = 1
 	#霜冻法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	frostPotency = 2
+	frostPotency = 1
 
 #---- 魔像之心 ----
 [golem_heart]
 	#护甲加成（ADDITION） [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	armorBonus = 8.0
+	armorBonus = 6.0
 	#盔甲韧性加成（ADDITION） [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	toughnessBonus = 8.0
+	toughnessBonus = 6.0
 	#受到近战伤害倍率 [默认: 0.80 = 减伤20%]
 	#Range: 0.0 ~ 10.0
-	meleeDamageMultiplier = 0.75
+	meleeDamageMultiplier = 0.8
 
 #---- 虚幻冥灯 ----
 [illusion_lantern]
 	#每件装备消耗灵魂能量 [默认: 6]
 	#Range: 1 ~ 10000
-	armorCost = 5
+	armorCost = 6
 	#每秒恢复灵魂能量 [默认: 1]
 	#Range: 0 ~ 10000
 	soulEnergyRegen = 1
 	#仆从每2秒恢复生命百分比 [默认: 0.015 = 1.5%]
 	#Range: 0.0 ~ 1.0
-	servantHealPercent = 0.02
+	servantHealPercent = 0.015
 	#亡灵中立血量阈值（倍率） [默认: 4.5]
 	#Range: 1.0 ~ 100.0
-	neutralHealthThreshold = 5.0
+	neutralHealthThreshold = 7.5
 	#亡灵法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	necromancyPotency = 2
+	necromancyPotency = 1
 
 #---- 失落引擎 ----
 [lost_engine]
 	#傀儡护甲加成（MULTIPLY_TOTAL） [默认: 0.75 = +75%]
 	#Range: 0.0 ~ 10.0
-	golemArmorMultiplier = 1.0
+	golemArmorMultiplier = 0.75
 	#傀儡韧性加成（MULTIPLY_TOTAL） [默认: 0.75 = +75%]
 	#Range: 0.0 ~ 10.0
-	golemToughnessMultiplier = 1.0
+	golemToughnessMultiplier = 0.75
 	#傀儡击退抗性（ADDITION） [默认: 0.40]
 	#Range: 0.0 ~ 1.0
-	golemKnockbackResistance = 0.5
+	golemKnockbackResistance = 0.4
 	#傀儡攻击伤害加成（MULTIPLY_TOTAL） [默认: 0.35 = +35%]
 	#Range: 0.0 ~ 10.0
-	golemDamageMultiplier = 0.5
+	golemDamageMultiplier = 0.35
 	#傀儡每秒回血百分比 [默认: 0.0015 = 0.15%]
 	#Range: 0.0 ~ 1.0
-	golemHealPercent = 0.02
+	golemHealPercent = 0.15
 	#风暴法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	stormPotency = 2
+	stormPotency = 1
 	#闪电伤害易伤倍率 [默认: 2.5]
 	#Range: 0.0 ~ 10.0
-	lightningVulnerabilityMultiplier = 2.0
+	lightningVulnerabilityMultiplier = 2.5
 
 #---- 海洋意志 ----
 [ocean_stone]
 	#深渊仆从护甲加成（ADDITION） [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	servantArmorBonus = 8.0
+	servantArmorBonus = 6.0
 	#深渊仆从盔甲韧性加成（ADDITION） [默认: 6.0]
 	#Range: 0.0 ~ 100.0
-	servantToughnessBonus = 8.0
+	servantToughnessBonus = 6.0
 	#击退抗性（ADDITION） [默认: 0.15]
 	#Range: 0.0 ~ 1.0
-	knockbackResistance = 0.2
+	knockbackResistance = 0.15
 	#深渊法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	abyssPotency = 2
+	abyssPotency = 1
 
 #---- 复苏之叶 ----
 [revival_leaf]
 	#每2秒回血百分比 [默认: 0.008 = 0.8%]
 	#Range: 0.0 ~ 1.0
-	healPercent = 0.01
+	healPercent = 0.008
 	#最小回血量 [默认: 0.4]
 	#Range: 0.0 ~ 100.0
-	minHealAmount = 0.5
+	minHealAmount = 0.4
 	#离开植物后飞行缓冲tick数 [默认: 5]
 	#Range: 1 ~ 200
 	flightBufferTicks = 5
@@ -730,7 +737,7 @@
 	photosynthesisAmplifier = 3
 	#暗兽抗性提升上限（amplifier） [默认: 2]
 	#Range: 0 ~ 255
-	maxResistanceLevel = 3
+	maxResistanceLevel = 2
 	#植物搜索半径 [默认: 5]
 	#Range: 1 ~ 50
 	plantSearchRadius = 5
@@ -742,10 +749,10 @@
 	cropGrowthChance = 16
 	#受到火焰伤害倍率 [默认: 1.4 = +40%]
 	#Range: 0.0 ~ 10.0
-	fireDamageMultiplier = 1.5
+	fireDamageMultiplier = 1.4
 	#荒野法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
-	wildPotency = 2
+	wildPotency = 1
 	#飞行时挖掘速度倍率 [默认: 5.0]
 	#Range: 1.0 ~ 100.0
 	digSpeedBoost = 5.0
@@ -772,22 +779,22 @@
 	instantKillThreshold = 10.0
 	#免死触发概率 [默认: 0.28]
 	#Range: 0.0 ~ 1.0
-	immortalChance = 0.35
+	immortalChance = 0.28
 	#免死时恢复生命百分比 [默认: 0.04 = 4%]
 	#Range: 0.0 ~ 1.0
-	immortalHealPercent = 0.05
+	immortalHealPercent = 0.04
 
 #---- 虚空珍珠 ----
 [void_pearl]
 	#免死后凋零时长（ticks） [默认: 240]
 	#Range: 1 ~ 72000
-	immortalWitherDuration = 200
+	immortalWitherDuration = 240
 	#免死后凋零等级 [默认: 2]
 	#Range: 0 ~ 255
 	immortalWitherAmplifier = 2
 	#免死后缓慢时长（ticks） [默认: 240]
 	#Range: 1 ~ 72000
-	immortalSlowDuration = 200
+	immortalSlowDuration = 240
 	#免死后缓慢等级 [默认: 2]
 	#Range: 0 ~ 255
 	immortalSlowAmplifier = 2
@@ -818,7 +825,7 @@
 #════════════════════════════════════
 #---- 不洁卷轴 ----
 [unholy_scroll]
-	#卷轴可记录的最大法术数量 [默认: 300]
+	#卷轴可记录的最大法术数量（当 enableAutoMaxSpells=false 时生效） [默认: 300]
 	#Range: 1 ~ 10000
 	maxSpells = 300
 	#按住 Shift 时显示最近记录的条数 [默认: 5]
@@ -827,12 +834,45 @@
 	#按 Alt 翻页查看法术总表时每页的条数 [默认: 12]
 	#Range: 1 ~ 100
 	altPageSize = 12
-	#幸运/巫术伤害公式系数: coeff*(1-exp(-count/divisor)) [默认: 2.0]
+	#幸运/魔法伤害最大增益系数 [默认: 1.4 = 140%]
 	#Range: 0.0 ~ 100.0
 	luckBonusCoefficient = 0.4
-	#幸运/巫术伤害公式分母 [默认: 80.0]
+	#幸运/巫术伤害公式分母（已废弃，改用幂函数曲线） [默认: 80.0]
 	#Range: 1.0 ~ 10000.0
 	luckBonusDivisor = 100.0
+	#是否自动检测当前环境下全部法术数量作为卷轴上限（启用后忽略下方的 maxSpells） [默认: true]
+	enableAutoMaxSpells = true
+	#是否启用聚晶槽菜单（UI 上显示 Focus 按钮并允许打开） [默认: true]
+	enableFocusMenu = true
+	#幸运/魔法伤害增益曲线指数（<1 前期发力，=1 线性，>1 后期发力） [默认: 1.3]
+	#影响公式：增益 = 系数 * (已收集/总数)^指数
+	#推荐值：0.7(前期快) / 1.0(线性) / 1.3(后期快)
+	#Range: 0.1 ~ 3.0
+	luckBonusExponent = 1.0
+	#法术流派 Potency 增益公式系数（饱和曲线，上限3级） [默认: 3.0]
+	#Range: 0.0 ~ 10.0
+	potencyCoefficient = 3.0
+	#法术流派 Potency 增益公式分母（前期发力，调小至15） [默认: 15.0]
+	#Range: 1.0 ~ 10000.0
+	potencyDivisor = 15.0
+	#法术流派 Discount 增益公式系数（饱和曲线，上限50%折扣） [默认: 0.5]
+	#Range: 0.0 ~ 1.0
+	discountCoefficient = 0.5
+	#法术流派 Discount 增益公式分母（前期发力，调小至20） [默认: 20.0]
+	#Range: 1.0 ~ 10000.0
+	discountDivisor = 20.0
+	#总灵魂消耗 Soul Discount 最大折扣上限（线性增长） [默认: 0.3]
+	#Range: 0.0 ~ 1.0
+	soulDiscountCoefficient = 0.3
+	#总灵魂消耗 Soul Discount 每1%折扣需要的灵魂点数（线性） [默认: 33333.33，100万灵魂达30%上限]
+	#Range: 1.0 ~ 1.0E7
+	soulDiscountDivisor = 33333.33
+	#总施法时长 Cast Time Discount 最大折扣上限（线性增长） [默认: 0.2]
+	#Range: 0.0 ~ 1.0
+	castTimeDiscountCoefficient = 0.0
+	#总施法时长 Cast Time Discount 每1%折扣需要的tick数（线性） [默认: 5000.0，10万tick/5千秒达20%上限]
+	#Range: 1.0 ~ 1.0E7
+	castTimeDiscountDivisor = 5000.0
 
 #---- 暗夜立方 ----
 [night_cube]
@@ -910,7 +950,7 @@
 	#  "enigmaticaddons:void_tome;5;1"  → 虚无之书，最多5次，每次1槽
 	#  "minecraft:nether_star;0;3"      → 下界之星，无限次，每次3槽
 	#  "somemod:special_scroll;1;15"    → 某mod的卷轴，1次全解锁
-	sacrificeRecipes = ["enigmaticlegacy:ichor_bottle;1;1", "twilightforest:lich_trophy;1;1", "minecraft:nether_star;1;1", "goety:soul_ruby;1;1", "curlamoety:biogenesium_ingot;1;1", "goety:night_beacon;1;1", "cataclysm:ignitium_ingot;1;1", "curlamoety:evernight_veil;1;1"]
+	sacrificeRecipes = ["enigmaticlegacy:ichor_bottle;1;1", "twilightforest:lich_trophy;1;1", "minecraft:nether_star;1;1", "goety:soul_ruby;1;1", "goety:night_beacon;1;1", "cataclysm:ignitium_ingot;1;1", "curlamoety:evernight_veil;1;1"]
 
 #---- 红宝石戒指 ----
 [ruby_ring]
@@ -953,4 +993,22 @@
 	#清除仇恨的作用半径（格） [默认: 32.0]
 	#Range: 1.0 ~ 256.0
 	clearAggroRadius = 32.0
+
+#════════════════════════════════════
+# 仆从类型配置
+#════════════════════════════════════
+#
+#控制是否启用来自不同模组的仆从类型
+#注意：即使启用，也需要对应模组已安装才会生效
+#
+[servant_config]
+	#是否启用 Iron's Spells and Spellbooks 模组的法术召唤物作为仆从
+	#需要安装 irons_spellbooks 模组 [默认: true]
+	enableIronSpellsServants = true
+	#是否启用 Modular Golems 模组的傀儡作为仆从
+	#需要安装 modulargolems 模组 [默认: true]
+	enableModularGolemsServants = true
+	#是否启用原版可驯服动物作为仆从
+	#也包括车万女仆[默认: true]
+	enableVanillaTameableServants = true
 

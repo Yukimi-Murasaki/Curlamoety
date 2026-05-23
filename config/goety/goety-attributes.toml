@@ -87,13 +87,13 @@
 		[Attributes.Mini-Bosses.Endersent]
 			#How much damage Endersents deals, Default: 14.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			endersentDamage = 28.0
+			endersentDamage = 140.0
 			#How much natural Armor Points Endersents have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			endersentArmor = 0.0
 			#How much Max Health Endersents have, Default: 200.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			endersentHealth = 500.0
+			endersentHealth = 15000.0
 
 		[Attributes.Mini-Bosses.Heresiarch]
 			#How much damage Heresiarch deals, Default: 2.0

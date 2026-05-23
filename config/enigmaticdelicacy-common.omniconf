@@ -25,6 +25,9 @@
     # Whether or not Astral Door should be enabled. [default: true, synchronized: yes]
     B:AstralDoorEnabled=true
 
+    # Whether or not Astral Flower should be enabled. [default: true, synchronized: yes]
+    B:AstralFlowerEnabled=true
+
     # Whether or not Astral Fruit should be enabled. [default: true, synchronized: yes]
     B:AstralFruitEnabled=true
 
@@ -133,6 +136,9 @@
     # Whether or not Etherium Stove should be enabled. [default: true, synchronized: yes]
     B:EtheriumStoveEnabled=true
 
+    # Whether or not Fallen Crown should be enabled. [default: true, synchronized: yes]
+    B:FallenCrownEnabled=true
+
     # Whether or not Fragment of Cursed Soul Crystal should be enabled. [default: true, synchronized: yes]
     B:FragmentofCursedSoulCrystalEnabled=true
 
@@ -166,11 +172,17 @@
     # Whether or not Potted Astral Sapling should be enabled. [default: true, synchronized: yes]
     B:PottedAstralSaplingEnabled=true
 
+    # Whether or not Protection of the Earth should be enabled. [default: true, synchronized: yes]
+    B:ProtectionoftheEarthEnabled=true
+
     # Whether or not Purified Dragon Breath should be enabled. [default: true, synchronized: yes]
     B:PurifiedDragonBreathEnabled=true
 
     # Whether or not Scroll of Fading should be enabled. [default: true, synchronized: yes]
     B:ScrollofFadingEnabled=true
+
+    # Whether or not Shi Jin should be enabled. [default: true, synchronized: yes]
+    B:ShiJinEnabled=true
 
     # Whether or not Slice of Astral Fruit should be enabled. [default: true, synchronized: yes]
     B:SliceofAstralFruitEnabled=true
@@ -180,6 +192,12 @@
 
     # Whether or not Slice of Sticky Enigmatic Pie should be enabled. [default: true, synchronized: yes]
     B:SliceofStickyEnigmaticPieEnabled=true
+
+    # Whether or not Starry Cake should be enabled. [default: true, synchronized: yes]
+    B:StarryCakeEnabled=true
+
+    # Whether or not Starry Vintage should be enabled. [default: true, synchronized: yes]
+    B:StarryVintageEnabled=true
 
     # Whether or not Sticky Enigmatic Pie should be enabled. [default: true, synchronized: yes]
     B:StickyEnigmaticPieEnabled=true
@@ -247,7 +265,7 @@
     # The Amplifier of Health Curse when you get the curse after gaining Broken Cursed Soul Crystal. [range: 0 ~ 32768, default: 5, synchronized: yes]
     I:CurseBladeHealthCurseAmplifier=5
 
-    # The probability of applying health curse effect on the target. Measures in percentage. [range: 0 ~ 30, default: 16, synchronized: yes]
+    # The probability of applying health curse effect on the target. Measures in percentage. [range: 0 ~ 80, default: 36, synchronized: yes]
     I:CursedSoulCrystalKnifeApplyingCurseEffectProbability=16
 
     # The cooldown of transforming creatures into babies ot drop loot. Measures in tick. [range: 40 ~ 32768, default: 200, synchronized: yes]
@@ -270,6 +288,12 @@
 
     # The damage modifier when equipped Glory of Weapon Master. Measured in percentage. [range: 0 ~ 32768, default: 10, synchronized: yes]
     I:GloryofWeaponMasterDamageModifier=10
+
+    # The protection skill cooldown of the Protection of the Earth. [range: 0 ~ 32768, default: 600, synchronized: yes]
+    I:ProtectionofTheEarthCooldown=600
+
+    # The damage resistance when equipped the Protection of the Earth. [range: 50 ~ 100, default: 80, synchronized: yes]
+    I:ProtectionofTheEarthDamageResistance=80
 
     # The cooldown of add Fading Effect when equipped Scroll of Fading. Measured in ticks. [range: 100 ~ 32768, default: 1200, synchronized: yes]
     I:ScrollofFadingCooldown=1200

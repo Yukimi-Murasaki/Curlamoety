@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5FCB86A1BBF9EE00"]
 			icon: "curlamoety:old_necklace"
 			id: "018C89B3047DE0BB"
 			progression_mode: "linear"
@@ -109,7 +108,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["35542704CE85F80F"]
 			icon: "curlamoety:explorer_gloves"
 			id: "04025055C206D674"
 			progression_mode: "linear"
@@ -285,7 +283,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["0AB2DF12CBBDE6ED"]
 			hide_dependency_lines: false
 			hide_dependent_lines: true
 			icon: "curlamoety:hiker_boots"
@@ -406,7 +403,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4121020B2FA081DF"]
 			description: [""]
 			icon: "curlamoety:witch_amulet_tier1"
 			id: "7AF9AE8720C8A778"
@@ -635,7 +631,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["60BD013B3CAD6878"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "cataclysm:belt_of_beginner"
 			id: "0F01FF72C09F5025"
@@ -669,7 +665,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["10748D131B4FE8AC"]
 			icon: "curlamoety:gloomy_circlet"
 			id: "18B0552E2A550765"
 			progression_mode: "linear"
