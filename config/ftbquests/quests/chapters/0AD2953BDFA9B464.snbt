@@ -417,7 +417,9 @@
 			description: [
 				"在能够下雪的寒冷群系即可完成冰霜仪式"
 				""
-				"或者用&e4&r个极寒冰灯，&e8&r个雪块，&e16&r个任意类型的冰块（极寒冰灯自身可以冻水成冰）"
+				"或者用&e4&r个极寒冰灯，&e8&r个雪块，&e16&r个任意类型的冰块"
+				""
+				"&e注：极寒冰灯会让一片区域变得像寒冷生物群系一样，自然降雪，冻水成冰，这个功能通电会关闭"
 			]
 			icon: "goety:freezing_lamp"
 			id: "51DA58E1D426B679"
@@ -481,8 +483,7 @@
 				""
 				"仪式首先需要是天空仪式，在此条件下加上指定的方块，天气为雷暴且仪式必须暴露在天空之下"
 				""
-				"&e通过天空仪式可以手动召唤雷暴"
-				"{ \"text\": \"EDIT HERE\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"29DEE9F795190A0B\" } }"
+				"{ \"text\": \"通过天空仪式可以手动召唤雷暴\",\"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"29DEE9F795190A0B\" } }"
 			]
 			icon: "minecraft:lightning_rod"
 			id: "5088B139583B6A5C"
@@ -1301,7 +1302,7 @@
 		}
 		{
 			dependencies: ["113F213BEE658CA3"]
-			description: ["天空仪式，将两种蘑菇任意一个放置，以及一个钟放置于祭坛基座，下界岩放置于祭坛上"]
+			description: ["天空仪式，将两种蘑菇任意一个，以及一个钟放置于祭坛基座，下界岩放置于祭坛上"]
 			icon: "minecraft:lightning_rod"
 			id: "29DEE9F795190A0B"
 			rewards: [{
@@ -1325,11 +1326,13 @@
 				{
 					id: "13062B33777B4B0C"
 					item: "minecraft:red_mushroom"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5F10C274ABFC10B4"
 					item: "minecraft:brown_mushroom"
+					optional_task: true
 					type: "item"
 				}
 			]

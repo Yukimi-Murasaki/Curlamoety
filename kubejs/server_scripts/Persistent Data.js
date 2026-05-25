@@ -1,10 +1,11 @@
 PlayerEvents.loggedIn(event=>{
     const player = event.player;
-    player.tell(Text.translate("lang.curlamoety.keys"))
-    player.tell(Text.green(Text.translate("lang.curlamoety.quest0").append(Text.of(" N ").bold()).append(Text.translate("lang.curlamoety.quest1"))))
-    player.tell(Text.yellow(Text.translate("lang.curlamoety.warn")))
-    player.tell(Text.yellow(Text.translate("lang.curlamoety.warn")))
-    player.tell(Text.yellow(Text.translate("lang.curlamoety.warn")))
+    player.tell(Text.translate("curlamoety.lang.keys"))
+    player.tell(Text.green(Text.translate("curlamoety.lang.quest0").append(Text.of(" N ").bold()).append(Text.translate("curlamoety.lang.quest1"))))
+    player.tell(Text.yellow(Text.translate("curlamoety.lang.warn")))
+    player.tell(Text.yellow(Text.translate("curlamoety.lang.warn")))
+    player.tell(Text.yellow(Text.translate("curlamoety.lang.warn")))
+    player.tell(Text.red(Text.translate("curlamoety.lang.chest_warn")))
     player.persistentData.fade_cd = player.persistentData.fade_cd||0 //褪色之诺cd
     player.persistentData.fade_cast = player.persistentData.fade_cast||0 //褪色之诺播报
     player.persistentData.dice_cd = player.persistentData.dice_cd||0 //孤注一掷cd

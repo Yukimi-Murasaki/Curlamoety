@@ -429,6 +429,7 @@
 			tasks: [{
 				id: "1AF1A13DA5C66670"
 				structure: "goety:buried_ritual"
+				title: "发现埋葬仪式"
 				type: "structure"
 			}]
 			title: "埋葬仪式"
@@ -668,7 +669,7 @@
 		{
 			dependencies: ["182B0AC732643909"]
 			description: [
-				"暗兽是一只通过活力仪式召唤的永久仆从，召唤它需要阅读作祟卷轴。"
+				"暗兽是一只通过增生仪式召唤的永久仆从，召唤它需要阅读作祟卷轴。"
 				""
 				"暗兽属于荒野仆从，不仅拥有强悍的生命与攻击，还可以间歇性给予自身生命回复III，你也可以通过喂食肉类来治疗它。"
 				""
@@ -3884,6 +3885,7 @@
 			tasks: [{
 				id: "14BBAB5FB2928108"
 				structure: "minecraft:ancient_city"
+				title: "探访远古城市"
 				type: "structure"
 			}]
 			title: "远古城市"

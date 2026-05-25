@@ -509,7 +509,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'enigmaticaddons:earth_heart_fragment',
     ])
     .activationItem('curlamoety:hiker_boots')
-    .craftType('geoturgy')  
+    .craftType('forge')  
     .soulCost(5)
     .duration(10)
     .id('curlamoety:runner_boots')
@@ -598,7 +598,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'touhou_little_maid:computer',
     ])
     .activationItem('minecraft:disc_fragment_5')
-    .craftType('geoturgy')  
+    .craftType('frost')  
     .soulCost(10)
     .duration(20)
     .id("curlamoety:bakasmusic_disc")
@@ -1752,6 +1752,25 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .entityToSacrificeTag("goetydelight:cow")
     .entityToSacrificeDisplayName("牛")
     .id("curlamoety:ascension_pizza")
+
+    //奥术方匣
+    event.remove("goety:esoteric_tesseract")
+    event.recipes.goety.ritual("goety:esoteric_tesseract",'goety:craft',[
+        "minecraft:respawn_anchor",
+        "enigmaticlegacy:extradimensional_eye",
+        "waystones:warp_stone",
+        "goety:cursed_cage",
+        "minecraft:ender_chest",
+        "minecraft:ender_chest",
+        "goety:waystone",
+        "goety:waystone",
+    ])
+    .activationItem("goety:flame_capture")
+    .craftType("forge")
+    .soulCost(10)
+    .duration(10)
+    .id("curlamoety:esoteric_tesseract")
+    
 
 })
 ServerEvents.recipes(event=>{//无封装方法

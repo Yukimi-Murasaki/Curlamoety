@@ -727,8 +727,8 @@ ItemEvents.tooltip(event=>{
     })
 
     event.addAdvanced("curlamoety:sword_cookie",(item,addAdvanced,text)=>{//剑术大师曲奇
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.curlamoety.sword_cookie_1")))
-        text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.curlamoety.sword_cookie_2")))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.curlamoety.lang.sword_cookie_1")))
+        text.add(2,Text.darkPurple(Text.translate("curlamoety.curlamoety.lang.sword_cookie_2")))
     })
 
     event.addAdvanced('curlamoety:gloomy_circlet' ,(item,addAdvanced,text)=>{//晦色头环
@@ -1014,5 +1014,13 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('#curlamoety:light_curio',(item,addAdvanced,text)=>{//光源饰品
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.light_curio")))
     })
+
+    event.addAdvanced('@ironchest',(item,addAdvanced,text)=>{//金属桶/箱
+        text.add(1,Text.red(Text.translate("curlamoety.lang.chest_warn")))
+    })
+    event.addAdvanced('@metalbarrels',(item,addAdvanced,text)=>{//金属桶/箱
+        text.add(1,Text.red(Text.translate("curlamoety.lang.chest_warn")))
+    })
+    
 
 })

@@ -221,12 +221,12 @@
 		targeted_block = true
 		id_block = true
 		block_states = true
-		block_tags = false
+		block_tags = true
 		nothing = true
-		targeted_fluid = false
+		targeted_fluid = true
 		id_fluid = false
 		fluid_states = false
 		fluid_tags = false
 		nothing2 = false
-		targeted_entity = false
+		targeted_entity = true
 

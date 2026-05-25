@@ -16,10 +16,10 @@
 
 #---- 虚伪审判 ----
 [false_justice]
-	#真实伤害率加成（0.5 = +50% 真实伤害比率） [默认: 0.5]
+	#真实伤害率加成（0.2 = +20% 真实伤害比率） [默认: 0.2]
 	#Range: 0.0 ~ 100.0
 	trueDamageRatio = 0.5
-	#玩家造成伤害的倍率 [默认: 0.5]
+	#玩家造成伤害的倍率 [默认: 0.8]
 	#Range: 0.0 ~ 100.0
 	playerDamageMultiplier = 0.5
 	#仆从受到伤害的倍率 [默认: 1.5]
@@ -46,6 +46,13 @@
 	#时长减半后最短保留的时间（ticks） [默认: 20 = 1秒]
 	#Range: 1 ~ 72000
 	minDuration = 20
+	#共享药水效果的最大 amplifier 等级（0=I级，3=IV级），超过此值的会被压制到上限 [默认: 3]
+	#Range: 0 ~ 255
+	maxSharedAmplifier = 3
+	#禁止共享的药水效果 ID 列表（ResourceLocation 格式），
+	#填入模组命名空间 ID 即可，例如: ["minecraft:invisibility"]
+	#留空则不禁止任何效果 [默认: ["minecraft:invisibility"]]
+	effectBlacklist = ["minecraft:invisibility"]
 
 #---- 血腥狩猎手册 ----
 [sanguinary_handbook]
@@ -88,6 +95,12 @@
 	#仆从受到的伤害系数（1.0 = 无减伤，0.95 = 减伤 5%） [默认: 0.95]
 	#Range: 0.0 ~ 1.0
 	servantDamageReduction = 0.95
+	#「启示之审判」每级伤害放大系数。
+	#公式：damage *= 1 + (amplifier + 1) × 此值
+	#原 SAPPED 效果每级 +20%，此处默认 0.20 ≈ SAPPED 的 1/4
+	#[默认: 0.20]
+	#Range: 0.0 ~ 10.0
+	judgmentDamagePerLevel = 0.2
 
 #---- 恩惠之典 ----
 [the_bless]
@@ -238,10 +251,10 @@
 	#复活冷却时间（秒） [默认: 600 = 10分钟]
 	#Range: 0 ~ 100000
 	reviveCooldownSeconds = 600
-	#幸运值加成 [默认: 5.0]
+	#幸运值加成 [默认: 3.0]
 	#Range: 0.0 ~ 100.0
 	luckBonus = 5.0
-	#额外槽位数量 [默认: 2]
+	#额外槽位数量 [默认: 1]
 	#Range: 0 ~ 10
 	bonusSlots = 2
 
@@ -289,6 +302,12 @@
 	#经验等级上限（超过后不再提升） [默认: 1000]
 	#Range: 1 ~ 100000
 	xpLevelUpperLimit = 1000
+	#玩家伤害加成系数（基础加成的倍数） [默认: 0.25]
+	#Range: 0.0 ~ 10.0
+	playerDamageFactor = 0.25
+	#仆从伤害加成系数（基础加成的倍数） [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	servantDamageFactor = 1.0
 
 #---- 死后召回卷轴 ----
 [escape_scroll]
@@ -301,129 +320,103 @@
 
 #---- 千咒卷轴 ----
 [cursed_scroll]
-	#千咒卷轴内容物伤害系数（相对于原版值的比例） [默认: 0.35]
-	#Range: 0.0 ~ 10.0
-	servantDamageFactor = 0.35
+	#每次攻击触发诅咒削弱的概率 (0.0~1.0) [默认: 0.5]
+	#Range: 0.0 ~ 1.0
+	triggerChance = 0.5
+	#基础每次削减比例 (0.0~1.0) [默认: 0.015]
+	#Range: 0.0 ~ 1.0
+	basePerHit = 0.015
+	#基础削减封顶比例 (0.0~1.0) [默认: 0.08]
+	#Range: 0.0 ~ 1.0
+	baseCap = 0.08
+	#参与强度计算的诅咒数上限 [默认: 20]
+	#Range: 1 ~ 100
+	maxEffectiveCurses = 20
+	#sqrt 衰减曲线乘数 [默认: 0.35]
+	#Range: 0.0 ~ 1.0
+	sqrtMultiplier = 0.35
 
-#---- 创造者的恩赐 ----
+#---- 创造者的恩赐（数值已削弱30%） ----
 [fabulous_scroll]
-	#风之法杖加成倍数 [默认: 1.3]
+	#风之法杖加成倍数 [默认: 1.21]
 	#Range: 0.0 ~ 10.0
 	staffBonusMultiplier = 1.3
-	#摔落缓冲气垫半径 [默认: 2.2]
+	#摔落缓冲气垫半径 [默认: 1.54]
 	#Range: 0.0 ~ 100.0
 	cushionRadius = 2.2
-	#缓冲气垫持续时长（ticks） [默认: 120]
+	#缓冲气垫持续时长（ticks） [默认: 84]
 	#Range: 1 ~ 72000
 	cushionDuration = 120
-	#死亡风爆半径 [默认: 4.5]
+	#死亡风爆半径 [默认: 3.15]
 	#Range: 0.0 ~ 100.0
 	windHornRadius = 4.5
-	#死亡风爆持续时长（ticks） [默认: 8]
+	#死亡风爆持续时长（ticks） [默认: 5]
 	#Range: 1 ~ 72000
 	windHornDuration = 8
 	#死亡风爆伤害基础值 [默认: 1]
 	#Range: 0 ~ 10000
 	windHornPotency = 1
-	#仆从受伤时生成龙卷风概率 [默认: 0.3]
+	#仆从受伤时生成龙卷风概率 [默认: 0.21]
 	#Range: 0.0 ~ 1.0
 	cycloneChance = 0.3
-	#龙卷风基础伤害 [默认: 3]
+	#龙卷风基础伤害 [默认: 2]
 	#Range: 0 ~ 10000
 	cyclonePotency = 3
-	#龙卷风持续时长（ticks） [默认: 500]
+	#龙卷风持续时长（ticks） [默认: 350]
 	#Range: 1 ~ 72000
 	cycloneDuration = 500
-	#龙卷风基础半径 [默认: 1.3]
+	#龙卷风基础半径 [默认: 0.91]
 	#Range: 0.0 ~ 100.0
 	cycloneRadius = 1.3
-	#仆从受伤时吹飞周围敌人概率 [默认: 0.12]
+	#仆从受伤时吹飞周围敌人概率 [默认: 0.084]
 	#Range: 0.0 ~ 1.0
 	windBlastChance = 0.12
-	#吹飞范围 [默认: 4]
+	#吹飞范围 [默认: 2]
 	#Range: 1 ~ 100
 	windBlastRange = 4
-	#玩家攻击触发风刃概率 [默认: 0.40]
+	#玩家攻击触发风刃概率 [默认: 0.28]
 	#Range: 0.0 ~ 1.0
 	playerRazorChance = 0.4
-	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.5]
+	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.35]
 	#Range: 0.0 ~ 100.0
 	playerRazorDamageRatio = 0.5
-	#玩家风刃半径 [默认: 0.8]
+	#玩家风刃半径 [默认: 0.56]
 	#Range: 0.0 ~ 100.0
 	playerRazorRadius = 0.8
-	#仆从攻击触发风刃概率 [默认: 0.60]
+	#仆从攻击触发风刃概率 [默认: 0.42]
 	#Range: 0.0 ~ 1.0
 	servantRazorChance = 0.6
-	#仆从风刃伤害比例（相对攻击伤害） [默认: 1.0]
+	#仆从风刃伤害比例（相对攻击伤害） [默认: 0.70]
 	#Range: 0.0 ~ 100.0
 	servantRazorDamageRatio = 1
-	#仆从风刃半径 [默认: 0.8]
+	#仆从风刃半径 [默认: 0.56]
 	#Range: 0.0 ~ 100.0
 	servantRazorRadius = 0.8
 	#摔落伤害倍率（0=完全免疫） [默认: 0.0]
 	#Range: 0.0 ~ 1.0
 	fallDamageMultiplier = 0.0
 
-#---- 天堂之礼 ----
+#---- 天堂之礼（重做：灵魂飞行） ----
+#
+#消耗灵魂能量获得创造飞行能力。
+#每秒消耗 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+#灵魂能量不足时自动取消飞行状态。
 [heaven_scroll]
-	#风之法杖加成倍数 [默认: 1.3]
-	#Range: 0.0 ~ 10.0
-	staffBonusMultiplier = 1.3
-	#摔落缓冲气垫半径 [默认: 2.2]
-	#Range: 0.0 ~ 100.0
-	cushionRadius = 2.2
-	#缓冲气垫持续时长（ticks） [默认: 120]
-	#Range: 1 ~ 72000
-	cushionDuration = 120
-	#摔落伤害倍率 [默认: 0.30]
+	#每秒消耗灵魂能量的百分比（0.01 = 1% 最大灵魂能量）
+	#计算公式：消耗量 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+	#取值范围：0.0~1.0 [默认: 0.01 = 1%]
 	#Range: 0.0 ~ 1.0
-	fallDamageMultiplier = 0.25
-	#死亡风爆半径 [默认: 4.5]
-	#Range: 0.0 ~ 100.0
-	windHornRadius = 4.5
-	#死亡风爆持续时长（ticks） [默认: 8]
-	#Range: 1 ~ 72000
-	windHornDuration = 8
-	#死亡风爆伤害基础值 [默认: 1]
-	#Range: 0 ~ 10000
-	windHornPotency = 1
-	#仆从受伤时生成龙卷风概率 [默认: 0.15]
-	#Range: 0.0 ~ 1.0
-	cycloneChance = 0.15
-	#龙卷风基础伤害 [默认: 1]
-	#Range: 0 ~ 10000
-	cyclonePotency = 1
-	#龙卷风持续时长（ticks） [默认: 320]
-	#Range: 1 ~ 72000
-	cycloneDuration = 320
-	#龙卷风基础半径 [默认: 1.0]
-	#Range: 0.0 ~ 100.0
-	cycloneRadius = 1
-	#仆从受伤时吹飞周围敌人概率 [默认: 0.12]
-	#Range: 0.0 ~ 1.0
-	windBlastChance = 0.12
-	#吹飞范围 [默认: 4]
+	soulCostPercentPerSecond = 0.01
+	#每秒消耗固定灵魂能量值
+	#计算公式：消耗量 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+	#取值范围：0~100000 [默认: 100]
+	#Range: 0 ~ 100000
+	soulCostFixedPerSecond = 100
+	#消耗检查间隔（ticks，20 = 1秒）
+	#数值越小消耗越平滑，但CPU开销略大
+	#[默认: 10 = 每半秒消耗一次]
 	#Range: 1 ~ 100
-	windBlastRange = 4
-	#玩家攻击触发风刃概率 [默认: 0.25]
-	#Range: 0.0 ~ 1.0
-	playerRazorChance = 0.25
-	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.35]
-	#Range: 0.0 ~ 100.0
-	playerRazorDamageRatio = 0.35
-	#玩家风刃半径 [默认: 0.8]
-	#Range: 0.0 ~ 100.0
-	playerRazorRadius = 0.8
-	#仆从攻击触发风刃概率 [默认: 0.40]
-	#Range: 0.0 ~ 1.0
-	servantRazorChance = 0.4
-	#仆从风刃伤害比例（相对攻击伤害） [默认: 0.65]
-	#Range: 0.0 ~ 100.0
-	servantRazorDamageRatio = 0.65
-	#仆从风刃半径 [默认: 0.8]
-	#Range: 0.0 ~ 100.0
-	servantRazorRadius = 0.8
+	checkInterval = 10
 
 #════════════════════════════════════
 # 暗夜契约卷轴配置
@@ -582,6 +575,9 @@
 	#下界法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
 	netherPotency = 1
+	#每秒火焰回血量 [默认: 0.5]
+	#Range: 0.0 ~ 100.0
+	fireHealAmount = 0.5
 
 #---- 创造之心 ----
 [enigmatic_item]
@@ -951,6 +947,14 @@
 	#  "minecraft:nether_star;0;3"      → 下界之星，无限次，每次3槽
 	#  "somemod:special_scroll;1;15"    → 某mod的卷轴，1次全解锁
 	sacrificeRecipes = ["enigmaticlegacy:ichor_bottle;1;1", "twilightforest:lich_trophy;1;1", "minecraft:nether_star;1;1", "goety:soul_ruby;1;1", "goety:night_beacon;1;1", "cataclysm:ignitium_ingot;1;1", "curlamoety:evernight_veil;1;1"]
+	#════════════════════════════════════
+	# 七咒之戒检查配置
+	#════════════════════════════════════
+	#是否启用七咒之戒资格检查 [默认: true]
+	#启用后，ICursed 物品需要佩戴七咒之戒才能放入/生效
+	#IEldritch 物品还需要七咒之戒佩戴时间 ≥ 99.5%
+	#关闭后可让所有物品无限制使用
+	requireCurseCheck = true
 
 #---- 红宝石戒指 ----
 [ruby_ring]
@@ -1011,4 +1015,15 @@
 	#是否启用原版可驯服动物作为仆从
 	#也包括车万女仆[默认: true]
 	enableVanillaTameableServants = true
+	#是否禁止 Goety 的 Prisoner 开采以太矿石
+	#Prisoner 的采矿是全自动零成本的，效率极高
+	#启用后将阻止 Prisoner 将以太矿纳入采矿列表
+	#[默认: false]（不禁止）
+	disablePrisonerMiningEtheriumOre = false
+
+#---- 无敌帧削减跳过条件 ----
+[invul_reduction]
+	#当攻击者主手或副手武器携带 goety_revelation:reality_piercer 附魔时，是否跳过本模组的无敌帧削减（让该附魔自己处理穿透）
+	#需要安装 goety_revelation 模组 [默认: true]
+	skipWhenRealityPiercer = true
 

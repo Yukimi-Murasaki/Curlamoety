@@ -1100,5 +1100,71 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     //幻影熔渣
     Event.smelting('curlamoety:phantom_slag','twilightforest:phantom_helmet',2,100).id("curlamoety:phantom_slag1")
     Event.smelting('curlamoety:phantom_slag','twilightforest:phantom_chestplate',2,100).id("curlamoety:phantom_slag2")
+
+    //次元升级
+    Event.remove('mobackup:dimensional_magnet_upgrade')
+    Event.shaped('mobackup:dimensional_magnet_upgrade',[
+        'EIE', 
+        'IUI',
+        'R L',
+    ],{
+        E:"minecraft:ender_pearl",
+        I:"minecraft:iron_ingot",
+        R:"minecraft:redstone",
+        L:"minecraft:lapis_lazuli",
+        U:'mobackup:dimensional_pickup_upgrade'
+    })
+    Event.shaped('mobackup:dimensional_magnet_upgrade',[
+        'ECE', 
+        'MUM',
+        'ENE',
+    ],{
+        E:'enigmaticlegacy:extradimensional_eye',
+        C:'refinedstorage:controller',
+        M:"goety:soul_emerald",
+        N:"minecraft:netherite_ingot",
+        U:'sophisticatedbackpacks:advanced_magnet_upgrade'
+    })
+
+    Event.remove('mobackup:dimensional_pickup_upgrade')
+    Event.shaped('mobackup:dimensional_pickup_upgrade',[
+        'ECE', 
+        'MUM',
+        'ENE',
+    ],{
+        E:'enigmaticlegacy:extradimensional_eye',
+        C:'refinedstorage:controller',
+        M:"goety:soul_emerald",
+        N:"minecraft:netherite_ingot",
+        U:'sophisticatedbackpacks:advanced_pickup_upgrade'
+    })
+
+    Event.remove('mobackup:dimensional_deposit_upgrade')
+    Event.shaped('mobackup:dimensional_deposit_upgrade',[
+        'ECE', 
+        'MUM',
+        'ENE',
+    ],{
+        E:'enigmaticlegacy:extradimensional_eye',
+        C:'refinedstorage:controller',
+        M:"goety:soul_emerald",
+        N:"minecraft:netherite_ingot",
+        U:'sophisticatedbackpacks:advanced_deposit_upgrade'
+    })
+
+    Event.shapeless(Item.of('sophisticatedstorage:copper_barrel', '{woodType:"spruce"}'),['metalbarrels:copper_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:iron_barrel', '{woodType:"spruce"}'),['metalbarrels:iron_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'),['metalbarrels:gold_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:diamond_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:crystal_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:obsidian_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"spruce"}'),['metalbarrels:netherite_barrel',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:copper_chest', '{woodType:"oak"}'),['metalchests:copper_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:iron_chest', '{woodType:"oak"}'),['metalchests:iron_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'),['metalchests:gold_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:diamond_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:crystal_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:obsidian_chest',"minecraft:lever"])
+    Event.shapeless(Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}'),['metalchests:netherite_chest',"minecraft:lever"])
     
 })  

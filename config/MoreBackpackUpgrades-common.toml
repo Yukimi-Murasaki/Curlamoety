@@ -1,0 +1,6 @@
+
+[Upgrades]
+	#次元磁吸升级的吸附范围
+	#Range: 1 ~ 64
+	dimensionalMagnetRange = 5
+

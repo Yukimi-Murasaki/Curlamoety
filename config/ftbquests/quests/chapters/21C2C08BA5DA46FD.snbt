@@ -15,7 +15,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0AB2DF12CBBDE6ED"]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"
@@ -459,7 +458,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0AB2DF12CBBDE6ED"]
 			icon: "minecraft:crafting_table"
 			id: "4B20BD54D0571099"
 			progression_mode: "linear"
@@ -724,7 +722,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0AB2DF12CBBDE6ED"]
 			icon: "minecraft:chest"
 			id: "6FB4C1F1B3E5E8DA"
 			progression_mode: "linear"

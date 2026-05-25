@@ -22,9 +22,9 @@ EntityEvents.spawned(event=>{
             entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
             
         }
-    }else if(entity.type == "goety:endersant"){
+    }else if(entity.type == "goety:endersent"){
         if(dimension != "minecraft:the_end"){
-            entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.96666,"multiply_total")
+            entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.96667,"multiply_total")
             entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.8,"multiply_total")
         }
     }else if(entity.type == "goety:cairn_necromancer"||entity.type == "goety:mossy_necromancer"||entity.type == "goety:necromancer"||entity.type == "goety_cataclysm:draugr_necromancer"){
@@ -40,6 +40,8 @@ EntityEvents.spawned(event=>{
     }else if(entity.type == "goety:envioker"||entity.type == "goety:tormentor"){
         entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.92,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","hostile_modify",-0.5,"multiply_total")
+    }else if(entity.type == "goetytwilight:lich_servant"){
+        entity.modifyAttribute("minecraft:generic.max_health","normal_modify",14,"multiply_total")
     }
     //穿甲调整
     if(entity.type == "goety:apostle"||entity.type == "goety:ender_keeper"||entity.type == "goetyawaken:nameless_one"||entity.type == "goetyawaken:mushroom_monstrosity"||entity.type == "cataclysm:ignis"){
@@ -63,10 +65,7 @@ EntityEvents.spawned(event=>{
             entity.modifyAttribute("goety_revelation:enchantment_piercing","dimension_modify",0.15,"addition")
         }
     }
-    //其他
-    if(entity.type == "goetytwilight:lich_servant"){
-        entity.modifyAttribute("minecraft:generic.max_health","normal_modify",14,"multiply_total")
-    }
+    
 
     if(!entity.persistentData.firstSpawn||entity.persistentData.firstSpawn==0){
         entity.setHealth(entity.getMaxHealth())

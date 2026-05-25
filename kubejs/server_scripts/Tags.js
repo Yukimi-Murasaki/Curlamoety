@@ -126,6 +126,7 @@ ServerEvents.tags('item',event=>{
     event.add('forge:tools','curlamoety:glass_hoe')
     event.add('forge:tools','curlamoety:glass_shovel')
     event.add('forge:tools','curlamoety:magician_hand')
+    event.add('forge:tools',"goety:esoteric_tesseract")
 
     //分解台·物品
     event.add("twilightforest:banned_uncraftables","goety_cataclysm:netherite_plating")

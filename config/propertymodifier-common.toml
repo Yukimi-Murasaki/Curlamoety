@@ -355,7 +355,7 @@
 		"cataclysm.elite_draugr" = "minecraft:generic.max_health;160"
 		"cataclysm.ignited_berserker" = "minecraft:generic.max_health;195"
 		"cataclysm.watcher" = "minecraft:generic.max_health;300"
-		"cataclysm.Hippocamtus" = "minecraft:generic.max_health;850"
+		"cataclysm.hippocamtus" = "minecraft:generic.max_health;850"
 		"cataclysm.cindaria" = "minecraft:generic.max_health;600"
 		"twilightforest:naga" = "minecraft:generic.max_health;600"
 		"twilightforest:troll" = "minecraft:generic.max_health;500"
