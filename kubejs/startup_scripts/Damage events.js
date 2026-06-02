@@ -1,26 +1,14 @@
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',event=>{
-    let { entity , source , amount , level } = event
+    let { entity , source , amount } = event
     let {x,y,z} = entity
     let max_health = entity.getMaxHealth()
     let health = entity.getHealth()
     let type =source.getType()
     let actual = source.actual
     if(entity == null )return;
-    if(!entity.isLiving()||entity==null)return;
+    if(!entity.isLiving())return;
     //受击逻辑
-    //殊死一搏触发
-    // if(entity.isPlayer() && entity.isCuriosEquipped('curlamoety:desperate_attempt') && entity.persistentData.dice_cd == 0){
-    //     let healthRate = health/max_health
-    //     let luck = entity.getAttribute('minecraft:generic.luck').getValue()
-    //     let chance1 = 0.27-0.2*healthRate+(20+luck)/(200+2*luck)
-    //     if(Math.random(1)<chance1){
-    //         entity.addEffect(new MobEffectInstance(
-    //             'curlamoety:dying_fight',(10+10*healthRate+0.1*luck),0
-    //         ))
-    //         level.playSound(null,x,y,z,'curlamoety:dice','players',1,1)
-    //         entity.persistentData.dice_cd = 40
-    //     }else{ entity.persistentData.dice_cd = 20 }
-    // }
+    
     //属性抗性
     if(type == 'inFire'||type == 'onFire')
     {
@@ -58,19 +46,36 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
         event.setAmount(amount*decrease)
     }
     if(entity.isPlayer()){
-        
-        //褪色免伤
-        if(entity.isCuriosEquipped('curlamoety:faded_promise') && (entity.persistentData.fade_cd == 0||entity.persistentData.fade_cd == -1) && amount > max_health*0.5){
-            entity.persistentData.fade_cd = 1200
-            level.playSound(null,x,y,z,'minecraft:entity.experience_orb.pickup','players',0.5,1)
-            entity.setStatusMessage(Text.gold(Text.translate("curlamoety.lang.faded_promise_trigger")))
-            event.setAmount(0);
-            if(entity.isCuriosEquipped('curlamoety:desperate_attempt')){
-                level.playSound(null,x,y,z,'curlamoety:dice','players',0.2,1)
+        //殊死一搏触发
+        if(entity.isCuriosEquipped('curlamoety:desperate_attempt') && entity.persistentData.dice_cd == 0){
+            let healthRate = health/max_health
+            let luck = entity.getAttribute('minecraft:generic.luck').getValue()
+            let chance1 = 0.27-0.2*healthRate+(20+luck)/(200+2*luck)
+            if(Math.random(1)<chance1){
                 entity.addEffect(new MobEffectInstance(
-                    'curlamoety:dying_fight',20,0
+                    'curlamoety:dying_fight',(10+10*healthRate+0.1*luck),0
                 ))
-                entity.persistentData.dice_cd = 20
+                entity.level.playSound(null,x,y,z,'curlamoety:dice','players',1,1)
+                entity.persistentData.dice_cd = 40
+            }else{ entity.persistentData.dice_cd = 20 }
+        }
+        //褪色免伤
+        if(entity.isCuriosEquipped('curlamoety:faded_promise')){
+            if(entity.persistentData.fade_cd == 0||entity.persistentData.fade_cd == -1){
+                if(amount > health * 0.5){
+                    entity.persistentData.fade_cd = 1200
+                    entity.level.playSound(null,x,y,z,'minecraft:entity.experience_orb.pickup','players',0.5,1)
+                    entity.setStatusMessage(Text.gold(Text.translate("curlamoety.lang.faded_promise_trigger")))
+                    event.cancel()
+
+                    if(entity.isCuriosEquipped('curlamoety:desperate_attempt')){
+                        entity.level.playSound(null,x,y,z,'curlamoety:dice','players',1,1)
+                        entity.addEffect(new MobEffectInstance(
+                            'curlamoety:dying_fight',20,0
+                        ))
+                        entity.persistentData.dice_cd = 20
+                    }
+                }
             }
         }
         if(entity.persistentData.armorset == "murasaki"){
@@ -114,7 +119,11 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
     //击中逻辑
     if(!actual)return;
     if(!actual.isLiving())return;
-    let {x1,y1,z1} = actual
+    let x1 = actual.x
+    let y1 = actual.y
+    let z1 = actual.z
+
+    
     //仆从末影勇者：2倍伤害
     if(actual.type == 'goetyawaken:ender_keeper_servant'){
         if(!actual.persistentData.enderHero)return;
@@ -132,7 +141,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
             }
             if(entity.isOnFire()){
                 event.setAmount(amount*1.5)
-                //level.playSound(null,x,y,z,'minecraft:entity.player.attack.crit','players',0.5,1)
+                entity.level.playSound(null,x,y,z,'minecraft:entity.player.attack.crit','players',0.5,1)
             }
         }
     }
@@ -148,14 +157,21 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
             event.setAmount(amount*1.5)
         }
     }
-    //殊死一搏增伤
-    if(actual.potionEffects.isActive('curlamoety:dying_fight')){
-        let luck = actual.getAttribute('minecraft:generic.luck').getValue()
-        let increase = (1.5+0.01*luck)
-        event.setAmount(amount*increase)
-    }
+    
     
     if(actual.isPlayer()){
+        //殊死一搏触发
+        if(actual.isCuriosEquipped('curlamoety:desperate_attempt') && actual.persistentData.dice_cd==0){
+            let luck = actual.getAttribute('minecraft:generic.luck').getValue()
+            let healthRate = actual.health/actual.maxHealth
+            let chance2 = 0.15-0.1*healthRate+(20+luck)/(400+4*luck)
+            if(Math.random(1)<(chance2)){
+                entity.level.playSound(null,x1,y1,z1,'curlamoety:dice','players',1,1)
+                actual.potionEffects.add('curlamoety:dying_fight',(5+0.1*luck),0)
+                actual.persistentData.dice_cd = 15
+            }
+        }
+        
         if(actual.persistentData.armorset == "apocalyptium"){
             //神金斩杀
             if(max_health>=10000){
@@ -186,5 +202,12 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
                 }
             }
         }
+    }
+
+    //殊死一搏增伤
+    if(actual.potionEffects.isActive('curlamoety:dying_fight')){
+        let luck = actual.getAttribute('minecraft:generic.luck').getValue()
+        let increase = (1.5+0.01*luck)
+        event.setAmount(amount*increase)
     }
 })

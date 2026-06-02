@@ -516,7 +516,7 @@ BlockEvents.rightClicked((event) => {
         }else if(block.id == "minecraft:iron_block"){
             player.tell(player.persistentData.armorset)
         }else if(block.id == "cataclysm:cursium_block"){
-            //
+            player.persistentData.fade_cd = 20
         }
     }
 

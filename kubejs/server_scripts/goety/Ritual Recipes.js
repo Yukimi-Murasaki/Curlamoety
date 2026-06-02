@@ -2270,7 +2270,7 @@ ServerEvents.recipes(event=>{//无封装方法
     //        "item": "goeticlegacy:night_cube",
     //    }
     //})
-    //.id("curlamoety:night_cube2")
+    // .id("curlamoety:night_cube2")
 })
     
         
