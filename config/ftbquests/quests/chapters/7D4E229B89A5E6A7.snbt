@@ -319,7 +319,6 @@
 				"它的手杖会格挡伤害，格挡过多伤害会破碎，这种情况下击杀他掉落不祥碎片。如果在不打碎手杖的情况下击杀则会直接掉落不详核心。"
 				""
 				"&e由于诡厄巫法配置文件时常由于不明原因自动重置，因此本包加入了巨兽呼叫机作为敌对红石巨兽的召唤物，由灾厄教父掉落1个"
-				"{ \"text\": \"红石巨兽\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2C5F0C990D139C46\" } }"
 			]
 			icon: {
 				Count: 1
@@ -715,6 +714,8 @@
 			dependencies: ["182B0AC732643909"]
 			description: [
 				"灵魂修补器可以消耗下方的诅咒之笼中的灵魂能量来为放在修补器重的物品回复耐久，不过这个过程有些缓慢。"
+				""
+				"也可以用于给图腾注入灵魂能量"
 				""
 				"&7而且由于附魔注入器模组的加入，经验修补附魔并不再这么珍稀"
 			]
@@ -1626,7 +1627,7 @@
 				""
 				"与仆从相关的基本知识："
 				""
-				"诡厄巫法的仆从，需要用法杖&l&e左键&r仆从切换状态，&l&e潜行左键&r强制销毁仆从（会被野猎指南替伤，请注意），&l&eB&r键命令所有仆从停火，“&e.&r”键可以直接销毁所有非永久的仆从，贵重仆从需要进行一次确认。"
+				"诡厄巫法的仆从，需要用法杖&l&e左键&r仆从切换状态，&l&e潜行左键&r强制销毁仆从（会被野猎指南替伤，请注意），“&l&e,&r”键命令所有仆从停火，“&l&e.&r”键可以直接销毁所有非永久的仆从，贵重仆从需要进行一次确认。"
 				""
 				"仆从在佩戴对应系别的魔法头饰时获得永久寿命，佩戴对应系别的魔法袍时获得消耗主人灵魂恢复生命的能力，使用对应系别的法杖召唤时召唤数量增加，受到“强效”加成时获得相应等级的“强健”效果，增加攻击伤害。"
 				""
@@ -2595,6 +2596,8 @@
 				"非常有用的机动聚晶，可以快速发动，灵活位移，搭载在暴风魔杖上可以延长距离"
 				""
 				"&4当巫法强度过高时会呈现出较为严重的偏移现象"
+				""
+				"&e作为对策，发射聚晶在现阶段即可升级为飞翔聚晶"
 			]
 			hide_dependency_lines: true
 			id: "70E5B211035B160F"
@@ -2754,7 +2757,7 @@
 		}
 		{
 			dependencies: ["365E1E48492C7CFB"]
-			description: ["将弱化聚晶制作成古代铜锣，在沙漠中使用，即可召唤焦骸死灵法师，它会掉落禁咒碎片，可以制作让亡灵生物免受日光灼烧的圣物匣，以及一些其他有用的东西"]
+			description: ["在沙漠中使用，即可召唤焦骸死灵法师，它会掉落禁咒碎片，可以制作让亡灵生物免受日光灼烧的圣物匣，以及一些其他有用的东西"]
 			icon: "goetyawaken:ancient_gong"
 			id: "1112F53EA3A8A5D4"
 			rewards: [{
@@ -2772,7 +2775,7 @@
 			}]
 			title: "焦骸死灵法师"
 			x: 10.0d
-			y: -12.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["0D9BEC07A5D91FBC"]
@@ -2866,7 +2869,7 @@
 				item: "goety:blackguard_focus"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 17.5d
 			y: -9.5d
 		}
 		{
@@ -2943,7 +2946,7 @@
 				item: "goety:vanguard_focus"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.0d
 			y: -9.5d
 		}
 		{
@@ -3444,16 +3447,16 @@
 					type: "item"
 				}
 				{
-					advancement: "goety:goety/unlock_necromancer"
-					criterion: ""
-					id: "666B82B1ACCFCC9F"
-					type: "advancement"
-				}
-				{
 					id: "0B2AF5BA84AC151A"
 					item: "goety:front_scroll"
 					optional_task: true
 					type: "item"
+				}
+				{
+					advancement: "goety:goety/unlock_necromancer"
+					criterion: ""
+					id: "666B82B1ACCFCC9F"
+					type: "advancement"
 				}
 				{
 					advancement: "goety:goety/read_front_scroll"
@@ -4264,7 +4267,7 @@
 		{
 			dependencies: ["26A37DB3B0DA0DB7"]
 			description: [
-				"黑铁套的中间升级之一，相较于黑暗套，灵魂折扣和防护属性，但是拥有额外的攻击伤害加成，并且对远古城市特攻，可以免疫黑暗、免疫尖啸声波、不再触发幽匿尖啸体。"
+				"黑铁套的中间升级之一，相较于黑暗套，灵魂折扣和特殊抗性略低，但是拥有额外的攻击伤害加成，并且对远古城市特攻，可以免疫黑暗、免疫尖啸声波、不再触发幽匿尖啸体。"
 				""
 				"&e先制作幽魂盔甲的一部分组件可以减小你继续探索古城的阻力，你也可以选择依靠巫法系盔甲的高魔抗击败监守者来获取回响碎片"
 			]
@@ -4331,7 +4334,7 @@
 			]
 			title: "幽魂套装"
 			x: 18.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -4411,14 +4414,10 @@
 		}
 		{
 			dependencies: [
-				"43D1D60EF0B6E8DB"
 				"082231051F6FDAFB"
+				"43D1D60EF0B6E8DB"
 			]
-			description: [
-				"与渊魄黑魔法师套装属性相近，不是对古城特攻而是拥有爬墙和吸血的能力"
-				""
-				"{ \"text\": \"点击查看该套装的前置\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"082231051F6FDAFB\" } } "
-			]
+			description: ["蜘蛛套装的升级，额外获得了吸血能力"]
 			id: "438431236AC19960"
 			rewards: [
 				{
@@ -4494,7 +4493,7 @@
 			description: [
 				"黑铁套的全面升级版，如果是诡厄巫法原版这就是最强盔甲，可惜这不是诡厄原版"
 				""
-				"对比启示录的两件魔法套有更高一些的护甲值，但是没有它们的伤害加成"
+				"相比之下启示录的两件魔法套更强力"
 				""
 				"该仪式中不可破坏词条不会继承"
 			]
@@ -4569,12 +4568,8 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"6A75056C4CACD7F9"
-				"019603FFC9139EE0"
-			]
+			dependencies: ["6A75056C4CACD7F9"]
 			description: ["黑铁套的升级之一，不需要黑暗金属就可以有接近黑暗金属套装的属性，具有攀爬能力，攀爬能力可以按&l&eCtrl+N&r开关。"]
-			hide_dependent_lines: true
 			id: "082231051F6FDAFB"
 			rewards: [
 				{
@@ -4643,28 +4638,64 @@
 				}
 			]
 			title: "蜘蛛套装"
-			x: 15.0d
-			y: 1.5d
+			x: 19.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
-				"029E4CF9EF2DDF30"
 				"751E5B493A39F40D"
+				"389D8CCD674931CC"
 			]
 			description: [
-				"用被隐匿的蓝图在仪式上合成，需要先学习战争卷轴才可以阅读（&m&7将被隐匿的蓝图做成卷饼吃掉也可以达到阅读终结卷轴的效果&r卷饼目前有bug）"
+				"用被隐匿的蓝图在仪式上合成，需要先学习战争卷轴才可以阅读"
 				""
-				"{ \"text\": \"点击查看隐匿蓝图获取\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"029E4CF9EF2DDF30\" } }"
+				"被隐匿的蓝图也可以做成隐匿卷饼吃下，可以解锁战争卷轴，同时允许你复制一个需要终结卷轴召唤的仆从，寿命5分钟"
+				""
+				"{ \"text\": \"隐匿蓝图可以从末影守望者获取\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"029E4CF9EF2DDF30\" } }"
+				""
+				"{ \"text\": \"也可以由红石巨兽掉落\", \"color\":\"gold\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"389D8CCD674931CC\" } } "
 				""
 				"允许激活三种巨兽的召唤多方块结构。"
 			]
 			id: "78E9423835E29DA7"
+			rewards: [
+				{
+					id: "1A76AF056D7806E1"
+					item: "goety:reinforced_redstone_block"
+					type: "item"
+				}
+				{
+					id: "072F4586EC73A826"
+					item: {
+						Count: 1
+						id: "minecraft:lava_bucket"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+							RepairCost: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "我便是末日"
-			tasks: [{
-				id: "7A8328DFB37E3EA7"
-				item: "goety:terminus_scroll"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7A8328DFB37E3EA7"
+					item: "goety:terminus_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_terminus_scroll"
+					criterion: ""
+					id: "50B601658B5CE81E"
+					optional_task: true
+					type: "advancement"
+				}
+			]
 			x: 15.0d
 			y: -3.5d
 		}
@@ -4703,6 +4734,11 @@
 			]
 			hide_dependency_lines: true
 			id: "476D4F7223D0B880"
+			rewards: [{
+				id: "070B8E15A7BA02F9"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
 			subtitle: "你这个略猫区"
 			tasks: [{
 				id: "3D0062F3A5D7728C"
@@ -4764,7 +4800,7 @@
 				item: "goety:feast_focus"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.5d
 			y: -9.5d
 		}
 		{
@@ -4782,7 +4818,7 @@
 				item: "goety:rupture_focus"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: -9.5d
 		}
 		{
@@ -4921,7 +4957,7 @@
 				item: "goety:corruption_focus"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 20.5d
 			y: -9.5d
 		}
 		{
@@ -4939,7 +4975,7 @@
 				item: "goety_revelation:wither_quietus_focus"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 21.5d
 			y: -9.5d
 		}
 		{
@@ -4957,7 +4993,7 @@
 				item: "goetyawaken:stare_focus"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: -10.5d
 		}
 		{
@@ -5002,6 +5038,136 @@
 			}]
 			title: "冥教的秘密"
 			x: 25.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["70E5B211035B160F"]
+			description: [
+				"发射聚晶的上位，修改了配方使其时期提前"
+				""
+				"速度没有发射聚晶快，但是可以进行持续的飞行"
+				""
+				"附魔之后，不再受到法强影响，&e因此不会像发射聚晶那样偏移"
+			]
+			id: "2ECA88A53F39C74C"
+			rewards: [{
+				id: "7595C388F67FC876"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "青出于蓝……是否胜于蓝呢"
+			tasks: [{
+				id: "468FAFE5895A2643"
+				item: "goety:flying_focus"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["296DFEAC7E2C558B"]
+			description: ["多功能的前期饰品，既可以增加资源获取，也可以提高生存进攻能力，也能对恩赐卷轴进行较大的补强"]
+			id: "4B5192EDB755A0BB"
+			rewards: [{
+				count: 16
+				id: "0D0E8C3F5152A2B1"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:luck"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "凝固信念的一投！"
+			tasks: [{
+				id: "5AD621BCA41DE5D1"
+				item: "curlamoety:desperate_attempt"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54652BAD5F6A8F82"]
+			description: ["使用锁头攻击的高效远程飞行仆从"]
+			hide_dependency_lines: true
+			id: "57474C31F16B5080"
+			rewards: [
+				{
+					count: 2
+					id: "0CFF6DF6E4726350"
+					item: "goety:ectoplasm"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3E26AB1082D454A6"
+					item: "goety:magic_emerald"
+					type: "item"
+				}
+			]
+			subtitle: "锁头小飞碟青春版"
+			tasks: [{
+				id: "130D0C01705AE9B9"
+				item: "goety:sprightly_focus"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4AB0DD1187229840"]
+			description: [
+				"会出现在袭击的高波次中"
+				""
+				"&e会掉落被隐匿的蓝图"
+				""
+				"由于诡厄巫法配置文件时常由于不明原因自动重置，因此本包加入了&e巨兽呼叫机&r作为敌对红石巨兽的召唤物，由&e灾厄教父&r掉落1个"
+			]
+			hide_dependent_lines: true
+			icon: "goety:redstone_monstrosity_head"
+			id: "389D8CCD674931CC"
+			rewards: [{
+				count: 16
+				id: "1E4542DA761FD5F0"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "移动的灾难"
+			tasks: [{
+				entity: "goety:hostile_redstone_monstrosity"
+				id: "4BA2B62E11B432BB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "红石巨兽"
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["21E4DE748D41CD0D"]
+			description: [
+				"你并不满足于贤者之石，黄金到底不过庸俗之物……"
+				""
+				"你追求的是更底层的东西，那关于灵魂能量与世间万物的联系。灵魂能量已然超越了一种形式，成为了一种概念，足矣扭曲世界的法则，让零与无限画上等号"
+			]
+			id: "2F3C125E266896AA"
+			rewards: [{
+				id: "5B0AD30DFF0340F6"
+				item: "goetyawaken:soul_ruby_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "你所付出的一切努力的结晶"
+			tasks: [{
+				id: "792C5834026EA9A3"
+				item: "curlamoety:goal_ty"
+				type: "item"
+			}]
+			x: 29.0d
 			y: -0.5d
 		}
 	]

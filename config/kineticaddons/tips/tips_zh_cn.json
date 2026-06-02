@@ -1,0 +1,78 @@
+{
+  "tips": [
+    {
+      "stage": "game",
+      "text": "§b§l§f你发现了一座村庄。把村民们抓起来也许会派上大用场",
+      "time": 5000,
+      "conditions": {
+        "structure": "minecraft:village_plains"
+      }
+    },
+    {
+      "stage": "any",
+      "text": "混合修补物可以一下子修好大部分工具……也许不只是修复，试试贤者之石和天启七印",
+      "time": 5000,
+      "conditions": {
+        "items": [
+          {
+            "id": "enigmaticlegacy:mending_mixture",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "那条家传的项链也许应该拿出来抛个光或者除除锈什么的",
+      "time": 5000,
+      "conditions": {
+        "curios": [
+          {
+            "id": "curlamoety:old_necklace",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:soul_necklace",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:death_necklace",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "你手指上佩戴着的恶灵似乎有点不安分，用什么东西去喂一喂这枚戒指如何",
+      "time": 5000,
+      "conditions": {
+        "items": [
+          {
+            "id": "curlamoety:evil_spirit",
+            "nbtMode": "NONE"
+          }
+        ],
+        "curios": [
+          {
+            "id": "curlamoety:evil_ring",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:dominator_ring",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:blood_ring",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "",
+      "time": 5000
+    }
+  ]
+}

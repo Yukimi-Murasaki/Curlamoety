@@ -3,7 +3,7 @@
 show_startup_time = true
 # 是否显示当前登录账号信息。
 # Whether to show the current login account information.
-show_login_info = true
+show_login_info = false
 # 整体信息显示的左侧 X 坐标。
 # The X coordinate for the entire info display.
 anchor_x = 2

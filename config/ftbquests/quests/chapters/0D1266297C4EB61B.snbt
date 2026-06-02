@@ -1,0 +1,3600 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0D1266297C4EB61B"
+	group: "389115935D73552A"
+	icon: "minecraft:anvil"
+	id: "0D1266297C4EB61B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:smithing_table"
+			id: "292A1CB91019D0ED"
+			progression_mode: "linear"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "战斗需要做好准备"
+			tasks: [{
+				id: "0EDCFBF5A449171E"
+				title: "盔甲与武器"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "goety_revelation:god_forging_scroll"
+			id: "68EDEC0DE8015121"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "最高梯队，具有不可比拟的功能和数值"
+			tasks: [{
+				id: "50DF14EFBBC14AFE"
+				type: "checkmark"
+			}]
+			title: "T0"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: {
+				Count: 1
+				id: "enigmaticlegacy:cosmic_heart"
+				tag: { }
+			}
+			id: "366A18D709D8699B"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "后期的高级装备"
+			tasks: [{
+				id: "6AD470ADEEF177C3"
+				type: "checkmark"
+			}]
+			title: "T1"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "minecraft:nether_star"
+			id: "6E93A4046BB581F7"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "中期装备"
+			tasks: [{
+				id: "2B229CA219F47356"
+				type: "checkmark"
+			}]
+			title: "T2"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "minecraft:diamond"
+			id: "0FDE36B8657CC8F5"
+			progression_mode: "linear"
+			shape: "square"
+			size: 2.0d
+			subtitle: "中前期装备"
+			tasks: [{
+				id: "0B6811E6484F609E"
+				type: "checkmark"
+			}]
+			title: "T3"
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"30DFBF9A2A4C648A\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_revelation:apocalyptium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "40522530A61AC4E0"
+			rewards: [{
+				id: "4F390CC55F8C0C7B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "综合最强，防御高，偏法术"
+			tasks: [
+				{
+					id: "68821DA4D26F7A12"
+					item: {
+						Count: 1
+						id: "goety_revelation:apocalyptium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C5FABD5AD1400B5"
+					item: {
+						Count: 1
+						id: "goety_revelation:apocalyptium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26A19447615E8E70"
+					item: {
+						Count: 1
+						id: "goety_revelation:apocalyptium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "526ACBB6C327D6AF"
+					item: {
+						Count: 1
+						id: "goety_revelation:apocalyptium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "神灵金套装"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7FB3888A431A02C9\" } }"]
+			icon: {
+				Count: 1
+				id: "goetyawaken:champion_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "43B2AFCA55CE3B49"
+			rewards: [{
+				id: "19C0B12EF83A1FA0"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "高物理，强化仆从"
+			tasks: [
+				{
+					id: "5F05989B7307B534"
+					item: {
+						Count: 1
+						id: "goetyawaken:champion_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D5C37D14B81FA08"
+					item: {
+						Count: 1
+						id: "goetyawaken:champion_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "013E6A8CB61142CD"
+					item: {
+						Count: 1
+						id: "goetyawaken:champion_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6117321BC0166379"
+					item: {
+						Count: 1
+						id: "goetyawaken:champion_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7C14B267B3429CC6\" } }"]
+			icon: "cataclysm:ignitium_helmet"
+			id: "4A03424F411BD9A7"
+			rewards: [{
+				id: "500FFFD2A3BA0DB7"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "偏向法术，额外攻击特效，下界"
+			tasks: [
+				{
+					id: "1D5799F22C86226D"
+					item: "cataclysm:ignitium_helmet"
+					type: "item"
+				}
+				{
+					id: "6BA84C5D02B9581C"
+					item: "cataclysm:ignitium_chestplate"
+					type: "item"
+				}
+				{
+					id: "3E65F3B9F6C030E2"
+					item: "cataclysm:ignitium_leggings"
+					type: "item"
+				}
+				{
+					id: "2C090CF0B6E18F90"
+					item: "cataclysm:ignitium_boots"
+					type: "item"
+				}
+			]
+			title: "腾炎套装"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1362243D6F5FCAC3\" } }"]
+			icon: "cataclysm:cursium_helmet"
+			id: "1362243D6F5FCAC3"
+			rewards: [{
+				id: "3BFD70213B4423E5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "偏仆从，冰霜+死灵"
+			tasks: [
+				{
+					id: "76ABF84B4602DF7C"
+					item: "cataclysm:cursium_helmet"
+					type: "item"
+				}
+				{
+					id: "3ACEF182845C0C87"
+					item: "cataclysm:cursium_chestplate"
+					type: "item"
+				}
+				{
+					id: "38EA1705C37DA687"
+					item: "cataclysm:cursium_leggings"
+					type: "item"
+				}
+				{
+					id: "7BE1CF67E97EF32A"
+					item: "cataclysm:cursium_boots"
+					type: "item"
+				}
+			]
+			title: "咒魂套装"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"045423095F8A2F87\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_revelation:spectre_darkmage_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A2A1680CF636FA8"
+			rewards: [{
+				id: "0D3048B6D521F973"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "偏法术，自动护盾"
+			tasks: [
+				{
+					id: "4A1269099F5B105F"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6ADA2D64A85882BE"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28E695922F222B95"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2260B2CDB38F0900"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_darkmage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "渊魄套装"
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34D09EB4791CCB8C\" } }"]
+			icon: {
+				Count: 1
+				id: "twilightforest:fiery_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "69452B6AB585CD45"
+			rewards: [{
+				id: "65EF0700C167F641"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "偏法术，下界"
+			tasks: [
+				{
+					id: "19D67704CBD3A7FF"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FD06300A5F6C0CA"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "747EEFA9540F5D55"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F7ADD9D54B83261"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "炽铁套装"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"26831F15A9B40455\" } }"]
+			icon: {
+				Count: 1
+				id: "twilightforest:yeti_helmet"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:protection"
+						lvl: 2s
+					}]
+				}
+			}
+			id: "508ACFDAA27D060C"
+			rewards: [{
+				id: "74987C7AC5761283"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "偏仆从，霜冻"
+			tasks: [
+				{
+					id: "2246C3F42ACABF1F"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B28C458E4196179"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D6908DA3D306640"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D17B987F242AD3F"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "雪怪套装"
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"438431236AC19960\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_revelation:spider_darkmage_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "423F4335F7AED5C3"
+			rewards: [{
+				id: "6B157CD01170476A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "偏仆从，物理吸血"
+			tasks: [
+				{
+					id: "4C1389231CDBB1F6"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B6631C129BB09EC"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "208C3A107EE7A844"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F52CC430D3D083B"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_darkmage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "神经蚀刻者套装"
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"09742E2A673882BC\" } }"]
+			icon: {
+				Count: 1
+				id: "goeticlegacy:holy_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2D81D6F352DC52B1"
+			rewards: [{
+				id: "2FFD9B966DDF2CDE"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "法术特化，降低物理攻击和仆从伤害，特殊防护"
+			tasks: [
+				{
+					id: "385E5F6163B0BD5B"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63466A79D33A0AA7"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B2640AF468BF458"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11275056865DD13B"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "无瑕套装"
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6FC4F1462F002BF7\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_revelation:spectre_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74CC72078E7F3478"
+			rewards: [{
+				id: "6F770CECF7F1D7D9"
+				type: "xp"
+				xp: 80
+			}]
+			subtitle: "偏法术，古城特化"
+			tasks: [
+				{
+					id: "09ABE1123DDAC3B1"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C33A160114435CD"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "553B5822955EDAD9"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66E2B6C7C5BE3BF1"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "幽魂套装"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"082231051F6FDAFB\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_revelation:spider_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4AE696DE6BD0AAB4"
+			rewards: [{
+				id: "65B33313D65F01F7"
+				type: "xp"
+				xp: 80
+			}]
+			subtitle: "偏仆从"
+			tasks: [
+				{
+					id: "4B5259A9859C0044"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14E5FA68A5BDA874"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03B97B4721D8B049"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FBF739BB61A69F5"
+					item: {
+						Count: 1
+						id: "goety_revelation:spider_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "蜘蛛套装"
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"362C5370190E6BBC\" } }"]
+			icon: {
+				Count: 1
+				id: "goety:dark_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "699AB0823D04D25E"
+			rewards: [{
+				id: "206501D1587D1E13"
+				type: "xp"
+				xp: 80
+			}]
+			subtitle: "中级泛用"
+			tasks: [
+				{
+					id: "5F81A25CA63D49BF"
+					item: {
+						Count: 1
+						id: "goety:dark_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "453FF17E176E44D5"
+					item: {
+						Count: 1
+						id: "goety:dark_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43F43231EB3F5315"
+					item: {
+						Count: 1
+						id: "goety:dark_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09826BE8612922C1"
+					item: {
+						Count: 1
+						id: "goety:dark_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "黑暗套装"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"019603FFC9139EE0\" } }"]
+			icon: {
+				Count: 1
+				id: "goety:black_iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4301F83FBF25E538"
+			rewards: [{
+				id: "7478A46A60835B90"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "入门魔法甲，性价比很高"
+			tasks: [
+				{
+					id: "7214394C55A449F3"
+					item: {
+						Count: 1
+						id: "goety:black_iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E04C3E3BB62AB52"
+					item: {
+						Count: 1
+						id: "goety:black_iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DC118BE05E2BC5C"
+					item: {
+						Count: 1
+						id: "goety:black_iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09DC668D80FB3F05"
+					item: {
+						Count: 1
+						id: "goety:black_iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "黑铁套装"
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0AE88D04697D4DB8\" } }"]
+			id: "48FEAD8458D2EEBE"
+			rewards: [{
+				id: "0950F3EE2199BEDB"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "优质散件"
+			tasks: [{
+				id: "2A931DC49AEA4512"
+				item: {
+					Count: 1
+					id: "goety:malefic_helm"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70CAEC00CA66F603\" } }"]
+			icon: {
+				Count: 1
+				id: "cataclysm:bone_reptile_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DB0BCD20DD9FE97"
+			rewards: [{
+				id: "7D67FC2897FA0449"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "优质散件"
+			tasks: [
+				{
+					id: "4593B34D38B5410E"
+					item: {
+						Count: 1
+						id: "cataclysm:bone_reptile_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "412AA4CD6F0B6AA8"
+					item: {
+						Count: 1
+						id: "cataclysm:bone_reptile_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "骸龙套装"
+			x: 5.0d
+			y: 11.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "64949AAD6D0431EA"
+			rewards: [{
+				id: "0A956DB4C66190FD"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "低性价比，主要作为材料"
+			tasks: [
+				{
+					id: "00CD24E77C0A2512"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47F38C9AB9AC6DF0"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "703243CD43C01F01"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "782C717533373F04"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "下界合金套装"
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			icon: "minecraft:oak_log"
+			id: "6BCF2F5FFC22A6C8"
+			shape: "square"
+			size: 2.0d
+			subtitle: "大前期装备，凑合用"
+			tasks: [{
+				id: "34A499A18C28A765"
+				title: "T4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4CD78978A58BD54A\" } }"]
+			icon: {
+				Count: 1
+				id: "twilightforest:arctic_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7931E89B98C6BEED"
+			rewards: [{
+				id: "54902CBE36C45978"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "性价比极高，有仆从加成"
+			tasks: [
+				{
+					id: "2648280FD2111077"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4EDECE91FF3A70EB"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78055917B6841E6F"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53BD174CE8308DF3"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "极地套装"
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "57E824F0AA666D3C"
+			rewards: [{
+				id: "0F0957188CA4725E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "资源辅助"
+			tasks: [
+				{
+					id: "047637082CBFAD0D"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22BB94AB57126955"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0793C697B9717D0E"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44880AE3A0CCE3A6"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钻石套装"
+			x: 2.0d
+			y: 15.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "535A856C92A9236D"
+			rewards: [{
+				id: "24C4E6DAD64A9CCC"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "特种防护"
+			tasks: [
+				{
+					id: "60AB814C40F1C02B"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23F9217842550347"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29EE551D26D97AB4"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0ADCB915CE7C17F9"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铁套装"
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:golden_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5691476728A4084E"
+			rewards: [{
+				id: "0845833AFC44D1C7"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "资源辅助"
+			tasks: [
+				{
+					id: "78FE47A690E7042C"
+					item: {
+						Count: 1
+						id: "minecraft:golden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64C9FFAF62DDECC0"
+					item: {
+						Count: 1
+						id: "minecraft:golden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06A69E0B5B938AD0"
+					item: {
+						Count: 1
+						id: "minecraft:golden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D5BF4B51D064F12"
+					item: {
+						Count: 1
+						id: "minecraft:golden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:chainmail_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3593F5C7861F27FA"
+			rewards: [{
+				id: "07B32C950A4C3F07"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "距离特化"
+			tasks: [
+				{
+					id: "3990C7F0AA58FBBF"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "732E14AF7DBA4829"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A7F4D7316236D37"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37A05889D62F18DE"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:leather_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0652C3C30E173C8D"
+			rewards: [{
+				id: "7F6C08EB4B1E0E5F"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "机动增强"
+			tasks: [
+				{
+					id: "288ED38A97B83D44"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A6FD287A4DC8F1B"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77F52A5C5A48A04B"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "643DD76599142665"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 14.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"72DB331935A0D13C\" } }"]
+			id: "5CFACE9F80024F40"
+			rewards: [{
+				id: "0CFC865042EE4DB0"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "请输入文本"
+			tasks: [{
+				id: "779D5FB956BC5F33"
+				item: {
+					Count: 1
+					id: "goety_revelation:valettein"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"63788F4C0D118FDA\" } }"]
+			id: "36E0A84E6FF90692"
+			rewards: [{
+				id: "076A0567365F550B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "必中之枪"
+			tasks: [{
+				id: "7FCA8F3742B708FB"
+				item: {
+					Count: 1
+					id: "goety_revelation:gungnir"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "twilightforest:ironwood_helmet"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:aqua_affinity"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "42C09AFDE40CBC13"
+			rewards: [{
+				id: "789A34A425F1E6B4"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "恢复增强"
+			tasks: [
+				{
+					id: "69545DB23F4799B8"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:aqua_affinity"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E84AF46B9903BA7"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A5F81CC7ACFA1AD"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7299263E5AA9F346"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铁木套装"
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "twilightforest:steeleaf_helmet"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:projectile_protection"
+						lvl: 2s
+					}]
+				}
+			}
+			id: "5E66E2781ADD9016"
+			rewards: [{
+				id: "1CF4F34819FC9E41"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "增伤强化"
+			tasks: [
+				{
+					id: "76FE3E781F8A8BEB"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CC774D98AA2B96C"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3702B2FBF8A6F31B"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2024F61CEA5B4BBB"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钢叶套装"
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			id: "7348CEEB89AE7EB5"
+			rewards: [{
+				id: "08C950F7C85675A0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "074667E296A05E2C"
+				item: "cataclysm:the_incinerator"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			id: "34BD7093E3A546FF"
+			rewards: [{
+				id: "0C8D3AC55C440AE8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "636322E832380D3A"
+				item: "cataclysm:the_immolator"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			id: "32BEC18D76916646"
+			rewards: [{
+				id: "3A8CCD3F8A89CE84"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "517F6AFD8F003903"
+				item: "cataclysm:the_annihilator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			id: "2CD7BA326735B165"
+			rewards: [{
+				id: "204E76A8C1C39E80"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3C7C62D8F4DB9034"
+				item: "cataclysm:soul_render"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			id: "242C5CC7AB260CBF"
+			rewards: [{
+				id: "2920A0841F10C45A"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "2F8D696536490E14"
+				item: {
+					Count: 1
+					id: "curlamoety:mary_sue_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			id: "787F5C0CF9BCC52B"
+			rewards: [{
+				id: "56C362ADE3F6BD4A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "43D78AC6F35A650D"
+				item: "cataclysm:brontes"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			id: "78FF60005F7DC39B"
+			rewards: [{
+				id: "40978B5EA0D5B87A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "587687DB652C614F"
+				item: {
+					Count: 1
+					id: "goetyawaken:mooshroom_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "02E2AD8752061D14"
+			rewards: [{
+				id: "6DDE3AB43D73DF7A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "芜星汁液"
+			tasks: [{
+				id: "4CA3B0DD18F8001A"
+				item: {
+					Count: 1
+					id: "goetyawaken:starless_night"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			description: ["{ \"text\": \"跳转主线\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E24F6859819F441\" } }"]
+			id: "57F987700048A7B3"
+			rewards: [{
+				id: "43BE955240D4196E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "2D34D71A6A31FF6A"
+				item: {
+					Count: 1
+					id: "goetyawaken:moonlight_cut"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			id: "7A0D0CC830F0ED97"
+			rewards: [{
+				id: "607B3AC11ACFEB02"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "545667C5F3620788"
+				item: "cataclysm:cursed_bow"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			id: "0E9B167B8DB1E3B3"
+			rewards: [{
+				id: "0635115D856D562C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4723CB24E1DF660B"
+				item: "cataclysm:wrath_of_the_desert"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 7.0d
+		}
+		{
+			id: "764034BE2E37461B"
+			rewards: [{
+				id: "19C678C0B710415C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6D91CD40D57EF23D"
+				item: {
+					Count: 1
+					id: "curlamoety:mary_sue_staff_plus"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			id: "1CCA0DB97B541848"
+			rewards: [{
+				id: "0509F26066BCC2E2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3CBB79B5E09669B5"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:etherium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			id: "4D2628CE88515DC5"
+			rewards: [{
+				id: "1B202482101E215A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4246DEB02CD7E3B8"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:etherium_machete"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			id: "2D1C5E618B16B3F0"
+			rewards: [{
+				id: "3D4C58B9032C5E61"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "25359550AF73A5D4"
+				item: {
+					Count: 1
+					id: "goetydelight:false_proverbs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			id: "6868C3D6B7C5F3EF"
+			rewards: [{
+				id: "2DE5A711963B1418"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "10321056E7877F8B"
+				item: {
+					Count: 1
+					id: "goety:blade_of_ender"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			id: "54FFDAD4B642597F"
+			rewards: [{
+				id: "571ACD9237A62505"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "475F93ED22C4447F"
+				item: {
+					Count: 1
+					id: "goetyawaken:mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			id: "2083948D307E62CC"
+			rewards: [{
+				id: "333418106216BB92"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "1B9D2440873644C3"
+				item: {
+					Count: 1
+					id: "goetyawaken:claymore"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 13.0d
+		}
+		{
+			id: "6ABFB713354B969E"
+			rewards: [{
+				id: "042883C9863FB454"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "56A75F8E07F0CEAC"
+				item: {
+					Count: 1
+					id: "goetyawaken:glaive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			id: "6AA18B51BD59D24D"
+			rewards: [{
+				id: "0B15F9F1E32A7A9D"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "787789FF93D8D2A7"
+				item: {
+					Count: 1
+					id: "goety:hunters_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.5d
+		}
+		{
+			id: "667666BBB73215B9"
+			rewards: [{
+				id: "0202F9ED5FED22B9"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "5C5B8F8AE2551DD7"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:forbidden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			id: "2F5B06454ABA0CA1"
+			rewards: [{
+				id: "128AF17ACE2F67CA"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "738360797D707E93"
+				item: {
+					Count: 1
+					id: "goety:dark_metal_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 10.0d
+		}
+		{
+			id: "7DD43A317B711B4B"
+			rewards: [{
+				id: "06D86E7938AC912B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "688C76CA5AE3265E"
+				item: {
+					Count: 1
+					id: "goety:death_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			id: "3784E781EEB7FA28"
+			rewards: [{
+				id: "6868DF45B10AD133"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "34FDA7AF391A4DAF"
+				item: {
+					Count: 1
+					id: "goety:dark_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 13.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3EC995C891B2DECC"
+			rewards: [{
+				id: "351288CEE69EBD87"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "39F0B11672B0B607"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54E4E3E15F7D3876"
+					item: {
+						Count: 1
+						id: "minecraft:golden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "413B14773A184B28"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61F0DE24F8DE32F5"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B96AB9C41CECEC3"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E6CD1ABA71C2358"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7A8FEA6B7F5421F1"
+					item: {
+						Count: 1
+						id: "cataclysm:khopesh"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5754FBDA20564329"
+					item: {
+						Count: 1
+						id: "cataclysm:black_steel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "623D309CE4C14F85"
+					item: {
+						Count: 1
+						id: "curlamoety:silver_rapier"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "14B4215B65718F32"
+					item: {
+						Count: 1
+						id: "curlamoety:wither_flamberge"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "503DB9F6C0561CA5"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:looting"
+								lvl: 2s
+							}]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C0F768A4572F4EC"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 1s
+							}]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2318AA230B5A2E14"
+					item: {
+						Count: 1
+						id: "goety:fell_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32268638011768B3"
+					item: {
+						Count: 1
+						id: "goety:frozen_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0DD58A7C4A5D7B34"
+					item: {
+						Count: 1
+						id: "curlamoety:zombie_arm"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "低级 剑"
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E5A75BBFB8D36EF"
+			rewards: [{
+				id: "6D8DF6437304A582"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "07E461E7342958BC"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "008EF9FDB058F8C8"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "弓弩"
+			x: -3.5d
+			y: 14.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "farmersdelight:iron_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45B1516AB4D9A16E"
+			rewards: [{
+				id: "50E8AE994406ED0D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "42AA075383740E01"
+					item: {
+						Count: 1
+						id: "farmersdelight:flint_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24609B35517CEAC5"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C59EAC5DE99F308"
+					item: {
+						Count: 1
+						id: "farmersdelight:diamond_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D22582F99380B86"
+					item: {
+						Count: 1
+						id: "farmersdelight:golden_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "66F8233ABF152E49"
+					item: {
+						Count: 1
+						id: "farmersdelight:netherite_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F22B181B57FAB1D"
+					item: {
+						Count: 1
+						id: "goetydelight:cursed_ingot_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "厨刀"
+			x: -5.0d
+			y: 14.5d
+		}
+		{
+			id: "148504F90FBA5C66"
+			rewards: [{
+				id: "33AE418AEEE321AB"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "21DAD11CF4C2AB4B"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:quartz_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			id: "67AF68AEF704EB78"
+			rewards: [{
+				id: "104E54DDA1AE0DA4"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "1B276D6DF2CC6CBB"
+				item: {
+					Count: 1
+					id: "goety:dark_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 10.0d
+		}
+		{
+			id: "5FCD84CED96AB386"
+			rewards: [{
+				id: "1281A55129FAA0CE"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "76B2CD89EDED18B6"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:curse_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			id: "0D7FBCE9A0C37E77"
+			rewards: [{
+				id: "32E31C1491E5EB88"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3430A27F7C531186"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:curse_crystal_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			id: "39E103314ED3175E"
+			rewards: [{
+				id: "72CB46AD68BCA765"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "423333659DDE0AED"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:ender_slayer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 10.0d
+		}
+		{
+			id: "361E2F17DBF72DCA"
+			rewards: [{
+				id: "2040D1C8422F3D64"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "7F64D4A28238905C"
+				item: {
+					Count: 1
+					id: "goety:fanged_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 13.0d
+		}
+		{
+			id: "38CC7FDD1349C48F"
+			rewards: [{
+				id: "550C33952116EF44"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "3D51A3F2709D3016"
+				item: {
+					Count: 1
+					id: "goety:hungry_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 10.0d
+		}
+		{
+			id: "6B62DBBF6A9A1FD4"
+			rewards: [{
+				id: "4C8540A672F23526"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "1BC3E37ACAE66F1F"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:disaster_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goety:great_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "76A6E6B8CDD9E5A3"
+			rewards: [{
+				id: "6E1C7D11A27F7DCA"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [
+				{
+					id: "622CAE3235656FCB"
+					item: {
+						Count: 1
+						id: "goety:great_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C17EC184A1823E6"
+					item: {
+						Count: 1
+						id: "goety:bonehead_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47B90E805163ED91"
+					item: {
+						Count: 1
+						id: "goety:stormlander"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 13.0d
+		}
+		{
+			id: "4100FAB62AEF4834"
+			rewards: [{
+				id: "5E12A5A3127366A8"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "4FB0A4DCCF565DDC"
+				item: {
+					Count: 1
+					id: "goety:rampaging_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 11.5d
+		}
+		{
+			id: "2C414EE92038BFD8"
+			rewards: [{
+				id: "75542EE0A128795B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DF501AED2B5983C"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:evil_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 8.5d
+		}
+		{
+			id: "7C1931F001B63A3A"
+			rewards: [{
+				id: "380965CCFED7602C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "578B0B22AF83ACD0"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:astral_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			id: "4F3E4413D158CE98"
+			rewards: [{
+				id: "57434054386C323C"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "2635BACED73AF360"
+				item: {
+					Count: 1
+					id: "goetyawaken:grave_bane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			id: "373C00F39D4E49D3"
+			rewards: [{
+				id: "7712C8840CBE918C"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "2E7D7E78C0692191"
+				item: {
+					Count: 1
+					id: "goetyawaken:sun_grace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			id: "136391C589BE5051"
+			rewards: [{
+				id: "448431CC43B70A9C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5FA0907C369F1BA0"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:shi_jin"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			id: "70D5B45C31BC5A14"
+			rewards: [{
+				id: "13C9AD8ED094FD04"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "01C7F95D5D444267"
+				item: "cataclysm:infernal_forge"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 10.0d
+		}
+		{
+			id: "50D23F9A9389AB75"
+			rewards: [{
+				id: "06B1FD3BB6876347"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "1C23707701700E48"
+				item: "enigmaticlegacy:the_infinitum"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			id: "6B9132E3619F5CD8"
+			rewards: [{
+				id: "490F973D3AFBB783"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "40D9D3C15CABE391"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:eldritch_pan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			id: "555D576B10F4F96B"
+			rewards: [{
+				id: "61100AD5897BD1C3"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "1C9115B10AF01631"
+				item: {
+					Count: 1
+					id: "goetyawaken:obsidian_claymore"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.0d
+		}
+		{
+			id: "3E81E866CEFB9C49"
+			rewards: [{
+				id: "7E2784C2790EC20D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0496C8E71F1B14AB"
+				item: "cataclysm:gauntlet_of_guard"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 8.5d
+		}
+		{
+			id: "50D814A9491D12DC"
+			rewards: [{
+				id: "0E7586229CE7E1BE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "2D68B8BA7B64E6FE"
+				item: "cataclysm:gauntlet_of_bulwark"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			id: "000A095F0CD33F4A"
+			rewards: [{
+				id: "188B97FAAE31C4EF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7669166850486F62"
+				item: "cataclysm:gauntlet_of_maelstrom"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goety_revelation:venomous_spider_whip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "79AB6402C4FE14A5"
+			rewards: [{
+				id: "168C8CDFDA01F11E"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [
+				{
+					id: "01F9C57D8AF4C8E4"
+					item: {
+						Count: 1
+						id: "goety_revelation:venomous_spider_whip"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E66FE192936FCDF"
+					item: {
+						Count: 1
+						id: "goety_revelation:spectre_whip"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "长鞭"
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			id: "44B64473C40183A7"
+			rewards: [{
+				id: "71C73A3CE9D08461"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "56850047E3066843"
+				item: "cataclysm:void_forge"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.5d
+		}
+		{
+			id: "1ABC9731BEBD48FB"
+			rewards: [{
+				id: "090F5EDB9811BBDA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "68A88B7DAE50EC0A"
+				item: {
+					Count: 1
+					id: "goetyawaken:truth_seeker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			id: "7439E0691ADDDBEB"
+			rewards: [{
+				id: "48D6743EE251E1B3"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "3F9E1A884068F4F7"
+				item: "cataclysm:ancient_spear"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			id: "14788E15260FA1D3"
+			rewards: [{
+				id: "7ED6576265F112C6"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "0C65DA83E053DFB1"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 13.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "123E7C865D3EF3A7"
+			rewards: [{
+				id: "4B077E848CE7961F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "73EF3F0D229819EC"
+					item: {
+						Count: 1
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "129030B53DB059D1"
+					item: {
+						Count: 1
+						id: "cataclysm:coral_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78CDFF70108367C6"
+					item: {
+						Count: 1
+						id: "cataclysm:coral_bardiche"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 14.5d
+		}
+		{
+			id: "1E587CDE15B78330"
+			rewards: [{
+				id: "13F2E44CF798023B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "70E62E612D43C328"
+				item: "cataclysm:meat_shredder"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 8.5d
+		}
+		{
+			id: "0CC4EE05C8656A15"
+			rewards: [{
+				id: "11225D0977525783"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "75371B88540ADB88"
+				item: "cataclysm:ceraunus"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			id: "65F7F76C1F85D806"
+			rewards: [{
+				id: "21BE101CAC1CE9A9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "466B571CC62A755E"
+				item: "cataclysm:astrape"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "5F3DF280DE3B14F1"
+			tasks: [{
+				id: "169C90AD638EA7A4"
+				item: {
+					Count: 1
+					id: "twilightforest:block_and_chain"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -16.0d
+			y: 10.0d
+		}
+		{
+			id: "362C73C613D48600"
+			tasks: [{
+				id: "2ED85F26EAC3FA8D"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: 10.0d
+		}
+		{
+			id: "17F72B5BE2B7A794"
+			rewards: [{
+				id: "0D56A1E92BB9B2F9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1769677D8EF97E53"
+				item: "cataclysm:tidal_claws"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.0d
+		}
+		{
+			id: "18CA4E17D659954C"
+			rewards: [{
+				id: "618D9954C1493EC8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6AF3D4D8E53085C7"
+				item: {
+					Count: 1
+					id: "twilightforest:fiery_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: 8.5d
+		}
+		{
+			id: "27C9202A385F5C8D"
+			rewards: [{
+				id: "6778B0BDA41498EE"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "479E420E6D6E2AAC"
+				item: {
+					Count: 1
+					id: "twilightforest:ender_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 11.5d
+		}
+		{
+			id: "189A8A017323B42D"
+			rewards: [{
+				id: "17A7DC15DA306333"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "240686C69F3EFFF4"
+				item: {
+					Count: 1
+					id: "twilightforest:ice_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.5d
+		}
+		{
+			id: "49E912DCDBD39790"
+			rewards: [{
+				id: "3A2955657704989F"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "4B16DFA601B3B5A1"
+				item: {
+					Count: 1
+					id: "twilightforest:seeker_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 11.5d
+		}
+		{
+			id: "3D75641AD1024C6B"
+			rewards: [{
+				id: "21B2573DDF5E2194"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "7D04E87396B283A2"
+				item: {
+					Count: 1
+					id: "twilightforest:triple_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 11.5d
+		}
+		{
+			id: "04B53988E8782C63"
+			rewards: [{
+				id: "50B693FC5EF94C40"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DCA05DD587B6D1C"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:dragon_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 8.5d
+		}
+		{
+			id: "0A032CBCA8A93538"
+			rewards: [{
+				id: "61E47999B0DEB768"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "27A06D4A54336638"
+				item: {
+					Count: 1
+					id: "goetyawaken:dark_netherite_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: 8.5d
+		}
+		{
+			id: "06187403783DA32B"
+			rewards: [{
+				id: "30D2AA12A1E430CF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "2FBCCEE49E269047"
+				item: {
+					Count: 1
+					id: "goety_revelation:bow_of_revelation"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			id: "5F8EC596E5E1AAF1"
+			rewards: [{
+				id: "0CE8791C840986D2"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "691F8B9E0AB29D52"
+				item: {
+					Count: 1
+					id: "goetyawaken:harp_crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 13.0d
+		}
+		{
+			id: "4D2EDF1D2DC73BAC"
+			rewards: [{
+				id: "666D993E992B154A"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "7E1B2A76F68621A3"
+				item: {
+					Count: 1
+					id: "twilightforest:diamond_minotaur_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: 10.0d
+		}
+		{
+			id: "14D8E997851B996B"
+			tasks: [{
+				id: "4E51AF58C630A0A6"
+				item: {
+					Count: 1
+					id: "twilightforest:knightmetal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 10.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goety:cursed_knight_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2CB9172662A4D0AF"
+			rewards: [{
+				id: "753B7734989505BC"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "较难获取，略低于黑铁，偏仆从"
+			tasks: [
+				{
+					id: "1265E3E722959F2A"
+					item: {
+						Count: 1
+						id: "goety:cursed_knight_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EF470CAE4DF3CBF"
+					item: {
+						Count: 1
+						id: "goety:cursed_knight_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B871186441590C8"
+					item: {
+						Count: 1
+						id: "goety:cursed_knight_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10E28D50A25196F0"
+					item: {
+						Count: 1
+						id: "goety:cursed_knight_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "诅咒骑士套装"
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goety:cursed_paladin_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3913B87FE7A0656D"
+			rewards: [{
+				id: "771BDEF4968C6302"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "难获取，略优于黑铁，偏仆从"
+			tasks: [
+				{
+					id: "78AFB97DEBAF0668"
+					item: {
+						Count: 1
+						id: "goety:cursed_paladin_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51676579356B5209"
+					item: {
+						Count: 1
+						id: "goety:cursed_paladin_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7094D004B2E7F735"
+					item: {
+						Count: 1
+						id: "goety:cursed_paladin_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D5704E5DA8D1663"
+					item: {
+						Count: 1
+						id: "goety:cursed_paladin_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 11.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "twilightforest:knightmetal_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "04805B78CE07A7FC"
+			rewards: [{
+				id: "1BE006843282FF65"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "巫法强度略弱，但是对护甲增伤"
+			tasks: [
+				{
+					id: "7D455250A2BA3259"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "60B673BA1AAD95DD"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4791FA1B16221143"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52C54E2360669846"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "骑士套装"
+			x: 5.0d
+			y: 8.5d
+		}
+	]
+	title: "锻造师的珍藏"
+}

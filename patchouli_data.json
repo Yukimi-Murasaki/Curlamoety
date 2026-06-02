@@ -5,7 +5,28 @@
     "goety:black_book": {
       "viewedEntries": [
         "goety:goeticlegacy/night_cube",
-        "goety:mutations/wildfire"
+        "goety:mutations/wildfire",
+        "goety:rituals/teleport_ritual",
+        "goety:rituals/dark_altar",
+        "goety:rituals/geoturgy_ritual",
+        "goety:rituals/necroturgy_ritual",
+        "goety:rituals/magic_ritual",
+        "goety:rituals/adept_nether_ritual",
+        "goety:rituals/overgrown_ritual",
+        "goety:rituals/frost_ritual",
+        "goety:rituals/sky_ritual",
+        "goety:rituals/deep_ritual",
+        "goety:rituals/end_ritual",
+        "goety:rituals/storm_ritual",
+        "goety:rituals/animation_ritual",
+        "goety:rituals/master_forge_ritual",
+        "goety:rituals/culinary_rituals",
+        "goety:rituals/forge_ritual",
+        "goety:rituals/sabbath_ritual",
+        "goety:rituals/enchanting_ritual",
+        "goety:rituals/expert_nether_ritual",
+        "goety:intro/cursed_cage",
+        "goety:rumors/terminus"
       ],
       "bookmarks": [],
       "completedManualQuests": []

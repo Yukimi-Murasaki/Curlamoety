@@ -46,7 +46,13 @@
 				consume_items: true
 				count: 4L
 				id: "59942E9002C2A13B"
-				item: "metalbarrels:gold_barrel"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:gold_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -65,7 +71,13 @@
 				consume_items: true
 				count: 8L
 				id: "341AA29A5FCF35A9"
-				item: { Count: 8, id: "ironchest:iron_chest" }
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
 				type: "item"
 			}]
 			x: -2.5d
@@ -84,7 +96,13 @@
 				consume_items: true
 				count: 8L
 				id: "61089ECC79F7BCF7"
-				item: { Count: 8, id: "metalbarrels:iron_barrel" }
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:iron_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
 				type: "item"
 			}]
 			x: -1.0d
@@ -103,7 +121,13 @@
 				consume_items: true
 				count: 4L
 				id: "6376C066810A4EF7"
-				item: { Count: 4, id: "ironchest:gold_chest" }
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:gold_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
 				type: "item"
 			}]
 			x: 0.5d
@@ -122,7 +146,13 @@
 				consume_items: true
 				count: 2L
 				id: "50C79845B69C02E7"
-				item: { Count: 2, id: "ironchest:diamond_chest" }
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.5d
@@ -141,7 +171,13 @@
 				consume_items: true
 				count: 2L
 				id: "0B8C6BF809C7C14E"
-				item: "metalbarrels:diamond_barrel"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
 				type: "item"
 			}]
 			x: 5.0d
@@ -152,17 +188,23 @@
 			dependencies: ["2A649853ED144FF3"]
 			id: "3E168D05EA546AFB"
 			rewards: [{
-				id: "1952C79BEFE72288"
+				id: "37182247922A77B3"
 				item: "refinedstorage:64k_storage_disk"
 				type: "item"
 			}]
 			tasks: [{
 				consume_items: true
 				id: "4C94D4202AC43160"
-				item: "metalbarrels:netherite_barrel"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:netherite_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: -3.5d
 		}
 		{
@@ -221,7 +263,7 @@
 				}
 			]
 			title: "创造磁盘"
-			x: 8.0d
+			x: 9.5d
 			y: -3.5d
 		}
 		{
@@ -250,13 +292,15 @@
 		{
 			can_repeat: true
 			dependencies: ["184A1556FF010D04"]
-			description: ["控制时间"]
+			description: ["让时间飞跃"]
 			id: "6152A75CCB46A3DB"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "683D67C5C357DC26"
-				table_id: 4702949485233739353L
-				type: "choice"
+				command: "/time add 0.5d"
+				elevate_perms: true
+				icon: "minecraft:clock"
+				id: "2D42DED7CA3D1BDB"
+				title: "快进半日的时间"
+				type: "command"
 			}]
 			subtitle: "Made In Heaven!"
 			tasks: [{
@@ -2634,7 +2678,7 @@
 				}
 			]
 			title: "增加项链栏位"
-			x: 3.5d
+			x: 5.0d
 			y: 7.0d
 		}
 		{
@@ -4423,7 +4467,7 @@
 				}
 			]
 			title: "增加通用栏位"
-			x: 5.0d
+			x: 6.5d
 			y: 7.0d
 		}
 		{
@@ -4720,6 +4764,67 @@
 			title: "贤者灵药圣代"
 			x: 19.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2A649853ED144FF3"]
+			id: "2FBFA7DD6221AF78"
+			rewards: [{
+				id: "184D64C9CAD96852"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F2BF233126A8AF0"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:netherite_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "enigmaticlegacy:thicc_scroll"
+			id: "373400E854084C78"
+			rewards: [{
+				command: "/curios add scroll @s 1"
+				elevate_perms: true
+				id: "608D33817B7CFFDC"
+				title: "增加一个奥秘卷轴栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "7F893675097D07ED"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "7B0771A058434308"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "782279F91F250B32"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加奥秘卷轴栏位"
+			x: 3.5d
+			y: 7.0d
 		}
 	]
 	title: "兑换所"

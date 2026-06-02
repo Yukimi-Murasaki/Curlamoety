@@ -5539,6 +5539,87 @@
 			x: 4.5d
 			y: -3.0d
 		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "2D626CBFF2E780A0"
+			rewards: [{
+				id: "5F1541E0B2228077"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "给我电！"
+			tasks: [{
+				id: "0C10D44459246900"
+				item: "goety:sprightly_focus"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3755C608FEE369D3"]
+			description: ["特殊的魔杖，可以将封存在旧世的遗响中的建筑物蓝图放置出来，也可以将建筑物保存为蓝图"]
+			id: "2B8A62639C678A74"
+			rewards: [{
+				id: "26B17A5971F8E98C"
+				item: "goeticlegacy:old_world_echo"
+				type: "item"
+			}]
+			subtitle: "构造魔杖"
+			tasks: [{
+				id: "3570F0F5F5278D31"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+						}
+					}
+					id: "goeticlegacy:void_shaping_staff"
+				}
+				type: "item"
+			}]
+			x: 20.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"用于占卜结构位置的&8&m没用&r仪式"
+				""
+				"蜡烛可以堆放"
+			]
+			icon: "goety:crystal_ball"
+			id: "3AF071DAC36FD6DE"
+			rewards: [{
+				id: "3C2BA8FD3878F605"
+				item: "minecraft:map"
+				type: "item"
+			}]
+			subtitle: "占卜仪式当然是占卜系啦"
+			tasks: [
+				{
+					id: "664C15A2C5B952D3"
+					item: "goety:crystal_ball"
+					type: "item"
+				}
+				{
+					id: "53F69CDB2BBC5A33"
+					item: "minecraft:skeleton_skull"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "57DDFA4C60DD952A"
+					item: { Count: 16, id: "minecraft:candle" }
+					type: "item"
+				}
+			]
+			title: "占卜仪式"
+			x: 21.5d
+			y: -3.0d
+		}
 	]
 	title: "魔法师的宝库"
 }

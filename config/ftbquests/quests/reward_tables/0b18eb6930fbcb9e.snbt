@@ -2,7 +2,7 @@
 	icon: "sophisticatedbackpacks:backpack"
 	id: "0B18EB6930FBCB9E"
 	loot_size: 1
-	order_index: 6
+	order_index: 5
 	rewards: [
 		{
 			command: "/gamerule keepInventory true"

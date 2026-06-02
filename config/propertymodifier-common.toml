@@ -168,6 +168,14 @@
 			"goetyawaken:champion_chestplate" = 11
 			"goetyawaken:champion_leggings" = 9
 			"goetyawaken:champion_boots" = 6
+			"twilightforest:fiery_helmet" = 5
+			"twilightforest:fiery_chestplate" = 10
+			"twilightforest:fiery_leggings" = 8
+			"twilightforest:fiery_boots" = 5
+			"twilightforest:yeti_helmet" = 5
+			"twilightforest:yeti_chestplate" = 9
+			"twilightforest:yeti_leggings" = 7
+			"twilightforest:yeti_boots" = 4
 
 		#Set the toughness value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_boots" = 1
@@ -181,6 +189,10 @@
 			"goetyawaken:champion_chestplate" = 3
 			"goetyawaken:champion_leggings" = 3
 			"goetyawaken:champion_boots" = 3
+			"twilightforest:fiery_helmet" = 3
+			"twilightforest:fiery_chestplate" = 3
+			"twilightforest:fiery_leggings" = 3
+			"twilightforest:fiery_boots" = 3
 
 		#Set the knockback resistance of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_leggings" = 0.1
@@ -194,6 +206,10 @@
 			"goetyawaken:champion_chestplate" = 3
 			"goetyawaken:champion_leggings" = 3
 			"goetyawaken:champion_boots" = 3
+			"twilightforest:fiery_helmet" = 1
+			"twilightforest:fiery_chestplate" = 1
+			"twilightforest:fiery_leggings" = 1
+			"twilightforest:fiery_boots" = 1
 
 	#Set the values for tools, swords and tridents.
 	[items.tools]
@@ -230,7 +246,6 @@
 			"enigmaticlegacy.ender_slayer" = 12
 			"enigmaticaddons.astral_spear" = 20
 			"enigmaticaddons.evil_dagger" = 10
-			"enigmaticaddons.the_bless" = 10
 			"enigmaticdelicacy.etherium_machete" = 10
 			"enigmaticdelicacy.curse_blade" = 10
 			"enigmaticdelicacy.curse_crystal_knife" = 15

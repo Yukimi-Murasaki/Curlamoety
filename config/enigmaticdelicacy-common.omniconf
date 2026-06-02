@@ -182,7 +182,7 @@
     B:ScrollofFadingEnabled=true
 
     # Whether or not Shi Jin should be enabled. [default: true, synchronized: yes]
-    B:ShiJinEnabled=true
+    B:ShiJinEnabled=false
 
     # Whether or not Slice of Astral Fruit should be enabled. [default: true, synchronized: yes]
     B:SliceofAstralFruitEnabled=true

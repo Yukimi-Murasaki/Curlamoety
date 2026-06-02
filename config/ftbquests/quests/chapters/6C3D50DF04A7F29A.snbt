@@ -2330,6 +2330,41 @@
 			x: 2.0d
 			y: 20.5d
 		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: ["将次元类升级与精妙存储的控制器绑定，就可以让该升级与精妙存储进行跨维度的无线交互"]
+			hide_dependency_lines: true
+			id: "735F64CF17896581"
+			rewards: [{
+				id: "1DDFE79D02C38C6A"
+				item: "refinedstorage:stack_upgrade"
+				type: "item"
+			}]
+			subtitle: "超时空背包"
+			tasks: [
+				{
+					id: "44E7D6D5BEF08DEE"
+					item: "mobackup:dimensional_magnet_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7FA456B0925E5F14"
+					item: "mobackup:dimensional_pickup_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "12A6CEA164B76BC0"
+					item: "mobackup:dimensional_deposit_upgrade"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "次元升级"
+			x: 2.0d
+			y: 1.5d
+		}
 	]
 	title: "辅助模组攻略"
 }

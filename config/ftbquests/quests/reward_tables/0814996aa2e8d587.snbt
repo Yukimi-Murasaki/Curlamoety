@@ -2,7 +2,7 @@
 	icon: "goety:mystic_core"
 	id: "0814996AA2E8D587"
 	loot_size: 1
-	order_index: 9
+	order_index: 8
 	rewards: [
 		{ count: 5, item: "goety:mystic_core" }
 		{ count: 5, item: "goety:animation_core" }

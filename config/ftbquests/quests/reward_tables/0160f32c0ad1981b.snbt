@@ -2,7 +2,7 @@
 	icon: "enigmaticlegacy:etherium_ore"
 	id: "0160F32C0AD1981B"
 	loot_size: 1
-	order_index: 15
+	order_index: 14
 	rewards: [
 		{ item: "enigmaticdelicacy:etherium_ore", weight: 3.0f }
 		{ count: 2, item: "enigmaticlegacy:etherium_ore", weight: 4.0f }

@@ -65,7 +65,7 @@ LootJS.modifiers((event) => {//实体战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x gold_ingot').withChance(20),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8),
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
@@ -145,11 +145,20 @@ LootJS.modifiers((event) => {//实体战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x gold_ingot').withChance(20),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8),
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
     .addLoot('3x twilightforest:experiment_115')
+
+    event
+    .addEntityLootModifier('goety:hostile_redstone_monstrosity')//红石
+    .addLoot('5x curlamoety:redstone_gear')
+    .addLoot('goety:shrouded_blueprint')
+
+    event
+    .addEntityLootModifier('goety:hostile_redstone_golem')
+    .addLoot('2x curlamoety:redstone_gear')
 
 });       
 LootJS.modifiers((event)=>{//宝箱战利品
@@ -268,7 +277,8 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('4x minecraft:nether_wart').withChance(8)
+        Item.of('4x minecraft:nether_wart').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4)
     ])
     .addWeightedLoot([
         Item.of('goety:blazing_horn').withChance(6),
@@ -288,7 +298,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('minecraft:chests/bastion_hoglin_stable')//堡垒遗迹
@@ -301,7 +311,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('minecraft:chests/bastion_other')//堡垒遗迹
@@ -314,7 +324,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('minecraft:chests/bastion_treasure')//堡垒遗迹
@@ -1432,7 +1442,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/foundry/foundry_normal')//铸造厂
@@ -1447,7 +1457,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/foundry/foundry_passage_exterior')//铸造厂
@@ -1462,7 +1472,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/foundry/foundry_passage_normal')//铸造厂
@@ -1477,7 +1487,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/foundry/foundry_treasure')//铸造厂
@@ -1492,7 +1502,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(4),
         Item.of('minecraft:ancient_debris').withChance(4),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/mechanical_nest/mechanical_nest_equipment')//机械迷城
@@ -1758,6 +1768,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('goety:bombardment_focus').withChance(3),
         Item.of('netherite_scrap').withChance(5),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(2)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_barrels')//瘟疫避难所
@@ -1827,7 +1838,8 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:ghastly_focus').withChance(3),
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('goety:bombardment_focus').withChance(3),
-        Item.of('diamond').withChance(4)
+        Item.of('diamond').withChance(4),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(3)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/scorched_mines/scorched_mines_housing')//焦黑矿井
@@ -1836,7 +1848,8 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:ghastly_focus').withChance(3),
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('goety:bombardment_focus').withChance(3),
-        Item.of('netherite_scrap').withChance(4)
+        Item.of('netherite_scrap').withChance(4),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(3)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/scorched_mines/scorched_mines_hub')//焦黑矿井
@@ -1845,7 +1858,8 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:ghastly_focus').withChance(3),
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('goety:bombardment_focus').withChance(3),
-        Item.of('2x gold_ingot').withChance(4)
+        Item.of('2x gold_ingot').withChance(4),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(3)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/scorched_mines/scorched_mines_normal')//焦黑矿井
@@ -1856,7 +1870,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:bombardment_focus').withChance(3),
         Item.of('goety:nether_robe').withChance(1),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/scorched_mines/scorched_mines_treasure')//焦黑矿井
@@ -1867,7 +1881,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:fireball_focus').withChance(3),
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8)
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8)
     ])
     event
     .addLootTableModifier('dungeons_arise:chests/shiraz_palace/shiraz_palace_elite')//繁花之宫
@@ -2404,7 +2418,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x gold_ingot').withChance(20),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8),
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
@@ -2425,7 +2439,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x gold_ingot').withChance(20),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8),
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
         
@@ -2449,7 +2463,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(3),
         Item.of('2x gold_ingot').withChance(20),
         Item.of('2x minecraft:netherite_scrap').withChance(8),
-        Item.of('minecraft:gold_block').withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(8),
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
@@ -2606,7 +2620,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety_cataclysm:ashen_breath_focus').withChance(4),
         Item.of("2x minecraft:netherite_scrap").withChance(4),
         Item.of('2x blaze_rod').withChance(8),
-        Item.of("3x minecraft:magma_cream").withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4),
         Item.of('4x minecraft:nether_wart').withChance(8)
     ])
 
@@ -2853,7 +2867,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
     ])
 
     event
-    .addBlockLootModifier('ruined_monastery_alchemy')//废弃修道院
+    .addLootTableModifier('goety:chests/ruined_monastery_alchemy')//废弃修道院
     .addWeightedLoot([
         Item.of('enigmaticlegacy:blazing_core').withChance(4),
         Item.of('goety:infernal_tome').withChance(3),
@@ -2862,12 +2876,12 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:hogging_focus').withChance(4),
         Item.of("2x minecraft:netherite_scrap").withChance(4),
         Item.of('2x blaze_rod').withChance(8),
-        Item.of("3x minecraft:magma_cream").withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4),
         Item.of('4x minecraft:nether_wart').withChance(8)
     ])
 
     event
-    .addBlockLootModifier('ruined_monastery_cluster')//废弃修道院
+    .addLootTableModifier('goety:chests/ruined_monastery_cluster')//废弃修道院
     .addWeightedLoot([
         Item.of('enigmaticlegacy:blazing_core').withChance(4),
         Item.of('goety:infernal_tome').withChance(3),
@@ -2876,12 +2890,12 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:hogging_focus').withChance(4),
         Item.of("2x minecraft:netherite_scrap").withChance(4),
         Item.of('2x blaze_rod').withChance(8),
-        Item.of("3x minecraft:magma_cream").withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4),
         Item.of('4x minecraft:nether_wart').withChance(8)
     ])
 
     event
-    .addBlockLootModifier('ruined_monastery_crypt')//废弃修道院
+    .addLootTableModifier('goety:chests/ruined_monastery_crypt')//废弃修道院
     .addWeightedLoot([
         Item.of('enigmaticlegacy:blazing_core').withChance(4),
         Item.of('goety:infernal_tome').withChance(3),
@@ -2890,12 +2904,12 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:hogging_focus').withChance(4),
         Item.of("2x minecraft:netherite_scrap").withChance(4),
         Item.of('2x blaze_rod').withChance(8),
-        Item.of("3x minecraft:magma_cream").withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4),
         Item.of('4x minecraft:nether_wart').withChance(8)
     ])
 
     event
-    .addBlockLootModifier('ruined_monastery_loot')//废弃修道院
+    .addLootTableModifier('goety:chests/ruined_monastery_loot')//废弃修道院
     .addWeightedLoot([1,2],[
         Item.of('enigmaticlegacy:blazing_core').withChance(4),
         Item.of('goety:infernal_tome').withChance(3),
@@ -2904,7 +2918,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:hogging_focus').withChance(4),
         Item.of("2x minecraft:netherite_scrap").withChance(4),
         Item.of('2x blaze_rod').withChance(8),
-        Item.of("3x minecraft:magma_cream").withChance(8),
+        Item.of('enigmaticaddons:ichor_droplet').withChance(4),
         Item.of('4x minecraft:nether_wart').withChance(8)
     ])
 

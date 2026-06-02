@@ -27,7 +27,7 @@
 				type: "checkmark"
 			}]
 			title: "终极Boss"
-			x: 0.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -42,7 +42,7 @@
 				type: "checkmark"
 			}]
 			title: "高级Boss"
-			x: 0.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -57,7 +57,7 @@
 				type: "checkmark"
 			}]
 			title: "中等Boss"
-			x: 0.0d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -72,7 +72,7 @@
 				type: "checkmark"
 			}]
 			title: "小Boss"
-			x: 0.0d
+			x: 3.0d
 			y: 9.0d
 		}
 		{
@@ -91,7 +91,7 @@
 				type: "advancement"
 			}]
 			title: "下界亚波伦"
-			x: 2.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -110,7 +110,7 @@
 				type: "advancement"
 			}]
 			title: "哞菇巨兽"
-			x: 2.0d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -130,7 +130,7 @@
 				type: "advancement"
 			}]
 			title: "焰魔"
-			x: 3.5d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -152,7 +152,7 @@
 				type: "advancement"
 			}]
 			title: "使徒"
-			x: 2.0d
+			x: 5.0d
 			y: 3.0d
 		}
 		{
@@ -171,7 +171,7 @@
 				type: "advancement"
 			}]
 			title: "斯库拉"
-			x: 2.0d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -190,7 +190,7 @@
 				type: "advancement"
 			}]
 			title: "主世界亚波伦"
-			x: 3.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -204,7 +204,7 @@
 				type: "checkmark"
 			}]
 			title: "Boss梯度表"
-			x: -3.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -230,7 +230,7 @@
 				type: "advancement"
 			}]
 			title: "咒翼灵骸"
-			x: 3.5d
+			x: 6.5d
 			y: 4.5d
 		}
 		{
@@ -249,7 +249,7 @@
 				type: "advancement"
 			}]
 			title: "先驱者"
-			x: 2.0d
+			x: 5.0d
 			y: 6.0d
 		}
 		{
@@ -268,7 +268,7 @@
 				type: "advancement"
 			}]
 			title: "凋灵"
-			x: 3.5d
+			x: 6.5d
 			y: 7.5d
 		}
 		{
@@ -287,7 +287,7 @@
 				type: "advancement"
 			}]
 			title: "下界合金巨兽"
-			x: 2.0d
+			x: 5.0d
 			y: 7.5d
 		}
 		{
@@ -306,7 +306,7 @@
 				type: "advancement"
 			}]
 			title: "末影守卫"
-			x: 3.5d
+			x: 6.5d
 			y: 6.0d
 		}
 		{
@@ -325,7 +325,7 @@
 				type: "advancement"
 			}]
 			title: "利维坦"
-			x: 5.0d
+			x: 8.0d
 			y: 4.5d
 		}
 		{
@@ -344,7 +344,7 @@
 				type: "advancement"
 			}]
 			title: "末影龙"
-			x: 5.0d
+			x: 8.0d
 			y: 7.5d
 		}
 		{
@@ -363,7 +363,7 @@
 				type: "advancement"
 			}]
 			title: "远古遗魂"
-			x: 5.0d
+			x: 8.0d
 			y: 6.0d
 		}
 		{
@@ -382,7 +382,7 @@
 				type: "advancement"
 			}]
 			title: "骷髅领主"
-			x: 2.0d
+			x: 5.0d
 			y: 9.0d
 		}
 		{
@@ -401,7 +401,7 @@
 				type: "advancement"
 			}]
 			title: "育母蜘蛛"
-			x: 6.5d
+			x: 9.5d
 			y: 9.0d
 		}
 		{
@@ -420,18 +420,12 @@
 				type: "advancement"
 			}]
 			title: "灾厄教父"
-			x: 8.0d
+			x: 11.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["0AB2DF12CBBDE6ED"]
-			description: [
-				"会出现在袭击的高波次中"
-				"{ \"text\": \"链接：袭击\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4AB0DD1187229840\" } }"
-				""
-				"&e由于诡厄巫法配置文件时常由于不明原因自动重置，因此本包加入了巨兽呼叫机作为敌对红石巨兽的召唤物，由灾厄教父掉落1个"
-				"{ \"text\": \"链接：巨兽呼叫机\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D1254ED61D2A68F\" } }"
-			]
+			description: ["{ \"text\": \"链接：主线任务中的该BOSS\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"389D8CCD674931CC\" } }"]
 			icon: "goety:redstone_monstrosity_head"
 			id: "2C5F0C990D139C46"
 			rewards: [{
@@ -446,7 +440,7 @@
 				value: 1L
 			}]
 			title: "红石巨兽"
-			x: 6.5d
+			x: 9.5d
 			y: 7.5d
 		}
 		{
@@ -465,7 +459,7 @@
 				type: "advancement"
 			}]
 			title: "凋灵死灵法师"
-			x: 9.5d
+			x: 12.5d
 			y: 9.0d
 		}
 		{
@@ -484,7 +478,7 @@
 				type: "item"
 			}]
 			title: "焦骸死灵法师"
-			x: 11.0d
+			x: 14.0d
 			y: 9.0d
 		}
 		{
@@ -503,7 +497,7 @@
 				type: "advancement"
 			}]
 			title: "灾厄宰相"
-			x: 6.5d
+			x: 9.5d
 			y: 6.0d
 		}
 		{
@@ -522,7 +516,7 @@
 				type: "item"
 			}]
 			title: "幽灵死灵法师"
-			x: 12.5d
+			x: 15.5d
 			y: 9.0d
 		}
 		{
@@ -541,7 +535,7 @@
 				type: "advancement"
 			}]
 			title: "巫婆"
-			x: 3.5d
+			x: 6.5d
 			y: 9.0d
 		}
 		{
@@ -568,7 +562,7 @@
 				type: "advancement"
 			}]
 			title: "末影守望者"
-			x: 5.0d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -587,7 +581,7 @@
 				type: "item"
 			}]
 			title: "无名者"
-			x: 5.0d
+			x: 8.0d
 			y: 1.5d
 		}
 		{
@@ -606,7 +600,7 @@
 				type: "advancement"
 			}]
 			title: "娜迦"
-			x: 14.0d
+			x: 17.0d
 			y: 9.0d
 		}
 		{
@@ -625,7 +619,7 @@
 				type: "advancement"
 			}]
 			title: "巫妖"
-			x: 8.0d
+			x: 11.0d
 			y: 7.5d
 		}
 		{
@@ -644,7 +638,7 @@
 				type: "advancement"
 			}]
 			title: "米诺菇"
-			x: 9.5d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
@@ -663,7 +657,7 @@
 				type: "advancement"
 			}]
 			title: "幻影骑士"
-			x: 11.0d
+			x: 14.0d
 			y: 7.5d
 		}
 		{
@@ -682,7 +676,7 @@
 				type: "advancement"
 			}]
 			title: "雪怪首领"
-			x: 12.5d
+			x: 15.5d
 			y: 7.5d
 		}
 		{
@@ -701,7 +695,7 @@
 				type: "advancement"
 			}]
 			title: "九头蛇"
-			x: 8.0d
+			x: 11.0d
 			y: 6.0d
 		}
 		{
@@ -720,7 +714,7 @@
 				type: "advancement"
 			}]
 			title: "暮初恶魂"
-			x: 9.5d
+			x: 12.5d
 			y: 6.0d
 		}
 		{
@@ -739,7 +733,7 @@
 				type: "advancement"
 			}]
 			title: "冰雪女王"
-			x: 11.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
@@ -758,7 +752,7 @@
 				type: "advancement"
 			}]
 			title: "异教首领"
-			x: 5.0d
+			x: 8.0d
 			y: 9.0d
 		}
 	]

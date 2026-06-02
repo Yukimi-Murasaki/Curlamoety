@@ -34,7 +34,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Appli
         }else if(effectID == 'effect.enigmaticaddons.pure_resistance'){
             let lv = effectInstance.getAmplifier()
             let time = effectInstance.getDuration()
-            if(lv>=4){
+            if(lv==4){
                 event.setResult(EventResult.DENY)
                 entity.addEffect(new MobEffectInstance(
                     'enigmaticaddons:pure_resistance',time,3

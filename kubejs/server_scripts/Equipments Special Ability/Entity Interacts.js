@@ -27,12 +27,12 @@ ItemEvents.entityInteracted('curlamoety:shikishin_wand',event=>{//式神魔棒
             event.level.playSound(null,x,y,z,'goety:soul_heal','players',0.5,1)
         }
         target.potionEffects.add('goety:buff',-1,max_buff)
-        target.potionEffects.add('goetyawaken:enchantment_sharpness',-1,max_buff)
-        target.potionEffects.add('minecraft:health_boost',-1,4)
+        target.potionEffects.add('goetyawaken:enchantment_sharpness',-1,2)
+        target.potionEffects.add('minecraft:health_boost',-1,9)
         target.potionEffects.add('minecraft:resistance',-1,1)
-        target.potionEffects.add('goety:iron_hide',-1,7)
-        target.potionEffects.add('minecraft:regeneration',-1,3)
-        target.potionEffects.add('cataclysm:monstrous',-1,2)
+        target.potionEffects.add('goety:iron_hide',-1,5)
+        target.potionEffects.add('minecraft:regeneration',-1,2)
+        target.potionEffects.add('cataclysm:monstrous',-1,1)
         target.potionEffects.add('goety:radiance',-1,1)
         target.potionEffects.add('minecraft:speed',-1,0)
         target.removeEffect('minecraft:weakness')
@@ -68,10 +68,10 @@ ItemEvents.entityInteracted('curlamoety:inspiration_wand',event=>{//鼓舞魔棒
             event.level.playSound(null,x,y,z,'goety:soul_heal','players',0.5,1)
         }
         target.potionEffects.add('goety:buff',-1,max_buff)
-        target.potionEffects.add('minecraft:health_boost',-1,2)
+        target.potionEffects.add('minecraft:health_boost',-1,4)
         target.potionEffects.add('minecraft:resistance',-1,1)
-        target.potionEffects.add('goety:iron_hide',-1,4)
-        target.potionEffects.add('minecraft:regeneration',-1,2)
+        target.potionEffects.add('goety:iron_hide',-1,2)
+        target.potionEffects.add('minecraft:regeneration',-1,1)
         target.potionEffects.add('minecraft:speed',-1,0)
         target.removeEffect('minecraft:weakness')
         target.removeEffect('goety:sapped')
@@ -102,14 +102,20 @@ ItemEvents.entityInteracted('curlamoety:prisoner_pickaxe',event=>{//囚犯镐
     }
 })
 
-//ItemEvents.entityInteracted("stick",event=>{
-//    let target = event.target
+ItemEvents.entityInteracted("enigmaticlegacy:soul_dust",event=>{
+    let {target,player} = event
 //    let name = target.customName.getString()
 //    let checkName = Text.translate("curlamoety.lang.enderhero_servant").getString()
-//    if(!name)return;
-//    event.player.tell(name)
-//    event.player.tell(checkName)
-//    if(name == checkName){
-//        event.player.tell(1)
-//    }
-//})
+    let mainhand = target.getItemBySlot("mainhand")
+    let offhand = target.getItemBySlot("offhand")
+    let head = target.getItemBySlot("head")
+    let chest = target.getItemBySlot("chest")
+    let legs = target.getItemBySlot("legs")
+    let feet = target.getItemBySlot("feet")
+    player.tell(Text.of("主手").append(mainhand.displayName))
+    player.tell(Text.of("副手").append(offhand.displayName))
+    player.tell(Text.of("头").append(head.displayName))
+    player.tell(Text.of("胸").append(chest.displayName))
+    player.tell(Text.of("腿").append(legs.displayName))
+    player.tell(Text.of("脚").append(feet.displayName))
+})

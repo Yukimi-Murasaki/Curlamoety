@@ -51,13 +51,15 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "kinetictweaks": {
+    "dummy_info": true,
+    "beacon_info": true,
+    "spawner_info": true
+  },
   "easy_villagers": {
     "villager": true,
     "converter": true,
     "breeder": true
-  },
-  "vividerusmoregoetysummons": {
-    "ally_servant": true
   },
   "touhou_little_maid": {
     "maid": true,
@@ -76,6 +78,9 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "goetydelight": {
+    "doll_entity": true
   },
   "goety_revelation": {
     "rune_reactor_id": true,

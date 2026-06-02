@@ -59,7 +59,7 @@ ServerEvents.recipes(Event=>{//常规配方走这里
         'ESE',
         'WNW'
     ],{
-        W:'cataclysm:witherite_ingot',
+        W:'curlamoety:redstone_gear',
         N:'minecraft:netherite_ingot',
         E:'minecraft:ender_eye',
         S:'minecraft:nether_star'
@@ -72,8 +72,8 @@ ServerEvents.recipes(Event=>{//常规配方走这里
         'DID',
         'SHS'
     ],{
-        S:'minecraft:nether_star',
-        E:'minecraft:ender_eye',
+        S:"cataclysm:witherite_ingot",
+        E:'minecraft:nether_star',
         D:'goety:dark_ingot',
         I:'rsinfinitybooster:infinity_card',
         H:'cataclysm:monstrous_horn'
@@ -778,10 +778,6 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     ]).keepIngredient('goety:vanguard_focus').keepIngredient('goetyawaken:champion_focus')
     .id("curlamoety:vanguard_champion_spawn_egg")
 
-    //余烬合金
-    Event.shapeless(('goetyawaken:gilded_ingot'),['enigmaticaddons:bless_amplifier','minecraft:gold_block','minecraft:netherite_scrap','goety:dark_ingot'])
-    .id("curlamoety:gilded_ingot")
-
     //附魔之瓶
     Event.shapeless(('minecraft:experience_bottle'),['curlamoety:papers_t1','minecraft:glass_bottle'])
     .id('curlamoety:experience_bottle')
@@ -1152,19 +1148,100 @@ ServerEvents.recipes(Event=>{//常规配方走这里
         U:'sophisticatedbackpacks:advanced_deposit_upgrade'
     })
 
-    Event.shapeless(Item.of('sophisticatedstorage:copper_barrel', '{woodType:"spruce"}'),['metalbarrels:copper_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:iron_barrel', '{woodType:"spruce"}'),['metalbarrels:iron_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'),['metalbarrels:gold_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:diamond_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:crystal_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'),['metalbarrels:obsidian_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"spruce"}'),['metalbarrels:netherite_barrel',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:copper_chest', '{woodType:"oak"}'),['metalchests:copper_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:iron_chest', '{woodType:"oak"}'),['metalchests:iron_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'),['metalchests:gold_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:diamond_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:crystal_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),['metalchests:obsidian_chest',"minecraft:lever"])
-    Event.shapeless(Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}'),['metalchests:netherite_chest',"minecraft:lever"])
-    
+    //奥术方匣
+    Event.remove("goety:esoteric_tesseract")
+    Event.shaped("goety:esoteric_tesseract",[
+        'ERS',
+        'WPW',
+        'TCT'
+    ],{
+        E:"enigmaticlegacy:extradimensional_eye",
+        R:"minecraft:respawn_anchor",
+        S:"waystones:warp_stone",
+        W:"goety:waystone",
+        P:"goety:flame_capture",
+        T:"minecraft:ender_chest",
+        C:"goety:cursed_cage"
+    }).id("curlamoety:esoteric_tesseract")
+
+    //腾炎
+    Event.replaceInput("cataclysm:smithing/ignitium_helmet","minecraft:netherite_helmet","twilightforest:fiery_helmet")
+    Event.replaceInput("cataclysm:smithing/ignitium_chestplate","minecraft:netherite_chestplate","twilightforest:fiery_chestplate")
+    Event.replaceInput("cataclysm:smithing/ignitium_leggings","minecraft:netherite_leggings","twilightforest:fiery_leggings")
+    Event.replaceInput("cataclysm:smithing/ignitium_boots","minecraft:netherite_boots","twilightforest:fiery_boots")
+
+    //咒魂
+    Event.replaceInput("cataclysm:smithing/cursium_helmet","minecraft:netherite_helmet","twilightforest:yeti_helmet")
+    Event.replaceInput("cataclysm:smithing/cursium_chestplate","minecraft:netherite_chestplate","twilightforest:yeti_chestplate")
+    Event.replaceInput("cataclysm:smithing/cursium_leggings","minecraft:netherite_leggings","twilightforest:yeti_leggings")
+    Event.replaceInput("cataclysm:smithing/cursium_boots","minecraft:netherite_boots","twilightforest:yeti_boots")
+
+    //锁链套
+    Event.shaped("minecraft:chainmail_helmet",[
+        'NCN',
+        'C C',
+        '   '
+    ],{
+        N:"minecraft:iron_nugget",
+        C:"minecraft:chain"
+    })
+    Event.shaped("minecraft:chainmail_chestplate",[
+        'C C',
+        'NCN',
+        'CNC'
+    ],{
+        N:"minecraft:iron_nugget",
+        C:"minecraft:chain"
+    })
+    Event.shaped("minecraft:chainmail_leggings",[
+        'CNC',
+        'N N',
+        'C C'
+    ],{
+        N:"minecraft:iron_nugget",
+        C:"minecraft:chain"
+    })
+    Event.shaped("minecraft:chainmail_boots",[
+        'N N',
+        'C C',
+        '   '
+    ],{
+        N:"minecraft:iron_nugget",
+        C:"minecraft:chain"
+    })
+
+    //灵液
+    Event.shaped("2x enigmaticaddons:ichor_droplet",[
+        'GTG',
+        'BIB',
+        'GTG'
+    ],{
+        G:"minecraft:ghast_tear",
+        T:"twilightforest:fiery_tears",
+        B:"twilightforest:fiery_blood",
+        I:"enigmaticaddons:ichor_droplet"
+    })
+
+    //巫法极点
+    Event.shaped("2x curlamoety:goal_ty",[
+        " G ",
+        "GTG",
+        " G "
+    ],{
+        G:"minecraft:gold_ingot",
+        T:"curlamoety:goal_ty"
+    }).id("curlamoety:copy/goal_ty_1")
+
+    Event.shapeless("2x curlamoety:goal_ty",["curlamoety:goal_ty","#goety:totems"])
+    .id("curlamoety:copy/goal_ty_2")
+
+    Event.shapeless("2x minecraft:enchanted_golden_apple",["minecraft:enchanted_golden_apple","curlamoety:goal_ty"])
+    .modifyResult((inputItems,outputItems)=>{
+        let item = inputItems.find("enchanted_golden_apple")
+        let output = item.copy()
+        output.count = 2
+        return output;
+    })
+    .id("curlamoety:copy/enchanted_golden_apple")
+
 })  

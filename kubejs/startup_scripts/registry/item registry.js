@@ -252,26 +252,6 @@ StartupEvents.registry('item',Event=>{//物品注册
     .maxDamage(3200)
     .fireResistant()
 
-    Event.create("curlamoety:chaos_cube",'basic')//混沌立方
-    .rarity("epic")
-    .fireResistant()
-    .maxStackSize(2)
-
-    Event.create("curlamoety:goal_ty",'basic')//巫法极点
-    .rarity("epic")
-    .fireResistant()
-    .maxStackSize(2)
-
-    Event.create("curlamoety:twilight_sparkle",'basic')//厄难本源
-    .rarity("epic")
-    .fireResistant()
-    .maxStackSize(2)
-
-    Event.create("curlamoety:calamity_source",'basic')//创生之暮
-    .rarity("epic")
-    .fireResistant()
-    .maxStackSize(2)
-
     Event.create("curlamoety:magician_hand","shears")//魔术师之手
     .rarity("uncommon")
     .fireResistant()
@@ -286,7 +266,8 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.effect("minecraft:luck",12000,0,1)
     })
 
-    Event.create("curlamoety:unholy_pants","anim_helmet")//不洁的神秘
+    //不洁的神秘
+    Event.create("curlamoety:unholy_pants","anim_helmet")
     .geoModel(geo=>{
         geo.setSimpleModel('curlamoety:geo/armor/unholy_pants.geo.json')
         geo.setSimpleTexture('curlamoety:textures/armor/unholy_pants.png')
@@ -309,7 +290,8 @@ StartupEvents.registry('item',Event=>{//物品注册
     .maxDamage(666)
     .rarity("epic")
 
-    Event.create("curlamoety:storm_pants","anim_helmet")//风暴的神秘
+    //风暴的神秘
+    Event.create("curlamoety:storm_pants","anim_helmet")
     .geoModel(geo=>{
         geo.setSimpleModel('curlamoety:geo/armor/storm_pants.geo.json')
         geo.setSimpleTexture('curlamoety:textures/armor/storm_pants.png')
@@ -331,7 +313,8 @@ StartupEvents.registry('item',Event=>{//物品注册
     .maxDamage(360)
     .rarity("rare")
 
-    Event.create("curlamoety:snow_pants","anim_helmet")//霜雪的神秘
+    //霜雪的神秘
+    Event.create("curlamoety:snow_pants","anim_helmet")
     .geoModel(geo=>{
         geo.setSimpleModel('curlamoety:geo/armor/snow_pants.geo.json')
         geo.setSimpleTexture('curlamoety:textures/armor/snow_pants.png')
@@ -353,10 +336,12 @@ StartupEvents.registry('item',Event=>{//物品注册
     .maxDamage(300)
     .rarity("rare")
 
+    //晋升披萨
     Event.create("curlamoety:ascension_pizza","basic")
     .rarity("epic")
     .fireResistant()
 
+    //晋升披萨片
     Event.create("curlamoety:ascension_pizza_slice","basic")
     .rarity("epic")
     .fireResistant()
@@ -376,8 +361,37 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.effect("goety:radiance",-1,5,1)
     })
 
+    //幻影熔渣
     Event.create("curlamoety:phantom_slag","basic")
     .rarity("common")
+
+    //红石元件
+    Event.create("curlamoety:redstone_gear","basic")
+    .rarity("common")
+
+    //丝袜杯
+    Event.create("curlamoety:stocking_cup","basic")
+    .rarity("epic")
+    .fireResistant()
+
+    //丝袜奶茶
+    Event.create("curlamoety:stocking_tea","basic")
+    .rarity("epic")
+    .useAnimation("drink")
+    .fireResistant()
+    .food(foodBuilder=>{
+        foodBuilder.hunger(8)
+        foodBuilder.saturation(2)
+        foodBuilder.alwaysEdible()
+        foodBuilder.effect("goetydelight:spell_mastery",36000,2,1)
+        foodBuilder.effect("farmersdelight:nourishment",12000,0,1)
+        foodBuilder.eaten(foodEvent =>{
+            let player = foodEvent.getPlayer()
+            if(player){
+                player.give("curlamoety:stocking_cup")
+            }
+        })
+    })
 
 })
 

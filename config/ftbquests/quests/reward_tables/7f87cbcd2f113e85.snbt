@@ -2,7 +2,7 @@
 	icon: "minecraft:lantern"
 	id: "7F87CBCD2F113E85"
 	loot_size: 1
-	order_index: 8
+	order_index: 7
 	rewards: [
 		{ count: 64, item: "minecraft:torch" }
 		{ count: 64, item: "minecraft:lantern" }

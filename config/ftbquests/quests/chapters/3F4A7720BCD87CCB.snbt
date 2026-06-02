@@ -16,7 +16,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: 5.5d
-			y: -7.0d
+			y: -8.5d
 		}
 		{
 			height: 5.0d
@@ -32,7 +32,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: 27.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			height: 5.0d
@@ -63,16 +63,16 @@
 			image: "explorerscompass:item/explorerscompass_28"
 			rotation: 0.0d
 			width: 5.0d
-			x: 3.0d
-			y: -20.0d
+			x: 2.5d
+			y: -23.0d
 		}
 		{
 			height: 5.0d
 			image: "cataclysm:item/music_disc_the_cataclysmfarer"
 			rotation: 0.0d
 			width: 5.0d
-			x: 4.0d
-			y: -14.0d
+			x: 5.0d
+			y: -16.5d
 		}
 		{
 			height: 3.0d
@@ -111,7 +111,7 @@
 			image: "minecraft:textures/entity/enderdragon/dragon_fireball.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 10.0d
+			x: 9.5d
 			y: 6.0d
 		}
 	]
@@ -182,7 +182,7 @@
 			}]
 			title: "暮色森林"
 			x: 4.0d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -213,7 +213,7 @@
 			}]
 			title: "树篱迷宫"
 			x: 4.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -284,7 +284,7 @@
 			]
 			title: "空心矿山"
 			x: 5.5d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -339,7 +339,7 @@
 			}]
 			title: "娜迦"
 			x: 7.5d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -369,7 +369,7 @@
 			}]
 			title: "谜题羊"
 			x: 7.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -406,7 +406,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -439,105 +439,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["384C7CEB4BC34ED9"]
-			description: [
-				"精致存储是一款懒人存储，它的基础组成非常简单，由一个控制器担任一整个存储系统的核心。将一个磁盘驱动器与存储系统相连，然后在驱动器里插入磁盘，存储系统就有了存储空间。再将一个终端（通常是合成终端）与存储系统相连，玩家便能够通过终端与存储空间进行交互了。"
-				""
-				"{ \"text\": \"点击前往购买存储磁盘（后期可以购买无限磁盘）\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2A649853ED144FF3\" } }"
-				""
-				"&7整合包添加了精致存储的组件拥有仿机械动力的外观的资源包"
-				""
-				"&7（普通的控制器需要FE能量来运作，然而由于发电一般由科技模组完成，因此整合包通过直接给予创造模式控制器来免去供能的步骤）"
-			]
-			icon: "refinedstorage:creative_controller"
-			id: "38168500AB4AA3D1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0DA888D555C7E2C5"
-					table_id: 6481225399731052398L
-					type: "choice"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "00EB1BCD4BA4187B"
-					table_id: 4494245459698922212L
-					type: "choice"
-				}
-				{
-					id: "0EA417163C4B741C"
-					item: "refinedstorage:disk_drive"
-					type: "item"
-				}
-				{
-					id: "70A4CD6A73526B84"
-					item: "refinedstorage:16k_storage_disk"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "数字化时代的存储"
-			tasks: [{
-				id: "009912FEA9736EF3"
-				type: "checkmark"
-			}]
-			title: "精致存储"
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["38168500AB4AA3D1"]
-			description: [
-				"将无线发送器连接上存储系统之后，若玩家在发送器范围内即可通过远程终端访问存储系统（手持&e&l右键&r打开或者按下快捷键&l&eCtrl+G&r打开，远程终端放在饰品栏或者物品栏均可以快捷键打开）"
-				""
-				"在无线发送器内装入范围升级可以扩大发送器的有效范围。装入无限范围增幅卡即可在同一维度内任何地方连接到存储系统"
-			]
-			icon: "refinedstorage:wireless_transmitter"
-			id: "43264E0D208A90D7"
-			rewards: [{
-				id: "74F25B1FB25B8087"
-				item: "refinedstorageaddons:creative_wireless_crafting_grid"
-				type: "item"
-			}]
-			subtitle: "摩西摩西~"
-			tasks: [
-				{
-					id: "0A712E6E42CBEAF9"
-					item: "refinedstorage:wireless_transmitter"
-					type: "item"
-				}
-				{
-					id: "118EFD235A27A1A5"
-					item: "rsinfinitybooster:infinity_card"
-					type: "item"
-				}
-			]
-			title: "远程使用"
-			x: 2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["43264E0D208A90D7"]
-			description: ["能够在任何维度任何地方连接上你的存储系统"]
-			id: "32797451D61D46AC"
-			rewards: [{
-				count: 4
-				id: "7DFEA2695AA1CAAB"
-				item: "goety:treasure_pouch"
-				type: "item"
-			}]
-			subtitle: "Anywhere~"
-			tasks: [{
-				id: "15FA9C1F439EAAA2"
-				item: "rsinfinitybooster:dimension_card"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["384C7CEB4BC34ED9"]
@@ -545,6 +447,8 @@
 				"七咒玩家击杀凋灵将掉落邪恶精华"
 				""
 				"&e对着下界反应堆使用下界之星可以立刻再次召唤一只凋灵"
+				""
+				"&6请注意：信标将根据等级给予一定范围的强加载与禁止刷怪功能"
 			]
 			icon: "minecraft:nether_star"
 			id: "2F33BE43B5F1A150"
@@ -759,6 +663,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			subtitle: "我们一起去寻找凯伊吧"
 			tasks: [{
 				advancement: "twilightforest:progress_glacier"
@@ -767,8 +672,8 @@
 				type: "advancement"
 			}]
 			title: "冰雪女王"
-			x: 14.0d
-			y: -5.0d
+			x: 15.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4AD15B92F52F5B65"]
@@ -813,8 +718,8 @@
 				type: "advancement"
 			}]
 			title: "雪怪首领"
-			x: 12.0d
-			y: -5.0d
+			x: 12.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4AD15B92F52F5B65"]
@@ -868,8 +773,8 @@
 				type: "advancement"
 			}]
 			title: "米诺菇"
-			x: 12.0d
-			y: -6.5d
+			x: 12.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3EC0BC781E2949E3"]
@@ -954,7 +859,7 @@
 			}]
 			title: "巫妖"
 			x: 10.0d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4AD15B92F52F5B65"]
@@ -987,7 +892,7 @@
 			}]
 			title: "巫妖仆从"
 			x: 10.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["4AD15B92F52F5B65"]
@@ -1033,8 +938,8 @@
 				id: "21D2F1BBCC0006FF"
 				type: "advancement"
 			}]
-			x: 12.0d
-			y: -8.0d
+			x: 12.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["1D3C89DB3F9A67D4"]
@@ -1068,6 +973,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			subtitle: "隔壁家叔叔研究炼金术把自己变成恶魂了，你以后可不能这样"
 			tasks: [{
 				advancement: "twilightforest:progress_ur_ghast"
@@ -1076,8 +982,8 @@
 				type: "advancement"
 			}]
 			title: "暮初恶魂"
-			x: 14.0d
-			y: -8.0d
+			x: 15.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["6A467260832F155D"]
@@ -1111,6 +1017,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			subtitle: "不，这只不怕火，这只喷火"
 			tasks: [{
 				advancement: "twilightforest:progress_hydra"
@@ -1119,8 +1026,8 @@
 				type: "advancement"
 			}]
 			title: "九头蛇"
-			x: 14.0d
-			y: -6.5d
+			x: 15.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -1158,8 +1065,8 @@
 				type: "item"
 			}]
 			title: "荆棘之地"
-			x: 16.0d
-			y: -6.5d
+			x: 17.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5AA214B65817073F"]
@@ -1199,8 +1106,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -6.5d
+			x: 19.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["35DA1C65889A79A4"]
@@ -1220,7 +1127,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -1307,7 +1214,7 @@
 			}]
 			title: "无名者"
 			x: 25.5d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["35DA1C65889A79A4"]
@@ -1337,7 +1244,7 @@
 				type: "item"
 			}]
 			x: 25.5d
-			y: -8.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["35DA1C65889A79A4"]
@@ -1400,7 +1307,7 @@
 			]
 			title: "冠军套装"
 			x: 27.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5FD95D9D16CA7072"]
@@ -1476,7 +1383,7 @@
 			]
 			title: "无名者的挑战状"
 			x: 24.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2989FC20D513CE91"]
@@ -2639,7 +2546,7 @@
 			}]
 			title: "废弃堡垒"
 			x: 11.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["44407E53E23F0558"]
@@ -2738,7 +2645,7 @@
 			}]
 			title: "末影傀儡"
 			x: 11.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["145AB5262CEFE286"]
@@ -2839,7 +2746,7 @@
 			}]
 			title: "末影守卫"
 			x: 11.0d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["3D57E108AF7BF94A"]
@@ -3527,7 +3434,7 @@
 				type: "advancement"
 			}]
 			title: "屠龙勇者"
-			x: 10.0d
+			x: 9.5d
 			y: 6.0d
 		}
 		{
@@ -3632,8 +3539,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 8.0d
+			x: 8.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4060E879681F0CA4"]
@@ -3668,7 +3575,7 @@
 				item: "enigmaticlegacy:abyssal_heart"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: 10.0d
 		}
 		{
@@ -3676,7 +3583,7 @@
 			description: [
 				"&e可以通过烹饪仪式来自我复制"
 				""
-				"&a暗夜立方&r中装有&5无止之言&r时……这个东西味道可能吃起来更好一点"
+				"&a暗夜立方&r中装有&5无止之言&r时，深渊强化状态下额外提示攻击速度和移动速度"
 			]
 			id: "53F37CA7D051D8CE"
 			rewards: [
@@ -3697,8 +3604,8 @@
 				item: "enigmaticdelicacy:abyssal_stew"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 8.5d
+			x: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3727,8 +3634,8 @@
 				item: "enigmaticlegacy:desolation_ring"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.5d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3763,8 +3670,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 10.0d
+			x: 7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3873,8 +3780,8 @@
 				item: "enigmaticaddons:violence_scroll"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 12.0d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3909,8 +3816,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
-			y: 11.5d
+			x: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3947,7 +3854,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["78DC0C6E307AF4CD"]
@@ -3997,7 +3904,7 @@
 			}]
 			title: "下界合金巨兽"
 			x: 6.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -4047,7 +3954,7 @@
 			}]
 			title: "灵魂锻造厂"
 			x: 6.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -4094,7 +4001,7 @@
 			}]
 			title: "烈焰竞技场"
 			x: 23.5d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["2574E2EBB79E3706"]
@@ -4115,7 +4022,7 @@
 			}]
 			title: "炽燃遗魂"
 			x: 23.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["65FD9363FFB6E82D"]
@@ -4188,11 +4095,15 @@
 			}]
 			title: "焰魔"
 			x: 23.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["256DFC7EF8B68AB4"]
-			description: ["有着高额的防御和火焰亲和"]
+			description: [
+				"有着高额的防御和火焰亲和"
+				""
+				"炽铁套装的升级，具有接近顶级的数值，侧重法术输出"
+			]
 			id: "7C14B267B3429CC6"
 			rewards: [
 				{
@@ -4257,7 +4168,7 @@
 			]
 			title: "腾炎套装"
 			x: 22.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["290A28F2E531647E"]
@@ -4480,7 +4391,7 @@
 			]
 			title: "探索之旅"
 			x: 0.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4533,7 +4444,7 @@
 			]
 			title: "传送石"
 			x: 1.5d
-			y: -12.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["40B90D70CC23B906"]
@@ -4566,7 +4477,7 @@
 			}]
 			title: "传送石盘"
 			x: 1.5d
-			y: -11.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4667,7 +4578,7 @@
 			}]
 			title: "试炼密室"
 			x: -1.5d
-			y: -12.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4709,7 +4620,7 @@
 			}]
 			title: "蜘蛛之母巢穴"
 			x: 0.0d
-			y: -18.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4755,7 +4666,7 @@
 			}]
 			title: "不祥铁匠铺"
 			x: 0.0d
-			y: -19.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4790,7 +4701,7 @@
 			}]
 			title: "冰川幽灵小屋"
 			x: 1.5d
-			y: -21.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4830,7 +4741,7 @@
 			}]
 			title: "朽坏木屋"
 			x: 3.0d
-			y: -21.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4870,7 +4781,7 @@
 			}]
 			title: "烈风祠堂"
 			x: 0.0d
-			y: -21.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4910,7 +4821,7 @@
 			}]
 			title: "海底神殿"
 			x: 0.0d
-			y: -22.5d
+			y: -26.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -4968,7 +4879,7 @@
 			}]
 			title: "破灭修道院"
 			x: 3.0d
-			y: -22.5d
+			y: -26.5d
 		}
 		{
 			dependencies: ["12B94E33E99E09C4"]
@@ -4990,7 +4901,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -20.5d
+			y: -24.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5047,7 +4958,7 @@
 			}]
 			title: "墓穴"
 			x: 3.0d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5089,7 +5000,7 @@
 			}]
 			title: "灾厄堡垒"
 			x: 10.5d
-			y: -20.5d
+			y: -24.5d
 		}
 		{
 			dependencies: ["12B94E33E99E09C4"]
@@ -5115,7 +5026,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -22.0d
+			y: -26.0d
 		}
 		{
 			dependencies: ["54F62A8D57D2A032"]
@@ -5170,7 +5081,7 @@
 			}]
 			title: "骷髅领主"
 			x: 3.0d
-			y: -19.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["0F62F6C3C64882E5"]
@@ -5188,7 +5099,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -18.5d
+			y: -22.5d
 		}
 		{
 			dependencies: ["0F62F6C3C64882E5"]
@@ -5206,7 +5117,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -19.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["54F62A8D57D2A032"]
@@ -5254,7 +5165,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["5E37D9E4A177B1B2"]
@@ -5284,7 +5195,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["5980B0DD40C9057F"]
@@ -5312,7 +5223,7 @@
 			}]
 			title: "唤魔者"
 			x: 7.5d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5364,7 +5275,7 @@
 			}]
 			title: "林地府邸"
 			x: 5.5d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5403,7 +5314,7 @@
 			}]
 			title: "混沌监牢"
 			x: 26.5d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["05E7414C7D0C06DB"]
@@ -5442,7 +5353,7 @@
 			}]
 			title: "哞菇巨兽"
 			x: 26.5d
-			y: -19.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5486,7 +5397,7 @@
 			}]
 			title: "荒漠迷城"
 			x: 1.5d
-			y: -22.5d
+			y: -26.5d
 		}
 		{
 			dependencies: ["6EA0AC0D65B2ED14"]
@@ -5535,7 +5446,7 @@
 			}]
 			title: "灾厄宰相"
 			x: 10.5d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["052B1D29EF40D5B5"]
@@ -5553,7 +5464,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -16.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["6793E75B881875B1"]
@@ -5576,7 +5487,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -16.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["052B1D29EF40D5B5"]
@@ -5605,7 +5516,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -17.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -5630,7 +5541,7 @@
 			}]
 			title: "紫水晶巨蟹"
 			x: 4.0d
-			y: -15.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -5701,7 +5612,7 @@
 			}]
 			title: "卫城"
 			x: 16.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["6F10D4387FF37F72"]
@@ -5729,7 +5640,7 @@
 			}]
 			title: "水母莉亚"
 			x: 15.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["6F10D4387FF37F72"]
@@ -5769,7 +5680,7 @@
 			}]
 			title: "巨钳守卫"
 			x: 16.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["0BBB5DADAD66FC3D"]
@@ -5825,7 +5736,7 @@
 			}]
 			title: "斯库拉"
 			x: 16.0d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -5866,7 +5777,7 @@
 			}]
 			title: "灾变饰品"
 			x: 4.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5953,7 +5864,7 @@
 			}]
 			title: "灾变之旅"
 			x: 4.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["691CC9C9CBD7E1A2"]
@@ -6006,7 +5917,7 @@
 			}]
 			title: "先驱者"
 			x: 8.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["3AB46E34824A1DD7"]
@@ -6035,7 +5946,7 @@
 			]
 			title: "徘徊者"
 			x: 8.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -6107,7 +6018,7 @@
 			}]
 			title: "远古工厂"
 			x: 8.5d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["28C8FEE1B13D3130"]
@@ -6138,7 +6049,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["2A3843E2E049E542"]
@@ -6210,7 +6121,7 @@
 			}]
 			title: "利维坦"
 			x: 18.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["5FC68DD87FB5A736"]
@@ -6230,7 +6141,7 @@
 				value: 1L
 			}]
 			x: 18.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -6319,7 +6230,7 @@
 			}]
 			title: "沉没之城"
 			x: 18.5d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["5FC68DD87FB5A736"]
@@ -6390,7 +6301,7 @@
 			]
 			title: "渊灵"
 			x: 17.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -6445,7 +6356,7 @@
 			}]
 			title: "苦寒监牢"
 			x: 21.0d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["3DDB582E52595E9E"]
@@ -6496,11 +6407,15 @@
 			}]
 			title: "冥行武弁"
 			x: 21.0d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["16AE18D3DDB2D43A"]
-			description: ["搭配缠魂盔甲架仆从有奇效哦"]
+			description: [
+				"胸甲搭配缠魂盔甲架仆从有奇效哦"
+				""
+				"定位为雪怪套装的升级，具有接近顶级的数值，侧重仆从加成"
+			]
 			id: "784EA491DD45B6F9"
 			rewards: [
 				{
@@ -6570,7 +6485,7 @@
 			]
 			title: "咒魂盔甲"
 			x: 20.0d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["56F2665BFF8B0D61"]
@@ -6639,7 +6554,7 @@
 			}]
 			title: "咒翼灵骸"
 			x: 21.0d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -6701,7 +6616,7 @@
 			}]
 			title: "诅咒金字塔"
 			x: 13.5d
-			y: -14.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["4AEEC253A8E32284"]
@@ -6743,7 +6658,7 @@
 			]
 			title: "古老的守卫者们"
 			x: 12.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["4AEEC253A8E32284"]
@@ -6762,7 +6677,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -12.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["092EA2A74CD6F3C4"]
@@ -6814,7 +6729,7 @@
 			}]
 			title: "远古遗魂"
 			x: 13.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["3E3317097F7C0A75"]
@@ -6857,7 +6772,7 @@
 			]
 			title: "骸龙盔甲"
 			x: 12.5d
-			y: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["76887FFBCC9335F9"]
@@ -6987,7 +6902,7 @@
 			]
 			title: "远古符文祭坛遗迹"
 			x: 5.5d
-			y: -21.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["0796E9D87BAAF331"]
@@ -7019,8 +6934,8 @@
 				}
 				type: "item"
 			}]
-			x: 25.5d
-			y: 5.0d
+			x: 22.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -7124,7 +7039,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["384C7CEB4BC34ED9"]
@@ -7188,7 +7103,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -19.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["052B1D29EF40D5B5"]
@@ -7206,7 +7121,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -19.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["1FA51989ED25DF67"]
@@ -7247,6 +7162,430 @@
 			}]
 			x: 14.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["3FC7B7A3522DA163"]
+			description: [
+				"    ——————————测试版——————————"
+				""
+				"用深渊之力自我保护和反击敌人的头冠"
+			]
+			id: "73A0F13272BF5E6E"
+			rewards: [
+				{
+					id: "134FDEF619C9EEB1"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "4FD6A0C9B9873E9B"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:infernal_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "傲慢"
+			tasks: [{
+				id: "4ACB63ECF183B570"
+				item: "enigmaticdelicacy:fallen_crown"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3FC7B7A3522DA163"]
+			description: [
+				"    ——————————测试版——————————"
+				""
+				"将敌人化作食粮的巨大厨刀，非常长"
+			]
+			id: "7C9F17BD0E537CFE"
+			rewards: [{
+				id: "0F88D8ECBC1C1CC2"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			subtitle: "暴食"
+			tasks: [{
+				id: "73D85F7BDE88AE16"
+				item: {
+					Count: 1
+					id: "enigmaticdelicacy:shi_jin"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["054A3A1FB955CE53"]
+			icon: "goety:haunted_mirror"
+			id: "1718D2B9F99E1DF8"
+			progression_mode: "linear"
+			rewards: [{
+				command: "/tp @e[type = goetyawaken:nameless_one] @s"
+				elevate_perms: true
+				id: "1A9F1C9A97421349"
+				title: "将无名者传送到你的位置"
+				type: "command"
+			}]
+			subtitle: "荆棘单杀无名者：0/1"
+			tasks: [{
+				id: "0475BFF70E7462C9"
+				type: "checkmark"
+			}]
+			title: "无名者（BOSS）找回"
+			x: 24.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4E2B6F3D7494C7F8"]
+			description: ["整体强度达到黑暗盔甲的水平，对仆从有额外的加强"]
+			id: "26831F15A9B40455"
+			rewards: [
+				{
+					id: "1107F99C44D9EB74"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "1521EDFC959ED6C4"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			subtitle: "吾乃首领"
+			tasks: [
+				{
+					id: "0A387282839F6497"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20712DCC4BEAA846"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_chestplate"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6089AEA96D598FCA"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_leggings"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D465A68D691342D"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_boots"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "雪怪套装"
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["10748D131B4FE8AC"]
+			description: [
+				"极地毛皮由积雪森林的寒冬狼掉落，尽管这个群系属于巫妖之后的内容，但是你可以主动诱导它们离开积雪森林，从而在较早时期获得"
+				""
+				"尽管是“毛皮”材质，极地套装有与铁相近的护甲和与钻石相近的盔甲韧性，性价比很高"
+			]
+			id: "4CD78978A58BD54A"
+			rewards: [{
+				count: 4
+				id: "53AEB75D94A4358E"
+				item: "goety:magic_emerald"
+				type: "item"
+			}]
+			subtitle: "不只是防寒"
+			tasks: [
+				{
+					id: "63AC812E0D91378A"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24C6F638E44C6F11"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3932A635D7361EC0"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "466C61CFFBB3146D"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "极地套装"
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"40EDA0653E5F6DA2"
+				"7317DE152C23E08F"
+			]
+			description: ["数值水平高于黑魔法师套装"]
+			id: "34D09EB4791CCB8C"
+			rewards: [
+				{
+					id: "5693EBB754C8475A"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "7F4425E52B2352D2"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "极致火热"
+			tasks: [
+				{
+					id: "06C2D9AC0A46A65F"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4903C81163F8DBC0"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A176902538E9D79"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F81D9A5D9EA6A91"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "炽铁套装"
+			x: 15.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["35DA1C65889A79A4"]
+			description: ["世界诞生以前的无尽的虚无，其遗留的一块小小的碎片，超越时空连接到那一无所有的过往"]
+			id: "6E9DF079B753B50C"
+			rewards: [
+				{
+					count: 2
+					id: "619310A7CAB9704D"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					id: "1973B4133D148BB2"
+					item: "twilightforest:twilight_portal_miniature_structure"
+					type: "item"
+				}
+				{
+					id: "5CC4AFA2A8A90B1D"
+					item: "twilightforest:violet_force_field"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "世界伊始的黑暗"
+			tasks: [{
+				id: "07584C3FDF1E93A2"
+				item: "curlamoety:twilight_sparkle"
+				type: "item"
+			}]
+			x: 29.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["35542704CE85F80F"]
+			description: ["焚烧下界无尽日夜的灭亡的火种，从中孕育出的是神话的怪物"]
+			id: "1EAEF4BC7B5707B5"
+			rewards: [
+				{
+					id: "2CD6E4B550FD4432"
+					item: "cataclysm:music_disc_the_cataclysmfarer"
+					type: "item"
+				}
+				{
+					id: "6182EB29C68C4549"
+					item: "cataclysm:enderite_block"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "根源之火"
+			tasks: [{
+				id: "25D22AD4E65C8806"
+				item: "curlamoety:calamity_source"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["57CBF63981BAD961"]
+			description: ["法术伤害特化，副作用是会降低仆从和近战伤害，伤害延缓效果可以提供非常强大的生存能力"]
+			id: "09742E2A673882BC"
+			rewards: [
+				{
+					id: "3FA27E3BD0C60266"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "17041A3B86965A5B"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					id: "683F723B7C56F4C4"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+			]
+			subtitle: "黑暗之终点乃是无瑕之圣洁"
+			tasks: [
+				{
+					id: "4F9FEA735F5395D4"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22C136C8A448AEA5"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44430B6F0A55862E"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28979832B8F22AE2"
+					item: {
+						Count: 1
+						id: "goeticlegacy:holy_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "无瑕套装"
+			x: 13.0d
+			y: 7.0d
 		}
 	]
 	title: "命运与征途"

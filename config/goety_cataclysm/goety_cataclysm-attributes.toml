@@ -35,13 +35,13 @@
 			[Attributes."Summoned Mobs".Draugr."Aptrgangr Servant"]
 				#How much Max Health Aptrgangr Servants have, Default: 160.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				aptrgangrHealth = 6400.0
+				aptrgangrHealth = 800.0
 				#How much damage Aptrgangr Servants Axe Blade attack deals, Default: 8.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				aptrgangrAxeDamage = 56.0
+				aptrgangrAxeDamage = 24.0
 				#How much damage Aptrgangr Servants melee attack deals, Default: 18.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				aptrgangrDamage = 126.0
+				aptrgangrDamage = 54.0
 				#How much natural Armor Aptrgangr Servants have, Default: 10.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				aptrgangrArmor = 16.0
@@ -256,21 +256,21 @@
 			[Attributes."Summoned Mobs".Desert."Wadjet Servant"]
 				#How much damage Wadjet Servants melee attack deals, Default: 11.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				wadjetDamage = 36.0
+				wadjetDamage = 33.0
 				#How much natural Armor Wadjet Servants have, Default: 5.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				wadjetArmor = 5.0
 				#How much Max Health Wadjet Servants have, Default: 150.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				wadjetHealth = 600.0
+				wadjetHealth = 750.0
 
 			[Attributes."Summoned Mobs".Desert."Kobolediator Servant"]
 				#How much damage Kobolediator Servants melee attack deals, Default: 14.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				kobolediatorDamage = 45.0
+				kobolediatorDamage = 42.0
 				#How much Max Health Kobolediator Servants have, Default: 180.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				kobolediatorHealth = 720.0
+				kobolediatorHealth = 900.0
 				#How much natural Armor Kobolediator Servants have, Default: 10.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				kobolediatorArmor = 10.0

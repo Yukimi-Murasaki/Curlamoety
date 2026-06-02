@@ -1,0 +1,33 @@
+{
+  "tips":[
+    {
+      "stage": "any",
+      "text": "§b§l[Toggle Tips] §fIf you don't need these screen tips, you can disable them in the Mod Config recipeMenu (or config/kineticaddons/tips_settings.toml).",
+      "time": 6000
+    },
+    {
+      "stage": "any",
+      "text": "§e§l[Admin Guide] §fUse command §b/kt tips §f to open the GUI! (OP only).",
+      "time": 8000
+    },
+    {
+      "stage": "loading",
+      "text": "§e[Loading] §fThis tip is only visible while §bLoading the world§f. Useful for performance tips.",
+      "time": 4000
+    },
+    {
+      "stage": "game",
+      "text": "§a§l[Biome] §fYou are in Nether Wastes! Wear gold armor to stop Piglins from attacking.",
+      "conditions": {
+        "biome": "minecraft:nether_wastes"
+      }
+    },
+    {
+      "stage": "game",
+      "text": "§d§l[Item] §fYou found an Elytra! Use fireworks for infinite flight.",
+      "conditions": {
+        "items":[ { "id": "minecraft:elytra" } ]
+      }
+    }
+  ]
+}

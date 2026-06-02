@@ -2,7 +2,7 @@
 	icon: "minecraft:egg"
 	id: "2073DD3A52713C74"
 	loot_size: 1
-	order_index: 11
+	order_index: 10
 	rewards: [
 		{ count: 2, item: "minecraft:pig_spawn_egg" }
 		{ count: 2, item: "minecraft:cow_spawn_egg" }

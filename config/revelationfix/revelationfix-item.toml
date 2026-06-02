@@ -10,7 +10,7 @@
 	DamageBoost = 4.0
 	#AttackSpeed increase provided by Scroll of a Blessing for each lucky point, as percentage.
 	#Range: 0.0 ~ 32768.0
-	AttackSpeedBoost = 5.0
+	AttackSpeedBoost = 4.0
 	#Dodge increase provided by Scroll of a Blessing for each lucky point, as percentage.
 	#Range: 0.0 ~ 100.0
 	DodgeBoost = 1.0

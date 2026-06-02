@@ -255,7 +255,7 @@
 			enderKeeperDamage = 200.0
 			#Ender Keepers attack HP percent damage, Default: 0.05
 			#Range: 0.0 ~ 1.0
-			enderKeeperHPPercentDamage = 0.05
+			enderKeeperHPPercentDamage = 0.005
 			#How much natural Armor Points Ender Keepers have, Default: 10.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			enderKeeperArmor = 12.0
@@ -434,7 +434,7 @@
 			sunkenSkeletonServantHealth = 40.0
 			#How much extra damage Sunken Skeleton Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			sunkenSkeletonServantRangeDamage = 8.0
+			sunkenSkeletonServantRangeDamage = 4.0
 			#How much natural Armor Sunken Skeleton Servants have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			sunkenSkeletonServantArmor = 3.0
@@ -475,7 +475,7 @@
 		[Attributes."Summoned Mobs"."Wither Skeleton Servant"]
 			#How much extra damage Wither Skeleton Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			witherSkeletonServantRangeDamage = 12
+			witherSkeletonServantRangeDamage = 8
 			#How much natural Armor Wither Skeleton Servants have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			witherSkeletonServantArmor = 5.0
@@ -492,7 +492,7 @@
 			skeletonPillagerHealth = 48.0
 			#How much extra damage Skeleton Pillagers range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			skeletonPillagerRangeDamage = 8.0
+			skeletonPillagerRangeDamage = 4.0
 			#How much natural Armor Skeleton Pillagers have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			skeletonPillagerArmor = 2.0
@@ -525,7 +525,7 @@
 			pillagerServantArmor = 2.0
 			#How much extra damage Pillager Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			pillagerServantRangeDamage = 7.0
+			pillagerServantRangeDamage = 6.0
 			#How much damage Pillager Servants deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			pillagerServantDamage = 10
@@ -630,7 +630,7 @@
 			boneSpiderServantDamage = 6.0
 			#How much extra damage Bone Spider Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			boneSpiderServantRangeDamage = 4.0
+			boneSpiderServantRangeDamage = 3.0
 
 		[Attributes."Summoned Mobs"."Icy Spider Servant"]
 			#How much Max Health Icy Spider Servants have, Default: 16.0
@@ -680,7 +680,7 @@
 			redstoneMonstrosityHealth = 6000.0
 			#Redstone Monstrosities attack HP percent damage, Default: 0.08
 			#Range: 0.0 ~ 1.0
-			redstoneMonstrosityHPPercentDamage = 0.08
+			redstoneMonstrosityHPPercentDamage = 0.02
 			#How much natural armor points Redstone Monstrosities have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			redstoneMonstrosityArmor = 5.0
@@ -744,7 +744,7 @@
 		[Attributes."Summoned Mobs"."Stray Servant"]
 			#How much extra damage Stray Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			strayServantRangeDamage = 8.0
+			strayServantRangeDamage = 4.0
 			#How much damage Stray Servants deals, Default: 2.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			strayServantDamage = 6.0
@@ -888,7 +888,7 @@
 		[Attributes."Summoned Mobs"."Skeleton Servant"]
 			#How much extra damage Skeleton Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			skeletonServantRangeDamage = 8.0
+			skeletonServantRangeDamage = 4.0
 			#How much natural Armor Skeleton Servants have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			skeletonServantArmor = 2.0
@@ -932,6 +932,14 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			zombieVindicatorArmor = 3.0
 
+		[Attributes."Summoned Mobs".Sprite]
+			#How much damage Sprites deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			spriteDamage = 7.0
+			#How much Max Health Sprites have, Default: 12.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			spriteHealth = 24.0
+
 		[Attributes."Summoned Mobs".Watchling]
 			#How much natural Armor Watchlings have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
@@ -957,7 +965,7 @@
 		[Attributes."Summoned Mobs"."Rattled Servant"]
 			#How much extra damage Rattled Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			rattledServantRangeDamage = 8.0
+			rattledServantRangeDamage = 4.0
 			#How much Max Health Rattled Servants have, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			rattledServantHealth = 40.0
@@ -1102,7 +1110,7 @@
 			mossySkeletonServantDamage = 2.0
 			#How much extra damage Mossy Skeleton Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			mossySkeletonServantRangeDamage = 8.0
+			mossySkeletonServantRangeDamage = 4.0
 			#How much natural Armor Mossy Skeleton Servants have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			mossySkeletonServantArmor = 2.0

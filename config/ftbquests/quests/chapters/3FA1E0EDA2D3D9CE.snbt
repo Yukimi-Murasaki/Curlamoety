@@ -354,6 +354,8 @@
 				"有了铁，青金石，红石甚至钻石等矿物之后，就可以开始模组的一些内容了"
 				""
 				"如果是七咒玩家的话，这个时候还是会被怪物吊着打的"
+				""
+				"{ \"text\": \"点击查看非魔法武器和盔甲的收藏\",\"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"292A1CB91019D0ED\" } }"
 			]
 			id: "18442EC41414DB90"
 			rewards: [
@@ -370,6 +372,50 @@
 				{
 					id: "386AE64FD7B8DADE"
 					item: "transmog:transmogrification_table"
+					type: "item"
+				}
+				{
+					id: "58B1305E01390784"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E61C7FECBCDF5B2"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38CCEAB018EA4886"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31B3E79C1088EE32"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -548,6 +594,50 @@
 					id: "41DF87763948213B"
 					table_id: 747494226645644266L
 					type: "random"
+				}
+				{
+					id: "2B5CD3295588B0D1"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B176E7F84B1B66C"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0CECE0A47BB1465B"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13FA1AF4B8AA35CF"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
 			size: 1.5d
@@ -1219,6 +1309,8 @@
 		{
 			dependencies: ["18442EC41414DB90"]
 			description: [
+				"&e该模组的飞行器大多派不上用场，不过可以作为娱乐或者一些配方的材料使用"
+				""
 				"这台发动机是大部分飞行器的基础（居然还有手摇的飞机）"
 				""
 				"{ \"text\": \"点击展开专属任务线\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1B9AA1E66D25A846\" } } "
@@ -1500,7 +1592,7 @@
 			description: [
 				"有效范围很小，建筑党当脚手架都嫌小"
 				""
-				"放入&a暗夜立方&r时，为你提供防摔的云垫，让你和你的仆从攻击发出风刃，并令你的仆从用风反击攻击者"
+				"放入&a暗夜立方&r时，允许你消耗灵魂能量来创造飞行"
 			]
 			id: "661426C92B496C3D"
 			rewards: [
@@ -2033,7 +2125,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -11.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["0A077594F465E1F1"]
@@ -2065,7 +2157,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -12.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -2125,7 +2217,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -11.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["1EFA0BEAA737B431"]
@@ -2552,14 +2644,14 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -12.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["661426C92B496C3D"]
 			description: [
 				"恭喜你终于能够无拘无束地进行创造模式飞行了。"
 				""
-				"放入&a暗夜立方&r时，提供比天使之祝数值更高的相同效果"
+				"放入&a暗夜立方&r时，为你提供防摔的云垫，让你和你的仆从攻击发出风刃，并令你的仆从用风反击攻击者"
 			]
 			id: "45D435F1608EB8CF"
 			rewards: [
@@ -2986,7 +3078,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -3858,7 +3950,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["19C81AC6824E6C0D"]
+			dependencies: [
+				"19C81AC6824E6C0D"
+				"0C831E050DF74EC0"
+			]
 			description: ["放入&a暗夜立方&r中时，保有创造飞行能力和飞行挖掘补偿，以及不朽"]
 			id: "1197B2A1B7612317"
 			invisible: true
@@ -4063,7 +4158,7 @@
 			description: [
 				"能够幻化模仿一切食物的神奇的调味料，破坏紫颂植株有概率获得种子"
 				""
-				"种子必须种植在沃土（无尽沃土不行）耕地上，生长很缓慢，但是本包中可以通过对着植株使用骨块来快速获得产物。"
+				"种子必须种植在沃土耕地上，生长很缓慢且不可催熟，但是本包中可以通过对着植株使用骨块来快速获得产物。"
 				""
 				"在烹饪仪式上，以&e12&r个幻味草为材料，能够复制一份任意食物，但是幻味草的模仿仅限于表面，无法复制特殊效果"
 				""
@@ -4251,7 +4346,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -12.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0A077594F465E1F1"]
@@ -4372,7 +4467,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -11.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["35E79D000C349682"]
@@ -4669,7 +4764,9 @@
 				"0A077594F465E1F1"
 			]
 			description: [
-				"装备后可以记录释放的聚晶，根据记录的聚晶种类总数获得&e幸运值和巫法最终伤害&r的加成"
+				"装备后会读取你的施法历史，根据记录的聚晶种类总数获得&e幸运值和巫法最终伤害&r的加成，根据聚晶的系别增加&e对应系别的强效&r，根据施法耗能增加&e灵魂消耗减免&r"
+				""
+				"不洁卷轴内置有一个聚晶槽，按下&e&lR&r键可以发动不洁卷轴中的聚晶"
 				""
 				"放入&a暗夜立方&r时，转而提高仆从伤害和仆从无敌帧减免"
 				""
@@ -4692,7 +4789,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -14.0d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -4761,7 +4858,7 @@
 				type: "checkmark"
 			}]
 			title: "伟大进发"
-			x: 10.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -4880,7 +4977,266 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -14.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["18442EC41414DB90"]
+			description: [
+				"精致存储是一款懒人存储，它的基础组成非常简单，由&e一个控制器&r担任一整个&6存储系统的核心&r。将一个&e磁盘驱动器&r与存储系统相连，然后在驱动器里插入&e磁盘&r，存储系统就有了&6存储空间&r。再将一个&e终端（通常是合成终端）&r与存储系统相连，玩家便能够通过终端与存储空间进行&6交互&r了。"
+				""
+				"{ \"text\": \"点击前往购买存储磁盘（后期可以购买无限磁盘）\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2A649853ED144FF3\" } }"
+				""
+				"&7整合包添加了精致存储的组件拥有仿机械动力的外观的资源包"
+				""
+				"&7（普通的控制器需要FE能量来运作，然而由于发电一般由科技模组完成，因此整合包通过直接给予创造模式控制器来免去供能的步骤）"
+			]
+			icon: "refinedstorage:creative_controller"
+			id: "38168500AB4AA3D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0DA888D555C7E2C5"
+					table_id: 6481225399731052398L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00EB1BCD4BA4187B"
+					table_id: 4494245459698922212L
+					type: "choice"
+				}
+				{
+					id: "0EA417163C4B741C"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+				{
+					id: "1D60314D5993C052"
+					item: "refinedstorage:16k_storage_part"
+					type: "item"
+				}
+				{
+					id: "0F137D9CE16FF856"
+					item: "refinedstorage:storage_housing"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "数字化时代的存储"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				id: "1CF95E5C36BC39F6"
+				type: "advancement"
+			}]
+			title: "精致存储"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["38168500AB4AA3D1"]
+			description: [
+				"将无线发送器连接上存储系统之后，若玩家在发送器范围内即可通过远程终端访问存储系统（手持&e&l右键&r打开或者按下快捷键&l&eCtrl+G&r打开，远程终端放在饰品栏或者物品栏均可以快捷键打开）"
+				""
+				"在无线发送器内装入范围升级可以扩大发送器的有效范围。装入无限范围增幅卡即可在同一维度内任何地方连接到存储系统"
+			]
+			icon: "refinedstorage:wireless_transmitter"
+			id: "43264E0D208A90D7"
+			rewards: [{
+				id: "74F25B1FB25B8087"
+				item: "refinedstorageaddons:creative_wireless_crafting_grid"
+				type: "item"
+			}]
+			subtitle: "摩西摩西~"
+			tasks: [
+				{
+					id: "0A712E6E42CBEAF9"
+					item: "refinedstorage:wireless_transmitter"
+					type: "item"
+				}
+				{
+					id: "118EFD235A27A1A5"
+					item: "rsinfinitybooster:infinity_card"
+					type: "item"
+				}
+			]
+			title: "远程使用"
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43264E0D208A90D7"]
+			description: ["能够在任何维度任何地方连接上你的存储系统"]
+			id: "32797451D61D46AC"
+			rewards: [{
+				count: 4
+				id: "7DFEA2695AA1CAAB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Anywhere~"
+			tasks: [{
+				id: "15FA9C1F439EAAA2"
+				item: "rsinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["45A7D81C025C0DAF"]
+			description: [
+				"提高小刀的攻击力，提高平底锅武器的攻击速度"
+				""
+				"火焰伤害减免也能增强前期生存能力"
+			]
+			id: "48FC7E7314C7B45C"
+			rewards: [{
+				id: "07664884032ACC46"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						RepairCost: 0
+						Unbreakable: 1b
+						display: {
+							Name: "{\"text\":\"猛火\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "-这些做饭的会杀人？-对，做完饭就杀"
+			tasks: [{
+				id: "497D809DE80C9C80"
+				item: "curlamoety:kitchen_gloves"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6247CE3FF35DA46D"]
+			description: ["提高一般场景下生存能力的卷轴"]
+			id: "0586480005E1F17C"
+			rewards: [
+				{
+					id: "5B5BE4448D5193F6"
+					item: {
+						Count: 1
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CAB5DC0BA4B8BE0"
+					item: "minecraft:cooked_chicken"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "21A211A31AE57FB3"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "可不能死在这种地方！"
+			tasks: [{
+				id: "5AF524355177687D"
+				item: "enigmaticaddons:survivor_scroll"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6247CE3FF35DA46D"]
+			description: ["探测宝藏并提升野外移动力的卷轴"]
+			id: "1E6DBFF070F2DA30"
+			rewards: [{
+				count: 4
+				id: "04F59D6F5CCD9850"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "在附近发现金！"
+			tasks: [{
+				id: "6F49735F4586B9D7"
+				item: "enigmaticaddons:explorer_scroll"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6247CE3FF35DA46D"]
+			description: ["杀得越多就越坚韧的卷轴"]
+			id: "445D114176403D6B"
+			rewards: [{
+				count: 4
+				id: "2D96D3E73F67C76D"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "谁是下一个？"
+			tasks: [{
+				id: "6812F87E7E8F31D9"
+				item: "enigmaticaddons:hunter_scroll"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6904CD36715B131E"]
+			description: [
+				"神明所创造的第一件物品，一块不起眼的石头"
+				""
+				"源自自然一切事物的精华汇聚于此，一块混沌的立方"
+			]
+			hide_dependency_lines: true
+			id: "0C831E050DF74EC0"
+			rewards: [
+				{
+					id: "6FE686AB889541D6"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					id: "6F99C5213DCC6833"
+					item: "enigmaticaddons:ichor_droplet"
+					type: "item"
+				}
+				{
+					id: "56384735846BE060"
+					item: "enigmaticlegacy:astral_dust"
+					type: "item"
+				}
+				{
+					id: "38E6B4C8680F5425"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "尽管不是术石……"
+			tasks: [{
+				id: "38F934CBCBDBFDA9"
+				item: "curlamoety:chaos_cube"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.5d
 		}
 	]
 	title: "初心者之路"

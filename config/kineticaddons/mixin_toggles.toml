@@ -65,17 +65,25 @@ anvilenchantment.ItemAndBlockBehaviorMixin$BowItemFix = true
 # Infinite Fluid Bucket: Grants buckets infinite properties, allowing endless filling and emptying.
 anvilenchantment.InfinityBucketMixins = true
 
-# 万能采集: 允许通过特定附魔（如精准采集等）直接采集树叶等脆弱方块。
-# Universal Harvesting: Allows harvesting fragile blocks like leaves with specific enchantments.
+# 万能工具安全掉落修正: 不再递归调用方块掉落表；非名单方块严格遵守原版/数据包掉落，只有配置名单方块才强制掉落自身，并额外处理树叶、草、蜘蛛网等剪刀类安全掉落。
+# Safe Omni-Tool Drop Fix: Avoids recursive loot calls; non-listed blocks follow vanilla/datapack loot rules, only configured blocks are force-dropped, with safe shears-like drops for leaves, grass, cobwebs, etc.
 anvilenchantment.ItemAndBlockBehaviorMixin$BlockFix = true
 
-# 易碎附魔逻辑: 修改物品耐久计算机制，支持易碎或特殊耐久损耗规则判定。
-# Fragile Enchantment Logic: Modifies item durability mechanics to support fragile or special wear rules.
+# 万能工具附魔台候选池注入: 30级及以上时将万能工具作为超级宝藏附魔加入原版权重候选池，使用 VERY_RARE 低权重，常见工具池中概率大约 5%。
+# Omni-Tool Weighted Enchanting Pool: At level 30+, adds Omni-Tool as a super treasure enchantment into the vanilla weighted pool with VERY_RARE weight, roughly around 5% in common tool pools.
+anvilenchantment.ItemAndBlockBehaviorMixin$EnchantmentHelperFix = true
+
+# 工具与耐久综合修正: 处理万能工具的正确工具判定/Jade可挖掘显示，同时保留易碎诅咒等耐久损耗规则。
+# Tool and Durability Fixes: Handles Omni-Tool correct-tool checks/Jade harvestability display while keeping Breaking Curse and other durability rules working.
 anvilenchantment.ItemAndBlockBehaviorMixin$ItemStackFix = true
 
-# 自动熔炼支持: 允许“熔炼”类附魔在挖掘方块和开启战利品箱时直接生效。
-# Auto-Smelt Support: Allows smelting enchantments to trigger directly during mining and looting.
+# 挖掘流程与经验修正: 支持熔炼附魔在挖掘流程中生效，并在万能工具强制掉落名单方块时压制该次方块经验。
+# Mining Flow and XP Fix: Supports Smelter during block breaking and suppresses block XP when Omni-Tool force-drops configured blocks.
 anvilenchantment.ItemAndBlockBehaviorMixin$ServerPlayerGameModeFix = true
+
+# 刷怪笼经验修正: 当万能工具通过强制掉落名单挖下刷怪笼时，取消刷怪笼自身 spawnAfterBreak 产生的经验；普通破坏仍保持原版经验。
+# Spawner XP Fix: Cancels SpawnerBlock spawnAfterBreak XP only when Omni-Tool force-drops a configured spawner; normal breaking keeps vanilla XP behavior.
+anvilenchantment.ItemAndBlockBehaviorMixin$SpawnerBlockFix = true
 
 # 引雷优化: 强化三叉戟的引雷天气判定逻辑，放宽雷雨天气的严苛要求。
 # Channeling Tweaks: Optimizes Trident Channeling weather checks, relaxing the strict thunderstorm requirement.

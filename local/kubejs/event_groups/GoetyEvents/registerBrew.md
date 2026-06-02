@@ -22,23 +22,60 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| addCapacity | Object, int |  | void | ✘ |
-| setCapacityLevels | Object |  | void | ✘ |
-| removeCapacity | Object |  | void | ✘ |
-| addAugmentation | Object, String, int |  | void | ✘ |
-| removeCatalyst | Object |  | void | ✘ |
-| removeAugmentation | Object |  | void | ✘ |
 | addSpecialBrewEffect | Object, String |  | SpecialBrewEffectBuilder | ✘ |
 | removeEntityCatalyst | Object |  | void | ✘ |
+| removeAugmentation | Object |  | void | ✘ |
+| removeCapacity | Object |  | void | ✘ |
+| addCapacity | Object, int |  | void | ✘ |
+| setCapacityLevels | Object |  | void | ✘ |
+| addAugmentation | Object, String, int |  | void | ✘ |
+| removeCatalyst | Object |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
-| success |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
-| cancel |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
+| cancel |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
+| success |  |  | Object | ✘ |
 
 
 ### Documented members:
+
+- `SpecialBrewEffectBuilder addSpecialBrewEffect(Object item, String effectType)`
+
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+  - effectType: String- 效果类型（字符串），如 'bats', 'bees', 'grow', 'explode' 等
+
+```
+注册特殊效果的 brewing 配方（支持链式调用）
+```
+
+- `void removeEntityCatalyst(Object entity)`
+
+  Parameters:
+  - entity: Object- 实体类型ID（字符串）
+
+```
+移除实体催化剂
+```
+
+- `void removeAugmentation(Object item)`
+
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+
+```
+移除增强剂
+```
+
+- `void removeCapacity(Object item)`
+
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+
+```
+移除容量剂
+```
 
 - `void addCapacity(Object item, int level)`
 
@@ -57,15 +94,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 设置容量等级增量表
-```
-
-- `void removeCapacity(Object item)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-
-```
-移除容量剂
 ```
 
 - `void addAugmentation(Object item, String modifier, int level)`
@@ -88,34 +116,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 移除物品催化剂
 ```
 
-- `void removeAugmentation(Object item)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-
-```
-移除增强剂
-```
-
-- `SpecialBrewEffectBuilder addSpecialBrewEffect(Object item, String effectType)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-  - effectType: String- 效果类型（字符串），如 'bats', 'bees', 'grow', 'explode' 等
-
-```
-注册特殊效果的 brewing 配方（支持链式调用）
-```
-
-- `void removeEntityCatalyst(Object entity)`
-
-  Parameters:
-  - entity: Object- 实体类型ID（字符串）
-
-```
-移除实体催化剂
-```
-
 - `Object exit(Object var0)`
 
   Parameters:
@@ -134,11 +134,22 @@ Stops the event with default exit value. Execution will be stopped **immediately
 `exit` denotes a `default` outcome.
 ```
 
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
+- `Object cancel(Object var0)`
 
-`success` denotes a `true` outcome.
+  Parameters:
+  - var0: Object
+
+```
+Cancels the event with the given exit value. Execution will be stopped **immediately**.
+
+`cancel` denotes a `false` outcome.
+```
+
+- `Object cancel()`
+```
+Cancels the event with default exit value. Execution will be stopped **immediately**.
+
+`cancel` denotes a `false` outcome.
 ```
 
 - `Object success(Object var0)`
@@ -152,22 +163,11 @@ Stops the event with the given exit value. Execution will be stopped **immediate
 `success` denotes a `true` outcome.
 ```
 
-- `Object cancel()`
+- `Object success()`
 ```
-Cancels the event with default exit value. Execution will be stopped **immediately**.
+Stops the event with default exit value. Execution will be stopped **immediately**.
 
-`cancel` denotes a `false` outcome.
-```
-
-- `Object cancel(Object var0)`
-
-  Parameters:
-  - var0: Object
-
-```
-Cancels the event with the given exit value. Execution will be stopped **immediately**.
-
-`cancel` denotes a `false` outcome.
+`success` denotes a `true` outcome.
 ```
 
 

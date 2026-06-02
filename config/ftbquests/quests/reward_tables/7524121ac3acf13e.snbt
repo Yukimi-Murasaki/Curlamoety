@@ -2,7 +2,7 @@
 	icon: "goety:warlock_sash"
 	id: "7524121AC3ACF13E"
 	loot_size: 1
-	order_index: 10
+	order_index: 9
 	rewards: [
 		{ item: "goety:warlock_sash" }
 		{

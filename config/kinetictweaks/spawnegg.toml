@@ -1,0 +1,14 @@
+
+# 可投掷刷怪蛋设置
+#Throwable Spawn Eggs 
+[spawn_eggs]
+	# 是否允许将刷怪蛋像雪球一样投掷出去以生成实体。
+	#Allow throwing Spawn Eggs like snowballs to spawn entities.
+	enable = false
+	# 刷怪蛋投掷的飞行速度。
+	#Throwing speed of the Spawn Egg projectile.
+	speed = 1.5
+	# 投掷的散布/不精确度 (数值越小越准)。
+	#Throwing inaccuracy (Lower value means more accurate).
+	inaccuracy = 0.2
+

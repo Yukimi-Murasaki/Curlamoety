@@ -2,7 +2,7 @@
 	icon: "minecraft:oak_log"
 	id: "1A70E00CDF0F4435"
 	loot_size: 1
-	order_index: 7
+	order_index: 6
 	rewards: [
 		{ count: 64, item: "minecraft:oak_log" }
 		{ count: 64, item: "minecraft:spruce_log" }

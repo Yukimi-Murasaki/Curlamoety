@@ -1,16 +1,10 @@
 //let $DamageType = Java.loadClass('net.minecraft.world.damagesource.DamageTypes');
 EntityEvents.hurt(event =>{
-    const source = event.source;
-    const entity = event.entity;
+    const {source , entity , level } = event
+    const {x,y,z} = entity
     const actual = source.actual;
-    if (actual == null||!actual.isPlayer())return;
+    if( actual == null)return;
     const itemId = actual.mainHandItem.id;
-
-    if (actual.persistentData.champion == 1){
-        let damage = event.getDamage()
-        let health = actual.getHealth()
-        actual.setHealth(health + damage*0.005)
-    }
 
     switch(itemId){
         case 'curlamoety:zombie_arm':
@@ -59,4 +53,40 @@ EntityEvents.hurt(event =>{
                 })
             }
     }
+
+    if (actual.persistentData.armorset == "champion"){
+        let damage = event.getDamage()
+        let health = actual.getHealth()
+        actual.setHealth(health + damage*0.005)
+    }else if(actual.persistentData.armorset == "golden"){
+        entity.potionEffects.add("goety:gold_touched",100,1)
+    }else if(actual.persistentData.armorset == "arctic"){
+        entity.potionEffects.add("goety:freezing",120,0)
+    }
+
+    if (!actual.isPlayer())return;
+    
+    
+    if(actual.persistentData.armorset == "ignitium"){//腾炎暴击
+            if(source.getType()== "cataclysm.flame_strike")return;
+            if(source.getType()== "explosion.player")return;
+            if(source.getType()== "onFire")return;
+            if(entity.potionEffects.isActive("cataclysm:blazing_brand")){
+                if(actual.persistentData.generic_cd == 0||actual.persistentData.generic_cd == -1){
+                    let nether_power = actual.getAttribute("goety_revelation:nether_power").getValue()
+                    let spell_power = actual.getAttribute("goety_revelation:spell_power").getValue()
+                    let spell_power_multiplier = actual.getAttribute("goety_revelation:spell_power_multiplier").getValue()
+                    let summon = level.createEntity("cataclysm:flame_strike")
+                    summon.setOwner(actual)
+                    summon.setPosition(x,y,z)
+                    summon.setRadius(3)
+                    summon.setDamage(3+(nether_power+spell_power)*spell_power_multiplier*0.35)
+                    summon.setHpDamage(1)
+                    summon.setDuration(140)
+                    summon.spawn()
+                    actual.persistentData.generic_cd = 100
+                }
+            }
+        }
+
 })

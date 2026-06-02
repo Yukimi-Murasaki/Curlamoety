@@ -2,7 +2,7 @@
 	icon: "goety:dark_ingot"
 	id: "3871CA51BBB414D3"
 	loot_size: 1
-	order_index: 14
+	order_index: 13
 	rewards: [
 		{ count: 4, item: "goety:cursed_ingot", weight: 10.0f }
 		{ count: 3, item: "goety:dark_ingot", weight: 2.0f }

@@ -502,11 +502,13 @@ ServerEvents.recipes(event=>{//kjs goety方法
     //疾驰之靴
     event.recipes.goety.ritual('curlamoety:runner_boots', 'goety:craft', [
         'goety:gale_fabric',
-        'cataclysm:witherite_ingot',
+        'curlamoety:redstone_gear',
         'goety:gale_fabric',
         'goety:gale_fabric',
         'goety:launch_focus',
         'enigmaticaddons:earth_heart_fragment',
+        'minecraft:dragon_breath',
+        'immersive_aircraft:eco_engine'
     ])
     .activationItem('curlamoety:hiker_boots')
     .craftType('forge')  
@@ -863,7 +865,8 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .entityToConvertInto('goetyawaken:nameless_one_servant')
     .id("curlamoety:convert_nameless_one_servant")
 
-    event.recipes.goety.ritual('2x curlamoety:perfect_matter','goety:craft',[//完美物质
+    //完美物质
+    event.recipes.goety.ritual('2x curlamoety:perfect_matter','goety:craft',[
         '#perfect:fire_small',
         '#perfect:ice_small',
         '#perfect:poison_small',
@@ -892,7 +895,8 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(28)
     .id("curlamoety:perfect_matter2")
 
-    event.recipes.goety.ritual('enigmaticlegacy:the_cube','goety:craft',[//非欧
+    //非欧
+    event.recipes.goety.ritual('enigmaticlegacy:the_cube','goety:craft',[
         'enigmaticlegacy:golem_heart',
         'enigmaticlegacy:angel_blessing',
         'enigmaticlegacy:ocean_stone',
@@ -912,7 +916,8 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(20)
     .id("curlamoety:the_cube")
 
-    event.recipes.goety.ritual('goety:undeath_potion','goety:craft',[//万灵药
+    //万灵药
+    event.recipes.goety.ritual('goety:undeath_potion','goety:craft',[
         'goety:unholy_blood',
         'easy_villagers:villager',
         'minecraft:totem_of_undying',
@@ -1465,7 +1470,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .id("curlamoety:mazebreaker_pickaxe")
 
     //混沌立方
-    event.recipes.goety.ritual('2x curlamoety:chaos_cube', 'goety:craft', [
+    event.recipes.goety.ritual('curlamoety:chaos_cube', 'goety:craft', [
         'enigmaticlegacy:golem_heart',
         'enigmaticlegacy:ocean_stone',
         'enigmaticlegacy:angel_blessing',
@@ -1486,7 +1491,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .id("curlamoety:chaos_cube")
 
     //巫法极点
-    event.recipes.goety.ritual('2x curlamoety:goal_ty', 'goety:craft', [
+    event.recipes.goety.ritual('curlamoety:goal_ty', 'goety:craft', [
         'goety_revelation:broken_halo',
         'goetyawaken:gilded_ingot',
         'goetyawaken:nether_reactor_core',
@@ -1507,7 +1512,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .id("curlamoety:goal_ty")
 
     //厄难本源
-    event.recipes.goety.ritual('2x curlamoety:calamity_source', 'goety:craft', [
+    event.recipes.goety.ritual('curlamoety:calamity_source', 'goety:craft', [
         'cataclysm:ignitium_ingot',
         'cataclysm:essence_of_the_storm',
         'cataclysm:cursium_ingot',
@@ -1528,7 +1533,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .id("curlamoety:calamity_source")
 
     //创生之暮
-    event.recipes.goety.ritual('2x curlamoety:twilight_sparkle', 'goety:craft', [
+    event.recipes.goety.ritual('curlamoety:twilight_sparkle', 'goety:craft', [
         'twilightforest:thorn_rose',
         'curlamoety:chlorophium_ingot',
         'twilightforest:knightmetal_block',
@@ -1750,27 +1755,465 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(30)
     .research("god_forging")
     .entityToSacrificeTag("goetydelight:cow")
-    .entityToSacrificeDisplayName("牛")
+    .entityToSacrificeDisplayName("entity.minecraft.cow")
     .id("curlamoety:ascension_pizza")
 
-    //奥术方匣
-    event.remove("goety:esoteric_tesseract")
-    event.recipes.goety.ritual("goety:esoteric_tesseract",'goety:craft',[
-        "minecraft:respawn_anchor",
-        "enigmaticlegacy:extradimensional_eye",
-        "waystones:warp_stone",
-        "goety:cursed_cage",
-        "minecraft:ender_chest",
-        "minecraft:ender_chest",
-        "goety:waystone",
-        "goety:waystone",
+    //飞翔聚晶
+    event.remove('goety:focus/flying_focus')
+    event.recipes.goety.ritual('goety:flying_focus','goety:craft',[
+        "immersive_aircraft:propeller",
+        "immersive_aircraft:sail",
+        "immersive_aircraft:engine",
+        "immersive_aircraft:sail",
+        "goetydelight:shade_stove",
+        "immersive_aircraft:hull"
     ])
-    .activationItem("goety:flame_capture")
-    .craftType("forge")
-    .soulCost(10)
+    .activationItem("goety:launch_focus")
+    .craftType("sky")
+    .soulCost(1)
     .duration(10)
-    .id("curlamoety:esoteric_tesseract")
-    
+    .id("curlamoety:flying_focus")
+
+    //强化红石块
+    event.remove('goety:reinforced_redstone_block')
+    event.recipes.goety.ritual('goety:reinforced_redstone_block','goety:craft',[
+        "curlamoety:redstone_gear",
+        "curlamoety:redstone_gear",
+        "curlamoety:redstone_gear",
+        "curlamoety:redstone_gear",
+        "goety:cursed_metal_block",
+        "minecraft:obsidian",
+        "goety:cursed_metal_block",
+        "minecraft:obsidian",
+    ])
+    .activationItem("minecraft:redstone_block")
+    .craftType("forge")
+    .soulCost(1)
+    .duration(10)
+    .research("terminus")
+    .id("curlamoety:reinforced_redstone_block")
+
+    //炽铁
+    event.remove("twilightforest:equipment/fiery_fiery_helmet")
+    event.remove("twilightforest:equipment/fiery_helmet")
+    event.remove("twilightforest:equipment/fiery_fiery_chestplate")
+    event.remove("twilightforest:equipment/fiery_chestplate")
+    event.remove("twilightforest:equipment/fiery_fiery_leggins")
+    event.remove("twilightforest:equipment/fiery_leggins")
+    event.remove("twilightforest:equipment/fiery_fiery_boots")
+    event.remove("twilightforest:equipment/fiery_boots")
+    event.recipes.goety.ritual(Item.of('twilightforest:fiery_helmet', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:blaze_rod",
+        "enigmaticaddons:ichor_droplet",
+        "goety:mystic_core",
+        "leather",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+    ])
+    .activationItem("minecraft:netherite_helmet")
+    .craftType("master_forge")
+    .soulCost(30)
+    .duration(30)
+    .research("bygone")
+    .id("curlamoety:fiery_helmet")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:fiery_chestplate', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:blaze_rod",
+        "enigmaticaddons:ichor_droplet",
+        "goety:mystic_core",
+        "leather",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+    ])
+    .activationItem("minecraft:netherite_chestplate")
+    .craftType("master_forge")
+    .soulCost(30)
+    .duration(30)
+    .research("bygone")
+    .id("curlamoety:fiery_chestplate")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:fiery_leggings', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:blaze_rod",
+        "enigmaticaddons:ichor_droplet",
+        "goety:mystic_core",
+        "leather",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+    ])
+    .activationItem("minecraft:netherite_leggings")
+    .craftType("master_forge")
+    .soulCost(30)
+    .duration(30)
+    .research("bygone")
+    .id("curlamoety:fiery_leggings")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:fiery_boots', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:blaze_rod",
+        "enigmaticaddons:ichor_droplet",
+        "goety:mystic_core",
+        "leather",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+        "twilightforest:fiery_ingot",
+    ])
+    .activationItem("minecraft:netherite_boots")
+    .craftType("master_forge")
+    .soulCost(30)
+    .duration(30)
+    .research("bygone")
+    .id("curlamoety:fiery_boots")
+
+    //雪怪
+    event.remove("twilightforest:equipment/yeti_helmet")
+    event.remove("twilightforest:equipment/yeti_chestplate")
+    event.remove("twilightforest:equipment/yeti_leggings")
+    event.remove("twilightforest:equipment/yeti_boots")
+    event.recipes.goety.ritual(Item.of('twilightforest:yeti_helmet', '{Unbreakable:1b}'),'goety:craft',[
+        "goety:chill_fabric",
+        "twilightforest:ice_bomb",
+        "goety:mystic_core",
+        "goety:chill_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+    ])
+    .activationItem("twilightforest:arctic_helmet")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:yeti_helmet")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:yeti_chestplate', '{Unbreakable:1b}'),'goety:craft',[
+        "goety:chill_fabric",
+        "twilightforest:ice_bomb",
+        "goety:mystic_core",
+        "goety:chill_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+    ])
+    .activationItem("twilightforest:arctic_chestplate")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:yeti_chestplate")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:yeti_leggings', '{Unbreakable:1b}'),'goety:craft',[
+        "goety:chill_fabric",
+        "twilightforest:ice_bomb",
+        "goety:mystic_core",
+        "goety:chill_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+    ])
+    .activationItem("twilightforest:arctic_leggings")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:yeti_leggings")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:yeti_boots', '{Unbreakable:1b}'),'goety:craft',[
+        "goety:chill_fabric",
+        "twilightforest:ice_bomb",
+        "goety:mystic_core",
+        "goety:chill_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+        "twilightforest:alpha_yeti_fur",
+    ])
+    .activationItem("twilightforest:arctic_boots")
+    .craftType("master_forge")
+    .soulCost(30)
+    .duration(30)
+    .id("curlamoety:yeti_boots")
+
+    //余烬锭
+    event.recipes.goety.ritual("3x goetyawaken:gilded_ingot",'goety:craft',[
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_ingot",
+        "minecraft:gold_block",
+        "minecraft:gold_block",
+        "minecraft:gold_block",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+    ])
+    .activationItem("enigmaticaddons:bless_amplifier")
+    .craftType("expert_nether")
+    .soulCost(100)
+    .duration(20)
+    .research("bygone")
+    .id("curlamoety:gilded_ingot")
+
+    //骑士
+    event.remove("twilightforest:equipment/knightmetal_helmet")
+    event.remove("twilightforest:equipment/knightmetal_chestplate")
+    event.remove("twilightforest:equipment/knightmetal_leggings")
+    event.remove("twilightforest:equipment/knightmetal_boots")
+    event.recipes.goety.ritual(Item.of('twilightforest:knightmetal_helmet', '{Unbreakable:1b}'),'goety:craft',[
+        "leather_helmet",
+        "curlamoety:cursed_fragment",
+        "goety:animation_core",
+        "goety:spirit_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+    ])
+    .activationItem("minecraft:iron_helmet")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:knightmetal_helmet")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:knightmetal_chestplate', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:leather_chestplate",
+        "curlamoety:cursed_fragment",
+        "goety:animation_core",
+        "goety:spirit_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+    ])
+    .activationItem("minecraft:iron_chestplate")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:knightmetal_chestplate")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:knightmetal_leggings', '{Unbreakable:1b}'),'goety:craft',[
+        "minecraft:leather_leggings",
+        "curlamoety:cursed_fragment",
+        "goety:animation_core",
+        "goety:spirit_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+    ])
+    .activationItem("minecraft:iron_leggings")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:knightmetal_leggings")
+
+    event.recipes.goety.ritual(Item.of('twilightforest:knightmetal_boots', '{Unbreakable:1b}'),'goety:craft',[
+        "leather_boots",
+        "curlamoety:cursed_fragment",
+        "goety:animation_core",
+        "goety:spirit_fabric",
+        "goety:cursed_ingot",
+        "goety:cursed_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+        "twilightforest:knightmetal_ingot",
+    ])
+    .activationItem("minecraft:iron_boots")
+    .craftType("master_forge")
+    .soulCost(20)
+    .duration(30)
+    .id("curlamoety:knightmetal_boots")
+
+    //巫法极点复制
+    event.recipes.goety.ritual("2x curlamoety:calamity_source","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("curlamoety:calamity_source")
+    .craftType("magic")
+    .soulCost(6666)
+    .duration(5)
+    .id("curlamoety:copy/calamity_source")
+
+    event.recipes.goety.ritual("2x curlamoety:twilight_sparkle","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("curlamoety:twilight_sparkle")
+    .craftType("magic")
+    .soulCost(6666)
+    .duration(5)
+    .id("curlamoety:copy/twilight_sparkle")
+
+    event.recipes.goety.ritual("2x curlamoety:chaos_cube","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("curlamoety:chaos_cube")
+    .craftType("magic")
+    .soulCost(6666)
+    .duration(5)
+    .id("curlamoety:copy/chaos_cube")
+
+    event.recipes.goety.ritual("2x goety:philosophers_stone","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("goety:philosophers_stone")
+    .craftType("magic")
+    .soulCost(1500)
+    .duration(1)
+    .id("curlamoety:copy/philosophers_stone")
+
+    event.recipes.goety.ritual("2x enigmaticlegacy:earth_heart","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("enigmaticlegacy:earth_heart")
+    .craftType("magic")
+    .soulCost(500)
+    .duration(1)
+    .id("curlamoety:copy/earth_heart")
+
+    event.recipes.goety.ritual("2x goetyawaken:soul_sapphire","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("goetyawaken:soul_sapphire")
+    .craftType("magic")
+    .soulCost(2500)
+    .duration(1)
+    .id("curlamoety:copy/soul_sapphire")
+
+    event.recipes.goety.ritual("2x goety:soul_ruby","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("goety:soul_ruby")
+    .craftType("magic")
+    .soulCost(500)
+    .duration(1)
+    .id("curlamoety:copy/soul_ruby")
+
+    event.recipes.goety.ritual("2x goety:heart_of_the_night","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("goety:heart_of_the_night")
+    .craftType("magic")
+    .soulCost(100)
+    .duration(1)
+    .id("curlamoety:copy/heart_of_the_night")
+
+    event.recipes.goety.ritual("2x goetydelight:metamorphic_scent_fruit","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("goetydelight:metamorphic_scent_fruit")
+    .craftType("magic")
+    .soulCost(100)
+    .duration(1)
+    .id("curlamoety:copy/metamorphic_scent_fruit")
+
+    event.recipes.goety.ritual("2x enigmaticlegacy:abyssal_heart","goety:craft",[
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+    ])
+    .activationItem("enigmaticlegacy:abyssal_heart")
+    .craftType("magic")
+    .soulCost(10000)
+    .duration(5)
+    .id("curlamoety:copy/abyssal_heart")
+
+    event.recipes.goety.ritual("2x goety_revelation:revelation","goety:craft",[
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+    ])
+    .activationItem("goety_revelation:revelation")
+    .craftType("magic")
+    .soulCost(10000)
+    .duration(10)
+    .id("curlamoety:copy/revelation")
+
+    event.recipes.goety.ritual("2x goety:undeath_potion","goety:craft",[
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+        "curlamoety:goal_ty",
+    ])
+    .activationItem("goety:undeath_potion")
+    .craftType("magic")
+    .soulCost(10000)
+    .duration(5)
+    .id("curlamoety:copy/undeath_potion")
+
+    event.recipes.goety.ritual("2x enigmaticlegacy:etherium_ingot","goety:craft",[
+        "curlamoety:goal_ty"
+    ])
+    .activationItem("enigmaticlegacy:etherium_ingot")
+    .craftType("magic")
+    .soulCost(1000)
+    .duration(1)
+    .id("curlamoety:copy/etherium_ingot")
+
+    //蚀槿
+    // event.recipes.goety.ritual("enigmaticdelicacy:shi_jin",'goety:craft',[
+    //     "enigmaticaddons:evil_dagger",
+    //     'enigmaticlegacy:evil_ingot',
+    //     'enigmaticlegacy:ender_rod',
+    //     'minecraft:nether_star',
+    //     'goety:fanged_dagger',
+    //     'goetydelight:dark_knife',
+    //     'goety:hunger_core',
+    //     'netherite_ingot',
+    //     'enigmaticlegacy:evil_essence',
+    //     'enigmaticlegacy:evil_essence',
+    //     'curlamoety:biogenesium_ingot',
+    //     'curlamoety:biogenesium_ingot',
+    // ])
+    // .activationItem("enigmaticlegacy:abyssal_heart")
+    // .craftType('forge')
+    // .soulCost(100)
+    // .duration(30)
+    // .id("curlamoety:shi_jin")
 
 })
 ServerEvents.recipes(event=>{//无封装方法

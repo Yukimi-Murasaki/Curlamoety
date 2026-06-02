@@ -216,13 +216,13 @@
     I:ArtificialFlowerRandomInstantaneousEffectModifier=80
 
     # The damage modifier when spear is powered. [range: 0.0 ~ 100.0, default: 2.5, synchronized: yes]
-    D:AstralSpearPoweredModifier=2.5
+    D:AstralSpearPoweredModifier=10.0
 
     # How much less effective armor will be for those who bear the charm. Measured as percentage. [range: 50 ~ 100, default: 100, synchronized: yes]
-    I:CharmofHellBladeArmorDebuff=100
+    I:CharmofHellBladeArmorDebuff=75
 
     # The damage boost for who bear the charm. Measured as percentage. [range: 10 ~ 200, default: 100, synchronized: yes]
-    I:CharmofHellBladeDamageModifier=100
+    I:CharmofHellBladeDamageModifier=60
 
     # The Cooldown to unequip this Charm. Defined as tick. [range: 0 ~ 32768, default: 1200, synchronized: yes]
     I:CharmofHellBladeEquipCooldown=1200
@@ -231,16 +231,16 @@
     D:CharmofHellBladeHealMultiplier=0.8
 
     # The kill threshold of Hell Blade Charm to active the skill with Ring of Seven Curses. [range: 0 ~ 100, default: 50, synchronized: yes]
-    I:CharmofHellBladeKillCursedThreshold=50
+    I:CharmofHellBladeKillCursedThreshold=100
 
     # The kill threshold of Hell Blade Charm to active the skill. [range: 0 ~ 100, default: 75, synchronized: yes]
-    I:CharmofHellBladeKillThreshold=75
+    I:CharmofHellBladeKillThreshold=100
 
     # The heal amount per second when you're in lava with this Charm. [range: 0.0 ~ 100.0, default: 2.0, synchronized: yes]
     D:CharmofScorchedSunLavaHealAmount=2.0
 
     # The lifesteal modifier provided by this charm when you attack a target on fire. Measured in percentage. [range: 0 ~ 100, default: 20, synchronized: yes]
-    I:CharmofScorchedSunLifestealModifier=20
+    I:CharmofScorchedSunLifestealModifier=5
 
     # The probability to resist damage when you are attacked with this charm. Measured in percentage. [range: 0 ~ 100, default: 10, synchronized: yes]
     I:CharmofScorchedSunResistanceProbability=10
@@ -264,7 +264,7 @@
     I:CurseofViolenceInvulnerableAttackModifier=200
 
     # The heal multiplier when attack during the invulnerable time provided by the Curse of Violence. Measured as percentage. [range: 0 ~ 100, default: 40, synchronized: yes]
-    I:CurseofViolenceInvulnerableHealMultiplier=40
+    I:CurseofViolenceInvulnerableHealMultiplier=10
 
     # Knockback Resistance increase provided by the Curse of Violence for absorbed curse. [range: 0.0 ~ 32768.0, default: 0.025, synchronized: yes]
     D:CurseofViolenceKnockbackResistanceBoost=0.025
@@ -301,13 +301,13 @@
     D:DisasterBroadswordCritBoost=1.5
 
     # The damage of range attack after you parried the projectiles with Disaster Broadsword successfully. [range: 0.0 ~ 100.0, default: 10.0, synchronized: yes]
-    D:DisasterBroadswordRangeAttackDamage=10.0
+    D:DisasterBroadswordRangeAttackDamage=20.0
 
     # The max amount of potion effect you can apply on the arrow. [range: 1 ~ 10, default: 4, synchronized: yes]
     I:DragonBreathBowMaxPotionAmount=4
 
     # The Damage Resistance to your own dragon breath damage. Defined as percentage. [range: 0 ~ 100, default: 60, synchronized: yes]
-    I:DragonBreathBowOwnerResistance=60
+    I:DragonBreathBowOwnerResistance=80
 
     # The attack damage boost of Emblem of Adventurer [range: 0.0 ~ 32768.0, default: 2.0, synchronized: yes]
     D:EmblemofAdventurerAttackDamageModifier=2.0
@@ -346,7 +346,7 @@
     B:ForgerGemEXPLevelNotValue=false
 
     # Whether to enable stricter detection for unbreakable forging when equipped the Forger's Gem. True for enable. [default: true, synchronized: yes]
-    B:ForgerGemStrictUnbreakableForge=true
+    B:ForgerGemStrictUnbreakableForge=false
 
     # List of items that will never be unbreakable. Examples: minecraft:iron_sword. Changing this option required game restart to take effect. [default: [enigmaticaddons:totem_of_malice], [twilightforest:glass_sword], synchronized: no]
     S:ForgerGemUnbreakableBlackList <
@@ -361,7 +361,7 @@
     I:ForgottenIceCrystalCooldown=240
 
     # The extra damage of ability of Forgotten Ice Crystal. [range: 0.0 ~ 32768.0, default: 2.0, synchronized: yes]
-    D:ForgottenIceCrystalExtraDamageBase=2.0
+    D:ForgottenIceCrystalExtraDamageBase=5.0
 
     # The extra damage ratio per every frozen second of ability of Forgotten Ice Crystal. [range: 0.0 ~ 32768.0, default: 0.01, synchronized: yes]
     D:ForgottenIceCrystalExtraDamagePerSec=0.01
@@ -373,7 +373,7 @@
     I:ForgottenIceCrystalResistance=30
 
     # The damage of thrown ichor spear [range: 0 ~ 32768, default: 4, synchronized: yes]
-    I:IchorSpearBaseDamage=4
+    I:IchorSpearBaseDamage=8
 
     # The amplifier of the ichor corrosion effect. [range: 1 ~ 32768, default: 1, synchronized: yes]
     I:IchorSpearEffectAmplifier=1
@@ -398,6 +398,13 @@
 
     # List of entities that will be affected as Golem by the Lost Engine. Examples: minecraft:iron_golem. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:LostEngineExtraGolemList <
+        goetyawaken:pale_golem_servant
+        goety:hostile_redstone_golem
+        goety:hostile_redstone_monstrosity
+        goetyawaken:hostile_mushroom_monstrosity
+        cataclysm:coral_golem
+        cataclysm:ender_golem
+        cataclysm:netherite_monstrosity
      >
 
     # The gravity multiplier of the Lost Engine. [range: 0.0 ~ 1.0, default: 0.4, synchronized: yes]
@@ -434,7 +441,7 @@
     I:PactofDarkNightAverageDamageResistance=16
 
     # The average life stealing modifier provided by Pact of Dark Night. [range: 0 ~ 100, default: 8, synchronized: yes]
-    I:PactofDarkNightAverageLifeSteal=4
+    I:PactofDarkNightAverageLifeSteal=2
 
     # The cooldown of Potion of Cosmic. Measured in ticks. [range: 0 ~ 32000, default: 2400, synchronized: yes]
     I:PotionofCosmicCooldown=2400
@@ -485,7 +492,7 @@
     I:RevivalLeafRegenerationTime=180
 
     # The damage boost of the Ring of Redemption. Measured in percentage. [range: 0 ~ 500, default: 20, synchronized: yes]
-    I:RingofRedemptionDamageBoost=20
+    I:RingofRedemptionDamageBoost=50
 
     # The damage resistance of the Ring of Redemption. Measured in percentage. [range: 0 ~ 100, default: 25, synchronized: yes]
     I:RingofRedemptionDamageResistance=25
@@ -496,8 +503,9 @@
     # The damage boost multiplier of the Ring of Ultimate Luxury . [range: 0.0 ~ 2.0, default: 0.5, synchronized: yes]
     D:RingofUltimateLuxuryDamageBoostMultiplier=0.5
 
-    # List of entities that will be affected as Golem by the Ring of Ultimate Luxury. Examples: minecraft:iron_golem. Changing this option required game restart to take effect. [default: , synchronized: no]
+    # List of entities that will be affected as Merchant by the Ring of Ultimate Luxury. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:RingofUltimateLuxuryExtraMerchantList <
+        goetyawaken:sorcerer_servant
      >
 
     # The damage boost on pet of Sanguinary Hunting Handbook. [range: 0.0 ~ 32768.0, default: 0.25, synchronized: yes]
@@ -507,10 +515,10 @@
     I:ScepterofExtradimensionalMaxCombatCount=5
 
     # The cooldown of Combat Mode when using continuously to long. Measured in ticks. [range: 100 ~ 32768, default: 150, synchronized: yes]
-    I:ScepterofExtradimensionalOverheatCooldown=150
+    I:ScepterofExtradimensionalOverheatCooldown=60
 
     # The cooldown of Transporting Mode. Measured in ticks. [range: 200 ~ 32768, default: 280, synchronized: yes]
-    I:ScepterofExtradimensionalTransportingCooldown=280
+    I:ScepterofExtradimensionalTransportingCooldown=100
 
     # Damage Amplification Limit of Scroll of Ignorance Curse. Defined as percentage. [range: 0.0 ~ 1000.0, default: 100.0, synchronized: yes]
     D:ScrollofIgnoranceCurseDamageBoostLimit=100.0
@@ -549,7 +557,7 @@
     D:TheArroganceofChaosFlyingSpeedModifier=1.6
 
     # Attack damage of The Bless, actual damage shown in tooltip will be ( 1 + this value ). [range: 0.0 ~ 32768.0, default: 6.0, synchronized: yes]
-    D:TheBlessAttackDamage=6.0
+    D:TheBlessAttackDamage=9.0
 
     # Attack speed of The Bless. [range: -32768.0 ~ 32768.0, default: -1.6, synchronized: yes]
     D:TheBlessAttackSpeed=-1.6
@@ -578,13 +586,23 @@
 
     # List of entities that will be affected as Raider by the Totem of Malice. Examples: minecraft:witch. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:TotemofMaliceExtraRaiderList <
+        goety:apostle
      >
 
     # The damage modifier to the Raiders. [range: 0.0 ~ 400.0, default: 1.5, synchronized: yes]
-    D:TotemofMaliceRaiderDamageBoost=1.5
+    D:TotemofMaliceRaiderDamageBoost=0.5
 
     # The damage resistance to the Raiders. [range: 0.0 ~ 400.0, default: 0.5, synchronized: yes]
     D:TotemofMaliceRaiderDamageResistance=0.5
+
+    # Undocumented property [range: 160 ~ 800, default: 320, synchronized: yes]
+    I:explorerScrollcooldown=320
+
+    # Undocumented property [range: 1 ~ 10, default: 5, synchronized: yes]
+    I:explorerScrolleffectiveRange=5
+
+    # Undocumented property [range: 0 ~ 100, default: 40, synchronized: yes]
+    I:survivalScrollhealthThreshold=40
 }
 
 

@@ -11,17 +11,17 @@ ServerEvents.recipes(event => {
     //    Item.of('minecraft:potion', '{Potion:"minecraft:healing"}'),
     //    'minecraft:glass_bottle'
     //);
-    event.recipes.goety.cursed_infuser_recipes('curlamoety:blackmage_souls_statue_1','curlamoety:blackmage_souls_statue_2')
-    .cookingTime(100);
-
     event.recipes.goety.cursed_infuser_recipes('curlamoety:blackmage_souls_statue_2','curlamoety:blackmage_souls_statue_1')
-    .cookingTime(100);
-
-    event.recipes.goety.cursed_infuser_recipes('curlamoety:calamitas_plushie','curlamoety:calamitas_plushie_maid')
-    .cookingTime(100);
+    .cookingTime(100).id("curlamoety:switch/blackmage_souls_statue_1")
+    
+    event.recipes.goety.cursed_infuser_recipes('curlamoety:blackmage_souls_statue_1','curlamoety:blackmage_souls_statue_2')
+    .cookingTime(100).id("curlamoety:switch/blackmage_souls_statue_2")
 
     event.recipes.goety.cursed_infuser_recipes('curlamoety:calamitas_plushie_maid','curlamoety:calamitas_plushie')
-    .cookingTime(100);
+    .cookingTime(100).id("curlamoety:switch/calamitas_plushie_maid")
+
+    event.recipes.goety.cursed_infuser_recipes('curlamoety:calamitas_plushie','curlamoety:calamitas_plushie_maid')
+    .cookingTime(100).id("curlamoety:switch/calamitas_plushie")
 
     event.remove('goety:dark/dark_ingot_2')
     event.recipes.goety.brazier('4x goety:dark_ingot', [

@@ -2,7 +2,7 @@
 	icon: "betterfurnacesreforged:raw_ore_processing_upgrade"
 	id: "3260E4AA1CBB5EF3"
 	loot_size: 1
-	order_index: 13
+	order_index: 12
 	rewards: [
 		{ count: 4, item: "minecraft:deepslate_iron_ore", weight: 5.0f }
 		{ count: 3, item: "minecraft:deepslate_gold_ore", weight: 3.0f }

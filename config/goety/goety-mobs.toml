@@ -191,6 +191,10 @@
 	#Whether Zombies convert into Frayed when struck by lightning, Default: true
 	zombieConvertFrayed = true
 
+	[Misc.Heresiarch]
+		#Whether Heresiarch has their after-image effect when they teleport. Disable can prevent frame drop. Default: true
+		heresiarchAfterImage = true
+
 	[Misc.Damned]
 		#Whether Damned shoot indicator is enabled. Default: true
 		damnedShootIndicator = true

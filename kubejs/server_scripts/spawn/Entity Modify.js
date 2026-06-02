@@ -72,4 +72,6 @@ EntityEvents.spawned(event=>{
         entity.persistentData.firstSpawn = 1
     }
 
+    entity.persistentData.armorset = entity.persistentData.armorset||"none"
+
 })

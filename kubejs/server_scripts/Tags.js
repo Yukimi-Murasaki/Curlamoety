@@ -165,12 +165,10 @@ ServerEvents.tags('item',event=>{
 
     //暗夜立方献祭
     event.add('goeticlegacy:can_sacrifice',"enigmaticlegacy:ichor_bottle")
-    event.add('goeticlegacy:can_sacrifice',"minecraft:nether_star")
     event.add('goeticlegacy:can_sacrifice',"twilightforest:lich_trophy")
     event.add('goeticlegacy:can_sacrifice',"goety:soul_ruby")
     event.add('goeticlegacy:can_sacrifice',"goety:night_beacon")
     event.add('goeticlegacy:can_sacrifice',"curlamoety:evernight_veil")
-    event.add('goeticlegacy:can_sacrifice',"cataclysm:ignitium_ingot")
 
     //光源饰品
 

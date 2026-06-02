@@ -20,4 +20,12 @@ StartupEvents.registry('mob_effect',event=>{
     event.create('curlamoety:generic_cooldown')
     .color(Color.AQUA)
 
+    //诅咒魔力
+    event.create('curlamoety:cursed_power')
+    .color(Color.AQUA)
+    .beneficial()
+    .modifyAttribute('goety_revelation:spell_power','cursed_power',0.5,'addition')
+    .modifyAttribute('goety_revelation:spell_power_multiplier','cursed_power2',0.025,'addition')
+    .modifyAttribute("goeticlegacy:magic_damage_multiplier",'cursed_mdm',0.025,'addition')
+
 })

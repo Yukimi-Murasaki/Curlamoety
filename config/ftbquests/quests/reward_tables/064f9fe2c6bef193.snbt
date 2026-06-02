@@ -2,7 +2,7 @@
 	icon: "minecraft:ender_pearl"
 	id: "064F9FE2C6BEF193"
 	loot_size: 1
-	order_index: 5
+	order_index: 4
 	rewards: [
 		{
 			command: "/tpmaster away 10000 true"

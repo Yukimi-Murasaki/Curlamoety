@@ -55,7 +55,7 @@ StartupEvents.registry('item', event => {
             })
         .canUnequip((slotContext, stack) => true)
         .modifySlotsTooltip((tooltips, stack) => tooltips)
-        .addAttribute("goety_revelation:spell_power",'soul_necklace_pw',4,'addition')
+        .addAttribute("goety_revelation:spell_power",'soul_necklace_pw',3,'addition')
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext
             attributeModificationContext.modify("goety_revelation:soul_decrease_reduction",'soul_necklace_sdr',0.10,'addition')
@@ -94,7 +94,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'death_necklace_pw',
-            5,
+            4,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -102,7 +102,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goety_revelation:spell_power_multiplier",
                 'death_necklace_pw2',
-                0.3,
+                0.1,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -161,7 +161,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'faith_necklace_pw',
-            6,
+            5,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -169,7 +169,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goety_revelation:spell_power_multiplier",
                 'faith_necklace_pw2',
-                0.5,
+                0.15,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -181,7 +181,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "minecraft:generic.luck",
                 'faith_necklace_luck',
-                15,
+                12,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -227,7 +227,7 @@ StartupEvents.registry('item', event => {
         .canUnequip((slotContext, stack) => true)
         .modifySlotsTooltip((tooltips, stack) => tooltips)
         .addAttribute("minecraft:generic.attack_damage",'explorer_gloves_atkdmg',0.15,'multiply_total')
-        .addAttribute("minecraft:generic.attack_damage",'explorer_gloves_atkdmg2',1,'addition')
+        .addAttribute("minecraft:generic.attack_damage",'explorer_gloves_atkdmg2',2,'addition')
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext
             //attributeModificationContext.modify("goety:spell_velocity",'explorer_gloves_sv',0.5,'addition')
@@ -271,7 +271,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "minecraft:generic.attack_damage",
                         'pioneer_gloves_atkdmg2',
-                        1,
+                        3,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -283,7 +283,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "forge:entity_reach",
                         'pioneer_gloves_er',
-                        0.5,
+                        1,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -324,7 +324,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "minecraft:generic.attack_speed",
                     'conqueror_gloves_atkspd',
-                    0.05,
+                    0.1,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -332,25 +332,25 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "minecraft:generic.attack_damage",
                         'conqueror_gloves_atkdmg',
-                        0.2,
+                        0.25,
                         'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "minecraft:generic.attack_damage",
                         'conqueror_gloves_atkdmg2',
-                        2,
+                        4,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "forge:block_reach",
                         'conqueror_gloves_br',
-                        0.75,
+                        1,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "forge:entity_reach",
                         'conqueror_gloves_er',
-                        0.75,
+                        1.5,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -391,7 +391,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "minecraft:generic.attack_speed",
                     'elemental_gloves_atkspd',
-                    0.1,
+                    0.15,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -399,13 +399,13 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "minecraft:generic.attack_damage",
                         'elemental_gloves_atkdmg',
-                        0.25,
+                        0.3,
                         'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "minecraft:generic.attack_damage",
                         'elemental_gloves_atkdmg2',
-                        2,
+                        5,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -417,7 +417,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "forge:entity_reach",
                         'elemental_gloves_er',
-                        1,
+                        2,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -505,7 +505,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'evil_ring_pw',
-                    5,
+                    3,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -513,7 +513,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'evil_ring_pw2',
-                        0.3,
+                        0.1,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -537,7 +537,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'evil_ring_mdm',
-                        0.05,
+                        0.2,
                         'addition'
                     )
                 })
@@ -577,7 +577,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'blood_ring_pw',
-                    9,
+                    4,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -585,7 +585,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'blood_ring_pw2',
-                        0.4,
+                        0.15,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -609,7 +609,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'blood_ring_mdm',
-                        0.07,
+                        0.3,
                         'addition'
                     )
                 })
@@ -648,7 +648,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'dominator_ring_pw1',
-                    12,
+                    6,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -656,7 +656,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'dominator_ring_pw2',
-                        0.5,
+                        0.15,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -680,7 +680,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'dominator_ring_mdm',
-                        0.09,
+                        0.4,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -725,7 +725,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'stella_ring_pw1',
-                    15,
+                    8,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -733,7 +733,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'stella_ring_pw2',
-                        0.6,
+                        0.2,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -757,7 +757,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'stella_ring_mdm',
-                        0.12,
+                        0.5,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -1134,9 +1134,9 @@ StartupEvents.registry('item', event => {
                 .modifySlotsTooltip((tooltips, stack) => tooltips)
                 .addAttribute(
                     "minecraft:generic.luck",
-                'desperate_attempt_luck',
-                7,
-                'addition'
+                    'desperate_attempt_luck',
+                    6,
+                    'addition'
             )
             .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
             .modifyAttributesTooltip((tooltips, stack) => tooltips)
@@ -1290,13 +1290,13 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'gloomy_circlet_sfdm',
-                0.2,
+                0.07,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goeticlegacy:servant_damage_reduction_ratio",
                 'gloomy_circlet_sdrm',
-               0.2,
+                0.07,
                 'addition'
             )
         })
@@ -1337,12 +1337,6 @@ StartupEvents.registry('item', event => {
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext
             attributeModificationContext.modify(
-                "goety_revelation:spell_power_multiplier",
-                'moon_circlet_pw2',
-                0.05,
-                'addition'
-            )
-            attributeModificationContext.modify(
                 "goety_revelation:soul_increase_efficiency",
                 'moon_circlet_soul',
                 0.8,
@@ -1369,13 +1363,13 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'moon_circlet_sfdm',
-                0.3,
+                0.1,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goeticlegacy:servant_damage_reduction_ratio",
                 'moon_circlet_sdrm',
-                0.3,
+                0.1,
                 'addition'
             )
         })
@@ -1416,12 +1410,6 @@ StartupEvents.registry('item', event => {
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext
             attributeModificationContext.modify(
-                "goety_revelation:spell_power_multiplier",
-                'twilight_crown_pw2',
-                0.1,
-                'addition'
-            )
-            attributeModificationContext.modify(
                 "goety_revelation:soul_increase_efficiency",
                 'twilight_crown_soul',
                 1,
@@ -1448,19 +1436,13 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'twilight_crown_sfdm',
-                0.4,
+                0.15,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goeticlegacy:servant_damage_reduction_ratio",
                 'twilight_crown_sdrm',
-                0.4,
-                'addition'
-            )
-            attributeModificationContext.modify(
-                "goeticlegacy:servant_piercing_true_damage_ratio",
-                'twilight_crown_sptdr',
-                0.1,
+                0.15,
                 'addition'
             )
         })
@@ -1510,6 +1492,308 @@ StartupEvents.registry('item', event => {
         .isEnderMask((slotContext, enderMan, stack) => false)
     )
     .maxStackSize(1)
+    .tag("curios:curio")
+
+    event.create("curlamoety:goal_ty")//巫法极点
+    .rarity("epic")
+    .attachCuriosCapability(
+        CuriosJSCapabilityBuilder.create()
+        .curioTick((slotContext, stack) => { })
+        .onEquip((slotContext, oldStack, newStack) => {})
+        .onUnequip((slotContext, oldStack, newStack) => {})
+        .canEquip((slotContext, stack) => {
+            let entity = slotContext.entity()
+            if(entity && entity.isCuriosEquipped("curlamoety:goal_ty")){
+                return false
+            }else{
+                return true
+            }
+        })
+        .canUnequip((slotContext, stack) => true)
+        .modifySlotsTooltip((tooltips, stack) => tooltips)
+        .addAttribute(
+            "goety_revelation:spell_power",
+            'goal_ty_1',
+            3,
+            'addition'
+        )
+        .modifyAttribute(attributeModificationContext => {
+            let { slotContext, UUID, stack, modifiers } = attributeModificationContext
+             attributeModificationContext.modify(
+                "goeticlegacy:soul_regen_ratio",
+                'goal_ty_2',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'goal_ty_3',
+                0.15,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:magic_invul_reduction",
+                'goal_ty_4',
+                666,
+                'addition'
+            )
+        })
+        .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
+        .modifyAttributesTooltip((tooltips, stack) => tooltips)
+        .modifyFortuneLevel((slotContext, lootContext, stack) => 0)
+        .modifyLootingLevel((slotContext, source, target, baseLooting, stack) => 0)
+        .makesPiglinsNeutral((slotContext, stack) => false)
+        .canWalkOnPowderedSnow((slotContext, stack) => false)
+        .isEnderMask((slotContext, enderMan, stack) => false)
+    )
+    .fireResistant()
+    .maxStackSize(64)
+    .tag("curios:curio")
+
+    event.create("curlamoety:chaos_cube")//混沌立方
+    .rarity("epic")
+    .attachCuriosCapability(
+        CuriosJSCapabilityBuilder.create()
+        .curioTick((slotContext, stack) => { })
+        .onEquip((slotContext, oldStack, newStack) => {})
+        .onUnequip((slotContext, oldStack, newStack) => {})
+        .canEquip((slotContext, stack) => {
+            let entity = slotContext.entity()
+            if(entity && entity.isCuriosEquipped("curlamoety:chaos_cube")){
+                return false
+            }else{
+                return true
+            }
+        })
+        .canUnequip((slotContext, stack) => true)
+        .modifySlotsTooltip((tooltips, stack) => tooltips)
+        .addAttribute(
+            "minecraft:generic.attack_damage",
+            'chaos_cube_1',
+            1,
+            'addition'
+        )
+        .modifyAttribute(attributeModificationContext => {
+            let { slotContext, UUID, stack, modifiers } = attributeModificationContext
+             attributeModificationContext.modify(
+                "minecraft:generic.max_health",
+                'chaos_cube_2',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "minecraft:generic.attack_speed",
+                'chaos_cube_3',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "forge:block_reach",
+                'chaos_cube_4',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "forge:entity_reach",
+                'chaos_cube_5',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "minecraft:generic.luck",
+                'chaos_cube_6',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "minecraft:generic.armor",
+                'chaos_cube_7',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "minecraft:generic.armor_toughness",
+                'chaos_cube_8',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "cataclysm:nature_heal",
+                'chaos_cube_9',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:necromancy_power",
+                'chaos_cube_10',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:nether_power",
+                'chaos_cube_11',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:wild_power",
+                'chaos_cube_12',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:frost_power",
+                'chaos_cube_13',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:ill_power",
+                'chaos_cube_14',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:void_power",
+                'chaos_cube_15',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:abyss_power",
+                'chaos_cube_16',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:wind_power",
+                'chaos_cube_17',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:storm_power",
+                'chaos_cube_18',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:geomancy_power",
+                'chaos_cube_19',
+                1,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goety_revelation:none_power",
+                'chaos_cube_20',
+                1,
+                'addition'
+            )
+        })
+        .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
+        .modifyAttributesTooltip((tooltips, stack) => tooltips)
+        .modifyFortuneLevel((slotContext, lootContext, stack) => 0)
+        .modifyLootingLevel((slotContext, source, target, baseLooting, stack) => 0)
+        .makesPiglinsNeutral((slotContext, stack) => false)
+        .canWalkOnPowderedSnow((slotContext, stack) => false)
+        .isEnderMask((slotContext, enderMan, stack) => false)
+    )
+    .fireResistant()
+    .maxStackSize(64)
+    .tag("curios:curio")
+
+    event.create("curlamoety:calamity_source")//厄难本源
+    .rarity("epic")
+    .attachCuriosCapability(
+        CuriosJSCapabilityBuilder.create()
+        .curioTick((slotContext, stack) => { })
+        .onEquip((slotContext, oldStack, newStack) => {})
+        .onUnequip((slotContext, oldStack, newStack) => {})
+        .canEquip((slotContext, stack) => {
+            let entity = slotContext.entity()
+            if(entity && entity.isCuriosEquipped("curlamoety:calamity_source")){
+                return false
+            }else{
+                return true
+            }
+        })
+        .canUnequip((slotContext, stack) => true)
+        .modifySlotsTooltip((tooltips, stack) => tooltips)
+        .addAttribute(
+            "minecraft:generic.attack_damage",
+            'calamity_source_1',
+            8,
+            'addition'
+        )
+        .modifyAttribute(attributeModificationContext => {
+            let { slotContext, UUID, stack, modifiers } = attributeModificationContext
+            attributeModificationContext.modify(
+                "minecraft:generic.attack_damage",
+                'calamity_source_2',
+                0.08,
+                'multiply_total'
+            )
+            attributeModificationContext.modify(
+                "minecraft:generic.attack_speed",
+                'calamity_source_2',
+                0.08,
+                'multiply_total'
+            )
+        })
+        .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
+        .modifyAttributesTooltip((tooltips, stack) => tooltips)
+        .modifyFortuneLevel((slotContext, lootContext, stack) => 0)
+        .modifyLootingLevel((slotContext, source, target, baseLooting, stack) => 0)
+        .makesPiglinsNeutral((slotContext, stack) => false)
+        .canWalkOnPowderedSnow((slotContext, stack) => false)
+        .isEnderMask((slotContext, enderMan, stack) => false)
+    )
+    .fireResistant()
+    .maxStackSize(64)
+    .tag("curios:curio")
+
+    event.create("curlamoety:twilight_sparkle")//创生之暮
+    .rarity("epic")
+    .attachCuriosCapability(
+        CuriosJSCapabilityBuilder.create()
+        .curioTick((slotContext, stack) => { })
+        .onEquip((slotContext, oldStack, newStack) => {})
+        .onUnequip((slotContext, oldStack, newStack) => {})
+        .canEquip((slotContext, stack) => {
+            let entity = slotContext.entity()
+            if(entity && entity.isCuriosEquipped("curlamoety:twilight_sparkle")){
+                return false
+            }else{
+                return true
+            }
+        })
+        .canUnequip((slotContext, stack) => true)
+        .modifySlotsTooltip((tooltips, stack) => tooltips)
+        .addAttribute(
+            "goeticlegacy:servant_final_damage_multiplier",
+            'twilight_sparkle_1',
+            0.15,
+            'addition'
+        )
+        .modifyAttribute(attributeModificationContext => {
+            let { slotContext, UUID, stack, modifiers } = attributeModificationContext
+            attributeModificationContext.modify(
+                "goeticlegacy:servant_damage_reduction_ratio",
+                'twilight_sparkle_2',
+                0.15,
+                'addition'
+            )
+        })
+        .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
+        .modifyAttributesTooltip((tooltips, stack) => tooltips)
+        .modifyFortuneLevel((slotContext, lootContext, stack) => 0)
+        .modifyLootingLevel((slotContext, source, target, baseLooting, stack) => 0)
+        .makesPiglinsNeutral((slotContext, stack) => false)
+        .canWalkOnPowderedSnow((slotContext, stack) => false)
+        .isEnderMask((slotContext, enderMan, stack) => false)
+    )
+    .fireResistant()
+    .maxStackSize(64)
     .tag("curios:curio")
 
 })

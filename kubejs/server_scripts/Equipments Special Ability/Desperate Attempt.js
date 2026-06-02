@@ -2,8 +2,7 @@ EntityEvents.hurt(event=>{
     let {entity,source} = event
     if(entity.isPlayer()){
         let {x,y,z} = entity
-        let dice_cd = entity.persistentData.dice_cd
-        if(dice_cd!=0)return;
+        if(entity.persistentData.dice_cd!=0)return;
         if(!entity.isCuriosEquipped('curlamoety:desperate_attempt'))return;
         let healthRate = entity.health/entity.maxHealth
         let luck = entity.getAttribute('minecraft:generic.luck').getValue()
@@ -11,14 +10,12 @@ EntityEvents.hurt(event=>{
         if(Math.random(1)<chance1){
             entity.potionEffects.add('curlamoety:dying_fight',(10+10*healthRate+0.1*luck),0)
             event.level.playSound(null,x,y,z,'curlamoety:dice','players',1,1)
-            dice_cd = 40
-        }else{ dice_cd = 20 }
-        entity.persistentData.dice_cd = dice_cd
+            entity.persistentData.dice_cd = 40
+        }else{ entity.persistentData.dice_cd = 20 }
     }else{
         let actual = source.actual
         if(actual==null||!actual.isPlayer())return;
-        let dice_cd = actual.persistentData.dice_cd
-        if(dice_cd!=0)return;
+        if(actual.persistentData.dice_cd!=0)return;
         if(!actual.isLiving())return;
         if(!actual.isCuriosEquipped('curlamoety:desperate_attempt'))return;
         let luck = actual.getAttribute('minecraft:generic.luck').getValue()
@@ -28,8 +25,7 @@ EntityEvents.hurt(event=>{
             let {x,y,z} = actual
             event.level.playSound(null,x,y,z,'curlamoety:dice','players',0.5,1)
             actual.potionEffects.add('curlamoety:dying_fight',(5+0.1*luck),0)
-            dice_cd = 15
+            actual.persistentData.dice_cd = 15
         }
-        actual.persistentData.dice_cd = dice_cd
     }
 })

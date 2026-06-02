@@ -16,7 +16,7 @@ EntityEvents.death("minecraft:warden",event=>{
             let {x,y,z} = actual
             event.level.playSound(null,x,y,z,"minecraft:ui.toast.challenge_complete","players",1,1)
             actual.persistentData.moas = 1
-            actual.setCustomName(Text.green(Text.translate("curlamoety.lang.mother_of_all_spider")).bold())
+            actual.setCustomName(Text.translate("curlamoety.lang.mother_of_all_spider"))
             actual.modifyAttribute("minecraft:generic.max_health","moas_modify",1,"multiply_total")
             actual.setHealth(actual.getMaxHealth())
             actual.potionEffects.add("goety:rallying",-1,4)

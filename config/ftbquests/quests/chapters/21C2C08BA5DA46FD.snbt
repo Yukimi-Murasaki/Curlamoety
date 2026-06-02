@@ -972,6 +972,77 @@
 			x: 8.0d
 			y: 3.0d
 		}
+		{
+			icon: {
+				Count: 1
+				id: "curlamoety:magician_hand"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F8BE8778569CDE1"
+			invisible: true
+			rewards: [
+				{
+					id: "10EE6CC1F7C42CA4"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "748237AA9A42254A"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "21C74730E14C9150"
+					item: "curlamoety:mini_pants"
+					type: "item"
+				}
+				{
+					id: "42CC8AD4F5D4C69A"
+					item: {
+						Count: 1
+						id: "curlamoety:unholy_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C7532E9B569F185"
+					item: {
+						Count: 1
+						id: "curlamoety:storm_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AD7C0577D8BA206"
+					item: {
+						Count: 1
+						id: "curlamoety:snow_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30E231176BF4BFCC"
+					item: "curlamoety:stocking_tea"
+					type: "item"
+				}
+			]
+			title: "超级大变态"
+			x: 8.0d
+			y: 9.5d
+		}
 	]
 	title: "挑战任务"
 }

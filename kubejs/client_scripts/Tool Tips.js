@@ -47,51 +47,51 @@ ItemEvents.tooltip(event=>{
         if(event.shift){
             text.add(3,Text.blue(Text.translate("curlamoety.lang.haste1")))
         }else{
-            text.add(3,Text.blue(Text.translate("curlamoety.lang.hold")).append(Text.aqua(" Shift ")).append(Text.blue(Text.translate("curlamoety.lang.information"))))
+            text.add(3,Text.translate("curlamoety.lang.hold_shift_blue"))
         }
         
     })
     event.addAdvanced("curlamoety:pioneer_gloves",(item,advanced,text)=>{//开拓者手套
         text.add(1,Text.blue(Text.translate("curlamoety.lang.pioneer_gloves")))
-        text.add(2,Text.blue(Text.translate("curlamoety.lang.looting1")))
+        text.add(2,Text.aqua(Text.translate("curlamoety.lang.looting1")))
         text.add(3,Text.of(""))
         if(event.shift){
             text.add(4,Text.blue(Text.translate("curlamoety.lang.haste2")))
         }else{
-            text.add(4,Text.blue(Text.translate("curlamoety.lang.hold")).append(Text.aqua(" Shift ")).append(Text.blue(Text.translate("curlamoety.lang.information"))))
+            text.add(4,Text.translate("curlamoety.lang.hold_shift_blue"))
         }
     })
     event.addAdvanced("curlamoety:conqueror_gloves",(item,advanced,text)=>{//征服者手套
         text.add(1,Text.blue(Text.translate("curlamoety.lang.conqueror_gloves")))
-        text.add(2,Text.blue(Text.translate("curlamoety.lang.looting1")))
+        text.add(2,Text.aqua(Text.translate("curlamoety.lang.looting1")))
         text.add(3,Text.of(""))
         if(event.shift){
             text.add(4,Text.blue(Text.translate("curlamoety.lang.haste2+")))
         }else{
-            text.add(4,Text.blue(Text.translate("curlamoety.lang.hold")).append(Text.aqua(" Shift ")).append(Text.blue(Text.translate("curlamoety.lang.information"))))
+            text.add(4,Text.translate("curlamoety.lang.hold_shift_blue"))
         }
         
     })
     event.addAdvanced("curlamoety:elemental_gloves",(item,advanced,text)=>{//元素手套
-        text.add(1,Text.gold(Text.translate("curlamoety.lang.elemental_gloves_1")))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.elemental_gloves_1")))
         text.add(2,Text.gold(Text.translate("curlamoety.lang.looting1")))
         text.add(3,Text.of(""))
         if(event.shift){
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.haste2+")))
+            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.haste2++")))
             text.add(5,Text.darkPurple(Text.translate("curlamoety.lang.elemental_gloves_2")))
         }else{
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(4,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
     event.addAdvanced("curlamoety:kitchen_gloves",(item,advanced,text)=>{//厨房手套
         text.add(1,Text.blue(Text.translate("curlamoety.lang.kitchen_gloves_1")))
-        text.add(2,Text.blue(Text.translate("curlamoety.lang.looting1")))
+        text.add(2,Text.aqua(Text.translate("curlamoety.lang.looting1")))
         text.add(3,Text.of(""))
         if(event.shift){
             text.add(4,Text.blue(Text.translate("curlamoety.lang.kitchen_gloves_2")))
             text.add(5,Text.blue(Text.translate("curlamoety.lang.kitchen_gloves_3")))
         }else{
-            text.add(4,Text.blue(Text.translate("curlamoety.lang.hold")).append(Text.aqua(" Shift ")).append(Text.blue(Text.translate("curlamoety.lang.information"))))
+            text.add(4,Text.translate("curlamoety.lang.hold_shift_blue"))
         }
     })
 
@@ -178,19 +178,19 @@ ItemEvents.tooltip(event=>{
         }
         
         if(event.shift){
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.faded_promise_1_1")).append(Text.gold(" 60 ")).append(Text.darkPurple(Text.translate("curlamoety.lang.faded_promise_1_2"))))
+            text.add(4,Text.translate("curlamoety.lang.faded_promise_1"))
             text.add(5,Text.of(""))
-            text.add(6,Text.lightPurple(Text.translate("curlamoety.lang.third_curse_1_1")).append(Text.gold(Text.translate("curlamoety.lang.third_curse"))).append(Text.lightPurple(Text.translate("curlamoety.lang.third_curse_1_2"))))
-            text.add(7,Text.darkPurple(Text.translate("curlamoety.lang.third_curse_2_1")).append(Text.gold(Text.translate("curlamoety.lang.third_curse"))).append(Text.darkPurple(Text.translate("curlamoety.lang.third_curse_2_2"))))
+            text.add(6,Text.translate("curlamoety.lang.third_curse_1"))
+            text.add(7,Text.translate("curlamoety.lang.third_curse_2"))
         }else{
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(4,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
     event.addAdvanced("enigmaticaddons:earth_promise",(item,advanced,text)=>{
         if(event.shift){
             text.add(7,Text.of(""))
-            text.add(8,Text.lightPurple(Text.translate("curlamoety.lang.third_curse_1_1")).append(Text.gold(Text.translate("curlamoety.lang.third_curse"))).append(Text.lightPurple(Text.translate("curlamoety.lang.third_curse_1_2"))))
-            text.add(9,Text.darkPurple(Text.translate("curlamoety.lang.third_curse_2_1")).append(Text.gold(Text.translate("curlamoety.lang.third_curse"))).append(Text.darkPurple(Text.translate("curlamoety.lang.third_curse_2_2"))))
+            text.add(8,Text.translate("curlamoety.lang.third_curse_1"))
+            text.add(9,Text.translate("curlamoety.lang.third_curse_2"))
         }
     })
 
@@ -216,7 +216,7 @@ ItemEvents.tooltip(event=>{
             text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.valettein_2")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.valettein_3")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
 
@@ -230,118 +230,260 @@ ItemEvents.tooltip(event=>{
 
     event.addAdvanced('goety_revelation:apocalyptium_helmet',(item,addAdvanced,text)=>{//套装效果
         if(event.shift){
-            text.add(10,Text.darkPurple(Text.translate("curlamoety.lang.apocalyptium_amorset_1")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
+            text.add(7,Text.translate("curlamoety.lang.apocalyptium_armorset_0"))
+            text.add(11,Text.translate("curlamoety.lang.apocalyptium_armorset_10"))
+            text.add(12,Component.translate("curlamoety.lang.apocalyptium_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(13,Text.translate("curlamoety.lang.apocalyptium_armorset_1"))
+            text.add(14,Text.translate("curlamoety.lang.apocalyptium_armorset_2"))
+            text.add(15,Text.translate("curlamoety.lang.apocalyptium_armorset_3"))
+            text.add(16,Text.translate("curlamoety.lang.apocalyptium_armorset_4"))
+            text.add(17,Text.translate("curlamoety.lang.apocalyptium_armorset_5"))
+            text.add(18,Text.translate("curlamoety.lang.apocalyptium_armorset_6"))
+            text.add(19,Text.translate("curlamoety.lang.apocalyptium_armorset_7"))
+            text.add(20,Text.translate("curlamoety.lang.apocalyptium_armorset_8"))
+            text.add(21,Text.translate("curlamoety.lang.apocalyptium_armorset_9"))
+            
+            
         }
     })
     event.addAdvanced('goety_revelation:apocalyptium_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple(Text.translate("curlamoety.lang.apocalyptium_amorset_1")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
+            text.add(8,Text.translate("curlamoety.lang.apocalyptium_armorset_0"))
+            text.add(12,Text.translate("curlamoety.lang.apocalyptium_armorset_10"))
+            text.add(13,Component.translate("curlamoety.lang.apocalyptium_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(14,Text.translate("curlamoety.lang.apocalyptium_armorset_1"))
+            text.add(15,Text.translate("curlamoety.lang.apocalyptium_armorset_2"))
+            text.add(16,Text.translate("curlamoety.lang.apocalyptium_armorset_3"))
+            text.add(17,Text.translate("curlamoety.lang.apocalyptium_armorset_4"))
+            text.add(18,Text.translate("curlamoety.lang.apocalyptium_armorset_5"))
+            text.add(19,Text.translate("curlamoety.lang.apocalyptium_armorset_6"))
+            text.add(20,Text.translate("curlamoety.lang.apocalyptium_armorset_7"))
+            text.add(21,Text.translate("curlamoety.lang.apocalyptium_armorset_8"))
+            text.add(22,Text.translate("curlamoety.lang.apocalyptium_armorset_9"))
         }
     })
     event.addAdvanced('goety_revelation:apocalyptium_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple(Text.translate("curlamoety.lang.apocalyptium_amorset_1")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
+            text.add(8,Text.translate("curlamoety.lang.apocalyptium_armorset_0"))
+            text.add(12,Text.translate("curlamoety.lang.apocalyptium_armorset_10"))
+            text.add(13,Component.translate("curlamoety.lang.apocalyptium_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(14,Text.translate("curlamoety.lang.apocalyptium_armorset_1"))
+            text.add(15,Text.translate("curlamoety.lang.apocalyptium_armorset_2"))
+            text.add(16,Text.translate("curlamoety.lang.apocalyptium_armorset_3"))
+            text.add(17,Text.translate("curlamoety.lang.apocalyptium_armorset_4"))
+            text.add(18,Text.translate("curlamoety.lang.apocalyptium_armorset_5"))
+            text.add(19,Text.translate("curlamoety.lang.apocalyptium_armorset_6"))
+            text.add(20,Text.translate("curlamoety.lang.apocalyptium_armorset_7"))
+            text.add(21,Text.translate("curlamoety.lang.apocalyptium_armorset_8"))
+            text.add(22,Text.translate("curlamoety.lang.apocalyptium_armorset_9"))
         }
     })
     event.addAdvanced('goety_revelation:apocalyptium_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple(Text.translate("curlamoety.lang.apocalyptium_amorset_1")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
+            text.add(8,Text.translate("curlamoety.lang.apocalyptium_armorset_0"))
+            text.add(12,Text.translate("curlamoety.lang.apocalyptium_armorset_10"))
+            text.add(13,Component.translate("curlamoety.lang.apocalyptium_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(14,Text.translate("curlamoety.lang.apocalyptium_armorset_1"))
+            text.add(15,Text.translate("curlamoety.lang.apocalyptium_armorset_2"))
+            text.add(16,Text.translate("curlamoety.lang.apocalyptium_armorset_3"))
+            text.add(17,Text.translate("curlamoety.lang.apocalyptium_armorset_4"))
+            text.add(18,Text.translate("curlamoety.lang.apocalyptium_armorset_5"))
+            text.add(19,Text.translate("curlamoety.lang.apocalyptium_armorset_6"))
+            text.add(20,Text.translate("curlamoety.lang.apocalyptium_armorset_7"))
+            text.add(21,Text.translate("curlamoety.lang.apocalyptium_armorset_8"))
+            text.add(22,Text.translate("curlamoety.lang.apocalyptium_armorset_9"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_darkmage_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_darkmage_armorset_0"))
+            text.add(9,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(12,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_darkmage_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_darkmage_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_darkmage_armorset_0"))
+            text.add(9,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(12,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_darkmage_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_darkmage_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(7,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(10,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(6,Text.translate("curlamoety.lang.spectre_darkmage_armorset_0"))
+            text.add(8,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(11,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(12,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(15,Text.translate("curlamoety.lang.spectre_darkmage_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_darkmage_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_darkmage_armorset_0"))
+            text.add(9,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(12,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_darkmage_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(13,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(16,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(8,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
+            text.add(14,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(15,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(19,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(20,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(14,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(6,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
+            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(14,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(6,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
+            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(12,Text.darkPurple("  - ").append(Text.gold("+8 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
-            text.add(16,Text.darkPurple("  - ").append(Text.gold("+6.6 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.spell_power"))))
+            text.add(7,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
+            text.add(13,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(14,Text.translate("curlamoety.lang.darkmage_armorset_1"))
+            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_2"))
+            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_3"))
+            text.add(19,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(9,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_armorset_0"))
+            text.remove(8)
+            text.add(8,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(9,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(10,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_4"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_5_"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_8"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(9,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_armorset_0"))
+            text.remove(8)
+            text.add(8,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(9,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(10,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_4"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_5_"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_8"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(7,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(8,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(6,Text.translate("curlamoety.lang.spectre_armorset_0"))
+            text.remove(7)
+            text.add(7,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(8,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(9,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(10,Text.translate("curlamoety.lang.middle_armorset_4"))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_5_"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_8"))
+            text.add(15,Text.translate("curlamoety.lang.spectre_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(8,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(9,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(7,Text.translate("curlamoety.lang.spectre_armorset_0"))
+            text.remove(8)
+            text.add(8,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(9,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(10,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_4"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_5_"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_8"))
+            text.add(16,Text.translate("curlamoety.lang.spectre_armorset_1"))
         }
     })
     event.addAdvanced('goety_revelation:spider_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(11,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(12,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(8,Text.translate("curlamoety.lang.spider_armorset_0"))
+            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(16,Text.translate("curlamoety.lang.middle_armorset_4_"))
+            text.add(17,Text.translate("curlamoety.lang.middle_armorset_5"))
+            text.add(18,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(19,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(20,Text.translate("curlamoety.lang.middle_armorset_8"))
         }
     })
     event.addAdvanced('goety_revelation:spider_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(9,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(10,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(6,Text.translate("curlamoety.lang.spider_armorset_0"))
+            text.add(10,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_4_"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_5"))
+            text.add(16,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(17,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(18,Text.translate("curlamoety.lang.middle_armorset_8"))
         }
     })
     event.addAdvanced('goety_revelation:spider_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(9,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(10,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(6,Text.translate("curlamoety.lang.spider_armorset_0"))
+            text.add(10,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(11,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_4_"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_5"))
+            text.add(16,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(17,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(18,Text.translate("curlamoety.lang.middle_armorset_8"))
         }
     })
     event.addAdvanced('goety_revelation:spider_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(10,Text.darkPurple(Text.translate("curlamoety.lang.middle_armorset")).append(Text.lightPurple(Text.translate("curlamoety.lang.total_amorset_1"))))
-            text.add(11,Text.darkPurple("  - ").append(Text.gold("+4 ")).append(Text.lightPurple(Text.translate("curlamoety.lang.amor"))))
+            text.add(7,Text.translate("curlamoety.lang.spider_armorset_0"))
+            text.add(11,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            text.add(12,Text.translate("curlamoety.lang.middle_armorset_1"))
+            text.add(13,Text.translate("curlamoety.lang.middle_armorset_2"))
+            text.add(14,Text.translate("curlamoety.lang.middle_armorset_3"))
+            text.add(15,Text.translate("curlamoety.lang.middle_armorset_4_"))
+            text.add(16,Text.translate("curlamoety.lang.middle_armorset_5"))
+            text.add(17,Text.translate("curlamoety.lang.middle_armorset_6"))
+            text.add(18,Text.translate("curlamoety.lang.middle_armorset_7"))
+            text.add(19,Text.translate("curlamoety.lang.middle_armorset_8"))
         }
     })
 
@@ -416,7 +558,7 @@ ItemEvents.tooltip(event=>{
             text.add(4,Text.gold(Text.translate("curlamoety.lang.mary_sue_staff_4")))
 
         }else{
-            text.add(2,Text.gold(Text.translate("curlamoety.lang.shift")))
+            text.add(2,Text.translate("curlamoety.lang.shift_fairy"))
         }
     })
     event.addAdvanced('curlamoety:mary_sue_staff_plus',(item,addAdvanced,text)=>{
@@ -429,7 +571,7 @@ ItemEvents.tooltip(event=>{
             text.add(4,Text.gold(Text.translate("curlamoety.lang.mary_sue_staff_4")))
 
         }else{
-            text.add(2,Text.gold(Text.translate("curlamoety.lang.shift")))
+            text.add(2,Text.translate("curlamoety.lang.shift_fairy"))
         }
     })
 
@@ -442,7 +584,7 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_stone_2")))
     })
     event.addAdvanced('goety:philosophers_mace',(item,addAdvanced,text)=>{//贤者之杖
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_1_1")).append(Text.gold(Text.translate("curlamoety.lang.philosophers_mace_1_2"))).append(Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_1_3"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_1")))
         text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_2")))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_3")))
         text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.philosophers_mace_4")))
@@ -459,30 +601,30 @@ ItemEvents.tooltip(event=>{
     })
 
     event.addAdvanced('curlamoety:witch_amulet_tier1_inactive',(item,addAdvanced,text)=>{//女巫护身符
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling1"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")))
     })
     event.addAdvanced('curlamoety:witch_amulet_tier2_inactive',(item,addAdvanced,text)=>{
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling2"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2")))
     })
     event.addAdvanced('curlamoety:witch_amulet_tier3_inactive',(item,addAdvanced,text)=>{
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling3"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_3")))
     })
     event.addAdvanced('curlamoety:witch_amulet_tier4_inactive',(item,addAdvanced,text)=>{
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling4"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_4")))
     })
     event.addAdvanced('curlamoety:witch_amulet_tier5_inactive',(item,addAdvanced,text)=>{
-        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling5"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_2"))))
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_inactive_5")))
     })
     event.addAdvanced('curlamoety:witch_amulet_tier1',(item,addAdvanced,text)=>{
         text.add(1,Text.of(""))
         text.add(2,Text.of(""))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.upgradable")))
         if(event.shift){
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling1"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2"))))
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_1")).append(Text.gold(Text.translate("curlamoety.lang.witch_note_t1"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_note_2"))))
+            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_1")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
     event.addAdvanced('curlamoety:witch_amulet_tier2',(item,addAdvanced,text)=>{
@@ -490,11 +632,11 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.of(""))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.upgradable")))
         if(event.shift){
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling2"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2"))))
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_1")).append(Text.gold(Text.translate("curlamoety.lang.witch_note_t2"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_note_2"))))
+            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2")))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_2")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
         
     })
@@ -503,11 +645,11 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.of(""))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.upgradable")))
         if(event.shift){
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling3"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2"))))
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_1")).append(Text.gold(Text.translate("curlamoety.lang.witch_note_t3"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_note_2"))))
+            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_3")))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_3")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
     event.addAdvanced('curlamoety:witch_amulet_tier4',(item,addAdvanced,text)=>{
@@ -515,11 +657,11 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.of(""))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.upgradable")))
         if(event.shift){
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling4"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2"))))
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_1")).append(Text.gold(Text.translate("curlamoety.lang.witch_note_t4"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_note_2"))))
+            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_4")))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_4")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
     event.addAdvanced('curlamoety:witch_amulet_tier5',(item,addAdvanced,text)=>{
@@ -536,18 +678,13 @@ ItemEvents.tooltip(event=>{
             text.add(4,Text.darkRed(Text.translate("tooltip.enigmaticlegacy.cursedOnesOnly2")))
         }
         if(event.shift){
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_1")).append(Text.gold(Text.translate("curlamoety.lang.bottling5"))).append(Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_2"))))
-            text.add(3,Text.darkRed(Text.translate("curlamoety.lang.witch_note_1")).append(Text.gold(Text.translate("curlamoety.lang.witch_note_t5"))).append(Text.darkRed(Text.translate("curlamoety.lang.witch_note_3"))))
+            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.witch_amulet_5")))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note_5")))
             text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
         }else{
-            text.add(2,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
         }
-        
     })
-
-    //event.addAdvanced('goetyawaken:nameless_platinum',(item,addAdvanced,text)=>{//终刻白金 
-        //text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.nameless_platinum")))
-    //})
 
     event.addAdvanced('curlamoety:witch_desk',(item,addAdvanced,text)=>{//女巫桌
         text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.witch_desk_1")))
@@ -575,16 +712,16 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.darkRed(Text.translate("curlamoety.lang.annihilation_ashes_1")))
         text.add(2,Text.darkRed(Text.translate("curlamoety.lang.annihilation_ashes_2")))
         text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.witch_note")))
-        text.add(4,Text.darkRed(Text.translate("curlamoety.lang.can_be_used")).append(Text.gold(Text.translate("curlamoety.lang.fifth"))).append(Text.darkRed(Text.translate("curlamoety.lang.duration"))))
+        text.add(4,Text.darkRed(Text.translate("curlamoety.lang.fifth_duration")))
     })
     event.addAdvanced('curlamoety:brimstone_orb',(item,addAdvanced,text)=>{
         text.add(1,Text.darkRed(Text.translate("curlamoety.lang.brimstone_orb_1")))
-        text.add(2,Text.darkRed(Text.translate("curlamoety.lang.can_be_used")).append(Text.gold(" Lv.7 ")).append(Text.darkRed(Text.translate("curlamoety.lang.capacity"))))
+        text.add(2,Text.darkRed(Text.translate("curlamoety.lang.Lv.7_capacity")))
     })
 
     event.addAdvanced('curlamoety:perfect_matter',(item,addAdvanced,text)=>{//完美物质
         text.add(1,Text.green(Text.translate("curlamoety.lang.perfect")))
-        text.add(2,Text.green(Text.translate("curlamoety.lang.can_be_used")).append(Text.gold(Text.translate("curlamoety.lang.forth"))).append(Text.green(Text.translate("curlamoety.lang.amplifier"))))
+        text.add(2,Text.green(Text.translate("curlamoety.lang.forth_amplifier")))
     })
 
     event.addAdvanced('#goety:rotten_wood_blocks',(item,addAdvanced,text)=>{//朽木提示
@@ -596,7 +733,7 @@ ItemEvents.tooltip(event=>{
     })
 
     event.addAdvanced("enigmaticdelicacy:enigamtic_seed",(item,addAdvanced,text)=>{//神秘种子
-        text.add(1,Text.blue(Text.translate("curlamoety.lang.can_be_used")).append(Text.gold(Text.translate("curlamoety.lang.forth"))).append(Text.blue(Text.translate("curlamoety.lang.duration"))))
+        text.add(1,Text.blue(Text.translate("curlamoety.lang.forth_duration")))
     })
 
     event.addAdvanced('cataclysm:monstrous_horn',(item,addAdvanced,text)=>{//药酿追加
@@ -691,13 +828,13 @@ ItemEvents.tooltip(event=>{
         text.add(4,Text.gold(Text.translate("curlamoety.lang.fortune2")))
         text.add(5,Text.gold(Text.translate("curlamoety.lang.looting2")))
         if(event.shift){
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.desperate_attempt_2_1")).append(Text.yellow(Text.translate("effect.curlamoety.dying_fight"))).append(Text.darkPurple(Text.translate("curlamoety.lang.desperate_attempt_2_2"))))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.desperate_attempt_2")))
             text.add(4,Text.darkPurple(Text.translate("effect.curlamoety.dying_fight.description")))
             text.add(5,Text.yellow(Text.translate("curlamoety.lang.desperate_attempt_3")))
             text.add(6,Text.of(""))
-            text.add(7,Text.darkPurple(Text.translate("curlamoety.lang.desperate_attempt_4")).append(Text.gold(" + 30% ")).append(Text.lightPurple(Text.translate("curlamoety.lang.luck"))))
+            text.add(7,Text.darkPurple(Text.translate("curlamoety.lang.desperate_attempt_4")))
         }else{
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.shift")))
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
 
@@ -754,7 +891,7 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.darkGreen(Text.translate("curlamoety.lang.chlorophium_ingot_1")))
     })
 
-    event.addAdvanced('curlamoety:biogenesium_ingot' ,(item,addAdvanced,text)=>{//生源chaos_cube
+    event.addAdvanced('curlamoety:biogenesium_ingot' ,(item,addAdvanced,text)=>{//生源
         text.add(1,Text.darkRed(Text.translate("curlamoety.lang.biogenesium_ingot")))
     })
 
@@ -795,49 +932,61 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.ghast_respawn")))
     })
 
-    event.addAdvanced('goetyawaken:champion_helmet',(item,addAdvanced,text)=>{
+    event.addAdvanced('goetyawaken:champion_helmet',(item,addAdvanced,text)=>{//冠军套
         if(event.shift){
-            text.add(14,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_0")).append(Text.gold(Text.translate("item.goetyawaken.moonlight_cut"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_1"))))
-            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_0")).append(Text.gold("0.5%")).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_1_2"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_3"))))
-            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_0")).append(Text.yellow(Text.translate("curlamoety.lang.champion_armorset_2_1"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_2"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_2_3"))))
+            text.add(12,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0")))
+            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
+            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
+            text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
+            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
         }
     })
     event.addAdvanced('goetyawaken:champion_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(14,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_0")).append(Text.gold(Text.translate("item.goetyawaken.moonlight_cut"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_1"))))
-            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_0")).append(Text.gold("0.5%")).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_1_2"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_3"))))
-            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_0")).append(Text.yellow(Text.translate("curlamoety.lang.champion_armorset_2_1"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_2"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_2_3"))))
+            text.add(12,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0")))
+            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
+            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
+            text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
+            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
         }
     })
     event.addAdvanced('goetyawaken:champion_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(14,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_0")).append(Text.gold(Text.translate("item.goetyawaken.moonlight_cut"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_1"))))
-            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_0")).append(Text.gold("0.5%")).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_1_2"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_3"))))
-            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_0")).append(Text.yellow(Text.translate("curlamoety.lang.champion_armorset_2_1"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_2"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_2_3"))))
+            text.add(12,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0")))
+            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
+            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
+            text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
+            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
         }
     })
     event.addAdvanced('goetyawaken:champion_boots',(item,addAdvanced,text)=>{
         if(event.shift){
-            text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_0")).append(Text.gold(Text.translate("item.goetyawaken.moonlight_cut"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_0_1"))))
-            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_0")).append(Text.gold("0.5%")).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_1_2"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_1_3"))))
-            text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_0")).append(Text.yellow(Text.translate("curlamoety.lang.champion_armorset_2_1"))).append(Text.gray(Text.translate("curlamoety.lang.champion_armorset_2_2"))).append(Text.gold(Text.translate("curlamoety.lang.champion_armorset_2_3"))))
+            text.add(13,Text.gray(Text.translate("curlamoety.lang.champion_armorset_0")))
+            text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
+            text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
+            text.add(18,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
+            text.add(19,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
         }
     })
 
     event.addAdvanced('curlamoety:chaos_cube' ,(item,addAdvanced,text)=>{//混沌立方
         text.add(1,Text.lightPurple(Text.translate("curlamoety.lang.chaos_cube")))
+        text.add(2,Text.yellow(Text.translate("curlamoety.lang.copy")))
     })
 
     event.addAdvanced('curlamoety:goal_ty' ,(item,addAdvanced,text)=>{//巫法极点
         text.add(1,Text.lightPurple(Text.translate("curlamoety.lang.goal_ty")))
+        text.add(2,Text.yellow(Text.translate("curlamoety.lang.goal_ty2")))
     })
 
     event.addAdvanced('curlamoety:twilight_sparkle' ,(item,addAdvanced,text)=>{//创生之暮
         text.add(1,Text.lightPurple(Text.translate("curlamoety.lang.twilight_sparkle")))
+        text.add(2,Text.yellow(Text.translate("curlamoety.lang.copy")))
     })
 
     event.addAdvanced('curlamoety:calamity_source' ,(item,addAdvanced,text)=>{//厄难本源
         text.add(1,Text.lightPurple(Text.translate("curlamoety.lang.calamity_source")))
+        text.add(2,Text.yellow(Text.translate("curlamoety.lang.copy")))
     })
 
     event.addAdvanced('curlamoety:fall_of_apocalypse' ,(item,addAdvanced,text)=>{//天启之陨
@@ -894,10 +1043,10 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.of(""))
         text.add(3,Text.of(""))
         if(event.shift){
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_0")).append(Text.gold(Text.translate("item.goety.blade_of_ender"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_1"))))
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_0")).append(Text.gold(Text.translate("entity.goety.ender_keeper"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.enderhero")).bold()))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0")))
+            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1")))
         }else{
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
 
@@ -906,20 +1055,20 @@ ItemEvents.tooltip(event=>{
         text.add(2,Text.of(""))
         text.add(3,Text.of(""))
         if(event.shift){
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_0")).append(Text.gold(Text.translate("item.goety.blade_of_ender"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_1"))))
-            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_0")).append(Text.gold(Text.translate("entity.goety.ender_keeper"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.enderhero")).bold()))
+            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0")))
+            text.add(4,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1")))
         }else{
-            text.add(3,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
 
     event.addAdvanced( "goety:blade_of_ender",(item,addAdvanced,text)=>{//末影之刃
         text.add(5,Text.of(""))
         if(event.shift){
-            text.add(5,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_0")).append(Text.gold(Text.translate("item.goety.blade_of_ender"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0_1"))))
-            text.add(6,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_0")).append(Text.gold(Text.translate("entity.goety.ender_keeper"))).append(Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1_1"))).append(Text.gold(Text.translate("curlamoety.lang.enderhero")).bold()))
+            text.add(5,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_0")))
+            text.add(6,Text.darkPurple(Text.translate("curlamoety.lang.ender_hero_item_1")))
         }else{
-            text.add(5,Text.darkPurple(Text.translate("curlamoety.lang.hold")).append(Text.gold(" Shift ")).append(Text.darkPurple(Text.translate("curlamoety.lang.information"))))
+            text.add(5,Text.translate("curlamoety.lang.hold_shift"))
         }
     })
 
@@ -1015,12 +1164,1046 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.light_curio")))
     })
 
-    event.addAdvanced('@ironchest',(item,addAdvanced,text)=>{//金属桶/箱
-        text.add(1,Text.red(Text.translate("curlamoety.lang.chest_warn")))
+    event.addAdvanced('enigmaticlegacy:astral_dust',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
     })
-    event.addAdvanced('@metalbarrels',(item,addAdvanced,text)=>{//金属桶/箱
-        text.add(1,Text.red(Text.translate("curlamoety.lang.chest_warn")))
+
+    event.addAdvanced('minecraft:nether_star',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
+    })
+
+    event.addAdvanced('cataclysm:lava_power_cell',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
     })
     
+    event.addAdvanced('netherite_ingot',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
+    })
 
+    event.addAdvanced('twilightforest:fiery_blood',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
+    })
+
+    event.addAdvanced('twilightforest:fiery_tears',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.5_capacity")))
+    })
+
+    event.addAdvanced('cataclysm:essence_of_the_storm',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.6_capacity")))
+    })
+
+    event.addAdvanced('goety_cataclysm:abyss_essence',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.6_capacity")))
+    })
+
+    event.addAdvanced('cataclysm:cursium_ingot',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.6_capacity")))
+    })
+
+    event.addAdvanced('goety:void_echo',(item,addAdvanced,text)=>{//容量剂
+        text.add(1,Text.darkPurple(Text.translate("curlamoety.lang.Lv.6_capacity")))
+    })
+
+    event.addAdvanced('curlamoety:redstone_gear',(item,addAdvanced,text)=>{//红石元件
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.redstone_gear")))
+    })
+
+    event.addAdvanced('goety:shrouded_blueprint',(item,addAdvanced,text)=>{//隐匿蓝图
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.blueprint")))
+    })
+
+    event.addAdvanced('enigmaticaddons:ichor_droplet',(item,addAdvanced,text)=>{//灵液
+        text.add(1,Text.gold(Text.translate("curlamoety.lang.copy")))
+    })
+
+    event.addAdvanced('curlamoety:stocking_tea',(item,addAdvanced,text)=>{//丝袜奶茶
+        text.add(1,Text.gold(Text.translate('curlamoety.lang.stocking_tea')))
+    })
+
+    event.addAdvanced('curlamoety:stocking_cup',(item,addAdvanced,text)=>{//丝袜杯
+        text.add(1,Text.gold(Text.translate('curlamoety.lang.stocking_cup')))
+    })
+
+    event.addAdvanced('minecraft:iron_helmet',(item,addAdvanced,text)=>{//铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.iron_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.iron_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.iron_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.iron_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.iron_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.iron_armorset_6",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:iron_chestplate',(item,addAdvanced,text)=>{//铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.iron_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.iron_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.iron_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.iron_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.iron_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.iron_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:iron_leggings',(item,addAdvanced,text)=>{//铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.iron_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.iron_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.iron_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.iron_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.iron_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.iron_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:iron_boots',(item,addAdvanced,text)=>{//铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.iron_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.iron_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.iron_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.iron_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.iron_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.iron_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('minecraft:leather_helmet',(item,addAdvanced,text)=>{//皮革
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.leather_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.leather_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.leather_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.leather_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.leather_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.leather_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.leather_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:leather_chestplate',(item,addAdvanced,text)=>{//皮革
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.leather_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.leather_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.leather_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.leather_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.leather_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.leather_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.leather_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:leather_leggings',(item,addAdvanced,text)=>{//皮革
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.leather_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.leather_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.leather_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.leather_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.leather_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.leather_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.leather_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:leather_boots',(item,addAdvanced,text)=>{//皮革
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.leather_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.leather_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.leather_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.leather_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.leather_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.leather_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.leather_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('minecraft:golden_helmet',(item,addAdvanced,text)=>{//金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.golden_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.golden_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.golden_armorset_3"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:golden_chestplate',(item,addAdvanced,text)=>{//金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.golden_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.golden_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.golden_armorset_3"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:golden_leggings',(item,addAdvanced,text)=>{//金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.golden_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.golden_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.golden_armorset_3"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:golden_boots',(item,addAdvanced,text)=>{//金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.golden_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.golden_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.golden_armorset_3"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('minecraft:diamond_helmet',(item,addAdvanced,text)=>{//钻石套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.diamond_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.diamond_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.diamond_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.diamond_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.diamond_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.diamond_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.diamond_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:diamond_chestplate',(item,addAdvanced,text)=>{//钻石套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.diamond_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.diamond_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.diamond_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.diamond_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.diamond_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.diamond_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.diamond_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:diamond_leggings',(item,addAdvanced,text)=>{//钻石套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.diamond_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.diamond_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.diamond_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.diamond_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.diamond_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.diamond_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.diamond_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:diamond_boots',(item,addAdvanced,text)=>{//钻石套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.diamond_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.diamond_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.diamond_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.diamond_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.diamond_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.diamond_armorset_6"))
+            text.add(8,Component.translate("curlamoety.lang.diamond_armorset_7",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('minecraft:chainmail_helmet',(item,addAdvanced,text)=>{//锁链套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.chainmail_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.chainmail_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.chainmail_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.chainmail_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.chainmail_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.chainmail_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:chainmail_chestplate',(item,addAdvanced,text)=>{//锁链套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.chainmail_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.chainmail_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.chainmail_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.chainmail_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.chainmail_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.chainmail_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:chainmail_leggings',(item,addAdvanced,text)=>{//锁链套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.chainmail_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.chainmail_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.chainmail_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.chainmail_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.chainmail_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.chainmail_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('minecraft:chainmail_boots',(item,addAdvanced,text)=>{//锁链套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.chainmail_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.chainmail_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.chainmail_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.chainmail_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.chainmail_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.chainmail_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('minecraft:netherite_helmet',(item,addAdvanced,text)=>{//合金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.netherite_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.netherite_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.netherite_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.netherite_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.netherite_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.netherite_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('minecraft:netherite_chestplate',(item,addAdvanced,text)=>{//合金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.netherite_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.netherite_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.netherite_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.netherite_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.netherite_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.netherite_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('minecraft:netherite_leggings',(item,addAdvanced,text)=>{//合金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.netherite_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.netherite_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.netherite_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.netherite_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.netherite_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.netherite_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('minecraft:netherite_boots',(item,addAdvanced,text)=>{//合金套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.netherite_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.netherite_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.netherite_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.netherite_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.netherite_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.netherite_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:ironwood_helmet',(item,addAdvanced,text)=>{//铁木套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.ironwood_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.ironwood_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.ironwood_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.ironwood_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.ironwood_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.ironwood_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:ironwood_chestplate',(item,addAdvanced,text)=>{//铁木套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.ironwood_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.ironwood_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.ironwood_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.ironwood_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.ironwood_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.ironwood_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:ironwood_leggings',(item,addAdvanced,text)=>{//铁木套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.ironwood_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.ironwood_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.ironwood_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.ironwood_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.ironwood_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.ironwood_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:ironwood_boots',(item,addAdvanced,text)=>{//铁木套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.ironwood_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.ironwood_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.ironwood_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.ironwood_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.ironwood_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.ironwood_armorset_6"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:steeleaf_helmet',(item,addAdvanced,text)=>{//钢叶套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.steeleaf_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.steeleaf_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.steeleaf_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.steeleaf_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.steeleaf_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:steeleaf_chestplate',(item,addAdvanced,text)=>{//钢叶套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.steeleaf_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.steeleaf_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.steeleaf_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.steeleaf_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.steeleaf_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:steeleaf_leggings',(item,addAdvanced,text)=>{//钢叶套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.steeleaf_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.steeleaf_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.steeleaf_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.steeleaf_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.steeleaf_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:steeleaf_boots',(item,addAdvanced,text)=>{//钢叶套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.steeleaf_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.steeleaf_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.steeleaf_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.steeleaf_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.steeleaf_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:arctic_helmet',(item,addAdvanced,text)=>{//极地套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.arctic_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.arctic_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.arctic_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.arctic_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.arctic_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.arctic_armorset_6",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:arctic_chestplate',(item,addAdvanced,text)=>{//极地套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.arctic_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.arctic_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.arctic_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.arctic_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.arctic_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.arctic_armorset_6",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:arctic_leggings',(item,addAdvanced,text)=>{//极地套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.arctic_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.arctic_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.arctic_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.arctic_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.arctic_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.arctic_armorset_6",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+    event.addAdvanced('twilightforest:arctic_boots',(item,addAdvanced,text)=>{//极地套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.arctic_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.arctic_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.arctic_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.arctic_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.arctic_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.arctic_armorset_6",Component.aqua(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift_blue"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:fiery_helmet',(item,addAdvanced,text)=>{//炽铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.fiery_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.fiery_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.fiery_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.fiery_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.fiery_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.fiery_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.fiery_armorset_7"))
+            text.add(9,Text.translate("curlamoety.lang.fiery_armorset_8"))
+            text.add(10,Text.translate("curlamoety.lang.fiery_armorset_9"))
+            text.add(11,Text.translate("curlamoety.lang.fiery_armorset_10"))
+            text.add(12,Component.translate("curlamoety.lang.fiery_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:fiery_chestplate',(item,addAdvanced,text)=>{//炽铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.fiery_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.fiery_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.fiery_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.fiery_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.fiery_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.fiery_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.fiery_armorset_7"))
+            text.add(9,Text.translate("curlamoety.lang.fiery_armorset_8"))
+            text.add(10,Text.translate("curlamoety.lang.fiery_armorset_9"))
+            text.add(11,Text.translate("curlamoety.lang.fiery_armorset_10"))
+            text.add(12,Component.translate("curlamoety.lang.fiery_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:fiery_leggings',(item,addAdvanced,text)=>{//炽铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.fiery_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.fiery_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.fiery_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.fiery_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.fiery_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.fiery_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.fiery_armorset_7"))
+            text.add(9,Text.translate("curlamoety.lang.fiery_armorset_8"))
+            text.add(10,Text.translate("curlamoety.lang.fiery_armorset_9"))
+            text.add(11,Text.translate("curlamoety.lang.fiery_armorset_10"))
+            text.add(12,Component.translate("curlamoety.lang.fiery_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:fiery_boots',(item,addAdvanced,text)=>{//炽铁套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.fiery_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.fiery_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.fiery_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.fiery_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.fiery_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.fiery_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.fiery_armorset_7"))
+            text.add(9,Text.translate("curlamoety.lang.fiery_armorset_8"))
+            text.add(10,Text.translate("curlamoety.lang.fiery_armorset_9"))
+            text.add(11,Text.translate("curlamoety.lang.fiery_armorset_10"))
+            text.add(12,Component.translate("curlamoety.lang.fiery_armorset_11",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:yeti_helmet',(item,addAdvanced,text)=>{//雪怪套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.yeti_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.yeti_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.yeti_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.yeti_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:yeti_chestplate',(item,addAdvanced,text)=>{//雪怪套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.yeti_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.yeti_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.yeti_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.yeti_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:yeti_leggings',(item,addAdvanced,text)=>{//雪怪套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.yeti_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.yeti_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.yeti_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.yeti_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:yeti_boots',(item,addAdvanced,text)=>{//雪怪套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.yeti_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.yeti_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.yeti_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.yeti_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('cataclysm:ignitium_helmet',(item,addAdvanced,text)=>{//腾炎套
+        if(event.shift){
+            text.add(3,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(4,Text.translate("curlamoety.lang.ignitium_armorset_1"))
+            text.add(5,Text.translate("curlamoety.lang.ignitium_armorset_2"))
+            text.add(6,Text.translate("curlamoety.lang.ignitium_armorset_3"))
+            text.add(7,Text.translate("curlamoety.lang.ignitium_armorset_4"))
+            text.add(8,Text.translate("curlamoety.lang.ignitium_armorset_5"))
+            text.add(9,Text.translate("curlamoety.lang.ignitium_armorset_6"))
+            text.add(10,Text.translate("curlamoety.lang.ignitium_armorset_7"))
+            text.add(11,Text.translate("curlamoety.lang.ignitium_armorset_8"))
+            text.add(12,Text.translate("curlamoety.lang.ignitium_armorset_9"))
+            text.add(13,Component.translate("curlamoety.lang.ignitium_armorset_10",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:ignitium_chestplate',(item,addAdvanced,text)=>{//腾炎套
+        if(event.shift){
+            text.add(2,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(3,Text.translate("curlamoety.lang.ignitium_armorset_1"))
+            text.add(4,Text.translate("curlamoety.lang.ignitium_armorset_2"))
+            text.add(5,Text.translate("curlamoety.lang.ignitium_armorset_3"))
+            text.add(6,Text.translate("curlamoety.lang.ignitium_armorset_4"))
+            text.add(7,Text.translate("curlamoety.lang.ignitium_armorset_5"))
+            text.add(8,Text.translate("curlamoety.lang.ignitium_armorset_6"))
+            text.add(9,Text.translate("curlamoety.lang.ignitium_armorset_7"))
+            text.add(10,Text.translate("curlamoety.lang.ignitium_armorset_8"))
+            text.add(11,Text.translate("curlamoety.lang.ignitium_armorset_9"))
+            text.add(12,Component.translate("curlamoety.lang.ignitium_armorset_10",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:ignitium_elytra_chestplate',(item,addAdvanced,text)=>{//腾炎套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.ignitium_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.ignitium_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.ignitium_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.ignitium_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.ignitium_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.ignitium_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.ignitium_armorset_7"))
+            text.add(9,Text.translate("curlamoety.lang.ignitium_armorset_8"))
+            text.add(10,Text.translate("curlamoety.lang.ignitium_armorset_9"))
+            text.add(11,Component.translate("curlamoety.lang.ignitium_armorset_10",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:ignitium_leggings',(item,addAdvanced,text)=>{//腾炎套
+        if(event.shift){
+            text.add(2,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(3,Text.translate("curlamoety.lang.ignitium_armorset_1"))
+            text.add(4,Text.translate("curlamoety.lang.ignitium_armorset_2"))
+            text.add(5,Text.translate("curlamoety.lang.ignitium_armorset_3"))
+            text.add(6,Text.translate("curlamoety.lang.ignitium_armorset_4"))
+            text.add(7,Text.translate("curlamoety.lang.ignitium_armorset_5"))
+            text.add(8,Text.translate("curlamoety.lang.ignitium_armorset_6"))
+            text.add(9,Text.translate("curlamoety.lang.ignitium_armorset_7"))
+            text.add(10,Text.translate("curlamoety.lang.ignitium_armorset_8"))
+            text.add(11,Text.translate("curlamoety.lang.ignitium_armorset_9"))
+            text.add(12,Component.translate("curlamoety.lang.ignitium_armorset_10",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:ignitium_boots',(item,addAdvanced,text)=>{//腾炎套
+        if(event.shift){
+            text.add(2,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(3,Text.translate("curlamoety.lang.ignitium_armorset_1"))
+            text.add(4,Text.translate("curlamoety.lang.ignitium_armorset_2"))
+            text.add(5,Text.translate("curlamoety.lang.ignitium_armorset_3"))
+            text.add(6,Text.translate("curlamoety.lang.ignitium_armorset_4"))
+            text.add(7,Text.translate("curlamoety.lang.ignitium_armorset_5"))
+            text.add(8,Text.translate("curlamoety.lang.ignitium_armorset_6"))
+            text.add(9,Text.translate("curlamoety.lang.ignitium_armorset_7"))
+            text.add(10,Text.translate("curlamoety.lang.ignitium_armorset_8"))
+            text.add(11,Text.translate("curlamoety.lang.ignitium_armorset_9"))
+            text.add(12,Component.translate("curlamoety.lang.ignitium_armorset_10",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(2,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('cataclysm:cursium_helmet',(item,addAdvanced,text)=>{//咒魂套
+        if(event.shift){
+            text.add(3,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(4,Text.translate("curlamoety.lang.cursium_armorset_1"))
+            text.add(5,Text.translate("curlamoety.lang.cursium_armorset_2"))
+            text.add(6,Text.translate("curlamoety.lang.cursium_armorset_3"))
+            text.add(7,Text.translate("curlamoety.lang.cursium_armorset_4"))
+            text.add(8,Text.translate("curlamoety.lang.cursium_armorset_5"))
+            text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
+            text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
+            text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
+            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:cursium_chestplate',(item,addAdvanced,text)=>{//咒魂套
+        if(event.shift){
+            text.add(4,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(5,Text.translate("curlamoety.lang.cursium_armorset_1"))
+            text.add(6,Text.translate("curlamoety.lang.cursium_armorset_2"))
+            text.add(7,Text.translate("curlamoety.lang.cursium_armorset_3"))
+            text.add(8,Text.translate("curlamoety.lang.cursium_armorset_4"))
+            text.add(9,Text.translate("curlamoety.lang.cursium_armorset_5"))
+            text.add(10,Text.translate("curlamoety.lang.cursium_armorset_6"))
+            text.add(11,Text.translate("curlamoety.lang.cursium_armorset_7"))
+            text.add(12,Text.translate("curlamoety.lang.cursium_armorset_8"))
+            text.add(13,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(4,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:cursium_leggings',(item,addAdvanced,text)=>{//咒魂套
+        if(event.shift){
+            text.add(3,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(4,Text.translate("curlamoety.lang.cursium_armorset_1"))
+            text.add(5,Text.translate("curlamoety.lang.cursium_armorset_2"))
+            text.add(6,Text.translate("curlamoety.lang.cursium_armorset_3"))
+            text.add(7,Text.translate("curlamoety.lang.cursium_armorset_4"))
+            text.add(8,Text.translate("curlamoety.lang.cursium_armorset_5"))
+            text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
+            text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
+            text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
+            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('cataclysm:cursium_boots',(item,addAdvanced,text)=>{//咒魂套
+        if(event.shift){
+            text.add(3,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(4,Text.translate("curlamoety.lang.cursium_armorset_1"))
+            text.add(5,Text.translate("curlamoety.lang.cursium_armorset_2"))
+            text.add(6,Text.translate("curlamoety.lang.cursium_armorset_3"))
+            text.add(7,Text.translate("curlamoety.lang.cursium_armorset_4"))
+            text.add(8,Text.translate("curlamoety.lang.cursium_armorset_5"))
+            text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
+            text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
+            text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
+            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(3,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('goety:cursed_knight_helmet',(item,addAdvanced,text)=>{//诅咒骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_knight_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_knight_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_knight_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_knight_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_knight_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.cursed_knight_armorset_6",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_knight_chestplate',(item,addAdvanced,text)=>{//诅咒骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_knight_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_knight_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_knight_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_knight_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_knight_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.cursed_knight_armorset_6",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_knight_leggings',(item,addAdvanced,text)=>{//诅咒骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_knight_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_knight_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_knight_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_knight_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_knight_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.cursed_knight_armorset_6",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_knight_boots',(item,addAdvanced,text)=>{//诅咒骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_knight_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_knight_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_knight_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_knight_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_knight_armorset_5"))
+            text.add(7,Component.translate("curlamoety.lang.cursed_knight_armorset_6",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('goety:cursed_paladin_helmet',(item,addAdvanced,text)=>{//诅咒圣骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_paladin_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_paladin_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_paladin_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_paladin_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_paladin_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.cursed_paladin_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.cursed_paladin_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.cursed_paladin_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_paladin_chestplate',(item,addAdvanced,text)=>{//诅咒圣骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_paladin_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_paladin_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_paladin_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_paladin_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_paladin_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.cursed_paladin_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.cursed_paladin_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.cursed_paladin_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_paladin_leggings',(item,addAdvanced,text)=>{//诅咒圣骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_paladin_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_paladin_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_paladin_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_paladin_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_paladin_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.cursed_paladin_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.cursed_paladin_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.cursed_paladin_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('goety:cursed_paladin_boots',(item,addAdvanced,text)=>{//诅咒圣骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.cursed_paladin_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.cursed_paladin_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.cursed_paladin_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.cursed_paladin_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.cursed_paladin_armorset_5"))
+            text.add(7,Text.translate("curlamoety.lang.cursed_paladin_armorset_6"))
+            text.add(8,Text.translate("curlamoety.lang.cursed_paladin_armorset_7"))
+            text.add(9,Component.translate("curlamoety.lang.cursed_paladin_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('twilightforest:knightmetal_helmet',(item,addAdvanced,text)=>{//骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.knightmetal_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.knightmetal_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.knightmetal_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.knightmetal_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.knightmetal_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:knightmetal_chestplate',(item,addAdvanced,text)=>{//骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.knightmetal_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.knightmetal_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.knightmetal_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.knightmetal_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.knightmetal_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:knightmetal_leggings',(item,addAdvanced,text)=>{//骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.knightmetal_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.knightmetal_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.knightmetal_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.knightmetal_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.knightmetal_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+    event.addAdvanced('twilightforest:knightmetal_boots',(item,addAdvanced,text)=>{//骑士套
+        if(event.shift){
+            text.add(1,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(2,Text.translate("curlamoety.lang.knightmetal_armorset_1"))
+            text.add(3,Text.translate("curlamoety.lang.knightmetal_armorset_2"))
+            text.add(4,Text.translate("curlamoety.lang.knightmetal_armorset_3"))
+            text.add(5,Text.translate("curlamoety.lang.knightmetal_armorset_4"))
+            text.add(6,Text.translate("curlamoety.lang.knightmetal_armorset_5"))
+        }else{
+            text.add(1,Text.translate("curlamoety.lang.hold_shift"))
+        }
+    })
+
+    event.addAdvanced('goety:black_iron_helmet',(item,addAdvanced,text)=>{//黑铁套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.black_iron_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.black_iron_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.black_iron_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:black_iron_chestplate',(item,addAdvanced,text)=>{//黑铁套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.black_iron_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.black_iron_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.black_iron_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:black_iron_leggings',(item,addAdvanced,text)=>{//黑铁套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.black_iron_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.black_iron_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.black_iron_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:black_iron_boots',(item,addAdvanced,text)=>{//黑铁套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.black_iron_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.black_iron_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.black_iron_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+
+    event.addAdvanced('goety:dark_helmet',(item,addAdvanced,text)=>{//黑暗套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.dark_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.dark_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.dark_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:dark_chestplate',(item,addAdvanced,text)=>{//黑暗套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.dark_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.dark_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.dark_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:dark_leggings',(item,addAdvanced,text)=>{//黑暗套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.dark_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.dark_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.dark_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
+    event.addAdvanced('goety:dark_boots',(item,addAdvanced,text)=>{//黑暗套
+        if(event.shift){
+            text.add(5,Text.gray(Text.translate("curlamoety.lang.armorset")))
+            text.add(6,Text.translate("curlamoety.lang.dark_armorset_1"))
+            text.add(7,Text.translate("curlamoety.lang.dark_armorset_2"))
+            text.add(8,Component.translate("curlamoety.lang.dark_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+        }
+    })
 })

@@ -91,7 +91,7 @@
 	#
 	# 附魔白名单：强制允许这些 [物品 ; 附魔] 组合，无视原版的兼容性检查。
 	#Enchantment Whitelist: Forcibly allow these [Item ; Enchant] combinations, bypassing vanilla checks.
-	whitelist = ["#minecraft:axes; minecraft:sharpness, minecraft:smite, minecraft:bane_of_arthropods, minecraft:mob_looting, minecraft:knockback, minecraft:fire_aspect", "#curios:curio;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:tarot;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:head;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:back;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:body;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:hands;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:necklace;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:rings;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:feet;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:charm;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:talisman;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:belt;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:waist;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:scroll;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:spellstone;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse"]
+	whitelist = ["#minecraft:axes; minecraft:sharpness, minecraft:smite, minecraft:bane_of_arthropods, minecraft:mob_looting, minecraft:knockback, minecraft:fire_aspect", "#curios:curio;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:tarot;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:head;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:back;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:body;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:hands;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:necklace;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:rings;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:feet;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:charm;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:talisman;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:belt;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:waist;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:scroll;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:spellstone;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "minecraft:bucket;minecraft:infinity", "minecraft:water_bucket;minecraft:infinity", "minecraft:lava_bucket;minecraft:infinity", "minecraft:cod_bucket;minecraft:infinity", "minecraft:salmon_bucket;minecraft:infinity", "minecraft:tropical_fish_bucket;minecraft:infinity", "minecraft:pufferfish_bucket;minecraft:infinity", "minecraft:axolotlbucket;minecraft:infinity", "minecraft:tadpole_bucket;minecraft:infinity", "minecraft:powder_snow_bucket;minecraft:infinity", "minecraft:void_bucket;minecraft:infinity", "minecraft:end_mud_bucket;minecraft:infinity"]
 	#
 	# 附魔黑名单：严厉禁止这些组合。匹配时铁砧将无法产出成品。
 	#Enchantment Blacklist: Strictly forbid these combinations. Anvil output will be cleared.
@@ -181,9 +181,31 @@
 	#Sixth Sense tick detection rate.
 	sixthSenseTickRate = 10
 	#
-	# 万能工具速：工具在挖掘不匹配的方块时的基础速度。
-	#Omni-Tool speed: Base mining speed on non-matching blocks.
-	omniToolSpeed = 50.0
+	# 万能工具基础速度倍率：基础速度补偿 = 当前工具原始挖掘速度 × 该倍率。默认 3.0 表示当前工具速度的 3 倍。
+	#实际速度还会按方块硬度额外补偿，硬度越高越快，但不会让低硬度方块变慢。
+	#Omni-Tool base speed multiplier: base speed boost = current tool mining speed × this multiplier. Default 3.0 means triple speed.
+	#The final speed also scales up with block hardness, but never slows low-hardness blocks.
+	omniToolBaseSpeedMultiplier = 3.0
+	#
+	# 万能工具附魔台出现概率：仅第三档显示等级达到 30 时生效，工具和普通书都可以出现。0.10 = 10%，0.05 = 5%，1.0 = 100%。
+	#Omni-Tool enchanting chance: only works for the 3rd enchanting-table slot when displayed level is at least 30. 0.10 = 10%, 0.05 = 5%, 1.0 = 100%.
+	omniToolEnchantChance = 0.1
+	#
+	# 【万能工具强制掉落方块名单 - 小白语法教程】
+	#这里是“额外例外名单”，只有填入名单的方块，才会在万能工具挖掘时强制掉落自身。
+	#不在名单内的方块仍严格遵守原版/数据包战利品表规则：刷怪笼这类本来不会掉落的方块，不会被万能工具挖下来。
+	#支持三种格式：
+	#1. 指定单个方块："minecraft:spawner"
+	#2. 指定一类方块标签："#minecraft:mineable/pickaxe"
+	#3. 指定整个模组方块："@minecraft"
+	#示例： ["minecraft:spawner", "#forge:storage_blocks"]
+	#注意：名单方块被万能工具强制掉落时，会压制该次破坏产生的方块经验，避免刷怪笼同时掉方块又掉经验。
+	#=========================================================
+	#[Omni-Tool Force Drop Block List]
+	#Extra exception list. Only blocks listed here will forcibly drop themselves when mined with Omni-Tool.
+	#Blocks not listed still obey vanilla/datapack loot tables. Spawners and other no-drop blocks will not drop unless listed here.
+	#Formats: block id, #block_tag, or @modid. Forced drops suppress block XP for that break.
+	omniToolForceDropBlocks = []
 	#
 	# 启蒙附魔经验倍率。
 	#Enlightenment XP multiplier.

@@ -1,0 +1,122 @@
+
+#模块总开关 (修改后需重启游戏生效)
+#Module Toggles (Game restart required after changes)
+[general]
+	#启用 心之钢 饰品
+	#Enable the Heart of Steel accessory
+	enable_heart_of_steel = false
+	#启用 失乐园 饰品
+	#Enable the Paradise Lost accessory
+	enable_paradise_lost = false
+	#启用 悬浮背包 饰品
+	#Enable the Levitation Backpack accessory
+	enable_levitation_backpack = false
+	#启用 钱包袋子 饰品
+	#Enable the Currency Wallet accessory
+	enable_currency_wallet = false
+
+#心之钢机制设定
+#Heart of Steel Mechanics Settings
+[heart_of_steel]
+	#触发充能攻击的冷却时间（单位：秒）。
+	#Cooldown time in seconds for charged attacks.
+	#示例: 3 = 每3秒才能获取一次层数
+	#Example: 3 = Gain stacks max once every 3s
+	growthInterval = 3
+	#心之钢能够提供的最大额外伤害绝对值上限。
+	#Absolute maximum limit for bonus damage provided.
+	#示例: 3.0 = 最多只能为你增加3点最终伤害
+	#Example: 3.0 = Max +3.0 total damage
+	damageCap = 3.0
+	#通过不断叠加层数，能获取的最大额外生命值上限。
+	#Maximum bonus health obtainable from stacking.
+	#示例: 200 = 最多额外增加200点生命值上限
+	#Example: 200 = Max +200 HP limit
+	maxHealthCap = 200
+	#每积累多少层数，转化为 1 点最大生命值。
+	#Number of stacks required to gain 1 Max HP.
+	#示例: 100 = 打够100层增加1点生命值
+	#Example: 100 = 100 stacks = +1 HP
+	stacksPerHp = 100
+	#佩戴心之钢时直接提供的基础生命值加成（无需叠层）。
+	#Base bonus health granted simply by wearing the item.
+	baseHealth = 10.0
+	#触发充能攻击时，基于造成伤害恢复生命值的倍率。
+	#Healing multiplier based on damage dealt during a charged attack.
+	healMultiplier = 2.0
+	#触发充能攻击后，允许享受额外伤害加成的持续时间（单位：Tick，20 Tick = 1秒）。
+	#Duration of the damage bonus window after a charged attack (20 Ticks = 1s).
+	damageWindowTicks = 5
+	#单次成功触发充能攻击时，随机获取的最小层数。
+	#Minimum stacks gained on a successful charged attack.
+	minGain = 2
+	#单次成功触发充能攻击时，随机获取的最大层数。
+	#Maximum stacks gained on a successful charged attack.
+	maxGain = 5
+	#基于玩家最大生命值，转化为额外伤害的比例。
+	#Percentage of Max HP converted to extra damage.
+	#示例: 0.005 = 0.5% (若玩家有200血, 200 * 0.5% = 增加1点额外伤害)
+	#Example: 0.005 = 0.5% (If player has 200 HP, 200 * 0.5% = +1 bonus damage)
+	damagePerHp = 0.005
+	#排斥的饰品ID列表。如果玩家佩戴了列表中的饰品，心之钢将失效。
+	#List of incompatible accessory IDs. Heart of Steel won't work if these are equipped.
+	#示例: ["enigmaticlegacy:cursed_ring", "minecraft:apple"]
+	#Example: ["enigmaticlegacy:cursed_ring", "minecraft:apple"]
+	conflicts = ["enigmaticlegacy:cursed_ring"]
+
+#失乐园机制设定
+#Paradise Lost Mechanics Settings
+[paradise_lost]
+	#吃下不同食物时的初始伤害惩罚基础值。
+	#Base damage penalty when consuming different foods.
+	basePenalty = 0.2
+	#决定食物多样性带来的伤害惩罚减轻程度的曲线系数。
+	#Coefficient determining how food variety mitigates the damage penalty.
+	curveCoeff = 0.0045
+	#决定食物多样性带来的伤害惩罚减轻程度的指数（控制曲线弯曲度）。
+	#Exponent controlling the curve of penalty mitigation based on food variety.
+	curveExp = 0.75
+	#忽略营养值（恢复的饱食度）低于或等于此值的食物，它们不会被计入多样性。
+	#Foods restoring this much or less hunger will be ignored for variety calculation.
+	#示例: 0 = 不恢复饱食度的物品不生效
+	#Example: 0 = Ignore items that do not restore hunger
+	minNutrition = 0
+	#排斥的饰品ID列表。如果玩家佩戴了列表中的饰品，失乐园将失效。
+	#List of incompatible accessory IDs. Paradise Lost won't work if these are equipped.
+	conflicts = ["enigmaticlegacy:cursed_ring"]
+
+#钱包袋子机制设定
+#Currency Wallet Mechanics Settings
+[currency_wallet]
+	#佩戴钱包袋子时，为玩家额外提供的腰带 (Belt) 饰品栏位数量。
+	#Extra Curios belt slots provided when the wallet is equipped.
+	extraBeltSlots = 1
+	#系统支持的最大货币种类数量。建议不要超过10，以防止UI超出屏幕范围。
+	#Max supported currency types. Hard cap at 10 recommended to avoid UI overflow.
+	maxCurrencyTypes = 10
+	#佩戴钱包时，自动收集周围货币掉落物的半径（单位：格子）。
+	#Radius (in blocks) to automatically collect currency items while equipped.
+	magnetRange = 6.0
+	#自动收集的检查间隔（单位：Tick）。数值越大越节省服务器性能，但收集会有延迟。
+	#Interval (Ticks) for automatic collection checks. Higher = better server performance but slower collection.
+	magnetIntervalTicks = 10
+	#钱包货币实时显示界面距离屏幕左侧的像素偏移量 (可为负数)。
+	#Currency HUD pixel offset from the left side of the screen (can be negative).
+	hudOffsetX = 0
+	#钱包货币实时显示界面距离屏幕底部的像素偏移量 (可为负数)。
+	#Currency HUD pixel offset from the bottom of the screen (can be negative).
+	hudOffsetY = 0
+	#屏幕上货币数量显示的UI缩放比例 (默认 0.75)。
+	#UI scale for the currency display overlay (Default 0.75).
+	hudScale = 0.75
+	#定义哪些物品是货币及其基础价值。格式：'物品ID|价值'。价值必须大于0。
+	#Defines valid currencies and their base values. Format: 'item_id|value'. Value must be > 0.
+	#示例: ["kubejs:gold_coin|1", "kubejs:diamond_coin|100"]
+	#Example: ["kubejs:gold_coin|1", "kubejs:diamond_coin|100"]
+	currencyDefinitions = ["kubejs:gold_coin|1", "kubejs:diamond_coin|100", "kubejs:netherite_coin|1000", "kubejs:monster_coin|10000"]
+	#定义货币之间的单向转换规则，用于找零或自动升级。格式：'来源物品ID->目标物品ID'。
+	#Defines allowed one-way currency conversions. Format: 'source_id->target_id'.
+	#示例: ["kubejs:gold_coin->kubejs:diamond_coin"] (允许金币向钻石币兑换)
+	#Example: ["kubejs:gold_coin->kubejs:diamond_coin"] (Allows converting Gold to Diamond coin)
+	exchangeRules = ["kubejs:gold_coin->kubejs:diamond_coin", "kubejs:diamond_coin->kubejs:gold_coin", "kubejs:diamond_coin->kubejs:netherite_coin", "kubejs:netherite_coin->kubejs:diamond_coin", "kubejs:netherite_coin->kubejs:gold_coin", "kubejs:monster_coin->kubejs:netherite_coin", "kubejs:monster_coin->kubejs:diamond_coin", "kubejs:monster_coin->kubejs:gold_coin"]
+

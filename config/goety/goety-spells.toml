@@ -177,6 +177,23 @@
 		#Range: 0 ~ 72000
 		frostNovaTime = 0
 
+	[Spells."Sprightly Spell"]
+		#Sprightly Spell Cooldown, Default: 200
+		#Range: > 0
+		spriteCoolDown = 200
+		#Sprightly Spell Cost, Default: 24
+		#Range: > 0
+		spriteCost = 24
+		#Number of Sprites that can exist around the player, Default: 8
+		#Range: > 1
+		spriteLimit = 8
+		#Time to cast Sprightly Spell, Default: 100
+		#Range: 0 ~ 72000
+		spriteDuration = 100
+		#Sprightly Spell Summon Down, Default: 200
+		#Range: 0 ~ 72000
+		spriteSummonDown = 200
+
 	[Spells."Bouncy Bubble Spell"]
 		#Bouncy Bubble Spell Cost, Default: 8
 		#Range: > 0

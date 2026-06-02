@@ -21,22 +21,22 @@ EntityEvents.spawned('goety:ender_keeper',event=>{
             entity.persistentData.enderHero = 1//标记为末影勇者
             entity.persistentData.summon = 1//召唤次数
             server.persistentData.EnderHero_counter ++//计数增加
-            entity.setCustomName(Text.darkPurple(Text.translate("curlamoety.lang.enderhero")).bold())
+            entity.setCustomName(Text.translate("curlamoety.lang.enderhero"))
             server.tell(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_1")))//对话
-            server.schedule(1500,event=>{
+            server.scheduleInTicks(30,event=>{
                 server.tell(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_2")))
             })
-            server.schedule(3000,event=>{
+            server.scheduleInTicks(60,event=>{
                 server.tell(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_3")))
             })
-            server.schedule(5000,event=>{
+            server.scheduleInTicks(100,event=>{
                 server.tell(Text.red(Text.translate("curlamoety.lang.enderhero_4")))
             })
         }
     }
     if(entity.persistentData.enderHero == 1){
         entity.modifyAttribute("minecraft:generic.max_health","enderhero_modify",1,"multiply_total")
-        entity.setHealth(actual.getMaxHealth())
+        entity.setHealth(entity.getMaxHealth())
     }
     
 })
@@ -77,7 +77,7 @@ EntityEvents.drops('goety:ender_keeper',event=>{
 EntityEvents.hurt('goety:ender_keeper',event=>{
     let entity = event.entity
     if(entity.persistentData.enderHero == 1){
-        if(entity.health<4800){//半血召唤遣使
+        if(entity.health<32000){//半血召唤遣使
             if(entity.persistentData.summon == 1){
                 entity.persistentData.summon --
                 let x = entity.getX()
@@ -102,12 +102,13 @@ EntityEvents.hurt(event=>{
     if(actual==null)return;
     if(actual.type=='goety:ender_keeper'){
         if(actual.persistentData.enderHero==1){
-            actual.heal(50)
+            actual.heal(200)
         }
     }else if(actual.type == 'goetyawaken:ender_keeper_servant'){
         if(actual.persistentData.enderHero==1){
             let amount = event.getDamage()
-            actual.heal(0.1*amount)
+            event.server.tell(amount)
+            actual.heal(0.5*amount)
         }
     }
 })
@@ -121,7 +122,7 @@ ItemEvents.entityInteracted('curlamoety:sword_cookie',event=>{
         if(target instanceof $Summoned && target.getOwner() === player){
             if(!target.persistentData.enderHero){
                 target.persistentData.enderHero = 1
-                target.setCustomName(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_servant")).bold())
+                target.setCustomName(Text.translate("curlamoety.lang.enderhero_servant"))
                 item.count -- 
                 event.level.playSound(null,x,y,z,'minecraft:entity.generic.eat','players',1,1)
                 event.level.playSound(null,x,y,z,'minecraft:entity.player.burp','players',1,1)

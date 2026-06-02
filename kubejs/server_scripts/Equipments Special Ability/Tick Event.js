@@ -8,16 +8,14 @@ ServerEvents.tick(event =>{
 })
 
 PlayerEvents.tick(event =>{
-    let player = event.player;
+    let { player , level } = event
     let {x,y,z} = player;
     if(player.isCuriosEquipped('curlamoety:faded_promise')){//褪色cd
-        if(player.persistentData.fade_cd != 0){
+        if(player.persistentData.fade_cd != -1){
             player.persistentData.fade_cd --
-        }else{
-            if(player.persistentData.fade_cast == 0){
+            if(player.persistentData.fade_cd == 0){
                 player.setStatusMessage(Text.gold(Text.translate("curlamoety.lang.faded_promise_ready")))
-                player.level.playSound(null,x,y,z,'goety:shield_up','players',0.5,1)
-                player.persistentData.fade_cast = 1
+                level.playSound(null,x,y,z,'goety:shield_up','players',0.5,1)
             }
         }
     }
@@ -38,10 +36,7 @@ PlayerEvents.tick(event =>{
     let offHandItem = player.offHandItem;
     if((mainHandItem.hasTag('forge:tools/scythes'))||(mainHandItem.hasTag('forge:tools/hammers'))||(mainHandItem.hasTag('gloves:claymore')))
     {
-        player.removeAttribute('minecraft:generic.attack_damage','extra_dmg')
-        player.removeAttribute('minecraft:generic.attack_damage','extra_dmg2')
-        if((player.isCuriosEquipped('curlamoety:conqueror_gloves'))||(player.isCuriosEquipped('curlamoety:elemental_gloves')))
-        {
+        if(player.persistentData.gloves >= 5){
             player.modifyAttribute('minecraft:generic.attack_speed','extra_spd',0.5,'multiply_total')//重武器手套攻速
         }else{
             player.removeAttribute('minecraft:generic.attack_speed','extra_spd')
@@ -55,16 +50,16 @@ PlayerEvents.tick(event =>{
     {
         player.removeAttribute('minecraft:generic.attack_damage','extra_dmg')
         player.removeAttribute('minecraft:generic.attack_damage','extra_dmg2')
-        if((player.isCuriosEquipped('curlamoety:kitchen_gloves'))||(player.isCuriosEquipped('curlamoety:pioneer_gloves'))||(player.isCuriosEquipped('curlamoety:conqueror_gloves'))||(player.isCuriosEquipped('curlamoety:elemental_gloves')))
-        {
+        if(player.persistentData.gloves == 1 || player.persistentData.gloves >= 3){
             player.modifyAttribute('minecraft:generic.attack_speed','extra_spd',0.5,'multiply_total')//厨房手套：锅攻速
         }else{
             player.removeAttribute('minecraft:generic.attack_speed','extra_spd')
         }
-    }else if(mainHandItem.hasTag('farmersdelight:tools/knives'))
-    {
+    }else{
         player.removeAttribute('minecraft:generic.attack_speed','extra_spd')
-        if((player.isCuriosEquipped('curlamoety:kitchen_gloves'))||(player.isCuriosEquipped('curlamoety:pioneer_gloves'))||(player.isCuriosEquipped('curlamoety:conqueror_gloves'))||(player.isCuriosEquipped('curlamoety:elemental_gloves')))
+    }
+    if(mainHandItem.hasTag('farmersdelight:tools/knives')){
+        if(player.persistentData.gloves == 1 || player.persistentData.gloves >= 3)
         {
             player.modifyAttribute('minecraft:generic.attack_damage','extra_dmg',3,'addition')//厨房手套：刀伤害
             player.modifyAttribute('minecraft:generic.attack_damage','extra_dmg2',0.20,'multiply_total')
@@ -75,16 +70,77 @@ PlayerEvents.tick(event =>{
     }else{
         player.removeAttribute('minecraft:generic.attack_damage','extra_dmg')
         player.removeAttribute('minecraft:generic.attack_damage','extra_dmg2')
-        player.removeAttribute('minecraft:generic.attack_speed','extra_spd')
     }
-    if(mainHandItem.id == 'goetyawaken:moonlight_cut'&&player.persistentData.champion == 1){//胧切
-        player.modifyAttribute('minecraft:generic.attack_damage','moonlight_dmg0',20,'addition')
-        player.modifyAttribute('minecraft:generic.attack_damage','moonlight_dmg1',0.5,'multiply_total')
-        player.modifyAttribute('minecraft:generic.attack_speed','moonlight_spd',0.5,'addition')
+
+    //套装效果
+    if(player.persistentData.armorset == "champion"){
+        if(mainHandItem.id == 'goetyawaken:moonlight_cut'){//胧切
+            player.modifyAttribute('minecraft:generic.attack_damage','moonlight_dmg0',20,'addition')
+            player.modifyAttribute('minecraft:generic.attack_damage','moonlight_dmg1',0.5,'multiply_total')
+            player.modifyAttribute('minecraft:generic.attack_speed','moonlight_spd',0.5,'addition')
+        }else{
+            player.removeAttribute('minecraft:generic.attack_damage','moonlight_dmg0')
+            player.removeAttribute('minecraft:generic.attack_damage','moonlight_dmg1')
+            player.removeAttribute('minecraft:generic.attack_speed','moonlight_spd')
+        }
     }else{
         player.removeAttribute('minecraft:generic.attack_damage','moonlight_dmg0')
         player.removeAttribute('minecraft:generic.attack_damage','moonlight_dmg1')
         player.removeAttribute('minecraft:generic.attack_speed','moonlight_spd')
+    } 
+        
+    if(player.persistentData.armorset == "iron"){
+        if(player.isCrouching()){
+            player.modifyAttribute('minecraft:generic.knockback_resistance','ironset5',20,'addition')
+            player.modifyAttribute('minecraft:generic.movement_speed','ironset6',-1,'multiply_total')
+            player.potionEffects.add('minecraft:slowness',30,3)
+            player.potionEffects.add('minecraft:resistance',2,3)
+            player.potionEffects.add('fire_resistance',2,0)
+        }else{
+            player.removeAttribute('minecraft:generic.knockback_resistance','ironset5')
+            player.removeAttribute('minecraft:generic.movement_speed','ironset6')
+        }
+    }else{
+        player.removeAttribute('minecraft:generic.knockback_resistance','ironset5')
+        player.removeAttribute('minecraft:generic.movement_speed','ironset6')
+    }
+    
+    if(player.persistentData.armorset == "chainmail"){
+        let chain_count = 0
+        if(mainHandItem.id == "minecraft:chain"){
+            chain_count += mainHandItem.count
+        }
+        if(offHandItem.id == "minecraft:chain"){
+            chain_count += offHandItem.count
+        }
+        player.modifyAttribute("forge:entity_reach","chains_modify1",0.5*chain_count,'addition')
+        player.modifyAttribute("forge:block_reach","chains_modify2",0.5*chain_count,'addition')
+    }else{
+        player.removeAttribute("forge:entity_reach","chains_modify1")
+        player.removeAttribute("forge:block_reach","chains_modify2")
+    }
+
+    //套装CD
+    if(player.persistentData.generic_cd != -1){//通用
+        player.persistentData.generic_cd --
+        if(player.persistentData.generic_cd == 0){
+            level.playSound(null,x,y,z,'entity.experience_orb.pickup','players',0.2,1)
+        }
+    }
+    if(player.persistentData.generic_summon_cd != -1){//通用召唤
+        player.persistentData.generic_summon_cd --
+        if(player.persistentData.generic_summon_cd == 0){
+            level.playSound(null,x,y,z,'minecraft:block.beacon.activate','players',1,2)
+            player.setStatusMessage(Text.yellow(Text.translate("curlamoety.lang.summon_ready")))
+        }
+    }
+
+    if(player.persistentData.ignitium_cd != -1){//腾炎
+        player.persistentData.ignitium_cd --
+        if(player.persistentData.ignitium_cd == 0){
+            level.playSound(null,x,y,z,'goety:wall_disappear','players',1,2)
+            player.setStatusMessage(Text.gold(Text.translate("curlamoety.lang.ignitium_ready")))
+        }
     }
     //if(player.potionEffects.isActive('enigmaticaddons:pure_resistance')){
     //    let effect = player.getEffect('enigmaticaddons:pure_resistance')
@@ -123,11 +179,9 @@ PlayerEvents.tick(event =>{
 
     
     //手套系列急迫
-    if((player.isCuriosEquipped('curlamoety:pioneer_gloves'))||(player.isCuriosEquipped('curlamoety:conqueror_gloves'))||(player.isCuriosEquipped('curlamoety:elemental_gloves')))
-    {
+    if(player.persistentData.gloves >= 4){
         player.potionEffects.add('minecraft:haste',200,1,false,false)
-    }else if(player.isCuriosEquipped('curlamoety:explorer_gloves'))
-    {
+    }else if(player.persistentData.gloves >= 2){
         player.potionEffects.add('minecraft:haste',200,0,false,false)
     }
 
@@ -152,6 +206,59 @@ PlayerEvents.tick(event =>{
         player.modifyAttribute("goeticlegacy:soul_regen_ratio","ascension_pizza_modify",0.1,"addition")
         player.modifyAttribute("goeticlegacy:magic_invul_reduction","ascension_pizza_modify",1,"addition")
         player.modifyAttribute("goeticlegacy:true_damage_ratio","ascension_pizza_modify",0.03,"addition")
+    }
+
+    //套装效果
+    if(player.persistentData.armorset == "leather"){//皮革
+        player.potionEffects.add('goety:swirling',200,0,false,false)
+    }else if(player.persistentData.armorset == "diamond"){//钻石
+        player.potionEffects.add('resistance',200,0,false,false)
+    }else if( player.persistentData.armorset == "chainmail"){//锁链
+        player.potionEffects.add('goetyawaken:chains',200,0,false,false)
+    }else if(player.persistentData.armorset == "netherite"){//合金
+        player.potionEffects.add('enigmaticlegacy:molten_heart',200,0,false,false)
+        player.potionEffects.add('resistance',200,0,false,false)
+    }else if(player.persistentData.armorset == "ironwood"){//铁木
+        player.potionEffects.add("regeneration",200,1,false,false)
+        player.potionEffects.add("goety:photosynthesis",200,0,false,false)
+        player.potionEffects.add("goetydelight:hydration",200,0,false,false)
+    }else if(player.persistentData.armorset == "steeleaf"){//钢叶
+        player.potionEffects.add("goetyawaken:enchantment_sharpness",200,0,false,false)
+        player.potionEffects.add("goety:leeching",200,0,false,false)
+    }else if(player.persistentData.armorset == "fiery"){//炽铁
+        player.potionEffects.add("enigmaticaddons:pure_resistance",200,0,false,false)
+        player.potionEffects.add("enigmaticlegacy:molten_heart",200,0,false,false)
+        if(player.persistentData.fiery_cd == 0){
+            if(player.potionEffects.isActive("goety:flame_hands")){
+                let amplifier = player.getEffect("goety:flame_hands").getAmplifier()
+                if(amplifier == 4){
+                    player.potionEffects.add("goety:flame_hands",200,4,false,false)
+                }else{
+                    player.potionEffects.add("goety:flame_hands",200,amplifier+1,false,false)
+                    level.playSound(null,x,y,z,"minecraft:entity.blaze.shoot","players",0.6+0.1*amplifier,1.1+0.1*amplifier)
+                    if(amplifier == 3){
+                        level.playSound(null,x,y,z,"goety:fire_breath_start","players",0.5,1)
+                    }
+                }
+            }else{
+                player.potionEffects.add("goety:flame_hands",200,0,false,false)
+                level.playSound(null,x,y,z,"minecraft:entity.blaze.shoot","players",0.5,1)
+            }
+            player.persistentData.fiery_cd = 1
+        }else{
+            player.persistentData.fiery_cd --
+        }
+    }else if(player.persistentData.armorset == "yeti"){//雪怪
+        player.potionEffects.add("goety:frosty_aura",200,2,false,false)
+    }else if(player.persistentData.armorset == "cursium"){//咒魂
+        player.potionEffects.add("minecraft:resistance",200,0,false,false)
+    }else if(player.persistentData.armorset == "ignitium"){//腾炎
+        player.potionEffects.add("enigmaticaddons:pure_resistance",200,0,false,false)
+        player.potionEffects.add("enigmaticlegacy:molten_heart",200,0,false,false)
+    }else if(player.persistentData.armorset == "cursed_knight"){//诅咒骑士
+        player.potionEffects.add("goety:deflective",200,0,false,false)
+    }else if(player.persistentData.armorset == "cursed_paladin"){//诅咒圣骑士
+        player.potionEffects.add("goety:deflective",200,1,false,false)
     }
 
     //let head = player.headArmorItem;//穿戴装备效果
