@@ -336,8 +336,7 @@ ItemEvents.tooltip(event=>{
             text.add(14,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
             text.add(15,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_2"))
-            text.add(19,Text.translate("curlamoety.lang.darkmage_armorset_3"))
-            text.add(20,Text.translate("curlamoety.lang.darkmage_armorset_4"))
+            text.add(19,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_chestplate',(item,addAdvanced,text)=>{
@@ -346,8 +345,7 @@ ItemEvents.tooltip(event=>{
             text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
             text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_2"))
-            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_3"))
-            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_4"))
+            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_leggings',(item,addAdvanced,text)=>{
@@ -356,8 +354,7 @@ ItemEvents.tooltip(event=>{
             text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
             text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_2"))
-            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_3"))
-            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_4"))
+            text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spider_darkmage_boots',(item,addAdvanced,text)=>{
@@ -366,8 +363,7 @@ ItemEvents.tooltip(event=>{
             text.add(13,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
             text.add(14,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_2"))
-            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_3"))
-            text.add(19,Text.translate("curlamoety.lang.darkmage_armorset_4"))
+            text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_4"))
         }
     })
     event.addAdvanced('goety_revelation:spectre_helmet',(item,addAdvanced,text)=>{
@@ -2206,4 +2202,9 @@ ItemEvents.tooltip(event=>{
             text.add(8,Component.translate("curlamoety.lang.dark_armorset_3",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
         }
     })
+
+    event.addAdvanced("dummmmmmy:target_dummy",(item,addAdvanced,text)=>{//假人
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.dummy")))
+    })
+
 })

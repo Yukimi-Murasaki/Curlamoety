@@ -771,7 +771,13 @@
 				}
 				{
 					id: "3EB0EBC479CC7A51"
-					item: "metalbarrels:netherite_barrel"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:netherite_barrel"
+						tag: {
+							woodType: "spruce"
+						}
+					}
 					type: "item"
 				}
 			]

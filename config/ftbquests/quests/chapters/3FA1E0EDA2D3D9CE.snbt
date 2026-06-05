@@ -114,6 +114,8 @@
 				""
 				"&e请注意，石砖与深色橡木是蓝图的启动方块，&4请不要用掉"
 				""
+				"&e金镐为扫地姬圈地物品，可以划出一片区域不被扫地姬清扫"
+				""
 				"&7（通用饰品栏位是弥补被塔罗牌栏位夺舍掉的栏）"
 			]
 			icon: "minecraft:crafting_table"
@@ -129,6 +131,17 @@
 					count: 64
 					id: "08E9C8690AE6739F"
 					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "3CE627B3F3C04402"
+					item: {
+						Count: 1
+						id: "minecraft:golden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{

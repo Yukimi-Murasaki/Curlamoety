@@ -521,6 +521,7 @@
     "curlamoety.lang.spider_darkmage_summon":"蚀刻之牙",
     "curlamoety.lang.cursed_knight_summon":"咒驱幻影",
     "curlamoety.lang.cursed_paladin_summon":"复生圣骑",
+    "curlamoety.lang.champion_summon":"不败冠军",
     "curlamoety.lang.apocalyptium_summon":"神净圣火",
     "curlamoety.lang.no_armorset":"无可用盔甲套装技能",
     "curlamoety.lang.already_effect":"盔甲套装技能发动失败：效果已存在",
@@ -529,6 +530,7 @@
     "curlamoety.lang.no_gem":"请手持钻石、绿宝石或者紫水晶碎片",
     "curlamoety.lang.ignitium_ready":"腾炎结界冷却完毕",
     "curlamoety.lang.summon_ready":"盔甲套装召唤物冷却完毕",
+    "curlamoety.lang.dummy":"使用/kt dummy 指令来操控KineticTweaks的测试假人",
 
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"至臻至纯的神之血！喝下去的话，能获得神明一般的防护力！",
     "patchouli.witch_brew.cataclysm.monstrous":"我的天，你的皮肤像巨兽一样硬，你的身材像巨兽一样壮",

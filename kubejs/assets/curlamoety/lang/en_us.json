@@ -514,6 +514,7 @@
     "curlamoety.lang.spider_darkmage_summon":"Etching Fang",
     "curlamoety.lang.cursed_knight_summon":"Cursed Phantom",
     "curlamoety.lang.cursed_paladin_summon":"Revived Paladin",
+    "curlamoety.lang.champion_summon":"Undefeated Champion",
     "curlamoety.lang.apocalyptium_summon":"Providence",
     "curlamoety.lang.no_armorset":"There's NO usable armor set ability",
     "curlamoety.lang.already_effect":"Armor set special ability failed to activate: the effect is already active",
@@ -522,6 +523,7 @@
     "curlamoety.lang.no_gem":"Please hold Diamond, Emerald or Amethyst Shard",
     "curlamoety.lang.ignitium_ready":"Ignitium Flame Strike is ready",
     "curlamoety.lang.summon_ready":"Armor set summoning is ready",
+    "curlamoety.lang.dummy":"Use command /kt dummy to control the target dummy of KineticTweaks",
     
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"Purest and most refined blood of the gods! Upon drinking it , one would be granted divine protection like gods",
     "patchouli.witch_brew.cataclysm.monstrous":"Oh my GOD, your skin is hard as a MONSTROSITY and your body is strong as a MONSTROSITY",

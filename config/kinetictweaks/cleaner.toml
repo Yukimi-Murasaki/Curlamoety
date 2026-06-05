@@ -74,7 +74,7 @@
 	#Tool item ID used to select protected areas.
 	#Default is minecraft:golden_hoe, which is the golden hoe.
 	#You can change it to another item ID, such as minecraft:stick.
-	tool_item = "minecraft:golden_hoe"
+	tool_item = "minecraft:golden_pickaxe"
 	# 每个玩家最多可以保存多少个三维方块格子。
 	#保护区域会按照整个盒子的体积来扣额度，也就是 X 长度 × Y 高度 × Z 宽度。
 	#默认 6400。

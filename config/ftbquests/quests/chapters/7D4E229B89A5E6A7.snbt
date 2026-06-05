@@ -19,7 +19,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 3.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			height: 3.0d
@@ -34,8 +34,8 @@
 			image: "goetydelight:textures/mob_effect/servant_reinforcement.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 6.5d
-			y: -2.5d
+			x: -5.0d
+			y: 0.5d
 		}
 		{
 			height: 5.0d
@@ -865,8 +865,8 @@
 				}
 			]
 			title: "巫法布料"
-			x: 6.0d
-			y: 0.5d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["296DFEAC7E2C558B"]
@@ -913,7 +913,7 @@
 			]
 			title: "女巫的药酿"
 			x: 4.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
@@ -946,7 +946,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
@@ -985,7 +985,7 @@
 			}]
 			title: "女巫拓展"
 			x: 2.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4121020B2FA081DF"]
@@ -1024,7 +1024,7 @@
 			}]
 			title: "贤者之石"
 			x: 2.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
@@ -1057,7 +1057,7 @@
 			]
 			title: "女巫套装"
 			x: 6.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2B17D3CA49E52F0A"]
@@ -1090,7 +1090,7 @@
 			}]
 			title: "贤者之锤"
 			x: 2.5d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["16CA521A656244AB"]
@@ -1176,7 +1176,7 @@
 			}]
 			title: "如何提高女巫精酿的装瓶数"
 			x: 6.0d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["16CA521A656244AB"]
@@ -1218,7 +1218,7 @@
 			]
 			title: "增强剂"
 			x: 4.5d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["16CA521A656244AB"]
@@ -1249,7 +1249,7 @@
 			}]
 			title: "一些较为常用的非原版效果"
 			x: 6.0d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5F9A0433560BF1A3"]
@@ -1289,7 +1289,7 @@
 			}]
 			title: "催化剂"
 			x: 4.5d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
@@ -1329,7 +1329,7 @@
 			}]
 			title: "容量剂"
 			x: 4.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5D47D64E81D71636"]
@@ -1619,7 +1619,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["5FCB86A1BBF9EE00"]
+			dependencies: ["42952B4B0CE9F8F6"]
 			description: [
 				"命令聚晶和敕令聚晶可以命令你的仆从移动，命令聚晶只能作用一个，敕令聚晶可以作用多个"
 				""
@@ -1667,8 +1667,8 @@
 				}
 			]
 			title: "召唤师的素养"
-			x: 6.0d
-			y: -3.5d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["296DFEAC7E2C558B"]
@@ -1797,8 +1797,8 @@
 				}
 			]
 			title: "黑白名单"
-			x: 7.5d
-			y: -1.5d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -1838,8 +1838,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -1911,8 +1911,8 @@
 				}
 			]
 			title: "携带仆从"
-			x: 7.5d
-			y: -2.5d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -1947,8 +1947,8 @@
 				item: "goety:ring_of_the_forge"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["296DFEAC7E2C558B"]
@@ -3025,7 +3025,7 @@
 				}
 			]
 			title: "黑铁套装"
-			x: 15.0d
+			x: 14.5d
 			y: -0.5d
 		}
 		{
@@ -3126,7 +3126,7 @@
 				item: "goety:haunted_jug"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 9.0d
 			y: -1.5d
 		}
 		{
@@ -4928,8 +4928,8 @@
 				item: "goety_revelation:amulet_of_slime"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["290C0F2F3694C067"]
@@ -5086,8 +5086,8 @@
 				item: "curlamoety:desperate_attempt"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["54652BAD5F6A8F82"]
@@ -5169,6 +5169,41 @@
 			}]
 			x: 29.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["4C9709D59DC8DC68"]
+			description: [
+				"蜘蛛巢是一个廉价的前期仆从来源，只需要8个蜘蛛卵和1个任意肉类即可制作。"
+				""
+				"向蜘蛛巢中投入一块任意肉类（包括腐肉），蜘蛛巢便会开始训练蜘蛛仆从。"
+				""
+				"{image:ftbquests:textures/spider_nest.png width:150 height:100 align:center}"
+			]
+			icon: "goety:spider_nest"
+			id: "752DF5AEC4DA1D8A"
+			rewards: [
+				{
+					count: 4
+					id: "3806303DBBDE6265"
+					item: "goety:spider_egg"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "797CCB31CE7E44AF"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+			]
+			subtitle: "一勺蜘蛛"
+			tasks: [{
+				id: "3B9CFEAFE6F3078E"
+				item: "goety:spider_egg"
+				type: "item"
+			}]
+			title: "蜘蛛巢"
+			x: -4.0d
+			y: -2.0d
 		}
 	]
 	title: "黑暗魔法"
