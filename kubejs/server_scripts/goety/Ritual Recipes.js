@@ -2087,23 +2087,23 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(5)
     .id("curlamoety:copy/chaos_cube")
 
-    event.recipes.goety.ritual("2x goety:philosophers_stone","goety:craft",[
-        "curlamoety:goal_ty"
-    ])
-    .activationItem("goety:philosophers_stone")
-    .craftType("magic")
-    .soulCost(1500)
-    .duration(1)
-    .id("curlamoety:copy/philosophers_stone")
+    // event.recipes.goety.ritual("2x goety:philosophers_stone","goety:craft",[
+    //     "curlamoety:goal_ty"
+    // ])
+    // .activationItem("goety:philosophers_stone")
+    // .craftType("magic")
+    // .soulCost(1500)
+    // .duration(1)
+    // .id("curlamoety:copy/philosophers_stone")
 
-    event.recipes.goety.ritual("2x enigmaticlegacy:earth_heart","goety:craft",[
-        "curlamoety:goal_ty"
-    ])
-    .activationItem("enigmaticlegacy:earth_heart")
-    .craftType("magic")
-    .soulCost(500)
-    .duration(1)
-    .id("curlamoety:copy/earth_heart")
+    // event.recipes.goety.ritual("2x enigmaticlegacy:earth_heart","goety:craft",[
+    //     "curlamoety:goal_ty"
+    // ])
+    // .activationItem("enigmaticlegacy:earth_heart")
+    // .craftType("magic")
+    // .soulCost(500)
+    // .duration(1)
+    // .id("curlamoety:copy/earth_heart")
 
     event.recipes.goety.ritual("2x goetyawaken:soul_sapphire","goety:craft",[
         "curlamoety:goal_ty"
@@ -2141,37 +2141,25 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(1)
     .id("curlamoety:copy/metamorphic_scent_fruit")
 
-    event.recipes.goety.ritual("2x enigmaticlegacy:abyssal_heart","goety:craft",[
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-    ])
-    .activationItem("enigmaticlegacy:abyssal_heart")
-    .craftType("magic")
-    .soulCost(10000)
-    .duration(5)
-    .id("curlamoety:copy/abyssal_heart")
-
-    event.recipes.goety.ritual("2x goety_revelation:revelation","goety:craft",[
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-    ])
-    .activationItem("goety_revelation:revelation")
-    .craftType("magic")
-    .soulCost(10000)
-    .duration(10)
-    .id("curlamoety:copy/revelation")
+    // event.recipes.goety.ritual("2x goety_revelation:revelation","goety:craft",[
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    //     "curlamoety:goal_ty",
+    // ])
+    // .activationItem("goety_revelation:revelation")
+    // .craftType("magic")
+    // .soulCost(10000)
+    // .duration(10)
+    // .id("curlamoety:copy/revelation")
 
     event.recipes.goety.ritual("2x goety:undeath_potion","goety:craft",[
         "curlamoety:goal_ty",
@@ -2214,6 +2202,23 @@ ServerEvents.recipes(event=>{//kjs goety方法
     // .soulCost(100)
     // .duration(30)
     // .id("curlamoety:shi_jin")
+
+    //绿宝石级魔导书
+    event.remove("goetyawaken:emerald_grimoire")
+    event.recipes.goety.ritual("goetyawaken:emerald_grimoire",'goety:craft',[
+        "minecraft:shield",
+        "minecraft:quartz",
+        "minecraft:fletching_table",
+        "goety:jade",
+        "goety:magic_emerald",
+        "goety:water_jet_focus",
+        "goety:vexing_focus"
+    ])
+    .activationItem("goetyawaken:gold_grimoire")
+    .craftType("magic")
+    .soulCost(100)
+    .duration(5)
+    .id("curlamoety:emerald_grimoire")
 
 })
 ServerEvents.recipes(event=>{//无封装方法
@@ -2271,6 +2276,7 @@ ServerEvents.recipes(event=>{//无封装方法
     //    }
     //})
     // .id("curlamoety:night_cube2")
+    
 })
     
         

@@ -1699,6 +1699,7 @@
 				item: "goetydelight:forbidden_soup_bun"
 				type: "item"
 			}]
+			subtitle: "谁家好人拿禁书当垫纸"
 			tasks: [{
 				consume_items: true
 				count: 16L

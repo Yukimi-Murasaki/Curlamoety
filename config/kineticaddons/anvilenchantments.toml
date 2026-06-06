@@ -100,7 +100,7 @@
 	# 全局禁用附魔名单：直接填写附魔ID。填入这里的附魔将被彻底禁用，无论什么物品都无法在铁砧或附魔台中打上它。
 	#Global Disabled Enchantments: Direct Enchantment IDs. Listed enchantments are completely disabled globally.
 	#示例/Examples: ["minecraft:mending", "minecraft:unbreaking"]
-	disabledEnchantments = ["kineticaddons:leech", "kineticaddons:omini_tool", "kineticaddons:smelter", "kineticaddons:magic_protection"]
+	disabledEnchantments = ["kineticaddons:leech", "kineticaddons:omni_tool", "kineticaddons:smelter", "kineticaddons:magic_protection"]
 
 #附魔效果的具体数值平衡设定。修改后通常无需重启，但建议重新打开容器界面。
 #Balancing values for custom enchantments. Changes usually apply without restart.

@@ -311,7 +311,7 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute('goety_revelation:spell_power_multiplier',uuid_1_2,'yeti_helmet_power2',0.1,'addition')
         item.addAttribute("goety_revelation:spell_cooldown",uuid_1_3,'yeti_helmet_cd1',0.1,'multiply_total')
         item.addAttribute("goety_revelation:cast_duration",uuid_1_4,"yeti_helmet_cd2",0.1,"multiply_total")
-        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_1_5,'yeti_helmet_sfdm',0.05,'addition')
+        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_1_5,'yeti_helmet_sfdm',0.075,'addition')
         item.setMaxDamage(550)
     })
     Event.modify('twilightforest:yeti_chestplate',item=>{
@@ -320,14 +320,14 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute('goety_revelation:spell_power_multiplier',uuid_2_2,'yeti_chestplate_power2',0.1,'addition')
         item.addAttribute("goety_revelation:spell_cooldown",uuid_2_3,'yeti_chestplate_cd1',0.1,'multiply_total')
         item.addAttribute("goety_revelation:cast_duration",uuid_2_4,"yeti_chestplate_cd2",0.1,"multiply_total")
-        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_2_5,'yeti_chestplate_sfdm',0.05,'addition')
+        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_2_5,'yeti_chestplate_sfdm',0.075,'addition')
         item.setMaxDamage(800)
     })
     Event.modify('twilightforest:yeti_leggings',item=>{
         item.addAttribute("minecraft:generic.attack_damage",uuid_3_0,'yeti_leggings_dmg',0.1,"multiply_total")
         item.addAttribute("goety_revelation:spell_power",uuid_3_1,'yeti_leggings_power',0.5,'addition')
         item.addAttribute('goety_revelation:spell_power_multiplier',uuid_3_2,'yeti_leggings_power2',0.2,'addition')
-        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_3_3,'yeti_leggings_sfdm',0.05,'addition')
+        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_3_3,'yeti_leggings_sfdm',0.075,'addition')
         item.setMaxDamage(750)
     })
     Event.modify('twilightforest:yeti_boots',item=>{
@@ -335,7 +335,7 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute('goety_revelation:spell_power_multiplier',uuid_4_1,'yeti_boots_power2',0.1,'addition')
         item.addAttribute("goety_revelation:spell_cooldown",uuid_4_2,'yeti_boots_cd1',0.1,'multiply_total')
         item.addAttribute("goety_revelation:cast_duration",uuid_4_3,"yeti_boots_cd2",0.1,"multiply_total")
-        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_4_4,'yeti_boots_sfdm',0.05,'addition')
+        item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_4_4,'yeti_boots_sfdm',0.075,'addition')
         item.setMaxDamage(650)
     })
     //骑士
@@ -380,8 +380,8 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute("minecraft:generic.attack_damage",uuid_1_1,"bone_helmet_dmg2",0.07,'multiply_total')
     })
     Event.modify('cataclysm:bone_reptile_chestplate',item=>{
-        item.addAttribute('goety_revelation:spell_power',uuid_1_0,"bone_chestplate_pw1",2,'addition')
-        item.addAttribute('goety_revelation:spell_power_multiplier',uuid_1_1,"bone_chestplate_pw2",0.05,'multiply_total')
+        item.addAttribute('goety_revelation:spell_power',uuid_2_0,"bone_chestplate_pw1",2,'addition')
+        item.addAttribute('goety_revelation:spell_power_multiplier',uuid_2_1,"bone_chestplate_pw2",0.05,'multiply_total')
     })
     //腾炎套
     Event.modify('cataclysm:ignitium_helmet',item=>{
@@ -491,12 +491,12 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute("goety_revelation:cast_duration",uuid_3_5,"holy_leggings_cd2",0.1,"multiply_total")
     })
     Event.modify('goeticlegacy:holy_boots',item=>{
-        item.addAttribute("goety_revelation:spell_power",uuid_1_0,'holy_boots_power',1,'addition')
-        item.addAttribute('goety_revelation:spell_power_multiplier',uuid_1_1,"holy_boots_power2",0.15,'addition')
-        item.addAttribute('minecraft:generic.attack_damage',uuid_1_2,"holy_boots_atk",-0.15,'multiply_base')
-        item.addAttribute("goeticlegacy:servant_final_damage_multiplier",uuid_1_3,"holy_boots_sfdm",-0.15,"multiply_base")
-        item.addAttribute("goety_revelation:spell_cooldown",uuid_1_4,'holy_boots_cd1',0.1,'multiply_total')
-        item.addAttribute("goety_revelation:cast_duration",uuid_1_5,"holy_boots_cd2",0.1,"multiply_total")
+        item.addAttribute("goety_revelation:spell_power",uuid_4_0,'holy_boots_power',1,'addition')
+        item.addAttribute('goety_revelation:spell_power_multiplier',uuid_4_1,"holy_boots_power2",0.15,'addition')
+        item.addAttribute('minecraft:generic.attack_damage',uuid_4_2,"holy_boots_atk",-0.15,'multiply_base')
+        item.addAttribute("goeticlegacy:servant_final_damage_multiplier",uuid_4_3,"holy_boots_sfdm",-0.15,"multiply_base")
+        item.addAttribute("goety_revelation:spell_cooldown",uuid_4_4,'holy_boots_cd1',0.1,'multiply_total')
+        item.addAttribute("goety_revelation:cast_duration",uuid_4_5,"holy_boots_cd2",0.1,"multiply_total")
     })
 })
 

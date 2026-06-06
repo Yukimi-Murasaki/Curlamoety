@@ -14,6 +14,7 @@ config/oculus.properties
 DLC/tmp/
 DLC/update/
 screenshots/
+XaeroWorldMap/
 setup_github_repo.bat
 setup_github_repo.ps1
 setup_github_repo.state.json

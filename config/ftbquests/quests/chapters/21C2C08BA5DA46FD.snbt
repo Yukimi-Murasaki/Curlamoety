@@ -356,7 +356,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "击杀100只僵尸主人"
+			subtitle: "击杀100只僵尸猪灵"
 			tasks: [{
 				entity: "minecraft:zombified_piglin"
 				id: "509C858D44D7E7B8"

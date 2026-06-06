@@ -1244,4 +1244,16 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     })
     .id("curlamoety:copy/enchanted_golden_apple")
 
+    Event.shapeless("2x enigmaticlegacy:abyssal_heart",["enigmaticlegacy:abyssal_heart","4x curlamoety:goal_ty"])
+    .id("curlamoety:copy/abyssal_heart")
+
+    Event.shapeless("2x goety_revelation:revelation",["goety_revelation:revelation","8x curlamoety:goal_ty"])
+    .id("curlamoety:copy/revelation")
+
+    Event.shapeless("2x enigmaticlegacy:earth_heart",["enigmaticlegacy:earth_heart","curlamoety:goal_ty"])
+    .id("curlamoety:copy/earth_heart")
+
+    Event.shapeless("2x goety:philosophers_stone",["goety:philosophers_stone","curlamoety:goal_ty"])
+    .id("curlamoety:copy/philosophers_stone")
+
 })  

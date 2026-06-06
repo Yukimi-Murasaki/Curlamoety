@@ -83,6 +83,10 @@
 	#"minecraft:ender_pearl" = 64
 	[items.max_stack_size]
 		test = 0
+		"minecraft:egg" = 64
+		"minecraft:snow_ball" = 64
+		"minecraft:ender_pearl" = 64
+		"minecraft:potion" = 64
 
 	#Set this value to true to make an item fire resistant (like netherite is), or set it to false to make it burn in fire and lava. Example (without the leading #):
 	#"minecraft:netherite_ingot" = false
