@@ -44,7 +44,7 @@
 	#3. 物品标签，使用 # 开头:
 	#3. Item tag, starts with #:
 	#"#forge:ingots"
-	itemWhitelist = ["minecraft:ancient_debris", "@tacz", "#forge:ingots","minecraft:nether_star","@goety_revelation","@kubejs","@curlamoety","@enigmaticlegacy","@enigmaticaddons","@enigmaticdelicacy", "minecraft:heavy_core", "goety:unholy_blood", "goety:night_beacon", "goetyawaken:glowing_ember", "goety:treasure_bag", "goety:void_shard", "goety:void_echo", "enigmaticlegacy:guardian_heart",, "goety:cursed_metal_ingot", "minecraft:ghast_tear", "minecraft:sculk", "minecraft:sculk_catalyst", "goety:crone_hat", "goety:shadow_essence", "goety:gold_candlestick"]
+	itemWhitelist = ["minecraft:ancient_debris", "@tacz", "#forge:ingots", "minecraft:nether_star", "@goety_revelation", "@kubejs", "@curlamoety", "@enigmaticlegacy", "@enigmaticaddons", "@enigmaticdelicacy", "minecraft:heavy_core", "goety:unholy_blood", "goety:night_beacon", "goetyawaken:glowing_ember", "goety:treasure_bag", "goety:void_shard", "goety:void_echo", "enigmaticlegacy:guardian_heart", "goety:cursed_metal_ingot", "minecraft:ghast_tear", "minecraft:sculk", "minecraft:sculk_catalyst", "goety:crone_hat", "goety:shadow_essence", "goety:gold_candlestick"]
 	# 是否启用非物品实体清理。
 	#开启后，会按照下面的实体 ID 列表清理指定实体。
 	#Whether to enable non-item entity cleaning.
@@ -58,7 +58,7 @@
 	#示例:
 	#Example:
 	#["minecraft:arrow", "minecraft:spectral_arrow", "minecraft:area_effect_cloud"]
-	entityList = ["minecraft:arrow", "minecraft:spectral_arrow","goety:ice_spike"]
+	entityList = ["minecraft:arrow", "minecraft:spectral_arrow", "goety:ice_spike"]
 
 #扫地姬保护区域设置
 #保护区域内的掉落物不会被扫地姬清理。

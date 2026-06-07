@@ -977,7 +977,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
 
     event.recipes.goety.ritual('goety:spider_mother_den','goety:craft',[//蜘蛛之母巢穴
         'goety_revelation:spider_fang',
-        'goety_revelation:spider_fang',
+        'goety:venomous_fang',
         'goety:mystic_core',
         'goety:animation_core',
         'goety:spider_egg',
@@ -1195,7 +1195,8 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .research('forbidden')
     .id("curlamoety:death_ray_focus")
 
-    event.remove({output:('goety:blade_of_ender')})//末影之刃
+    //末影之刃
+    event.remove({output:('goety:blade_of_ender')})
     event.recipes.goety.ritual('goety:blade_of_ender','goety:craft',[
         'goety:void_echo',
         'goety:void_echo',

@@ -56,7 +56,7 @@ LootJS.modifiers((event) => {//实体战利品
 
     event
     .addEntityLootModifier('twilightforest:hydra')//九头蛇
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('enigmaticlegacy:blazing_core').withChance(5),
         Item.of('enigmaticaddons:illusion_lantern').withChance(5),
         Item.of('goety:nether_robe').withChance(1),
@@ -72,7 +72,7 @@ LootJS.modifiers((event) => {//实体战利品
 
     event
     .addEntityLootModifier('twilightforest:alpha_yeti')//雪怪酋长
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:frost_robe').withChance(1),
         Item.of('goety:frost_staff').withChance(1),
         Item.of('goetytwilight:ice_crystal_focus').withChance(3),
@@ -89,7 +89,7 @@ LootJS.modifiers((event) => {//实体战利品
 
     event
     .addEntityLootModifier('twilightforest:lich')//巫妖
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:necro_staff').withChance(1),
         Item.of('goetytwilight:seal_focus').withChance(1),
         Item.of('goetytwilight:twilight_focus').withChance(3),
@@ -134,7 +134,7 @@ LootJS.modifiers((event) => {//实体战利品
 
     event
     .addEntityLootModifier('twilightforest:ur_ghast')
-    .addWeightedLoot((2,3),[
+    .addWeightedLoot([2,3],[
         Item.of('enigmaticlegacy:blazing_core').withChance(5),
         Item.of('enigmaticaddons:illusion_lantern').withChance(5),
         Item.of('goety:nether_robe').withChance(1),
@@ -2148,7 +2148,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4),
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2157,7 +2157,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/basement')//德鲁伊小屋地下室
-    .addWeightedLoot((2,3),[
+    .addWeightedLoot([2,3],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:skeleton_druid_focus').withChance(2),
@@ -2171,7 +2171,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2195,7 +2195,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2219,7 +2219,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2244,7 +2244,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2252,7 +2252,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/tree_cache')//树洞
-    .addWeightedLoot((1),[
+    .addWeightedLoot([1],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:mosquito_swarm_focus').withChance(3),
@@ -2265,7 +2265,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(6),
         Item.of('twilightforest:charm_of_life_1').withChance(6)
     ])
-    .addWeightedLoot((2)[
+    .addWeightedLoot([2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2325,7 +2325,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/labyrinth_room')//牛头人迷宫
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:minotaur_focus').withChance(2),
@@ -2338,7 +2338,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2346,7 +2346,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/labyrinth_vault')//牛头人迷宫
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:minotaur_focus').withChance(2),
@@ -2359,7 +2359,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2367,7 +2367,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/labyrinth_vault_jackpot')//牛头人迷宫
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:minotaur_focus').withChance(2),
@@ -2380,7 +2380,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2388,7 +2388,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/labyrinth_dead_end')//牛头人迷宫
-    .addWeightedLoot((2),[
+    .addWeightedLoot([2],[
         Item.of('goety:wild_staff').withChance(1),
         Item.of('goety:wild_robe').withChance(1),
         Item.of('goetytwilight:minotaur_focus').withChance(2),
@@ -2401,7 +2401,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('twilightforest:charm_of_keeping_1').withChance(4),
         Item.of('twilightforest:charm_of_life_1').withChance(4)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2409,7 +2409,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/darktower_cache')//砷铅铁高塔
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('enigmaticlegacy:blazing_core').withChance(5),
         Item.of('enigmaticaddons:illusion_lantern').withChance(5),
         Item.of('goety:nether_robe').withChance(1),
@@ -2430,7 +2430,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/darktower_key')//砷铅铁高塔
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('enigmaticlegacy:blazing_core').withChance(5),
         Item.of('enigmaticaddons:illusion_lantern').withChance(5),
         Item.of('goety:nether_robe').withChance(1),
@@ -2452,7 +2452,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/darktower_boss')//砷铅铁高塔
-    .addWeightedLoot((2,3),[
+    .addWeightedLoot([2,3],[
         Item.of('enigmaticlegacy:blazing_core').withChance(5),
         Item.of('enigmaticaddons:illusion_lantern').withChance(5),
         Item.of('goety:nether_robe').withChance(1),
@@ -2471,7 +2471,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/stronghold_room')//骑士要塞
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('goety:necro_staff').withChance(1),
         Item.of('goetytwilight:knight_order_focus').withChance(1),
         Item.of('goetytwilight:destruction_focus').withChance(2),
@@ -2483,7 +2483,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/stronghold_cache')//骑士要塞
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('goety:necro_staff').withChance(1),
         Item.of('goetytwilight:knight_order_focus').withChance(1),
         Item.of('goetytwilight:destruction_focus').withChance(2),
@@ -2495,7 +2495,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
 
     event
     .addLootTableModifier('twilightforest:chests/stronghold_boss')//骑士要塞
-    .addWeightedLoot((2,3),[
+    .addWeightedLoot([2,3],[
         Item.of('goety:necro_staff').withChance(1),
         Item.of('goetytwilight:knight_order_focus').withChance(2),
         Item.of('goetytwilight:destruction_focus').withChance(3),
@@ -2557,7 +2557,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2581,7 +2581,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2605,7 +2605,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('enigmaticlegacy:earth_heart').withChance(1),
         Item.of('enigmaticlegacy:golem_heart').withChance(2)
     ])
-    .addWeightedLoot((1,2),[
+    .addWeightedLoot([1,2],[
         Item.of('3x twilightforest:steeleaf_ingot').withChance(4),
         Item.of('2x twilightforest:liveroot').withChance(2),
         Item.of('twilightforest:liveroot_block').withChance(1)
@@ -2822,7 +2822,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
     ])
 
     event
-    .addLootTableModifier('goety:chests/dark_manor_cluster')//黑暗庄园
+    .addLootTableModifier('goety:chests/dark_manor_clutter')//黑暗庄园
     .addWeightedLoot([1,2],[
         Item.of('goetyawaken:ominous_eye').withChance(5),
         Item.of('trials:ominous_bottle').withChance(3),
@@ -2881,7 +2881,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
     ])
 
     event
-    .addLootTableModifier('goety:chests/ruined_monastery_cluster')//废弃修道院
+    .addLootTableModifier('goety:chests/ruined_monastery_clutter')//废弃修道院
     .addWeightedLoot([
         Item.of('enigmaticlegacy:blazing_core').withChance(4),
         Item.of('goety:infernal_tome').withChance(3),
