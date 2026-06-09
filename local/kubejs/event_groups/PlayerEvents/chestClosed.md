@@ -25,8 +25,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getInventory |  |  | Container | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
+| getInventory |  |  | Container | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
 | getInventoryContainer |  |  | AbstractContainerMenu | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
@@ -45,14 +45,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `Container getInventory()`
-```
-Gets the chest inventory.
-```
-
 - `BlockContainerJS getBlock()`
 ```
 Gets the chest block.
+```
+
+- `Container getInventory()`
+```
+Gets the chest inventory.
 ```
 
 - `LivingEntity getEntity()`

@@ -2,6 +2,7 @@
 #════════════════════════════════════
 # 暗夜立方内容物被动效果
 #════════════════════════════════════
+#---- 典籍 ----
 #---- 兽友指南 ----
 [animal_guidebook]
 	#仆从/宠物受到伤害的保留倍率（1=无减伤，0.75=25%减伤） [默认: 0.75]
@@ -51,12 +52,12 @@
 	maxSharedAmplifier = 2
 	#禁止共享的药水效果 ID 列表（ResourceLocation 格式），
 	#填入模组命名空间 ID 即可，例如: ["minecraft:invisibility"]
-	#留空则不禁止任何效果 [默认: ["minecraft:invisibility"]]
+	#留空则不禁止任何效果 [默认: ["minecraft:invisibility", "minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]]
 	effectBlacklist = ["minecraft:invisibility"]
 
 #---- 血腥狩猎手册 ----
 [sanguinary_handbook]
-	#仆从伤害基础倍率加成 [默认: 0.18]
+	#仆从伤害基础倍率加成 [默认: 0.20]
 	#Range: 0.0 ~ 100.0
 	baseDamageMultiplier = 0.2
 	#狂战护符每点缺失生命值比率提供的伤害加成 [默认: 0.35]
@@ -65,7 +66,7 @@
 	#千咒卷轴基础伤害加成系数 [默认: 0.55]
 	#Range: 0.0 ~ 100.0
 	cursedScrollFactor = 0.5
-	#千咒卷轴每层诅咒提供的伤害加成 [默认: 0.06]
+	#千咒卷轴每层诅咒提供的伤害加成 [默认: 0.05]
 	#Range: 0.0 ~ 100.0
 	cursedPerCurseFactor = 0.02
 	#伤害加成生效的最大距离（格） [默认: 40]
@@ -125,16 +126,16 @@
 	#轻蔑之约联动：攻击伤害加成比率 [默认: 0.07]
 	#Range: 0.0 ~ 100.0
 	eldritchAmuletAttackDamage = 0.07
-	#轻蔑之约联动：魔法伤害乘数加成 [默认: 0.07]
+	#轻蔑之约联动：魔法伤害乘数加成 [默认: 0.05]
 	#Range: 0.0 ~ 100.0
 	eldritchAmuletMagicDamage = 0.07
-	#荒芜之负联动：最大生命加成比率 [默认: 0.18]
+	#荒芜之负联动：最大生命加成比率 [默认: 0.20]
 	#Range: 0.0 ~ 100.0
 	desolationRingMaxHealth = 0.18
-	#混沌之傲联动：护甲加成比率 [默认: 0.07]
+	#混沌之傲联动：护甲加成比率 [默认: 0.05]
 	#Range: 0.0 ~ 100.0
 	chaosElytraArmor = 0.07
-	#混沌之傲联动：盔甲韧性加成比率 [默认: 0.07]
+	#混沌之傲联动：盔甲韧性加成比率 [默认: 0.05]
 	#Range: 0.0 ~ 100.0
 	chaosElytraArmorToughness = 0.07
 	#暴戾之咒联动：魔法攻击无敌帧削减 [默认: 3.5]
@@ -146,13 +147,13 @@
 	#饕餮之锅联动：每独特击杀增加的盔甲韧性 [默认: 0.35]
 	#Range: 0.0 ~ 100.0
 	eldritchPanArmorToughnessPerKill = 0.35
-	#禁忌之果联动：最终伤害乘数加成 [默认: 0.07]
+	#禁忌之果联动：最终伤害乘数加成 [默认: 0.05]
 	#Range: 0.0 ~ 100.0
 	forbiddenFruitFinalDamage = 0.07
-	#深渊强化状态下的移动速度加成 [默认: 0.18]
+	#深渊强化状态下的移动速度加成 [默认: 0.20]
 	#Range: 0.0 ~ 10.0
 	abyssBoostMovementSpeed = 0.18
-	#深渊强化状态下的攻击速度加成 [默认: 0.18]
+	#深渊强化状态下的攻击速度加成 [默认: 0.20]
 	#Range: 0.0 ~ 10.0
 	abyssBoostAttackSpeed = 0.18
 
@@ -171,15 +172,16 @@
 	#Range: 0 ~ 255
 	bottlingAmplifier = 0
 
+#---- 卷轴（内容物被动）----
 #---- 不洁卷轴 ----
 [unholy_scroll_content]
-	#仆从伤害乘数公式前系数（乘法模式 MULTIPLY_BASE） [默认: 2.45]
+	#仆从伤害乘数公式前系数（乘法模式 MULTIPLY_BASE） [默认: 2.5]
 	#Range: 0.0 ~ 100.0
 	servantDamageCoefficient = 2.0
 	#仆从伤害乘数公式分母 [默认: 60.0]
 	#Range: 1.0 ~ 10000.0
 	servantDamageDivisor = 60.0
-	#仆从无敌帧削减公式前系数（乘法模式 MULTIPLY_BASE） [默认: 0.84]
+	#仆从无敌帧削减公式前系数（乘法模式 MULTIPLY_BASE） [默认: 0.85]
 	#Range: 0.0 ~ 100.0
 	servantInvulCoefficient = 0.84
 	#仆从无敌帧削减公式分母 [默认: 100.0]
@@ -209,22 +211,22 @@
 	#雷雨天跳跃次数乘数 [默认: 1.5]
 	#Range: 1.0 ~ 10.0
 	thunderJumpsMultiplier = 1.5
-	#雷雨天伤害倍率乘数 [默认: 1.3]
+	#雷雨天伤害倍率乘数 [默认: 1.25]
 	#Range: 0.0 ~ 10.0
 	thunderDamageMultiplier = 1.3
-	#持风暴法杖时跳跃次数乘数 [默认: 1.3]
+	#持风暴法杖时跳跃次数乘数 [默认: 1.25]
 	#Range: 1.0 ~ 10.0
 	staffJumpsMultiplier = 1.3
-	#持风暴法杖时半径乘数 [默认: 1.3]
+	#持风暴法杖时半径乘数 [默认: 1.25]
 	#Range: 1.0 ~ 10.0
 	staffRadiusMultiplier = 1.3
-	#持风暴法杖时伤害倍率乘数 [默认: 1.3]
+	#持风暴法杖时伤害倍率乘数 [默认: 1.25]
 	#Range: 0.0 ~ 10.0
 	staffDamageMultiplier = 1.2
 
 #---- 无尽贪婪卷轴 ----
 [avarice_scroll_content]
-	#玩家击杀时掉落绿宝石的基础概率 [默认: 0.12]
+	#玩家击杀时掉落绿宝石的基础概率 [默认: 0.10]
 	#Range: 0.0 ~ 1.0
 	emeraldBaseChance = 0.12
 	#仆从击杀时概率乘数（作用于基础概率） [默认: 0.65]
@@ -321,10 +323,10 @@
 	#每次攻击触发诅咒削弱的概率 (0.0~1.0) [默认: 0.5]
 	#Range: 0.0 ~ 1.0
 	triggerChance = 0.5
-	#基础每次削减比例 (0.0~1.0) [默认: 0.015]
+	#基础每次削减比例 (0.0~1.0) [默认: 0.01]
 	#Range: 0.0 ~ 1.0
 	basePerHit = 0.015
-	#基础削减封顶比例 (0.0~1.0) [默认: 0.08]
+	#基础削减封顶比例 (0.0~1.0) [默认: 0.10]
 	#Range: 0.0 ~ 1.0
 	baseCap = 0.08
 	#参与强度计算的诅咒数上限 [默认: 20]
@@ -336,16 +338,16 @@
 
 #---- 创造者的恩赐（数值已削弱30%） ----
 [fabulous_scroll]
-	#风之法杖加成倍数 [默认: 1.21]
+	#风之法杖加成倍数 [默认: 1.20]
 	#Range: 0.0 ~ 10.0
 	staffBonusMultiplier = 1.15
-	#摔落缓冲气垫半径 [默认: 1.54]
+	#摔落缓冲气垫半径 [默认: 1.50]
 	#Range: 0.0 ~ 100.0
 	cushionRadius = 1.54
-	#缓冲气垫持续时长（ticks） [默认: 84]
+	#缓冲气垫持续时长（ticks） [默认: 85]
 	#Range: 1 ~ 72000
 	cushionDuration = 84
-	#死亡风爆半径 [默认: 3.15]
+	#死亡风爆半径 [默认: 3.0]
 	#Range: 0.0 ~ 100.0
 	windHornRadius = 3.15
 	#死亡风爆持续时长（ticks） [默认: 5]
@@ -354,7 +356,7 @@
 	#死亡风爆伤害基础值 [默认: 1]
 	#Range: 0 ~ 10000
 	windHornPotency = 1
-	#仆从受伤时生成龙卷风概率 [默认: 0.21]
+	#仆从受伤时生成龙卷风概率 [默认: 0.20]
 	#Range: 0.0 ~ 1.0
 	cycloneChance = 0.21
 	#龙卷风基础伤害 [默认: 2]
@@ -363,31 +365,31 @@
 	#龙卷风持续时长（ticks） [默认: 350]
 	#Range: 1 ~ 72000
 	cycloneDuration = 500
-	#龙卷风基础半径 [默认: 0.91]
+	#龙卷风基础半径 [默认: 0.90]
 	#Range: 0.0 ~ 100.0
 	cycloneRadius = 0.91
-	#仆从受伤时吹飞周围敌人概率 [默认: 0.084]
+	#仆从受伤时吹飞周围敌人概率 [默认: 0.08]
 	#Range: 0.0 ~ 1.0
 	windBlastChance = 0.084
 	#吹飞范围 [默认: 2]
 	#Range: 1 ~ 100
 	windBlastRange = 4
-	#玩家攻击触发风刃概率 [默认: 0.28]
+	#玩家攻击触发风刃概率 [默认: 0.30]
 	#Range: 0.0 ~ 1.0
 	playerRazorChance = 0.28
 	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.35]
 	#Range: 0.0 ~ 100.0
 	playerRazorDamageRatio = 0.2
-	#玩家风刃半径 [默认: 0.56]
+	#玩家风刃半径 [默认: 0.55]
 	#Range: 0.0 ~ 100.0
 	playerRazorRadius = 0.56
-	#仆从攻击触发风刃概率 [默认: 0.42]
+	#仆从攻击触发风刃概率 [默认: 0.40]
 	#Range: 0.0 ~ 1.0
 	servantRazorChance = 0.42
 	#仆从风刃伤害比例（相对攻击伤害） [默认: 0.70]
 	#Range: 0.0 ~ 100.0
 	servantRazorDamageRatio = 0.35
-	#仆从风刃半径 [默认: 0.56]
+	#仆从风刃半径 [默认: 0.55]
 	#Range: 0.0 ~ 100.0
 	servantRazorRadius = 0.56
 	#摔落伤害倍率（0=完全免疫） [默认: 0.0]
@@ -511,8 +513,8 @@
 	#夜色下的真实伤害转化比例（受夜色强度影响）
 	#- 将部分伤害转化为无视防御的真实伤害
 	#- 实际值 = 配置值 × 夜色强度
-	#- 例如：0.08 × 0.8 = 6.4%转化为真伤
-	#- 取值范围：0.0-1.0 [默认: 0.08 = 最大8%]
+	#- 例如：0.10 × 0.8 = 8%转化为真伤
+	#- 取值范围：0.0-1.0 [默认: 0.10 = 最大10%]
 	#Range: 0.0 ~ 1.0
 	trueDamageRatio = 0.08
 	#夜色下魔法攻击无敌帧削减 [默认: 2.0 ticks]
@@ -527,7 +529,7 @@
 
 #---- 暴戾之咒 ----
 [violence_scroll]
-	#攻击触发虚空震击概率 [默认: 0.28]
+	#攻击触发虚空震击概率 [默认: 0.30]
 	#Range: 0.0 ~ 1.0
 	voidShockChance = 0.28
 	#每层诅咒伤害增幅 [默认: 0.15]
@@ -552,6 +554,7 @@
 	#Range: 0 ~ 255
 	insightAmplifier = 2
 
+#---- 术石 ----
 #---- 天使之祝 ----
 [angel_blessing]
 	#飞行时长（ticks） [默认: 100 = 5秒]
@@ -638,7 +641,7 @@
 	#冰冻效果时长（ticks） [默认: 50]
 	#Range: 1 ~ 72000
 	freezingDuration = 50
-	#硬冻结触发概率 [默认: 0.12]
+	#硬冻结触发概率 [默认: 0.10]
 	#Range: 0.0 ~ 1.0
 	hardFreezeChance = 0.12
 	#硬冻结时长（ticks） [默认: 80]
@@ -674,7 +677,7 @@
 	#每秒恢复灵魂能量 [默认: 1]
 	#Range: 0 ~ 10000
 	soulEnergyRegen = 1
-	#仆从每2秒恢复生命百分比 [默认: 0.015 = 1.5%]
+	#仆从每2秒恢复生命百分比 [默认: 0.01 = 1%]
 	#Range: 0.0 ~ 1.0
 	servantHealPercent = 0.02
 	#亡灵中立血量阈值（倍率） [默认: 4.5]
@@ -698,7 +701,7 @@
 	#傀儡攻击伤害加成（MULTIPLY_TOTAL） [默认: 0.35 = +35%]
 	#Range: 0.0 ~ 10.0
 	golemDamageMultiplier = 0.15
-	#傀儡每秒回血百分比 [默认: 0.0015 = 0.15%]
+	#傀儡每秒回血百分比 [默认: 0.001 = 0.1%]
 	#Range: 0.0 ~ 1.0
 	golemHealPercent = 0.002
 	#风暴法术强效等级 [默认: 1]
@@ -722,10 +725,16 @@
 	#深渊法术强效等级 [默认: 1]
 	#Range: 0 ~ 255
 	abyssPotency = 1
+	#游泳速度加成（MULTIPLY_BASE，EL 默认 200% = 2.0） [默认: 2.0]
+	#Range: 0.0 ~ 100.0
+	swimSpeedBoost = 2.0
+	#水下生物伤害减免（0.4 = 40% 减伤） [默认: 0.4]
+	#Range: 0.0 ~ 1.0
+	underwaterResistance = 0.4
 
 #---- 复苏之叶 ----
 [revival_leaf]
-	#每2秒回血百分比 [默认: 0.008 = 0.8%]
+	#每2秒回血百分比 [默认: 0.01 = 1%]
 	#Range: 0.0 ~ 1.0
 	healPercent = 0.008
 	#最小回血量 [默认: 0.4]
@@ -779,7 +788,7 @@
 	#即死伤害阈值（最大生命值倍率） [默认: 10.0]
 	#Range: 0.0 ~ 1000.0
 	instantKillThreshold = 10.0
-	#免死触发概率 [默认: 0.28]
+	#免死触发概率 [默认: 0.30]
 	#Range: 0.0 ~ 1.0
 	immortalChance = 0.28
 	#免死时恢复生命百分比 [默认: 0.04 = 4%]
@@ -800,10 +809,16 @@
 	#免死后缓慢等级 [默认: 2]
 	#Range: 0 ~ 255
 	immortalSlowAmplifier = 2
+	#攻击时施加凋零效果的时长（ticks，EL 默认 100） [默认: 100]
+	#Range: 1 ~ 72000
+	witheringTime = 100
+	#攻击时施加剧凋零效果等级（EL 默认 2） [默认: 2]
+	#Range: 0 ~ 255
+	witheringLevel = 2
+	#免死触发概率（EL 默认 35% = 0.35） [默认: 0.35]
+	#Range: 0.0 ~ 1.0
+	undeadProbability = 0.35
 
-#════════════════════════════════════
-# 暗夜立方主动技能
-#════════════════════════════════════
 #---- 时间加速 ----
 [night_cube_active]
 	#每次 tick 推进的额外 gameTime 数值 [默认: 80]
@@ -833,7 +848,7 @@
 	entityAccelBonus = 1
 
 #════════════════════════════════════
-# 饰品
+# 其他饰品
 #════════════════════════════════════
 #---- 不洁卷轴 ----
 [unholy_scroll]
@@ -886,6 +901,9 @@
 	#Range: 1.0 ~ 1.0E7
 	castTimeDiscountDivisor = 5000.0
 
+#════════════════════════════════════
+# 暗夜立方（饰品本体 + 主动技能）
+#════════════════════════════════════
 #---- 暗夜立方 ----
 [night_cube]
 	#常驻魔法伤害乘数加成 [默认: 0.05]
@@ -1027,9 +1045,8 @@
 	clearAggroRadius = 32.0
 
 #════════════════════════════════════
-# 仆从类型配置
+# 仆从配置
 #════════════════════════════════════
-#
 #控制是否启用来自不同模组的仆从类型
 #注意：即使启用，也需要对应模组已安装才会生效
 #
@@ -1049,6 +1066,9 @@
 	#[默认: false]（不禁止）
 	disablePrisonerMiningEtheriumOre = false
 
+#════════════════════════════════════
+# 战斗机制
+#════════════════════════════════════
 #---- 无敌帧削减跳过条件 ----
 [invul_reduction]
 	#当攻击者主手或副手武器携带 goety_revelation:reality_piercer 附魔时，是否跳过本模组的无敌帧削减（让该附魔自己处理穿透）
@@ -1057,22 +1077,15 @@
 
 [ode_to_living_sync_cooldown]
 	#同步冷却机制的冷却时长（ticks，20 ticks = 1 秒）
-	#冷却列表中的效果在一次同步后，必须在冷却期满后才能再次同步。
-	#适合：吸收心、生命提升、免死金牌等消耗后会移除的一次性 buff。
-	#防止这类 buff 被不断刷新至永续。
+	#每次效果同步后，必须等待冷却期满才能再次同步同一效果。
+	#防止 buff 被不断刷新至永续。
 	#[默认: 100 = 5 秒]
 	#Range: 1 ~ 72000
 	syncCooldownTicks = 100
-	#启用同步冷却的药水效果 ID 列表（ResourceLocation 格式）
-	#这些效果在一次同步后，必须等待 syncCooldownTicks 后才能再次同步。
-	#例如: ["minecraft:absorption", "minecraft:health_boost"]
-	#[默认: ["minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]]
-	syncCooldownEffects = ["minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]
 
-#═══════════════════════════════════════════════
-# 预制建筑蓝图战利品爆率配置
-#═══════════════════════════════════════════════
-#
+#════════════════════════════════════
+# 预制建筑
+#════════════════════════════════════
 #蓝图按照三个层级注入战利品表：
 #  Tier 1 - 原版箱子（*:chests/*，不含 goety）
 #  Tier 2 - Goety 系列箱子（命名空间含 goety）
@@ -1122,4 +1135,93 @@
 	#  "cataclysm:gameplay/loot_bag"
 	#
 	treasurePouchIds = ["goety:gameplay/treasure_pouch"]
+
+#---- 翡翠护符 ----
+[jade_amulet]
+	#魔法伤害乘数加成 [默认: 0.15]
+	#Range: 0.0 ~ 10.0
+	magicDamageMultiplier = 0.15
+
+#---- 幽匿之心 ----
+[sculk_heart]
+	#音波基础伤害 [默认: 10.0]
+	#Range: 0.0 ~ 100.0
+	sonicBoomBaseDamage = 10.0
+	#每级 Potency 增加的基础伤害 [默认: 2.0]
+	#Range: 0.0 ~ 50.0
+	sonicBoomPotencyPerLevel = 2.0
+	#音波射程（格） [默认: 15]
+	#Range: 1 ~ 64
+	sonicBoomRange = 15
+	#空手伤害加成（固定值） [默认: 8.0]
+	#Range: 0.0 ~ 50.0
+	unarmedDamageBonus = 8.0
+	#每次击杀获得的最大灵魂能量百分比 [默认: 1.0]
+	#Range: 0.0 ~ 100.0
+	soulGainPercent = 1.0
+	#幽匿脉络最大扩散量 [默认: 1]
+	#Range: 0 ~ 10
+	sculkSpreadAmount = 1
+	#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向上取整，不超过上限） [默认: 7]
+	#Range: 1 ~ 1000
+	sculkXpDivisor = 7
+	#死后是否召唤监守者 [默认: true]
+	summonWardenOnDeath = true
+	#召唤的监守者消失时间（tick） [默认: 2400 = 120秒]
+	#Range: 100 ~ 72000
+	wardenDespawnTicks = 2400
+
+#════════════════════════════════════
+# 替代品卷轴重铸配置
+#════════════════════════════════════
+#---- 替代品卷轴 ----
+#控制仪式产出的打标研究卷轴的随机分配机制。
+#
+[substitute_config]
+	#每张卷轴允许的最大重铸次数。
+	#0 = 不允许重铸（旧行为：已有标签即退化）
+	#1 = 允许重铸一次（默认）
+	#N = 允许重铸 N 次
+	#[默认: 1]
+	#Range: 0 ~ 100
+	maxRerolls = 1
+	#仪式根据 craftType 偏好某类 content 时的权重。
+	#每次随机时，有 preferenceWeight 的概率从偏好的类型（典籍/卷轴/术石）中选取，
+	#剩余概率从其他类型中选取。
+	#0.0 = 完全均匀随机（无偏好），
+	#0.7 = 70% 概率选偏好类型（默认），
+	#1.0 = 强制只从偏好类型中选取。
+	#[默认: 0.7]
+	#Range: 0.0 ~ 1.0
+	preferenceWeight = 0.7
+
+#控制哪些实体类型可以被预制建筑系统捕获（创建蓝图/收回建筑时）。
+#格式: modid:entity_type，例如 minecraft:painting
+#
+#支持的实体必须是不依赖运行时状态的纯装饰实体。
+#白名单外的实体在快照时将被忽略，避免 NBT 残留导致崩溃。
+[prefab_entity]
+	#可被预制建筑蓝图捕获的实体列表。
+	#默认包含：原版画/物品展示框/荧光展示框/盔甲架 + Goety 的 haunted 版本
+	#添加其他模组实体前请确认其 NBT 不包含动态引用（UUID、Passengers 等）
+	capturableEntities = ["minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:armor_stand", "goety:haunted_painting", "goety:haunted_armor_stand"]
+
+#════════════════════════════════════
+# 初始建筑（Starter）
+#════════════════════════════════════
+#---- 初始建筑（Starter） ----
+#新玩家首次登录时自动获得的预制建筑蓝图。
+#
+[starter_config]
+	#发放模式：
+	#  "all"    — 给予 starters/ 目录下的所有初始建筑
+	#  "random" — 随机选择一个初始建筑（默认）
+	#  "none"   — 禁用初始建筑发放
+	#[默认: random]
+	starterMode = "none"
+	#初始建筑模板存放目录（相对于 config/）
+	#此目录下的 .nbt 或 .schematic 文件将作为初始建筑发放。
+	#首次运行时自动从 JAR 内置 resources 复制示例模板。
+	#[默认: goeticlegacy/starters]
+	starterPath = "goeticlegacy/starters"
 

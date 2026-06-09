@@ -19,8 +19,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getTargetTask |  |  | IMaidTask | ✘ |
 | getEntityMaid |  |  | EntityMaid | ✘ |
+| getTargetTask |  |  | IMaidTask | ✘ |
 | getEnableConditionDesc |  |  | List<Pair<String, Predicate<EntityMaid>>> | ✘ |
 | addEnableConditionDesc | String, Predicate<EntityMaid> |  | void | ✘ |
 | exit | Object |  | Object | ✘ |

@@ -19,12 +19,12 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getX |  |  | double | ✘ |
 | getDimension |  |  | String | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| getY |  |  | double | ✘ |
-| getZ |  |  | double | ✘ |
 | isActivated |  |  | boolean | ✘ |
+| getZ |  |  | double | ✘ |
+| getX |  |  | double | ✘ |
+| getY |  |  | double | ✘ |
 | getSetId |  |  | String | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |

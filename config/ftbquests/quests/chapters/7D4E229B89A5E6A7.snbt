@@ -3818,7 +3818,7 @@
 			description: [
 				"远古城市是巫法的圣地，一只监守者体内蕴含着足足20000灵魂能量，亡灵火炉只有在深暗之域才能工作，灵魂方舟需求着回响的碎片，禁书的片段在宝箱中静静沉睡"
 				""
-				"&e强烈推荐先做一部分幽魂套装来帮助探索古城"
+				"&e先做一部分幽魂套装，或者获取术石幽匿之心都有助于更好地探索古城"
 				""
 				"&4由于本包为监守者增加了回响碎片掉落，觉醒添加的回响碎片配方已整改"
 			]
@@ -5203,6 +5203,40 @@
 			}]
 			title: "蜘蛛巢"
 			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["54F62A8D57D2A032"]
+			description: [
+				"墓穴的罐子里有概率开出作祟卷轴"
+				""
+				"阅读作祟卷轴会学会缠魂甲胄仆从和作祟盔甲架的制作方式"
+			]
+			id: "502FEB98A3850A66"
+			rewards: [
+				{
+					id: "3C6331C67A468452"
+					item: "minecraft:armor_stand"
+					type: "item"
+				}
+				{
+					id: "44281A8B65786E9D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "545ED59EBF30F2AE"
+					item: "goety:animation_core"
+					type: "item"
+				}
+			]
+			subtitle: "我盔甲在动，我不玩儿了"
+			tasks: [{
+				id: "5C73AA89B7BC5A42"
+				item: "goety:haunting_scroll"
+				type: "item"
+			}]
+			x: 15.0d
 			y: -2.0d
 		}
 	]

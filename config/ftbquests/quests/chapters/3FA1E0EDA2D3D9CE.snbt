@@ -1813,7 +1813,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -5251,6 +5251,36 @@
 			}]
 			x: 12.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["6904CD36715B131E"]
+			description: [
+				"在古城中可以获得，或者击杀监守者小概率掉落"
+				""
+				"可以帮助你安全的探索古城，对战斗也有强大的加成，但是副作用也很大"
+			]
+			hide_dependency_lines: true
+			id: "5EB0D9010C73153E"
+			rewards: [
+				{
+					id: "62D39C23F2B79500"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "250AFCB0BBA9D051"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+			]
+			subtitle: "我真的成为牢监了吗"
+			tasks: [{
+				id: "2B56872C561EB686"
+				item: "goeticlegacy:sculk_heart"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
 		}
 	]
 	title: "初心者之路"

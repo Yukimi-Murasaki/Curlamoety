@@ -26,12 +26,12 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getSize |  |  | float | ✘ |
 | setSize | float |  | void | ✘ |
 | getPosition |  |  | Vec3 | ✘ |
+| getZ |  |  | double | ✘ |
 | getX |  |  | double | ✘ |
-| getExploder |  |  | LivingEntity | ✘ |
-| getLevel |  |  | Level | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getY |  |  | double | ✘ |
-| getZ |  |  | double | ✘ |
+| getLevel |  |  | Level | ✘ |
+| getExploder |  |  | LivingEntity | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |

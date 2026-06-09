@@ -21,8 +21,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getProperty | JsonObject |  | AbstractProperty<?> | ✘ |
 | getJavaClass | Class<?> |  | DocumentClass | ✘ |
-| specialType | String, List<Object> |  | DocGenerationEventJS | ✘ |
 | transformDocument | Class<?>, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
+| specialType | String, List<Object> |  | DocGenerationEventJS | ✘ |
 | transformByName | String, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
 | customSnippet | String, List<String>, List<Object>, String |  | DocGenerationEventJS | ✘ |
 | customSnippet | String, List<String>, List<Object> |  | DocGenerationEventJS | ✘ |

@@ -25,8 +25,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getEntity |  |  | Entity | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
-| setXp | int |  | void | ✘ |
 | getXp |  |  | int | ✘ |
+| setXp | int |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | removeGameStage | String |  | void | ✘ |
@@ -53,6 +53,11 @@ The player that broke the block.
 The block that was broken.
 ```
 
+- `int getXp()`
+```
+The experience dropped by the block. Always `0` on Fabric.
+```
+
 - `void setXp(int var0)`
 
   Parameters:
@@ -60,11 +65,6 @@ The block that was broken.
 
 ```
 Sets the experience dropped by the block. Only works on Forge.
-```
-
-- `int getXp()`
-```
-The experience dropped by the block. Always `0` on Fabric.
 ```
 
 - `boolean hasGameStage(String var0)`

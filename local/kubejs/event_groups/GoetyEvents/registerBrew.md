@@ -24,12 +24,12 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | addSpecialBrewEffect | Object, String |  | SpecialBrewEffectBuilder | ✘ |
 | removeEntityCatalyst | Object |  | void | ✘ |
-| removeAugmentation | Object |  | void | ✘ |
 | removeCapacity | Object |  | void | ✘ |
+| removeCatalyst | Object |  | void | ✘ |
 | addCapacity | Object, int |  | void | ✘ |
+| removeAugmentation | Object |  | void | ✘ |
 | setCapacityLevels | Object |  | void | ✘ |
 | addAugmentation | Object, String, int |  | void | ✘ |
-| removeCatalyst | Object |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
@@ -59,15 +59,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 移除实体催化剂
 ```
 
-- `void removeAugmentation(Object item)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-
-```
-移除增强剂
-```
-
 - `void removeCapacity(Object item)`
 
   Parameters:
@@ -75,6 +66,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 移除容量剂
+```
+
+- `void removeCatalyst(Object item)`
+
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+
+```
+移除物品催化剂
 ```
 
 - `void addCapacity(Object item, int level)`
@@ -85,6 +85,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 注册容量剂
+```
+
+- `void removeAugmentation(Object item)`
+
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+
+```
+移除增强剂
 ```
 
 - `void setCapacityLevels(Object levels)`
@@ -105,15 +114,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 注册增强剂
-```
-
-- `void removeCatalyst(Object item)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-
-```
-移除物品催化剂
 ```
 
 - `Object exit(Object var0)`

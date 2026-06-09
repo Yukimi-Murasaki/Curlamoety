@@ -19,11 +19,11 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getMaid |  |  | EntityMaid | ✘ |
 | damageRodBy | int |  | void | ✘ |
 | getRodDamage |  |  | int | ✘ |
-| getDrops |  |  | NonNullList<ItemStack> | ✘ |
 | getHook |  |  | MaidFishingHook | ✘ |
+| getMaid |  |  | EntityMaid | ✘ |
+| getDrops |  |  | NonNullList<ItemStack> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

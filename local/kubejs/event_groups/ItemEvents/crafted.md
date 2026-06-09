@@ -24,8 +24,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getItem |  |  | ItemStack | ✘ |
+| getEntity |  |  | LivingEntity | ✘ |
 | getInventory |  |  | InventoryKJS | ✘ |
-| getEntity |  |  | Player | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | removeGameStage | String |  | void | ✘ |
@@ -47,14 +47,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 The item that was crafted.
 ```
 
+- `LivingEntity getEntity()`
+```
+The player that crafted the item.
+```
+
 - `InventoryKJS getInventory()`
 ```
 The inventory that the item was crafted in.
-```
-
-- `Player getEntity()`
-```
-The player that crafted the item.
 ```
 
 - `boolean hasGameStage(String var0)`

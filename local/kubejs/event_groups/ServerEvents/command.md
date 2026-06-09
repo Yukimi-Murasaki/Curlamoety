@@ -23,8 +23,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getException |  |  | Throwable | ✘ |
 | getInput |  |  | String | ✘ |
 | setException | Throwable |  | void | ✘ |
-| setParseResults | ParseResults<CommandSourceStack> |  | void | ✘ |
 | getParseResults |  |  | ParseResults<CommandSourceStack> | ✘ |
+| setParseResults | ParseResults<CommandSourceStack> |  | void | ✘ |
 | getCommandName |  |  | String | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |

@@ -2221,6 +2221,44 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(5)
     .id("curlamoety:emerald_grimoire")
 
+    //幽匿之心
+    event.recipes.goety.ritual('goeticlegacy:sculk_heart','goety:craft',[
+        "minecraft:diamond",
+        "goety:ectoplasm",
+        "minecraft:diamond",
+        "goety:ectoplasm",
+        "minecraft:echo_shard",
+        "minecraft:bone_block",
+        "minecraft:echo_shard",
+        "minecraft:bone_block",
+        "minecraft:echo_shard",
+        "minecraft:bone_block",
+        "minecraft:echo_shard",
+        "minecraft:bone_block",
+    ])
+    .activationItem("goetydelight:soul_convergence_room")
+    .craftType("magic")
+    .soulCost(10)
+    .duration(20)
+    .id("curlamoety:sculk_heart")
+
+    //玉佩
+    event.recipes.goety.ritual('goeticlegacy:jade_amulet','goety:craft',[
+        "twilightforest:red_thread",
+        "goety:ectoplasm",
+        "goety:soul_emerald",
+        "goety:ectoplasm",
+        "curlamoety:cursed_fragment",
+        "curlamoety:cursed_fragment",
+        "goety:mystic_core",
+        "#goety:marble_blocks"
+    ])
+    .activationItem("goety:jade_block")
+    .craftType("sky")
+    .soulCost(25)
+    .duration(15)
+    .id("curlamoety:jade_amulet")
+
 })
 ServerEvents.recipes(event=>{//无封装方法
     //event.custom({

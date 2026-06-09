@@ -20,9 +20,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getSource |  |  | DamageSource | ✘ |
-| getMaid |  |  | EntityMaid | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
 | getAmount |  |  | float | ✘ |
+| getMaid |  |  | EntityMaid | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |

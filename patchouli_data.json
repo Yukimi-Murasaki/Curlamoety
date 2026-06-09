@@ -26,7 +26,9 @@
         "goety:rituals/enchanting_ritual",
         "goety:rituals/expert_nether_ritual",
         "goety:intro/cursed_cage",
-        "goety:rumors/terminus"
+        "goety:rumors/terminus",
+        "goety:crafts/artifice/ominous_pyre",
+        "goety:crafts/ominous_pyre"
       ],
       "bookmarks": [],
       "completedManualQuests": []

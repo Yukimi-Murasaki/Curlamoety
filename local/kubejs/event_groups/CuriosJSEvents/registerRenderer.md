@@ -21,9 +21,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | Item |  | void | ✘ |
 | register | Item, Consumer<RenderContext> |  | void | ✘ |
-| registerEntityRenderer | EntityType<?>, EntityRendererProvider |  | void | ✘ |
 | registerMenuScreen | MenuType<?>, ScreenFactory |  | void | ✘ |
 | registerBlockEntityRenderer | BlockEntityType<?>, BlockEntityRendererProvider |  | void | ✘ |
+| registerEntityRenderer | EntityType<?>, EntityRendererProvider |  | void | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | LocalPlayer | ✘ |
 | hasGameStage | String |  | boolean | ✘ |

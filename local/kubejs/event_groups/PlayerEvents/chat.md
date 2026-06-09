@@ -27,11 +27,11 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getMessage |  |  | String | ✘ |
-| getComponent |  |  | Component | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| setMessage | Component |  | void | ✘ |
-| setComponent | Component |  | void | ✘ |
 | getUsername |  |  | String | ✘ |
+| setMessage | Component |  | void | ✘ |
+| getComponent |  |  | Component | ✘ |
+| setComponent | Component |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | removeGameStage | String |  | void | ✘ |
@@ -53,14 +53,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 Gets the message that the player sent.
 ```
 
-- `Component getComponent()`
-```
-Gets the message that the player sent.
-```
-
 - `Entity getEntity()`
 ```
 Gets the player that sent the message.
+```
+
+- `String getUsername()`
+```
+Gets the username of the player that sent the message.
 ```
 
 - `void setMessage(Component var0)`
@@ -72,6 +72,11 @@ Gets the player that sent the message.
 Sets the message that the player sent.
 ```
 
+- `Component getComponent()`
+```
+Gets the message that the player sent.
+```
+
 - `void setComponent(Component var0)`
 
   Parameters:
@@ -79,11 +84,6 @@ Sets the message that the player sent.
 
 ```
 Sets the message that the player sent.
-```
-
-- `String getUsername()`
-```
-Gets the username of the player that sent the message.
 ```
 
 - `boolean hasGameStage(String var0)`

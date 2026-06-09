@@ -19,8 +19,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getEntity |  |  | LivingEntity | ✘ |
 | getReward |  |  | CustomReward | ✘ |
+| getEntity |  |  | LivingEntity | ✘ |
 | getNotify |  |  | boolean | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |

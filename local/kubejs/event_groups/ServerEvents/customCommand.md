@@ -21,8 +21,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getId |  |  | String | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| getLevel |  |  | Level | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
+| getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |

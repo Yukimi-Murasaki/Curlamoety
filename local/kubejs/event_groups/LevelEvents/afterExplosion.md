@@ -23,20 +23,20 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
 | getAffectedEntities |  |  | EntityArrayList | ✘ |
-| removeAffectedEntity | Entity |  | void | ✘ |
+| getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
 | removeAllAffectedEntities |  |  | void | ✘ |
 | removeAffectedBlock | BlockContainerJS |  | void | ✘ |
+| removeAffectedEntity | Entity |  | void | ✘ |
 | removeAllAffectedBlocks |  |  | void | ✘ |
 | removeKnockback |  |  | void | ✘ |
 | getPosition |  |  | Vec3 | ✘ |
+| getZ |  |  | double | ✘ |
 | getX |  |  | double | ✘ |
-| getExploder |  |  | LivingEntity | ✘ |
-| getLevel |  |  | Level | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getY |  |  | double | ✘ |
-| getZ |  |  | double | ✘ |
+| getLevel |  |  | Level | ✘ |
+| getExploder |  |  | LivingEntity | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
@@ -48,23 +48,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `List<BlockContainerJS> getAffectedBlocks()`
-```
-Gets a list of all blocks affected by the explosion.
-```
-
 - `EntityArrayList getAffectedEntities()`
 ```
 Gets a list of all entities affected by the explosion.
 ```
 
-- `void removeAffectedEntity(Entity var0)`
-
-  Parameters:
-  - var0: Entity
-
+- `List<BlockContainerJS> getAffectedBlocks()`
 ```
-Remove an entity from the list of affected entities.
+Gets a list of all blocks affected by the explosion.
 ```
 
 - `void removeAllAffectedEntities()`
@@ -79,6 +70,15 @@ Remove all entities from the list of affected entities.
 
 ```
 Remove a block from the list of affected blocks.
+```
+
+- `void removeAffectedEntity(Entity var0)`
+
+  Parameters:
+  - var0: Entity
+
+```
+Remove an entity from the list of affected entities.
 ```
 
 - `void removeAllAffectedBlocks()`

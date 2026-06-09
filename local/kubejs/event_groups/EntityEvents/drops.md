@@ -22,10 +22,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getSource |  |  | DamageSource | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| isRecentlyHit |  |  | boolean | ✘ |
+| getLootingLevel |  |  | int | ✘ |
 | addDrop | ItemStack |  | ItemEntity | ✘ |
 | addDrop | ItemStack, float |  | ItemEntity | ✘ |
-| getLootingLevel |  |  | int | ✘ |
+| isRecentlyHit |  |  | boolean | ✘ |
 | getDrops |  |  | List<ItemEntity> | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |

@@ -20,8 +20,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getExperienceOrb |  |  | ExperienceOrb | ✘ |
-| getMaid |  |  | EntityMaid | ✘ |
 | isCanPickup |  |  | boolean | ✘ |
+| getMaid |  |  | EntityMaid | ✘ |
 | setCanPickup | boolean |  | void | ✘ |
 | isSimulate |  |  | boolean | ✘ |
 | exit | Object |  | Object | ✘ |

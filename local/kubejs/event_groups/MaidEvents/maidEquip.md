@@ -21,8 +21,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getSlot |  |  | EquipmentSlot | ✘ |
 | getStack |  |  | ItemStack | ✘ |
-| getMaid |  |  | EntityMaid | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
+| getMaid |  |  | EntityMaid | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |

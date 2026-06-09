@@ -19,9 +19,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| getEntity |  |  | LivingEntity | ✘ |
 | getPrevTeam |  |  | KJSTeamWrapper | ✘ |
 | getCurrentTeam |  |  | KJSTeamWrapper | ✘ |
-| getEntity |  |  | Entity | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | removeGameStage | String |  | void | ✘ |

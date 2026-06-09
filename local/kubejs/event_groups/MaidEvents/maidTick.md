@@ -19,8 +19,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getMaid |  |  | EntityMaid | ✘ |
 | getEntity |  |  | Entity | ✘ |
+| getMaid |  |  | EntityMaid | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |

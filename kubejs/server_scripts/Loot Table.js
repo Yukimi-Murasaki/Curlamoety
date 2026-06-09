@@ -1,7 +1,11 @@
 LootJS.modifiers((event) => {//实体战利品
     event
     .addEntityLootModifier('minecraft:warden')//监守者
-    .addLoot('2x minecraft:echo_shard');
+    .addLoot('minecraft:echo_shard')
+    .addWeightedLoot([
+        Item.of('minecraft:echo_shard').withChance(9),
+        Item.of('goeticlegacy:sculk_heart').withChance(1)
+    ])
     event
     .addEntityLootModifier('minecraft:wither')//凋灵
     .addLoot('minecraft:nether_star')
@@ -371,11 +375,10 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('goety:necro_staff').withChance(1),
         Item.of('goety:rotting_focus').withChance(4),
         Item.of('goety:osseous_focus').withChance(3),
-        Item.of('goety:occult_fabric').withChance(6),
-        Item.of('goety:animation_core').withChance(6),
         Item.of('2x enigmaticaddons:earth_heart_fragment').withChance(6),
         Item.of('goetydelight:forbidden_soup_bun').withChance(6),
-        Item.of('2x minecraft:echo_shard').withChance(12)
+        Item.of('2x minecraft:echo_shard').withChance(12),
+        Item.of("goeticlegacy:sculk_heart").withChance(12)
     ])
     .addWeightedLoot([1,2],[
         Item.of('2x enigmaticaddons:earth_heart_fragment').withChance(3),
@@ -2695,7 +2698,7 @@ LootJS.modifiers((event)=>{//宝箱战利品
         Item.of('2x goety:ectoplasm').withChance(4),
         Item.of('goety:animation_core').withChance(4),
         Item.of('8x minecraft:sculk').withChance(12),
-        Item.of("goety:fell_blade").withChance(8)
+        Item.of("goety:fell_blade").withChance(8),
     ])
 
     event

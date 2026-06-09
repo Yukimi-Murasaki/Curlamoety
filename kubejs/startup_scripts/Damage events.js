@@ -5,7 +5,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
     let health = entity.getHealth()
     let type =source.getType()
     let actual = source.actual
-    if(entity == null )return;
+    if( entity == null )return;
     if(!entity.isLiving())return;
     //受击逻辑
     
@@ -38,13 +38,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
             event.setAmount( amount*0.1 )
         }
     }
-    //殊死一搏减伤
-    if(entity.potionEffects.isActive('curlamoety:dying_fight')){
-        let luck = entity.getAttribute('minecraft:generic.luck').getValue()
-        let decrease = (0.4-0.005*luck)
-        if(decrease<0.2){decrease = 0.2}
-        event.setAmount(amount*decrease)
-    }
+    
     if(entity.isPlayer()){
         //殊死一搏触发
         if(entity.isCuriosEquipped('curlamoety:desperate_attempt') && entity.persistentData.dice_cd == 0){
@@ -58,6 +52,13 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
                 entity.level.playSound(null,x,y,z,'curlamoety:dice','players',1,1)
                 entity.persistentData.dice_cd = 40
             }else{ entity.persistentData.dice_cd = 20 }
+        }
+        //殊死一搏减伤
+        if(entity.potionEffects.isActive('curlamoety:dying_fight')){
+            let luck = entity.getAttribute('minecraft:generic.luck').getValue()
+            let decrease = (0.4-0.005*luck)
+            if(decrease<0.2){decrease = 0.2}
+            event.setAmount(amount*decrease)
         }
         //褪色免伤
         if(entity.isCuriosEquipped('curlamoety:faded_promise')){
@@ -171,6 +172,12 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
                 actual.persistentData.dice_cd = 15
             }
         }
+        //殊死一搏增伤
+        if(actual.potionEffects.isActive('curlamoety:dying_fight')){
+            let luck = actual.getAttribute('minecraft:generic.luck').getValue()
+            let increase = (1.5+0.01*luck)
+            event.setAmount(amount*increase)
+        }
         
         if(actual.persistentData.armorset == "apocalyptium"){
             //神金斩杀
@@ -204,10 +211,5 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent',eve
         }
     }
 
-    //殊死一搏增伤
-    if(actual.potionEffects.isActive('curlamoety:dying_fight')){
-        let luck = actual.getAttribute('minecraft:generic.luck').getValue()
-        let increase = (1.5+0.01*luck)
-        event.setAmount(amount*increase)
-    }
+    
 })

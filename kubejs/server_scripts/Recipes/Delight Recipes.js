@@ -224,6 +224,19 @@ ServerEvents.recipes(event => {
         ],
         'minecraft:item.bucket.empty'
     ).id("curlamoety:cutting/stocking_cup")
+
+    event.recipes.farmersdelight.cutting(//幽匿之心
+        "goeticlegacy:sculk_heart",
+        "#forge:tools/swords",
+        [
+            "2x minecraft:echo_shard",
+            "minecraft:diamond",
+            "2x goety:ectoplasm",
+            "goetydelight:gathering_soul_embryos"
+        ],
+        "minecraft:entity.warden.death"
+    ).id("curlamoety:cutting/sculk_heart")
+
 //厨锅
     event.recipes.farmersdelight.cooking(
     ['#farmersdelight:feasts','#farmersdelight:meals','#farmersdelight:meals','goety:ectoplasm','minecraft:golden_carrot','minecraft:golden_apple'],

@@ -26,9 +26,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getModifiers |  |  | Multimap<Attribute, AttributeModifier> | ✘ |
 | removeAttribute | Attribute |  | Collection<AttributeModifier> | ✘ |
 | getEntity |  |  | Entity | ✘ |
+| removeModifier | Attribute, AttributeModifier |  | boolean | ✘ |
 | addModifier | Attribute, AttributeModifier |  | boolean | ✘ |
 | clearModifiers |  |  | void | ✘ |
-| removeModifier | Attribute, AttributeModifier |  | boolean | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |

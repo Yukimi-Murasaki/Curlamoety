@@ -37,10 +37,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | scale | float |  | void | ✘ |
 | text | Component, int, int, int, boolean |  | void | ✘ |
 | translate | double, double |  | void | ✘ |
-| rawText | FormattedCharSequence, int, int, int, boolean |  | void | ✘ |
+| getVariables |  |  | VariableSet | ✘ |
 | rectangle | float, float, float, float, float, int, float, float, float, float |  | void | ✘ |
 | rectangle | float, float, float, float, float, int |  | void | ✘ |
-| getVariables |  |  | VariableSet | ✘ |
+| rawText | FormattedCharSequence, int, int, int, boolean |  | void | ✘ |
 | alignX | float, float, AlignMode |  | float | ✘ |
 | alignY | float, float, AlignMode |  | float | ✘ |
 | rotateDeg | float |  | void | ✘ |
@@ -53,19 +53,19 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | push |  |  | void | ✘ |
 | pop |  |  | void | ✘ |
 | translate | double, double, double |  | void | ✘ |
-| bindTextureForSetup | ResourceLocation |  | void | ✘ |
-| getMatrix |  |  | Matrix4f | ✘ |
-| vertex | Matrix4f, float, float, float, int |  | void | ✘ |
-| vertex | Matrix4f, float, float, float, int, float, float |  | void | ✘ |
 | setShaderTexture | ResourceLocation |  | void | ✘ |
 | setShaderColor | float, float, float, float |  | void | ✘ |
-| beginQuads | boolean |  | void | ✘ |
-| beginQuads | VertexFormat |  | void | ✘ |
+| getMatrix |  |  | Matrix4f | ✘ |
+| bindTextureForSetup | ResourceLocation |  | void | ✘ |
+| vertex | Matrix4f, float, float, float, int, float, float |  | void | ✘ |
+| vertex | Matrix4f, float, float, float, int |  | void | ✘ |
 | setPositionColorShader |  |  | void | ✘ |
+| beginQuads | VertexFormat |  | void | ✘ |
+| beginQuads | boolean |  | void | ✘ |
 | setPositionColorTextureShader |  |  | void | ✘ |
+| multiplyWithMatrix | Matrix4f |  | void | ✘ |
 | setShaderInstance | Supplier<ShaderInstance> |  | void | ✘ |
 | resetShaderColor |  |  | void | ✘ |
-| multiplyWithMatrix | Matrix4f |  | void | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | LocalPlayer | ✘ |
 | hasGameStage | String |  | boolean | ✘ |

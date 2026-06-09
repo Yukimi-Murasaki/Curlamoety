@@ -21,25 +21,25 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | cancel |  |  | Object | ✘ |
 | getItem |  |  | ItemStack | ✘ |
-| getX |  |  | double | ✘ |
-| getEntity |  |  | Entity | ✘ |
-| isFire |  |  | boolean | ✘ |
-| getDamageSource |  |  | DamageSource | ✘ |
-| getLevel |  |  | Level | ✘ |
-| getY |  |  | double | ✘ |
+| getEntity |  |  | ItemEntity | ✘ |
 | getZ |  |  | double | ✘ |
+| getX |  |  | double | ✘ |
+| getY |  |  | double | ✘ |
+| isFire |  |  | boolean | ✘ |
+| getLevel |  |  | Level | ✘ |
 | getAmount |  |  | float | ✘ |
-| getSourceEntityType |  |  | String | ✘ |
-| isSourceEntityFromMod | String |  | boolean | ✘ |
-| getDirectEntityType |  |  | String | ✘ |
-| isDirectEntityFromMod | String |  | boolean | ✘ |
-| getDamageType |  |  | String | ✘ |
-| getDirectEntity |  |  | Entity | ✘ |
 | getSourceEntity |  |  | Entity | ✘ |
 | getDamageMsgId |  |  | String | ✘ |
-| isSourceEntity | String |  | boolean | ✘ |
+| getDirectEntity |  |  | Entity | ✘ |
+| getDamageType |  |  | String | ✘ |
 | isDirectEntity | String |  | boolean | ✘ |
 | isDamageType | String |  | boolean | ✘ |
+| isSourceEntity | String |  | boolean | ✘ |
+| getDamageSource |  |  | DamageSource | ✘ |
+| getSourceEntityType |  |  | String | ✘ |
+| getDirectEntityType |  |  | String | ✘ |
+| isDirectEntityFromMod | String |  | boolean | ✘ |
+| isSourceEntityFromMod | String |  | boolean | ✘ |
 | isExplosion |  |  | boolean | ✘ |
 | isCactus |  |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
