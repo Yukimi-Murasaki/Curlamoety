@@ -5620,6 +5620,24 @@
 			x: 21.5d
 			y: -3.0d
 		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			description: ["注意：假人算作了空中单位"]
+			id: "7C0B565D857B9B04"
+			rewards: [{
+				id: "0B923A9495E613D5"
+				item: "immersive_aircraft:enhanced_propeller"
+				type: "item"
+			}]
+			subtitle: "man！"
+			tasks: [{
+				id: "2DCF6A700EDC4CD2"
+				item: "goety:smack_stone_focus"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 9.0d
+		}
 	]
 	title: "魔法师的宝库"
 }

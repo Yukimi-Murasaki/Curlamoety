@@ -16175,6 +16175,19 @@
         }
       },
       "deleted_biomes": []
+    },
+    "goety:smack_stone": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "min_spawn_distance": 24,
+      "max_spawn_distance": 128,
+      "category": "misc",
+      "biomes": {},
+      "deleted_biomes": []
     }
   }
 }

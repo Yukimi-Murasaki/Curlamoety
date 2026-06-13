@@ -37,14 +37,14 @@ BlockEvents.rightClicked((event) => {
     }else if (block.hasTag('minecraft:logs')){//朽木
         if(block.id != 'goety:rotten_log'){
             if(item.id == 'minecraft:rotten_flesh'){
-                if(player.persistentData.witch_amulet>=1){
+                if(global.witchAmuletMap.get(player)>=1){
                     block.set('goety:rotten_log')
                     item.count --
                     level.playSound(null,x,y,z,'minecraft:item.honeycomb.wax_on','players',1,1)
                 }
             }
         }else if(item.id == 'minecraft:potion'){
-            if(player.persistentData.witch_amulet>=1){
+            if(global.witchAmuletMap.get(player)>=1){
                 let block2 = level.getBlock(x,y+1,z)
                 if(block2.id == 'minecraft:air'){
                     if(Math.random(1)<0.5){
@@ -63,7 +63,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if (block.id == 'goety:glow_light') {//萤石粉
         if(item.id == 'goety:cauldron_ladle') {
-            if(player.persistentData.witch_amulet>=2){
+            if(global.witchAmuletMap.get(player)>=2){
                 let entity = block.createEntity("item")
                 entity.setPosition(x+0.5, y+0.5, z+0.5)
                 level.destroyBlock(block.pos,false)
@@ -73,7 +73,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.hasTag('forge:stone')) {//红石
         if(item.id == 'minecraft:red_dye'){
-            if(player.persistentData.witch_amulet>=2){
+            if(global.witchAmuletMap.get(player)>=2){
                 block.set('minecraft:redstone_block')
                 player.mainHandItem.count--
                 level.playSound(null,x,y,z,'minecraft:item.honeycomb.wax_on','players',1,1)
@@ -81,7 +81,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.id == 'twilightforest:root'){//活根
         if(item.id == 'minecraft:potion'){
-            if(player.persistentData.witch_amulet>=2){
+            if(global.witchAmuletMap.get(player)>=2){
                 block.set('twilightforest:liveroot_block')
                 player.mainHandItem.count--
                 player.give('minecraft:glass_bottle')
@@ -91,7 +91,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.hasTag('minecraft:leaves')){//钢叶
         if(item.id == 'minecraft:iron_ingot'){
-            if(player.persistentData.witch_amulet>=2){
+            if(global.witchAmuletMap.get(player)>=2){
                 let entity = block.createEntity("item")
                 entity.setPosition(x+0.5, y+0.5, z+0.5)
                 level.destroyBlock(block.pos,false)
@@ -102,7 +102,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.hasTag('minecraft:beehives')){//蜂蜜
         if(item.id == 'minecraft:sugar' && player.offHandItem.id == 'minecraft:glass_bottle'){
-            if(player.persistentData.witch_amulet>=2){
+            if(global.witchAmuletMap.get(player)>=2){
                 item.count -= 4
                 player.offHandItem.count --
                 player.give('minecraft:honey_bottle')
@@ -110,7 +110,7 @@ BlockEvents.rightClicked((event) => {
             }
         }
     }else if (block.hasTag('minecraft:wooden_fences')){//烈焰棒
-        if(player.persistentData.witch_amulet>=3){
+        if(global.witchAmuletMap.get(player)>=3){
             let block_up =level.getBlock(x,y+1,z)
             let block_down =level.getBlock(x,y-1,z)
             let block_north =level.getBlock(x,y,z-1)
@@ -127,7 +127,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.hasTag('forge:cobblestone')){//海晶石
         if(item.id == 'minecraft:potion'){
-            if(player.persistentData.witch_amulet>=3){
+            if(global.witchAmuletMap.get(player)>=3){
                 block.set('minecraft:prismarine')
                 player.mainHandItem.count--
                 player.give('minecraft:glass_bottle')
@@ -137,7 +137,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if (block.id =='minecraft:sand' ){//鳞甲
         if(item.id == 'minecraft:seagrass'){
-            if(player.persistentData.witch_amulet>=3){
+            if(global.witchAmuletMap.get(player)>=3){
                 let entity = block.createEntity("item")
                 entity.setPosition(x+0.5, y+0.5, z+0.5)
                 event.getLevel().destroyBlock(block.pos,false)
@@ -149,7 +149,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if (block.id == 'minecraft:amethyst_block'){//神秘核心
         if(item.id == 'goety:empty_focus'){
-            if(player.persistentData.witch_amulet>=4)
+            if(global.witchAmuletMap.get(player)>=4)
             {
                 let entity = block.createEntity("item")
                 entity.setPosition(x+0.5, y+0.5, z+0.5)
@@ -161,7 +161,7 @@ BlockEvents.rightClicked((event) => {
         } 
     }else if (block.hasTag('minecraft:saplings')){//紫颂花
         if(item.id == 'minecraft:purple_dye'){
-            if(player.persistentData.witch_amulet>=4){
+            if(global.witchAmuletMap.get(player)>=4){
                 block.set('minecraft:chorus_flower')
                 player.mainHandItem.count--
                 level.playSound(null,x,y,z,'minecraft:item.bone_meal.use','players',1,1)
@@ -169,7 +169,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.id == 'minecraft:dragon_head'){//龙息
         if(item.id == 'minecraft:glass_bottle'){
-            if(player.persistentData.witch_amulet>=4) {
+            if(global.witchAmuletMap.get(player)>=4) {
                 player.mainHandItem.count--
                 player.give('minecraft:dragon_breath')
                 level.playSound(null,x,y,z,'minecraft:item.bottle.fill_dragonbreath','players',1,1)
@@ -178,7 +178,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if (block.id == 'enigmaticdelicacy:enigmatic_bush') {//神秘果
         if(item.id == 'enigmaticlegacy:infinimeal'){
-            if(player.persistentData.witch_amulet==5){
+            if(global.witchAmuletMap.get(player)==5){
                 let entity = block.createEntity("item")
                 entity.setPosition(x+0.5, y-0.2, z+0.5)
                 entity.item = Item.of('enigmaticdelicacy:enigmatic_fruit')
@@ -188,7 +188,7 @@ BlockEvents.rightClicked((event) => {
         }
     }else if (block.id == 'curlamoety:perfect_matter'){//完美物质
         if(item.id == 'goety:philosophers_mace'){
-            if(player.persistentData.witch_amulet == 5){
+            if(global.witchAmuletMap.get(player) == 5){
                 let block_up = level.getBlock(x,y+1,z)
                 let block_down = level.getBlock(x,y-1,z)
                 let block_north = level.getBlock(x,y,z-1)
@@ -234,7 +234,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if ((block.id == 'minecraft:enchanting_table'||block.id =='enchantinginfuser:enchanting_infuser'||block.id == 'enchantinginfuser:advanced_enchanting_infuser')) {//附魔金苹果
         if(item.id == 'minecraft:golden_apple'){
-            if(player.persistentData.witch_amulet==5){
+            if(global.witchAmuletMap.get(player)==5){
                 if(player.experienceLevel >= 30){
                     let entity = block.createEntity("item")
                     entity.setPosition(x+0.5, y+0.7, z+0.5)
@@ -252,7 +252,7 @@ BlockEvents.rightClicked((event) => {
         
     }else if (block.id == 'curlamoety:witch_desk' ){//笔记
         if(item.id == 'minecraft:paper'){
-            if(player.persistentData.witch_amulet>=1)
+            if(global.witchAmuletMap.get(player)>=1)
             {
                 
                 player.mainHandItem.count--
@@ -261,7 +261,7 @@ BlockEvents.rightClicked((event) => {
                 level.playSound(null,x,y,z,'minecraft:item.spyglass.use','players',1,1)
             } 
         }else if(item.id == 'enigmaticlegacy:thicc_scroll'){
-            if(player.persistentData.witch_amulet>=2)
+            if(global.witchAmuletMap.get(player)>=2)
             {
                 player.mainHandItem.count--
                 player.give('curlamoety:papers_t2')
@@ -269,7 +269,7 @@ BlockEvents.rightClicked((event) => {
                 level.playSound(null,x,y,z,'minecraft:block.brewing_stand.brew','players',1,1)
             } 
         }else if(item.id == 'minecraft:book'){
-            if(player.persistentData.witch_amulet>=3)
+            if(global.witchAmuletMap.get(player)>=3)
             {
                 player.mainHandItem.count--
                 player.give('curlamoety:papers_t3')
@@ -277,7 +277,7 @@ BlockEvents.rightClicked((event) => {
                 level.playSound(null,x,y,z,'minecraft:block.enchantment_table.use','players',1,1)
             } 
         }else if(item.id == 'goety:forbidden_piece'){
-            if(player.persistentData.witch_amulet>=4)
+            if(global.witchAmuletMap.get(player)>=4)
             {
                 player.mainHandItem.count--
                 player.give('curlamoety:papers_t4')
@@ -290,7 +290,7 @@ BlockEvents.rightClicked((event) => {
                 level.playSound(null,x,y,z,'minecraft:entity.warden.heartbeat','players',1,1)
             } 
         }else if(item.id == 'goety:unholy_fabric'){
-            if(player.persistentData.witch_amulet==5)
+            if(global.witchAmuletMap.get(player)==5)
             {
                 player.mainHandItem.count--
                 player.give('curlamoety:annihilation_ashes')
@@ -510,13 +510,15 @@ BlockEvents.rightClicked((event) => {
 
     if(item.id == 'enigmaticlegacy:soul_dust'){
         if(block.id == "minecraft:diamond_block"){
-            player.persistentData.generic_summon_cd = 20
+            global.genericSummonCdMap.put(player,20)
         }else if(block.id == "minecraft:gold_block"){
-            player.tell(player.persistentData.generic_summon_cd)
+            player.tell(player.persistentData.getInt("generic_summon_cd"))
         }else if(block.id == "minecraft:iron_block"){
-            player.tell(player.persistentData.armorset)
+            player.tell(global.genericSummonCdMap.get(player))
         }else if(block.id == "cataclysm:cursium_block"){
-            player.persistentData.fade_cd = 20
+            player.tell(server.persistentData.EnderHero_counter)
+        }else if(block.id == "goety:void_shrine"){
+            server.persistentData.EnderHero_counter = 0
         }
     }
 

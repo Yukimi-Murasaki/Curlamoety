@@ -11,7 +11,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
     let chance = Math.random()
     //战利品表
     if(type == "minecraft:zombie"||type == "minecraft:husk"||type == "goety:frayed" ||type == "goetyawaken:jungle_zombie"||type == "goetyawaken:frozen_zombie"||type == "goetyawaken:bouldering_zombie"){//僵尸类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("curlamoety:zombie_arm")
@@ -60,7 +60,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:drowned"){//溺尸
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("minecraft:trident")
@@ -109,7 +109,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:skeleton"||type == "minecraft:stray"||type == "goety:rattled" ||type == "goetyawaken:parched"||type == "goetyawaken:sunken_skeleton"||type == "twilightforest:skeleton_druid"||type == "trials:bogged"){//骷髅类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("curlamoety:skeleton_leg")
@@ -158,7 +158,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:wither_skeleton"){//凋灵骷髅
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("curlamoety:wither_flamberge")
@@ -207,7 +207,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:zombified_piglin"||type == "minecraft:piglin"||type == "minecraft:piglin_brute"){//猪灵类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.33){
                 item = Item.of("minecraft:gold_ingot")
@@ -253,7 +253,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:pillager"||type == "minecraft:vindictor"||type == "goety:inquillager"||type == "goety:conquillager"||type == "minecraft:vindictor"){//一般灾厄村民（有手持）
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.3){
                 item = Item.of("2x minecraft:emerald")
@@ -275,7 +275,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:piker" ){//长矛兵
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.2){
                 item = Item.of("2x minecraft:emerald")
@@ -288,7 +288,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:crusher" ){//粉碎者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of('goety:stormlander')
@@ -307,7 +307,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:invoker"||type == "goety:storm_caster" ||type == "goety:cryologer" ||type == "goety:envioker" ||type == "goety:sorcerer" ){//法师类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("minecraft:totem_of_undying")
@@ -332,7 +332,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:witch"||type == "goety:maverick"||type == "goety:reprobate"){//女巫类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("goety:witch_hat")
@@ -366,7 +366,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:warlock"){//术士
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.02){
                 item = Item.of("goety:warlock_robe")
@@ -388,7 +388,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:heretic"){//异教徒
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("goety:infernal_tome")
@@ -407,7 +407,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:creeper"||type == "goetyawaken:ice_creeper" ){//苦力怕类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.3){
                 item = Item.of("2x minecraft:gunpowder")
@@ -417,7 +417,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:spider" ||type == "minecraft:cave_spider"|| type == "goety:web_spider" || type == "goety:bone_spider"|| type == "goety:ice_spider"|| type == "twilightforest:hedge_spider" || type == "twilightforest:king_spider"){//蜘蛛类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.12){
                 item = Item.of("spider_eye")
@@ -436,7 +436,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:hostile_spider_creeder"){//苦力蛛
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.12){
                 item = Item.of("spider_eye")
@@ -453,7 +453,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:wraith"||type == "goety:border_wraith" ||type == "goety:muck_wraith" ||type == "goety:reaper" ){//幽灵类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.25){
                 item = Item.of("goety:ectoplasm")
@@ -466,7 +466,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:enderman"||type == "goety:watchling"||type == "goety:blastling" ||type == "goety:snareling"){//末影类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.1){
                 item = Item.of("minecraft:ender_eye")
@@ -479,7 +479,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:haunted_armor" ||type == "goety:bone_lord" ||type =="twilightforest:snow_guardian" ){//甲胄类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.1){
                 item = target.getItemBySlot("mainhand")
@@ -522,7 +522,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:necromancer" ||type == "goety:cairn_necromancer" ||type == "goety:mossy_necromancer" ||type == "goetyawaken:hostile_drowned_necromancer"||type == "goetyawaken:parched_necromancer"||type == "goetyawaken:wraith_necromancer"){//死法类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:necro_staff")
@@ -543,7 +543,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:wither_necromancer"){//凋灵死法
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:nether_staff")
@@ -564,7 +564,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:crone"){//巫婆
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:crone_hat")
@@ -585,7 +585,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:minister" ){//教父
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:ominous_staff")
@@ -604,7 +604,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:skull_lord" ){//骷髅领主
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("minecraft:skeleton_skull")
@@ -619,7 +619,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:redstone_golem"){//红石傀儡
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("3x minecraft:diamond")
@@ -634,7 +634,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:hostile_redstone_monstrosity"){//红石巨兽
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("7x minecraft:diamond")
@@ -649,7 +649,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:wight"){//孤魂尸鬼
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.2){
                 item = Item.of("2x minecraft:ender_pearl")
@@ -662,7 +662,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:brood_mother"){//育母蜘蛛
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.3){
                 item = Item.of("2x goety_revelation:spider_fang")
@@ -675,7 +675,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:endersent"){//末影遣使
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("goety:void_shard")
@@ -688,7 +688,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:apostle"){//使徒
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety_revelation:broken_halo")
@@ -713,7 +713,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:vizier"){//宰相
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:ominous_staff")
@@ -734,7 +734,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:ender_keeper"){//EK
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:blade_of_ender")
@@ -755,7 +755,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:vindicator_chef"){//卫道士厨师
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("minecraft:golden_apple")
@@ -787,7 +787,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:royal_guard"){//皇家守卫
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("goetyawaken:mace")
@@ -803,7 +803,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:zombie_darkguard"){//僵尸暗卫
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.01){
                 item = Item.of("goety:black_iron_helmet")
@@ -828,7 +828,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:skeleton_vanguard"){//骷髅先锋
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.03){
                 item = Item.of("goetyawaken:glaive")
@@ -853,7 +853,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:hostile_vanguard_champion"){//羸弱后卫
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.005){
                 item = Item.of("goetyawaken:champion_helmet")
@@ -881,7 +881,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:blaze"|| type == "goetyawaken:hostile_wildfire"){//烈焰人类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.1){
                 item = Item.of("minecraft:blaze_rod")
@@ -897,7 +897,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:arch_illusioner"){//高阶幻术师
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.2){
                 item = Item.of("goetyawaken:delusive_fragment")
@@ -913,7 +913,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goetyawaken:nameless_one"){//无名
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 6
             if(chance<0.01){
                 item = Item.of("goetyawaken:nameless_platinum")
@@ -934,7 +934,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 7
         }
     }else if(type == "goetyawaken:hostile_mushroom_monstrosity"){//哞菇巨兽
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goetyawaken:mooshroom_monstrosity_head")
@@ -955,7 +955,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:ignited_berserker" || type == "cataclysm:ignited_revenant"){//燃魂类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.3){
                 item = Item.of("cataclysm:dying_ember")
@@ -968,7 +968,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:deepling" ||type == "cataclysm:deepling_angler" ||type == "cataclysm:deepling_priest"||type == "cataclysm:deepling_warlock"||type == "cataclysm:deepling_brute"){//渊灵类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.01){
                 item = Item.of("minecraft:nautilus_shell")
@@ -987,7 +987,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:draugr" ||type == "cataclysm:royal_draugr" ||type == "cataclysm:elite_draugr"){//魂尸类
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.15){
                 item = Item.of("2x cataclysm:black_steel_ingot")
@@ -1007,7 +1007,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety_cataclysm:draugr_necromancer"){//魂尸死灵法师
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:necro_staff")
@@ -1028,7 +1028,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:aptrgangr"){//冥行武弁
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("cataclysm:aptrgangr_head")
@@ -1045,7 +1045,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:cindaria"){//水母
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("minecraft:end_rod")
@@ -1061,7 +1061,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:hippocamtus"){//海马
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.1){
                 item = Item.of("minecraft:trident")
@@ -1080,7 +1080,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:clawdian"){//龙虾
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("cataclysm:chitin_claw")
@@ -1093,7 +1093,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:the_watcher" ){//观测者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("cataclysm:mech_eye")
@@ -1109,7 +1109,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:the_prawler" ){//徘徊者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){
                 item = Item.of("cataclysm:meat_shredder")
@@ -1125,7 +1125,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:amethyst_crab"){//紫水晶巨蟹
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("minecraft:amethyst_cluster")
@@ -1142,7 +1142,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:ender_golem"){//末影傀儡
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety_cataclysm:ender_golem_skull")
@@ -1159,7 +1159,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:koboleton" ){//骸龙
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.2){
                 item = Item.of("cataclysm:ancient_metal_ingot")
@@ -1179,7 +1179,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:kobolediator" ){//骸龙斗士
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.15){
                 item = Item.of('cataclysm:kobolediator_skull')
@@ -1198,7 +1198,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:wadjet" ){//瓦吉特
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.15){
                 item = Item.of("cataclysm:ancient_spear")
@@ -1217,7 +1217,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:netherite_monstrosity"){//下巨
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety_cataclysm:netherite_monstrosity_head")
@@ -1234,7 +1234,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:ancient_remnant"){//遗魂
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("cataclysm:remnant_skull")
@@ -1253,7 +1253,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:the_harbinger"){//牢先
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("minecraft:nether_star")
@@ -1270,7 +1270,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:ender_guardian"){//末守
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("cataclysm:gauntlet_of_guard")
@@ -1287,7 +1287,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:leviathan"){//利维坦
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("cataclysm:abyssal_egg")
@@ -1304,7 +1304,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:maledictus"){//灵骸
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("cataclysm:cursium_helmet")
@@ -1331,7 +1331,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:ignis"){//焰魔
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.15){
                 item = Item.of("cataclysm:the_incinerator")
@@ -1354,7 +1354,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "cataclysm:scylla"){//斯库拉
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("cataclysm:astrape")
@@ -1372,7 +1372,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "touhou_little_maid:fairy"){//女仆妖精
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.25){
                 if(JSON.stringify(target.customName) == JSON.stringify(Text.of("rick"))){
@@ -1393,7 +1393,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:guardian"){//守卫者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.01){
                 item = Item.of("minecraft:nautilus_shell")
@@ -1415,7 +1415,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:elder_guardian" ){//远古守卫者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("minecraft:heart_of_the_sea")
@@ -1432,7 +1432,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:ender_dragon"){//末影龙
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("minecraft:dragon_egg")
@@ -1447,7 +1447,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:wither"){//凋灵
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.05){
                 item = Item.of("minecraft:nether_star")
@@ -1462,7 +1462,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:warden"){//监守者
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("goety:sonic_boom_focus")
@@ -1481,7 +1481,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:naga"){//娜迦
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:naga_trophy")
@@ -1500,7 +1500,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:lich"){//巫妖
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:lich_trophy")
@@ -1531,7 +1531,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:alpha_yeti"){//雪怪首领
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:alpha_yeti_trophy")
@@ -1552,7 +1552,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:yeti" ||type == "twilightforest:winter_wolf" ){//雪怪、冰狼
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.25){
                 item = Item.of("twilightforest:arctic_fur")
@@ -1574,7 +1574,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:snow_queen"){//冰雪女王
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:snow_queen_trophy")
@@ -1592,7 +1592,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:minoshroom"){//米诺菇
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:minoshroom_trophy")
@@ -1614,7 +1614,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:minotaur"){//米诺陶
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.15){
                 item = target.getItemBySlot("mainhand")
@@ -1635,7 +1635,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:knight_phantom"){//幻影骑士
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.15){
                 item = target.getItemBySlot("mainhand")
@@ -1669,7 +1669,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:hydra"){//九头蛇
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:hydra_trophy")
@@ -1686,7 +1686,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "twilightforest:ur_ghast"){//暮初恶魂
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.01){
                 item = Item.of("twilightforest:ur_ghast_trophy")
@@ -1703,14 +1703,14 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "minecraft:iron_golem"||type == "twilightforest:carminite_golem"){//铁傀儡
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             item = Item.of("minecraft:iron_ingot")
         }else{
             stealing = 1
         }
     }else if(type == "twilightforest:giant_miner"||type == "twilightforest:armored_giant"){//巨人
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.2){
                 item = Item.of("twilightforest:giant_log")
@@ -1753,7 +1753,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
             stealing = 1
         }
     }else if(type == "goety:heresiarch"){//异教首领
-        if(!target.persistentData.stolen == 1){
+        if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
                 item = Item.of("goety:malefic_helm")
@@ -1780,11 +1780,11 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         event.level.playSound(null,x,y,z,'entity.player.levelup','players',0.5,1)
         player.give(item)
         player.setStatusMessage(Text.green(Text.translate("curlamoety.lang.steal_success")).append(Text.of(item.displayName)))
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 2){//失败
         event.level.playSound(null,x,y,z,'item.shield.block','players',0.3,1)
         player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.steal_failure")))
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 1){//偷过了
         event.level.playSound(null,x,y,z,'minecraft:block.wool.break','players',1,1)
         player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.stolen")))
@@ -1795,12 +1795,12 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         event.level.playSound(null,x,y,z,'ui.toast.challenge_complete','players',1,1)
         player.give(item)
         player.setStatusMessage(Text.darkRed(Text.translate("curlamoety.lang.steal_apostle").bold()))
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 5){//水母
         event.level.playSound(null,x1,y1,z1,"minecraft:item.honey_bottle.drink",'players',1,1)
         player.give(item)
         player.setStatusMessage(Text.lightPurple(Text.of(";(/>//</);").bold().append(Text.translate("curlamoety.lang.steal_cindaria"))))
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 6){//无名
         event.level.playSound(null,x1,y1,z1,"goetyawaken:nameless_one_hurt_2",'players',1,1)
         player.give(item)
@@ -1814,7 +1814,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         }else{
             player.setStatusMessage(Text.green(Text.translate("curlamoety.lang.steal_nameless_3")))
         }
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 7){//无名偷过了
         event.level.playSound(null,x1,y1,z1,"goetyawaken:nameless_one_laugh_short_1",'players',1,1)
         let chance2 = Math.random()
@@ -1834,8 +1834,8 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         target.potionEffects.add("minecraft:strength",-1,4)
         target.potionEffects.add("minecraft:resistance",-1,1)
         target.potionEffects.add("minecraft:speed",-1,1)
-        target.persistentData.stolen = 1
-        target.persistentData.angry = 1
+        target.persistentData.putInt("stolen",1)
+        target.persistentData.putInt("angry",1)
         let spawnEntity = event.level.createEntity("minecraft:lightning_bolt")
         spawnEntity.setPosition(x,y,z)
         spawnEntity.spawn()
@@ -1843,16 +1843,16 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         event.level.playSound(null,x,y,z,'ui.toast.challenge_complete','players',1,1)
         player.give(item)
         player.setStatusMessage(Text.blue("BAKA!").bold())
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 10){//Rick
         event.level.playSound(null,x,y,z,'ui.toast.challenge_complete','players',1,1)
         player.give(item)
         player.setStatusMessage(Text.yellow(Text.translate("curlamoety.lang.lied")).bold())
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }else if(stealing == 11){//冰雪女王
         event.level.playSound(null,x,y,z,'ui.toast.challenge_complete','players',1,1)
         player.give(item)
         player.setStatusMessage(Text.darkBlue(Text.translate("curlamoety.lang.steal_snow")).bold())
-        target.persistentData.stolen = 1
+        target.persistentData.putInt("stolen",1)
     }
 })

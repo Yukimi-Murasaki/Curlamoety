@@ -488,7 +488,7 @@
 		meteorShowerShots = 20
 
 	[Spells."Quaking Spell"]
-		#Earth Fist Spell Cooldown, Default: 100
+		#Earth Fist Spell Cooldown, Default: 60
 		#Range: > 0
 		earthFistCoolDown = 60
 		#How much base damage Earth Fists deals, Default: 6.0
@@ -1343,6 +1343,20 @@
 		#Time to cast Crafting Spell, Default: 0
 		#Range: 0 ~ 72000
 		craftingDuration = 0
+
+	[Spells."Smack Stone Spell"]
+		#Time to cast Smack Stone Spell, Default: 0
+		#Range: 0 ~ 72000
+		smackStoneTime = 0
+		#Smack Stone Spell Cost, Default: 4
+		#Range: > 0
+		smackStoneCost = 4
+		#Smack Stone Spell Cooldown, Default: 40
+		#Range: > 0
+		smackStoneCoolDown = 40
+		#How much base damage Smack Stones deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		smackStoneDamage = 4.0
 
 	[Spells."Weakening Spell"]
 		#Weakening Spell Cost, Default: 100

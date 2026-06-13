@@ -10,7 +10,10 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.living.LivingEntityUseItemE
             entity.give('minecraft:experience_bottle')
         }
     }else if(item.id == 'curlamoety:sword_cookie'){
-        entity.persistentData.sword_cookie = 1
+        if(entity.isPlayer()){
+            entity.persistentData.sword_cookie = 1
+            global.swordCookieMap.put(entity,1)
+        }
     }else if(item.id == 'curlamoety:ascension_pizza_slice'){
         entity.level.playSound(null,x,y,z,'block.beacon.activate','players',1,1)
         entity.persistentData.ascension_pizza = 1

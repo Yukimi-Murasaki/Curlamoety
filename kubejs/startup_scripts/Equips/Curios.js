@@ -1,5 +1,8 @@
+global.glovesMap = Utils.newMap()
+global.witchAmuletMap = Utils.newMap()
 ForgeEvents.onEvent('top.theillusivec4.curios.api.event.CurioChangeEvent',event=>{
     let entity = event.getEntity()
+    
     if(entity.isPlayer()){
         //七咒相关
         if(entity.isCuriosEquipped('enigmaticlegacy:cursed_ring'))
@@ -20,36 +23,36 @@ ForgeEvents.onEvent('top.theillusivec4.curios.api.event.CurioChangeEvent',event=
             
         }
         //手套标记
+        let gloves = 0
         if(entity.isCuriosEquipped('curlamoety:elemental_gloves')){
-            entity.persistentData.gloves = 6
+            gloves = 6
         }else if(entity.isCuriosEquipped('curlamoety:conqueror_gloves')){
-            entity.persistentData.gloves = 5
+            gloves = 5
         }else if(entity.isCuriosEquipped('curlamoety:pioneer_gloves')){
-            entity.persistentData.gloves = 4
+            gloves = 4
         }else if(entity.isCuriosEquipped('curlamoety:explorer_gloves')){
-            entity.persistentData.gloves = 2
+            gloves = 2
             if(entity.isCuriosEquipped('curlamoety:kitchen_gloves')){
-                entity.persistentData.gloves = 3
+                gloves = 3
             }
         }else if(entity.isCuriosEquipped('curlamoety:kitchen_gloves')){
-            entity.persistentData.gloves = 1
-        }else{
-            entity.persistentData.gloves = 0
+            gloves = 1
         }
+        global.glovesMap.put(entity,gloves)
         //女巫护身符
+        let witchAmulet = 0
         if(entity.isCuriosEquipped('curlamoety:witch_amulet_tier5')){
-            entity.persistentData.witch_amulet = 5
+            witchAmulet = 5
         }else if(entity.isCuriosEquipped('curlamoety:witch_amulet_tier4')){
-            entity.persistentData.witch_amulet = 4
+            witchAmulet = 4
         }else if(entity.isCuriosEquipped('curlamoety:witch_amulet_tier3')){
-            entity.persistentData.witch_amulet = 3
+            witchAmulet = 3
         }else if(entity.isCuriosEquipped('curlamoety:witch_amulet_tier2')){
-            entity.persistentData.witch_amulet = 2
+            witchAmulet = 2
         }else if(entity.isCuriosEquipped('curlamoety:witch_amulet_tier1')){
-            entity.persistentData.witch_amulet = 1
-        }else{
-            entity.persistentData.witch_amulet = 0
+            witchAmulet = 1
         }
+        global.witchAmuletMap.put(entity,witchAmulet)
     }
     if(entity.isCuriosEquipped('curlamoety:desperate_attempt')&&entity.isCuriosEquipped('goety_revelation:blessing_scroll')){//幸运连携
         entity.modifyAttribute('minecraft:generic.luck','combo_luck',0.3,'multiply_total')

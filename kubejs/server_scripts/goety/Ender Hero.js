@@ -18,8 +18,8 @@ EntityEvents.spawned('goety:ender_keeper',event=>{
             }
         })
         if(blade == true){
-            entity.persistentData.enderHero = 1//标记为末影勇者
-            entity.persistentData.summon = 1//召唤次数
+            entity.persistentData.putBoolean("enderhero",true)//标记为末影勇者
+            entity.persistentData.putBoolean("summon",true) //召唤次数
             server.persistentData.EnderHero_counter ++//计数增加
             entity.setCustomName(Text.translate("curlamoety.lang.enderhero"))
             server.tell(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_1")))//对话
@@ -34,29 +34,29 @@ EntityEvents.spawned('goety:ender_keeper',event=>{
             })
         }
     }
-    if(entity.persistentData.enderHero == 1){
+    if(entity.persistentData.contains("enderhero")){
         entity.modifyAttribute("minecraft:generic.max_health","enderhero_modify",1,"multiply_total")
         entity.setHealth(entity.getMaxHealth())
     }
     
 })
 
-//重召
+// 重召
 EntityEvents.spawned('goetyawaken:ender_keeper_servant',event=>{
     let entity = event.entity;
     if(entity.customName.getString() == Text.translate("curlamoety.lang.enderhero_servant").getString()){
-        entity.persistentData.enderHero = 1
+        entity.persistentData.putBoolean("enderhero",true)
     }
-    if(entity.persistentData.enderHero == 1){
+    if(entity.persistentData.contains("enderhero")){
         entity.modifyAttribute("minecraft:generic.max_health","enderhero_modify",1,"multiply_total")
-        entity.setHealth(actual.getMaxHealth())
+        entity.setHealth(entity.getMaxHealth())
     }
 })
 
 //死亡减计数
 EntityEvents.death('goety:ender_keeper',event=>{
     let{entity,server}= event
-    if(entity.persistentData.enderHero == 1){
+    if(entity.persistentData.contains("enderhero")){
         server.tell(Text.darkPurple(Text.translate("curlamoety.lang.enderhero_5")))
         server.persistentData.EnderHero_counter --
     }
@@ -65,7 +65,7 @@ EntityEvents.death('goety:ender_keeper',event=>{
 //掉落物
 EntityEvents.drops('goety:ender_keeper',event=>{
     let entity = event.entity
-    if(entity.persistentData.enderHero == 1){
+    if(entity.persistentData.contains("enderhero")){
         event.addDrop('goety_revelation:broken_ender_keeper')
         event.addDrop('curlamoety:sword_cookie')
         if(Math.random(1)<0.35){
@@ -76,10 +76,10 @@ EntityEvents.drops('goety:ender_keeper',event=>{
 
 EntityEvents.hurt('goety:ender_keeper',event=>{
     let entity = event.entity
-    if(entity.persistentData.enderHero == 1){
+    if(entity.persistentData.contains("enderhero")){
         if(entity.health<32000){//半血召唤遣使
-            if(entity.persistentData.summon == 1){
-                entity.persistentData.summon --
+            if(entity.persistentData.getBoolean("summon") == true){
+                entity.persistentData.putBoolean("summon",false)
                 let x = entity.getX()
                 let y = entity.getY()
                 let z = entity.getZ()
@@ -101,13 +101,12 @@ EntityEvents.hurt(event=>{
     let actual = source.actual
     if(actual==null)return;
     if(actual.type=='goety:ender_keeper'){
-        if(actual.persistentData.enderHero==1){
+        if(actual.persistentData.contains("enderhero")){
             actual.heal(200)
         }
     }else if(actual.type == 'goetyawaken:ender_keeper_servant'){
-        if(actual.persistentData.enderHero==1){
+        if(actual.persistentData.contains("enderhero")){
             let amount = event.getDamage()
-            event.server.tell(amount)
             actual.heal(0.5*amount)
         }
     }
@@ -120,8 +119,8 @@ ItemEvents.entityInteracted('curlamoety:sword_cookie',event=>{
     if(!target.isLiving())return;
     if(target.type=='goetyawaken:ender_keeper_servant'){
         if(target instanceof $Summoned && target.getOwner() === player){
-            if(!target.persistentData.enderHero){
-                target.persistentData.enderHero = 1
+            if(!target.persistentData.contains("enderhero")){
+                target.persistentData.putBoolean("enderhero",true)
                 target.setCustomName(Text.translate("curlamoety.lang.enderhero_servant"))
                 item.count -- 
                 event.level.playSound(null,x,y,z,'minecraft:entity.generic.eat','players',1,1)
@@ -139,7 +138,7 @@ ItemEvents.entityInteracted('minecraft:name_tag',event=>{
     let{target,player,item} = event;
     let nametag = item.getDisplayName().getString()
     if(target.type == 'goetyawaken:ender_keeper_servant'){
-        if(target.persistentData.enderHero == 1){
+        if(target.persistentData.contains("enderhero")){
             player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.enderhero_deny")))
             event.cancel()
         }else{

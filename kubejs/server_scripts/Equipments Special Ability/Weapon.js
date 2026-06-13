@@ -54,25 +54,25 @@ EntityEvents.hurt(event =>{
             }
     }
 
-    if (actual.persistentData.armorset == "champion"){
+    if (global.armorSetMap.get(actual) == "champion"){
         let damage = event.getDamage()
         let health = actual.getHealth()
         actual.setHealth(health + damage*0.005)
-    }else if(actual.persistentData.armorset == "golden"){
+    }else if(global.armorSetMap.get(actual) == "golden"){
         entity.potionEffects.add("goety:gold_touched",100,1)
-    }else if(actual.persistentData.armorset == "arctic"){
+    }else if(global.armorSetMap.get(actual) == "arctic"){
         entity.potionEffects.add("goety:freezing",120,0)
     }
 
     if (!actual.isPlayer())return;
     
     
-    if(actual.persistentData.armorset == "ignitium"){//腾炎暴击
+    if(global.armorSetMap.get(actual) == "ignitium"){//腾炎暴击
             if(source.getType()== "cataclysm.flame_strike")return;
             if(source.getType()== "explosion.player")return;
             if(source.getType()== "onFire")return;
             if(entity.potionEffects.isActive("cataclysm:blazing_brand")){
-                if(actual.persistentData.generic_cd == 0||actual.persistentData.generic_cd == -1){
+                if(global.genericCdMap.get(actual) == 0||global.genericCdMap.get(actual) == -1){
                     let nether_power = actual.getAttribute("goety_revelation:nether_power").getValue()
                     let spell_power = actual.getAttribute("goety_revelation:spell_power").getValue()
                     let spell_power_multiplier = actual.getAttribute("goety_revelation:spell_power_multiplier").getValue()
@@ -84,7 +84,7 @@ EntityEvents.hurt(event =>{
                     summon.setHpDamage(1)
                     summon.setDuration(140)
                     summon.spawn()
-                    actual.persistentData.generic_cd = 100
+                    global.genericCdMap.put(actual,100)
                 }
             }
         }

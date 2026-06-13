@@ -960,10 +960,11 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(30)
     .id("curlamoety:champion_focus")
 
+    event.remove('goetyawaken:obsidian_tear')
     event.recipes.goety.ritual('goetyawaken:obsidian_tear','goety:craft',[//黑曜石之泪
         'minecraft:netherite_ingot',
         'goety:unholy_blood',
-        'goetyawaken:nether_reactor_core',
+        'minecraft:respawn_anchor',
         'minecraft:ghast_tear',
         'goety:unholy_hat',
         'goety:unholy_robe',  
@@ -1226,9 +1227,6 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'cataclysm:void_core',
         'goety:night_beacon',
         'enigmaticdelicacy:etherium_machete',
-        'goety:end_walk_focus',
-        'enigmaticlegacy:evil_ingot',
-        'goety:void_barrel'
     ])
     .activationItem('goetyawaken:obsidian_claymore')
     .craftType("forge")
@@ -1483,7 +1481,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'enigmaticaddons:lost_engine',
         'enigmaticaddons:illusion_lantern',
         'enigmaticaddons:etherium_core',
-        'enigmaticlegacy:mending_mixture'
+        'goeticlegacy:sculk_heart'
     ])
     .activationItem('enigmaticlegacy:astral_block')
     .craftType('master_forge')  
@@ -1799,8 +1797,8 @@ ServerEvents.recipes(event=>{//kjs goety方法
     event.remove("twilightforest:equipment/fiery_helmet")
     event.remove("twilightforest:equipment/fiery_fiery_chestplate")
     event.remove("twilightforest:equipment/fiery_chestplate")
-    event.remove("twilightforest:equipment/fiery_fiery_leggins")
-    event.remove("twilightforest:equipment/fiery_leggins")
+    event.remove("twilightforest:equipment/fiery_fiery_leggings")
+    event.remove("twilightforest:equipment/fiery_leggings")
     event.remove("twilightforest:equipment/fiery_fiery_boots")
     event.remove("twilightforest:equipment/fiery_boots")
     event.recipes.goety.ritual(Item.of('twilightforest:fiery_helmet', '{Unbreakable:1b}'),'goety:craft',[
@@ -1891,7 +1889,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         "twilightforest:ice_bomb",
         "goety:mystic_core",
         "goety:chill_fabric",
-        "goety:cursed_ingot",
+        "goety:dark_ingot",
         "goety:cursed_ingot",
         "twilightforest:alpha_yeti_fur",
         "twilightforest:alpha_yeti_fur",
@@ -1909,7 +1907,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         "twilightforest:ice_bomb",
         "goety:mystic_core",
         "goety:chill_fabric",
-        "goety:cursed_ingot",
+        "goety:dark_ingot",
         "goety:cursed_ingot",
         "twilightforest:alpha_yeti_fur",
         "twilightforest:alpha_yeti_fur",
@@ -1929,7 +1927,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         "twilightforest:ice_bomb",
         "goety:mystic_core",
         "goety:chill_fabric",
-        "goety:cursed_ingot",
+        "goety:dark_ingot",
         "goety:cursed_ingot",
         "twilightforest:alpha_yeti_fur",
         "twilightforest:alpha_yeti_fur",
@@ -1948,7 +1946,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         "twilightforest:ice_bomb",
         "goety:mystic_core",
         "goety:chill_fabric",
-        "goety:cursed_ingot",
+        "goety:dark_ingot",
         "goety:cursed_ingot",
         "twilightforest:alpha_yeti_fur",
         "twilightforest:alpha_yeti_fur",
@@ -2162,17 +2160,15 @@ ServerEvents.recipes(event=>{//kjs goety方法
     // .duration(10)
     // .id("curlamoety:copy/revelation")
 
-    event.recipes.goety.ritual("2x goety:undeath_potion","goety:craft",[
+    event.recipes.goety.ritual("4x goetyawaken:superaggregated_mycelial_circuit","goety:craft",[
         "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
-        "curlamoety:goal_ty",
+        "curlamoety:goal_ty"
     ])
-    .activationItem("goety:undeath_potion")
+    .activationItem("goetyawaken:superaggregated_mycelial_circuit")
     .craftType("magic")
-    .soulCost(10000)
+    .soulCost(2000)
     .duration(5)
-    .id("curlamoety:copy/undeath_potion")
+    .id("curlamoety:copy/superaggregated_mycelial_circuit")
 
     event.recipes.goety.ritual("2x enigmaticlegacy:etherium_ingot","goety:craft",[
         "curlamoety:goal_ty"
@@ -2258,6 +2254,104 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .soulCost(25)
     .duration(15)
     .id("curlamoety:jade_amulet")
+
+    //下界反应堆
+    event.remove('goetyawaken:nether_reactor_core')
+    event.recipes.goety.ritual('goetyawaken:nether_reactor_core','goety:craft',[
+        "goety:mystic_core",
+        "goety:totem_of_souls",
+        "goetyawaken:soul_sapphire",
+        "goety:shadow_essence",
+        "goety:shadow_essence",
+        "minecraft:diamond_block",
+        "minecraft:iron_block",
+        "minecraft:iron_block",
+    ])
+    .activationItem("minecraft:nether_star")
+    .craftType("expert_nether")
+    .research("bygone")
+    .soulCost(40)
+    .duration(20)
+    .id("curlamoety:nether_reactor_core")
+
+    //胧切
+    event.remove("goetyawaken:moonlight_cut")
+    event.recipes.goety.ritual("goetyawaken:moonlight_cut",'goety:craft',[
+        "goety:spirit_fabric",
+        "goety:hunger_core",
+        "goetyawaken:soul_sapphire",
+        "goety:shadow_essence",
+        "goety:shadow_essence",
+        "goety:dark_ingot",
+        "goety:dark_ingot",
+        "goety:dark_scythe",
+        "goety:soul_ruby"
+    ])
+    .activationItem("goetyawaken:glaive")
+    .craftType("forge")
+    .research("front")
+    .soulCost(50)
+    .duration(5)
+    .id("curlamoety:moonlight_cut")
+
+    //冰霜镰刀
+    event.remove("goetyawaken:frost_scythe")
+    event.recipes.goety.ritual("goetyawaken:moonlight_cut",'goety:craft',[
+        "goety:mystic_core",
+        "goety:ice_storm_focus",
+        "goety:frozen_blade",
+        "minecraft:blue_ice",
+        "goety:chill_fabric",
+        "minecraft:snow_block",
+        "goetyawaken:glacial_wraith_essence",
+    ])
+    .activationItem("goety:dark_scythe")
+    .craftType("frost")
+    .soulCost(10)
+    .duration(15)
+    .id("curlamoety:frost_scythe")
+
+    //末守
+    event.remove("goetyawaken:enderkeeper")
+    event.recipes.goety.ritual("goety:jei_dummy/none",'goety:summon_tamed',[
+        "goety:void_crown",
+        "goety:blade_of_ender",
+        "goety:void_robe",
+        "goety:void_staff",
+        "goety:cursed_paladin_helmet",
+        "goety:cursed_paladin_chestplate",
+        "goety:haunted_armor_stand",
+        "goety:cursed_metal_block",
+        "immersive_aircraft:airship",
+        "goetyawaken:endersent_enchanted_book",
+        "cataclysm:gauntlet_of_guard",
+        "goety:void_flash_focus",
+    ])
+    .activationItem("goetyawaken:eye_of_overwatch")
+    .craftType("end")
+    .research("terminus")
+    .entityToSummon("goetyawaken:ender_keeper_servant")
+    .soulCost(500)
+    .duration(10)
+    .id("curlamoety:enderkeeper")
+
+    event.remove("goetyawaken:mushroom_coated_alloy_block")
+    event.recipes.goety.ritual("4x goetyawaken:mushroom_coated_alloy_block",'goety:craft',[
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_ingot",
+        "minecraft:diamond_block",
+        "minecraft:diamond_block",
+        "minecraft:red_mushroom",
+        "minecraft:brown_mushroom"
+    ])
+    .activationItem("goetyawaken:superaggregated_mycelial_circuit")
+    .craftType("forge")
+    .research("royal")
+    .soulCost(10)
+    .duration(5)
+    .id("curlamoety:mushroom_coated_alloy_block")
 
 })
 ServerEvents.recipes(event=>{//无封装方法

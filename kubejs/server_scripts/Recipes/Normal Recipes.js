@@ -1256,4 +1256,7 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     Event.shapeless("2x goety:philosophers_stone",["goety:philosophers_stone","curlamoety:goal_ty"])
     .id("curlamoety:copy/philosophers_stone")
 
+    Event.shapeless("2x goety:undeath_potion",["goety:undeath_potion","4x curlamoety:goal_ty"])
+    .id("curlamoety:copy/undeath_potion")
+
 })  

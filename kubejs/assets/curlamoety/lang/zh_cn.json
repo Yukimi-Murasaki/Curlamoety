@@ -388,7 +388,7 @@
     "curlamoety.lang.ender_hero_item_1":"前去挑战 §6末影守望者§r ，它会变成 §6§l☾末影勇者☾",
     "curlamoety.lang.ascension_pizza":"提供永久的少量各种属性加成",
     "curlamoety.lang.has_finished":"完成了挑战",
-    "curlamoety.lang.mother_of_all_spider":"🕷万蛛毒后🕷",
+    "curlamoety.lang.mother_of_all_spider":"§2§l🕷万蛛毒后🕷",
     "curlamoety.lang.moas_deny":"万蛛毒后之名在蛛母体内深深回响，无法更改",
     "curlamoety.lang.moas_fake":"你无法伪造毒后之名",
     "curlamoety.lang.mother_guard":"毒后御卫",
@@ -531,6 +531,9 @@
     "curlamoety.lang.ignitium_ready":"腾炎结界冷却完毕",
     "curlamoety.lang.summon_ready":"盔甲套装召唤物冷却完毕",
     "curlamoety.lang.dummy":"使用/kt dummy 指令来操控KineticTweaks的测试假人",
+    "curlamoety.lang.launch_flying_1":"在高法强下会出现严重偏移现象",
+    "curlamoety.lang.launch_flying_2":"发射聚晶可以在同时期内升级为飞翔聚晶",
+    "curlamoety.lang.launch_flying_3":"飞翔聚晶附魔后不享受法强加成，可以避免严重偏移",
 
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"至臻至纯的神之血！喝下去的话，能获得神明一般的防护力！",
     "patchouli.witch_brew.cataclysm.monstrous":"我的天，你的皮肤像巨兽一样硬，你的身材像巨兽一样壮",

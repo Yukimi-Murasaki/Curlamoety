@@ -8,22 +8,22 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Appli
     let effectID = effectInstance.getDescriptionId()
     //let pos = entity.blockPosition()
     if(entity.isPlayer()){
-        if(entity.persistentData.murasaki == 1){//紫套装免疫与允许
+        if(global.armorSetMap.get(entity) == "murasaki"){//紫套装免疫与允许
             if(effect.getCategory() === "HARMFUL"){
                 event.setResult(EventResult.DENY);
             }else{
                 event.setResult(EventResult.ALLOW);
             } 
-        }else if(entity.persistentData.champion == 1){
+        }else if(global.armorSetMap.get(entity) == "champion"){
             if(effect.getCategory() !== "HARMFUL"){
                 event.setResult(EventResult.ALLOW);
             }
         }
         if(effectID =='effect.cataclysm.stun'){
             if(entity.isCuriosEquipped('curlamoety:survivor_will')){//
-                if(entity.persistentData.stun_cd==0){
+                if(global.stunCdMap.get(entity) == 0){
                     event.setResult(EventResult.DENY)
-                    entity.persistentData.stun_cd==300
+                    global.stunCdMap.put(entity,300)
                 }
             }//else if(entity.isCuriosEquipped('cataclysm:unbreakable_skull')){
                 //if(entity.persistentData.stun_cd==0){

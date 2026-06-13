@@ -2020,7 +2020,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -8.0d
 			y: 11.5d
 		}
 		{
@@ -3214,7 +3214,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 11.5d
 		}
 		{
@@ -3235,7 +3235,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 11.5d
 		}
 		{
@@ -3256,7 +3256,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 11.5d
 		}
 		{
@@ -3277,7 +3277,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 11.5d
 		}
 		{
@@ -3594,6 +3594,22 @@
 			title: "骑士套装"
 			x: 5.0d
 			y: 8.5d
+		}
+		{
+			id: "36BAD1336AD3F8EE"
+			tasks: [{
+				id: "6A5B05BF824B0154"
+				item: {
+					Count: 1
+					id: "goetyawaken:frost_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.5d
 		}
 	]
 	title: "锻造师的珍藏"

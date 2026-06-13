@@ -524,6 +524,9 @@
     "curlamoety.lang.ignitium_ready":"Ignitium Flame Strike is ready",
     "curlamoety.lang.summon_ready":"Armor set summoning is ready",
     "curlamoety.lang.dummy":"Use command /kt dummy to control the target dummy of KineticTweaks",
+    "curlamoety.lang.launch_flying_1":"Severe deflection will apear when you have high spell power",
+    "curlamoety.lang.launch_flying_2":"Launch Focus can be upgraded to Flying Focus in the same period",
+    "curlamoety.lang.launch_flying_3":"Flying focus will not be enhanced by spell power if enchanted, so that it can avoid the deflection",
     
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"Purest and most refined blood of the gods! Upon drinking it , one would be granted divine protection like gods",
     "patchouli.witch_brew.cataclysm.monstrous":"Oh my GOD, your skin is hard as a MONSTROSITY and your body is strong as a MONSTROSITY",

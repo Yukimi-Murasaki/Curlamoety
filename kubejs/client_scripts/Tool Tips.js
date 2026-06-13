@@ -2207,4 +2207,16 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.dummy")))
     })
 
+    event.addAdvanced("goety:launch_focus",(item,addAdvanced,text)=>{//发射-飞翔
+        text.add(5,Text.yellow(Text.translate("curlamoety.lang.launch_flying_1")))
+        text.add(6,Text.yellow(Text.translate("curlamoety.lang.launch_flying_2")))
+        text.add(7,Text.yellow(Text.translate("curlamoety.lang.launch_flying_3")))
+    })
+
+    event.addAdvanced("goety:flying_focus",(item,addAdvanced,text)=>{//发射-飞翔
+        text.add(5,Text.yellow(Text.translate("curlamoety.lang.launch_flying_1")))
+        text.add(6,Text.yellow(Text.translate("curlamoety.lang.launch_flying_2")))
+        text.add(7,Text.yellow(Text.translate("curlamoety.lang.launch_flying_3")))
+    })
+
 })

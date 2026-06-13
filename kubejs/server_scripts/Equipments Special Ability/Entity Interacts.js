@@ -118,4 +118,5 @@ ItemEvents.entityInteracted("enigmaticlegacy:soul_dust",event=>{
     player.tell(Text.of("胸").append(chest.displayName))
     player.tell(Text.of("腿").append(legs.displayName))
     player.tell(Text.of("脚").append(feet.displayName))
+    console.log(target.getNbt())
 })
