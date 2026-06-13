@@ -2296,7 +2296,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
 
     //冰霜镰刀
     event.remove("goetyawaken:frost_scythe")
-    event.recipes.goety.ritual("goetyawaken:moonlight_cut",'goety:craft',[
+    event.recipes.goety.ritual("goetyawaken:frost_scythe",'goety:craft',[
         "goety:mystic_core",
         "goety:ice_storm_focus",
         "goety:frozen_blade",
