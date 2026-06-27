@@ -1,6 +1,7 @@
 //初步穿甲调整
 EntityEvents.spawned(event=>{
     let entity = event.entity
+    if(entity.isPlayer())return;
     if(entity == null || !entity.isLiving())return;
     if(entity.type == "minecraft:item")return;
     let dimension = entity.level.getDimension()
@@ -28,9 +29,67 @@ EntityEvents.spawned("minecraft:skeleton",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("curlamoety:skeleton_leg", '{Damage:0,Enchantments:[{id:"minecraft:knockback",lvl:2s},{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"goety_revelation:reality_piercer",lvl:5s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:flame",lvl:1s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:power",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:iron",pattern:"minecraft:eye"}}'))
+        entity.setItemSlot("legs","leather_leggings")
+        entity.setItemSlot("feet","leather_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
+})
+EntityEvents.drops("minecraft:skeleton",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(dimension == "minecraft:the_end"){
+        if(entity.persistentData.elite == 1){
+            event.addDrop("2x goety:ectoplasm")
+            event.addDrop("2x enigmaticlegacy:astral_dust")
+            event.addDrop("enigmaticlegacy:etherium_ore")
+        }else if(entity.persistentData.elite == 2){
+            let math = Math.random(1)
+            if(math<0.2){
+                event.addDrop("enigmaticlegacy:etherium_ore")
+            }else if(math<0.4){
+                event.addDrop("2x enigmaticlegacy:astral_dust")
+            }else if(math<0.7){
+                event.addDrop("minecraft:netherite_scrap")
+            }else{
+                event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+            }
+        }
+    }else{
+        if(entity.persistentData.elite == 1){
+            event.addDrop("2x goety:ectoplasm")
+            event.addDrop("minecraft:diamond")
+            event.addDrop("minecraft:netherite_scrap")
+        }else if(entity.persistentData.elite == 2){
+            let math = Math.random(1)
+            if(math<0.2){
+                event.addDrop("minecraft:diamond")
+            }else if(math<0.4){
+                event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+            }else if(math<0.7){
+                event.addDrop("2x goety:ectoplasm")
+            }else{
+                event.addDrop("2x minecraft:iron_ingot")
+            }
+        }
+    }
+    
 })
 EntityEvents.spawned("minecraft:stray",event=>{
     let entity = event.entity
@@ -42,8 +101,46 @@ EntityEvents.spawned("minecraft:stray",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("twilightforest:ice_sword", '{Damage:0,Enchantments:[{id:"minecraft:knockback",lvl:2s},{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"goety_revelation:reality_piercer",lvl:5s}]}'))
+        entity.setItemSlot("offhand",Item.of("twilightforest:ice_bow", '{Damage:0,Enchantments:[{id:"minecraft:punch",lvl:2s},{id:"minecraft:power",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:diamond",pattern:"minecraft:eye"}}'))
+        entity.setItemSlot("legs","leather_leggings")
+        entity.setItemSlot("feet","leather_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:stray",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("goety:ectoplasm")
+        event.addDrop("goety:chill_fabric")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("trials:bogged",event=>{
@@ -56,8 +153,46 @@ EntityEvents.spawned("trials:bogged",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("twilightforest:ironwood_sword", '{Damage:0,Enchantments:[{id:"minecraft:knockback",lvl:2s},{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"goety_revelation:reality_piercer",lvl:5s}]}'))
+        entity.setItemSlot("offhand",Item.of("twilightforest:seeker_bow", '{Damage:0,Enchantments:[{id:"minecraft:flame",lvl:1s},{id:"minecraft:punch",lvl:2s},{id:"minecraft:power",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:emerald",pattern:"minecraft:eye"}}'))
+        entity.setItemSlot("legs","leather_leggings")
+        entity.setItemSlot("feet","leather_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("trials:bogged",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x goety:ectoplasm")
+        event.addDrop("twilightforest:liveroot")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("goetyawaken:parched",event=>{
@@ -70,10 +205,47 @@ EntityEvents.spawned("goetyawaken:parched",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("goety:stormlander", '{Damage:0,Enchantments:[{id:"minecraft:knockback",lvl:2s},{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"goety_revelation:reality_piercer",lvl:5s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:flame",lvl:1s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:power",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"minecraft:eye"}}'))
+        entity.setItemSlot("legs","leather_leggings")
+        entity.setItemSlot("feet","leather_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
-    entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
+EntityEvents.drops("goetyawaken:parched",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x goety:ectoplasm")
+        event.addDrop("goety:stormlander")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
+    }
 })
 EntityEvents.spawned("goetyawaken:sunken_skeleton",event=>{
     let entity = event.entity
@@ -85,10 +257,48 @@ EntityEvents.spawned("goetyawaken:sunken_skeleton",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("minecraft:trident", '{Damage:0,Enchantments:[{id:"minecraft:channeling",lvl:1s},{id:"enigmaticlegacy:wrath",lvl:5s},{id:"minecraft:loyalty",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:sharpshooter",lvl:5s},{id:"minecraft:quick_charge",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:amethyst",pattern:"minecraft:eye"}}'))
+        entity.setItemSlot("legs","leather_leggings")
+        entity.setItemSlot("feet","leather_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:skeleton_leg")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
+EntityEvents.drops("goetyawaken:sunken_skeleton",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x goety:ectoplasm")
+        event.addDrop("minecraft:nautilus_shell")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
+    }
 })
 //僵尸系
 EntityEvents.spawned("minecraft:zombie",event=>{
@@ -101,8 +311,44 @@ EntityEvents.spawned("minecraft:zombie",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("curlamoety:zombie_arm", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:shield", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("cataclysm:monstrous_helm", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("chest",Item.of("minecraft:iron_chestplate", '{Damage:0,Trim:{material:"minecraft:netherite",pattern:"minecraft:silence"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:zombie",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("goety:spirit_fabric")
+        event.addDrop("minecraft:iron_ingot")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("minecraft:drowned",event=>{
@@ -115,8 +361,44 @@ EntityEvents.spawned("minecraft:drowned",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("minecraft:trident", '{Damage:0,Enchantments:[{id:"minecraft:channeling",lvl:1s},{id:"enigmaticlegacy:wrath",lvl:5s},{id:"minecraft:loyalty",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand","minecraft:nautilus_shell")
+        entity.setItemSlot("head",Item.of("minecraft:turtle_helmet", '{Damage:0,Trim:{material:"minecraft:diamond",pattern:"trials:flow"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:diamond",pattern:"trials:flow"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:drowned",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("goety:spirit_fabric")
+        event.addDrop("minecraft:scute")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("minecraft:husk",event=>{
@@ -129,8 +411,44 @@ EntityEvents.spawned("minecraft:husk",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("cataclysm:khopesh", '{Damage:0}'))
+        entity.setItemSlot("offhand",Item.of("cataclysm:khopesh", '{Damage:0}'))
+        entity.setItemSlot("head",Item.of("cataclysm:bone_reptile_helmet", '{Damage:0}'))
+        entity.setItemSlot("chest",Item.of("cataclysm:bone_reptile_chestplate", '{Damage:0}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:husk",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x cataclysm:ancient_metal_ingot")
+        event.addDrop("2x cataclysm:koboleton_bone")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("goetyawaken:frozen_zombie",event=>{
@@ -143,10 +461,45 @@ EntityEvents.spawned("goetyawaken:frozen_zombie",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("twilightforest:ice_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:shield", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:diamond_helmet", '{Damage:0,Trim:{material:"goety:ecto",pattern:"minecraft:host"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:diamond_chestplate", '{Damage:0,Trim:{material:"goety:ecto",pattern:"minecraft:wayfinder"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
+EntityEvents.drops("goetyawaken:frozen_zombie",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("goety:chill_fabric")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
+    }
 })
 EntityEvents.spawned("goetyawaken:bouldering_zombie",event=>{
     let entity = event.entity
@@ -158,8 +511,45 @@ EntityEvents.spawned("goetyawaken:bouldering_zombie",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("goety:diamond_ice_axe", '{Damage:0}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:potion", '{Potion:"minecraft:long_swiftness"}'))
+        entity.setItemSlot("head",Item.of("minecraft:leather_helmet", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"minecraft:vex"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:leather_chestplate", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"minecraft:ward"}}'))
+        entity.setItemSlot("legs",Item.of("minecraft:leather_leggings", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("feet",Item.of("minecraft:leather_boots", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("goetyawaken:bouldering_zombie",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("4x minecraft:leather")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
     }
 })
 EntityEvents.spawned("goety:frayed",event=>{
@@ -172,10 +562,46 @@ EntityEvents.spawned("goety:frayed",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("goety:stormlander", '{Damage:0,Enchantments:[{id:"goety:radius",lvl:2s},{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head","minecraft:lightning_rod")
+        entity.setItemSlot("chest",Item.of("minecraft:chainmail_chestplate", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"trials:flow"}}'))
+        entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,Trim:{material:"minecraft:gold",pattern:"trials:flow"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
+EntityEvents.drops("goety:frayed",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("goety:stormlander")
+        event.addDrop("minecraft:copper_block")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
+    }
 })
 EntityEvents.spawned("goetyawaken:jungle_zombie",event=>{
     let entity = event.entity
@@ -187,10 +613,46 @@ EntityEvents.spawned("goetyawaken:jungle_zombie",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("twilightforest:steeleaf_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:suspicious_stew", '{Effects:[{EffectDuration:240,EffectId:19,"forge:effect_id":"minecraft:poison"}]}'))
+        entity.setItemSlot("head",Item.of("twilightforest:steeleaf_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:emerald",pattern:"minecraft:silence"}}'))
+        entity.setItemSlot("chest",Item.of("twilightforest:steeleaf_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:emerald",pattern:"trials:flow"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:zombie_arm")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
+EntityEvents.drops("goetyawaken:jungle_zombie",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("3x twilightforest:steeleaf_ingot")
+        event.addDrop("2x minecraft:emerald")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:diamond")
+        }else if(math<0.4){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else if(math<0.7){
+            event.addDrop("2x goety:ectoplasm")
+        }else{
+            event.addDrop("2x minecraft:iron_ingot")
+        }
+    }
 })
 //下界类
 EntityEvents.spawned("minecraft:zombified_piglin",event=>{
@@ -203,6 +665,47 @@ EntityEvents.spawned("minecraft:zombified_piglin",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",4,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("minecraft:golden_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"enigmaticaddons:frost_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand","minecraft:golden_apple")
+        entity.setItemSlot("head",Item.of("minecraft:golden_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:redstone",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:golden_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:redstone",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("legs",Item.of("minecraft:golden_leggings", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:redstone",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot('feet',Item.of("minecraft:golden_boots", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:soul_speed",lvl:3s}],Trim:{material:"minecraft:redstone",pattern:"minecraft:snout"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",0.6,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","netherite_sword")
+            entity.setItemSlot("head","goety:gold_candelabra")
+            entity.setItemSlot("chest",Item.of("goety:black_iron_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:zombified_piglin",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("minecraft:emerald")
+        event.addDrop("minecraft:golden_apple")
+        event.addDrop("enigmaticaddons:ichor_droplet")
+        event.addDrop("minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:netherite_scrap")
+        }else if(math<0.4){
+            event.addDrop("enigmaticaddons:ichor_droplet")
+        }else if(math<0.7){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else{
+            event.addDrop("minecraft:diamond")
+        }
+    }
 })
 EntityEvents.spawned("wither_skeleton",event=>{
     let entity = event.entity
@@ -214,8 +717,46 @@ EntityEvents.spawned("wither_skeleton",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",4,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
-    if(Math.random(1)<0.2){
-        entity.setItemSlot("mainhand","curlamoety:wither_flamberge")
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("curlamoety:wither_flamberge", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"goety_revelation:reality_piercer",lvl:5s},{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("goety:hunters_bow", '{Damage:0,Enchantments:[{id:"minecraft:flame",lvl:1s},{id:"minecraft:power",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:netherite_helmet", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"enigmaticaddons:redemption_curse",lvl:1s}],Trim:{material:"minecraft:iron",pattern:"minecraft:rib"},kt_picked_up:1b}'))
+        entity.setItemSlot("chest",Item.of("minecraft:iron_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"enigmaticaddons:redemption_curse",lvl:1s}],Trim:{material:"minecraft:netherite",pattern:"minecraft:silence"}}'))
+        entity.setItemSlot("legs",Item.of("minecraft:netherite_leggings", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"enigmaticaddons:redemption_curse",lvl:1s}],Trim:{material:"minecraft:iron",pattern:"minecraft:rib"},kt_picked_up:1b}'))
+        entity.setItemSlot('feet',Item.of("minecraft:netherite_boots", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"enigmaticaddons:redemption_curse",lvl:1s}],Trim:{material:"minecraft:iron",pattern:"minecraft:silence"},kt_picked_up:1b}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",0.6,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("goety:necrosis",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","curlamoety:wither_flamberge")
+            entity.setItemSlot("head","goety:haunted_glass_mob_tinted")
+            entity.setItemSlot("chest",Item.of("goety:black_iron_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("goety:necrosis",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("wither_skeleton",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("minecraft:wither_skeleton_skull")
+        event.addDrop("enigmaticaddons:ichor_droplet")
+        event.addDrop("minecraft:enchanted_golden_apple")
+        event.addDrop("minecraft:netherite_ingot")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:netherite_scrap")
+        }else if(math<0.4){
+            event.addDrop("enigmaticaddons:ichor_droplet")
+        }else if(math<0.7){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else{
+            event.addDrop("minecraft:diamond")
+        }
     }
 })
 EntityEvents.spawned("minecraft:hoglin",event=>{
@@ -261,6 +802,47 @@ EntityEvents.spawned("minecraft:piglin_brute",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",4,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("minecraft:netherite_axe", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand",Item.of("minecraft:netherite_axe", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:netherite_helmet", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("legs",Item.of("minecraft:netherite_leggings", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot('feet',Item.of("minecraft:netherite_boots", '{Damage:0,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:gold",pattern:"minecraft:snout"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",0.6,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("minecraft:regeneration",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand",Item.of("minecraft:netherite_axe", '{Damage:0}'))
+            entity.setItemSlot("head","goety:gold_candelabra")
+            entity.setItemSlot("chest",Item.of("goety:black_iron_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:piglin_brute",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("minecraft:gold_block")
+        event.addDrop("enigmaticaddons:ichor_droplet")
+        event.addDrop(Item.of("minecraft:enchanted_golden_apple", '{CustomPotionEffects:[{Ambient:0b,Amplifier:3b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:7200,Id:5,"PLF:Amplifier":3,ShowIcon:1b,ShowParticles:1b,"forge:id":"minecraft:strength"},{Ambient:0b,Amplifier:3b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:3600,Id:11,"PLF:Amplifier":3,ShowIcon:1b,ShowParticles:1b,"forge:id":"minecraft:resistance"},{Ambient:0b,Amplifier:3b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:18000,Id:119,"PLF:Amplifier":3,ShowIcon:1b,ShowParticles:1b,"forge:id":"goetydelight:spell_mastery"}],RepairCost:0,display:{Name:\'{"text":"Good Apple"}\'}}'))
+        event.addDrop("minecraft:netherite_ingot")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:netherite_scrap")
+        }else if(math<0.4){
+            event.addDrop("enigmaticaddons:ichor_droplet")
+        }else if(math<0.7){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else{
+            event.addDrop("minecraft:diamond")
+        }
+    }
 })
 EntityEvents.spawned("minecraft:piglin",event=>{
     let entity = event.entity
@@ -272,6 +854,46 @@ EntityEvents.spawned("minecraft:piglin",event=>{
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",4,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
     }
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("minecraft:golden_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"goety_revelation:reality_piercer",lvl:5s},{id:"enigmaticaddons:frost_aspect",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head",Item.of("minecraft:golden_helmet", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:netherite",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("chest",Item.of("minecraft:golden_chestplate", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:netherite",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot("legs",Item.of("minecraft:golden_leggings", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s}],Trim:{material:"minecraft:netherite",pattern:"minecraft:snout"}}'))
+        entity.setItemSlot('feet',Item.of("minecraft:golden_boots", '{Damage:0,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:soul_speed",lvl:3s}],Trim:{material:"minecraft:netherite",pattern:"minecraft:snout"}}'))
+        entity.modifyAttribute("minecraft:generic.max_health","elite",0.6,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("minecraft:regeneration",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'))
+            entity.setItemSlot("head","goety:gold_candelabra")
+            entity.setItemSlot("chest",Item.of("goety:black_iron_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:piglin",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("3x minecraft:gold_ingot")
+        event.addDrop("enigmaticaddons:ichor_droplet")
+        event.addDrop("minecraft:enchanted_golden_apple")
+        event.addDrop("2x minecraft:netherite_scrap")
+    }else if(entity.persistentData.elite == 2){
+        let math = Math.random(1)
+        if(math<0.2){
+            event.addDrop("minecraft:netherite_scrap")
+        }else if(math<0.4){
+            event.addDrop("enigmaticaddons:ichor_droplet")
+        }else if(math<0.7){
+            event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+        }else{
+            event.addDrop("minecraft:diamond")
+        }
+    }
 })
 EntityEvents.spawned("minecraft:magma_cube",event=>{
     let entity = event.entity
@@ -282,6 +904,45 @@ EntityEvents.spawned("minecraft:magma_cube",event=>{
     }else if(dimension == "minecraft:the_end"){
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",4,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
+    }
+    let size = entity.getNbt().getInt("Size")
+    if(size >= 3){
+        let math = Math.random(1)
+        if(math<0.2){
+            entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+            entity.potionEffects.add("minecraft:glowing",-1,0)
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 1
+        }
+    }
+})
+EntityEvents.hurt("minecraft:magma_cube",event=>{
+    let {entity,source,level} = event
+    let actual = source.actual
+    if(!actual)return;
+    if(!actual.isLiving())return;
+    if(entity.persistentData.elite == 1){
+        if(!entity.potionEffects.isActive("curlamoety:generic_cooldown")){
+            let {x,y,z} = actual
+            let summon = level.createEntity("cataclysm:flame_strike")
+            summon.setOwner(entity)
+            summon.setPosition(x,y,z)
+            summon.setRadius(2)
+            summon.setDamage(10)
+            summon.setHpDamage(5)
+            summon.setDuration(100)
+            summon.spawn()
+            entity.potionEffects.add("curlamoety:generic_cooldown",200,0)
+        }
+    }
+})
+EntityEvents.drops("minecraft:magma_cube",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("minecraft:blaze_rod")
+        event.addDrop("enigmaticaddons:ichor_droplet")
+        event.addDrop("cataclysm:dying_ember")
+        event.addDrop("minecraft:netherite_scrap")
     }
 })
 EntityEvents.spawned("minecraft:ghast",event=>{
@@ -308,6 +969,20 @@ EntityEvents.spawned("goety:endersent",event=>{
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.8,"multiply_total")
     }
 })
+EntityEvents.spawned("goetyawaken:endersent_servant",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(entity instanceof $Summoned){
+        if(entity.getOwner() && entity.getOwner().isPlayer()){
+            return;
+        }
+    }
+    if(dimension != "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.96667,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.8,"multiply_total")
+    }
+    
+})
 EntityEvents.spawned("goety:watchling",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
@@ -327,6 +1002,45 @@ EntityEvents.spawned("goety:blastling",event=>{
 EntityEvents.spawned("goety:snareling",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
+    if(dimension != "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.8,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.5,"multiply_total")
+    }
+})
+EntityEvents.spawned("goety:watchling_servant",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(entity instanceof $Summoned){
+        if(entity.getOwner() && entity.getOwner().isPlayer()){
+            return;
+        }
+    }
+    if(dimension != "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.8,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.5,"multiply_total")
+    }
+})
+EntityEvents.spawned("goety:blastling_servant",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(entity instanceof $Summoned){
+        if(entity.getOwner() && entity.getOwner().isPlayer()){
+            return;
+        }
+    }
+    if(dimension != "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.8,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.5,"multiply_total")
+    }
+})
+EntityEvents.spawned("goety:snareling_servant",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(entity instanceof $Summoned){
+        if(entity.getOwner() && entity.getOwner().isPlayer()){
+            return;
+        }
+    }
     if(dimension != "minecraft:the_end"){
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",-0.8,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",-0.5,"multiply_total")
@@ -380,6 +1094,104 @@ EntityEvents.spawned("goety:warlock",event=>{
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.75,"multiply_total")
 })
 //刌民
+EntityEvents.spawned("minecraft:vindicator",event=>{
+    let entity = event.entity
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.setItemSlot("mainhand",Item.of("goety:rampaging_axe", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("offhand","minecraft:totem_of_undying")
+        entity.setItemSlot("head","goety:tall_skull")
+        entity.setItemSlot("chest","minecraft:netherite_chestplate")
+        entity.setItemSlot("legs","minecraft:iron_leggings")
+        entity.setItemSlot("feet","minecraft:iron_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("minecraft:regeneration",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand","minecraft:netherite_axe")
+            entity.setItemSlot("head","goety:tall_skull")
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:vindicator",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x goety:magic_emerald")
+        event.addDrop("goety:pale_steel_ingot")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+        event.addWeightedLoot([2],[
+            Item.of("2x minecraft:iron_ingot").withChance(4),
+            Item.of("minecraft:redstone_block").withChance(3),
+            Item.of("minecraft:diamond").withChance(2),
+            Item.of("3x enigmaticaddons:earth_heart_fragment").withChance(2),
+            Item.of("2x goety:ectoplasm").withChance(3),
+            Item.of("4x minecraft:emerald").withChance(3)
+        ])
+    }else if(entity.persistentData.elite == 2){
+        event.addWeightedLoot([2,3],[
+            Item.of("2x minecraft:iron_ingot").withChance(4),
+            Item.of("minecraft:redstone_block").withChance(3),
+            Item.of("minecraft:diamond").withChance(2),
+            Item.of("3x enigmaticaddons:earth_heart_fragment").withChance(2),
+            Item.of("2x goety:ectoplasm").withChance(3),
+            Item.of("4x minecraft:emerald").withChance(3)
+        ])
+    }
+})
+EntityEvents.spawned("minecraft:pillager",event=>{
+    let entity = event.entity
+    let math = Math.random(1)
+    if(math<0.05){
+        //entity.setItemSlot("mainhand",)
+        entity.setItemSlot("offhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:sharpshooter",lvl:5s},{id:"minecraft:quick_charge",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+        entity.setItemSlot("head","goety:tall_skull")
+        entity.setItemSlot("chest","minecraft:diamond_chestplate")
+        entity.setItemSlot("legs","minecraft:iron_leggings")
+        entity.setItemSlot("feet","minecraft:iron_boots")
+        entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("minecraft:regeneration",-1,0)
+        entity.persistentData.elite = 1
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:3s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+            entity.setItemSlot("head","goety:tall_skull")
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+})
+EntityEvents.drops("minecraft:pillager",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("2x goety:magic_emerald")
+        event.addDrop("goety:pale_steel_ingot")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
+        event.addWeightedLoot([2],[
+            Item.of("2x minecraft:iron_ingot").withChance(4),
+            Item.of("minecraft:redstone_block").withChance(3),
+            Item.of("minecraft:diamond").withChance(2),
+            Item.of("3x enigmaticaddons:earth_heart_fragment").withChance(2),
+            Item.of("2x goety:ectoplasm").withChance(3),
+            Item.of("4x minecraft:emerald").withChance(3)
+        ])
+    }else if(entity.persistentData.elite == 2){
+        event.addWeightedLoot([2,3],[
+            Item.of("2x minecraft:iron_ingot").withChance(4),
+            Item.of("minecraft:redstone_block").withChance(3),
+            Item.of("minecraft:diamond").withChance(2),
+            Item.of("3x enigmaticaddons:earth_heart_fragment").withChance(2),
+            Item.of("2x goety:ectoplasm").withChance(3),
+            Item.of("4x minecraft:emerald").withChance(3)
+        ])
+    }
+})
 EntityEvents.spawned("goety:trampler",event=>{
     let entity = event.entity
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.6,"multiply_total")
@@ -429,7 +1241,36 @@ EntityEvents.spawned("goetyawaken:hostile_gnasher",event=>{
     let entity = event.entity
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
 })
+EntityEvents.spawned("goety:blackguard_servant",event=>{
+    let entity = event.entity
+    if(entity instanceof $Summoned){
+        if(entity.getOwner()||entity.getOwner().isPlayer()){
+            return;
+        }
+    }
+    entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.6,"multiply_total")
+})
+EntityEvents.spawned("goety:vanguard_servant",event=>{
+    let entity = event.entity
+    if(entity instanceof $Summoned){
+        if(entity.getOwner() && entity.getOwner().isPlayer()){
+            return;
+        }
+    }
+    entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
+})
 //杂项
+EntityEvents.spawned("minecraft:creeper" ,event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(dimension == "minecraft:the_nether"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",3,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",1,"multiply_total")
+    }else if(dimension == "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
+    }
+})
 EntityEvents.spawned("minecraft:enderman",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
@@ -439,6 +1280,115 @@ EntityEvents.spawned("minecraft:enderman",event=>{
     }else if(dimension == "minecraft:the_end"){
         entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
         entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
+    }
+    let math = Math.random(1)
+    if(math<0.05){
+        entity.modifyAttribute("minecraft:generic.max_health","elite",0.5,"multiply_total")
+        entity.setItemSlot("mainhand",Item.of("goety_revelation:spectre_whip", '{Damage:0,Enchantments:[{id:"goety_revelation:reality_piercer",lvl:5s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:sharpness",lvl:5s}]}'))
+        entity.setItemSlot("chest",Item.of("sophisticatedbackpacks:backpack", '{borderColor:8991416,clothColor:1908001}'))
+        entity.setItemSlot("legs",Item.of("cataclysm:cursium_leggings", '{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:4s}]}'))
+        entity.potionEffects.add("minecraft:glowing",-1,0)
+        entity.potionEffects.add("minecraft:regeneration",-1,0)
+        entity.potionEffects.add("goetydelight:void_affix",-1,0)
+        entity.persistentData.elite = 1
+        let summon = entity.level.createEntity("minecraft:dragon_fireball")
+        let {x,y,z} = entity
+        summon.setPosition(x,y,z)
+        summon.spawn()
+        summon.startRiding(entity)
+    }else if(math<0.25){
+        if(!entity.persistentData.elite||entity.persistentData.elite != 1){
+            entity.setItemSlot("mainhand",Item.of("goety_revelation:venomous_spider_whip", '{Damage:0}'))
+            entity.setItemSlot("chest",Item.of("goety:cursed_knight_chestplate", '{Damage:0}'))
+            entity.potionEffects.add("minecraft:regeneration",-1,0)
+            entity.persistentData.elite = 2
+        }
+    }
+    
+})
+EntityEvents.death("minecraft:enderman",event=>{
+    let entity = event.entity
+    let passengers = entity.getPassengers()
+    if(passengers){
+        passengers.forEach(entity=>{
+            entity.stopRiding()
+            entity.setMotion(0,-1,0)
+        })
+    }
+})
+EntityEvents.drops("minecraft:enderman",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(dimension == "minecraft:the_end"){
+        if(entity.persistentData.elite == 1){
+            event.addDrop("2x minecraft:ender_eye")
+            event.addDrop("2x enigmaticlegacy:astral_dust")
+            event.addDrop("2x minecraft:netherite_scrap")
+            event.addDrop("enigmaticlegacy:etherium_ore")
+        }else if(entity.persistentData.elite == 2){
+            let math = Math.random(1)
+            if(math<0.2){
+                event.addDrop("enigmaticlegacy:etherium_ore")
+            }else if(math<0.4){
+                event.addDrop("2x enigmaticlegacy:astral_dust")
+            }else if(math<0.7){
+                event.addDrop("minecraft:netherite_scrap")
+            }else{
+                event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+            }
+        }
+        
+    }else{
+        if(entity.persistentData.elite == 1){
+            event.addDrop("2x minecraft:ender_eye")
+            event.addDrop("2x minecraft:diamond")
+            event.addDrop("2x minecraft:netherite_scrap")
+        }else if(entity.persistentData.elite == 2){
+            let math = Math.random(1)
+            if(math<0.2){
+                event.addDrop("minecraft:diamond")
+            }else if(math<0.4){
+                event.addDrop("3x enigmaticaddons:earth_heart_fragment")
+            }else if(math<0.7){
+                event.addDrop("2x goety:ectoplasm")
+            }else{
+                event.addDrop("2x minecraft:iron_ingot")
+            }
+        }
+    }
+    
+})
+EntityEvents.spawned("minecraft:slime",event=>{
+    let entity = event.entity
+    let dimension = entity.level.getDimension()
+    if(dimension == "minecraft:the_nether"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",3,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",1,"multiply_total")
+    }else if(dimension == "minecraft:the_end"){
+        entity.modifyAttribute("minecraft:generic.max_health","dimension_modify",9,"multiply_total")
+        entity.modifyAttribute("minecraft:generic.attack_damage","dimension_modify",3,"multiply_total")
+    }
+    let size = entity.getNbt().getInt("Size")
+    if(size >= 3){
+        let math = Math.random(1)
+        if(math<0.2){
+            entity.modifyAttribute("minecraft:generic.max_health","elite",1,"multiply_total")
+            entity.potionEffects.add("minecraft:glowing",-1,0)
+            entity.potionEffects.add("minecraft:regeneration",-1,2)
+            entity.potionEffects.add("trials:infested",1200,1)
+            entity.potionEffects.add("trials:winded",-1,1)
+            entity.potionEffects.add("minecraft:poison",-1,1)
+            entity.persistentData.elite = 1
+        }
+    }
+    
+})
+EntityEvents.drops("minecraft:slime",event=>{
+    let entity = event.entity
+    if(entity.persistentData.elite == 1){
+        event.addDrop("minecraft:slime_block")
+        event.addDrop("minecraft:diamond")
+        event.addDrop("minecraft:netherite_scrap")
     }
 })
 EntityEvents.spawned("goety:wraith",event=>{
@@ -475,6 +1425,10 @@ EntityEvents.spawned("goety:apostle",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    entity.setItemSlot("head",Item.of("enigmaticlegacy:etherium_helmet", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}',))
+    entity.setItemSlot("chest",Item.of("enigmaticlegacy:etherium_chestplate", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:12s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("legs",Item.of("enigmaticlegacy:etherium_leggings", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("enigmaticlegacy:etherium_boots", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("goety:ender_keeper",event=>{
     let entity = event.entity
@@ -482,6 +1436,10 @@ EntityEvents.spawned("goety:ender_keeper",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    entity.setItemSlot("head",Item.of("enigmaticlegacy:etherium_helmet", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("chest",Item.of("enigmaticlegacy:etherium_chestplate", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:12s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("legs",Item.of("enigmaticlegacy:etherium_leggings", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("enigmaticlegacy:etherium_boots", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("goetyawaken:nameless_one",event=>{
     let entity = event.entity
@@ -496,6 +1454,10 @@ EntityEvents.spawned("goetyawaken:hostile_mushroom_monstrosity",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    entity.setItemSlot("head",Item.of("enigmaticlegacy:etherium_helmet", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("chest",Item.of("enigmaticlegacy:etherium_chestplate", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:10s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("legs",Item.of("enigmaticlegacy:etherium_leggings", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("enigmaticlegacy:etherium_boots", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:ignis",event=>{
     let entity = event.entity
@@ -503,6 +1465,8 @@ EntityEvents.spawned("cataclysm:ignis",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    entity.setItemSlot("head",Item.of("cataclysm:ignitium_helmet", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("chest",Item.of("cataclysm:ignitium_chestplate", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:10s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:scylla",event=>{
     let entity = event.entity
@@ -510,13 +1474,18 @@ EntityEvents.spawned("cataclysm:scylla",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.4,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
-})
+    entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:10s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("minecraft:netherite_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+}) 
 EntityEvents.spawned("cataclysm:maledictus",event=>{
     let entity = event.entity
     entity.removeAttribute("goety_revelation:armor_penetration","dimension_modify")
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.4,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("cataclysm:cursium_helmet",'{Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("cataclysm:cursium_chestplate", '{Unbreakable:1b,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:10s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:the_leviathan",event=>{
     let entity = event.entity
@@ -524,6 +1493,9 @@ EntityEvents.spawned("cataclysm:the_leviathan",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.4,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:""enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:protection",lvl:10s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("minecraft:netherite_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:netherite_monstrosity",event=>{
     let entity = event.entity
@@ -531,6 +1503,10 @@ EntityEvents.spawned("cataclysm:netherite_monstrosity",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("cataclysm:monstrous_helm", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    
 })
 EntityEvents.spawned("goety:hostile_redstone_monstrosity",event=>{
     let entity = event.entity
@@ -538,6 +1514,10 @@ EntityEvents.spawned("goety:hostile_redstone_monstrosity",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("cataclysm:monstrous_helm", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("minecraft:iron_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("minecraft:diamond_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:diamond_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:ancient_remnant",event=>{
     let entity = event.entity
@@ -545,6 +1525,10 @@ EntityEvents.spawned("cataclysm:ancient_remnant",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("cataclysm:bone_reptile_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("cataclysm:bone_reptile_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("iron_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:the_harbinger",event=>{
     let entity = event.entity
@@ -552,6 +1536,9 @@ EntityEvents.spawned("cataclysm:the_harbinger",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("minecraft:netherite_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("minecraft:netherite_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:8s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("minecraft:netherite_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("cataclysm:ender_guardian",event=>{
     let entity = event.entity
@@ -559,6 +1546,9 @@ EntityEvents.spawned("cataclysm:ender_guardian",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("chest",Item.of("enigmaticlegacy:etherium_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:8s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("enigmaticlegacy:etherium_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("enigmaticlegacy:etherium_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("goety:vizier",event=>{
     let entity = event.entity
@@ -566,6 +1556,10 @@ EntityEvents.spawned("goety:vizier",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot("head",Item.of("goety:cursed_knight_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("goety:black_iron_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:8s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("goety:cursed_knight_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("goety:cursed_knight_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("twilightforest:hydra",event=>{
     let entity = event.entity
@@ -573,6 +1567,11 @@ EntityEvents.spawned("twilightforest:hydra",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot('mainhand',Item.of("twilightforest:fiery_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:10s}]}'))
+    entity.setItemSlot("head",Item.of("cataclysm:monstrous_helm", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("twilightforest:fiery_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:8s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("twilightforest:fiery_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("twilightforest:fiery_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("twilightforest:ur_ghast",event=>{
     let entity = event.entity
@@ -580,6 +1579,11 @@ EntityEvents.spawned("twilightforest:ur_ghast",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot('mainhand',Item.of("twilightforest:fiery_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:10s}]}'))
+    entity.setItemSlot("head",Item.of("twilightforest:fiery_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("twilightforest:fiery_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("twilightforest:fiery_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("minecraft:netherite_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("twilightforest:snow_queen",event=>{
     let entity = event.entity
@@ -587,6 +1591,31 @@ EntityEvents.spawned("twilightforest:snow_queen",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot('mainhand',Item.of("twilightforest:ice_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:10s}]}'))
+    entity.setItemSlot("head",Item.of("twilightforest:yeti_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("twilightforest:yeti_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:8s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("goeticlegacy:holy_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("twilightforest:yeti_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+})
+EntityEvents.spawned("twilightforest:minoshroom",event=>{
+    let entity = event.entity
+    entity.setItemSlot('mainhand',Item.of("twilightforest:diamond_minotaur_axe", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:5s}]}'))
+    entity.setItemSlot("head",Item.of("cataclysm:monstrous_helm", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("twilightforest:fiery_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("twilightforest:fiery_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("twilightforest:fiery_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+})
+EntityEvents.spawned("twilightforest:yeti",event=>{
+    let entity = event.entity
+    entity.removeAttribute("goety_revelation:armor_penetration","dimension_modify")
+    entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
+    entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
+    entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.15,"addition")
+    entity.setItemSlot('mainhand',Item.of("twilightforest:ice_sword", '{Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:10s}]}'))
+    entity.setItemSlot("head",Item.of("twilightforest:yeti_helmet", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],RepairCost:0,Unbreakable:1b}'))
+    entity.setItemSlot("chest",Item.of("twilightforest:yeti_chestplate", '{Damage:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:5s},{id:"goetydelight:soul_healing",lvl:1s}]}'))
+    entity.setItemSlot("legs",Item.of("twilightforest:arctic_leggings", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
+    entity.setItemSlot("feet",Item.of("twilightforest:yeti_boots", '{Damage:0,RepairCost:0,Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
 })
 EntityEvents.spawned("warden",event=>{
     let entity = event.entity
@@ -597,15 +1626,14 @@ EntityEvents.spawned("warden",event=>{
 })
 
 //满血
+global.FisrtSpawnMap = Utils.newMap()
 EntityEvents.spawned(event=>{
     let entity = event.entity
+    if(entity.isPlayer())return;
     if(entity == null || !entity.isLiving())return;
     if(entity.type == "minecraft:item")return;
     if(entity.isPlayer())return;
-    if(!entity.persistentData.firstSpawn||entity.persistentData.firstSpawn==0){
-        entity.setHealth(entity.getMaxHealth())
-        entity.persistentData.firstSpawn = 1
-    }
+    entity.setHealth(entity.getMaxHealth())
 })
 
 EntityEvents.spawned("minecraft:player", event=>{

@@ -119,7 +119,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
                 stealing = 3
             }else if(chance<0.43){
                 item = target.getItemBySlot("mainhand")
-                if(item != null&&item.id != "minecraft:air"){
+                if(item == null&&item.id != "minecraft:air"){
                     target.setItemSlot("mainhand","minecraft:air")
                     stealing = 3
                 }
@@ -618,7 +618,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         }else{
             stealing = 1
         }
-    }else if(type == "goety:redstone_golem"){//红石傀儡
+    }else if(type == "goety:hostile_redstone_golem"){//红石傀儡
         if(!target.persistentData.contains("stolen")){
             stealing = 3
             if(chance<0.1){
@@ -1108,7 +1108,7 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         }else{
             stealing = 1
         }
-    }else if(type == "cataclysm:the_prawler" ){//徘徊者
+    }else if(type == "cataclysm:the_prowler" ){//徘徊者
         if(!target.persistentData.contains("stolen")){
             stealing = 2
             if(chance<0.05){

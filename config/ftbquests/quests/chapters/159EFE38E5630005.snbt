@@ -26,7 +26,7 @@
 			shape: "square"
 			size: 2.0d
 			tasks: [{
-				id: "1216FE80B99B3343"
+				id: "5FC9A9110E737C90"
 				type: "checkmark"
 			}]
 			title: "精致存储磁盘兑换"
@@ -639,7 +639,7 @@
 				item: "minecraft:lapis_block"
 				type: "item"
 			}]
-			subtitle: "拿去刷魔法石英花"
+			subtitle: "需要进入下界才可以购买"
 			tasks: [{
 				consume_items: true
 				count: 6L
@@ -665,6 +665,7 @@
 				item: "minecraft:redstone_block"
 				type: "item"
 			}]
+			subtitle: "需要进入下界才可以购买"
 			tasks: [{
 				consume_items: true
 				count: 10L
@@ -690,6 +691,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			subtitle: "需要获得下界合金才可以购买"
 			tasks: [{
 				consume_items: true
 				count: 16L
@@ -715,6 +717,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
+			subtitle: "需要获得下界合金才可以购买"
 			tasks: [{
 				consume_items: true
 				count: 24L
@@ -740,6 +743,7 @@
 				item: "minecraft:copper_block"
 				type: "item"
 			}]
+			subtitle: "需要进入下界才可以购买"
 			tasks: [{
 				consume_items: true
 				count: 10L
@@ -1689,7 +1693,7 @@
 			description: [
 				"90%概率吃出禁书碎片，10%概率吃出禁书片段"
 				""
-				"稳定获取禁书片段推荐刷骷髅领主"
+				"稳定获取禁书片段&e推荐刷骷髅领主"
 			]
 			icon: "goetydelight:forbidden_soup_bun"
 			id: "6AA5220BF4A31993"
@@ -1760,28 +1764,6 @@
 			}]
 			title: "玉"
 			x: 16.5d
-			y: -1.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["349A79EF2048B6F7"]
-			icon: "goety:treasure_pouch"
-			id: "776C9B378DC1005F"
-			rewards: [{
-				id: "2C4341CA6368801A"
-				item: "goety:treasure_pouch"
-				type: "item"
-			}]
-			subtitle: "来看看运气吧"
-			tasks: [{
-				consume_items: true
-				count: 20L
-				id: "197DF36FE95B71AA"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
-			title: "宝藏袋"
-			x: 18.0d
 			y: -1.0d
 		}
 		{
@@ -2244,7 +2226,7 @@
 		{
 			can_repeat: true
 			dependencies: ["211851B9163DF3EA"]
-			icon: "minecraft:oak_fence"
+			icon: "minecraft:sheep_spawn_egg"
 			id: "74FB0D1954679A49"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2679,7 +2661,7 @@
 				}
 			]
 			title: "增加项链栏位"
-			x: 5.0d
+			x: 6.5d
 			y: 7.0d
 		}
 		{
@@ -4468,7 +4450,7 @@
 				}
 			]
 			title: "增加通用栏位"
-			x: 6.5d
+			x: 8.0d
 			y: 7.0d
 		}
 		{
@@ -4824,6 +4806,45 @@
 				}
 			]
 			title: "增加奥秘卷轴栏位"
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["639B1545CDA3D21E"]
+			icon: "goety:necro_cape"
+			id: "6F6DE1CBA4BC4F3F"
+			rewards: [{
+				command: "/curios add back @s 1"
+				elevate_perms: true
+				id: "64191F8D64F1E2E5"
+				title: "增加一个背饰栏位"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "673D9B5C9DF5FF97"
+					item: { Count: 128, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "452F4DE4B302048E"
+					item: { Count: 4, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "3B7F711684B653E0"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "增加背饰栏位"
 			x: 3.5d
 			y: 7.0d
 		}

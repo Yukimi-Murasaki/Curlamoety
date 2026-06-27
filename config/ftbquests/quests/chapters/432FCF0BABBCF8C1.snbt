@@ -1,0 +1,666 @@
+{
+	autofocus_id: "2520D2990C434644"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "432FCF0BABBCF8C1"
+	group: "64A85F1CF1963E94"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "goety_revelation:revelation"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "432FCF0BABBCF8C1"
+	order_index: 3
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5D683F2A352AD29F"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				id: "goety_revelation:revelation"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2520D2990C434644"
+			rewards: [{
+				id: "209FA4AFC55B5BB7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "最终审判"
+			tasks: [{
+				id: "1109BBA10DA485A0"
+				type: "checkmark"
+			}]
+			title: "下界亚波伦挑战攻略"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2520D2990C434644"]
+			icon: "goety_revelation:ascension_halo"
+			id: "360FF1E9C6FF5E2A"
+			rewards: [{
+				id: "2861F5545B129F43"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "知己知彼"
+			tasks: [{
+				id: "3AD906B59CACCC05"
+				type: "checkmark"
+			}]
+			title: "第一节：特性介绍"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["360FF1E9C6FF5E2A"]
+			description: [
+				"与主世界亚波伦相同，拥有&e66600的生命值和2000的限伤&r。与使徒相同，在下界时会有&e50%限伤后减伤&r（断曜流光可以破除这一减伤）和&e85%的魔法伤害抗性&r，受到&e亡灵杀手附魔&r的伤害会短暂停止自然恢复"
+				""
+				"但是下界亚波伦具有长达&e1.5秒&r的无敌帧，只有&6破妄&r可以削减&e最多1秒&r的无敌帧。而下界亚波伦的&e限伤具有极高的代码优先度&r，除非神的力量，否则一切手段将无法突破这一限伤，即使是断曜流光也只能破除它的限伤后减伤。"
+			]
+			icon: "goety:unholy_blood"
+			id: "59E6B6422E54B580"
+			rewards: [{
+				id: "47100DF0A1A8730C"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "身体信息"
+			tasks: [{
+				id: "299D0705F014EE25"
+				type: "checkmark"
+			}]
+			title: "基础特性"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["360FF1E9C6FF5E2A"]
+			description: [
+				"下界亚波伦从&e召唤出&r开始，以及&e每隔80秒&r，会使用一次凶猛的&4箭矢机关枪&r（以下简称机枪箭）"
+				""
+				"机枪箭释放前会有明显的前摇，亚波伦周身会放出大量黑色雾气粒子，持续1秒。"
+				""
+				"释放中，亚波伦将以毁灭性的射速发射大量&e无视无敌帧&r的死亡之箭，持续25秒，这一招即使是全副武装的情况下也很难招架，即便能承受住伤害，也会对战斗产生恶劣的干扰。"
+				""
+				"利用高速机动快速离开亚波伦&e64格&r距离，可以让机枪箭由于索敌丢失而停止"
+			]
+			icon: {
+				Count: 1
+				id: "goety_revelation:bow_of_revelation"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7CE990FC520C43C1"
+			rewards: [{
+				id: "5863920EDE4FD485"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "灭亡之箭雨"
+			tasks: [{
+				id: "5B4FF13CD60E2DC7"
+				type: "checkmark"
+			}]
+			title: "箭矢机关枪"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["360FF1E9C6FF5E2A"]
+			description: [
+				"下界亚波伦和主世界亚波伦一样具有头衔轮换机制，在最后&e7.14%（1/14，约4700）&r的生命值里，亚波伦将切换至&4末日终结&r头衔"
+				""
+				"下界亚波伦的末日终结将&4剥去伪装，审视灵魂&r，它会&e没收你的护甲和饰品&r，禁止你&e使用物品右键的能力&r，并让你的物品&e进入使用冷却&r（一部分白名单物品除外）。同时你的属性除了&6攻击伤害&r，将全部回归至&e刚刚降生于这个世界的水平&r，为了弥补缺失的数值，亚波伦将&e受到5倍的伤害"
+				"&r"
+				"亚波伦将停止召唤并清除&e己方的仆从与燃烧龙卷风&r，并持续清楚&e不属于己方的大部分技术性实体&r——也就是&6阻止你使用弹射物一类的远程手段&r"
+				""
+				"亚波伦的箭矢将&e降低至普通的速度&r，让你可以用基础的属性去躲避，但是&e伤害会提升到2400&r，让你无法靠数值硬抗"
+				""
+				"亚波伦的身躯在&e没有进行施法动作时&r将获得&4100%&r的减伤，只有断曜流光可以在这个情况下造成少量伤害，同时亚波伦在受到攻击后将召唤类似幻术师的视觉分身，干扰你的判断"
+				""
+				"应对末日终结，你需要在适当距离下保持移动来&e躲避箭矢&r，&6观察&r亚波伦的动作，趁着施法之时靠近亚波伦对它造成伤害"
+			]
+			icon: "goety_revelation:doom_medal"
+			id: "7B3A2D1D2788E63B"
+			rewards: [{
+				id: "2846A07E5AAAACFB"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "你的最终试炼开始了"
+			tasks: [{
+				id: "52FBBE6564C1336B"
+				type: "checkmark"
+			}]
+			title: "末日终结"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["360FF1E9C6FF5E2A"]
+			description: [
+				"下界亚波伦生命值归零后，将会展开&e半径17格&r的炼狱结界，以天启的力量焚烧敢于僭越神明的灵魂"
+				""
+				"从生命值归零那一刻起直至结界开始造成伤害，将有&e3秒的准备时间&r，你需要在这3秒内逃出结界的17格范围，否则你&4必死无疑&r："
+				""
+				"结界将对范围内的生物造成原版所有33种伤害，其中一半是真伤一半是绝对真伤，不仅能将你迅速融化，并且将能够&4斩断你的不死&r"
+				""
+				"如果有任何生物还处在结界中，那么结界的持续将&e不会结束&r；如果结界&e杀死了任何生物&r，并且亚波伦附近有生存模式的玩家，那么亚波伦将会在结界结束之际&e复活&r，并将生命值回复至&e末日终结开始&r的血线"
+			]
+			icon: "goety_revelation:revelation_focus"
+			id: "5AEA1CA068FCEA01"
+			rewards: [{
+				id: "7AAF610EE43A341D"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "你的灵魂将在地狱中燃烧"
+			tasks: [{
+				id: "6A62CBD3E4139FCF"
+				type: "checkmark"
+			}]
+			title: "炼狱结界"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["360FF1E9C6FF5E2A"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "337EF933F26F5A7D"
+			rewards: [{
+				id: "7D7AE89BBD148219"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "有备无患"
+			tasks: [{
+				id: "6835CDC2D47BB966"
+				type: "checkmark"
+			}]
+			title: "第二节：作战装备"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			description: [
+				"可以突破重重减伤，并且潜行左键的激流冲刺可以用于战斗机动，即使是法术攻击也可以用于主手拐"
+				""
+				"&e破妄&r能缩减无敌帧，可以有效缩短战斗时间"
+				""
+				"&e亡灵杀手&r会暂时禁用亚波伦的自然恢复"
+			]
+			icon: {
+				Count: 1
+				id: "goety_revelation:valettein"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "goety_revelation:reality_piercer"
+						lvl: 10s
+					}]
+					RepairCost: 5
+				}
+			}
+			id: "552C31794F10DBEE"
+			rewards: [{
+				id: "3C068F7CF5B5C48F"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "唯  一  神"
+			tasks: [
+				{
+					id: "4F07894466513AA5"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "54E51F3D227625CE"
+					item: {
+						Count: 1
+						id: "goety_revelation:valettein"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "goety_revelation:reality_piercer"
+									lvl: 10s
+								}
+								{
+									id: "minecraft:smite"
+									lvl: 10s
+								}
+							]
+							RepairCost: 5
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "近战武器"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			description: [
+				"&e发射/飞翔聚晶&r用于机动，可以躲避机枪箭"
+				""
+				"&e壁垒聚晶&r提供大量的次数盾，可以有效规避伤害，末日终结之前的阶段没有生存压力，尽量&e在进入末日终结的节点上开启壁垒聚晶&r，以换取生存机会"
+				""
+				"&e风暴聚晶&r可以吹散火焰龙卷风，减少干扰"
+				""
+				"&e障碍聚晶&r在佩戴&6晋升之环&r并使用&6下界魔杖&r施法时会召唤出己方的&e黑曜石柱&r，可以提供非常强大的生存帮助"
+			]
+			icon: "goety:bulwark_focus"
+			id: "5582E7840F466101"
+			rewards: [{
+				id: "28354835E7FC0C03"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "浑身解数"
+			tasks: [
+				{
+					id: "7347AFAFA4921A08"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "5EACF7C944C6A528"
+					item: "goety:launch_focus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "76257EAE24BD4D19"
+					item: "goety:flying_focus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2188F23C6C36596E"
+					item: "goety:bulwark_focus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "79D5D23DCF972C63"
+					item: "goety:wind_blast_focus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6D5C0E5F324BBD53"
+					item: "goety:barricade_focus"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "辅助聚晶"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			description: [
+				"&e晋升之环&r可以提供所有药水效果免疫，搭配神灵金套或者冠军套装的&e晋升修正&r可以仅免疫负面效果"
+				""
+				"&e非欧立方&r也会提供对负面效果的免疫，这些免疫在末日终结之前的阶段可以有效减少干扰"
+				""
+				"&e保护&r附魔最高可以提供80%的伤害减免，可以确保末日终结之前的生存能力"
+				""
+				"&e地灵之诺&7（在白名单中不会收取）&r会提供冷却50秒的免伤，除非面对机关枪箭矢，否则可以提高一次宝贵的容错机会"
+			]
+			icon: "enigmaticlegacy:the_cube"
+			id: "4981F82A306A07FA"
+			rewards: [{
+				id: "0BFD6590DD8735FF"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "百害不侵"
+			tasks: [
+				{
+					id: "20394B33C7676C60"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "24618CA91ADA90AC"
+					item: {
+						Count: 1
+						id: "goety_revelation:apocalyptium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "74DA8D9AA62358E5"
+					item: {
+						Count: 1
+						id: "goetyawaken:champion_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "17D31B6019512262"
+					item: "enigmaticlegacy:the_cube"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0B32D550DCD14C10"
+					item: "goety_revelation:ascension_halo"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7FCB8BA94F68195C"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							RepairCost: 1
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 5s
+							}]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A657022D9A5689A"
+					item: "enigmaticaddons:earth_promise"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "防护装备"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			description: [
+				"末日终结阶段中，白名单中的饰品不会被收取和禁用"
+				""
+				"包括塔罗牌组和大部分能提升你的攻击伤害的饰品"
+				""
+				"塔罗牌中，&e塔罗牌·正义&r可以提供25%的伤害反射，作为一种兜底手段可以让你即使被动挨打也可以对亚波伦造成伤害"
+				""
+				"末日终结中，攻击伤害属性不会回归，因此尽量&e携带提升物理攻击能力的饰品&r，你需要依靠你的物理攻击能力来击败亚波伦"
+			]
+			icon: {
+				Count: 1
+				id: "tarotcards:justice"
+				tag: { }
+			}
+			id: "47B7868E48600B9C"
+			rewards: [{
+				id: "4449DB380186278C"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "攻坚克难"
+			tasks: [
+				{
+					id: "6C7AD68EC8FA267C"
+					type: "checkmark"
+				}
+				{
+					id: "5B265B71186EDB96"
+					item: {
+						Count: 1
+						id: "tarotcards:justice"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E0DDAF9E5B624C8"
+					item: "curlamoety:elemental_gloves"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19F47C1DF6F407A5"
+					item: "curlamoety:calamity_source"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "进攻手段"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			description: [
+				"&e恩惠之典&7（不属于饰品/盔甲不会收取，被动效果不会禁用）&r放置在物品栏或者古旧书袋中会提供&6着火熄灭&r的效果，由于下界使徒会给予“灼烧魔印”消除火焰抗性，当你利用免死或者免伤手段从攻击中幸存时，恩惠之典能防止你因为着火而丧失宝贵的生存机会"
+				""
+				"&e护盾权杖&r可以提供6次次数盾，可以在复活后，返回战场前补充，以获得巨大容错"
+				""
+				"&e不死图腾&r和&5恶意图腾&7（不穿戴在饰品栏则不会收取，被动效果不会禁用）&r可以提供免死，除非被机枪箭命中，否则可以提供很高的容错，不死图腾可以利用精妙背包的&e补货升级&r来补充"
+			]
+			icon: "enigmaticaddons:the_bless"
+			id: "368818EE54A851A0"
+			rewards: [{
+				id: "12E73CE742F01FAD"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "百般武艺"
+			tasks: [
+				{
+					id: "3CCABEE3C50C483D"
+					type: "checkmark"
+				}
+				{
+					id: "237196886676E169"
+					item: "enigmaticaddons:the_bless"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21BA53C63A70AC63"
+					item: {
+						Count: 1
+						id: "twilightforest:fortification_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "350BDE134568746F"
+					item: "sophisticatedbackpacks:advanced_refill_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2EBC04813B8AB638"
+					item: "minecraft:totem_of_undying"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B24306FA0581C89"
+					item: "enigmaticaddons:totem_of_malice"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "手持、携带的其他道具"
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["337EF933F26F5A7D"]
+			icon: "cataclysm:altar_of_fire"
+			id: "559D0D50AFC7DF8B"
+			rewards: [{
+				id: "0FCDD09CDF261735"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "6A038EE96F002CAE"
+				type: "checkmark"
+			}]
+			title: "第三节：场地准备"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["559D0D50AFC7DF8B"]
+			description: [
+				"对战下界亚波伦，&e推荐，也只推荐&r在下界基岩层上进行战斗"
+				""
+				"上基岩层的方法很多，由于做法偏于实操，不过多赘述"
+				""
+				"基岩层上是完全平坦的，可以提供完美的战斗场地"
+			]
+			icon: "minecraft:bedrock"
+			id: "12973D10204AAA83"
+			rewards: [
+				{
+					id: "02EE151C4708937C"
+					type: "xp"
+					xp: 3
+				}
+				{
+					count: 3
+					id: "18335DEADF232137"
+					item: "minecraft:ladder"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "46AA7819E4560415"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			subtitle: "决战之地"
+			tasks: [{
+				id: "2C713354499EFB4E"
+				type: "checkmark"
+			}]
+			title: "场地选择"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["559D0D50AFC7DF8B"]
+			description: [
+				"做好多次复活的心理准备"
+				""
+				"如果想要在下界复活，可以空手潜行右键（避免触发CarryOn）破坏灵魂方舟并搬到下界，保险起见可以加上一些重生锚来复活"
+				""
+				"对于&a巫妖&r玩家："
+				""
+				"巫妖在灵魂方舟中能量不足是，可以&e强行进行奥术复活&r"
+				""
+				"将灵魂方舟周围的空间填满，会导致方舟复活无法将你拉回，从而实现原地复活"
+				""
+				"搭配&e塔罗牌·正义&r可以原地复活，利用反伤反死亚波伦"
+			]
+			icon: "minecraft:respawn_anchor"
+			id: "5FB4C9DB6E9A9866"
+			rewards: [{
+				id: "760FD018420EF969"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "不屈不挠"
+			tasks: [{
+				id: "31083653DD0A19E6"
+				type: "checkmark"
+			}]
+			title: "复活准备"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["559D0D50AFC7DF8B"]
+			description: [
+				"缠魂玻璃可以允许玩家实体通过，而对于其他实体而言，它是实心的物块"
+				""
+				"利用缠魂玻璃的选择性，将一片区域填满缠魂玻璃可以做出一座无法入侵的堡垒"
+			]
+			icon: "goety:haunted_glass"
+			id: "710A7BEDCBA6E4A2"
+			rewards: [
+				{
+					id: "4FDEB2A17D8F7912"
+					type: "xp"
+					xp: 3
+				}
+				{
+					count: 256
+					id: "7E78120F3956E166"
+					item: "goety:haunted_glass"
+					type: "item"
+				}
+			]
+			subtitle: "一方通行"
+			tasks: [{
+				id: "178C6B9F5F3D5AB0"
+				type: "checkmark"
+			}]
+			title: "玻璃堡垒"
+			x: 6.5d
+			y: 3.5d
+		}
+	]
+	title: "启示智囊团"
+}

@@ -97,16 +97,28 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     Event.remove({output:'enchantinginfuser:advanced_enchanting_infuser'})
     Event.shaped('enchantinginfuser:advanced_enchanting_infuser',[
         'NBN',
-        'OPO',
-        'DTD'
+        'LPL',
+        'OTO'
     ],{
         N:'minecraft:netherite_ingot',
         B:'enigmaticlegacy:enchantment_transposer',
         O:'minecraft:crying_obsidian',
         P:'enigmaticlegacy:enchanter_pearl',
-        D:'goety:dark_metal_block',
+        L:"goety:awakened_emerald_block",
         T:'enchantinginfuser:enchanting_infuser'
-    }).id("curlamoety:advanced_enchanting_infuser")
+    }).id("curlamoety:advanced_enchanting_infuser1")
+    Event.shaped('enchantinginfuser:advanced_enchanting_infuser',[
+        'NBN',
+        'LPL',
+        'OTO'
+    ],{
+        N:'minecraft:netherite_ingot',
+        B:'enigmaticlegacy:enchantment_transposer',
+        O:'minecraft:crying_obsidian',
+        P:"minecraft:nether_star",
+        L:"goety:dark_metal_block",
+        T:'enchantinginfuser:enchanting_infuser'
+    }).id("curlamoety:advanced_enchanting_infuser2")
 
     //地灵之诺
     Event.replaceInput({output:'enigmaticaddons:earth_promise'},'enigmaticlegacy:cosmic_heart','cataclysm:witherite_block')
@@ -328,9 +340,9 @@ ServerEvents.recipes(Event=>{//常规配方走这里
         'IHI'
     ],{
         I:'minecraft:iron_ingot',
-        S:'minecraft:nether_star',
+        S:"goety:soul_light_focus",
         M:'goety:magic_fabric',
-        H:'cataclysm:monstrous_horn'
+        H:"minecraft:netherite_ingot"
     }).id("curlamoety:the_star")
 
     //世界
@@ -1223,14 +1235,6 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     })
 
     //巫法极点
-    Event.shaped("2x curlamoety:goal_ty",[
-        " G ",
-        "GTG",
-        " G "
-    ],{
-        G:"minecraft:gold_ingot",
-        T:"curlamoety:goal_ty"
-    }).id("curlamoety:copy/goal_ty_1")
 
     Event.shapeless("2x curlamoety:goal_ty",["curlamoety:goal_ty","#goety:totems"])
     .id("curlamoety:copy/goal_ty_2")
@@ -1258,5 +1262,57 @@ ServerEvents.recipes(Event=>{//常规配方走这里
 
     Event.shapeless("2x goety:undeath_potion",["goety:undeath_potion","4x curlamoety:goal_ty"])
     .id("curlamoety:copy/undeath_potion")
+    
+    Event.shapeless("2x goety:soul_ruby",["goety:soul_ruby","curlamoety:goal_ty"])
+    .id("curlamoety:copy/soul_ruby")
+
+    Event.shapeless("2x goetydelight:metamorphic_scent_fruit",["goetydelight:metamorphic_scent_fruit","curlamoety:goal_ty"])
+    .id("curlamoety:copy/metamorphic_scent_fruit")
+
+    Event.shapeless("2x enigmaticlegacy:etherium_ingot",["enigmaticlegacy:etherium_ingot","curlamoety:goal_ty"])
+    .id("curlamoety:copy/etherium_ingot")
+
+    Event.shapeless("2x goety_ladder:void_metal",["goety_ladder:void_metal","curlamoety:goal_ty"])
+    .id("curlamoety:copy/void_metal")
+
+    Event.shapeless("2x goety_ladder:void_fabric",["goety_ladder:void_fabric","curlamoety:goal_ty"])
+    .id("curlamoety:copy/void_fabric")
+
+    Event.shapeless("2x goety_ladder:void_core",["goety_ladder:void_core","curlamoety:goal_ty"])
+    .id("curlamoety:copy/void_core")
+
+
+    Event.shaped("5x goety_ladder:voidobsidian_block",[
+        ' V ',
+        'OAO',
+        ' V ',
+    ],{
+        V:"goety:void_block",
+        O:"minecraft:obsidian",
+        A:"goety_ladder:voidobsidian_block"
+    }).id("curlamoety:copy/voidobsidian_block")
+
+    //虚空粉尘
+    Event.remove("goety_ladder:void_reipes/void_dust")
+    Event.shaped("4x goety_ladder:void_dust",[
+        ["","goety:void_bottle",""],
+        ["goety:void_block","goety:grave_dust","minecraft:gunpowder"],
+        ["","goety_ladder:voidobsidian_block",""],
+    ]).id("curlamoety:void_dust")
+
+    //虚灵之眼
+    Event.remove("goety_ladder:void_reipes/voidliving_eye")
+    Event.shaped("goety_ladder:voidliving_eye",[
+        ' V ',
+        'SES',
+        'DOD'
+    ],{
+        V:"goety_ladder:void_core",
+        E:"goety:void_eye",
+        S:"goety:shadow_essence",
+        D:"goety_ladder:void_dust",
+        O:"goety_ladder:voidobsidian_block"
+    }).id("curlamoety:voidliving_eye")
+
 
 })  

@@ -1001,30 +1001,11 @@
 			dependencies: ["3503920AABD62C73"]
 			hide_dependency_lines: true
 			id: "76A201989C9D8C76"
-			rewards: [
-				{
-					count: 2
-					id: "2420B61646529F76"
-					item: "goety:treasure_pouch"
-					type: "item"
-				}
-				{
-					id: "117587C6BDB86A52"
-					item: "goety:banish_focus"
-					type: "item"
-				}
-				{
-					id: "5715E39C737ED614"
-					item: "enigmaticlegacy:etherium_ore"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "14A83C12A6B985D3"
-					item: "enigmaticlegacy:astral_dust"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2420B61646529F76"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
 			tasks: [{
 				id: "280CCF8BC226504B"
 				item: {
@@ -1806,8 +1787,8 @@
 				}
 			]
 			title: "不洁法装"
-			x: 39.5d
-			y: 3.0d
+			x: 38.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["103DC4F1BEC126AA"]
@@ -2059,7 +2040,13 @@
 			dependencies: ["103DC4F1BEC126AA"]
 			icon: "goety:arrow_rain_focus"
 			id: "325924D6083CCA51"
-			subtitle: "由于会引发崩溃，已禁用获取"
+			rewards: [{
+				count: 8
+				id: "38660292AC89ACDA"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "万箭齐发！"
 			tasks: [{
 				id: "0EF044569C389185"
 				type: "checkmark"
@@ -2791,7 +2778,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
-			subtitle: "地国の吹雪"
+			subtitle: "冰锥射手，有概率发射雪球（并非）"
 			tasks: [{
 				id: "24DCCDB0E4EE2B24"
 				item: "goety:ice_spike_focus"
@@ -2855,7 +2842,7 @@
 			dependencies: ["103DC4F1BEC126AA"]
 			icon: "goety:blizzard_focus"
 			id: "3CAF31A496A5C6A6"
-			subtitle: "由于会引发崩溃，已禁用获取"
+			subtitle: "地国の吹雪"
 			tasks: [{
 				id: "27CF894DD6EA6E32"
 				type: "checkmark"
@@ -5484,7 +5471,11 @@
 		}
 		{
 			dependencies: ["5ABBF5A2301F43CC"]
-			description: ["用于制作晋升披萨"]
+			description: [
+				"16个炼药锅要全部倒入岩浆"
+				""
+				"用于制作晋升披萨"
+			]
 			icon: "enigmaticdelicacy:divine_fruit_pie_block"
 			id: "260A8DEE83092082"
 			rewards: [{
@@ -5523,9 +5514,9 @@
 					type: "item"
 				}
 				{
-					count: 16L
 					id: "37C2047C5BB76A99"
-					item: { Count: 16, id: "minecraft:lava_bucket" }
+					item: "minecraft:lava_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -5637,6 +5628,423 @@
 			}]
 			x: 20.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["5ABBF5A2301F43CC"]
+			description: [
+				"深色橡木可以为&e任意深色橡木制品方块"
+				""
+				"栅栏可以为&e任意木制栅栏"
+			]
+			icon: "goety:ominous_orb"
+			id: "4247C5D863AC7D35"
+			rewards: [{
+				id: "40197023CE1215DE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "不祥的仪式"
+			tasks: [
+				{
+					count: 4L
+					id: "2CF673E3C626D284"
+					item: { Count: 4, id: "goety:awakened_emerald_block" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "59C180D927647E34"
+					item: { Count: 16, id: "minecraft:dark_oak_planks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "47367A80A4CD94F8"
+					item: { Count: 8, id: "minecraft:oak_fence" }
+					type: "item"
+				}
+			]
+			title: "灾厄仪式"
+			x: 45.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["425C12A195696941"]
+			description: [
+				"紫珀方块可以为&e任意变种"
+				""
+				"需要在末地，y=10以下才可以举行"
+			]
+			icon: "goety_ladder:voidobsidian_block"
+			id: "3CC71153BF63B967"
+			rewards: [{
+				id: "56B55D5B173E7EB1"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+			subtitle: "虚空之集大成"
+			tasks: [
+				{
+					count: 4L
+					id: "4AD8D01042F7AC17"
+					item: { Count: 4, id: "goety:void_barrel" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "53E430799AB247FC"
+					item: { Count: 8, id: "goety_ladder:voidobsidian_block" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "4E4A7A81D50E8E7D"
+					item: { Count: 32, id: "goety:void_block" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7E1341CED2AD58E7"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+			]
+			title: "虚空仪式"
+			x: 42.0d
+			y: -4.5d
+		}
+		{
+			id: "3B3BBE312EC59A07"
+			rewards: [{
+				id: "4C8C93F715364B8F"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Heavy~ Machine Gun"
+			tasks: [{
+				id: "437E38A83E21C816"
+				item: "goety_ladder:soulboltpro_spell_focus"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 18.5d
+		}
+		{
+			id: "6133A3E0D949ECA8"
+			rewards: [{
+				id: "661F401BCA0189DD"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "已经不用再害怕了"
+			tasks: [{
+				id: "3BD9C7F02A6EF242"
+				item: "goety_ladder:soulhealpro_spell_focus"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0A1389F58B810F83"
+			rewards: [{
+				id: "68BDA028F6D5A8C5"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一“晶”激起千层“牙”"
+			tasks: [{
+				id: "7BDB6584FCE8A534"
+				item: "goety_ladder:roundteeeh_spell_focus"
+				type: "item"
+			}]
+			x: 44.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			description: ["施法速度过快卡前摇了"]
+			id: "675102EFB148B9CC"
+			rewards: [{
+				id: "634FC4DCB733B9B2"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "连续传送……"
+			tasks: [{
+				id: "5401755CF5338E02"
+				item: "goety_ladder:void_blink_spell_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3FF79F025ABF71D3"
+			rewards: [{
+				id: "3770F5285A621CDA"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "它不能吃"
+			tasks: [{
+				id: "0D8FCFD461E1A815"
+				item: "goety_ladder:void_gel_spell_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4CACD35FA35698C0"
+			rewards: [{
+				id: "7E8E3B154E3ED9CC"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "炮台图腾"
+			tasks: [{
+				id: "20FC9BACF6800B3E"
+				item: "goety_ladder:void_totem_spell_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "3BBF5268B71813BF"
+			rewards: [{
+				id: "3D6269BA8EC44383"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "连锁反应！"
+			tasks: [{
+				id: "41CB53814D63AD46"
+				item: "goety_ladder:voidresonance_spell_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "5468D95435172FF2"
+			rewards: [{
+				id: "3137C05090C63506"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "和真的差远了"
+			tasks: [{
+				id: "1FD307F3A20E94AD"
+				item: "goety_ladder:dragonbresth_spell_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "18BB54CDC5B8E803"
+			rewards: [{
+				id: "3BADB3C05010B965"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "它们非常“空虚”"
+			tasks: [{
+				id: "58EABED1FB574421"
+				item: "goety_ladder:voidskeleton_spell_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "12183A555C83ECDE"
+			rewards: [{
+				id: "5460CF92DDBA1473"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "砸！瓦鲁多！"
+			tasks: [{
+				id: "1697B0BC911D39DC"
+				item: "goety_ladder:voidarrow_spell_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "029552FAFFCE7273"
+			rewards: [{
+				id: "37F16FCCB560A40E"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "小心它们的爪子，这可不是闹着玩的"
+			tasks: [{
+				id: "1116B31887970A3F"
+				item: "goety_ladder:voidzombie_spell_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "0F24139E3FCEF2B6"
+			rewards: [{
+				id: "77F73D67F80BD7FB"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "Rua!杀戮光环！"
+			tasks: [{
+				id: "6E839917A4181B52"
+				item: "goety_ladder:voidslash_spell_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "1F287422AA92E3EB"
+			rewards: [{
+				id: "714F2690A62C3DA3"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "陪你一起去看流星雨~落在大地上~"
+			tasks: [{
+				id: "0AF4830409BC8BA8"
+				item: "goety_ladder:stardown_spell_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "4507AA550A08712C"
+			rewards: [{
+				id: "6D5C669AE731C238"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "跪下吧"
+			tasks: [{
+				id: "204334D0D81B11A2"
+				item: "goety_ladder:voidgravity_spell_focus"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "250BF95CB4A96104"
+			rewards: [{
+				id: "077730CC2FC55272"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "我的“不义游戏”已经死了"
+			tasks: [{
+				id: "79340CCDF6046192"
+				item: "goety_ladder:voidexchang_spell_focus"
+				type: "item"
+			}]
+			x: 43.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["103DC4F1BEC126AA"]
+			id: "37C4FCA812776D6E"
+			rewards: [{
+				id: "6CEB6FAE37332843"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "虚空开会"
+			tasks: [{
+				id: "7816CF5412DFFB5C"
+				item: "goety_ladder:voidnecromancer_spell_focus"
+				type: "item"
+			}]
+			x: 41.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["76A201989C9D8C76"]
+			id: "7EFA48F0090651F5"
+			rewards: [{
+				id: "10CF7BF361893C2B"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0034F6B347F29844"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+						}
+					}
+					id: "goety_ladder:voiderror_staff"
+				}
+				type: "item"
+			}]
+			x: 42.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F826C0D5C6374B6"]
+			id: "178FF7B67BA5802D"
+			rewards: [
+				{
+					id: "5874099885649C52"
+					item: "goety_ladder:voidslash_spell_focus"
+					type: "item"
+				}
+				{
+					id: "36FB721E4A1B0DDF"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "201D76D754659E7C"
+					item: "enigmaticlegacy:astral_dust"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4E5E61BFC5040FD3"
+					item: "goety_ladder:voidlight_crown"
+					type: "item"
+				}
+				{
+					id: "7D2250C32E3043E5"
+					item: "goety_ladder:voidlight_robe"
+					type: "item"
+				}
+			]
+			title: "虚华套装"
+			x: 42.0d
+			y: 1.5d
 		}
 	]
 	title: "魔法师的宝库"

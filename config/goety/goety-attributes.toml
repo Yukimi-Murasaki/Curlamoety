@@ -109,7 +109,7 @@
 		[Attributes.Mini-Bosses.Wight]
 			#How much Max Health Wights have, Default: 200.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			wightHealth = 300.0
+			wightHealth = 320.0
 			#How much damage Wights deals, Default: 12.5
 			#Range: 1.0 ~ 1.7976931348623157E308
 			wightDamage = 12.5
@@ -252,7 +252,7 @@
 			enderKeeperDamageCap = 2000.0
 			#How much damage Ender Keeper deals, Default: 14.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			enderKeeperDamage = 200.0
+			enderKeeperDamage = 140.0
 			#Ender Keepers attack HP percent damage, Default: 0.05
 			#Range: 0.0 ~ 1.0
 			enderKeeperHPPercentDamage = 0.005
@@ -269,10 +269,10 @@
 		[Attributes.Bosses.Apostle]
 			#Set Apostle's spell damage (ie, Fire Tornadoes, Fire Blasts, Roars), Default: 6.0
 			#Range: 6.0 ~ 1.7976931348623157E308
-			apostleMagicDamage = 120.0
+			apostleMagicDamage = 90.0
 			#Multiplies Apostle's Bow damage, Default: 2
 			#Range: > 1
-			apostleBowDamage = 40.0
+			apostleBowDamage = 30.0
 			#How much Max Health Apostles have, Default: 320.0
 			#Range: 100.0 ~ 1.7976931348623157E308
 			apostleHealth = 32000
@@ -295,7 +295,7 @@
 			vizierDamageCap = 500.0
 			#How much damage Viziers deals without weapons, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			vizierDamage = 50.0
+			vizierDamage = 40.0
 
 	[Attributes."Summoned Mobs"]
 

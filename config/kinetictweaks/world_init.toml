@@ -1,16 +1,19 @@
 
-#世界初始化设置 (每次开服时执行)
+#世界初始化设置
 #World Initialization Settings
 [world_init]
-	# 是否启用初始化逻辑
-	#Enable initialization logic.
+	# 是否启用首次加载存档初始化逻辑。
+	#Enable first world-load initialization logic.
 	enable = true
-	# 首次加载世界时执行的指令列表 (不需要加斜杠 /, 直接输入指令)
+	# 首次加载这个存档时执行的指令列表。每个列表项或每一行都会被当作一条独立指令执行。不要加斜杠 /，如果误加也会自动去掉。某条指令失败不会阻止后续指令继续执行，失败内容会提醒在线管理员。
 	#示例:
-	#["say World Initialized!", "gamerule keepInventory true"]
+	#["say World Initialized!", "gamerule keepInventory true", "time set day"]
 	#
-	#List of commands to execute on first load. (Do not add slash /, just type the command)
+	#Command list executed only on the first load of this world. Each list entry or each line is treated as one independent command. Do not add slash /. If slash is added by mistake, it will be removed automatically. A failed command will not stop later commands, and online admins will be notified.
 	#Examples:
-	#["say World Initialized!", "gamerule keepInventory true"]
+	#["say World Initialized!", "gamerule keepInventory true", "time set day"]
 	commands = []
+	# 单人模式下是否让玩家背包数据跟随存档目录，而不是跟随玩家名称或账号 UUID。开启后，更换名称或账户进入同一个单人存档时，会从当前存档目录恢复首次奖励装备、背包、末影箱、经验和 Forge 能力数据。此选项只影响单人模式，不影响多人服务器。
+	#In singleplayer, make player inventory data follow the save directory instead of player name or account UUID. When enabled, changing name or account inside the same singleplayer save restores starter reward equipment, inventory, ender chest, experience, and Forge capability data from this save directory. This option only affects singleplayer and does not affect multiplayer servers.
+	singleplayer_use_save_directory_player_data = true
 

@@ -2,11 +2,11 @@ let EventResult = Java.loadClass('net.minecraftforge.eventbus.api.Event$Result')
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable',event=>{
     let entity = event.entity
     let level = entity.level
+    let type = entity.getType()
     let {x,y,z} = entity
     let effectInstance = event.getEffectInstance()
     let effect = effectInstance.getEffect()
     let effectID = effectInstance.getDescriptionId()
-    //let pos = entity.blockPosition()
     if(entity.isPlayer()){
         if(global.armorSetMap.get(entity) == "murasaki"){//紫套装免疫与允许
             if(effect.getCategory() === "HARMFUL"){
@@ -41,6 +41,11 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Appli
                 ))
                 level.playSound(null,x,y,z,'minecraft:block.beacon.deactivate','players',0.3,1)
                 entity.setStatusMessage(Text.darkRed(Text.translate('curlamoety.lang.resistance_baned')))
+            }
+        }else if(effectID == 'minecraft:darkness'||effectID == 'minecraft:blindness'){
+            let headItem = entity.getItemBySlot("head")
+            if(headItem.id == "cataclysm:ignitium_helmet"||headItem.id == "cataclysm:cursium_helmet"||headItem.id =="twilightforest:fiery_helmet"||headItem.id == "twilightforest:yeti_helmet"){
+                event.setResult(EventResult.DENY)
             }
         }
     }

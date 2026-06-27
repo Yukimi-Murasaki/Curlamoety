@@ -3298,7 +3298,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
+			x: -15.0d
 			y: 8.5d
 		}
 		{
@@ -3319,7 +3319,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.0d
+			x: -14.0d
 			y: 8.5d
 		}
 		{
@@ -3610,6 +3610,22 @@
 			}]
 			x: -7.0d
 			y: 11.5d
+		}
+		{
+			id: "12E5A46635B376DC"
+			tasks: [{
+				id: "157B7234D818B994"
+				item: {
+					Count: 1
+					id: "goety_ladder:void_metal_shower"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: 8.5d
 		}
 	]
 	title: "锻造师的珍藏"

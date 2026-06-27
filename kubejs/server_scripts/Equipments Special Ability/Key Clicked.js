@@ -32,7 +32,7 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
                 player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.already_effect")))
             }else{
                 if(mainHandItem.id == "minecraft:diamond"||mainHandItem.id == "minecraft:amethyst_shard"||mainHandItem.id == "minecraft:emerald"){
-                    offHandItem.count --
+                    mainHandItem.count -- 
                     player.potionEffects.add("goety:fortunate",6000,2)
                     level.playSound(null,x,y,z,'minecraft:block.amethyst_block.break','players',1,1)
                 }else if(offHandItem.id == "minecraft:diamond"||offHandItem.id == "minecraft:amethyst_shard"||offHandItem.id == "minecraft:emerald"){

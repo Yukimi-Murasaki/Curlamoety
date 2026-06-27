@@ -13,15 +13,15 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == 'goety_revelation:apocalyptium_helmet')&&(chestplate.id =='goety_revelation:apocalyptium_chestplate')&&(leggings.id == 'goety_revelation:apocalyptium_leggings')&&(boots.id == 'goety_revelation:apocalyptium_boots'))
     {
         armorSet = "apocalyptium"
-        entity.modifyAttribute('goety_revelation:spell_power','apocalyptium_pw',6,'addition');
+        entity.modifyAttribute('goety_revelation:spell_power','apocalyptium_pw',4,'addition');
         entity.modifyAttribute('goety_revelation:spell_power','apocalyptium_pw2',0.15,'multiply_total');
         entity.modifyAttribute('goety_revelation:spell_power_multiplier','apocalyptium_pw3',0.6,'addition');
         entity.modifyAttribute('goety_revelation:spell_cooldown','apocalyptium_cd',0.48,'multiply_total');
         entity.modifyAttribute('goety_revelation:cast_duration','apocalyptium_cd2',0.48,'multiply_total');
         entity.modifyAttribute('minecraft:generic.attack_damage','apocalyptium_dmg',5,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','apocalyptium_dmg2',0.15,'multiply_total');
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'apocalyptium_mdm',0.5,'addition')
-        entity.modifyAttribute('goeticlegacy:servant_final_damage_multiplier','apocalyptium_sfdm',0.2,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'apocalyptium_mdm',0.6,'addition')
+        entity.modifyAttribute('goeticlegacy:servant_final_damage_multiplier','apocalyptium_sfdm',0.25,'addition')
     }
     else
     {
@@ -60,14 +60,12 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == 'goety_revelation:spectre_darkmage_helmet')&&(chestplate.id == 'goety_revelation:spectre_darkmage_chestplate')&&(leggings.id == 'goety_revelation:spectre_darkmage_leggings')&&(boots.id == 'goety_revelation:spectre_darkmage_boots'))
     {
         armorSet = "spectre_darkmage"
-        entity.modifyAttribute('goety_revelation:spell_power','spectre_darkmage_pw',3.6,'addition');//套装整体法强增加
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_darkmage_dmg',2,'addition');//攻击伤害增加
         entity.modifyAttribute('minecraft:generic.armor','spectre_darkmage_def',4,'addition');//护甲增加
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_darkmage_mdm',0.25,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_darkmage_mdm',0.3,'addition')
     }
     else
     {
-        entity.removeAttribute('goety_revelation:spell_power','spectre_darkmage_pw')
         entity.removeAttribute('minecraft:generic.attack_damage','spectre_darkmage_dmg')
         entity.removeAttribute('minecraft:generic.armor','spectre_darkmage_def')
         entity.removeAttribute("goeticlegacy:magic_damage_multiplier",'spectre_darkmage_mdm')
@@ -77,15 +75,13 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == 'goety_revelation:spider_darkmage_helmet')&&(chestplate.id == 'goety_revelation:spider_darkmage_chestplate')&&(leggings.id == 'goety_revelation:spider_darkmage_leggings')&&(boots.id == 'goety_revelation:spider_darkmage_boots'))
     {
         armorSet = "spider_darkmage"
-        entity.modifyAttribute('goety_revelation:spell_power','spider_darkmage_pw',1.6,'addition');//套装整体法强增加
-        entity.modifyAttribute('minecraft:generic.attack_damage','spider_darkmage_pw',2,'addition');//攻击伤害法强增加
+        entity.modifyAttribute('minecraft:generic.attack_damage','spider_darkmage_dmg',2,'addition');//攻击伤害增加
         entity.modifyAttribute('minecraft:generic.armor','spider_darkmage_def',4,'addition');//护甲增加
-        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_darkmage_sfdm',0.25,'addition')
+        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_darkmage_sfdm',0.3,'addition')
     }
     else
     {
-        entity.removeAttribute('goety_revelation:spell_power','spider_darkmage_pw')
-        entity.removeAttribute('minecraft:generic.attack_damage','spider_darkmage_pw')
+        entity.removeAttribute('minecraft:generic.attack_damage','spider_darkmage_dmg')
         entity.removeAttribute('minecraft:generic.armor','spider_darkmage_def')
         entity.removeAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_darkmage_sfdm')
     }
@@ -94,14 +90,14 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == 'goety_revelation:spectre_helmet')&&(chestplate.id =='goety_revelation:spectre_chestplate')&&(leggings.id == 'goety_revelation:spectre_leggings')&&(boots.id == 'goety_revelation:spectre_boots'))
     {
         armorSet = "spectre"
-        entity.modifyAttribute('goety_revelation:spell_power','spectre_pw',4,'addition');
+        entity.modifyAttribute('goety_revelation:spell_power','spectre_pw',1,'addition');
         entity.modifyAttribute('goety_revelation:spell_power_multiplier','spectre_pw2',0.5,'addition');
         entity.modifyAttribute('goety_revelation:spell_cooldown','spectre_cd',0.36,'multiply_total');
         entity.modifyAttribute('goety_revelation:cast_duration','spectre_cd2',0.36,'multiply_total');
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_dmg1',3,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_dmg2',0.07,'multiply_total');
         entity.modifyAttribute('minecraft:generic.armor','spectre_def',2,'addition');
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_mdm',0.2,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_mdm',0.25,'addition')
         
     }
     else
@@ -119,14 +115,14 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == 'goety_revelation:spider_helmet')&&(chestplate.id =='goety_revelation:spider_chestplate')&&(leggings.id == 'goety_revelation:spider_leggings')&&(boots.id == 'goety_revelation:spider_boots'))
     {
         armorSet = "spider"
-        entity.modifyAttribute('goety_revelation:spell_power','spider_pw',4,'addition');
+        entity.modifyAttribute('goety_revelation:spell_power','spider_pw',1,'addition');
         entity.modifyAttribute('goety_revelation:spell_power_multiplier','spider_pw2',0.5,'addition');
         entity.modifyAttribute('goety_revelation:spell_cooldown','spider_cd',0.36,'multiply_total');
         entity.modifyAttribute('goety_revelation:cast_duration','spider_cd2',0.36,'multiply_total');
         entity.modifyAttribute('minecraft:generic.attack_damage','spider_dmg1',3,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','spider_dmg2',0.07,'multiply_total');
         entity.modifyAttribute('minecraft:generic.armor','spider_def',2,'addition');
-        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_sfdm',0.2,'addition')
+        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_sfdm',0.25,'addition')
     }
     else
     {
@@ -144,7 +140,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "cursed_knight"
         entity.modifyAttribute('goeticlegacy:servant_damage_reduction_ratio','cursed_knightset1',0.08,'addition')
-        entity.modifyAttribute('goety_revelation:necromancy_power','cursed_knightset2',1,'addition')
+        entity.modifyAttribute('goety_revelation:necromancy_power','cursed_knightset2',0.5,'addition')
     }else{
         entity.removeAttribute('goeticlegacy:servant_damage_reduction_ratio','cursed_knightset1')
         entity.removeAttribute('goety_revelation:necromancy_power','cursed_knightset2')
@@ -154,7 +150,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "cursed_paladin"
         entity.modifyAttribute('goeticlegacy:servant_damage_reduction_ratio','cursed_paladinset1',0.12,'addition')
-        entity.modifyAttribute('goety_revelation:necromancy_power','cursed_paladinset2',2,'addition')
+        entity.modifyAttribute('goety_revelation:necromancy_power','cursed_paladinset2',1,'addition')
     }else{
         entity.removeAttribute('goeticlegacy:servant_damage_reduction_ratio','cursed_paladinset1')
         entity.removeAttribute('goety_revelation:necromancy_power','cursed_paladinset2')
@@ -163,17 +159,13 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == "goety:black_iron_helmet")&&(chestplate.id == 'goety:black_iron_chestplate')&&(leggings.id=='goety:black_iron_leggings')&&(boots.id=='goety:black_iron_boots'))
     {
         armorSet = "black_iron"
-        entity.modifyAttribute('goeticlegacy:magic_invul_reduction','black_ironset',2,'addition')
     }else{
-        entity.removeAttribute('goeticlegacy:magic_invul_reduction','black_ironset')
     }
     //黑暗
     if((head.id == "goety:dark_helmet")&&(chestplate.id == 'goety:dark_chestplate')&&(leggings.id=='goety:dark_leggings')&&(boots.id=='goety:dark_boots'))
     {
         armorSet = "dark"
-        entity.modifyAttribute('goeticlegacy:magic_invul_reduction','darkset',4,'addition')
     }else{
-        entity.removeAttribute('goeticlegacy:magic_invul_reduction','darkset')
     }
     //铁套
     if((head.id == "minecraft:iron_helmet")&&(chestplate.id == 'minecraft:iron_chestplate')&&(leggings.id=='minecraft:iron_leggings')&&(boots.id=='minecraft:iron_boots'))
@@ -260,7 +252,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "steeleaf"
         entity.modifyAttribute('minecraft:generic.attack_damage','steeleafset1',3,'addition')
-        entity.modifyAttribute('goety_revelation:wild_power','steeleafset2',2,'addition')
+        entity.modifyAttribute('goety_revelation:wild_power','steeleafset2',0.5,'addition')
     }else{
         entity.removeAttribute('minecraft:generic.attack_damage','steeleafset1')
         entity.removeAttribute('goety_revelation:wild_power','steeleafset2')
@@ -269,7 +261,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     if((head.id == "twilightforest:arctic_helmet")&&(chestplate.id == 'twilightforest:arctic_chestplate')&&(leggings.id=='twilightforest:arctic_leggings')&&(boots.id=='twilightforest:arctic_boots'))
     {
         armorSet = "arctic"
-        entity.modifyAttribute('goety_revelation:frost_power','arcitcset1',2,'addition')
+        entity.modifyAttribute('goety_revelation:frost_power','arcitcset1',0.5,'addition')
         entity.modifyAttribute("minecraft:generic.armor","arcitcset2",4,"addition")
         entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'arcitcset3',0.15,'addition')
     }else{
@@ -290,7 +282,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "fiery"
         entity.modifyAttribute('goety_revelation:resistance','fieryset1',0.08,'addition')
-        entity.modifyAttribute('goety_revelation:nether_power','fieryset2',3,'addition')
+        entity.modifyAttribute('goety_revelation:nether_power','fieryset2',1,'addition')
         entity.modifyAttribute('goety_revelation:spell_power','fieryset3',0.1,'multiply_total')
     }else{
         entity.removeAttribute('goety_revelation:resistance','fieryset1')
@@ -302,7 +294,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "yeti"
         entity.modifyAttribute('goeticlegacy:servant_damage_reduction_ratio','yetiset1',0.15,'addition')
-        entity.modifyAttribute('goety_revelation:frost_power','yetiset2',3,'addition')
+        entity.modifyAttribute('goety_revelation:frost_power','yetiset2',1,'addition')
         entity.modifyAttribute("goety_revelation:spell_duration",'yetiset3',1,'addition')
     }else{
         entity.removeAttribute('goety_revelation:resistance','yetiset1')
@@ -314,7 +306,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "ignitium"
         entity.modifyAttribute('goety_revelation:resistance','ignitiumset1',0.1,'addition')
-        entity.modifyAttribute('goety_revelation:nether_power','ignitiumset2',3,'addition')
+        entity.modifyAttribute('goety_revelation:nether_power','ignitiumset2',1,'addition')
         entity.modifyAttribute('goety_revelation:spell_power','ignitiumset3',0.12,'multiply_total')
     }else{
         entity.removeAttribute('goety_revelation:resistance','ignitiumset1')
@@ -326,8 +318,8 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
     {
         armorSet = "cursium"
         entity.modifyAttribute('goeticlegacy:servant_damage_reduction_ratio','cursiumset1',0.15,'addition')
-        entity.modifyAttribute('goety_revelation:frost_power','cursiumset2',3,'addition')
-        entity.modifyAttribute('goety_revelation:necromancy_power','cursiumset3',3,'addition')
+        entity.modifyAttribute('goety_revelation:frost_power','cursiumset2',1,'addition')
+        entity.modifyAttribute('goety_revelation:necromancy_power','cursiumset3',1,'addition')
         entity.modifyAttribute('goety_revelation:spell_power','cursiumset4',0.12,'multiply_total')
     }else{
         entity.removeAttribute('goety_revelation:resistance','cursiumset1')

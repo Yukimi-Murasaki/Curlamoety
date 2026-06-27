@@ -240,7 +240,7 @@
 		bulwarkCoolDown = 6000
 		#If damage received exceeds this amount, an additional shield will be broken per exceeded amount. Set to 0.0 to disable, Default: 15.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		bulwarkShieldBreakExtra = 240.0
+		bulwarkShieldBreakExtra = 2400.0
 
 	[Spells."Poison Dart Spell"]
 		#Poison Dart Spell Cooldown, Default: 20

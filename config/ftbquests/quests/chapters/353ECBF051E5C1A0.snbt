@@ -440,7 +440,7 @@
 				value: 1L
 			}]
 			title: "红石巨兽"
-			x: 9.5d
+			x: 11.0d
 			y: 7.5d
 		}
 		{
@@ -619,7 +619,7 @@
 				type: "advancement"
 			}]
 			title: "巫妖"
-			x: 11.0d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
@@ -638,7 +638,7 @@
 				type: "advancement"
 			}]
 			title: "米诺菇"
-			x: 12.5d
+			x: 14.0d
 			y: 7.5d
 		}
 		{
@@ -657,7 +657,7 @@
 				type: "advancement"
 			}]
 			title: "幻影骑士"
-			x: 14.0d
+			x: 15.5d
 			y: 7.5d
 		}
 		{
@@ -676,7 +676,7 @@
 				type: "advancement"
 			}]
 			title: "雪怪首领"
-			x: 15.5d
+			x: 17.0d
 			y: 7.5d
 		}
 		{
@@ -754,6 +754,32 @@
 			title: "异教首领"
 			x: 8.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["0AB2DF12CBBDE6ED"]
+			description: ["{ \"text\": \"链接：主线中的该BOSS\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"715132CF48F7CFC9\" } }"]
+			icon: {
+				Count: 1
+				id: "goety_ladder:voidliving_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "19383577B8F56D3C"
+			rewards: [{
+				id: "015E16E8456147B8"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				entity: "goety_ladder:void_necromancer"
+				id: "7DC517BDC848C927"
+				type: "kill"
+				value: 1L
+			}]
+			title: "虚空死灵法师"
+			x: 9.5d
+			y: 7.5d
 		}
 	]
 	title: "征服者的展柜"

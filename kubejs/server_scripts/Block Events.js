@@ -167,7 +167,7 @@ BlockEvents.rightClicked((event) => {
                 level.playSound(null,x,y,z,'minecraft:item.bone_meal.use','players',1,1)
             }
         }
-    }else if (block.id == 'minecraft:dragon_head'){//龙息
+    }else if (block.id == 'minecraft:dragon_head'||block.id == "minecraft:dragon_wall_head"){//龙息
         if(item.id == 'minecraft:glass_bottle'){
             if(global.witchAmuletMap.get(player)>=4) {
                 player.mainHandItem.count--
@@ -512,11 +512,18 @@ BlockEvents.rightClicked((event) => {
         if(block.id == "minecraft:diamond_block"){
             global.genericSummonCdMap.put(player,20)
         }else if(block.id == "minecraft:gold_block"){
-            player.tell(player.persistentData.getInt("generic_summon_cd"))
+            player.tell("0")
+            player.tell(global.fieryCdMap.get(player))
+            player.tell("1")
         }else if(block.id == "minecraft:iron_block"){
-            player.tell(global.genericSummonCdMap.get(player))
+            player.tell("2")
+            global.fieryCdMap.put(player,0)
+            player.tell("3")
         }else if(block.id == "cataclysm:cursium_block"){
-            player.tell(server.persistentData.EnderHero_counter)
+            // let summon = level.createEntity("cataclysm:abyss_portal")
+            // summon.setPosition(x+0.5,y+1,z+0.5)
+            // summon.setDamage(10)
+            // summon.spawn()
         }else if(block.id == "goety:void_shrine"){
             server.persistentData.EnderHero_counter = 0
         }

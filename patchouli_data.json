@@ -28,7 +28,19 @@
         "goety:intro/cursed_cage",
         "goety:rumors/terminus",
         "goety:crafts/artifice/ominous_pyre",
-        "goety:crafts/ominous_pyre"
+        "goety:crafts/ominous_pyre",
+        "goety:ritual/ill_ritual",
+        "goety:ritual/void_ritual",
+        "goety:crafts/artifice/shade_gravestone"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "goety:witches_brew": {
+      "viewedEntries": [
+        "goety:brewing/catalysts",
+        "goety:brewing/augmentation",
+        "goety:brewing/capacity"
       ],
       "bookmarks": [],
       "completedManualQuests": []

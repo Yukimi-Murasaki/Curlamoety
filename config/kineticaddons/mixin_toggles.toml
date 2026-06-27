@@ -8,83 +8,56 @@
 # [核心重构: 铁砧、附魔与属性]
 # [Core Refactoring: Anvil & Enchantment]
 
-# 铁砧核心机制重构:
-# 1. 移除等级上限: 彻底解除原版 40 级的“过于昂贵”限制，允许无限次锻造。
-# 2. 移除累积惩罚(PWP): 修复铁砧修理次数越多经验消耗越贵的机制，保持合理的固定消耗。
-# 3. 附魔拦截解除: 解除硬核模式或特定模组对物品附魔的强行拦截。
-# Anvil Core Mechanics Refactoring:
-# 1. Level Cap Removal: Completely removes the vanilla 40-level "Too Expensive" limit.
-# 2. No Prior Work Penalty (PWP): Removes the compounding XP cost for repeated repairs.
-# 3. Interception Bypass: Bypasses hardcoded enchantment restrictions.
-anvilenchantment.AnvilEnchantmentCoreMixin$AnvilMenuFix = true
+# 铁砧与附魔底层综合重构：
+# 1. 铁砧解限：彻底移除 40 级“过于昂贵”限制，移除多次修理的累积经验惩罚(PWP)。
+# 2. 附魔平滑化：实现免税附魔与线性经验扣除机制，并注入服务端附魔台。
+# 3. 拦截与解封：突破原版附魔等级上限，智能双模配置过滤，并注入底层 Helper 确保跨模组兼容。
+# Anvil & Enchantment Core Refactoring:
+# 1. Anvil Unlock: Removes the 40-level limit and Prior Work Penalty (PWP) for endless repairs.
+# 2. Smooth XP: Implements tax-free, linear XP deduction, syncing with server-side enchantment tables.
+# 3. Intercept & Uncap: Removes max level caps, applies smart bi-modal filtering, and injects into base Helpers for cross-mod compatibility.
+anvilenchantment.AnvilEnchantmentCoreMixin = true
 
-# 铁砧界面优化: 从 GUI 渲染层面彻底抹除“过于昂贵”的红色警告文本。
-# Anvil UI Optimization: Removes the red 'Too Expensive' warning text from the GUI.
-anvilenchantment.AnvilMixin$AnvilScreenFix = true
+# 铁砧界面优化：从 GUI 渲染层面彻底抹除“过于昂贵”的红色警告文本。
+# Anvil UI Optimization: Visually removes the red 'Too Expensive' warning text from the GUI.
+anvilenchantment.AnvilMixin = true
 
-# 附魔经验消耗平滑化:
-# 1. 免税附魔: 修改原版的经验等级扣除逻辑，改为直接扣除对应的经验点数。
-# 2. 线性消耗: 防止高等级玩家在附魔时损失过多经验，实现绝对公平的等级转换比。
-# Smooth Enchantment XP Cost:
-# 1. Tax-Free Enchanting: Deducts flat XP points instead of entire XP levels.
-# 2. Linear Cost: Prevents high-level players from losing disproportionate amounts of XP.
-anvilenchantment.AnvilEnchantmentCoreMixin$PlayerFix = true
-
-# 附魔台平滑消耗注入: 配合免税附魔逻辑，修改附魔台服务端的经验扣除机制。
-# Enchanting Table Cost Injection: Modifies server-side deduction to support tax-free enchanting.
-anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentMenuFix = true
-
-# 附魔系统解限与过滤:
-# 1. 突破等级上限: 解除原版附魔最高等级限制。
-# 2. 智能双模过滤: 支持基于 ID、Tag 或所属模组的黑/白名单机制，精准控制附魔可用性。
-# Enchantment Uncapping & Filtering:
-# 1. Max Level Unlock: Removes hardcoded vanilla enchantment level caps.
-# 2. Smart Filtering: Supports ID/Tag/Mod-based blacklists and whitelists for precise control.
-anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentFix = true
-
-# 跨模组兼容支持: 将附魔过滤规则与白名单逻辑注入至底层 Helper，确保其他模组的附魔机制正常工作。
-# Cross-Mod Compatibility: Injects filtering rules into the base Helper to ensure modded enchanters work correctly.
-anvilenchantment.AnvilEnchantmentCoreMixin$EnchantmentHelperFix = true
-
-# 第六感附魔 (Sixth Sense):
-# 1. 潜行透视: 玩家潜行时激活生物透视描边效果。
-# 2. 动态渲染: 支持基于实体类型或敌对状态的自定义颜色渲染。
+# 第六感附魔 (Sixth Sense)：
+# 1. 潜行透视：玩家潜行时激活周围生物透视描边效果。
+# 2. 动态渲染：支持基于实体类型或敌对状态的自定义颜色渲染。
 # Sixth Sense Enchantment:
-# 1. Sneak Wallhack: Activates entity glowing outlines when the player sneaks.
-# 2. Dynamic Rendering: Supports custom colors based on entity type or hostility.
-anvilenchantment.mixin.client.EntityGlowingMixin = true
+# 1. Sneak Wallhack: Activates glowing outlines on entities when the player sneaks.
+# 2. Dynamic Rendering: Custom outline colors based on entity type or hostility.
+anvilenchantment.EntityGlowingMixin = true
 
 # [其他核心机制]
 # [Other Core Mechanics]
 
-# 真·无限弓: 拥有无限附魔的弓在背包中没有任何箭矢时，依然可以拉弓射击。
-# True Infinity Bow: Infinity bows can be drawn and fired even with zero arrows in the inventory.
-anvilenchantment.ItemAndBlockBehaviorMixin$BowItemFix = true
+# 物品与方块行为综合修正：
+# 1. 真·无限弓：无限弓在背包无箭矢时依然可以拉弓射击。
+# 2. 万能工具安全协议：不递归调用掉落表；强制掉落名单方块并压制经验；自动处理树叶、蜘蛛网等剪刀类方块；取消刷怪笼破坏经验。
+# 3. 万能工具特性注入：作为“超级宝藏附魔”加入 30 级候选池；修复 Jade 挖掘判定并兼容耐久磨损与诅咒。
+# 4. 引雷优化：强化三叉戟引雷判定逻辑，放宽雷雨天气的严苛要求。
+# Item & Block Behavior Overhaul:
+# 1. True Infinity Bow: Infinity bows can be drawn and fired even with zero arrows in inventory.
+# 2. Omni-Tool Safety: Avoids recursive loot calls; force-drops configured blocks while suppressing XP; safely handles shears-only blocks and cancels spawner XP.
+# 3. Omni-Tool Injection: Added to level 30+ pools as a super treasure enchant; fixes Jade tool checks while respecting durability curses.
+# 4. Channeling Tweaks: Optimizes Trident Channeling, relaxing the strict thunderstorm requirement.
+anvilenchantment.ItemAndBlockBehaviorMixin = true
 
-# 无限流体桶: 赋予流体桶无限属性，支持无限次吸水与倒水而不被消耗。
-# Infinite Fluid Bucket: Grants buckets infinite properties, allowing endless filling and emptying.
+# 无限流体桶：赋予流体桶无限属性，支持无限次吸水与倒水而不被消耗。
+# Infinite Fluid Bucket: Grants buckets infinite properties for endless filling and emptying.
 anvilenchantment.InfinityBucketMixins = true
 
-# 万能工具安全掉落修正: 不再递归调用方块掉落表；非名单方块严格遵守原版/数据包掉落，只有配置名单方块才强制掉落自身，并额外处理树叶、草、蜘蛛网等剪刀类安全掉落。
-# Safe Omni-Tool Drop Fix: Avoids recursive loot calls; non-listed blocks follow vanilla/datapack loot rules, only configured blocks are force-dropped, with safe shears-like drops for leaves, grass, cobwebs, etc.
-anvilenchantment.ItemAndBlockBehaviorMixin$BlockFix = true
+# [交易与交互系统]
+# [Trade & Interaction System]
 
-# 万能工具附魔台候选池注入: 30级及以上时将万能工具作为超级宝藏附魔加入原版权重候选池，使用 VERY_RARE 低权重，常见工具池中概率大约 5%。
-# Omni-Tool Weighted Enchanting Pool: At level 30+, adds Omni-Tool as a super treasure enchantment into the vanilla weighted pool with VERY_RARE weight, roughly around 5% in common tool pools.
-anvilenchantment.ItemAndBlockBehaviorMixin$EnchantmentHelperFix = true
-
-# 工具与耐久综合修正: 处理万能工具的正确工具判定/Jade可挖掘显示，同时保留易碎诅咒等耐久损耗规则。
-# Tool and Durability Fixes: Handles Omni-Tool correct-tool checks/Jade harvestability display while keeping Breaking Curse and other durability rules working.
-anvilenchantment.ItemAndBlockBehaviorMixin$ItemStackFix = true
-
-# 挖掘流程与经验修正: 支持熔炼附魔在挖掘流程中生效，并在万能工具强制掉落名单方块时压制该次方块经验。
-# Mining Flow and XP Fix: Supports Smelter during block breaking and suppresses block XP when Omni-Tool force-drops configured blocks.
-anvilenchantment.ItemAndBlockBehaviorMixin$ServerPlayerGameModeFix = true
-
-# 刷怪笼经验修正: 当万能工具通过强制掉落名单挖下刷怪笼时，取消刷怪笼自身 spawnAfterBreak 产生的经验；普通破坏仍保持原版经验。
-# Spawner XP Fix: Cancels SpawnerBlock spawnAfterBreak XP only when Omni-Tool force-drops a configured spawner; normal breaking keeps vanilla XP behavior.
-anvilenchantment.ItemAndBlockBehaviorMixin$SpawnerBlockFix = true
-
-# 引雷优化: 强化三叉戟的引雷天气判定逻辑，放宽雷雨天气的严苛要求。
-# Channeling Tweaks: Optimizes Trident Channeling weather checks, relaxing the strict thunderstorm requirement.
-anvilenchantment.ItemAndBlockBehaviorMixin$ThrownTridentFix = true
+# 钱包村民交易自动补货：
+# 1. 智能提取：点击交易时，自动从玩家钱包提取货币补满交易槽。
+# 2. 自动退款：关闭界面时，交易槽中剩余的货币会自动存回钱包。
+# 3. 完美兼容：仅针对钱包配置内的货币物品生效，普通交易材料保持原版行为。
+# Wallet Villager Trade Auto Refill:
+# 1. Smart Withdrawal: Automatically withdraws currency from the wallet to fill payment slots upon trade selection.
+# 2. Auto Refund: Leftover currency is deposited back into the wallet when the GUI is closed.
+# 3. Seamless Compat: Only handles configured wallet currencies; normal items behave as vanilla.
+curios.MerchantMenuMixin = true

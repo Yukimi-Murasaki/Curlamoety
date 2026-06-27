@@ -1,0 +1,6 @@
+
+[ftb_item_task_jump]
+	#是否启用 FTB 任务物品跳转提示与跳转按键。
+	#Enable FTB quest item jump tooltip and jump hotkey.
+	enableTaskJump = true
+

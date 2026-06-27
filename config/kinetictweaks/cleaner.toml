@@ -44,7 +44,7 @@
 	#3. 物品标签，使用 # 开头:
 	#3. Item tag, starts with #:
 	#"#forge:ingots"
-	itemWhitelist = ["minecraft:ancient_debris", "@tacz", "#forge:ingots", "minecraft:nether_star", "@goety_revelation", "@kubejs", "@curlamoety", "@enigmaticlegacy", "@enigmaticaddons", "@enigmaticdelicacy", "minecraft:heavy_core", "goety:unholy_blood", "goety:night_beacon", "goetyawaken:glowing_ember", "goety:treasure_bag", "goety:void_shard", "goety:void_echo", "enigmaticlegacy:guardian_heart", "goety:cursed_metal_ingot", "minecraft:ghast_tear", "minecraft:sculk", "minecraft:sculk_catalyst", "goety:crone_hat", "goety:shadow_essence", "goety:gold_candlestick"]
+	itemWhitelist = ["minecraft:ancient_debris", "@tacz", "#forge:ingots", "minecraft:nether_star", "@goety_revelation", "@kubejs", "@curlamoety", "@enigmaticlegacy", "@enigmaticaddons", "@enigmaticdelicacy", "minecraft:heavy_core", "goety:unholy_blood", "goety:night_beacon", "goetyawaken:glowing_ember", "goety:treasure_bag", "goety:void_shard", "goety:void_echo", "enigmaticlegacy:guardian_heart", "goety:cursed_metal_ingot", "minecraft:ghast_tear", "minecraft:sculk", "minecraft:sculk_catalyst", "goety:crone_hat", "goety:shadow_essence", "goety:gold_candlestick", "goety:dark_ingot", "enigmaticlegacy:evil_ingot", "goety:dark_metal_block", "goety:necrotic_gold_candlestick"]
 	# 是否启用非物品实体清理。
 	#开启后，会按照下面的实体 ID 列表清理指定实体。
 	#Whether to enable non-item entity cleaning.
@@ -136,10 +136,10 @@
 	#数值越大，按钮越靠右。
 	#X offset of the trash bin button.
 	#Higher values move the button to the right.
-	button_x = 148
+	button_x = 140
 	# 垃圾桶按钮的 Y 轴位置偏移。
 	#数值越大，按钮越靠下。
 	#Y offset of the trash bin button.
 	#Higher values move the button downward.
-	button_y = 61
+	button_y = 55
 

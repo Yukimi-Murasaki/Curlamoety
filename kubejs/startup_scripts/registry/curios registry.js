@@ -19,10 +19,12 @@ StartupEvents.registry('item', event => {
             })
             .canUnequip((slotContext, stack) => true)
             .modifySlotsTooltip((tooltips, stack) => tooltips)
-            .addAttribute("goety_revelation:spell_power",'old_necklace_pw',2,'addition')
+            .addAttribute("goety_revelation:spell_power",'old_necklace_pw',1,'addition')
             .modifyAttribute(attributeModificationContext => {
                 let { slotContext, UUID, stack, modifiers } = attributeModificationContext
                 attributeModificationContext.modify("goety_revelation:soul_decrease_reduction",'old_necklace_sdr',0.08,'addition')
+                attributeModificationContext.modify("goeticlegacy:servant_final_damage_multiplier",'old_necklace_sfdm',0.1,'addition')
+                attributeModificationContext.modify("goeticlegacy:magic_damage_multiplier",'old_necklace_mdm',0.1,'addition')
                 attributeModificationContext.modify("minecraft:generic.luck",'old_necklace_luck',6,'addition')
                 attributeModificationContext.modify("goety_revelation:spell_duration",'old_necklace_sd',0.5,'addition')
                 attributeModificationContext.modify("goeticlegacy:soul_regen",'old_necklace_sr',10,'addition')
@@ -55,10 +57,12 @@ StartupEvents.registry('item', event => {
             })
         .canUnequip((slotContext, stack) => true)
         .modifySlotsTooltip((tooltips, stack) => tooltips)
-        .addAttribute("goety_revelation:spell_power",'soul_necklace_pw',3,'addition')
+        .addAttribute("goety_revelation:spell_power",'soul_necklace_pw',1.5,'addition')
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext
             attributeModificationContext.modify("goety_revelation:soul_decrease_reduction",'soul_necklace_sdr',0.10,'addition')
+            attributeModificationContext.modify("goeticlegacy:servant_final_damage_multiplier",'soul_necklace_sfdm',0.15,'addition')
+            attributeModificationContext.modify("goeticlegacy:magic_damage_multiplier",'soul_necklace_mdm',0.15,'addition')
             attributeModificationContext.modify("minecraft:generic.luck",'soul_necklace_luck',8,'addition')
             attributeModificationContext.modify("goety_revelation:spell_duration",'soul_necklace_sd',1,'addition')
             attributeModificationContext.modify("goeticlegacy:soul_regen_ratio",'soul_necklace_srr',0.15,'addition')
@@ -94,7 +98,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'death_necklace_pw',
-            4,
+            1.5,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -109,6 +113,18 @@ StartupEvents.registry('item', event => {
                 "goety_revelation:soul_decrease_reduction",
                 'death_necklace_sdr',
                 0.12,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:servant_final_damage_multiplier",
+                'death_necklace_sfdm',
+                0.2,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'death_necklace_mdm',
+                0.2,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -161,7 +177,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'faith_necklace_pw',
-            5,
+            2,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -176,6 +192,18 @@ StartupEvents.registry('item', event => {
                 "goety_revelation:soul_decrease_reduction",
                 'faith_necklace_sdr',
                 0.16,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:servant_final_damage_multiplier",
+                'faith_necklace_sfdm',
+                0.3,
+                'addition'
+            )
+            attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'faith_necklace_mdm',
+                0.3,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -505,7 +533,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'evil_ring_pw',
-                    3,
+                    2,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -538,6 +566,18 @@ StartupEvents.registry('item', event => {
                         "goeticlegacy:magic_damage_multiplier",
                         'evil_ring_mdm',
                         0.2,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
+                        "goeticlegacy:servant_final_damage_multiplier",
+                        'evil_ring_sfdm',
+                        0.1,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
+                        "goeticlegacy:magic_invul_reduction",
+                        'evil_ring_mir',
+                        3,
                         'addition'
                     )
                 })
@@ -577,7 +617,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'blood_ring_pw',
-                    4,
+                    3,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -603,13 +643,25 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:cast_duration",
                         'blood_ring_cd2',
-                        0.2,
+                        0.15,
                         'multiply_base'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'blood_ring_mdm',
                         0.3,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
+                        "goeticlegacy:servant_final_damage_multiplier",
+                        'blood_ring_sfdm',
+                        0.15,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
+                        "goeticlegacy:magic_invul_reduction",
+                        'blood_ring_mir',
+                        4,
                         'addition'
                     )
                 })
@@ -648,7 +700,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'dominator_ring_pw1',
-                    6,
+                    3,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -656,7 +708,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'dominator_ring_pw2',
-                        0.15,
+                        0.2,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -674,7 +726,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:cast_duration",
                         'dominator_ring_cd2',
-                        0.25,
+                        0.15,
                         'multiply_base'
                     )
                     attributeModificationContext.modify(
@@ -684,9 +736,15 @@ StartupEvents.registry('item', event => {
                         'addition'
                     )
                     attributeModificationContext.modify(
+                        "goeticlegacy:servant_final_damage_multiplier",
+                        'dominator_ring_sfdm',
+                        0.2,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
                         "goeticlegacy:magic_invul_reduction",
                         'dominator_ring_mir',
-                        5,
+                        6,
                         'addition'
                     )
                 })
@@ -725,7 +783,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute(
                     "goety_revelation:spell_power",
                     'stella_ring_pw1',
-                    8,
+                    4,
                     'addition'
                 )
                 .modifyAttribute(attributeModificationContext => {
@@ -733,7 +791,7 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:spell_power_multiplier",
                         'stella_ring_pw2',
-                        0.2,
+                        0.25,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -751,13 +809,19 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goety_revelation:cast_duration",
                         'stella_ring_cd2',
-                        0.25,
+                        0.15,
                         'multiply_base'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'stella_ring_mdm',
                         0.5,
+                        'addition'
+                    )
+                    attributeModificationContext.modify(
+                        "goeticlegacy:servant_final_damage_multiplier",
+                        'stella_ring_sfdm',
+                        0.25,
                         'addition'
                     )
                     attributeModificationContext.modify(
@@ -1169,7 +1233,7 @@ StartupEvents.registry('item', event => {
             .addAttribute(
                 "minecraft:generic.max_health",
                 'glorious_belt_health',
-                10,
+                20,
                 'addition'
             )
             .canDrop((slotContext, source, lootingLevel, recentlyHit, stack) => false)
@@ -1258,7 +1322,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'gloomy_circlet_pw',
-            2,
+            0.5,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -1288,15 +1352,21 @@ StartupEvents.registry('item', event => {
                 'addition'
             )
             attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'gloomy_circlet_mdm',
+                0.1,
+                'addition'
+            )
+            attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'gloomy_circlet_sfdm',
-                0.07,
+                0.2,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goeticlegacy:servant_damage_reduction_ratio",
                 'gloomy_circlet_sdrm',
-                0.07,
+                0.08,
                 'addition'
             )
         })
@@ -1331,7 +1401,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'moon_circlet_pw1',
-            3,
+            0.8,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -1361,9 +1431,15 @@ StartupEvents.registry('item', event => {
                 'addition'
             )
             attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'moon_circlet_mdm',
+                0.15,
+                'addition'
+            )
+            attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'moon_circlet_sfdm',
-                0.1,
+                0.35,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1404,7 +1480,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",//
             'twilight_crown_pw1',
-            4,
+            1,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -1434,9 +1510,15 @@ StartupEvents.registry('item', event => {
                 'addition'
             )
             attributeModificationContext.modify(
+                "goeticlegacy:magic_damage_multiplier",
+                'moon_circlet_mdm',
+                0.2,
+                'addition'
+            )
+            attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'twilight_crown_sfdm',
-                0.15,
+                0.5,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1514,7 +1596,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goety_revelation:spell_power",
             'goal_ty_1',
-            3,
+            1,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {
@@ -1735,7 +1817,7 @@ StartupEvents.registry('item', event => {
             )
             attributeModificationContext.modify(
                 "minecraft:generic.attack_speed",
-                'calamity_source_2',
+                'calamity_source_3',
                 0.08,
                 'multiply_total'
             )
@@ -1772,7 +1854,7 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goeticlegacy:servant_final_damage_multiplier",
             'twilight_sparkle_1',
-            0.15,
+            0.25,
             'addition'
         )
         .modifyAttribute(attributeModificationContext => {

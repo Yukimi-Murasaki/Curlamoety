@@ -29,18 +29,6 @@ EntityEvents.hurt(event =>{
                 entity.potionEffects.add('wither',200,1)
             }
         break;
-
-        
-        case 'curlamoety:mary_sue_staff':
-            if(entity.isLiving()){
-                let effects = entity.getActiveEffects()
-                effects.forEach(effectInstance =>{
-                    if(effectInstance.getEffect().isBeneficial())
-                    {
-                        entity.removeEffect(effectInstance.getEffect())
-                    }
-                })
-            }
         
         case 'curlamoety:mary_sue_staff_plus':
             if(entity.isLiving()){

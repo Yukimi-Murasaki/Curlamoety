@@ -91,7 +91,7 @@
 	#
 	# 附魔白名单：强制允许这些 [物品 ; 附魔] 组合，无视原版的兼容性检查。
 	#Enchantment Whitelist: Forcibly allow these [Item ; Enchant] combinations, bypassing vanilla checks.
-	whitelist = ["#minecraft:axes; minecraft:sharpness, minecraft:smite, minecraft:bane_of_arthropods, minecraft:mob_looting, minecraft:knockback, minecraft:fire_aspect", "#curios:curio;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:tarot;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:head;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:back;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:body;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:hands;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:necklace;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:rings;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:feet;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:charm;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:talisman;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:belt;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:waist;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:scroll;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:spellstone;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "minecraft:bucket;minecraft:infinity", "minecraft:water_bucket;minecraft:infinity", "minecraft:lava_bucket;minecraft:infinity", "minecraft:cod_bucket;minecraft:infinity", "minecraft:salmon_bucket;minecraft:infinity", "minecraft:tropical_fish_bucket;minecraft:infinity", "minecraft:pufferfish_bucket;minecraft:infinity", "minecraft:axolotlbucket;minecraft:infinity", "minecraft:tadpole_bucket;minecraft:infinity", "minecraft:powder_snow_bucket;minecraft:infinity", "minecraft:void_bucket;minecraft:infinity", "minecraft:end_mud_bucket;minecraft:infinity"]
+	whitelist = ["#minecraft:axes; minecraft:sharpness, minecraft:smite, minecraft:bane_of_arthropods, minecraft:mob_looting, minecraft:knockback, minecraft:fire_aspect", "#curios:curio;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:tarot;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:head;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:back;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:body;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:hands;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:necklace;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:rings;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:ring;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:feet;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:charm;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:talisman;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:belt;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:waist;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:scroll;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:core;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "#curios:spellstone;minecraft:binding_curse,minecraft:vanishing_curse,kineticaddons:breaking_curse", "minecraft:bucket;minecraft:infinity", "minecraft:water_bucket;minecraft:infinity", "minecraft:lava_bucket;minecraft:infinity", "minecraft:cod_bucket;minecraft:infinity", "minecraft:salmon_bucket;minecraft:infinity", "minecraft:tropical_fish_bucket;minecraft:infinity", "minecraft:pufferfish_bucket;minecraft:infinity", "minecraft:axolotlbucket;minecraft:infinity", "minecraft:tadpole_bucket;minecraft:infinity", "minecraft:powder_snow_bucket;minecraft:infinity", "minecraft:void_bucket;minecraft:infinity", "minecraft:end_mud_bucket;minecraft:infinity"]
 	#
 	# 附魔黑名单：严厉禁止这些组合。匹配时铁砧将无法产出成品。
 	#Enchantment Blacklist: Strictly forbid these combinations. Anvil output will be cleared.
@@ -101,6 +101,26 @@
 	#Global Disabled Enchantments: Direct Enchantment IDs. Listed enchantments are completely disabled globally.
 	#示例/Examples: ["minecraft:mending", "minecraft:unbreaking"]
 	disabledEnchantments = ["kineticaddons:leech", "kineticaddons:omni_tool", "kineticaddons:smelter", "kineticaddons:magic_protection"]
+	#
+	# 是否启用熔炼附魔。关闭后将不会注册该附魔，游戏内等同不存在（需重启）。
+	#Enable Smelter enchantment. If disabled, it will not be registered on next restart.
+	enableSmelter = true
+	#
+	# 是否启用汲取附魔。关闭后将不会注册该附魔，游戏内等同不存在（需重启）。
+	#Enable Leech enchantment. If disabled, it will not be registered on next restart.
+	enableLeech = true
+	#
+	# 是否启用第六感附魔。关闭后将不会注册该附魔，游戏内等同不存在（需重启）。
+	#Enable Sixth Sense enchantment. If disabled, it will not be registered on next restart.
+	enableSixthSense = true
+	#
+	# 是否启用万能工具附魔。关闭后将不会注册该附魔，游戏内等同不存在（需重启）。
+	#Enable Omni-Tool enchantment. If disabled, it will not be registered on next restart.
+	enableOmniTool = true
+	#
+	# 是否启用启蒙附魔。关闭后将不会注册该附魔，游戏内等同不存在（需重启）。
+	#Enable Enlightenment enchantment. If disabled, it will not be registered on next restart.
+	enableEnlightenment = true
 
 #附魔效果的具体数值平衡设定。修改后通常无需重启，但建议重新打开容器界面。
 #Balancing values for custom enchantments. Changes usually apply without restart.

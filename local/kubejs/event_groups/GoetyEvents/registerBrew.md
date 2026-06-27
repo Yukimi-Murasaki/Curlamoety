@@ -22,33 +22,23 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| addSpecialBrewEffect | Object, String |  | SpecialBrewEffectBuilder | ✘ |
 | removeEntityCatalyst | Object |  | void | ✘ |
-| removeCapacity | Object |  | void | ✘ |
 | removeCatalyst | Object |  | void | ✘ |
-| addCapacity | Object, int |  | void | ✘ |
+| removeCapacity | Object |  | void | ✘ |
 | removeAugmentation | Object |  | void | ✘ |
-| setCapacityLevels | Object |  | void | ✘ |
 | addAugmentation | Object, String, int |  | void | ✘ |
-| exit | Object |  | Object | ✘ |
-| exit |  |  | Object | ✘ |
-| cancel | Object |  | Object | ✘ |
-| cancel |  |  | Object | ✘ |
+| addCapacity | Object, int |  | void | ✘ |
+| setCapacityLevels | Object |  | void | ✘ |
+| addSpecialBrewEffect | Object, String |  | SpecialBrewEffectBuilder | ✘ |
 | success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| exit |  |  | Object | ✘ |
+| exit | Object |  | Object | ✘ |
+| cancel |  |  | Object | ✘ |
+| cancel | Object |  | Object | ✘ |
 
 
 ### Documented members:
-
-- `SpecialBrewEffectBuilder addSpecialBrewEffect(Object item, String effectType)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-  - effectType: String- 效果类型（字符串），如 'bats', 'bees', 'grow', 'explode' 等
-
-```
-注册特殊效果的 brewing 配方（支持链式调用）
-```
 
 - `void removeEntityCatalyst(Object entity)`
 
@@ -57,15 +47,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 移除实体催化剂
-```
-
-- `void removeCapacity(Object item)`
-
-  Parameters:
-  - item: Object- 物品ID（字符串）或物品对象
-
-```
-移除容量剂
 ```
 
 - `void removeCatalyst(Object item)`
@@ -77,14 +58,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 移除物品催化剂
 ```
 
-- `void addCapacity(Object item, int level)`
+- `void removeCapacity(Object item)`
 
   Parameters:
   - item: Object- 物品ID（字符串）或物品对象
-  - level: int- 等级（>=0）
 
 ```
-注册容量剂
+移除容量剂
 ```
 
 - `void removeAugmentation(Object item)`
@@ -94,15 +74,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ```
 移除增强剂
-```
-
-- `void setCapacityLevels(Object levels)`
-
-  Parameters:
-  - levels: Object- 等级增量数组，从1级开始，例如 [2,2,2,2,4]
-
-```
-设置容量等级增量表
 ```
 
 - `void addAugmentation(Object item, String modifier, int level)`
@@ -116,40 +87,33 @@ Note: Even if no fields are listed above, some methods are still available as fi
 注册增强剂
 ```
 
-- `Object exit(Object var0)`
+- `void addCapacity(Object item, int level)`
 
   Parameters:
-  - var0: Object
+  - item: Object- 物品ID（字符串）或物品对象
+  - level: int- 等级（>=0）
 
 ```
-Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`exit` denotes a `default` outcome.
+注册容量剂
 ```
 
-- `Object exit()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
-
-`exit` denotes a `default` outcome.
-```
-
-- `Object cancel(Object var0)`
+- `void setCapacityLevels(Object levels)`
 
   Parameters:
-  - var0: Object
+  - levels: Object- 等级增量数组，从1级开始，例如 [2,2,2,2,4]
 
 ```
-Cancels the event with the given exit value. Execution will be stopped **immediately**.
-
-`cancel` denotes a `false` outcome.
+设置容量等级增量表
 ```
 
-- `Object cancel()`
-```
-Cancels the event with default exit value. Execution will be stopped **immediately**.
+- `SpecialBrewEffectBuilder addSpecialBrewEffect(Object item, String effectType)`
 
-`cancel` denotes a `false` outcome.
+  Parameters:
+  - item: Object- 物品ID（字符串）或物品对象
+  - effectType: String- 效果类型（字符串），如 'bats', 'bees', 'grow', 'explode' 等
+
+```
+注册特殊效果的 brewing 配方（支持链式调用）
 ```
 
 - `Object success(Object var0)`
@@ -168,6 +132,42 @@ Stops the event with the given exit value. Execution will be stopped **immediate
 Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
+```
+
+- `Object exit()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`exit` denotes a `default` outcome.
+```
+
+- `Object exit(Object var0)`
+
+  Parameters:
+  - var0: Object
+
+```
+Stops the event with the given exit value. Execution will be stopped **immediately**.
+
+`exit` denotes a `default` outcome.
+```
+
+- `Object cancel()`
+```
+Cancels the event with default exit value. Execution will be stopped **immediately**.
+
+`cancel` denotes a `false` outcome.
+```
+
+- `Object cancel(Object var0)`
+
+  Parameters:
+  - var0: Object
+
+```
+Cancels the event with the given exit value. Execution will be stopped **immediately**.
+
+`cancel` denotes a `false` outcome.
 ```
 
 

@@ -1126,11 +1126,11 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'enigmaticlegacy:evil_ingot',
         'enigmaticlegacy:cosmic_heart',
         'cataclysm:cursium_ingot',
-        'enigmaticaddons:bless_amplifier',
-        'enigmaticlegacy:enchantment_transposer',
+        "goety:forbidden_piece",
+        'minecraft:enchanted_book',
         'enigmaticlegacy:cosmic_heart',
-        'enigmaticdelicacy:enchantment_duplicator',
-        'enigmaticlegacy:curse_transposer',
+        'minecraft:enchanted_book',
+        "goety:forbidden_piece",
         'cataclysm:cursium_ingot',
     ])
     .activationItem('enigmaticlegacy:abyssal_heart')
@@ -1223,6 +1223,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'goetyawaken:soul_sapphire',
         'goety:dark_metal_block',
         'minecraft:netherite_block',
+        "goety_ladder:void_metal",
         'goety:void_staff',
         'cataclysm:void_core',
         'goety:night_beacon',
@@ -1495,7 +1496,7 @@ ServerEvents.recipes(event=>{//kjs goety方法
         'goetyawaken:gilded_ingot',
         'goetyawaken:nether_reactor_core',
         'goetydelight:metamorphic_scent_fruit',
-        'goety:shrouded_blueprint',
+        "goety_ladder:void_metal",
         'goety:night_beacon',
         'goety:ominous_orb',
         'goetydelight:ancient_enchanted_golden_apple',
@@ -2113,15 +2114,6 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .duration(1)
     .id("curlamoety:copy/soul_sapphire")
 
-    event.recipes.goety.ritual("2x goety:soul_ruby","goety:craft",[
-        "curlamoety:goal_ty"
-    ])
-    .activationItem("goety:soul_ruby")
-    .craftType("magic")
-    .soulCost(500)
-    .duration(1)
-    .id("curlamoety:copy/soul_ruby")
-
     event.recipes.goety.ritual("2x goety:heart_of_the_night","goety:craft",[
         "curlamoety:goal_ty"
     ])
@@ -2130,35 +2122,6 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .soulCost(100)
     .duration(1)
     .id("curlamoety:copy/heart_of_the_night")
-
-    event.recipes.goety.ritual("2x goetydelight:metamorphic_scent_fruit","goety:craft",[
-        "curlamoety:goal_ty"
-    ])
-    .activationItem("goetydelight:metamorphic_scent_fruit")
-    .craftType("magic")
-    .soulCost(100)
-    .duration(1)
-    .id("curlamoety:copy/metamorphic_scent_fruit")
-
-    // event.recipes.goety.ritual("2x goety_revelation:revelation","goety:craft",[
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    //     "curlamoety:goal_ty",
-    // ])
-    // .activationItem("goety_revelation:revelation")
-    // .craftType("magic")
-    // .soulCost(10000)
-    // .duration(10)
-    // .id("curlamoety:copy/revelation")
 
     event.recipes.goety.ritual("4x goetyawaken:superaggregated_mycelial_circuit","goety:craft",[
         "curlamoety:goal_ty",
@@ -2169,36 +2132,6 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .soulCost(2000)
     .duration(5)
     .id("curlamoety:copy/superaggregated_mycelial_circuit")
-
-    event.recipes.goety.ritual("2x enigmaticlegacy:etherium_ingot","goety:craft",[
-        "curlamoety:goal_ty"
-    ])
-    .activationItem("enigmaticlegacy:etherium_ingot")
-    .craftType("magic")
-    .soulCost(1000)
-    .duration(1)
-    .id("curlamoety:copy/etherium_ingot")
-
-    //蚀槿
-    // event.recipes.goety.ritual("enigmaticdelicacy:shi_jin",'goety:craft',[
-    //     "enigmaticaddons:evil_dagger",
-    //     'enigmaticlegacy:evil_ingot',
-    //     'enigmaticlegacy:ender_rod',
-    //     'minecraft:nether_star',
-    //     'goety:fanged_dagger',
-    //     'goetydelight:dark_knife',
-    //     'goety:hunger_core',
-    //     'netherite_ingot',
-    //     'enigmaticlegacy:evil_essence',
-    //     'enigmaticlegacy:evil_essence',
-    //     'curlamoety:biogenesium_ingot',
-    //     'curlamoety:biogenesium_ingot',
-    // ])
-    // .activationItem("enigmaticlegacy:abyssal_heart")
-    // .craftType('forge')
-    // .soulCost(100)
-    // .duration(30)
-    // .id("curlamoety:shi_jin")
 
     //绿宝石级魔导书
     event.remove("goetyawaken:emerald_grimoire")
@@ -2318,13 +2251,13 @@ ServerEvents.recipes(event=>{//kjs goety方法
         "goety:blade_of_ender",
         "goety:void_robe",
         "goety:void_staff",
-        "goety:cursed_paladin_helmet",
-        "goety:cursed_paladin_chestplate",
+        "goety_ladder:void_metal",
+        "goety_ladder:void_metal",
+        "goety_ladder:void_fabric",
+        "goety_ladder:void_fabric",
         "goety:haunted_armor_stand",
-        "goety:cursed_metal_block",
         "immersive_aircraft:airship",
         "goetyawaken:endersent_enchanted_book",
-        "cataclysm:gauntlet_of_guard",
         "goety:void_flash_focus",
     ])
     .activationItem("goetyawaken:eye_of_overwatch")
@@ -2352,6 +2285,171 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .soulCost(10)
     .duration(5)
     .id("curlamoety:mushroom_coated_alloy_block")
+
+    //虚空黑曜石
+    event.remove("goety_ladder:end/voidobsidian_block")
+    event.recipes.goety.ritual("8x goety_ladder:voidobsidian_block",'goety:craft',[
+        "minecraft:obsidian",
+        "goety:void_block",
+        "minecraft:obsidian",
+        "goety:void_block",
+        "minecraft:obsidian",
+        "goety:void_block",
+        "minecraft:obsidian",
+        "goety:void_block",
+    ])
+    .activationItem("minecraft:ender_eye")
+    .craftType("end")
+    .soulCost(4)
+    .duration(10)
+    .id("curlamoety:voidobsidian_block")
+
+    //虚空核心
+    event.remove("goety_ladder:void_reipes/void_core")
+    event.recipes.goety.ritual("2x goety_ladder:void_core",'goety:craft',[
+        "minecraft:ender_eye",
+        "minecraft:ender_pearl",
+        "goety_ladder:voidobsidian_block",
+        "goety:void_bottle",
+        "minecraft:end_crystal"
+    ])
+    .activationItem("goety:mystic_core")
+    .craftType("void")
+    .soulCost(5)
+    .duration(10)
+    .id("curlamoety:void_core1")
+
+    event.recipes.goety.ritual("18x goety_ladder:void_core",'goety:craft',[
+        "minecraft:ender_chest",
+        "waystones:warp_stone",
+        "goety_ladder:voidobsidian_block",
+        "goety:void_barrel",
+        "minecraft:end_crystal"
+    ])
+    .activationItem("goety:mystic_core")
+    .craftType("void")
+    .soulCost(5)
+    .duration(10)
+    .id("curlamoety:void_core2")
+
+    //破妄
+    event.remove("goety_revelation:enchant/reality_piercer")
+    event.remove("goety_revelation:enchant/reality_piercer_lvl4")
+    event.remove("goety_revelation:enchant/reality_piercer_lvl5")
+
+    event.recipes.goety.ritual(Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"goety_revelation:reality_piercer",lvl:5s}]}'),'goety:craft',[
+        "goety:shadow_essence",
+        "goety:shadow_essence",
+        "goety:shadow_essence",
+        "goety:hunger_core",
+        "farmersdelight:diamond_knife",
+        "minecraft:diamond",
+        "goety:savage_tooth",
+
+    ])
+    .activationItem("enigmaticlegacy:enchantment_transposer")
+    .craftType("magic")
+    .soulCost(500)
+    .duration(20)
+    .id("curlamoety:reality_piercer1")
+
+    event.recipes.goety.ritual(Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"goety_revelation:reality_piercer",lvl:8s}]}'),'goety:craft',[
+        "goety:soul_ruby",
+        "goety:withered_manuscript",
+        "minecraft:nether_star",
+        "cataclysm:monstrous_horn",
+        "enigmaticaddons:ichor_spear",
+        "minecraft:netherite_sword"
+        
+    ])
+    .activationItem("enigmaticlegacy:enchantment_transposer")
+    .craftType("magic")
+    .soulCost(450)
+    .duration(20)
+    .id("curlamoety:reality_piercer2")
+
+    event.recipes.goety.ritual(Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"goety_revelation:reality_piercer",lvl:10s}]}'),'goety:craft',[
+        "goety:unholy_blood",
+        "cataclysm:ignitium_ingot",
+        "goety:void_echo",
+        "enigmaticlegacy:astral_dust",
+        "enigmaticlegacy:etherium_ingot"
+    ])
+    .activationItem("enigmaticlegacy:enchantment_transposer")
+    .craftType("magic")
+    .soulCost(400)
+    .duration(20)
+    .id("curlamoety:reality_piercer3")
+
+    //终末往事
+    event.remove("goety_ladder:void_reipes/endbook_item")
+    event.recipes.goety.ritual("goety_ladder:endbook_item",'goety:craft',[
+        "enigmaticlegacy:thicc_scroll",
+        "goety:void_block",
+        "goety_ladder:void_dust",
+        "minecraft:paper",
+    ])
+    .activationItem("minecraft:book")
+    .craftType("void")
+    .soulCost(2)
+    .duration(10)
+    .id("curlamoety:endbook_item")
+
+    //旅商
+    event.recipes.goety.ritual("goety:jei_dummy/none",'goety:convert',[
+        "emerald_block",
+        "leather",
+        "#forge:chests"
+    ])
+    .activationItem("lead")
+    .craftType("animation")
+    .soulCost(1)
+    .duration(10)
+    .entityToConvertTag('goety:villagers')
+    .entityToConvertDisplayName("entity.minecraft.villager")
+    .entityToConvertInto('minecraft:wandering_trader')
+    .id("curlamoety:wandering_trader_convert")
+
+    event.recipes.goety.ritual("goety:jei_dummy/none",'goety:summon',[
+        "lead",
+        "emerald_block",
+        "leather",
+        "#forge:chests"
+    ])
+    .activationItem("easy_villagers:villager")
+    .craftType("animation")
+    .soulCost(1)
+    .duration(10)
+    .entityToSummon('minecraft:wandering_trader')
+    .id("curlamoety:wandering_trader_summon")
+
+    //经验修补
+    event.remove("goety:enchant/mending")
+    event.recipes.goety.ritual("minecraft:enchanted_book","goety:enchant",[
+        "curlamoety:chlorophium_ingot",
+        "minecraft:obsidian",
+        "minecraft:lapis_lazuli"
+    ])
+    .activationItem("minecraft:book")
+    .craftType("magic")
+    .soulCost(250)
+    .duration(10)
+    .enchantment("minecraft:mending")
+    .xpLevelCost(0)
+    .id("curlamoety:enchant/mending2")
+
+    event.recipes.goety.ritual("minecraft:enchanted_book","goety:enchant",[
+        "goety:dark_ingot",
+        "minecraft:obsidian",
+        "minecraft:lapis_block"
+    ])
+    .activationItem("minecraft:book")
+    .craftType("magic")
+    .soulCost(250)
+    .duration(10)
+    .enchantment("minecraft:mending")
+    .xpLevelCost(10)
+    .id("curlamoety:enchant/mending1")
 
 })
 ServerEvents.recipes(event=>{//无封装方法

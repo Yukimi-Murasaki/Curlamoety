@@ -1,0 +1,18 @@
+
+#结构生成控制
+#Structure Generation Control
+[structure_generation]
+	# 是否启用结构生成控制。启用后会在结构起始生成阶段拦截指定结构，并读取结构规则。
+	#Enable structure generation control. When enabled, selected structures are intercepted and structure rules are used.
+	enable = false
+	# 完全禁用生成的结构 ID 列表。
+	#Structure IDs that should be completely blocked from generating.
+	disabled_structures = []
+	# 结构生成规则列表。格式: 结构ID|biomes=群系1,群系2|min_y=最低地表高度|max_y=最高地表高度|density=密度倍率|spacing=间隔|separation=最小间隔|frequency=出现概率。
+	#示例: minecraft:village_plains|biomes=minecraft:plains,minecraft:meadow|min_y=60|max_y=120|density=2.0|spacing=24|separation=8|frequency=1.0
+	#biomes/min_y/max_y 会在运行时拦截；density/spacing/separation/frequency 会在数据包加载后的内存结构集合中直接修改，通常需要重新进入存档或重启服务器后影响新区块。
+	#Rules for structure generation. Format: structure_id|biomes=biome1,biome2|min_y=min_surface_y|max_y=max_surface_y|density=density_multiplier|spacing=spacing|separation=separation|frequency=chance.
+	#Example: minecraft:village_plains|biomes=minecraft:plains,minecraft:meadow|min_y=60|max_y=120|density=2.0|spacing=24|separation=8|frequency=1.0
+	#biomes/min_y/max_y are runtime filters. density/spacing/separation/frequency are applied directly to in-memory structure sets after datapack loading and normally require re-entering the world or restarting the server for new chunks.
+	rules = []
+

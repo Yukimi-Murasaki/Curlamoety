@@ -24,6 +24,9 @@
 	#Sampling step size for biome search. (Suggested value: 32-64)
 	#Smaller values are more accurate (can find tiny or narrow biomes) but take longer; larger values are faster but might skip the target biome.
 	biome_step = 48
+	#结构出生点搜索超时时间，单位秒。超过这个时间还没有找到结构，会自动回退到群系/维度出生逻辑，最后仍失败则交回原版默认出生。
+	#Structure spawn search timeout in seconds. If no structure is found before timeout, the logic falls back to biome/dimension spawn, then vanilla default spawn if still unresolved.
+	structure_timeout_seconds = 12
 
 	[setspawn.rule_dimension]
 		#优先级 1: 是否启用维度限制。若启用，玩家只会出生在列表允许的维度中。

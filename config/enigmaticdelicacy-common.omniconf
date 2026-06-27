@@ -25,9 +25,6 @@
     # Whether or not Astral Door should be enabled. [default: true, synchronized: yes]
     B:AstralDoorEnabled=true
 
-    # Whether or not Astral Flower should be enabled. [default: true, synchronized: yes]
-    B:AstralFlowerEnabled=true
-
     # Whether or not Astral Fruit should be enabled. [default: true, synchronized: yes]
     B:AstralFruitEnabled=true
 
@@ -136,9 +133,6 @@
     # Whether or not Etherium Stove should be enabled. [default: true, synchronized: yes]
     B:EtheriumStoveEnabled=true
 
-    # Whether or not Fallen Crown should be enabled. [default: true, synchronized: yes]
-    B:FallenCrownEnabled=true
-
     # Whether or not Fragment of Cursed Soul Crystal should be enabled. [default: true, synchronized: yes]
     B:FragmentofCursedSoulCrystalEnabled=true
 
@@ -181,9 +175,6 @@
     # Whether or not Scroll of Fading should be enabled. [default: true, synchronized: yes]
     B:ScrollofFadingEnabled=true
 
-    # Whether or not Shi Jin should be enabled. [default: true, synchronized: yes]
-    B:ShiJinEnabled=false
-
     # Whether or not Slice of Astral Fruit should be enabled. [default: true, synchronized: yes]
     B:SliceofAstralFruitEnabled=true
 
@@ -192,12 +183,6 @@
 
     # Whether or not Slice of Sticky Enigmatic Pie should be enabled. [default: true, synchronized: yes]
     B:SliceofStickyEnigmaticPieEnabled=true
-
-    # Whether or not Starry Cake should be enabled. [default: true, synchronized: yes]
-    B:StarryCakeEnabled=true
-
-    # Whether or not Starry Vintage should be enabled. [default: true, synchronized: yes]
-    B:StarryVintageEnabled=true
 
     # Whether or not Sticky Enigmatic Pie should be enabled. [default: true, synchronized: yes]
     B:StickyEnigmaticPieEnabled=true

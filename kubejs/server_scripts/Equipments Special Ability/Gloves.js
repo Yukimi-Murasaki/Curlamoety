@@ -19,7 +19,7 @@ EntityEvents.hurt(event=>{
         }
         if(Math.random(1)<0.35)
         {
-            entity.potionEffects.add('goety:spasms',60,2)//概率附加痉挛
+            entity.potionEffects.add("cataclysm:wetness",60,2)//概率附加潮湿
         }
         if(Math.random(1)<0.35)
         {

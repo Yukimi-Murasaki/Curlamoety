@@ -411,6 +411,8 @@
 		}
 		{
 			dependencies: ["7AF9AE8720C8A778"]
+			description: ["{ \"text\": \"获取方式\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4121020B2FA081DF\" } }"]
+			icon: "curlamoety:witch_amulet_tier1"
 			id: "443D215B21FD552B"
 			rewards: [
 				{
@@ -434,16 +436,25 @@
 				}
 			]
 			subtitle: "欢迎来到女巫学校，上课请做好笔记哦"
-			tasks: [{
-				id: "6DC212FE2205A2C2"
-				item: "curlamoety:witch_amulet_tier1"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6DC212FE2205A2C2"
+					item: "curlamoety:witch_amulet_tier1"
+					type: "item"
+				}
+				{
+					id: "0F7601DE523AB3AD"
+					item: "curlamoety:witch_amulet_tier1_inactive"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -9.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["443D215B21FD552B"]
+			icon: "curlamoety:witch_amulet_tier2"
 			id: "1D216118471C66A8"
 			rewards: [
 				{
@@ -466,17 +477,26 @@
 				}
 			]
 			subtitle: "酿造，轻而易举啊"
-			tasks: [{
-				id: "348BE8DD0DB8E2CB"
-				item: "curlamoety:witch_amulet_tier2"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "348BE8DD0DB8E2CB"
+					item: "curlamoety:witch_amulet_tier2"
+					type: "item"
+				}
+				{
+					id: "3318F2D63B4A8F40"
+					item: "curlamoety:witch_amulet_tier2_inactive"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -7.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["1D216118471C66A8"]
 			description: ["{ \"text\": \"链接：女巫仪式\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6C763528AA8C1B26\" } }"]
+			icon: "curlamoety:witch_amulet_tier3"
 			id: "0D10F90054C328EF"
 			rewards: [
 				{
@@ -499,16 +519,25 @@
 				}
 			]
 			subtitle: "还好，学酿造不用做答辩"
-			tasks: [{
-				id: "3926FBB3DB8AC8D9"
-				item: "curlamoety:witch_amulet_tier3"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3926FBB3DB8AC8D9"
+					item: "curlamoety:witch_amulet_tier3"
+					type: "item"
+				}
+				{
+					id: "6204FE1565C9865C"
+					item: "curlamoety:witch_amulet_tier3_inactive"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -5.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["0D10F90054C328EF"]
+			icon: "curlamoety:witch_amulet_tier4"
 			id: "62A98C7ADCFA1973"
 			rewards: [
 				{
@@ -530,16 +559,25 @@
 				}
 			]
 			subtitle: "我柜子动了我不玩了"
-			tasks: [{
-				id: "015A63E509AA4F37"
-				item: "curlamoety:witch_amulet_tier4"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "015A63E509AA4F37"
+					item: "curlamoety:witch_amulet_tier4"
+					type: "item"
+				}
+				{
+					id: "71A3E49DE093D598"
+					item: "curlamoety:witch_amulet_tier4_inactive"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["62A98C7ADCFA1973"]
+			icon: "curlamoety:witch_amulet_tier5"
 			id: "4CC8C92004C60F6F"
 			rewards: [
 				{
@@ -567,11 +605,19 @@
 				}
 			]
 			subtitle: "想体验一下四级烧伤吗"
-			tasks: [{
-				id: "325D926B79553B6D"
-				item: "curlamoety:witch_amulet_tier5"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "325D926B79553B6D"
+					item: "curlamoety:witch_amulet_tier5"
+					type: "item"
+				}
+				{
+					id: "2D5E88172C411F0B"
+					item: "curlamoety:witch_amulet_tier5_inactive"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 12.0d
 		}
@@ -811,6 +857,7 @@
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
+			icon: "curlamoety:twilight_sparkle"
 			id: "54ED4E78A1198850"
 			rewards: [{
 				id: "2E56B678088909CC"

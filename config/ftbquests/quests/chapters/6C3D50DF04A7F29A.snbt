@@ -1435,7 +1435,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 12.5d
 		}
 		{
@@ -1461,7 +1461,7 @@
 				type: "checkmark"
 			}]
 			title: "进阶卡牌"
-			x: 8.5d
+			x: 10.0d
 			y: 14.0d
 		}
 		{
@@ -1492,7 +1492,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 15.5d
 		}
 		{
@@ -1556,7 +1556,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 12.5d
 		}
 		{
@@ -1586,7 +1586,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 14.0d
 		}
 		{
@@ -1638,7 +1638,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 15.5d
 		}
 		{
@@ -1683,7 +1683,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 14.0d
 		}
 		{
@@ -1706,7 +1706,7 @@
 				type: "checkmark"
 			}]
 			title: "中后期卡牌"
-			x: 13.5d
+			x: 15.0d
 			y: 14.0d
 		}
 		{
@@ -1733,7 +1733,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["1FEF42A90D922191"]
+			dependencies: ["180B3DDBC052243F"]
 			dependency_requirement: "one_started"
 			hide_dependency_lines: false
 			id: "153E45FCA9C9B9E0"
@@ -1783,8 +1783,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 12.5d
+			x: 8.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1FEF42A90D922191"]
@@ -1820,7 +1820,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.5d
 			y: 14.0d
 		}
 		{
@@ -1850,7 +1850,7 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
+			x: 18.0d
 			y: 12.5d
 		}
 		{
@@ -1884,7 +1884,7 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
+			x: 18.0d
 			y: 14.0d
 		}
 		{
@@ -1912,7 +1912,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.5d
 			y: 15.5d
 		}
 		{
@@ -1941,7 +1941,7 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
+			x: 18.0d
 			y: 15.5d
 		}
 		{
@@ -1970,8 +1970,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
-			y: 14.0d
+			x: 16.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["10976BDEDDCEFC51"]
@@ -2363,6 +2363,37 @@
 			]
 			title: "次元升级"
 			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6239B78B5E51E6E6"]
+			description: [
+				"&e手持一个装有捕捉升级的背包&r潜行右键生物，可以将生物装进背包，&e普通升级&r只能捕捉被动生物，&e高级升级&r还可以捕捉敌对生物"
+				""
+				"&6生物每拥有一点生命值，便会消耗一个背包格子，不受堆叠升级影响"
+				""
+				"&4敌对生物消耗2倍的格子"
+			]
+			hide_dependency_lines: true
+			id: "18A9AFBC6E8E7684"
+			rewards: [{
+				id: "7F5F80C60491714B"
+				item: {
+					Count: 1
+					id: "enigmaticaddons:extradimensional_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "性能不强但是够用"
+			tasks: [{
+				id: "359C7D60B91E332A"
+				item: "sophisticatedbackpacks:mob_catcher_upgrade"
+				type: "item"
+			}]
+			x: 3.5d
 			y: 1.5d
 		}
 	]

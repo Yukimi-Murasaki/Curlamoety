@@ -85,6 +85,8 @@ ServerEvents.tags('item',event=>{
     event.add('curios:talisman','curlamoety:witch_amulet_tier3')
     event.add('curios:talisman','curlamoety:witch_amulet_tier4')
     event.add('curios:talisman','curlamoety:witch_amulet_tier5')
+    event.add('curios:talisman',"goety_ladder:void_charm")
+    event.add('curios:talisman',"goety_ladder:clear_charm")
 
     //戒指（灾变）
     event.add('curios:rings','goety:ring_of_thirst')
@@ -257,6 +259,10 @@ ServerEvents.tags('item',event=>{
     event.add('curlamoety:light_curio',"twilightforest:violet_force_field")
     
     event.add('curios:curio','#curlamoety:light_curio')
+
+    //虚华
+    event.add('goety:crowns',"goety_ladder:voidlight_crown")
+    event.add('goety:robes',"goety_ladder:voidlight_robe")
     
 })
 

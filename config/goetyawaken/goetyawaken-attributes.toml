@@ -60,7 +60,7 @@
 	[Attributes."Mushroom Monstrosity"]
 		#How much damage Mushroom Monstrosities deals, Default: 24.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		mushroomMonstrosityDamage = 480.0
+		mushroomMonstrosityDamage = 360.0
 		#How much Max Health Mushroom Monstrosities have, Default: 1000.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		mushroomMonstrosityHealth = 128000.0
@@ -226,7 +226,7 @@
 		namelessOneArmor = 16.0
 		#How much damage Parched Necromancers deals, Default: 14.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		namelessOneDamage = 280.0
+		namelessOneDamage = 200.0
 
 	[Attributes."Angry Mooshroom"]
 		#How much movement speed Angry Mooshrooms have, Default: 0.3

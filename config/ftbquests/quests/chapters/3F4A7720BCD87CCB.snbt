@@ -731,7 +731,9 @@
 				""
 				"二层有一间拥有厚厚墙壁隐藏房，里面可以找到迷宫破坏者，迷宫破坏者挖掘迷宫的墙壁时会有额外的速度加成。可以通过隧穿聚晶来寻找它。或者如果你先去了幻影骑士要塞，可以&e用骑士金属锭自己制作一把迷宫破坏者"
 				""
-				"二层的终点便是米诺菇所在之处，米诺菇和米诺陶一样会用蓄力非常久并且无法转向的冲撞，非常容易对付。"
+				"二层的终点便是米诺菇所在之处，米诺菇和米诺陶一样会用蓄力非常久并且无法转向的冲撞，招式容易应对。"
+				""
+				"米诺菇对仇恨目标会火腿"
 				""
 				"击败米诺菇以后可以获得牛头人沙拉酱肉，吃下它可以让你进入火焰沼泽。"
 				""
@@ -902,7 +904,7 @@
 				""
 				"要塞中充斥着入侵者：哥布林与寄居蟹，它们用着逝去的骑士的盔甲来武装自己，击败它们可以获得骑士金属，用骑士金属锭制作的武器拥有对有护甲单位造成额外穿甲伤害的能力。"
 				""
-				"幻影骑士是由多个个体联手组成的BOSS战，需要将每个幻影骑士全部击破"
+				"幻影骑士是由多个个体联手组成的BOSS战，战斗中，每个骑士会&e依次显形&r（显示出骷髅状的身躯），显形后方可击破，全部击破即可完成战斗"
 				""
 				"击败它们会特殊的幻影头盔和胸甲，拥有价值不大的死亡不掉落能力。然后你可以前往黑暗森林腹地的砷铅铁高塔。"
 				""
@@ -1313,13 +1315,15 @@
 		{
 			dependencies: ["5FD95D9D16CA7072"]
 			description: [
-				"{ \"text\": \"辉光余烬可以从陵墓、凛冬高塔、潮汐墓穴等结构中，由“远古符文祭坛”召唤的精英敌人掉落。\", \"underlined\": \"true\", \"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"198C5D346D075A73\" } }"
-				""
 				"召唤无名者的仪式需要去暮色森林的&e终焉高原&r搭建&e永夜仪式&r"
 				""
-				"&4！注意！仪式是转化仪式，请确保范围内有所需生物"
-				""
 				"{ \"text\": \"点击查看永夜仪式\", \"underlined\": \"true\", \"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D776562BD0CC3D4\" } }"
+				""
+				"{image:ftbquests:textures/nameless.png width:120 height:100 align:center}"
+				""
+				"{ \"text\": \"辉光余烬可以从陵墓、凛冬高塔、潮汐墓穴等结构中，由“远古符文祭坛”召唤的精英敌人掉落。\", \"underlined\": \"true\", \"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"198C5D346D075A73\" } }"
+				""
+				"&4！注意！仪式是转化仪式，请确保范围内有所需生物"
 				""
 				"召唤无名者需要大量昂贵材料，在此提供一部分，&e但是你必须先拥有自己的无名套装"
 				""
@@ -1498,6 +1502,14 @@
 				""
 				"最强之剑"
 				""
+				"攻击附加&6诅咒&r效果"
+				""
+				"主手持有时造成的一切伤害都会变为&e无视无敌帧的近似真伤&r，并附加&650%的火焰伤害&r，这种近似真伤甚至能够斩断不死"
+				""
+				"有概率造成对方&e3%最大生命值的伤害&r并&6削减2%最大生命值&r（最多削减5次）"
+				""
+				"潜行左键可以发动激流一般的冲刺"
+				""
 				"{ \"text\": \"点击查看堕落之刃的获取\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"54F62A8D57D2A032\" } }"
 			]
 			id: "72DB331935A0D13C"
@@ -1662,6 +1674,8 @@
 			description: [
 				"击败下界亚波伦，它会比在主世界更加强大，挑战之前要做好反复复活的准备，并&e务必提前备份存档避免物品丢失（手动备份指令/backup）&4（目前有发现炼狱结界连续杀死玩家导致物品栏清空的现象）"
 				""
+				"点击前往下界亚波伦专属攻略"
+				""
 				"下界亚波伦有一招&e非常强大的攻击&r，俗称机关枪箭：经过一段黑烟缭绕的前摇之后，祂会超高速发射无视无敌帧的箭矢，这些箭矢的火力足以顶着&4总计20级保护&r的护甲打出有效伤害，就算不考虑伤害也会对玩家造成非常恶劣的干扰，可以通过迅速离开亚波伦64格（推荐纵向进行机动）来使此招式因为索敌中断而中止。"
 				""
 				"下界亚波伦在最后的1/14生命值——即&4末日终结&r阶段会&4收走你的饰品与装备&r（白名单内的物品除外，可以手动配置），并&4封印&r白名单饰品外的所有物品（强制进入&4使用cd&r，禁止&4物品自身的右键功能&r，不属于物品自身的功能，例如用荧石填充重生锚，仍然可以进行，不通过右键触发的特殊功能依旧能够使用，例如&e&l图腾的免死&r），禁止生命回复并使你除攻击伤害以外的&4属性强制回归初始状态&r"
@@ -1763,7 +1777,12 @@
 		}
 		{
 			dependencies: ["2989FC20D513CE91"]
-			description: ["召唤启示录·使徒——也就是亚波伦需要大量材料，在此提供一部分"]
+			description: [
+				"召唤启示录·使徒——也就是亚波伦需要大量材料，在此提供一部分"
+				""
+				""
+				"{image:ftbquests:textures/summon_apollyon.png width:150 height:120 align:center}"
+			]
 			id: "1D8C65F0145A773D"
 			rewards: [
 				{
@@ -1814,6 +1833,9 @@
 			]
 			description: [
 				"游戏的末期BOSS，用安息仪式召唤使徒并击败它"
+				""
+				"{image:ftbquests:textures/summon_apostle_1.png width:100 height:80 align:center}"
+				"{image:ftbquests:textures/summon_apostle_2.png width:100 height:80 align:center}"
 				""
 				"&6亡灵杀手附魔可以暂时阻止使徒（包括亚波伦）的自然生命回复"
 				""
@@ -1876,6 +1898,10 @@
 			dependencies: ["2989FC20D513CE91"]
 			description: [
 				"在下界召唤使徒并击败，它们在下界更加强大"
+				""
+				"会掉落&6至纯之血&r，它可以代替主世界使徒的不洁之血使用"
+				""
+				"会掉落&a暗夜信标&r，放置在下界传送门上方&7（其下方间隔一格需要是传送门方块）&r时，可以将时间锁定为&a满月的午夜&r"
 				""
 				"推荐在基岩层之上战斗，使徒会到处瞬移"
 			]
@@ -2297,11 +2323,21 @@
 				}
 			]
 			subtitle: "尘封的辉煌"
-			tasks: [{
-				id: "7542F01B5260E4D6"
-				item: "goety:bygone_scroll"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7542F01B5260E4D6"
+					item: "goety:bygone_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_bygone_scroll"
+					criterion: ""
+					id: "79253FC70BF585E0"
+					optional_task: true
+					type: "advancement"
+				}
+			]
 			x: 8.5d
 			y: 1.5d
 		}
@@ -2759,9 +2795,11 @@
 				""
 				"手持巨剑的虚空之形体，会使用精湛的剑术和虚空弹幕来施展攻击"
 				""
-				"击败会掉落虚空回响，用于制作虚空系的高级聚晶和一些剑，还可以召唤属于自己的末影遣使，乃至末影守望者！"
+				"击败会掉落&e虚空回响&r，用于制作虚空系的高级聚晶和一些剑，还可以召唤&e属于自己的末影遣使，乃至末影守望者&r！"
 				""
-				"击败后，虚空神龛上会弹出被隐匿的蓝图，用于制作终结卷轴"
+				"击败后，虚空神龛上会弹出&e被隐匿的蓝图&r，用于制作终结卷轴"
+				""
+				"{ \"text\": \"虚空卷轴也可以制作了\", \"underlined\": \"true\",\"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"794975E97C3CF60C\" } }"
 			]
 			icon: {
 				Count: 1
@@ -2904,7 +2942,7 @@
 			}]
 			title: "末影勇者"
 			x: 26.0d
-			y: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["029E4CF9EF2DDF30"]
@@ -2936,66 +2974,6 @@
 				type: "item"
 			}]
 			x: 26.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"029E4CF9EF2DDF30"
-				"751E5B493A39F40D"
-			]
-			description: [
-				"用被隐匿的蓝图在仪式上合成，需要先学习战争卷轴才可以阅读（&m&7将被隐匿的蓝图做成卷饼吃掉也可以达到阅读终结卷轴的效果&r卷饼目前有bug）"
-				""
-				"{ \"text\": \"点击查看战争卷轴\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"751E5B493A39F40D\" } }"
-				""
-				"允许激活三种巨兽的召唤多方块结构。"
-			]
-			id: "50CE44B33E3E35CA"
-			rewards: [{
-				count: 16
-				id: "3DD50D203FB45CF7"
-				item: "minecraft:redstone_block"
-				type: "item"
-			}]
-			subtitle: "我便是末日"
-			tasks: [{
-				id: "1D547994DAB702AD"
-				item: "goety:terminus_scroll"
-				type: "item"
-			}]
-			x: 26.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["50CE44B33E3E35CA"]
-			description: ["召唤忠诚于你的下界合金巨兽"]
-			id: "470ED38C747F844B"
-			invisible: true
-			progression_mode: "linear"
-			rewards: [
-				{
-					id: "41FBABEF416B6D81"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "215EC2A7F7286422"
-					item: "minecraft:ancient_debris"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "势不可当"
-			tasks: [{
-				advancement: "goety_cataclysm:summon_netherite_monstrosity"
-				criterion: ""
-				id: "7E2690ED0E651AB4"
-				type: "advancement"
-			}]
-			title: "下界合金巨兽仆从"
-			x: 28.0d
 			y: 6.0d
 		}
 		{
@@ -3036,7 +3014,7 @@
 				type: "item"
 			}]
 			x: 28.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["57CBF63981BAD961"]
@@ -3501,24 +3479,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1FA51989ED25DF67"]
-			description: ["末影人仆从可以从世界中为你寻找并搬回来指定的矿物方块"]
-			id: "4CE22A534E6573AD"
-			rewards: [{
-				id: "18604467DD444440"
-				item: "minecraft:deepslate_diamond_ore"
-				type: "item"
-			}]
-			subtitle: "我们不生产矿，我们只是大自然的搬运工"
-			tasks: [{
-				id: "73735600967C0BCD"
-				item: "goetyawaken:stare_focus"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["3FC7B7A3522DA163"]
 			id: "0395B7B9490B15CA"
 			invisible: true
@@ -3541,8 +3501,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 12.0d
+			x: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4060E879681F0CA4"]
@@ -3582,11 +3542,7 @@
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
-			description: [
-				"&e可以通过烹饪仪式来自我复制"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，深渊强化状态下额外提示攻击速度和移动速度"
-			]
+			description: ["&e可以通过烹饪仪式来自我复制"]
 			id: "53F37CA7D051D8CE"
 			rewards: [
 				{
@@ -3606,16 +3562,12 @@
 				item: "enigmaticdelicacy:abyssal_stew"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 8.0d
+			x: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
-			description: [
-				"食用深渊炖菜获得深渊强化也将允许你取下荒芜之负。"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，提高25%生命值"
-			]
+			description: ["食用深渊炖菜获得深渊强化也将允许你取下荒芜之负。"]
 			id: "0910064E5A7743E6"
 			rewards: [
 				{
@@ -3637,7 +3589,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3645,8 +3597,6 @@
 				"更高的攻击和吸血加成"
 				""
 				"&e先带轻蔑之约可以带飞升护符"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，提高10%攻击伤害和魔法伤害"
 			]
 			id: "4F91A533E1811A28"
 			rewards: [
@@ -3672,8 +3622,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3681,8 +3631,6 @@
 				"每次造成伤害会根据上次造成伤害提高，左脚踩右脚升天，但是会逐渐消耗吸收的诅咒数量，需要不断补充"
 				""
 				"放入&a暗夜立方&r中时，让攻击附加对敌人烙下印记，受到自身和仆从的攻击引发震击。仆从受击时根据卷轴内诅咒数量获得强力正面效果。击杀敌人会为玩家直接装备的暴戾之咒填充诅咒"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，魔法与仆从无视无敌帧+5"
 			]
 			id: "13994A691F4BA8ED"
 			rewards: [
@@ -3782,16 +3730,12 @@
 				item: "enigmaticaddons:violence_scroll"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 11.0d
+			x: 8.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
-			description: [
-				"消耗耐久的自推进鞘翅"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，提高10%护甲值和盔甲韧性"
-			]
+			description: ["消耗耐久的自推进鞘翅"]
 			id: "591B5EA5F807BCE7"
 			rewards: [
 				{
@@ -3819,7 +3763,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["3FC7B7A3522DA163"]
@@ -3827,8 +3771,6 @@
 				"超级平底锅，杀的怪种类越多越强。"
 				""
 				"神秘遗物最强的武器之一，由于该物品造成的伤害会修正第四诅咒，实际相当于双倍面板"
-				""
-				"&a暗夜立方&r中装有&5无止之言&r时，杀敌提供额外的盔甲韧性加成，并让无止暴食最多将饱食度下降至3"
 			]
 			id: "338FFD08CAF3883F"
 			rewards: [
@@ -3855,8 +3797,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
-			y: 8.0d
+			x: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["78DC0C6E307AF4CD"]
@@ -7011,7 +6953,7 @@
 			description: [
 				"神秘遗物最强的武器之一，由于该物品造成的伤害会修正第四诅咒，实际相当于双倍面板"
 				""
-				"放入&a暗夜立方&r中时，对自身50倍生命值以上敌人造成1.4倍伤害，攻击时有概率造成减益，手持无止之言攻击概率更高。与其他深渊之心遗物形成联动。食用禁忌之果后增加10%伤害。"
+				"放入&a暗夜立方&r中时，你每装备一件深渊之心饰品，获得微量额外属性加成"
 			]
 			id: "2B866B7A4BCA1C39"
 			rewards: [
@@ -7033,8 +6975,8 @@
 				item: "enigmaticlegacy:the_infinitum"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.0d
+			x: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["384C7CEB4BC34ED9"]
@@ -7119,24 +7061,6 @@
 			y: -23.0d
 		}
 		{
-			dependencies: ["1FA51989ED25DF67"]
-			description: ["长时间内，大范围牵引并伤害敌人，能够快速清场"]
-			id: "65E0441D52C338EB"
-			rewards: [{
-				id: "61F32235C79081C8"
-				item: "goety:hook_bell"
-				type: "item"
-			}]
-			subtitle: "全都不许跑！"
-			tasks: [{
-				id: "4FDED0FD381678E1"
-				item: "goety:rupture_focus"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 4.0d
-		}
-		{
 			dependencies: [
 				"5DA8CBAFD9F17B09"
 				"21F7DCD95E2BB39E"
@@ -7157,69 +7081,6 @@
 			}]
 			x: 14.5d
 			y: -3.5d
-		}
-		{
-			dependencies: ["3FC7B7A3522DA163"]
-			description: [
-				"    ——————————测试版——————————"
-				""
-				"用深渊之力自我保护和反击敌人的头冠"
-			]
-			id: "73A0F13272BF5E6E"
-			rewards: [
-				{
-					id: "134FDEF619C9EEB1"
-					item: "enigmaticaddons:ichor_droplet"
-					type: "item"
-				}
-				{
-					id: "4FD6A0C9B9873E9B"
-					item: {
-						Count: 1
-						id: "enigmaticlegacy:infernal_shield"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			subtitle: "傲慢"
-			tasks: [{
-				id: "4ACB63ECF183B570"
-				item: "enigmaticdelicacy:fallen_crown"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["3FC7B7A3522DA163"]
-			description: [
-				"    ——————————测试版——————————"
-				""
-				"将敌人化作食粮的巨大厨刀，非常长"
-			]
-			id: "7C9F17BD0E537CFE"
-			rewards: [{
-				id: "0F88D8ECBC1C1CC2"
-				item: "enigmaticaddons:ichor_droplet"
-				type: "item"
-			}]
-			subtitle: "暴食"
-			tasks: [{
-				id: "73D85F7BDE88AE16"
-				item: {
-					Count: 1
-					id: "enigmaticdelicacy:shi_jin"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 11.0d
-			y: 12.0d
 		}
 		{
 			can_repeat: true
@@ -7599,6 +7460,70 @@
 			}]
 			x: 1.5d
 			y: -20.5d
+		}
+		{
+			dependencies: ["1FA51989ED25DF67"]
+			description: [
+				"在末地获取了虚空块、龙息等素材后，你可以开始游玩虚空系的巫法内容了，大部分的《诡厄巫法·阶梯》模组内容都在于此"
+				""
+				"{ \"text\": \"点击查看巫法章节中的该任务\", \"underlined\": \"true\", \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"7FD995053893DF6B\" } }"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:void_staff"
+			}
+			id: "6A4E54EC2170F9F3"
+			rewards: [{
+				count: 64
+				id: "0BF720968FFD4C18"
+				item: "minecraft:end_stone_bricks"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "终末巫法"
+			tasks: [{
+				id: "5D93B0447BD310E9"
+				item: "goety:void_block"
+				type: "item"
+			}]
+			title: "虚空的魔法"
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4060E879681F0CA4"]
+			description: [
+				"用&e黑曜石搭建三格高柱子&r，在柱子上放置&e龙蛋&r，在柱子四面间隔一格放置黑曜石并在这四个黑曜石上放置&e末地水晶&r，最后右键龙蛋可以召唤龙螈宠物，参考图如下"
+				""
+				"{image:ftbquests:textures/dracolotl.png width:100 height:100 align:center}"
+				""
+				"龙螈可以用瓶子接龙息，也可以喂食紫颂果，有概率产出&6龙蛋"
+				""
+				"（进度需要用桶装龙螈）"
+			]
+			id: "5C5E64CF59B04AD4"
+			rewards: [{
+				count: 64
+				id: "64A6932A68E6EEC1"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			subtitle: "软萌末影龙"
+			tasks: [{
+				advancement: "dracolotl:dracolotl_bucket_get"
+				criterion: ""
+				id: "42F50BF484B08409"
+				type: "advancement"
+			}]
+			title: "龙螈"
+			x: 9.5d
+			y: 4.0d
 		}
 	]
 	title: "命运与征途"

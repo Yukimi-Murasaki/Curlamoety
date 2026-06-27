@@ -30,7 +30,7 @@ ItemEvents.entityInteracted('curlamoety:shikishin_wand',event=>{//式神魔棒
         target.potionEffects.add('goetyawaken:enchantment_sharpness',-1,2)
         target.potionEffects.add('minecraft:health_boost',-1,9)
         target.potionEffects.add('minecraft:resistance',-1,1)
-        target.potionEffects.add('goety:iron_hide',-1,5)
+        target.potionEffects.add('goety:iron_hide',-1,4)
         target.potionEffects.add('minecraft:regeneration',-1,2)
         target.potionEffects.add('cataclysm:monstrous',-1,1)
         target.potionEffects.add('goety:radiance',-1,1)

@@ -44,7 +44,7 @@
     B:EtheriumCoreEnabled=true
 
     # Whether or not False Justice should be enabled. [default: true, synchronized: yes]
-    B:FalseJusticeEnabled=true
+    B:FalseJusticeEnabled=false
 
     # Whether or not Forgers Gem should be enabled. [default: true, synchronized: yes]
     B:ForgersGemEnabled=true

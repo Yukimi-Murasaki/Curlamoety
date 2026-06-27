@@ -273,6 +273,8 @@
 			"twilightforest:knightmetal_axe" = 17
 			"twilightforest:giant_sword" = 27
 			"twilightforest:block_and_chain" = 17
+			"goety_ladder:void_metal_shower" = 14
+			"goety_ladder:void_metal_axe" = 24
 
 		#Set the attack speed of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:netherite_pickaxe" = 2.5
@@ -443,4 +445,10 @@
 		"goetytwilight:towerwood_borer_servant" = "minecraft:generic.max_health;250"
 		"goetytwilight:death_tome_servant" = "minecraft:generic.max_health;40"
 		"goetytwilight:kobold_servant" = "minecraft:generic.max_health;20"
+		"goety_ladder:void_necromancer" = "minecraft:generic.max_health;2600"
+		"goety_ladder:void_necromancer_servant" = "minecraft:generic.max_health;26000"
+		"goety_ladder:void_totem" = "minecraft:generic.max_health;600"
+		"goety_ladder:void_gel" = "minecraft:generic.max_health;300"
+		"goety_ladder:void_zombie" = "minecraft:generic.max_health;300"
+		"goety_ladder:void_skeleton" = "minecraft:generic.max_health;250"
 

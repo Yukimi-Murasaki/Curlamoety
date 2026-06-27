@@ -1,19 +1,37 @@
 
-#村民优化与行为控制设置。
-#Villager Optimization and Behavior Control Settings.
+#村民优化、行为控制与自定义交易设置。
+#Villager optimization, behavior control, and custom trade settings.
 [villager]
 	#降低村民的 AI 检测与寻路频率（单位：Tick，20 Tick = 1 秒）。默认为 100（5秒）。
-	#Reduces the frequency of Villager AI checks and pathfinding (Unit: Ticks, 20 Ticks = 1 Second). Default is 100 (5 seconds).
+	#Reduces the frequency of Villager AI checks and pathfinding. Unit: ticks. 20 ticks = 1 second. Default is 100.
 	#设为 1 则恢复原版频率。
 	#Set to 1 to restore vanilla frequency.
 	tickInterval = 100
-	#交易/升级保护。开启后，被脑叶切除的村民在交易升级倒计时期间仍会执行最低限度更新，避免交易所村民升级非常慢。
-	#Trade/level-up protection. When enabled, lobotomized trapped villagers still run the minimal merchant update needed for vanilla trade level-up timers.
+	#交易/升级保护。开启后，被脑叶切除的村民在交易升级倒计时期间仍会执行最低限度更新。
+	#Trade/level-up protection. When enabled, lobotomized villagers still run the minimal merchant update needed for vanilla trade level-up timers.
 	trade_update_protection = true
 	#是否允许村民跟随手持特定物品的玩家。
-	#Whether to allow Villagers to follow players holding specific items.
+	#Whether villagers can follow players holding configured items.
 	follow_enable = true
-	#村民跟随的物品 ID 列表 (例如绿宝石)。
-	#The list of items that will make Villagers follow the player.
+	#村民跟随的物品 ID 列表。
+	#Item IDs that make villagers follow players.
 	follow_items = ["minecraft:emerald", "minecraft:emerald_block"]
+	#是否启用自定义村民交易表。
+	#Whether custom villager trade tables are enabled.
+	custom_trades_enable = false
+	#职业等级交易规则列表。格式：职业ID|等级|模式|抽取数量。
+	#Profession-level trade rules. Format: profession_id|level|mode|offer_count.
+	#模式：add、replace_level、replace_all、disable_level。
+	#Modes: add, replace_level, replace_all, disable_level.
+	trade_groups = []
+	#具体交易列表。格式：
+	#职业ID|等级|买入A物品|买入A数量|买入A_NBT|买入B物品|买入B数量|买入B_NBT|卖出物品|卖出数量|卖出NBT|最大交易次数|村民经验|价格倍率|需求值|特殊价格|是否给玩家经验|当前已使用次数|是否允许补货
+	#Trade offer list. Format:
+	#profession_id|level|buy_a_item|buy_a_count|buy_a_nbt|buy_b_item|buy_b_count|buy_b_nbt|sell_item|sell_count|sell_nbt|max_uses|villager_xp|price_multiplier|demand|special_price|reward_player_xp|uses|allow_restock.
+	trade_offers = []
+	#原版交易覆盖规则。格式：职业ID|等级|原版交易序号|是否启用|权重。
+	#关闭某条原版交易后，自定义选择池不会再抽到它。权重越高越容易出现。
+	#Vanilla trade override rules. Format: profession_id|level|vanilla_trade_index|enabled|weight.
+	#Disabled vanilla trades are removed from the custom selection pool. Higher weight means more likely to appear.
+	default_trade_overrides = []
 

@@ -237,6 +237,16 @@ ServerEvents.recipes(event => {
         "minecraft:entity.warden.death"
     ).id("curlamoety:cutting/sculk_heart")
 
+    event.recipes.farmersdelight.cutting(//海晶砂砾
+        "minecraft:sand",
+        'minecraft:water_bucket',
+        [
+            Item.of("minecraft:prismarine_crystals").withChance(0.2),
+            Item.of("minecraft:gold_nugget").withChance(0.01)
+        ],
+        'minecraft:item.bucket.empty'
+    ).id("curlamoety:cutting/sand")
+
 //厨锅
     event.recipes.farmersdelight.cooking(
     ['#farmersdelight:feasts','#farmersdelight:meals','#farmersdelight:meals','goety:ectoplasm','minecraft:golden_carrot','minecraft:golden_apple'],

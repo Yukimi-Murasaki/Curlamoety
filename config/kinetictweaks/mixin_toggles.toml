@@ -77,6 +77,18 @@ flight.FlightClientMixins = true
 # 4. Performance: Skips the unnecessary loading of Overworld spawn chunks during server startup.
 world.SetSpawnMixins = true
 
+# 结构生成控制：
+# 1. 在结构起始生成阶段拦截指定结构，支持完全禁用某个结构 ID。
+# 2. 支持为单个结构指定允许生成的群系白名单，并在结构生成时临时覆盖原版群系校验。
+# 3. 支持按结构起始区块的地表高度设置最低与最高生成范围。
+# 4. 配合自动生成的 structure_set 数据包覆盖，实现结构密度、间隔和出现概率调整。
+# Structure Generation Control:
+# 1. Intercepts selected structure IDs during structure start generation.
+# 2. Supports per-structure biome whitelist rules and temporarily overrides vanilla biome checks during generation.
+# 3. Supports min and max surface-height limits for each structure start chunk.
+# 4. Works with generated structure_set datapack overrides to adjust density, spacing, and generation chance.
+world.StructureGenMixins = true
+
 # [配方书移除]
 # [Recipe Book Removal]
 
@@ -109,9 +121,13 @@ minecraft.BeeRendererMixin = true
 # [村民优化与行为控制]
 # [Villager Tweaks & Behavior]
 
-# 降低村民 AI 检测频率的性能优化(脑叶切除)，以及允许村民跟随手持特定物品玩家的互动功能。
-# Includes AI frequency reduction (lobotomy) for performance and item-based player following logic.
+# 降低村民 AI 检测频率的性能优化(脑叶切除)，允许村民跟随手持特定物品玩家，并注入自定义交易表生成逻辑。
+# Includes AI frequency reduction (lobotomy), item-based player following, and custom villager trade table injection.
 villager.VillagerTweaksMixin = true
+
+# 自定义村民交易附加数据：保存交易唯一标记，并支持单条交易禁止补货。
+# Custom villager trade metadata: stores unique trade IDs and supports per-offer restock blocking.
+villager.MerchantOfferMixin = true
 
 # [玩家与实体逻辑]
 # [Player & Entity Logic]
@@ -174,14 +190,16 @@ minecraft.RenderTargetMixin = true
 # [物品维度裁决与保护]
 # [Item Dimensional Arbitration & Protection]
 
-# 维度级存有裁决（Ban/Merge）：
-# 1. 存有重写：基于“本质替换”协议，拦截 ItemStack 初始化。支持 NBT 级精准颗粒度判定（如单独禁用“保护4附魔书”或特定变种枪械）。
-# 2. 虚空坍缩：封禁物品入库即刻变为“虚空占位符”，拦截 Slot.set 咽喉逻辑，使其在尝试进入任何容器（箱子/机器）时瞬间物理消失。
-# 3. 动态重写：实时劫持配方(Recipes)与战利品表(Loot Tables)，确保合并规则在全局逻辑链中完全闭环，实现“原子级”归一。
-# Ontological Swap & Arbitration (Ban/Merge):
-# 1. Existence Rewrite: Intercepts ItemStack initialization via 'Ontological Swap'. Supports NBT-level granularity (e.g., banning specific 'Prot IV' books or TAC:Z gun variants).
-# 2. Void Collapse: Banned items instantly collapse into placeholders. Intercepts 'Slot.set' logic to ensure items vanish physically when entering any container or machine.
-# 3. Dynamic Rewriting: High-jacking Recipes and Loot Tables in real-time to ensure merge rules are logically closed-loop at the atomic level.
+# 物品裁决与自然生成方块改写：
+# 1. 物品封禁：拦截 ItemStack 初始化与容器写入。被封禁的物品只在物品阶段坍缩为虚空占位符，不等同于“禁止自然生成方块”。
+# 2. 普通物品合并：重写 ItemStack、配方与战利品表中的来源物品，使重复资源统一指向主物品；目标没有 NBT 时不会额外写入空 NBT，目标有 NBT 时才保留目标 NBT。
+# 3. 矿物/方块生成封禁：仅拦截自然生成阶段的方块写入。被封禁的生成方块会在 LevelChunkSection 写入前改成空气，不影响背包物品、创造栏物品、玩家手动放置和已生成区块。
+# 4. 矿物/方块生成合并：仅拦截自然生成阶段的来源方块写入。命中合并规则时，来源方块会在底层区块写入前改成主方块，适用于矿石、荧石、下界岩、基岩等普通世界生成方块。
+# Item Arbitration and Natural Worldgen Block Rewriting:
+# 1. Item Ban: Intercepts ItemStack creation and container writes. Banned items collapse into the void placeholder only in the item phase; this is separate from natural block generation control.
+# 2. Normal Item Merge: Rewrites source items in ItemStack, recipes, and loot tables so duplicate resources point to the selected target item. No empty NBT is written when the target has no NBT; target NBT is preserved only when it exists.
+# 3. Ore / Block Generation Ban: Intercepts only natural worldgen block writes. Banned generated blocks are changed to air before LevelChunkSection writes them, without affecting inventory items, creative-tab items, player placement, or existing chunks.
+# 4. Ore / Block Generation Merge: Intercepts only natural worldgen source block writes. Matching source blocks are changed to the target block before low-level chunk-section writes, covering ores, glowstone, netherrack, bedrock, and other generated blocks.
 item.ItemManagementMixins = true
 
 # 掉落物属性保护与虚空拯救：
@@ -219,10 +237,12 @@ minecraft.ClientInterfaceMixins = true
 # 1. 智能布局：突破原版挤压限制，效果卡片会利用屏幕 90% 的垂直空间自动等距排开，彻底告别重叠盲区。
 # 2. 悬停置顶：鼠标悬停任意卡片时，该卡片立刻突破图层遮挡，置于最顶层清晰显示。
 # 3. 兼容防冲突：完全避开 JEI 区域；完美接管并修复部分模组左侧渲染越界问题。
+# 4. 夜视防闪烁：接管 GameRenderer 的夜视亮度计算，移除原版夜视快结束时的正弦闪烁，避免屏幕忽明忽暗。
 # Status Effect HUD Overhaul (Mini Effects):
 # 1. Smart Layout: Breaks vanilla squeeze limits. Cards now use up to 90% of vertical space, distributed evenly.
 # 2. Hover-to-Top: Hovering over any card instantly brings it to the top layer, breaking through vanilla rendering occlusion.
 # 3. Compatibility: Fully dodges JEI areas and fixes out-of-bounds left-side rendering.
+# 4. Night Vision Anti-Flicker: Overrides GameRenderer night-vision brightness calculation and removes the vanilla sine flicker near effect expiration.
 minecraft.MiniEffectsMixins = true
 
 # [网络与协议解限]

@@ -1,7 +1,17 @@
 let serverTick = 1
 ServerEvents.tick(event =>{
+    let server = Utils.server
     if(serverTick==20){
         serverTick=1
+        //龙息火球清理
+        let entities = server.getEntities()
+        entities.forEach(entity=>{
+            if(entity.type == "minecraft:dragon_fireball"){
+                if(entity.getMotionY()==0){
+                    entity.setMotionY(-1)
+                }
+            }
+        })
     }else{
         serverTick++
     }
@@ -132,8 +142,7 @@ PlayerEvents.tick(event =>{
         genericCd --
         global.genericCdMap.put(player,genericCd)
         if(genericCd == 0){
-            level.playSound(null,x,y,z,'minecraft:block.beacon.activate','players',1,2)
-            player.setStatusMessage(Text.yellow(Text.translate("curlamoety.lang.summon_ready")))
+            level.playSound(null,x,y,z,'entity.experience_orb.pickup','players',0.5,1)
         }
     }
     let genericSummonCd = global.genericSummonCdMap.get(player)
@@ -231,7 +240,7 @@ PlayerEvents.tick(event =>{
         player.potionEffects.add("enigmaticaddons:pure_resistance",200,0,false,false)
         player.potionEffects.add("enigmaticlegacy:molten_heart",200,0,false,false)
         let fiery_cd = global.fieryCdMap.get(player)
-        if(fiery_cd == 0){
+        if(fiery_cd == 0||fiery_cd < 0 ){
             if(player.potionEffects.isActive("goety:flame_hands")){
                 let amplifier = player.getEffect("goety:flame_hands").getAmplifier()
                 if(amplifier == 4){
@@ -249,7 +258,7 @@ PlayerEvents.tick(event =>{
             }
             global.fieryCdMap.put(player,1)
         }else{
-            fiery_cd -- 
+            fiery_cd --
             global.fieryCdMap.put(player,fiery_cd)
         }
     }else if(global.armorSetMap.get(player) == "yeti"){//雪怪
