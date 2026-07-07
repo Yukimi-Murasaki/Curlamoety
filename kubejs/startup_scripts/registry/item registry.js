@@ -89,15 +89,15 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.alwaysEdible()
         foodBuilder.effect('enigmaticdelicacy:xp_boost',1200,0,0.5)
         foodBuilder.effect('goety:insight',1200,0,0.5)
-    })
-    .finishUsing(event=>{
-        let player = event.player()
-        let {x,y,z} = player
-        player.level.playSound(null,x,y,z,'minecraft:entity.experience_orb.pickup','players',0.2,1)
-        player.giveExperiencePoints(25)
-        if(Math.random(1)<0.15){
-            entity.give('minecraft:experience_bottle')
-        }
+        foodBuilder.eaten(event=>{
+            let player = event.player
+            let {x,y,z} = player
+            player.level.playSound(null,x,y,z,'minecraft:entity.experience_orb.pickup','players',0.2,1)
+            player.giveExperiencePoints(25)
+            if(Math.random(1)<0.15){
+                player.give('minecraft:experience_bottle')
+            }
+        })
     })
 
     Event.create("curlamoety:sword_cookie")//剑术大师曲奇
@@ -105,6 +105,11 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.hunger(10)
         foodBuilder.saturation(0.8)
         foodBuilder.alwaysEdible()
+        foodBuilder.eaten(event=>{
+            let player = event.player
+            player.persistentData.sword_cookie = 1
+            global.swordCookieMap.put(player,1)
+        })
     })
     .rarity('epic')
 
@@ -368,6 +373,19 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.effect("goety:rallying",-1,5,1)
         foodBuilder.effect("goety:shielding",-1,5,1)
         foodBuilder.effect("goety:radiance",-1,5,1)
+        foodBuilder.eaten(event=>{
+            let player = event.player
+            let {x,y,z} = player
+            player.level.playSound(null,x,y,z,'block.beacon.activate','players',1,1)
+            player.persistentData.ascension_pizza = 1
+            player.modifyAttribute("goety_revelation:spell_power","ascension_pizza_modify",3,"addition")
+            player.modifyAttribute("goety_revelation:spell_power_multiplier","ascension_pizza_modify",0.03,"addition")
+            player.modifyAttribute("goety_revelation:soul_decrease_reduction","ascension_pizza_modify",0.1,"addition")
+            player.modifyAttribute("goety_revelation:resistance","ascension_pizza_modify",0.08,"addition")
+            player.modifyAttribute("goeticlegacy:soul_regen_ratio","ascension_pizza_modify",0.1,"addition")
+            player.modifyAttribute("goeticlegacy:magic_invul_reduction","ascension_pizza_modify",1,"addition")
+            player.modifyAttribute("goeticlegacy:true_damage_ratio","ascension_pizza_modify",0.03,"addition")
+        })
     })
 
     //幻影熔渣
@@ -394,8 +412,8 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.alwaysEdible()
         foodBuilder.effect("goetydelight:spell_mastery",36000,2,1)
         foodBuilder.effect("farmersdelight:nourishment",12000,0,1)
-        foodBuilder.eaten(foodEvent =>{
-            let player = foodEvent.getPlayer()
+        foodBuilder.eaten(event =>{
+            let player = event.getPlayer()
             if(player){
                 player.give("curlamoety:stocking_cup")
             }
