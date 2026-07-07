@@ -16331,6 +16331,58 @@
       "category": "creature",
       "biomes": {},
       "deleted_biomes": []
+    },
+    "goeticlegacy:tormentor_servant": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "min_spawn_distance": 24,
+      "max_spawn_distance": 128,
+      "category": "misc",
+      "biomes": {},
+      "deleted_biomes": []
+    },
+    "goeticlegacy:wild_biome_circle": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "min_spawn_distance": 24,
+      "max_spawn_distance": 128,
+      "category": "misc",
+      "biomes": {},
+      "deleted_biomes": []
+    },
+    "goetydelight:soul_lich": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "min_spawn_distance": 24,
+      "max_spawn_distance": 128,
+      "category": "monster",
+      "biomes": {},
+      "deleted_biomes": []
+    },
+    "goety:haunted_broom": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "min_spawn_distance": 24,
+      "max_spawn_distance": 128,
+      "category": "misc",
+      "biomes": {},
+      "deleted_biomes": []
     }
   }
 }

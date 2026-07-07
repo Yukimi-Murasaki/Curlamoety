@@ -136,7 +136,7 @@
 	#仆从最终伤害加成（ADDITION） [默认: 0.60 = +60%]
 	#Range: 0.0 ~ 100.0
 	servantFinalDamageBonus = 0.6
-	#仆从伤害抗性削减（负值=受到的伤害增加） [默认: -0.60 = -60%]
+	#仆从护甲值削减（MULTIPLY_TOTAL，负值=削减百分比） [默认: -0.60 = -60%]
 	#Range: -1.0 ~ 0.0
 	servantDamageReductionPenalty = -0.6
 	#触发吸血的血量阈值（玩家血量比例） [默认: 0.20 = 20%]
@@ -157,6 +157,14 @@
 	#IRON_HIDE 效果等级 [默认: 1]
 	#Range: 0 ~ 255
 	ironHideAmplifier = 1
+	#蜘蛛中立血量阈值（倍率），
+	#蜘蛛最大生命 ≤ 玩家最大生命 × 此值时中立效果生效。
+	#[默认: 2.5]
+	#Range: 0.0 ~ 100.0
+	neutralHealthThreshold = 2.5
+	#击杀育母蜘蛛掉落蜘蛛标本册的概率（0.0~1.0） [默认: 0.50 = 50%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.5
 
 #---- 启示之证 ----
 [the_acknowledgment]
@@ -594,7 +602,7 @@
 [violence_scroll]
 	#攻击触发虚空震击概率 [默认: 0.30]
 	#Range: 0.0 ~ 1.0
-	voidShockChance = 0.28
+	voidShockChance = 0.3
 	#每层诅咒伤害增幅 [默认: 0.15]
 	#Range: 0.0 ~ 10.0
 	curseDamageFactor = 0.15
@@ -713,15 +721,24 @@
 
 #---- 魔像之心（buff→shielded+iron_hide）----
 [golem_heart]
-	#是否启用 buff→iron_hide（二分之一等级） [默认: true]
+	#是否启用 buff→iron_hide [默认: true]
 	enableIronHide = true
+	#buff→shielded 等级系数 [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	shieldedRatio = 1.0
+	#buff→iron_hide 等级系数 [默认: 0.5]
+	#Range: 0.0 ~ 10.0
+	ironHideRatio = 0.5
+	#效果等级上限 [默认: 10]
+	#Range: 1 ~ 255
+	maxLevel = 10
 
 #---- 虚幻冥灯 ----
 [illusion_lantern]
 	#每件装备消耗灵魂能量 [默认: 6]
 	#Range: 1 ~ 10000
 	armorCost = 6
-	#亡灵中立血量阈值（倍率） [默认: 4.5]
+	#亡灵中立血量阈值（倍率），亡灵最大生命 ≤ 玩家最大生命 × 此值时中立 [默认: 2.5]
 	#Range: 1.0 ~ 100.0
 	neutralHealthThreshold = 4.5
 	#是否仅对亡灵仆从自动装备盔甲 [默认: false = 所有仆从均可装备]
@@ -802,6 +819,12 @@
 	#所有其他内容物的 applyAttributes() 提供的属性值乘以该系数。
 	#Range: 1.0 ~ 5.0
 	contentBoostMultiplier = 1.5
+	#非欧立方「不清除」的负面效果黑名单（ResourceLocation 格式）。
+	#列在此处的效果即使被游戏标记为负面（!isBeneficial），也不会被自动清除。
+	#默认包含不祥之兆（bad_omen）和灾厄的两个幻灵效果。
+	#如需恢复清除某个效果，将其从此列表中移除即可。
+	#格式示例: ["minecraft:bad_omen", "cataclysm:ghost_sickness"]
+	effectBypassList = ["minecraft:bad_omen", "cataclysm:ghost_sickness", "cataclysm:ghost_form"]
 
 #---- 虚空珍珠（重做） ----
 [void_pearl]
@@ -1021,34 +1044,6 @@
 	#Range: 0.0 ~ 100.0
 	magicInvulReduction = 5.0
 
-#════════════════════════════════════
-# 附魔
-#════════════════════════════════════
-#---- 破势 ----
-[breaking_stance]
-	#每级附魔提供的仆从无敌帧削减加成 [默认: 0.5]
-	#Range: 0.0 ~ 100.0
-	bonusPerLevel = 0.5
-
-#---- 戍卫 ----
-[bulwark]
-	#戍卫减伤公式的基数。减伤比例 = level / (base + level)。
-	#类似原版护甲递减曲线，低级收益高，高级自然衰减，永不触及 100%。
-	#
-	#示例 (base=20):
-	#  1 级 ≈ 4.8%    5 级 = 20%
-	#  10 级 ≈ 33.3%  20 级 = 50%
-	#
-	#范围: 1.0 ~ 1000.0  [默认: 20.0]
-	#Range: 1.0 ~ 1000.0
-	bulwarkBaseArmor = 20.0
-
-#---- 咒术增幅 ----
-[wand_power]
-	#每级附魔提供的魔法伤害乘数加成 [默认: 0.05]
-	#Range: 0.0 ~ 10.0
-	magicDamageBonusPerLevel = 0.05
-
 #---- 虚无之书 ----
 [void_tome]
 	#额外槽位数量 [默认: 2]
@@ -1064,37 +1059,6 @@
 	#Range: 1.0 ~ 256.0
 	clearAggroRadius = 32.0
 
-#════════════════════════════════════
-# 仆从配置
-#════════════════════════════════════
-#控制是否启用来自不同模组的仆从类型
-#注意：即使启用，也需要对应模组已安装才会生效
-#
-[servant_config]
-	#是否启用 Iron's Spells and Spellbooks 模组的法术召唤物作为仆从
-	#需要安装 irons_spellbooks 模组 [默认: true]
-	enableIronSpellsServants = true
-	#是否启用 Modular Golems 模组的傀儡作为仆从
-	#需要安装 modulargolems 模组 [默认: true]
-	enableModularGolemsServants = true
-	#是否启用原版可驯服动物作为仆从
-	#也包括车万女仆[默认: true]
-	enableVanillaTameableServants = true
-	#是否禁止 Goety 的 Prisoner 开采以太矿石
-	#Prisoner 的采矿是全自动零成本的，效率极高
-	#启用后将阻止 Prisoner 将以太矿纳入采矿列表
-	#[默认: false]（不禁止）
-	disablePrisonerMiningEtheriumOre = false
-
-#════════════════════════════════════
-# 战斗机制
-#════════════════════════════════════
-#---- 无敌帧削减跳过条件 ----
-[invul_reduction]
-	#当攻击者主手或副手武器携带 goety_revelation:reality_piercer 附魔时，是否跳过本模组的无敌帧削减（让该附魔自己处理穿透）
-	#需要安装 goety_revelation 模组 [默认: true]
-	skipWhenRealityPiercer = false
-
 [ode_to_living_sync_cooldown]
 	#同步冷却机制的冷却时长（ticks，20 ticks = 1 秒）
 	#每次效果同步后，必须等待冷却期满才能再次同步同一效果。
@@ -1102,151 +1066,6 @@
 	#[默认: 100 = 5 秒]
 	#Range: 1 ~ 72000
 	syncCooldownTicks = 100
-
-#════════════════════════════════════
-# 预制建筑
-#════════════════════════════════════
-#蓝图按照三个层级注入战利品表：
-#  Tier 1 - 原版箱子（*:chests/*，不含 goety）
-#  Tier 2 - Goety 系列箱子（命名空间含 goety）
-#  Tier 3 - 宝藏袋 / 自定义战利品表
-#
-#爆率计算公式：
-#  每个蓝图按自身 dropWeight 参与加权随机，
-#  概率 = 该蓝图dropWeight / (所有蓝图dropWeight之和 + emptyWeight)
-#  其中 emptyWeight = 总权重 * (1 - chance) / chance
-#
-#示例：dropWeight=20 的蓝图在 5% 爆率下：
-#  假设总权重=100 → emptyWeight=1900 → 单蓝图概率 ≈ 20/2000 ≈ 1%
-#
-#建议值：
-#  vanillaChestChance:  0.05 (5%)  → 平均 20 个箱子出 1 张
-#  goetyChestChance:    0.15 (15%) → 平均 6-7 个箱子出 1 张
-#  treasurePouchChance: 0.66 (66%) → 平均 1.5 个袋子出 1 张
-#
-[prefab_loot]
-	#Tier 1: 原版箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
-	#作用于所有命名空间不含 "goety" 且路径以 chests/ 开头的战利品表
-	#[默认: 0.05]
-	#Range: 0.0 ~ 1.0
-	vanillaChestChance = 0.025
-	#Tier 2: Goety 系列箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
-	#作用于命名空间含 "goety" 且路径以 chests/ 开头的战利品表
-	#[默认: 0.1]
-	#Range: 0.0 ~ 1.0
-	goetyChestChance = 0.075
-	#Tier 3: 宝藏袋/自定义战利品表的蓝图爆率 (0.0=关闭, 1.0=必出)
-	#作用于下方 treasurePouchIds 列表中的战利品表 ID
-	#[默认: 0.45]
-	#Range: 0.0 ~ 1.0
-	treasurePouchChance = 0.33
-	#═══════════════════════════════════════════════
-	# 宝藏袋战利品表 ID 列表
-	#═══════════════════════════════════════════════
-	#
-	#在此列表中的战利品表 ID 会应用 Tier 3 的爆率。
-	#格式："modid:path"，一行一个。
-	#
-	#默认值：
-	#  "goety:gameplay/treasure_pouch" — Goety 宝藏袋
-	#
-	#你可以加入其他模组的宝藏袋/奖励袋 ID：
-	#  "irons_spellbooks:gameplay/reward_pouch"
-	#  "cataclysm:gameplay/loot_bag"
-	#
-	treasurePouchIds = ["goety:gameplay/treasure_pouch"]
-
-#---- 翡翠护符 ----
-[jade_amulet]
-	#魔法伤害乘数加成 [默认: 0.15]
-	#Range: 0.0 ~ 10.0
-	magicDamageMultiplier = 0.15
-
-#---- 幽匿之心 ----
-[sculk_heart]
-	#音波基础伤害 [默认: 10.0]
-	#Range: 0.0 ~ 100.0
-	sonicBoomBaseDamage = 10.0
-	#每级 Potency 增加的基础伤害 [默认: 2.0]
-	#Range: 0.0 ~ 50.0
-	sonicBoomPotencyPerLevel = 2.0
-	#音波射程（格） [默认: 15]
-	#Range: 1 ~ 64
-	sonicBoomRange = 15
-	#空手伤害加成（固定值） [默认: 8.0]
-	#Range: 0.0 ~ 50.0
-	unarmedDamageBonus = 8.0
-	#每次击杀获得的最大灵魂能量百分比 [默认: 1.0]
-	#Range: 0.0 ~ 100.0
-	soulGainPercent = 1.0
-	#幽匿脉络最大扩散量 [默认: 1]
-	#Range: 0 ~ 10
-	sculkSpreadAmount = 1
-	#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向上取整，不超过上限） [默认: 7]
-	#Range: 1 ~ 1000
-	sculkXpDivisor = 7
-	#死后是否召唤监守者 [默认: true]
-	summonWardenOnDeath = true
-	#召唤的监守者消失时间（tick） [默认: 2400 = 120秒]
-	#Range: 100 ~ 72000
-	wardenDespawnTicks = 2400
-	#仆从死亡时召唤监守者的概率 [默认: 0.05]
-	#Range: 0.0 ~ 1.0
-	summonWardenChance = 0.05
-
-#════════════════════════════════════
-# 替代品卷轴重铸配置
-#════════════════════════════════════
-#---- 替代品卷轴 ----
-#控制仪式产出的打标研究卷轴的随机分配机制。
-#
-[substitute_config]
-	#每张卷轴允许的最大重铸次数。
-	#0 = 不允许重铸（旧行为：已有标签即退化）
-	#1 = 允许重铸一次（默认）
-	#N = 允许重铸 N 次
-	#[默认: 1]
-	#Range: 0 ~ 100
-	maxRerolls = 1
-	#仪式根据 craftType 偏好某类 content 时的权重。
-	#每次随机时，有 preferenceWeight 的概率从偏好的类型（典籍/卷轴/术石）中选取，
-	#剩余概率从其他类型中选取。
-	#0.0 = 完全均匀随机（无偏好），
-	#0.7 = 70% 概率选偏好类型（默认），
-	#1.0 = 强制只从偏好类型中选取。
-	#[默认: 0.7]
-	#Range: 0.0 ~ 1.0
-	preferenceWeight = 0.7
-
-#控制哪些实体类型可以被预制建筑系统捕获（创建蓝图/收回建筑时）。
-#格式: modid:entity_type，例如 minecraft:painting
-#
-#支持的实体必须是不依赖运行时状态的纯装饰实体。
-#白名单外的实体在快照时将被忽略，避免 NBT 残留导致崩溃。
-[prefab_entity]
-	#可被预制建筑蓝图捕获的实体列表。
-	#默认包含：原版画/物品展示框/荧光展示框/盔甲架 + Goety 的 haunted 版本
-	#添加其他模组实体前请确认其 NBT 不包含动态引用（UUID、Passengers 等）
-	capturableEntities = ["minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:armor_stand", "goety:haunted_painting", "goety:haunted_armor_stand"]
-
-#════════════════════════════════════
-# 初始建筑（Starter）
-#════════════════════════════════════
-#---- 初始建筑（Starter） ----
-#新玩家首次登录时自动获得的预制建筑蓝图。
-#
-[starter_config]
-	#发放模式：
-	#  "all"    — 给予 starters/ 目录下的所有初始建筑
-	#  "random" — 随机选择一个初始建筑（默认）
-	#  "none"   — 禁用初始建筑发放
-	#[默认: random]
-	starterMode = "none"
-	#初始建筑模板存放目录（相对于 config/）
-	#此目录下的 .nbt 或 .schematic 文件将作为初始建筑发放。
-	#首次运行时自动从 JAR 内置 resources 复制示例模板。
-	#[默认: goeticlegacy/starters]
-	starterPath = "goeticlegacy/starters"
 
 #---- 寻猎者卷轴 ----
 [hunter_scroll]
@@ -1274,47 +1093,380 @@
 	#Range: 0.0 ~ 10.0
 	meleeDamageMultiplier = 0.8
 
-#---- 预制建筑通用配置 ----
-#控制 CREATE 捕获模式、动画速度、灵魂消耗等。
+#---- 烈风之书 ----
+[wind_book]
+	#上升气流作用半径（格） [默认: 36]
+	#Range: 1 ~ 64
+	updraftRadius = 36
+	#右键主动技能冷却时间（tick，20 tick = 1 秒） [默认: 100 = 5 秒]
+	#Range: 1 ~ 72000
+	cooldownTicks = 100
+	#烈风神祠普通补给箱中出现烈风之书的概率（0.0~1.0） [默认: 0.15 = 15%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.2
+	#烈风神祠宝藏箱中出现烈风之书的概率（0.0~1.0） [默认: 0.50 = 50%]
+	#Range: 0.0 ~ 1.0
+	treasureChance = 0.5
+
+#---- 过往之书 ----
+[bygone_book]
+	#下界生物中立血量阈值（倍率），
+	#敌对生物最大生命 ≤ 玩家最大生命 × 此值时中立效果生效。
+	#例：2.5 = 血量不超过玩家 2.5 倍的敌对生物才会中立。
+	#[默认: 2.5]
+	#Range: 0.0 ~ 100.0
+	neutralHealthThreshold = 4.5
+	#法术伤害乘数加成（ADDITION） [默认: 0.15 = +15%]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.15
+
+#---- 宰相之书 ----
+[vizier_book]
+	#Neollager 训练为紫袍刌民（Spellcaster）的概率 [默认: 0.6 = 60%]
+	#原版概率为 15%。设为 1.0 则必定转化。
+	#Range: 0.0 ~ 1.0
+	magicChance = 0.6
+	#刌民仆从训练速度倍率 [默认: 3 = ×3]
+	#Range: 1 ~ 100
+	trainSpeedMultiplier = 3
+
+#---- NightCube 典籍专属效果 ----
+#---- 烈风之书（NightCube 专属）----
+[wind_book_content]
+	#达到满增伤所需的高度差（格） [默认: 12]
+	#Range: 1 ~ 256
+	heightThreshold = 10
+	#最大增伤倍率（1.0 = +100%） [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	maxHeightBonus = 0.25
+
+#---- 过往之书（NightCube 专属）----
+[bygone_book_content]
+	#狱火额外造成目标最大生命值百分比伤害 [默认: 0.025 = 2.5%]
+	#Range: 0.0 ~ 1.0
+	hellfireMaxHealthPct = 0.025
+	#该百分比伤害的倍率 [默认: 1.5]
+	#Range: 0.0 ~ 100.0
+	hellfireDamageMultiplier = 1.5
+
+#---- 宰相之书（NightCube 专属）----
+[vizier_book_content]
+	#施法蓄力时的伤害减免率（0.6 = 减伤 60%） [默认: 0.6]
+	#Range: 0.0 ~ 1.0
+	shieldDamageReduction = 0.5
+	#是否启用「恼鬼聚晶 → 召唤折磨仆从」替换 [默认: true]
+	tormentorEnabled = true
+
+#---- 亡灵提灯 ----
 #
-[prefab_config]
-	#CREATE 捕获模式允许的最大单轴尺寸（方块数）。
-	#注意：实际可创建的方块数受灵魂能量上限制约（soulCostRatioCap）。
-	#增大此值会增加预览网络包大小和动画时长。
-	#[默认: 64] [范围: 16 ~ 256]
-	#Range: 16 ~ 256
-	maxCreateSize = 128
-	#生存模式下 CREATE 捕获的最大单轴尺寸（方块数）。
-	#创造模式不受此限制（使用上方 maxCreateSize）。
-	#[默认: 48] [范围: 8 ~ 128]
-	#Range: 8 ~ 128
-	survivalMaxCreateSize = 48
-	#部署/收回动画每 tick 最多处理的方块数。
-	#增大此值可加快大建筑动画速度，但会增加每 tick 的服务端开销。
-	#20 = 原版默认速度，120 ≈ 5 分钟处理 240k 方块。
-	#[默认: 120] [范围: 20 ~ 500]
-	#Range: 20 ~ 500
-	maxBlocksPerTick = 120
-	#每放置一个非空气方块消耗的灵魂能量倍率。
-	#最终消耗 = ceil(方块数 × 此值)，再受 soulCostRatioCap 限制。
-	#[默认: 0.5] [范围: 0.01 ~ 10.0]
-	#Range: 0.01 ~ 10.0
-	soulCostPerBlock = 0.5
-	#动画目标总时长（tick，20 tick = 1 秒）。
-	#小建筑快速完成，大建筑渐近趋向此值。6000 = 5 分钟。
-	#[默认: 6000] [范围: 600 ~ 24000]
-	#Range: 600 ~ 24000
-	targetJobTicks = 6000
-	#预览包切换为外轮廓模式的方块数阈值。
-	#当非空气方块数超过此值时，预览只发送建筑表面方块以减小包体积。
-	#设为 0 强制始终外轮廓；设为极大值禁用外轮廓。
-	#[默认: 5000] [范围: 0 ~ 1000000]
-	#Range: 0 ~ 1000000
-	previewOutlineThreshold = 5000
-	#单次部署的灵魂消耗占玩家最大灵魂能量的比例上限。
-	#eg. 0.8 = 最多消耗 80% 的灵魂上限。此值独立于 maxCreateSize，
-	#即使配置允许更大的选区，灵魂消耗也不会超过此上限。
-	#[默认: 0.8] [范围: 0.1 ~ 1.0]
-	#Range: 0.1 ~ 1.0
-	soulCostRatioCap = 0.8
+#快捷栏/副手持有亡灵提灯时：
+#  - 防晒保护（防止阳光下燃烧，固定 20 tick / 8 格半径）
+#  - 亡灵仆从定期回血（固定 5 秒间隔，回复量可配置）
+#  - 灵魂缓冲器（高阈值暂存，低阈值补充，容量可配置）
+#  - 穿戴 Necro Crown/Cape 的玩家免疫日光 Weakness/Hunger
+#
+#副手专属效果：
+#  - 攻击伤害 +25%（可开关，固定值）
+#  - 攻击附加 goety:wane 5 秒（可开关，固定时长）
+#  - 收获灵魂能量 ×2（可配置倍率）
+[nerotic_lantern]
+	#开启亡灵提灯被动效果（防晒/回血/灵魂缓冲） [默认: true]
+	enablePassive = true
+	#每次治疗回血量（半颗心为单位，1=0.5❤） [默认: 2 = 1❤]
+	#Range: 1 ~ 100
+	healAmount = 2
+
+	[nerotic_lantern.nerotic_lantern_buffer]
+		#单盏提灯的灵魂储量上限 [默认: 10000]
+		#Range: 100 ~ 1000000
+		bufferCapacity = 10000
+		#缓冲器高阈值（比例 0.0~1.0），超过此值时新增灵魂存入提灯 [默认: 0.6]
+		#Range: 0.0 ~ 1.0
+		bufferThresholdHigh = 0.6
+		#缓冲器低阈值（比例 0.0~1.0），低于此值时从提灯提取灵魂补充 [默认: 0.4]
+		#Range: 0.0 ~ 1.0
+		bufferThresholdLow = 0.4
+
+	[nerotic_lantern.nerotic_lantern_offhand]
+		#启用副手攻击伤害 +25% [默认: true]
+		enableAttackDamage = true
+		#启用副手攻击附加 goety:wane 5 秒 [默认: true]
+		enableWane = true
+		#副手时灵魂能量收获倍率 [默认: 2.0 = ×2]
+		#Range: 1.0 ~ 100.0
+		soulMultiplier = 2.0
+
+	#---- 翡翠护符 ----
+	[nerotic_lantern.jade_amulet]
+		#魔法伤害乘数加成 [默认: 0.15]
+		#Range: 0.0 ~ 10.0
+		magicDamageMultiplier = 0.15
+		#墓穴战利品箱中出现玉佩的概率（0.0~1.0） [默认: 0.05 = 5%]
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.05
+
+	#---- 幽匿之心 ----
+	[nerotic_lantern.sculk_heart]
+		#音波基础伤害 [默认: 10.0]
+		#Range: 0.0 ~ 100.0
+		sonicBoomBaseDamage = 10.0
+		#每级 Potency 增加的基础伤害 [默认: 2.0]
+		#Range: 0.0 ~ 50.0
+		sonicBoomPotencyPerLevel = 2.0
+		#音波射程（格） [默认: 15]
+		#Range: 1 ~ 64
+		sonicBoomRange = 15
+		#空手伤害加成（固定值） [默认: 8.0]
+		#Range: 0.0 ~ 50.0
+		unarmedDamageBonus = 8.0
+		#每次击杀获得的最大灵魂能量百分比 [默认: 1.0]
+		#Range: 0.0 ~ 100.0
+		soulGainPercent = 1.0
+		#幽匿脉络最大扩散量 [默认: 1]
+		#Range: 0 ~ 10
+		sculkSpreadAmount = 1
+		#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向上取整，不超过上限） [默认: 7]
+		#Range: 1 ~ 1000
+		sculkXpDivisor = 7
+		#死后是否召唤监守者 [默认: true]
+		summonWardenOnDeath = true
+		#仆从死亡时召唤监守者的概率 [默认: 0.05]
+		#Range: 0.0 ~ 1.0
+		summonWardenChance = 0.05
+		#远古城市战利品箱中出现幽匿之心的概率（0.0~1.0） [默认: 0.05 = 5%]
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.05
+		#召唤的监守者消失时间（tick） [默认: 2400 = 120秒]
+		#Range: 100 ~ 72000
+		wardenDespawnTicks = 2400
+
+	#════════════════════════════════════
+	# 附魔
+	#════════════════════════════════════
+	#---- 破势 ----
+	[nerotic_lantern.breaking_stance]
+		#每级附魔提供的仆从无敌帧削减加成 [默认: 0.5]
+		#Range: 0.0 ~ 100.0
+		bonusPerLevel = 0.5
+
+	#---- 戍卫 ----
+	[nerotic_lantern.bulwark]
+		#戍卫减伤公式的基数。减伤比例 = level / (base + level)。
+		#类似原版护甲递减曲线，低级收益高，高级自然衰减，永不触及 100%。
+		#
+		#示例 (base=20):
+		#  1 级 ≈ 4.8%    5 级 = 20%
+		#  10 级 ≈ 33.3%  20 级 = 50%
+		#
+		#范围: 1.0 ~ 1000.0  [默认: 20.0]
+		#Range: 1.0 ~ 1000.0
+		bulwarkBaseArmor = 20.0
+
+	#---- 咒术增幅 ----
+	[nerotic_lantern.wand_power]
+		#每级附魔提供的魔法伤害乘数加成 [默认: 0.05]
+		#Range: 0.0 ~ 10.0
+		magicDamageBonusPerLevel = 0.05
+
+	#════════════════════════════════════
+	# 战斗机制
+	#════════════════════════════════════
+	#---- 无敌帧削减跳过条件 ----
+	[nerotic_lantern.invul_reduction]
+		#当攻击者主手或副手武器携带 goety_revelation:reality_piercer 附魔时，是否跳过本模组的无敌帧削减（让该附魔自己处理穿透）
+		#需要安装 goety_revelation 模组 [默认: true]
+		skipWhenRealityPiercer = false
+
+	#════════════════════════════════════
+	# 替代品卷轴重铸配置
+	#════════════════════════════════════
+	#---- 替代品卷轴 ----
+	#控制仪式产出的打标研究卷轴的随机分配机制。
+	#
+	[nerotic_lantern.substitute_config]
+		#每张卷轴允许的最大重铸次数。
+		#0 = 不允许重铸（旧行为：已有标签即退化）
+		#1 = 允许重铸一次（默认）
+		#N = 允许重铸 N 次
+		#[默认: 1]
+		#Range: 0 ~ 100
+		maxRerolls = 1
+		#仪式根据 craftType 偏好某类 content 时的权重。
+		#每次随机时，有 preferenceWeight 的概率从偏好的类型（典籍/卷轴/术石）中选取，
+		#剩余概率从其他类型中选取。
+		#0.0 = 完全均匀随机（无偏好），
+		#0.7 = 70% 概率选偏好类型（默认），
+		#1.0 = 强制只从偏好类型中选取。
+		#[默认: 0.7]
+		#Range: 0.0 ~ 1.0
+		preferenceWeight = 0.7
+
+	#════════════════════════════════════
+	# 仆从配置
+	#════════════════════════════════════
+	#控制是否启用来自不同模组的仆从类型
+	#注意：即使启用，也需要对应模组已安装才会生效
+	#
+	[nerotic_lantern.servant_config]
+		#是否启用 Iron's Spells and Spellbooks 模组的法术召唤物作为仆从
+		#需要安装 irons_spellbooks 模组 [默认: true]
+		enableIronSpellsServants = true
+		#是否启用 Modular Golems 模组的傀儡作为仆从
+		#需要安装 modulargolems 模组 [默认: true]
+		enableModularGolemsServants = true
+		#是否启用原版可驯服动物作为仆从
+		#也包括车万女仆[默认: true]
+		enableVanillaTameableServants = true
+		#是否禁止 Goety 的 Prisoner 开采以太矿石
+		#Prisoner 的采矿是全自动零成本的，效率极高
+		#启用后将阻止 Prisoner 将以太矿纳入采矿列表
+		#[默认: false]（不禁止）
+		disablePrisonerMiningEtheriumOre = false
+
+	#════════════════════════════════════
+	# 预制建筑
+	#════════════════════════════════════
+	#蓝图按照三个层级注入战利品表：
+	#  Tier 1 - 原版箱子（*:chests/*，不含 goety）
+	#  Tier 2 - Goety 系列箱子（命名空间含 goety）
+	#  Tier 3 - 宝藏袋 / 自定义战利品表
+	#
+	#爆率计算公式：
+	#  每个蓝图按自身 dropWeight 参与加权随机，
+	#  概率 = 该蓝图dropWeight / (所有蓝图dropWeight之和 + emptyWeight)
+	#  其中 emptyWeight = 总权重 * (1 - chance) / chance
+	#
+	#示例：dropWeight=20 的蓝图在 5% 爆率下：
+	#  假设总权重=100 → emptyWeight=1900 → 单蓝图概率 ≈ 20/2000 ≈ 1%
+	#
+	#建议值：
+	#  vanillaChestChance:  0.05 (5%)  → 平均 20 个箱子出 1 张
+	#  goetyChestChance:    0.15 (15%) → 平均 6-7 个箱子出 1 张
+	#  treasurePouchChance: 0.66 (66%) → 平均 1.5 个袋子出 1 张
+	#
+	[nerotic_lantern.prefab_loot]
+		#Tier 1: 原版箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
+		#作用于所有命名空间不含 "goety" 且路径以 chests/ 开头的战利品表
+		#[默认: 0.05]
+		#Range: 0.0 ~ 1.0
+		vanillaChestChance = 0.05
+		#Tier 2: Goety 系列箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
+		#作用于命名空间含 "goety" 且路径以 chests/ 开头的战利品表
+		#[默认: 0.1]
+		#Range: 0.0 ~ 1.0
+		goetyChestChance = 0.1
+		#Tier 3: 宝藏袋/自定义战利品表的蓝图爆率 (0.0=关闭, 1.0=必出)
+		#作用于下方 treasurePouchIds 列表中的战利品表 ID
+		#[默认: 0.45]
+		#Range: 0.0 ~ 1.0
+		treasurePouchChance = 0.2
+		#═══════════════════════════════════════════════
+		# 宝藏袋战利品表 ID 列表
+		#═══════════════════════════════════════════════
+		#
+		#在此列表中的战利品表 ID 会应用 Tier 3 的爆率。
+		#格式："modid:path"，一行一个。
+		#
+		#默认值：
+		#  "goety:gameplay/treasure_pouch" — Goety 宝藏袋
+		#
+		#你可以加入其他模组的宝藏袋/奖励袋 ID：
+		#  "irons_spellbooks:gameplay/reward_pouch"
+		#  "cataclysm:gameplay/loot_bag"
+		#
+		treasurePouchIds = ["goety:gameplay/treasure_pouch"]
+
+	#控制哪些实体类型可以被预制建筑系统捕获（创建蓝图/收回建筑时）。
+	#格式: modid:entity_type，例如 minecraft:painting
+	#
+	#支持的实体必须是不依赖运行时状态的纯装饰实体。
+	#白名单外的实体在快照时将被忽略，避免 NBT 残留导致崩溃。
+	[nerotic_lantern.prefab_entity]
+		#可被预制建筑蓝图捕获的实体列表。
+		#默认包含：原版画/物品展示框/荧光展示框/盔甲架 + Goety 的 haunted 版本
+		#添加其他模组实体前请确认其 NBT 不包含动态引用（UUID、Passengers 等）
+		capturableEntities = ["minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:armor_stand", "goety:haunted_painting", "goety:haunted_armor_stand"]
+
+	#---- 预制建筑通用配置 ----
+	#控制 CREATE 捕获模式、动画速度、灵魂消耗等。
+	#
+	[nerotic_lantern.prefab_config]
+		#CREATE 捕获模式允许的最大单轴尺寸（方块数）。
+		#注意：实际可创建的方块数受灵魂能量上限制约（soulCostRatioCap）。
+		#增大此值会增加预览网络包大小和动画时长。
+		#[默认: 64] [范围: 16 ~ 256]
+		#Range: 16 ~ 256
+		maxCreateSize = 128
+		#生存模式下 CREATE 捕获的最大单轴尺寸（方块数）。
+		#创造模式不受此限制（使用上方 maxCreateSize）。
+		#[默认: 48] [范围: 8 ~ 128]
+		#Range: 8 ~ 128
+		survivalMaxCreateSize = 48
+		#部署/收回动画每 tick 最多处理的方块数。
+		#增大此值可加快大建筑动画速度，但会增加每 tick 的服务端开销。
+		#20 = 原版默认速度，120 ≈ 5 分钟处理 240k 方块。
+		#[默认: 120] [范围: 20 ~ 500]
+		#Range: 20 ~ 500
+		maxBlocksPerTick = 120
+		#每放置一个非空气方块消耗的灵魂能量倍率。
+		#最终消耗 = ceil(方块数 × 此值)，再受 soulCostRatioCap 限制。
+		#[默认: 0.5] [范围: 0.01 ~ 10.0]
+		#Range: 0.01 ~ 10.0
+		soulCostPerBlock = 0.5
+		#动画目标总时长（tick，20 tick = 1 秒）。
+		#小建筑快速完成，大建筑渐近趋向此值。6000 = 5 分钟。
+		#[默认: 6000] [范围: 600 ~ 24000]
+		#Range: 600 ~ 24000
+		targetJobTicks = 6000
+		#预览包切换为外轮廓模式的方块数阈值。
+		#当非空气方块数超过此值时，预览只发送建筑表面方块以减小包体积。
+		#设为 0 强制始终外轮廓；设为极大值禁用外轮廓。
+		#[默认: 5000] [范围: 0 ~ 1000000]
+		#Range: 0 ~ 1000000
+		previewOutlineThreshold = 5000
+		#单次部署的灵魂消耗占方舟最大灵魂能量的比例上限。
+		#以 Goety 配置中方舟的最大灵魂容量（maxArcaSouls，默认 100000）为基准，
+		#而非玩家当前容器（图腾/方舟）的实际上限，确保跨容器类型的上限一致。
+		#eg. 0.8 = 最多消耗方舟上限 80% 的灵魂能量。此值独立于 maxCreateSize，
+		#即使配置允许更大的选区，灵魂消耗也不会超过此上限。
+		#[默认: 0.8] [范围: 0.1 ~ 1.0]
+		#Range: 0.1 ~ 1.0
+		soulCostRatioCap = 0.8
+		#启用维度方块过滤。
+		#启用后，在下界（ultraWarm 维度）部署建筑时，会自动过滤掉水源方块和气泡柱。
+		#防止玩家在下界通过预制建筑系统放置不应该存在的液体。
+		#关闭后还原旧行为，不作任何维度检查。
+		#[默认: true]
+		enableDimensionFilter = true
+
+	#════════════════════════════════════
+	# 初始建筑（Starter）
+	#════════════════════════════════════
+	#---- 初始建筑（Starter） ----
+	#新玩家首次登录时自动获得的预制建筑蓝图。
+	#
+	[nerotic_lantern.starter_config]
+		#发放模式：
+		#  "all"    — 给予 starters/ 目录下的所有初始建筑
+		#  "random" — 随机选择一个初始建筑（默认）
+		#  "none"   — 禁用初始建筑发放
+		#[默认: random]
+		starterMode = "none"
+		#初始建筑模板存放目录（相对于 config/）
+		#此目录下的 .nbt 或 .schematic 文件将作为初始建筑发放。
+		#首次运行时自动从 JAR 内置 resources 复制示例模板。
+		#[默认: goeticlegacy/starters]
+		starterPath = "goeticlegacy/starters"
+
+	#════════════════════════════════════
+	# 荒域之杖灵魂消耗
+	#════════════════════════════════════
+	#---- 荒域之杖 ----
+	[nerotic_lantern.wild_biome_staff]
+		#RECORD 模式消耗灵魂能量 [默认: 50]
+		#Range: 0 ~ 10000
+		recordSoulCost = 50
+		#CONVERT 模式消耗灵魂能量 [默认: 500]
+		#Range: 0 ~ 10000
+		convertSoulCost = 500
 

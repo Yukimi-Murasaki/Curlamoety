@@ -333,7 +333,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_darkmage_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(8,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
-            text.add(14,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(14,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(14,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(15,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(18,Text.translate("curlamoety.lang.darkmage_armorset_3"))
         }
@@ -341,7 +345,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_darkmage_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(6,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
-            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_3"))
         }
@@ -349,7 +357,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_darkmage_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(6,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
-            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(13,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(16,Text.translate("curlamoety.lang.darkmage_armorset_3"))
         }
@@ -357,7 +369,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_darkmage_boots',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(7,Text.translate("curlamoety.lang.spider_darkmage_armorset_0"))
-            text.add(13,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(13,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(13,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(14,Text.translate("curlamoety.lang.darkmage_armorset_1"))
             text.add(17,Text.translate("curlamoety.lang.darkmage_armorset_3"))
         }
@@ -425,7 +441,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_helmet',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(8,Text.translate("curlamoety.lang.spider_armorset_0"))
-            text.add(12,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(13,Text.translate("curlamoety.lang.middle_armorset_1"))
             text.add(14,Text.translate("curlamoety.lang.middle_armorset_2"))
             text.add(15,Text.translate("curlamoety.lang.middle_armorset_3"))
@@ -439,7 +459,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_chestplate',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(6,Text.translate("curlamoety.lang.spider_armorset_0"))
-            text.add(10,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(10,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(10,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(11,Text.translate("curlamoety.lang.middle_armorset_1"))
             text.add(12,Text.translate("curlamoety.lang.middle_armorset_2"))
             text.add(13,Text.translate("curlamoety.lang.middle_armorset_3"))
@@ -453,7 +477,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_leggings',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(6,Text.translate("curlamoety.lang.spider_armorset_0"))
-            text.add(10,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(10,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(10,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(11,Text.translate("curlamoety.lang.middle_armorset_1"))
             text.add(12,Text.translate("curlamoety.lang.middle_armorset_2"))
             text.add(13,Text.translate("curlamoety.lang.middle_armorset_3"))
@@ -467,7 +495,11 @@ ItemEvents.tooltip(event=>{
     event.addAdvanced('goety_revelation:spider_boots',(item,addAdvanced,text)=>{
         if(event.shift){
             text.add(7,Text.translate("curlamoety.lang.spider_armorset_0"))
-            text.add(11,Component.translate("curlamoety.lang.spider_armorset_1",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(11,Component.translate("curlamoety.lang.spider_armorset_1_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(11,Component.translate("curlamoety.lang.spider_armorset_1_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
             text.add(12,Text.translate("curlamoety.lang.middle_armorset_1"))
             text.add(13,Text.translate("curlamoety.lang.middle_armorset_2"))
             text.add(14,Text.translate("curlamoety.lang.middle_armorset_3"))
@@ -491,6 +523,11 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.blue(Text.translate("curlamoety.lang.snap_warts_1")))
         text.add(2,Text.blue(Text.translate("curlamoety.lang.snap_warts_2")))
     })
+
+    event.addAdvanced("goety:snap_fungus",(item,addAdvanced,text)=>{//啪啪菌团
+        text.add(1,Text.blue(Text.translate("curlamoety.lang.snap_fungus")))
+    })
+
 
     event.addAdvanced('#forge:glass',(item,addAdvanced,text)=>{//玻璃
         text.add(1,Text.blue(Text.translate("curlamoety.lang.glass")))
@@ -930,7 +967,11 @@ ItemEvents.tooltip(event=>{
             text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
             text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
             text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
-            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }
     })
     event.addAdvanced('goetyawaken:champion_chestplate',(item,addAdvanced,text)=>{
@@ -939,7 +980,11 @@ ItemEvents.tooltip(event=>{
             text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
             text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
             text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
-            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }
     })
     event.addAdvanced('goetyawaken:champion_leggings',(item,addAdvanced,text)=>{
@@ -948,7 +993,11 @@ ItemEvents.tooltip(event=>{
             text.add(15,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
             text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
             text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
-            text.add(18,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(18,Component.translate("curlamoety.lang.champion_armorset_4_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }
     })
     event.addAdvanced('goetyawaken:champion_boots',(item,addAdvanced,text)=>{
@@ -957,7 +1006,11 @@ ItemEvents.tooltip(event=>{
             text.add(16,Text.gray(Text.translate("curlamoety.lang.champion_armorset_1")))
             text.add(17,Text.gray(Text.translate("curlamoety.lang.champion_armorset_2")))
             text.add(18,Text.gray(Text.translate("curlamoety.lang.champion_armorset_3")))
-            text.add(19,Component.translate("curlamoety.lang.champion_armorset_4",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(19,Component.translate("curlamoety.lang.champion_armorset_4_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(19,Component.translate("curlamoety.lang.champion_armorset_4_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }
     })
 
@@ -1773,7 +1826,11 @@ ItemEvents.tooltip(event=>{
             text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
             text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
             text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
-            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(1,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1789,7 +1846,11 @@ ItemEvents.tooltip(event=>{
             text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
             text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
             text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
-            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(1,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1804,7 +1865,11 @@ ItemEvents.tooltip(event=>{
             text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
             text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
             text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
-            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(1,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1819,7 +1884,11 @@ ItemEvents.tooltip(event=>{
             text.add(6,Text.translate("curlamoety.lang.yeti_armorset_5"))
             text.add(7,Text.translate("curlamoety.lang.yeti_armorset_6"))
             text.add(8,Text.translate("curlamoety.lang.yeti_armorset_7"))
-            text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(9,Component.translate("curlamoety.lang.yeti_armorset_8_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(1,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1923,7 +1992,11 @@ ItemEvents.tooltip(event=>{
             text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
             text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
             text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
-            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1940,7 +2013,11 @@ ItemEvents.tooltip(event=>{
             text.add(10,Text.translate("curlamoety.lang.cursium_armorset_6"))
             text.add(11,Text.translate("curlamoety.lang.cursium_armorset_7"))
             text.add(12,Text.translate("curlamoety.lang.cursium_armorset_8"))
-            text.add(13,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(13,Component.translate("curlamoety.lang.cursium_armorset_9_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(13,Component.translate("curlamoety.lang.cursium_armorset_9_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(4,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1956,7 +2033,11 @@ ItemEvents.tooltip(event=>{
             text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
             text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
             text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
-            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -1972,7 +2053,11 @@ ItemEvents.tooltip(event=>{
             text.add(9,Text.translate("curlamoety.lang.cursium_armorset_6"))
             text.add(10,Text.translate("curlamoety.lang.cursium_armorset_7"))
             text.add(11,Text.translate("curlamoety.lang.cursium_armorset_8"))
-            text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            if(global.armorSwitchMap.get(player) == 1){
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_on",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }else{
+                text.add(12,Component.translate("curlamoety.lang.cursium_armorset_9_off",Component.gold(global.armorSetKey.getTranslatedKeyMessage())))
+            }
         }else{
             text.add(3,Text.translate("curlamoety.lang.hold_shift"))
         }
@@ -2269,6 +2354,27 @@ ItemEvents.tooltip(event=>{
 
     event.addAdvanced("#goety:totems",(item,addAdvanced,text)=>{//图腾
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.totems")))
+    })
+
+    event.addAdvanced("goety:wicked_boline",(item,addAdvanced,text)=>{//伯莱恩匕首
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
+        text.add(2,Text.blue(Text.translate("curlamoety.lang.wicked_boline2")))
+    })
+
+    event.addAdvanced("goety:henbane_flower",(item,addAdvanced,text)=>{//伯莱恩匕首收割
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
+    })
+
+    event.addAdvanced("goety:henbane_seeds",(item,addAdvanced,text)=>{//伯莱恩匕首收割
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
+    })
+
+    event.addAdvanced("goety:nightshade_blossom",(item,addAdvanced,text)=>{//伯莱恩匕首收割
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
+    })
+    
+    event.addAdvanced("goety:nightshade_seeds",(item,addAdvanced,text)=>{//伯莱恩匕首收割
+        text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
     })
 
 })

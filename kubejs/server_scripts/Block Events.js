@@ -370,7 +370,7 @@ BlockEvents.rightClicked((event) => {
             {
                 item.count --
                 level.playSound(null,x,y,z,'curlamoety:building','players',1,1)
-                level.playSound(null,x,y,z,'farmersdelight:block.cutting_board.knife','players',1,1)
+                level.playSound(null,x,y,z,'farmersdelight:block.cutting_board.knife_cut','players',1,1)
                 server.runCommandSilent(`fill ${x-2} ${y} ${z-6} ${x+3} ${y+3} ${z} minecraft:air`);
                 server.runCommandSilent(`setblock ${x} ${y} ${z} minecraft:structure_block{posX:-2,posY:0,posZ:-6,name:"curlamoety:autochopping",mode:"LOAD"}`)
                 server.runCommandSilent(`setblock ${x} ${y} ${z-1} minecraft:redstone_block`)
@@ -513,12 +513,9 @@ BlockEvents.rightClicked((event) => {
             global.genericSummonCdMap.put(player,20)
         }else if(block.id == "minecraft:gold_block"){
             player.tell("0")
-            player.tell(global.fieryCdMap.get(player))
-            player.tell("1")
+            player.tell(global.armorSwitchMap.get(player))
         }else if(block.id == "minecraft:iron_block"){
-            player.tell("2")
-            global.fieryCdMap.put(player,0)
-            player.tell("3")
+            //
         }else if(block.id == "cataclysm:cursium_block"){
             // let summon = level.createEntity("cataclysm:abyss_portal")
             // summon.setPosition(x+0.5,y+1,z+0.5)

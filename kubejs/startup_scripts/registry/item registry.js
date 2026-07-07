@@ -90,6 +90,15 @@ StartupEvents.registry('item',Event=>{//物品注册
         foodBuilder.effect('enigmaticdelicacy:xp_boost',1200,0,0.5)
         foodBuilder.effect('goety:insight',1200,0,0.5)
     })
+    .finishUsing(event=>{
+        let player = event.player()
+        let {x,y,z} = player
+        player.level.playSound(null,x,y,z,'minecraft:entity.experience_orb.pickup','players',0.2,1)
+        player.giveExperiencePoints(25)
+        if(Math.random(1)<0.15){
+            entity.give('minecraft:experience_bottle')
+        }
+    })
 
     Event.create("curlamoety:sword_cookie")//剑术大师曲奇
     .food(foodBuilder=>{

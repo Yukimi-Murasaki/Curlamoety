@@ -6,7 +6,7 @@
 	#Harming Extra Capacity, Default: 1
 	#Range: > 0
 	harmingCapacity = 1
-	#Resistance Extra Capacity, Default: 6
+	#Resistance Extra Capacity, Default: 8
 	#Range: > 0
 	resistanceCapacity = 6
 	#Healing Extra Capacity, Default: 1
@@ -261,6 +261,9 @@
 		#Strip Armor Soul Cost, Default: 100
 		#Range: > 1
 		stripArmorCost = 100
+		#Exchange Soul Cost, Default: 25
+		#Range: > 1
+		exchangeCost = 25
 
 [Curable]
 	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
@@ -366,7 +369,7 @@
 ["Brew Bottling"]
 	#How many times the player must bottle a brew to increase Bottling level, Default: 20
 	#Range: > 1
-	bottlingLevelReq = 20
+	bottlingLevelReq = 15
 	#Maximum Bottling Level the player can obtain, set to 0 to disable Bottling Levels, Default: 5
 	#Range: > 0
 	maxBottlingLevel = 10
@@ -387,7 +390,7 @@
 	#How much Capacity is given for sixth level, Default: 8
 	#Range: > 0
 	level6Capacity = 8
-	#How much Capacity is given initially, Default: 4
+	#How much Capacity is given initially, Default: 1
 	#Range: > 1
 	initialCapacity = 4
 	#How much Capacity is given for fourth level, Default: 2

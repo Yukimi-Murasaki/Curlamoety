@@ -1873,7 +1873,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: 8.5d
 		}
 		{
@@ -1894,7 +1894,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -8.0d
 			y: 8.5d
 		}
 		{
@@ -2532,7 +2532,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: 8.5d
 		}
 		{
@@ -2713,7 +2713,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 8.5d
 		}
 		{
@@ -2778,27 +2778,6 @@
 			}]
 			x: -5.0d
 			y: 10.0d
-		}
-		{
-			id: "136391C589BE5051"
-			rewards: [{
-				id: "448431CC43B70A9C"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "5FA0907C369F1BA0"
-				item: {
-					Count: 1
-					id: "enigmaticdelicacy:shi_jin"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -4.0d
-			y: 8.5d
 		}
 		{
 			id: "70D5B45C31BC5A14"
@@ -2884,7 +2863,7 @@
 				item: "cataclysm:gauntlet_of_guard"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 8.5d
 		}
 		{
@@ -2971,7 +2950,7 @@
 				item: "cataclysm:void_forge"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 8.5d
 		}
 		{
@@ -3095,7 +3074,7 @@
 				item: "cataclysm:meat_shredder"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 8.5d
 		}
 		{
@@ -3193,7 +3172,7 @@
 				}
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.0d
 			y: 8.5d
 		}
 		{
@@ -3298,7 +3277,7 @@
 				}
 				type: "item"
 			}]
-			x: -15.0d
+			x: -16.0d
 			y: 8.5d
 		}
 		{
@@ -3319,7 +3298,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
+			x: -15.0d
 			y: 8.5d
 		}
 		{
@@ -3624,7 +3603,37 @@
 				}
 				type: "item"
 			}]
-			x: -13.0d
+			x: -14.0d
+			y: 8.5d
+		}
+		{
+			id: "1A335A4DDC30B6A1"
+			rewards: [{
+				id: "7AF12C3677211F90"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1BB5AAE06B61ACAF"
+				item: "enigmaticlegacy:the_twist"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			id: "0A83500F391E766E"
+			rewards: [{
+				id: "467BED2AF15F0CE2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2D650B9B5E2689D5"
+				item: "enigmaticaddons:the_bless"
+				type: "item"
+			}]
+			x: -6.0d
 			y: 8.5d
 		}
 	]

@@ -42,7 +42,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Appli
                 level.playSound(null,x,y,z,'minecraft:block.beacon.deactivate','players',0.3,1)
                 entity.setStatusMessage(Text.darkRed(Text.translate('curlamoety.lang.resistance_baned')))
             }
-        }else if(effectID == 'minecraft:darkness'||effectID == 'minecraft:blindness'){
+        }else if(effectID == 'effect.minecraft.darkness'||effectID == 'effect.minecraft.blindness'){
             let headItem = entity.getItemBySlot("head")
             if(headItem.id == "cataclysm:ignitium_helmet"||headItem.id == "cataclysm:cursium_helmet"||headItem.id =="twilightforest:fiery_helmet"||headItem.id == "twilightforest:yeti_helmet"){
                 event.setResult(EventResult.DENY)

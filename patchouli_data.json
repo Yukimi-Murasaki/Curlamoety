@@ -1,6 +1,6 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
     "goety:black_book": {
       "viewedEntries": [
@@ -31,7 +31,15 @@
         "goety:crafts/ominous_pyre",
         "goety:ritual/ill_ritual",
         "goety:ritual/void_ritual",
-        "goety:crafts/artifice/shade_gravestone"
+        "goety:crafts/artifice/shade_gravestone",
+        "goety:goeticlegacy/vizier_book",
+        "goety:crafts/artifice/ominous_idol",
+        "goety:summons/netherite_monstrosity",
+        "goety:summons/ender_golem",
+        "goety:summons/mushroom_monstrosity",
+        "goety:goeticlegacy/nerotic_lantern",
+        "goety:goeticlegacy/wild_biome_staff",
+        "goety:crafts/esoteric_tesseract"
       ],
       "bookmarks": [],
       "completedManualQuests": []
@@ -40,7 +48,12 @@
       "viewedEntries": [
         "goety:brewing/catalysts",
         "goety:brewing/augmentation",
-        "goety:brewing/capacity"
+        "goety:brewing/capacity",
+        "goety:brewing/cauldron",
+        "goety:brewing/getting_started",
+        "goety:brewing/brewing_steps",
+        "goety:brewing/brew_bag",
+        "goety:brewing/station"
       ],
       "bookmarks": [],
       "completedManualQuests": []

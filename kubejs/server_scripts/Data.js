@@ -6,6 +6,7 @@ global.diceCdMap = Utils.newMap()
 global.swordCookieMap = Utils.newMap()
 global.fieryCdMap = Utils.newMap()
 global.ignitiumCdMap = Utils.newMap()
+global.armorSwitchMap = Utils.newMap()
 PlayerEvents.loggedIn(event=>{
     let player = event.player;
     
@@ -36,6 +37,9 @@ PlayerEvents.loggedIn(event=>{
     //通用召唤技能CD
     player.persistentData.generic_summon_cd = player.persistentData.generic_summon_cd||-1
     global.genericSummonCdMap.put(player,player.persistentData.generic_summon_cd )
+    //仆从套替换开关
+    player.persistentData.armor_switch = player.persistentData.armor_switch||1
+    global.armorSwitchMap.put(player,player.persistentData.armor_switch)
     //炽铁CD
     player.persistentData.fiery_cd = player.persistentData.fiery_cd||0
     global.fieryCdMap.put(player,player.persistentData.fade_cd)
@@ -52,6 +56,7 @@ PlayerEvents.loggedOut(event=>{
     player.persistentData.generic_summon_cd = global.genericSummonCdMap.get(player)
     player.persistentData.fiery_cd = global.fieryCdMap.get(player)
     player.persistentData.ignitium_cd = global.ignitiumCdMap.get(player)
+    player.persistentData.armor_switch = global.armorSwitchMap.get(player)
 })
 ServerEvents.loaded(event=>{
     const server = event.server;

@@ -2451,6 +2451,77 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .xpLevelCost(10)
     .id("curlamoety:enchant/mending1")
 
+    event.recipes.goety.ritual("goeticlegacy:wind_book","goety:craft",[
+        "goety:jade",
+        "goety:gale_fabric",
+        "goety:gale_fabric",
+        "goety:updraft_focus",
+        "goety:gale_banner_pattern",
+        "goety:wind_core",
+        "goety:indented_gold",
+    ])
+    .activationItem("minecraft:book")
+    .craftType("sky")
+    .soulCost(5)
+    .duration(20)
+    .id("curlamoety:wind_book")
+
+    event.recipes.goety.ritual("goety:eternal_cauldron","goety:craft",[
+        "goety:crone_hat",
+        "sophisticatedbackpacks:backpack",
+        "goety:philosophers_stone",
+        "sophisticatedbackpacks:alchemy_upgrade",
+        "goety:occult_fabric",
+        "goety:henbane_flower",
+        "enigmaticdelicacy:infinisoil",
+        "enigmaticlegacy:earth_heart",
+    ])
+    .activationItem("goety:witch_cauldron")
+    .craftType("witch")
+    .soulCost(100)
+    .duration(30)
+    .id("curlamoety:eternal_cauldron")
+
+    //核心：虚空
+    event.remove("goety_ladder:void_reipes/void_corerelic")
+
+    //亡灵提灯
+    event.remove("goeticlegacy:ritual/nerotic_lantern")
+    event.recipes.goety.ritual("goeticlegacy:nerotic_lantern","goety:craft",[
+        "minecraft:chain",
+        "goety:haunted_glass",
+        "goety:cursed_ingot",
+        "goety:totem_of_souls",
+        "goety:cursed_ingot",
+        "goety:haunted_log",
+        "goety:soul_emerald"
+    ])
+    .activationItem("goety:necrotic_gold_candlestick")
+    .craftType("necroturgy")
+    .research("haunting")
+    .soulCost(30)
+    .duration(20)
+    .id("curlamoety:nerotic_lantern")
+
+    //塑虚
+    event.remove("goeticlegacy:ritual/void_shaping_staff")
+    event.recipes.goety.ritual("goeticlegacy:void_shaping_staff","goety:craft",[
+        "minecraft:ender_chest",
+        "goety:burrowing_focus",
+        "goety:tunnel_focus",
+        "goety:pulverize_focus",
+        "goety:soul_emerald",
+        "goety:waystone",
+        "goety:amethyst_necklace",
+        "goety:occult_fabric"
+    ])
+    .activationItem("goety:geo_staff")
+    .craftType("geoturgy")
+    .research("buried")
+    .soulCost(25)
+    .duration(34)
+    .id("curlamoety:void_shaping_staff")
+
 })
 ServerEvents.recipes(event=>{//无封装方法
     //event.custom({

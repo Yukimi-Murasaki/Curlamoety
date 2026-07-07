@@ -1,5 +1,5 @@
-//初步穿甲调整
 EntityEvents.spawned(event=>{
+    //初步穿甲调整
     let entity = event.entity
     if(entity.isPlayer())return;
     if(entity == null || !entity.isLiving())return;
@@ -14,6 +14,154 @@ EntityEvents.spawned(event=>{
     }else if(dimension == "minecraft:the_end"){
         entity.modifyAttribute("goety_revelation:armor_penetration","dimension_modify",0.25,"addition")
         entity.modifyAttribute("goety_revelation:enchantment_piercing","dimension_modify",0.15,"addition")
+    }
+    //仆从套装效果
+    if(entity.type == "goety:prisoner") return;
+    if(entity instanceof $Summoned){
+        let playerSummoned = 0
+        let owner = null
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                playerSummoned = 1
+                owner = entity.getOwner()
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    playerSummoned = 1
+                    owner = entity.getOwner().getOwner()
+                }
+            }
+            
+        }
+        if(playerSummoned == 1){
+            if(global.armorSwitchMap.get(owner) == 1){
+                if(global.armorSetMap.get(owner) == "spider"){
+                    //蜘蛛
+                    let mainHandItem = entity.getItemBySlot("mainhand")
+                    if(mainHandItem.hasTag("forge:tools/bows")){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:3s}]}'))
+                    }else if(mainHandItem.id == "minecraft:crossbow"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:2s},{id:"enigmaticlegacy:sharpshooter",lvl:3s}]}'))
+                    }else{
+                        entity.setItemSlot("mainhand",Item.of("goety_revelation:spectre_whip", '{Damage:0,Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:3s},{id:"goety_revelation:reality_piercer",lvl:3s}]}'))
+                    }
+                    if(entity.type == "goetyawaken:apostle_servant"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:5s}]}'))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_helmet"){
+                        entity.setItemSlot("head",Item.of("goety_revelation:spider_helmet").enchant('minecraft:protection', 1))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_chestplate"){
+                        entity.setItemSlot("chest",Item.of("goety_revelation:spider_chestplate").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_leggings"){
+                        entity.setItemSlot("legs",Item.of("goety_revelation:spider_leggings").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_boots"){
+                        entity.setItemSlot("feet",Item.of("goety_revelation:spider_boots").enchant('minecraft:protection', 1))
+                    }
+                }else if(global.armorSetMap.get(owner) == "spider_darkmage"){
+                    //神经
+                    let mainHandItem = entity.getItemBySlot("mainhand")
+                    if(mainHandItem.hasTag("forge:tools/bows")){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:4s}]}'))
+                    }else if(mainHandItem.id == "minecraft:crossbow"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:2s},{id:"enigmaticlegacy:sharpshooter",lvl:4s}]}'))
+                    }else{
+                        entity.setItemSlot("mainhand",Item.of("goety_revelation:spectre_whip", '{Damage:0,Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:4s},{id:"goety_revelation:reality_piercer",lvl:4s}]}'))
+                    }
+                    if(entity.type == "goetyawaken:apostle_servant"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:8s}]}'))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_darkmage_helmet"){
+                        entity.setItemSlot("head",Item.of("goety_revelation:spider_darkmage_helmet").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_darkmage_chestplate"){
+                        entity.setItemSlot("chest",Item.of("goety_revelation:spider_darkmage_chestplate").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_darkmage_leggings"){
+                        entity.setItemSlot("legs",Item.of("goety_revelation:spider_darkmage_leggings").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "goety_revelation:spider_darkmage_boots"){
+                        entity.setItemSlot("feet",Item.of("goety_revelation:spider_darkmage_boots").enchant('minecraft:protection', 2))
+                    }
+                }else if(global.armorSetMap.get(owner) == "yeti"){
+                    //雪怪
+                    let mainHandItem = entity.getItemBySlot("mainhand")
+                    if(mainHandItem.hasTag("forge:tools/bows")){
+                        entity.setItemSlot("mainhand",Item.of("twilightforest:ice_bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:5s}]}'))
+                    }else if(mainHandItem.id == "minecraft:crossbow"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:2s},{id:"enigmaticlegacy:sharpshooter",lvl:5s}]}'))
+                    }else{
+                        entity.setItemSlot("mainhand",Item.of("twilightforest:ice_sword", '{Damage:0,Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:5s},{id:"goety_revelation:reality_piercer",lvl:5s}]}'))
+                    }
+                    if(entity.type == "goetyawaken:apostle_servant"){
+                        entity.setItemSlot("mainhand",Item.of("goetyawaken:dark_netherite_bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:10s}]}'))
+                    }
+                    if(entity.getItemBySlot("head").id != "twilightforest:yeti_helmet"){
+                        entity.setItemSlot("head",Item.of("twilightforest:yeti_helmet").enchant('minecraft:protection', 2))
+                    }
+                    if(entity.getItemBySlot("head").id != "twilightforest:yeti_chestplate"){
+                        entity.setItemSlot("chest",Item.of("twilightforest:yeti_chestplate").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "twilightforest:yeti_leggings"){
+                        entity.setItemSlot("legs",Item.of("twilightforest:yeti_leggings").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "twilightforest:yeti_boots"){
+                        entity.setItemSlot("feet",Item.of("twilightforest:yeti_boots").enchant('minecraft:protection', 2))
+                    }
+                }else if(global.armorSetMap.get(owner) == "cursium"){
+                    //咒魂
+                    let mainHandItem = entity.getItemBySlot("mainhand")
+                    if(mainHandItem.hasTag("forge:tools/bows")){
+                        entity.setItemSlot("mainhand",Item.of("twilightforest:ice_bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:8s}]}'))
+                    }else if(mainHandItem.id == "minecraft:crossbow"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:3s},{id:"enigmaticlegacy:sharpshooter",lvl:7s}]}'))
+                    }else{
+                        entity.setItemSlot("mainhand",Item.of("cataclysm:soul_render", '{Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:5s},{id:"goety_revelation:reality_piercer",lvl:8s},{id:"minecraft:smite",lvl:5s}]}'))
+                    }
+                    if(entity.type == "goetyawaken:apostle_servant"){
+                        entity.setItemSlot("mainhand",Item.of("goetyawaken:dark_netherite_bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:12s}]}'))
+                    }
+                    if(entity.getItemBySlot("head").id != "cataclysm:cursium_helmet"){
+                        entity.setItemSlot("head",Item.of("cataclysm:cursium_helmet").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "cataclysm:cursium_chestplate"){
+                        entity.setItemSlot("chest",Item.of("cataclysm:cursium_chestplate").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "cataclysm:cursium_leggings"){
+                        entity.setItemSlot("legs",Item.of("cataclysm:cursium_leggings").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "cataclysm:cursium_boots"){
+                        entity.setItemSlot("feet",Item.of("cataclysm:cursium_boots").enchant('minecraft:protection', 3))
+                    }
+                }else if(global.armorSetMap.get(owner) == "champion"){
+                    //冠军
+                    let mainHandItem = entity.getItemBySlot("mainhand")
+                    if(mainHandItem.hasTag("forge:tools/bows")){
+                        entity.setItemSlot("mainhand",Item.of("twilightforest:seeker_bow", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:12s}]}'))
+                    }else if(mainHandItem.id == "minecraft:crossbow"){
+                        entity.setItemSlot("mainhand",Item.of("minecraft:crossbow", '{Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:3s},{id:"enigmaticlegacy:sharpshooter",lvl:10s}]}'))
+                    }else{
+                        entity.setItemSlot("mainhand",Item.of("goetyawaken:moonlight_cut", '{Damage:0,Enchantments:[{id:"minecraft:looting",lvl:3s},{id:"minecraft:sharpness",lvl:10s},{id:"goety_revelation:reality_piercer",lvl:10s},{id:"minecraft:smite",lvl:5s}]}'))
+                    }
+                    if(entity.type == "goetyawaken:apostle_servant"){
+                        entity.setItemSlot("mainhand",Item.of("goety_revelation:bow_of_revelation", '{Damage:0,Enchantments:[{id:"minecraft:power",lvl:15s}],Unbreakable:1b}'))
+                    }
+                    if(entity.getItemBySlot("head").id != "goetyawaken:champion_helmet"){
+                        entity.setItemSlot("head",Item.of("goetyawaken:champion_helmet").enchant('minecraft:protection', 3))
+                    }
+                    if(entity.getItemBySlot("head").id != "goetyawaken:champion_chestplate"){
+                        entity.setItemSlot("chest",Item.of("goetyawaken:champion_chestplate").enchant('minecraft:protection', 4))
+                    }
+                    if(entity.getItemBySlot("head").id != "goetyawaken:champion_leggings"){
+                        entity.setItemSlot("legs",Item.of("goetyawaken:champion_leggings").enchant('minecraft:protection', 4))
+                    }
+                    if(entity.getItemBySlot("head").id != "goetyawaken:champion_boots"){
+                        entity.setItemSlot("feet",Item.of("goetyawaken:champion_boots").enchant('minecraft:protection', 4))
+                    }
+                }
+            }
+        }
     }
 })
 //每个生物调整
@@ -1011,8 +1159,15 @@ EntityEvents.spawned("goety:watchling_servant",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
     if(entity instanceof $Summoned){
-        if(entity.getOwner() && entity.getOwner().isPlayer()){
-            return;
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                return;
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    return;
+                }
+            }
+            
         }
     }
     if(dimension != "minecraft:the_end"){
@@ -1024,8 +1179,15 @@ EntityEvents.spawned("goety:blastling_servant",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
     if(entity instanceof $Summoned){
-        if(entity.getOwner() && entity.getOwner().isPlayer()){
-            return;
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                return;
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    return;
+                }
+            }
+            
         }
     }
     if(dimension != "minecraft:the_end"){
@@ -1037,8 +1199,15 @@ EntityEvents.spawned("goety:snareling_servant",event=>{
     let entity = event.entity
     let dimension = entity.level.getDimension()
     if(entity instanceof $Summoned){
-        if(entity.getOwner() && entity.getOwner().isPlayer()){
-            return;
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                return;
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    return;
+                }
+            }
+            
         }
     }
     if(dimension != "minecraft:the_end"){
@@ -1244,8 +1413,15 @@ EntityEvents.spawned("goetyawaken:hostile_gnasher",event=>{
 EntityEvents.spawned("goety:blackguard_servant",event=>{
     let entity = event.entity
     if(entity instanceof $Summoned){
-        if(entity.getOwner()||entity.getOwner().isPlayer()){
-            return;
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                return;
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    return;
+                }
+            }
+            
         }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.6,"multiply_total")
@@ -1253,8 +1429,15 @@ EntityEvents.spawned("goety:blackguard_servant",event=>{
 EntityEvents.spawned("goety:vanguard_servant",event=>{
     let entity = event.entity
     if(entity instanceof $Summoned){
-        if(entity.getOwner() && entity.getOwner().isPlayer()){
-            return;
+        if(entity.getOwner()){
+            if(entity.getOwner().isPlayer()){
+                return;
+            }else if(entity.getOwner().getOwner()){
+                if(entity.getOwner().getOwner().isPlayer()){
+                    return;
+                }
+            }
+            
         }
     }
     entity.modifyAttribute("minecraft:generic.max_health","hostile_modify",-0.5,"multiply_total")
@@ -1630,6 +1813,7 @@ global.FisrtSpawnMap = Utils.newMap()
 EntityEvents.spawned(event=>{
     let entity = event.entity
     if(entity.isPlayer())return;
+    if(entity.type == "goety:apostle")return
     if(entity == null || !entity.isLiving())return;
     if(entity.type == "minecraft:item")return;
     if(entity.isPlayer())return;

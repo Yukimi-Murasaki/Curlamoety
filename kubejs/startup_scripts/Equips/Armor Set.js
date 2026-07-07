@@ -20,8 +20,8 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
         entity.modifyAttribute('goety_revelation:cast_duration','apocalyptium_cd2',0.48,'multiply_total');
         entity.modifyAttribute('minecraft:generic.attack_damage','apocalyptium_dmg',5,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','apocalyptium_dmg2',0.15,'multiply_total');
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'apocalyptium_mdm',0.6,'addition')
-        entity.modifyAttribute('goeticlegacy:servant_final_damage_multiplier','apocalyptium_sfdm',0.25,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'apocalyptium_mdm',0.4,'addition')
+        entity.modifyAttribute('goeticlegacy:servant_final_damage_multiplier','apocalyptium_sfdm',0.2,'addition')
     }
     else
     {
@@ -62,7 +62,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
         armorSet = "spectre_darkmage"
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_darkmage_dmg',2,'addition');//攻击伤害增加
         entity.modifyAttribute('minecraft:generic.armor','spectre_darkmage_def',4,'addition');//护甲增加
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_darkmage_mdm',0.3,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_darkmage_mdm',0.2,'addition')
     }
     else
     {
@@ -77,7 +77,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
         armorSet = "spider_darkmage"
         entity.modifyAttribute('minecraft:generic.attack_damage','spider_darkmage_dmg',2,'addition');//攻击伤害增加
         entity.modifyAttribute('minecraft:generic.armor','spider_darkmage_def',4,'addition');//护甲增加
-        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_darkmage_sfdm',0.3,'addition')
+        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_darkmage_sfdm',0.6,'addition')
     }
     else
     {
@@ -97,7 +97,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_dmg1',3,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','spectre_dmg2',0.07,'multiply_total');
         entity.modifyAttribute('minecraft:generic.armor','spectre_def',2,'addition');
-        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_mdm',0.25,'addition')
+        entity.modifyAttribute("goeticlegacy:magic_damage_multiplier",'spectre_mdm',0.16,'addition')
         
     }
     else
@@ -122,7 +122,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEquipmentChang
         entity.modifyAttribute('minecraft:generic.attack_damage','spider_dmg1',3,'addition');
         entity.modifyAttribute('minecraft:generic.attack_damage','spider_dmg2',0.07,'multiply_total');
         entity.modifyAttribute('minecraft:generic.armor','spider_def',2,'addition');
-        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_sfdm',0.25,'addition')
+        entity.modifyAttribute("goeticlegacy:servant_final_damage_multiplier",'spider_sfdm',0.5,'addition')
     }
     else
     {

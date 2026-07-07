@@ -1,0 +1,7 @@
+{
+  "langKey": "prefab.goeticlegacy.brewery_machine",
+  "displayName": "酿酒机",
+  "rarity": "rare",
+  "dropWeight": 5,
+  "requiredMods": ["creategearsandtavern"]
+}

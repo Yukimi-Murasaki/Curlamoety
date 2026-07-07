@@ -496,20 +496,10 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     //寰宇之心
     Event.remove({output:('enigmaticlegacy:cosmic_heart')})
     Event.shaped('enigmaticlegacy:cosmic_heart',[
-        'VEB',
-        'TDJ',
-        'LNS'
-    ],{
-        V:'goety:void_block',
-        E:'enigmaticlegacy:etherium_ingot',
-        B:'enigmaticlegacy:astral_block',
-        T:'cataclysm:lacrima',
-        D:'minecraft:diamond',
-        J:'goety:jade',
-        L:'minecraft:magma_cream',
-        N:'minecraft:netherite_ingot',
-        S:'minecraft:nether_star'
-    }).id("curlamoety:cosmic_heart")
+        ["goety:void_block","enigmaticlegacy:etherium_ingot","enigmaticlegacy:astral_block"],
+        ["minecraft:prismarine_crystals","minecraft:diamond","goety:jade"],
+        ["minecraft:magma_cream","minecraft:netherite_ingot","minecraft:nether_star"],
+    ]).id("curlamoety:cosmic_heart")
 
     //袋装星尘
     Event.remove({output:('enigmaticlegacy:astral_block')})
@@ -1313,6 +1303,8 @@ ServerEvents.recipes(Event=>{//常规配方走这里
         D:"goety_ladder:void_dust",
         O:"goety_ladder:voidobsidian_block"
     }).id("curlamoety:voidliving_eye")
+
+    Event.shapeless(Item.of("minecraft:paper", '{RepairCost:0,display:{Name:\'{"text":"巧手V怎么做"}\'}}'),["minecraft:cocoa_beans","5x curlamoety:zombie_arm"])
 
 
 })  

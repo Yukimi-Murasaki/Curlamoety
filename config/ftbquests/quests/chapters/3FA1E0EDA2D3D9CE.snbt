@@ -199,7 +199,7 @@
 		}
 		{
 			dependencies: ["0AB2DF12CBBDE6ED"]
-			description: ["精准采集的锄头后面能拿来干什么呢，好难猜啊"]
+			description: ["精准采集的锄头后面要用来干什么呢，好难猜啊"]
 			icon: {
 				Count: 1
 				id: "minecraft:stone_hoe"
@@ -216,7 +216,7 @@
 					type: "item"
 				}
 				{
-					id: "242FD823D68B3D2C"
+					id: "090DFED0436ED6AC"
 					item: {
 						Count: 1
 						id: "minecraft:golden_hoe"
@@ -224,12 +224,12 @@
 							Damage: 0
 							Enchantments: [
 								{
-									id: "minecraft:efficiency"
-									lvl: 5s
-								}
-								{
 									id: "minecraft:silk_touch"
 									lvl: 1s
+								}
+								{
+									id: "minecraft:efficiency"
+									lvl: 5s
 								}
 							]
 							RepairCost: 0
@@ -894,7 +894,7 @@
 			description: [
 				"注意，兽友指南对第二诅咒修正是有限的，不能驯服的动物仍然会对你敌对，比如蜜蜂"
 				""
-				"放入&a暗夜立方&r中时，降低25%仆从受到伤害"
+				"放入&a暗夜立方&r中时，让自身受到伤害部分由仆从承担"
 			]
 			id: "3263F1CC75A70617"
 			rewards: [
@@ -923,8 +923,8 @@
 				item: "enigmaticlegacy:animal_guidebook"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -8.0d
+			x: -6.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["3263F1CC75A70617"]
@@ -1285,8 +1285,8 @@
 				item: "enigmaticaddons:ode_to_living"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -9.5d
+			x: -6.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -1365,7 +1365,7 @@
 			description: [
 				"让自己的部分饰品加成共享给仆从，组成最强的军团"
 				""
-				"放入&a暗夜立方&r中时，在原本效果的基础上，千咒卷轴提供的加成会更多。并在携带兽友指南、野猎指南、生灵颂词时，为仆从提供药水效果"
+				"放入&a暗夜立方&r中时，大幅增加仆从攻击力，代价是削减护甲"
 			]
 			id: "05BB3F6936D65F1B"
 			rewards: [
@@ -4361,7 +4361,7 @@
 			description: [
 				"每一点幸运提供4%攻击伤害，5%攻击速度，1%闪避率，闪避率最高35%。"
 				""
-				"放入&a暗夜立方&r中则会转而依据幸运值为仆从提供加成，并根据幸运值让自身及仆从攻击时有概率获得正面效果"
+				"放入&a暗夜立方&r中则会依据幸运值为仆从提供闪避率，并根据幸运值让自身及仆从攻击时有概率获得正面效果"
 				""
 				"&6幸运值高以后加成相当可观"
 				""
@@ -4398,7 +4398,7 @@
 				""
 				"&e提示：饰品可以附魔易碎诅咒"
 				""
-				"放入&a暗夜立方&r中可以直接为仆从提供伤害加成，并为自身提供可以与饰品本体叠加的伤害加成"
+				"放入&a暗夜立方&r中时，根据诅咒数量削弱敌人属性"
 				""
 				"&4与恩赐卷轴冲突"
 			]
@@ -4611,8 +4611,8 @@
 				type: "item"
 			}]
 			title: "？"
-			x: 3.5d
-			y: 57.5d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["527DFD06EC8A9D7B"]
@@ -4734,9 +4734,17 @@
 		{
 			dependencies: ["59EA2AE8EA24E798"]
 			description: [
-				"携带&e黑暗秘典&r将会提供5点每秒灵魂能量自然恢复，携带&5女巫酿造学&r将给予1级洞悉效果"
+				"携带&e黑暗秘典&r将会提供5点每秒灵魂能量自然恢复"
 				""
-				"放入&a暗夜立方&r中时，&e黑暗秘典&r会提供0.2%每秒灵魂能量自然恢复，&5女巫酿造学&r将给予1级巧手效果，&d启示之证&r将让玩家攻击点燃敌人并提升仆从生存能力"
+				"携带&5女巫酿造学&r将给予1级洞悉效果"
+				""
+				"放入&a暗夜立方&r中时"
+				""
+				"&e黑暗秘典&r会提供0.2%每秒灵魂能量自然恢复"
+				""
+				"&5女巫酿造学&r将给予1级巧手效果"
+				""
+				"&d启示之证&r将让玩家攻击点燃敌人并令&6弱化法术对免疫侵蚀的敌人也生效1/5的效果&r"
 			]
 			id: "7A7883F420DBC0E5"
 			rewards: [{
@@ -4776,7 +4784,7 @@
 				}
 			]
 			title: "指导书"
-			x: -3.0d
+			x: -4.5d
 			y: -8.0d
 		}
 		{
@@ -4797,7 +4805,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -9.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -4906,7 +4914,7 @@
 			dependencies: [
 				"3FC7B7A3522DA163"
 				"755316355BE84A50"
-				"59EA2AE8EA24E798"
+				"10AAA0636FF15D74"
 			]
 			description: [
 				"神秘遗物最强的武器之一，由于该物品造成的伤害会修正第四诅咒，实际相当于双倍面板"
@@ -4927,13 +4935,13 @@
 				item: "enigmaticlegacy:the_infinitum"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -11.0d
+			x: -4.5d
+			y: -12.5d
 		}
 		{
 			dependencies: [
 				"042A2EF65593FF91"
-				"59EA2AE8EA24E798"
+				"7A7883F420DBC0E5"
 			]
 			description: [
 				"对于七咒玩家，作为武器可以修正第四诅咒造成全额伤害，相当于双倍伤害。"
@@ -4956,16 +4964,18 @@
 				item: "enigmaticaddons:the_bless"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -11.0d
+			x: -4.5d
+			y: -9.5d
 		}
 		{
 			dependencies: [
 				"042A2EF65593FF91"
-				"59EA2AE8EA24E798"
+				"7A7883F420DBC0E5"
 			]
 			description: [
-				"放入&a暗夜立方&r中时，对自身20倍血以上的敌人造成1.25倍伤害，并削减其50%护甲"
+				"手持时抵消第四诅咒的减半伤害，并对Boss额外增伤100%"
+				""
+				"放入&a暗夜立方&r中时，攻击会削减敌人的护甲，并对生命值大于你20倍的生物造成1.25倍伤害"
 				""
 				"{ \"text\": \"另见：命令与征途中的该任务\",  \"color\":\"light_purple\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"755316355BE84A50\" } }"
 			]
@@ -5353,6 +5363,120 @@
 			title: "破妄"
 			x: 2.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["59EA2AE8EA24E798"]
+			description: [
+				"携带时&e新刌民&r的训练速度加快，繁殖出&e紫袍刌民（具备魔法资质）&r的概率大幅增加"
+				""
+				"放入&a暗夜立方&r中时，给予你宰相和华丽长袍同款&e施法减伤&r"
+				""
+				"并令你使用&6恼鬼聚晶&r召唤的恼鬼替换为&e折磨仆从&r"
+				""
+				"并且书中可以放入&e一套护甲和一把斧&r，用这种方法召唤出的折磨仆从会装备上书中的物品"
+				""
+				"{ \"text\": \"另见：命运与征途\", \"underlined\": \"true\",\"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3C5CB70A692BF57C\" } }"
+			]
+			id: "3E39E832C10DFFE7"
+			rewards: [
+				{
+					id: "7611E7724BD7EF90"
+					item: "goety:vexing_focus"
+					type: "item"
+				}
+				{
+					id: "0BDF3AB41CE2F3EA"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "新任宰相报到"
+			tasks: [{
+				id: "416A6578B3A84459"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "goeticlegacy:vizier_book"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["59EA2AE8EA24E798"]
+			description: [
+				"携带时令你生命值4.5倍以下的&6下界生物&r对你中立，并增加0.15法术伤害乘数"
+				""
+				"放入&a暗夜立方&r中时，在继承携带效果的基础上，使你的&6狱火&r附加百分比伤害，并且伤害乘1.5倍"
+				""
+				"{ \"text\": \"另见：命运与征途\", \"underlined\": \"true\",\"color\":\"yellow\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6833D11A63040B58\" } }"
+			]
+			id: "06DDCCF981C1166B"
+			rewards: [{
+				id: "5FD062368AF99121"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			subtitle: "一切都不会过去，但是新生会不断到来"
+			tasks: [{
+				id: "6AC33430FC4FA313"
+				item: "goeticlegacy:bygone_book"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["59EA2AE8EA24E798"]
+			description: [
+				"可以在&e烈风神殿&r的战利品箱中找到"
+				""
+				"{ \"text\": \"点击查看烈风神殿\", \"underlined\": \"true\", \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"477B10A5F1A1EA54\" } } "
+				""
+				"携带时&e免疫摔落伤害&r"
+				""
+				"使用时对附近大范围几乎所有生物释放上升气流"
+				""
+				"放入&a暗夜立方&r中时，使你对有高低差的敌人造成伤害增加"
+			]
+			id: "6D33261C1BC7F7FB"
+			rewards: [
+				{
+					id: "4A26B4DCB9E7D9D9"
+					item: "goety:wind_core"
+					type: "item"
+				}
+				{
+					id: "59B21396A37AD4A5"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "4CB735C9BDE10C4E"
+					item: "goety:updraft_focus"
+					type: "item"
+				}
+			]
+			subtitle: "你这炼狱魔典怎么没有火"
+			tasks: [{
+				id: "7A4BE737B64ED166"
+				item: "goeticlegacy:wind_book"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -11.0d
 		}
 	]
 	title: "初心者之路"

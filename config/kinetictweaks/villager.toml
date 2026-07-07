@@ -20,14 +20,16 @@
 	#Whether custom villager trade tables are enabled.
 	custom_trades_enable = false
 	#职业等级交易规则列表。格式：职业ID|等级|模式|抽取数量。
+	#流浪商人使用 minecraft:wandering_trader，等级 1 表示普通交易，等级 2 表示稀有交易。
 	#Profession-level trade rules. Format: profession_id|level|mode|offer_count.
+	#Wandering trader uses minecraft:wandering_trader. Level 1 means generic trades, level 2 means rare trades.
 	#模式：add、replace_level、replace_all、disable_level。
 	#Modes: add, replace_level, replace_all, disable_level.
 	trade_groups = []
-	#具体交易列表。格式：
-	#职业ID|等级|买入A物品|买入A数量|买入A_NBT|买入B物品|买入B数量|买入B_NBT|卖出物品|卖出数量|卖出NBT|最大交易次数|村民经验|价格倍率|需求值|特殊价格|是否给玩家经验|当前已使用次数|是否允许补货
-	#Trade offer list. Format:
-	#profession_id|level|buy_a_item|buy_a_count|buy_a_nbt|buy_b_item|buy_b_count|buy_b_nbt|sell_item|sell_count|sell_nbt|max_uses|villager_xp|price_multiplier|demand|special_price|reward_player_xp|uses|allow_restock.
+	#具体自定义交易列表。格式：
+	#职业ID|等级|买入A物品|买入A数量|买入A_NBT|买入B物品|买入B数量|买入B_NBT|卖出物品|卖出数量|卖出NBT|最大交易次数|村民经验|价格倍率|需求值|特殊价格|是否给玩家经验|当前已使用次数|是否允许补货|权重
+	#Custom trade offer list. Format:
+	#profession_id|level|buy_a_item|buy_a_count|buy_a_nbt|buy_b_item|buy_b_count|buy_b_nbt|sell_item|sell_count|sell_nbt|max_uses|villager_xp|price_multiplier|demand|special_price|reward_player_xp|uses|allow_restock|weight.
 	trade_offers = []
 	#原版交易覆盖规则。格式：职业ID|等级|原版交易序号|是否启用|权重。
 	#关闭某条原版交易后，自定义选择池不会再抽到它。权重越高越容易出现。

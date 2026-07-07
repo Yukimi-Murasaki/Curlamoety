@@ -435,7 +435,7 @@
 			}]
 			tasks: [{
 				entity: "goety:hostile_redstone_monstrosity"
-				id: "4A16FBF53FD5F364"
+				id: "1AA4A5C45A33190D"
 				type: "kill"
 				value: 1L
 			}]

@@ -1,17 +1,21 @@
 let serverTick = 1
+let serverSecond = 0
 ServerEvents.tick(event =>{
     let server = Utils.server
     if(serverTick==20){
         serverTick=1
-        //龙息火球清理
-        let entities = server.getEntities()
-        entities.forEach(entity=>{
-            if(entity.type == "minecraft:dragon_fireball"){
-                if(entity.getMotionY()==0){
-                    entity.setMotionY(-1)
+        serverSecond++
+        if(serverSecond%10 == 0){
+            //龙息火球清理
+            let entities = server.getEntities()
+            entities.forEach(entity=>{
+                if(entity.type == "minecraft:dragon_fireball"){
+                    if(entity.getMotionY()==0){
+                        entity.setMotionY(-1)
+                    }
                 }
-            }
-        })
+            })
+        }
     }else{
         serverTick++
     }
@@ -200,9 +204,9 @@ PlayerEvents.tick(event =>{
 
     
     //手套系列急迫
-    if(global.glovesMap.get(player) >= 4){
+    if(global.glovesMap.get(player) > 3){
         player.potionEffects.add('minecraft:haste',200,1,false,false)
-    }else if(global.glovesMap.get(player) >= 2){
+    }else if(global.glovesMap.get(player) > 1){
         player.potionEffects.add('minecraft:haste',200,0,false,false)
     }
 

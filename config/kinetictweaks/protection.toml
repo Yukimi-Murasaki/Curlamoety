@@ -44,3 +44,35 @@
 	#Supports entity tags, add # before the tag, such as #forge:bullets.
 	global_direct_entity_immunity_sources = ["tacz:bullet"]
 
+	[indestructible.global]
+
+		[indestructible.global.damage]
+			# 是否启用所有掉落物通用伤害类型免疫
+			#Whether to enable global damage type immunity for all dropped items
+			#开启后，下面列表里的伤害类型会对任何掉落物无效
+			#When enabled, damage types listed below will not hurt any dropped item.
+			immunity_enable = true
+			# 所有掉落物通用免疫伤害类型列表
+			#Global damage type immunity list for all dropped items
+			#支持单个伤害ID，例如：minecraft:lava、minecraft:player_attack
+			#Supports single damage IDs, such as minecraft:lava, minecraft:player_attack
+			#支持伤害标签，前面加 #，例如：#minecraft:is_fire、#minecraft:is_explosion
+			#Supports damage tags, add # before the tag, such as #minecraft:is_fire, #minecraft:is_explosion.
+			immunity_sources = []
+
+		[indestructible.global.direct]
+
+			[indestructible.global.direct.entity]
+				# 是否启用所有掉落物通用直接伤害实体免疫
+				#Whether to enable global direct damage entity immunity for all dropped items
+				#开启后，下面列表里的实体直接造成伤害时，任何掉落物都会免疫
+				#When enabled, dropped items will ignore damage directly caused by listed entities.
+				immunity_enable = true
+				# 所有掉落物通用免疫直接伤害实体列表
+				#Global direct damage entity immunity list for all dropped items
+				#支持单个实体ID，例如：tacz:bullet
+				#Supports single entity IDs, such as tacz:bullet
+				#支持实体标签，前面加 #，例如：#forge:bullets
+				#Supports entity tags, add # before the tag, such as #forge:bullets.
+				immunity_sources = []
+

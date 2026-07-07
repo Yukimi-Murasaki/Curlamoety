@@ -513,6 +513,11 @@
 					item: "minecraft:nether_wart"
 					type: "item"
 				}
+				{
+					id: "1FDEA99EE289E276"
+					item: "enigmaticlegacy:soul_compass"
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
@@ -2910,7 +2915,7 @@
 			description: [
 				"当手持末影之刃，副手为空时，召唤出的末影守望者会增强为末影勇者"
 				""
-				"末影勇者拥有3倍生命值，且&4只有手持末影之刃且副手为空的玩家可以正常造成伤害&r"
+				"末影勇者拥有2倍生命值，且&4只有手持末影之刃且副手为空的玩家可以正常造成伤害&r"
 				""
 				"末影勇者必定掉落破损的末影守望者和剑术大师曲奇，并有更高概率掉落末影之眼"
 				""
@@ -3630,7 +3635,7 @@
 			description: [
 				"每次造成伤害会根据上次造成伤害提高，左脚踩右脚升天，但是会逐渐消耗吸收的诅咒数量，需要不断补充"
 				""
-				"放入&a暗夜立方&r中时，让攻击附加对敌人烙下印记，受到自身和仆从的攻击引发震击。仆从受击时根据卷轴内诅咒数量获得强力正面效果。击杀敌人会为玩家直接装备的暴戾之咒填充诅咒"
+				"放入&a暗夜立方&r中时，攻击概率召唤虚空震荡波粒，仆从攻击施加随机诅咒并概率引发虚空炸弹"
 			]
 			id: "13994A691F4BA8ED"
 			rewards: [
@@ -4723,7 +4728,7 @@
 				title: "发现烈风圣殿"
 				type: "structure"
 			}]
-			title: "烈风祠堂"
+			title: "烈风神殿"
 			x: 0.0d
 			y: -25.0d
 		}
@@ -5217,6 +5222,8 @@
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
 			description: [
+				"可以通过指南针搜索混沌监牢或者投掷监狱之眼来寻找"
+				""
 				"混沌监牢是一座集合了三个维度的监狱，非常庞大"
 				""
 				"最底端囚禁着一台怪异的战争机器"
@@ -5429,15 +5436,17 @@
 		{
 			dependencies: ["052B1D29EF40D5B5"]
 			description: [
-				"除了状态暂时提供的强效以外，红宝石还会提供1级的&e永久&r强效效果，并且可以生效3次&4（死亡会失去加成）&r。"
+				"灵魂红宝石可以熬制红宝石糖浆，从而制作红宝石硬糖或一些其他食物"
 				""
-				"{ \"text\": \"获得后可购买\", \"color\":\"yellow\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7CB9534179647ECB\" } }"
+				"除了状态暂时提供的强效以外，红宝石硬糖还会提供1级的&e永久&r强效效果，并且可以生效3次&4（死亡会失去加成）&r。"
+				""
+				"{ \"text\": \"获得可购买\", \"color\":\"yellow\",\"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7CB9534179647ECB\" } }"
 			]
 			id: "74C70C6E802CBB5B"
 			rewards: [
 				{
-					id: "7DD9CF4B582B6B7D"
-					item: "goety:soul_ruby"
+					id: "0FF9ABFAAC495541"
+					item: "goetydelight:ruby_hard_candy"
 					type: "item"
 				}
 				{
@@ -5446,12 +5455,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "永 久 增 强!"
+			subtitle: "你把这东西都熬化了？"
 			tasks: [{
-				id: "04E5D10D53BA82B8"
-				item: "goetydelight:ruby_hard_candy"
+				id: "23998852BCAE077D"
+				item: "goetydelight:ruby_syrup"
 				type: "item"
 			}]
+			title: "红宝石糖浆"
 			x: 12.0d
 			y: -21.5d
 		}
@@ -6954,6 +6964,8 @@
 				"神秘遗物最强的武器之一，由于该物品造成的伤害会修正第四诅咒，实际相当于双倍面板"
 				""
 				"放入&a暗夜立方&r中时，你每装备一件深渊之心饰品，获得微量额外属性加成"
+				""
+				"{ \"text\": \"另见初心者之路\",\"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6F32C459B6296D44\" } } "
 			]
 			id: "2B866B7A4BCA1C39"
 			rewards: [
@@ -7503,15 +7515,15 @@
 				""
 				"{image:ftbquests:textures/dracolotl.png width:100 height:100 align:center}"
 				""
-				"龙螈可以用瓶子接龙息，也可以喂食紫颂果，有概率产出&6龙蛋"
+				"龙螈可以用瓶子接龙息，也可以喂食紫颂花，有概率产出&6龙蛋"
 				""
 				"（进度需要用桶装龙螈）"
 			]
 			id: "5C5E64CF59B04AD4"
 			rewards: [{
-				count: 64
+				count: 32
 				id: "64A6932A68E6EEC1"
-				item: "minecraft:chorus_fruit"
+				item: "minecraft:chorus_flower"
 				type: "item"
 			}]
 			subtitle: "软萌末影龙"
@@ -7524,6 +7536,69 @@
 			title: "龙螈"
 			x: 9.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"59EA2AE8EA24E798"
+				"052B1D29EF40D5B5"
+			]
+			description: [
+				"携带时&e新刌民&r的训练速度加快，繁殖出&e紫袍刌民（具备魔法资质）&r的概率大幅增加"
+				""
+				"放入&a暗夜立方&r中时，给予你宰相同款施法减伤，并令你使用&e恼鬼聚晶&r召唤的恼鬼替换为&e折磨仆从&r，并且书中可以放入&e一套护甲和一把斧&r，用这种方法召唤出的折磨仆从会装备上书中的物品"
+				""
+				"{ \"text\": \"另见：初心者之路\", \"underlined\": \"true\", \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"3E39E832C10DFFE7\" } }"
+			]
+			id: "3C5CB70A692BF57C"
+			rewards: [{
+				id: "5C6C2A18FCB010D9"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "新任宰相报到"
+			tasks: [{
+				id: "2FB12030E522DBFF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "goeticlegacy:vizier_book"
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -21.5d
+		}
+		{
+			dependencies: [
+				"59EA2AE8EA24E798"
+				"4059168D11474025"
+			]
+			description: [
+				"携带时令你生命值4.5倍以下的&6下界生物&r对你中立，并增加0.15法术伤害乘数"
+				""
+				"放入&a暗夜立方&r中时，在继承携带效果的基础上，使你的&6狱火&r附加百分比伤害，并且伤害乘1.5倍"
+				""
+				"{ \"text\": \"另见：初心者之路\", \"underlined\": \"true\", \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"06DDCCF981C1166B\" } }"
+			]
+			id: "6833D11A63040B58"
+			rewards: [{
+				id: "353899852FBF3840"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "一切都不会过去，但是新生会不断到来"
+			tasks: [{
+				id: "563C3C8AFCD0104F"
+				item: "goeticlegacy:bygone_book"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
 		}
 	]
 	title: "命运与征途"

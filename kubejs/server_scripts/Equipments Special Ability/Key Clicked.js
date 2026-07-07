@@ -64,7 +64,7 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
             summon.setMotion(0,-1,0)
             summon.setOwner(player)
             summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+            global.genericSummonCdMap.put(player,40)
         }
     }else if(global.armorSetMap.get(player) == "ignitium"){
         //腾炎
@@ -86,22 +86,6 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
         }else{
             player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
         }
-    }else if(global.armorSetMap.get(player) == "arctic"){
-        //极地
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goety:polar_bear_servant")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("head",Item.of("minecraft:leather_helmet").enchant('minecraft:protection', 2))
-            summon.setItemSlot("chest",Item.of("minecraft:leather_chestplate").enchant('minecraft:protection', 2))
-            summon.setItemSlot("legs",Item.of("minecraft:leather_leggings").enchant('minecraft:protection', 2))
-            summon.setItemSlot("feet",Item.of("minecraft:leather_boots").enchant('minecraft:protection', 2))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.arctic_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
-        }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
-        }
     }else if(global.armorSetMap.get(player) == "fiery"){
         //炽铁
         if(player.potionEffects.isActive("goety:flame_hands")){
@@ -120,90 +104,48 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
         }
     }else if(global.armorSetMap.get(player) == "yeti"){
         //雪怪
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goety:ice_golem")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("mainhand",Item.of("goety:frozen_blade").enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:sharpness', 5))
-            summon.setItemSlot("head",Item.of("twilightforest:yeti_helmet").enchant('minecraft:protection', 3))
-            summon.setItemSlot("chest",Item.of("twilightforest:yeti_chestplate").enchant('minecraft:protection', 4))
-            summon.setItemSlot("legs",Item.of("twilightforest:yeti_leggings").enchant('minecraft:protection', 4))
-            summon.setItemSlot("feet",Item.of("twilightforest:yeti_boots").enchant('minecraft:protection', 4))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.yeti_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+        if(global.armorSwitchMap.get(player) == 0){
+            global.armorSwitchMap.put(player,1)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_on"))
         }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
+            global.armorSwitchMap.put(player,0)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_off"))
         }
     }else if(global.armorSetMap.get(player) == "cursium"){
         //咒魂
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goety:blackguard_servant")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("mainhand",Item.of("cataclysm:soul_render").enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:sharpness', 5))
-            summon.setItemSlot("offhand","minecraft:totem_of_undying")
-            summon.setItemSlot("head",Item.of("cataclysm:cursium_helmet").enchant('minecraft:protection', 4))
-            summon.setItemSlot("chest",Item.of("cataclysm:cursium_chestplate").enchant('minecraft:protection', 5))
-            summon.setItemSlot("legs",Item.of("cataclysm:cursium_leggings").enchant('minecraft:protection', 5))
-            summon.setItemSlot("feet",Item.of("cataclysm:cursium_boots").enchant('minecraft:protection', 4))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.cursium_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+        if(global.armorSwitchMap.get(player) == 0){
+            global.armorSwitchMap.put(player,1)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_on"))
         }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
+            global.armorSwitchMap.put(player,0)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_off"))
         }
     }else if(global.armorSetMap.get(player) == "champion"){
         //冠军
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goetyawaken:vanguard_champion")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("mainhand",Item.of("goetyawaken:moonlight_cut").enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:sharpness', 5))
-            summon.setItemSlot("offhand","minecraft:totem_of_undying")
-            summon.setItemSlot("head",Item.of("goetyawaken:champion_helmet").enchant('minecraft:protection', 5))
-            summon.setItemSlot("chest",Item.of("goetyawaken:champion_chestplate").enchant('minecraft:protection', 5))
-            summon.setItemSlot("legs",Item.of("goetyawaken:champion_leggings").enchant('minecraft:protection', 5))
-            summon.setItemSlot("feet",Item.of("goetyawaken:champion_boots").enchant('minecraft:protection', 5))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.champion_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+        if(global.armorSwitchMap.get(player) == 0){
+            global.armorSwitchMap.put(player,1)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_on"))
         }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
+            global.armorSwitchMap.put(player,0)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_off"))
         }
     }else if(global.armorSetMap.get(player) == "spider"){
         //蜘蛛
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goety:bone_spider_servant")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("mainhand",Item.of("goetyawaken:glaive").enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:sharpness', 5))
-            summon.setItemSlot("head",Item.of("goety_revelation:spider_helmet").enchant('minecraft:protection', 3))
-            summon.setItemSlot("chest",Item.of("goety_revelation:spider_chestplate").enchant('minecraft:protection', 3))
-            summon.setItemSlot("legs",Item.of("goety_revelation:spider_leggings").enchant('minecraft:protection', 3))
-            summon.setItemSlot("feet",Item.of("goety_revelation:spider_boots").enchant('minecraft:protection', 3))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.spider_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+        if(global.armorSwitchMap.get(player) == 0){
+            global.armorSwitchMap.put(player,1)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_on"))
         }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
+            global.armorSwitchMap.put(player,0)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_off"))
         }
     }else if(global.armorSetMap.get(player) == "spider_darkmage"){
         //神经
-        if(global.genericSummonCdMap.get(player) == 0||global.genericSummonCdMap.get(player) == -1){
-            let summon = level.createEntity("goety:bone_spider_servant")
-            summon.setPosition(x,y,z)
-            summon.setItemSlot("mainhand",Item.of("goetyawaken:frost_scythe").enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:sharpness', 5))
-            summon.setItemSlot("head",Item.of("goety_revelation:spider_darkmage_helmet").enchant('minecraft:protection', 3))
-            summon.setItemSlot("chest",Item.of("goety_revelation:spider_darkmage_chestplate").enchant('minecraft:protection', 4))
-            summon.setItemSlot("legs",Item.of("goety_revelation:spider_darkmage_leggings").enchant('minecraft:protection', 4))
-            summon.setItemSlot("feet",Item.of("goety_revelation:spider_darkmage_boots").enchant('minecraft:protection', 4))
-            summon.setOwnerId(player.getUuid())
-            summon.setCustomName(Text.translate("curlamoety.lang.spider_darkmage_summon"))
-            summon.spawn()
-            global.genericSummonCdMap.put(player,3600)
+        if(global.armorSwitchMap.get(player) == 0){
+            global.armorSwitchMap.put(player,1)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_on"))
         }else{
-            player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.armorset_cooling")))
+            global.armorSwitchMap.put(player,0)
+            player.setStatusMessage(Text.translate("curlamoety.lang.armor_switch_off"))
         }
     }else if(global.armorSetMap.get(player) == "cursed_knight"){
         //诅咒骑士
@@ -212,10 +154,10 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
             summon.setPosition(x,y,z)
             summon.setItemSlot("mainhand",Item.of('minecraft:iron_sword').enchant('minecraft:sharpness', 10).enchant('goety_revelation:reality_piercer', 5).enchant('minecraft:vanishing_curse', 1))
             summon.setItemSlot("offhand",Item.of('minecraft:shield').enchant('minecraft:vanishing_curse', 1))
-            summon.setItemSlot("head",Item.of('minecraft:iron_helmet').enchant('minecraft:protection', 2).enchant('minecraft:vanishing_curse', 1))
-            summon.setItemSlot("chest",Item.of('minecraft:iron_chestplate').enchant('minecraft:protection', 2).enchant('minecraft:vanishing_curse', 1))
-            summon.setItemSlot("legs",Item.of('minecraft:iron_leggings').enchant('minecraft:protection', 2).enchant('minecraft:vanishing_curse', 1))
-            summon.setItemSlot("feet",Item.of('minecraft:iron_boots').enchant('minecraft:protection', 2).enchant('minecraft:vanishing_curse', 1))
+            summon.setItemSlot("head",Item.of('minecraft:iron_helmet').enchant('minecraft:protection', 4).enchant('minecraft:vanishing_curse', 1))
+            summon.setItemSlot("chest",Item.of('minecraft:iron_chestplate').enchant('minecraft:protection', 4).enchant('minecraft:vanishing_curse', 1))
+            summon.setItemSlot("legs",Item.of('minecraft:iron_leggings').enchant('minecraft:protection', 4).enchant('minecraft:vanishing_curse', 1))
+            summon.setItemSlot("feet",Item.of('minecraft:iron_boots').enchant('minecraft:protection', 4).enchant('minecraft:vanishing_curse', 1))
             summon.setOwnerId(player.getUuid())
             summon.setCustomName(Text.translate("curlamoety.lang.cursed_knight_summon"))
             summon.spawn()
@@ -257,3 +199,4 @@ NetworkEvents.dataReceived("global.armorSetKey.consumeClick",(event)=>{
         player.setStatusMessage(Text.red(Text.translate("curlamoety.lang.no_armorset")))
     }
 })
+

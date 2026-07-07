@@ -190,16 +190,14 @@ minecraft.RenderTargetMixin = true
 # [物品维度裁决与保护]
 # [Item Dimensional Arbitration & Protection]
 
-# 物品裁决与自然生成方块改写：
-# 1. 物品封禁：拦截 ItemStack 初始化与容器写入。被封禁的物品只在物品阶段坍缩为虚空占位符，不等同于“禁止自然生成方块”。
-# 2. 普通物品合并：重写 ItemStack、配方与战利品表中的来源物品，使重复资源统一指向主物品；目标没有 NBT 时不会额外写入空 NBT，目标有 NBT 时才保留目标 NBT。
-# 3. 矿物/方块生成封禁：仅拦截自然生成阶段的方块写入。被封禁的生成方块会在 LevelChunkSection 写入前改成空气，不影响背包物品、创造栏物品、玩家手动放置和已生成区块。
-# 4. 矿物/方块生成合并：仅拦截自然生成阶段的来源方块写入。命中合并规则时，来源方块会在底层区块写入前改成主方块，适用于矿石、荧石、下界岩、基岩等普通世界生成方块。
-# Item Arbitration and Natural Worldgen Block Rewriting:
-# 1. Item Ban: Intercepts ItemStack creation and container writes. Banned items collapse into the void placeholder only in the item phase; this is separate from natural block generation control.
-# 2. Normal Item Merge: Rewrites source items in ItemStack, recipes, and loot tables so duplicate resources point to the selected target item. No empty NBT is written when the target has no NBT; target NBT is preserved only when it exists.
-# 3. Ore / Block Generation Ban: Intercepts only natural worldgen block writes. Banned generated blocks are changed to air before LevelChunkSection writes them, without affecting inventory items, creative-tab items, player placement, or existing chunks.
-# 4. Ore / Block Generation Merge: Intercepts only natural worldgen source block writes. Matching source blocks are changed to the target block before low-level chunk-section writes, covering ores, glowstone, netherrack, bedrock, and other generated blocks.
+# 维度级存有裁决（Ban/Merge）：
+# 1. 存有重写：基于“本质替换”协议，拦截 ItemStack 初始化。支持 NBT 级精准颗粒度判定（如单独禁用“保护4附魔书”或特定变种枪械）。
+# 2. 虚空坍缩：封禁物品入库即刻变为“虚空占位符”，拦截 Slot.set 咽喉逻辑，使其在尝试进入任何容器（箱子/机器）时瞬间物理消失。
+# 3. 动态重写：实时劫持配方(Recipes)与战利品表(Loot Tables)，确保合并规则在全局逻辑链中完全闭环，实现“原子级”归一。
+# Ontological Swap & Arbitration (Ban/Merge):
+# 1. Existence Rewrite: Intercepts ItemStack initialization via 'Ontological Swap'. Supports NBT-level granularity (e.g., banning specific 'Prot IV' books or TAC:Z gun variants).
+# 2. Void Collapse: Banned items instantly collapse into placeholders. Intercepts 'Slot.set' logic to ensure items vanish physically when entering any container or machine.
+# 3. Dynamic Rewriting: High-jacking Recipes and Loot Tables in real-time to ensure merge rules are logically closed-loop at the atomic level.
 item.ItemManagementMixins = true
 
 # 掉落物属性保护与虚空拯救：

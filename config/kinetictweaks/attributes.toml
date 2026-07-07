@@ -194,7 +194,7 @@
 	max = 2.147483647E9
 
 # 仆从百分比伤害抗性
-# 原始范围 / Original Range: [0, 1]
+# 原始范围 / Original Range: [-1, 1]
 # 默认数值 / Default Value: 0
 ["goeticlegacy:servant_damage_reduction_ratio"]
 	enabled = false

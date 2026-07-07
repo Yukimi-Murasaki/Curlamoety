@@ -23,7 +23,7 @@ StartupEvents.registry('item', event => {
             .modifyAttribute(attributeModificationContext => {
                 let { slotContext, UUID, stack, modifiers } = attributeModificationContext
                 attributeModificationContext.modify("goety_revelation:soul_decrease_reduction",'old_necklace_sdr',0.08,'addition')
-                attributeModificationContext.modify("goeticlegacy:servant_final_damage_multiplier",'old_necklace_sfdm',0.1,'addition')
+                attributeModificationContext.modify("goeticlegacy:servant_final_damage_multiplier",'old_necklace_sfdm',0.2,'addition')
                 attributeModificationContext.modify("goeticlegacy:magic_damage_multiplier",'old_necklace_mdm',0.1,'addition')
                 attributeModificationContext.modify("minecraft:generic.luck",'old_necklace_luck',6,'addition')
                 attributeModificationContext.modify("goety_revelation:spell_duration",'old_necklace_sd',0.5,'addition')
@@ -118,7 +118,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'death_necklace_sfdm',
-                0.2,
+                0.3,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -197,7 +197,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'faith_necklace_sfdm',
-                0.3,
+                0.45,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -565,14 +565,14 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'evil_ring_mdm',
-                        0.2,
+                        0.15,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:servant_final_damage_multiplier",
                         'evil_ring_sfdm',
-                        0.1,
-                        'addition'
+                        0.05,
+                        'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_invul_reduction",
@@ -649,14 +649,14 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'blood_ring_mdm',
-                        0.3,
+                        0.2,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:servant_final_damage_multiplier",
                         'blood_ring_sfdm',
-                        0.15,
-                        'addition'
+                        0.1,
+                        'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_invul_reduction",
@@ -732,14 +732,14 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'dominator_ring_mdm',
-                        0.4,
+                        0.3,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:servant_final_damage_multiplier",
                         'dominator_ring_sfdm',
-                        0.2,
-                        'addition'
+                        0.15,
+                        'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_invul_reduction",
@@ -815,14 +815,14 @@ StartupEvents.registry('item', event => {
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_damage_multiplier",
                         'stella_ring_mdm',
-                        0.5,
+                        0.4,
                         'addition'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:servant_final_damage_multiplier",
                         'stella_ring_sfdm',
-                        0.25,
-                        'addition'
+                        0.2,
+                        'multiply_total'
                     )
                     attributeModificationContext.modify(
                         "goeticlegacy:magic_invul_reduction",
@@ -1348,19 +1348,13 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "minecraft:generic.armor",
                 'gloomy_circlet_armor',
-                2,
-                'addition'
-            )
-            attributeModificationContext.modify(
-                "goeticlegacy:magic_damage_multiplier",
-                'gloomy_circlet_mdm',
-                0.1,
+                1,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'gloomy_circlet_sfdm',
-                0.2,
+                0.4,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1421,7 +1415,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goety_revelation:spell_radius",
                 'moon_circlet_radius',
-                4,
+                2,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1494,13 +1488,13 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goety_revelation:spell_range",
                 'twilight_crown_range',
-                6,
+                5,
                 'addition'
             )
             attributeModificationContext.modify(
                 "goety_revelation:spell_radius",
                 'twilight_crown_radius',
-                6,
+                3,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1510,15 +1504,9 @@ StartupEvents.registry('item', event => {
                 'addition'
             )
             attributeModificationContext.modify(
-                "goeticlegacy:magic_damage_multiplier",
-                'moon_circlet_mdm',
-                0.2,
-                'addition'
-            )
-            attributeModificationContext.modify(
                 "goeticlegacy:servant_final_damage_multiplier",
                 'twilight_crown_sfdm',
-                0.5,
+                1,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1610,7 +1598,7 @@ StartupEvents.registry('item', event => {
             attributeModificationContext.modify(
                 "goeticlegacy:magic_damage_multiplier",
                 'goal_ty_3',
-                0.15,
+                0.1,
                 'addition'
             )
             attributeModificationContext.modify(
@@ -1854,8 +1842,14 @@ StartupEvents.registry('item', event => {
         .addAttribute(
             "goeticlegacy:servant_final_damage_multiplier",
             'twilight_sparkle_1',
-            0.25,
+            1,
             'addition'
+        )
+        .addAttribute(
+            "goeticlegacy:servant_final_damage_multiplier",
+            'twilight_sparkle_1',
+            0.2,
+            'multiply_total'
         )
         .modifyAttribute(attributeModificationContext => {
             let { slotContext, UUID, stack, modifiers } = attributeModificationContext

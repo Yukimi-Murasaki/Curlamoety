@@ -110,8 +110,8 @@
 				item: "goety:pale_steel_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: -0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1E0EF342251627BE"]
@@ -160,8 +160,8 @@
 				}
 			]
 			title: "新刌民"
-			x: -0.5d
-			y: 5.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["42952B4B0CE9F8F6"]
@@ -234,7 +234,7 @@
 				}
 			]
 			x: -0.5d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1E0EF342251627BE"]
@@ -266,7 +266,7 @@
 			}]
 			title: "灾厄猎杀与袭击"
 			x: -2.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4AB0DD1187229840"]
@@ -306,7 +306,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4AB0DD1187229840"]
@@ -333,7 +333,7 @@
 			}]
 			title: "召集之钟"
 			x: -3.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4AB0DD1187229840"]
@@ -381,8 +381,8 @@
 				type: "advancement"
 			}]
 			title: "灾厄教父"
-			x: -2.0d
-			y: 5.0d
+			x: -3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["76887FFBCC9335F9"]
@@ -901,6 +901,8 @@
 				""
 				"书籍&e《女巫药酿学》&r会展示基础的酿药步骤和各种药材的效果"
 				""
+				"伯莱恩匕首是一把*锄*类工具，用它收割草有概率获得&e天仙子种子和颠茄种子&r"
+				""
 				"酿药需要在底下有热源，内部有水的女巫坩埚中，&e依次加入容量剂、催化剂、增强剂&r，最后使用坩埚大勺右键搅拌坩埚（这是一个确认动作），然后坩埚会从周围的有能量源的&e诅咒蜡烛&r吸取灵魂能量来完成酿造。"
 				""
 				"不按规则往坩埚里丢东西会让坩埚内的液体&4报废&r，用瓶子乘出变成拒绝之瓶，用桶乘出会变成普通的水。"
@@ -921,17 +923,120 @@
 				"           &7示例：一套可用的女巫坩埚"
 			]
 			id: "500A9197561C0DB3"
-			rewards: [{
-				id: "73CA0BC5768247CB"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "goety:witches_brew"
+			rewards: [
+				{
+					id: "73CA0BC5768247CB"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "goety:witches_brew"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "26320BB71BA7F1E6"
+					item: {
+						Count: 1
+						id: "goety:brew"
+						tag: {
+							Aquatic: 0b
+							AreaOfEffect: 0
+							CustomBrew: 1b
+							CustomPotionColor: 12475469
+							CustomPotionEffects: [
+								{
+									Ambient: 0b
+									Amplifier: 3b
+									CurativeItems: [{
+										Count: 1b
+										id: "minecraft:milk_bucket"
+									}]
+									Duration: 1800
+									Id: 11
+									"PLF:Amplifier": 3
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "minecraft:resistance"
+								}
+								{
+									Ambient: 0b
+									Amplifier: 3b
+									CurativeItems: [{
+										Count: 1b
+										id: "minecraft:milk_bucket"
+									}]
+									Duration: 3600
+									Id: 5
+									"PLF:Amplifier": 3
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "minecraft:strength"
+								}
+								{
+									Ambient: 0b
+									Amplifier: 3b
+									CurativeItems: [{
+										Count: 1b
+										id: "minecraft:milk_bucket"
+									}]
+									Duration: 3600
+									Id: 92
+									"PLF:Amplifier": 3
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "goety:leeching"
+								}
+								{
+									Ambient: 0b
+									Amplifier: 3b
+									CurativeItems: [{
+										Count: 1b
+										id: "minecraft:milk_bucket"
+									}]
+									Duration: 1800
+									Id: 102
+									"PLF:Amplifier": 3
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "goetyawaken:enchantment_sharpness"
+								}
+							]
+							FireProof: 0b
+							Lingering: 0.0f
+							Quaff: 0
+							RepairCost: 0
+							Velocity: 0.0f
+							display: {
+								Lore: ["{\"text\":\"§5学会女巫精酿后，你可以轻松酿造这样的药水\"}"]
+								Name: "{\"text\":\"§e这是一瓶简单的示例\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0522BACA82745A21"
+					item: {
+						Count: 1
+						id: "goety:wicked_boline"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+							RepairCost: 0
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"濡湿小镰刀\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "另一种炼药方式"
@@ -953,7 +1058,7 @@
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
-			description: ["最多生效3个，放置在坩埚5格内会降低10点灵魂消耗，聊胜于无"]
+			description: ["最多生效3个，放置在坩埚5格内会降低1%灵魂消耗，聊胜于无"]
 			id: "4B19913DE5AD150D"
 			rewards: [
 				{
@@ -1133,7 +1238,7 @@
 			description: [
 				"佩戴女巫长袍会增加1装瓶数，女巫帽概率增加1装瓶数，巫婆帽概率增加2装瓶数"
 				""
-				"每装取20瓶药酿会提高熟练度，最多增加10装瓶数（默认为5，本整合包上调了数量），可以通过大量酿造无效果药酿来刷熟练度"
+				"每装取15瓶药酿会提高&e熟练度&r，最多增加10装瓶数（默认为每20瓶增加一次，最多增加5，本整合包进行了调整），可以通过大量酿造无效果药酿来刷熟练度"
 				""
 				"在坩埚周围存在驯服的黑猫也会增加1装瓶数"
 				"{ \"text\": \"点击购买一只黑猫\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70240AA0707C55D7\" } }"
@@ -1315,8 +1420,8 @@
 					type: "item"
 				}
 				{
-					id: "78F68A59662E81C5"
-					item: "minecraft:scute"
+					id: "1B744D0E8E2ED875"
+					item: "goety:resilience_lotion"
 					type: "item"
 				}
 			]
@@ -1334,27 +1439,27 @@
 			description: [
 				"容量剂是为药水提供药材容量的药材，它们必须先于其他材料投入，如果在投料中途追加容量剂，药酿会&4报废&r。"
 				""
-				"从加入下界疣开始，药酿会拥有4点基础容量，之后&e根据级别从低到高按顺序依次&r投入更高级的容量剂（下界疣-绯红菌-砰砰疣……依此类推），会进一步增加容量，但是不按顺序投放会使药酿&4报废&r。"
+				"从加入下界疣开始，药酿会拥有4点基础容量，之后&e根据级别从低到高按顺序依次&r投入更高级的容量剂（天仙子花-下界疣-啪啪菌团……依此类推），会进一步增加容量，但是不按顺序投放会使药酿&4报废&r。"
 				""
 				"容量的限制："
 				"①&e催化剂&r的&e总容量值&r不超过容量上限"
 				"②&e催化剂与增强剂&r的&e总数量&r不超过容量上限"
 				""
 				"&e容量剂："
-				"lv0：下界疣"
-				"lv1：绯红菌"
-				"lv2：砰砰疣"
+				"lv0：天仙子花"
+				"lv1：下界疣"
+				"lv2：啪啪菌团"
 				"lv3：觉醒绿宝石"
 				"lv4：浓缩绿宝石"
-				"lv5：除原版灵魂红宝石外，还可以使用：星尘，下界之星，熔岩动力电池，凋灵合金锭，炽热之血，炽热之泪"
-				"lv6：除原版不洁之血外，还可以使用：风暴精华，咒魂锭，渊没精华，虚空回响"
+				"lv5：除原版凋灵手稿外，还可以使用：星尘，下界之星，熔岩动力电池，凋灵合金锭，炽热之血，炽热之泪"
+				"lv6：除原版灵魂红宝石、不洁之血外，还可以使用：风暴精华，咒魂锭，渊没精华，虚空回响"
 				"lv7：硫火宝珠"
 			]
 			id: "5F9A0433560BF1A3"
 			rewards: [
 				{
-					id: "455B4AB3392DE577"
-					item: "minecraft:crimson_fungus"
+					id: "3EE119D52AB3E345"
+					item: "minecraft:nether_wart"
 					type: "item"
 				}
 				{
@@ -1365,8 +1470,8 @@
 			]
 			subtitle: "药剂的起点"
 			tasks: [{
-				id: "03751393A6591DE5"
-				item: "minecraft:nether_wart"
+				id: "6785C82AA2B14EBA"
+				item: "goety:henbane_flower"
 				type: "item"
 			}]
 			title: "容量剂"
@@ -1472,6 +1577,16 @@
 				""
 				"{ \"text\": \"点击查看聚晶收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"103DC4F1BEC126AA\" } }"
 			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 11
+					}
+				}
+				id: "goety:focus_bag"
+			}
 			id: "2F8AB5209DEB719E"
 			rewards: [
 				{
@@ -1495,21 +1610,39 @@
 				}
 			]
 			subtitle: "把聚晶装起来"
-			tasks: [{
-				id: "7CA53160A64799B3"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 11
-							slot: 0
+			tasks: [
+				{
+					id: "7CA53160A64799B3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 11
+								slot: 0
+							}
 						}
+						id: "goety:focus_bag"
 					}
-					id: "goety:focus_bag"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1E883352A699CAE8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 21
+							}
+						}
+						id: "goety:focus_pack"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -6.5d
 		}
@@ -2066,8 +2199,8 @@
 				type: "item"
 			}]
 			title: "登山镐"
-			x: 1.0d
-			y: 2.0d
+			x: -0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3CF7E89008411F29"]
@@ -2104,7 +2237,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4663D113E65B8563"]
@@ -2114,6 +2247,8 @@
 				"手持存储有一个未注册箱子的坐标的指路石，与囚犯交互，囚犯便会注册这一箱子，这样，囚犯在&e不处于待命状态时&r，会将自己持有的物品放入注册的箱子中。"
 				""
 				"如果把镐子给予被囚犯，并且囚犯&e不处于跟随状态&r，那么囚犯就可以进行自动挖矿，这个挖矿行为会根据附近的矿石方块和自己持有的镐子挖掘能力，&e凭空&r生产矿产。&e虽然不会消耗矿石，但是会消耗镐子的耐久&r，高级、稀有的矿石，生产的速率会降低"
+				""
+				"囚犯一定范围内的&e每一块矿物&r，囚犯都会对其产生挖掘判定，越多越好"
 				""
 				"产出矿物的速率与镐子的&e效率附魔等级、囚犯身上的急迫效果等级相关&r，但是与镐子的&4挖掘效率属性无关&r"
 				""
@@ -2134,7 +2269,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4CFBD3F812B6AB7E"]
@@ -2779,7 +2914,13 @@
 			description: [
 				"强力的辅助聚晶，给予一大片目标降低攻击力的虚弱效果和增加受到伤害的侵蚀效果"
 				""
-				"侵蚀效果每级增加20%所受伤害，初始为5级，每1级强效增加1级侵蚀，辅助增伤的能力十分强悍"
+				"侵蚀效果&e每级增加20%所受伤害&r，初始为5级，每3级强效增加5级侵蚀，辅助增伤的能力十分强悍"
+				""
+				"在&a暗夜立方&r中放入&5启示之证&r可以让弱化法术&6对免疫侵蚀的敌人仍然生效1/5的效果&r"
+				""
+				"{ \"text\": \"点击查看暗夜立方\", \"underlined\": \"true\", \"color\":\"green\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"2507F2234302FD40\" } }"
+				""
+				"{ \"text\": \"点击查看启示之证\", \"underlined\": \"true\", \"color\":\"dark_purple\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"7A7883F420DBC0E5\" } }"
 			]
 			hide_dependency_lines: true
 			id: "365E1E48492C7CFB"
@@ -3136,18 +3277,27 @@
 			subtitle: "这不是注魔吗"
 			tasks: [
 				{
-					id: "17B7B414DCA89559"
-					item: "goety:dark_altar"
+					id: "193D02C3C7E705D5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(goety:dark_altars))"
+						}
+					}
+					title: "任意 黑暗祭坛"
 					type: "item"
 				}
 				{
-					id: "3A3D2096115DE2EB"
-					item: "goety:cursed_cage"
-					type: "item"
-				}
-				{
-					id: "3AB4F4AB76F696BD"
-					item: "goety:pedestal"
+					id: "261BBB522E49049C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(goety:pedestals))"
+						}
+					}
+					title: "任意 祭坛基座"
 					type: "item"
 				}
 			]
@@ -3180,7 +3330,7 @@
 		{
 			dependencies: ["5FCB86A1BBF9EE00"]
 			description: [
-				"可以降低聚晶的灵魂消耗和施法时间"
+				"最基础的黑暗帽子和黑暗长袍可以降低聚晶的灵魂消耗和施法时间"
 				""
 				"各个巫法系别拥有专属的法帽法袍，在降低灵魂消耗和施法时间的基础上，还可以让仆从永续存在并利用主人的灵魂能量自我治疗，额外增强部分聚晶的效果，以及让对应种类的&e敌怪对自己中立&r。"
 				""
@@ -3190,6 +3340,7 @@
 				""
 				"{ \"text\": \"点击查看法帽法袍收藏馆\", \"color\":\"yellow\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"22C1ADD5578BBE62\" } }"
 			]
+			icon: "goety:dark_hat"
 			id: "489AD2801A7D29E6"
 			rewards: [
 				{
@@ -3217,13 +3368,27 @@
 			subtitle: "法师的标配穿搭，是饰品哦"
 			tasks: [
 				{
-					id: "762755835548FB9F"
-					item: "goety:dark_hat"
+					id: "2298387BC2664648"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(goety:crowns)item(goety:amethyst_necklace))"
+						}
+					}
+					title: "任意 法帽"
 					type: "item"
 				}
 				{
-					id: "11BE8341F9F4A19C"
-					item: "goety:dark_robe"
+					id: "6E71637C2E972E1D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(goety:robes)item_tag(goety:capes))"
+						}
+					}
+					title: "任意 法袍"
 					type: "item"
 				}
 			]
@@ -3545,7 +3710,6 @@
 					advancement: "goetyawaken:royal_research_completed"
 					criterion: ""
 					id: "63094E6AC6B01C00"
-					optional_task: true
 					type: "advancement"
 				}
 			]
@@ -3698,7 +3862,6 @@
 					advancement: "goety:goety/read_forbidden_scroll"
 					criterion: ""
 					id: "1851A9A5A97071B5"
-					optional_task: true
 					type: "advancement"
 				}
 			]
@@ -4754,7 +4917,6 @@
 					advancement: "goety:goety/read_terminus_scroll"
 					criterion: ""
 					id: "50B601658B5CE81E"
-					optional_task: true
 					type: "advancement"
 				}
 			]
@@ -5200,13 +5362,13 @@
 			subtitle: "移动的灾难"
 			tasks: [{
 				entity: "goety:hostile_redstone_monstrosity"
-				id: "4BA2B62E11B432BB"
+				id: "7A3DB9EADF404A61"
 				type: "kill"
 				value: 1L
 			}]
 			title: "红石巨兽"
 			x: -3.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["21E4DE748D41CD0D"]
@@ -5294,11 +5456,20 @@
 				}
 			]
 			subtitle: "我盔甲在动，我不玩儿了"
-			tasks: [{
-				id: "5C73AA89B7BC5A42"
-				item: "goety:haunting_scroll"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5C73AA89B7BC5A42"
+					item: "goety:haunting_scroll"
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "goety:goety/read_haunting_scroll"
+					criterion: ""
+					id: "2FCF5B9C3BB6F8DF"
+					type: "advancement"
+				}
+			]
 			x: 15.0d
 			y: -2.0d
 		}
@@ -5887,6 +6058,7 @@
 		}
 		{
 			dependencies: ["564DFCE6586C54AA"]
+			description: ["有重大bug，暂时禁用获取"]
 			id: "042BA0C374D8628E"
 			rewards: [
 				{
@@ -5979,6 +6151,133 @@
 			title: "下界合金巨兽仆从"
 			x: 16.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2F8AB5209DEB719E"]
+			description: [
+				"将聚晶装入绑定聚晶袋后，绑定聚晶袋可以&e像聚晶一样装入法杖&r"
+				""
+				"这样，法杖的轮盘将&e只读取&r该绑定聚晶袋中的聚晶"
+				""
+				"手持法杖，&e潜行时右键&r取出绑定聚晶袋"
+			]
+			id: "1F7FB5DA06AC85AE"
+			rewards: [
+				{
+					id: "15BC61FE4FD94837"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 20
+							}
+						}
+						id: "goeticlegacy:bound_focus_pack"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4E42CED61F753EE5"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+			]
+			subtitle: "名师一对一"
+			tasks: [{
+				id: "4B31CA7DDEFFF241"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 20
+						}
+					}
+					id: "goeticlegacy:bound_focus_pack"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["500A9197561C0DB3"]
+			description: [
+				"颠茄花可以将坩埚设置为合成模式（一次性），合成模式只要按照配方将所有物品投入后搅拌，即可完成酿造"
+				""
+				"合成模式可以用于制作坚韧药膏和飞行药膏，坚韧药膏可以用作药酿催化剂，效果为抗性提升，飞行药膏可以制作缠魂扫帚"
+				""
+				"然而由于北极冰发现启示录会让合成模式出问题，于是在安装了启示录的情况下，合成模式会被禁用，并将配方改为普通合成配方"
+			]
+			id: "6E41B3C0C63B99D3"
+			rewards: [{
+				id: "09D10C076FE0C5EE"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			subtitle: "什么叫牢冰主动适配附属了"
+			tasks: [{
+				id: "7FB827E1B7D9F134"
+				item: "goety:nightshade_blossom"
+				type: "item"
+			}]
+			title: "坩埚合成"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B17D3CA49E52F0A"]
+			description: [
+				"手持时右键可以打开并装入药酿"
+				""
+				"按下&l&eG&r键，可以获得锅中的药酿所含有的药水效果，且不消耗药酿，但是冷却很长"
+			]
+			id: "550DE469DC5B1116"
+			rewards: [{
+				id: "2E21DE8DD5049354"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			subtitle: "你是说，无限续杯？！"
+			tasks: [{
+				id: "317A1DDB57AE4DAF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+						}
+					}
+					id: "goety:eternal_cauldron"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4CFBD3F812B6AB7E"
+				"502FEB98A3850A66"
+			]
+			hide_dependency_lines: true
+			id: "4F5341DE46F711B9"
+			rewards: [{
+				id: "111DAB3B8FA51CA2"
+				item: "goety:forbidden_fragment"
+				type: "item"
+			}]
+			subtitle: "安息者的镇魂灯"
+			tasks: [{
+				id: "5F57A5D4FCBC5389"
+				item: "goeticlegacy:nerotic_lantern"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
 		}
 	]
 	title: "黑暗魔法"
