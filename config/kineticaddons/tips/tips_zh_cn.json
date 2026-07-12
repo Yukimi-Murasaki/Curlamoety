@@ -2,7 +2,7 @@
   "tips": [
     {
       "stage": "game",
-      "text": "§b§l§f你发现了一座村庄。把村民们抓起来也许会派上大用场",
+      "text": "§e你发现了一座村庄。把村民们§6抓起来§e也许会派上大用场",
       "time": 5000,
       "conditions": {
         "structure": "minecraft:village_plains"
@@ -10,7 +10,7 @@
     },
     {
       "stage": "any",
-      "text": "混合修补物可以一下子修好大部分工具……也许不只是修复，试试贤者之石和天启七印",
+      "text": "§6混合修补物§e可以一下子修好大部分工具……也许不只是修复，试试贤者之石和天启七印",
       "time": 5000,
       "conditions": {
         "items": [
@@ -23,7 +23,7 @@
     },
     {
       "stage": "any",
-      "text": "那条家传的项链也许应该拿出来抛个光或者除除锈什么的",
+      "text": "§e升级你的§6老旧项链§e，可以为你提供更多的灵魂能量以及巫法加成",
       "time": 5000,
       "conditions": {
         "curios": [
@@ -44,26 +44,20 @@
     },
     {
       "stage": "any",
-      "text": "你手指上佩戴着的恶灵似乎有点不安分，用什么东西去喂一喂这枚戒指如何",
+      "text": "§5升级§6恶灵戒指§5，可以提供强大的巫法方面加成",
       "time": 5000,
       "conditions": {
-        "items": [
-          {
-            "id": "curlamoety:evil_spirit",
-            "nbtMode": "NONE"
-          }
-        ],
         "curios": [
           {
             "id": "curlamoety:evil_ring",
             "nbtMode": "NONE"
           },
           {
-            "id": "curlamoety:dominator_ring",
+            "id": "curlamoety:blood_ring",
             "nbtMode": "NONE"
           },
           {
-            "id": "curlamoety:blood_ring",
+            "id": "curlamoety:dominator_ring",
             "nbtMode": "NONE"
           }
         ]
@@ -71,7 +65,121 @@
     },
     {
       "stage": "any",
-      "text": "",
+      "text": "§e升级你的§6探险家手套§e，可以帮助你战斗和挖掘",
+      "time": 5000,
+      "conditions": {
+        "curios": [
+          {
+            "id": "curlamoety:explorer_gloves",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:pioneer_gloves",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:conqueror_gloves",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "§e升级§6晦色头环/皎月银环§e，可以为你的仆从提供大量的帮助§e",
+      "time": 5000,
+      "conditions": {
+        "curios": [
+          {
+            "id": "curlamoety:gloomy_circlet",
+            "nbtMode": "NONE"
+          },
+          {
+            "id": "curlamoety:moon_circlet",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "§e暮色森林的矿山有着富饶的矿产，去看看吧",
+      "time": 5000,
+      "conditions": {
+        "dimension": "twilightforest:twilight_forest_type"
+      }
+    },
+    {
+      "stage": "any",
+      "text": "§e想要变得更加强大吗，一定不要错过§6恩赐卷轴§e或者§e§r§r§e§e§e§r§e§4千咒卷轴",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§6恩赐卷轴§e§e§r§e或者§4千咒卷轴§e§r§e会提供极高的全伤害加成，一定不要错过",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§6恩赐卷轴§e§e§e§e§r§e或者§4千咒卷轴§r§e带来的提升非常巨大",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e上帝不掷骰子但是我掷，我§6孤注一掷",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e如何指挥你的仆从？请查看任务书：§6召唤师的基本素养",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e怎么查看仪式类型？黑书不一定全，请看任务书：§6仪式搭建",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§f§f§e整套的§6法帽与法袍§e可以让对应类型的敌人对你中立",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§6女巫长袍§e可以提供整整85%的§6魔法伤害抗性",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e大部分主流盔甲都像诡厄巫法系的魔法盔甲一样，会提供§6魔法、火焰和爆炸抗性§e，并且会提供§6巫法相关属性",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e不知道如何变强？看看任务书的§6饰品典藏室章节§e，和§6初心者之路章节的神秘遗物部分",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e普通的黑暗魔杖只能满足基本的施法需求，更§6高级的魔杖§e可以为一些聚晶增加额外效果§6，Lv.2魔杖§e还有手持属性加成！",
+      "time": 5000,
+      "conditions": {
+        "items": [
+          {
+            "id": "goety:dark_wand",
+            "nbtMode": "NONE"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "any",
+      "text": "§e两个聚晶包可以组装成§6多晶大袋§e，可以装更多聚晶！不过合成的时候记得§6先把里面的聚晶拿出来",
+      "time": 5000
+    },
+    {
+      "stage": "any",
+      "text": "§e按§6Ctrl+V§e可以打开工具腰带的§6专属槽位§e，别怪我没有提醒你",
       "time": 5000
     }
   ]

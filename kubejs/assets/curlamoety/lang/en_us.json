@@ -466,7 +466,7 @@
     "curlamoety.lang.yeti_armorset_4":"§5  - §6+15% §dServant Percentage Damage Resistance",
     "curlamoety.lang.yeti_armorset_5":"§5  - Immune to §dExposion and Fire Damage",
     "curlamoety.lang.yeti_armorset_6":"§5  - §6+72% §dMagic Damage Resistance",
-    "curlamoety.lang.yeti_armorset_7":"§5  - Grants §6Frosty Aura I §5effect",
+    "curlamoety.lang.yeti_armorset_7":"§5  - Grants §6Frozen Heart I §5effect",
     "curlamoety.lang.yeti_armorset_8_on":"§5  - Your servants will wear a set of enhanced equipments like you when they spawn(§aON§5, press §6%s§5 to turn OFF)",
     "curlamoety.lang.yeti_armorset_8_off":"§5  - Your servants will wear a set of enhanced equipments like you when they spawn(§4OFF§5, press §6%s§5 to turn ON)",
     "curlamoety.lang.ignitium_armorset_1":"§6☆Permenant Ignis",
@@ -547,6 +547,8 @@
     "curlamoety.lang.wicked_boline2":"It is a hoe actually",
     "curlamoety.lang.armor_switch_on":"Armor set ability - servant equipments replace: §aON",
     "curlamoety.lang.armor_switch_off":"Armor set ability - servant equipments replace: §4OFF",
+    "curlamoety.lang.goat_horn1":"Can craft by sacrificing Twilight Goat on Sky ritual",
+    "curlamoety.lang.goat_horn2":"Twilight Goat can be summoned by Hunting Focus with Wind Staff",
     
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"Purest and most refined blood of the gods! Upon drinking it , one would be granted divine protection like gods",
     "patchouli.witch_brew.cataclysm.monstrous":"Oh my GOD, your skin is hard as a MONSTROSITY and your body is strong as a MONSTROSITY",

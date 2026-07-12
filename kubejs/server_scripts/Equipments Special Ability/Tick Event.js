@@ -266,7 +266,7 @@ PlayerEvents.tick(event =>{
             global.fieryCdMap.put(player,fiery_cd)
         }
     }else if(global.armorSetMap.get(player) == "yeti"){//雪怪
-        player.potionEffects.add("goety:frosty_aura",200,2,false,false)
+        player.potionEffects.add("enigmaticaddons:frozen_heart",200,0,false,false)
     }else if(global.armorSetMap.get(player) == "cursium"){//咒魂
         player.potionEffects.add("minecraft:resistance",200,0,false,false)
     }else if(global.armorSetMap.get(player) == "ignitium"){//腾炎

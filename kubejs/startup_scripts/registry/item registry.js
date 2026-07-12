@@ -38,8 +38,8 @@ StartupEvents.registry('item',Event=>{//物品注册
         geo.setSimpleAnimation('curlamoety:animations/item/mary_sue_staff.animation.json')
     })
     .addAnimation(state => state.setAndContinue(RawAnimation.begin().thenLoop("idle")))
-    .tier('diamond')
     .rarity("epic")
+
     Event.create('curlamoety:mary_sue_staff_plus','anim_sword')//玛丽苏的枝杖+
     .geoModel(geo=>{
         geo.setSimpleModel('curlamoety:geo/item/mary_sue_staff_plus.geo.json')
@@ -47,7 +47,6 @@ StartupEvents.registry('item',Event=>{//物品注册
         geo.setSimpleAnimation('curlamoety:animations/item/mary_sue_staff_plus.animation.json')
     })
     .addAnimation(state => state.setAndContinue(RawAnimation.begin().thenLoop("idle")))
-    .tier('netherite')
     .rarity("epic")
     .fireResistant()
     Event.create("curlamoety:witch_amulet_tier1_inactive")//女巫系列

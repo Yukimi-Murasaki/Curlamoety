@@ -1773,6 +1773,33 @@ ItemEvents.entityInteracted('curlamoety:magician_hand',event=>{//魔术师之手
         }else{
             stealing = 1
         }
+    }else if(type == "goety_ladder:void_necromancer"){//凋灵死法
+        if(!target.persistentData.contains("stolen")){
+            stealing = 3
+            if(chance<0.01){
+                item = Item.of("goety:void_staff")
+            }else if(chance<0.02){
+                item = Item.of("goety:void_robe")
+            }else if(chance<0.03){
+                item = Item.of("goety:void_crown")
+            }else if(chance<0.1){
+                item = Item.of("enigmaticdelicacy:etherium_ore")
+            }else if(chance<0.2){
+                item = Item.of("enigmaticlegacy:etherium_ore")
+            }else if(chance<0.3){
+                item = Item.of("goety_ladder:voidliving_eye")
+            }else if(chance<0.45){
+                item = Item.of("goety_ladder:voidliving_core")
+            }else if(chance<0.6){
+                item = Item.of("2x goety_ladder:void_essence")
+            }else if(chance<0.8){
+                item = Item.of("3x goety_ladder:void_dust")
+            }else{
+                item = Item.of("2x goety_ladder:void_core")
+            }
+        }else{
+            stealing = 1
+        }
     }
         
     //结算阶段

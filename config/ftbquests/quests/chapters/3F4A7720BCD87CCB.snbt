@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7D82D11FF06459C1"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3F4A7720BCD87CCB"
@@ -63,8 +64,8 @@
 			image: "explorerscompass:item/explorerscompass_28"
 			rotation: 0.0d
 			width: 5.0d
-			x: 2.5d
-			y: -23.0d
+			x: 0.5d
+			y: -21.5d
 		}
 		{
 			height: 5.0d
@@ -2588,7 +2589,7 @@
 				type: "structure"
 			}]
 			title: "废弃堡垒"
-			x: 11.0d
+			x: 12.5d
 			y: -18.0d
 		}
 		{
@@ -2687,7 +2688,7 @@
 				value: 1L
 			}]
 			title: "末影傀儡"
-			x: 11.0d
+			x: 12.5d
 			y: -16.0d
 		}
 		{
@@ -2788,7 +2789,7 @@
 				type: "advancement"
 			}]
 			title: "末影守卫"
-			x: 11.0d
+			x: 12.5d
 			y: -14.0d
 		}
 		{
@@ -3043,6 +3044,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "天堂的庇佑"
 			tasks: [
 				{
@@ -3110,6 +3112,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			tasks: [{
 				id: "4AF6F8B84CF0D8C8"
 				item: {
@@ -3181,6 +3184,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "739537346E9BB96A"
 				item: {
@@ -3204,6 +3208,7 @@
 				item: "enigmaticlegacy:astral_fruit"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "绞肉机"
 			tasks: [{
 				id: "2FAE269FAEE87BA1"
@@ -3235,6 +3240,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "伐木机"
 			tasks: [{
 				id: "73A7CC955F3DFA78"
@@ -3266,6 +3272,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "盾构机"
 			tasks: [{
 				id: "76458C4DE9DD3CB0"
@@ -3297,6 +3304,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "收割机"
 			tasks: [{
 				id: "6B4B5285A1421835"
@@ -3328,6 +3336,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "推土机"
 			tasks: [{
 				id: "0927F07F14BB566A"
@@ -3852,7 +3861,7 @@
 				type: "advancement"
 			}]
 			title: "下界合金巨兽"
-			x: 6.0d
+			x: 7.5d
 			y: -16.0d
 		}
 		{
@@ -3902,7 +3911,7 @@
 				type: "structure"
 			}]
 			title: "灵魂锻造厂"
-			x: 6.0d
+			x: 7.5d
 			y: -18.0d
 		}
 		{
@@ -3949,7 +3958,7 @@
 				type: "structure"
 			}]
 			title: "烈焰竞技场"
-			x: 23.5d
+			x: 25.0d
 			y: -18.0d
 		}
 		{
@@ -3970,7 +3979,7 @@
 				value: 1L
 			}]
 			title: "炽燃遗魂"
-			x: 23.5d
+			x: 25.0d
 			y: -16.0d
 		}
 		{
@@ -4043,7 +4052,7 @@
 				type: "advancement"
 			}]
 			title: "焰魔"
-			x: 23.5d
+			x: 25.0d
 			y: -14.0d
 		}
 		{
@@ -4116,7 +4125,7 @@
 				}
 			]
 			title: "腾炎套装"
-			x: 22.5d
+			x: 24.0d
 			y: -14.0d
 		}
 		{
@@ -4343,7 +4352,7 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["31C8754C2DF6DFD1"]
+			dependencies: ["7D82D11FF06459C1"]
 			description: [
 				"传送石便宜换~"
 				""
@@ -4359,7 +4368,7 @@
 			id: "40B90D70CC23B906"
 			rewards: [
 				{
-					id: "6E19704513DF6395"
+					id: "09421CD326697737"
 					item: {
 						Count: 1
 						id: "waystones:warp_stone"
@@ -4392,8 +4401,8 @@
 				}
 			]
 			title: "传送石"
-			x: 1.5d
-			y: -16.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["40B90D70CC23B906"]
@@ -4425,8 +4434,8 @@
 				type: "item"
 			}]
 			title: "传送石盘"
-			x: 1.5d
-			y: -15.5d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["31C8754C2DF6DFD1"]
@@ -5558,7 +5567,7 @@
 				type: "structure"
 			}]
 			title: "卫城"
-			x: 16.0d
+			x: 17.5d
 			y: -18.0d
 		}
 		{
@@ -5586,7 +5595,7 @@
 				value: 5L
 			}]
 			title: "水母莉亚"
-			x: 15.0d
+			x: 16.5d
 			y: -16.0d
 		}
 		{
@@ -5626,7 +5635,7 @@
 				type: "advancement"
 			}]
 			title: "巨钳守卫"
-			x: 16.0d
+			x: 17.5d
 			y: -16.0d
 		}
 		{
@@ -5682,7 +5691,7 @@
 				type: "advancement"
 			}]
 			title: "斯库拉"
-			x: 16.0d
+			x: 17.5d
 			y: -14.0d
 		}
 		{
@@ -5863,7 +5872,7 @@
 				type: "advancement"
 			}]
 			title: "先驱者"
-			x: 8.5d
+			x: 10.0d
 			y: -14.0d
 		}
 		{
@@ -5892,7 +5901,7 @@
 				}
 			]
 			title: "徘徊者"
-			x: 8.5d
+			x: 10.0d
 			y: -16.0d
 		}
 		{
@@ -5964,7 +5973,7 @@
 				type: "structure"
 			}]
 			title: "远古工厂"
-			x: 8.5d
+			x: 10.0d
 			y: -18.0d
 		}
 		{
@@ -5995,7 +6004,7 @@
 				item: "cataclysm:mechanical_fusion_anvil"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -14.0d
 		}
 		{
@@ -6067,7 +6076,7 @@
 				type: "advancement"
 			}]
 			title: "利维坦"
-			x: 18.5d
+			x: 20.0d
 			y: -14.0d
 		}
 		{
@@ -6087,7 +6096,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 18.5d
+			x: 20.0d
 			y: -16.0d
 		}
 		{
@@ -6176,7 +6185,7 @@
 				type: "structure"
 			}]
 			title: "沉没之城"
-			x: 18.5d
+			x: 20.0d
 			y: -18.0d
 		}
 		{
@@ -6247,7 +6256,7 @@
 				}
 			]
 			title: "渊灵"
-			x: 17.5d
+			x: 19.0d
 			y: -16.0d
 		}
 		{
@@ -6302,7 +6311,7 @@
 				type: "structure"
 			}]
 			title: "苦寒监牢"
-			x: 21.0d
+			x: 22.5d
 			y: -18.0d
 		}
 		{
@@ -6353,7 +6362,7 @@
 				value: 2L
 			}]
 			title: "冥行武弁"
-			x: 21.0d
+			x: 22.5d
 			y: -16.0d
 		}
 		{
@@ -6431,7 +6440,7 @@
 				}
 			]
 			title: "咒魂盔甲"
-			x: 20.0d
+			x: 21.5d
 			y: -14.0d
 		}
 		{
@@ -6500,7 +6509,7 @@
 				type: "advancement"
 			}]
 			title: "咒翼灵骸"
-			x: 21.0d
+			x: 22.5d
 			y: -14.0d
 		}
 		{
@@ -6562,7 +6571,7 @@
 				type: "structure"
 			}]
 			title: "诅咒金字塔"
-			x: 13.5d
+			x: 15.0d
 			y: -18.0d
 		}
 		{
@@ -6604,7 +6613,7 @@
 				}
 			]
 			title: "古老的守卫者们"
-			x: 12.5d
+			x: 14.0d
 			y: -16.0d
 		}
 		{
@@ -6623,7 +6632,7 @@
 				item: "cataclysm:necklace_of_the_desert"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 15.0d
 			y: -16.0d
 		}
 		{
@@ -6675,7 +6684,7 @@
 				type: "advancement"
 			}]
 			title: "远古遗魂"
-			x: 13.5d
+			x: 15.0d
 			y: -14.0d
 		}
 		{
@@ -6718,7 +6727,7 @@
 				}
 			]
 			title: "骸龙盔甲"
-			x: 12.5d
+			x: 14.0d
 			y: -14.0d
 		}
 		{
@@ -7379,7 +7388,7 @@
 				item: "curlamoety:calamity_source"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 27.5d
 			y: -18.0d
 		}
 		{

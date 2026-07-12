@@ -2377,4 +2377,9 @@ ItemEvents.tooltip(event=>{
         text.add(1,Text.yellow(Text.translate("curlamoety.lang.wicked_boline1")))
     })
 
+    event.addAdvanced("minecraft:goat_horn",(item,addAdvanced,text)=>{//山羊角
+        text.add(2,Text.yellow(Text.translate("curlamoety.lang.goat_horn1")))
+        text.add(3,Text.yellow(Text.translate("curlamoety.lang.goat_horn2")))
+    })
+
 })

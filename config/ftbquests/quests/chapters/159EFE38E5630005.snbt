@@ -1,7 +1,7 @@
 {
 	consume_items: true
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	default_repeatable_quest: true
 	filename: "159EFE38E5630005"
 	group: "2ECA59494C73C5F0"
@@ -23,7 +23,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			tasks: [{
 				id: "5FC9A9110E737C90"
@@ -278,7 +278,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "世界规则的齿轮"
 			tasks: [{
@@ -328,7 +328,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "这里的货物从异次元偷渡而来"
 			tasks: [{
@@ -571,7 +571,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			tasks: [{
 				id: "343BEB6EC1AE44B7"
@@ -622,7 +622,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "价格实惠，童叟无欺"
 			tasks: [{
@@ -781,13 +781,20 @@
 				table_id: 1905268988264268853L
 				type: "choice"
 			}]
-			tasks: [{
-				consume_items: true
-				count: 12L
-				id: "2F71FA7A53AC1851"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "2F71FA7A53AC1851"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7DF29244B44D29A7"
+					title: "自动领取有bug，防自动领取"
+					type: "checkmark"
+				}
+			]
 			title: "原木"
 			x: -2.5d
 			y: 11.0d
@@ -847,13 +854,20 @@
 				table_id: 9189537646791179909L
 				type: "choice"
 			}]
-			tasks: [{
-				consume_items: true
-				count: 8L
-				id: "5F89F447AC96DC87"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "5F89F447AC96DC87"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "08FF2F3B88413AF8"
+					title: "自动领取有bug，防自动领取"
+					type: "checkmark"
+				}
+			]
 			title: "照明物"
 			x: 5.0d
 			y: 11.0d
@@ -908,7 +922,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "走过路过不要错过"
 			tasks: [{
@@ -1689,7 +1703,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "充满不祥的气息"
 			tasks: [{
@@ -1744,13 +1758,20 @@
 				table_id: 582258935116387719L
 				type: "choice"
 			}]
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "673E3B4D7D4CE82B"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "673E3B4D7D4CE82B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "5084EBED60AE7ACC"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+			]
 			title: "自选核心"
 			x: 15.0d
 			y: -1.0d
@@ -2243,13 +2264,20 @@
 				table_id: 2338455874096413812L
 				type: "choice"
 			}]
-			tasks: [{
-				consume_items: true
-				count: 12L
-				id: "40FF30235B207603"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "40FF30235B207603"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "207695212C85D3F5"
+					title: "自动领取有bug，防自动领取"
+					type: "checkmark"
+				}
+			]
 			title: "牲畜领养"
 			x: 0.5d
 			y: 12.5d

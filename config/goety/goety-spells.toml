@@ -84,22 +84,22 @@
 		soulBoltCost = 4
 		#How much base damage Wither Bolts deals directly, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		witherBoltDamage = 4.0
+		witherBoltDamage = 12.0
 		#Soul Bolt Spell Cooldown, Default: 20
 		#Range: > 0
 		soulBoltCoolDown = 20
 		#How much base damage Necro Bolts deals, Default: 12.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		necroBoltDamage = 30.0
+		necroBoltDamage = 24.0
 		#Time to cast Soul Bolt Spell, Default: 0
 		#Range: 0 ~ 72000
 		soulBoltTime = 0
 		#How much base damage Soul Bolts deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		soulBoltDamage = 4.0
+		soulBoltDamage = 6.0
 		#How much base damage Poison Bolts deals, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		poisonBoltDamage = 3.0
+		poisonBoltDamage = 5.0
 
 	[Spells."Magma Bomb Spell"]
 		#Magma Bomb Spell Cost, Default: 16
@@ -135,7 +135,7 @@
 		surgingChargeUp = 80
 		#How much base damage Surging Orbs deals, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		surgingDamage = 6.0
+		surgingDamage = 8.0
 		#Surging Spell Cooldown, Default: 200
 		#Range: 0 ~ 72000
 		surgingCoolDown = 200
@@ -166,10 +166,10 @@
 		frostNovaTargetCoolDown = 160
 		#How much base minimum damage Frost Nova Spell deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		frostNovaMinDamage = 10.0
+		frostNovaMinDamage = 15.0
 		#How much base maximum damage Frost Nova Spell deals, Default: 10.0
 		#Range: 2.0 ~ 1.7976931348623157E308
-		frostNovaMaxDamage = 10.0
+		frostNovaMaxDamage = 20.0
 		#Frost Nova Spell Cooldown, Default: 100
 		#Range: > 0
 		frostNovaCoolDown = 100
@@ -206,7 +206,7 @@
 		bouncyBubbleTime = 0
 		#How much base damage Bouncy Bubble from the spell deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		bouncyBubbleDamage = 6.0
+		bouncyBubbleDamage = 8.0
 
 	[Spells."Sonic Boom Spell"]
 		#Time to cast Sonic Boom Spell, Default: 60
@@ -214,7 +214,7 @@
 		sonicBoomTime = 60
 		#How much base damage Sonic Boom Spell deals, Default: 10.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		sonicBoomDamage = 40.0
+		sonicBoomDamage = 30.0
 		#Sonic Boom Spell Cooldown, Default: 40
 		#Range: > 0
 		sonicBoomCoolDown = 40
@@ -251,7 +251,7 @@
 		poisonDartTime = 0
 		#How much base damage Poison Quills deals, Default: 2.5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		poisonDartDamage = 2.5
+		poisonDartDamage = 4.0
 		#Poison Dart Spell Cost, Default: 8
 		#Range: > 0
 		poisonDartCost = 8
@@ -259,7 +259,7 @@
 	[Spells."Shocking Spell"]
 		#How much base damage Shocking Sparks deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		shockingDamage = 2.0
+		shockingDamage = 3.0
 		#How long the Shocking Spell can be casted, setting it to 0 will allow the spell to be cast indefinitely, Default: 100
 		#Range: 0 ~ 72000
 		shockingTime = 100
@@ -341,7 +341,7 @@
 		prismaBeamCost = 8
 		#How much base damage the spell deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		prismaBeamDamage = 9.0
+		prismaBeamDamage = 12.0
 
 	[Spells."Ministrous Spell"]
 		#Ministrous Spell Cost, Default: 8
@@ -388,7 +388,7 @@
 		fireballCoolDown = 40
 		#How much base damage Fireballs deal when directly hitting a mob, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		fireballDamage = 10
+		fireballDamage = 12
 		#Time to cast Fireball Spell, Default: 0
 		#Range: 0 ~ 72000
 		fireballTime = 0
@@ -405,7 +405,7 @@
 		steamingCost = 4
 		#How much base damage Steam Missiles deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		steamingDamage = 6.0
+		steamingDamage = 7.0
 
 	[Spells."Illuminate Spell"]
 		#Illuminate Spell Cost, Default: 4
@@ -427,7 +427,7 @@
 		lavaBombTime = 40
 		#How much base damage Lavaballs deal when directly hitting a mob, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		lavaballDamage = 12.0
+		lavaballDamage = 14.0
 		#Lava Bomb Spell Cooldown, Default: 40
 		#Range: > 0
 		lavaBombCoolDown = 40
@@ -440,7 +440,7 @@
 	[Spells."Charge Spell"]
 		#How much base damage Charge deals after gaining 2 Levels, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		chargeDamage = 4.0
+		chargeDamage = 5.0
 		#Charge Spell Cooldown, Default: 20
 		#Range: > 0
 		chargeCoolDown = 20
@@ -493,7 +493,7 @@
 		earthFistCoolDown = 60
 		#How much base damage Earth Fists deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		earthFistDamage = 6.0
+		earthFistDamage = 9.0
 		#Earth Fist Spell Cost, Default: 8
 		#Range: > 0
 		earthFistCost = 8
@@ -502,7 +502,7 @@
 		quakingTime = 20
 		#How much base damage Quaking Spell deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		quakingDamage = 4.0
+		quakingDamage = 6.0
 		#Time to cast Earth Fist Spell, Default: 0
 		#Range: 0 ~ 72000
 		earthFistTime = 0
@@ -516,7 +516,7 @@
 	[Spells."Shockwave Spell"]
 		#How much base maximum damage Shockwave Spell deals, Default: 24.0
 		#Range: 2.0 ~ 1.7976931348623157E308
-		shockwaveMaxDamage = 72.0
+		shockwaveMaxDamage = 60.0
 		#How much base minimum damage Shockwave Spell deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		shockwaveMinDamage = 30.0
@@ -567,7 +567,7 @@
 		voidFlashCost = 32
 		#How much base damage the Void Shock Bombs from Void Flash spell deals, Default: 7.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		voidFlashDamage = 49
+		voidFlashDamage = 35.0
 
 	[Spells."Biting Spell && Magic Fangs"]
 		#Biting Spell Cost, Default: 8
@@ -575,7 +575,7 @@
 		fangCost = 8
 		#How much base damage Magic Fangs deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		fangDamage = 6.0
+		fangDamage = 9.0
 		#Amount of Soul Energy Magic Fangs gives when hitting mob(s), Default: 1
 		#Range: > 0
 		fangGainSouls = 1
@@ -606,7 +606,7 @@
 	[Spells."Electro Orb Spell"]
 		#How much base damage Electro Orbs deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		electroOrbDamage = 6.0
+		electroOrbDamage = 7.0
 		#Time to cast Electro Orb Spell, Default: 0
 		#Range: 0 ~ 72000
 		electroOrbTime = 0
@@ -623,7 +623,7 @@
 		boltingCost = 40
 		#How much base damage Bolting Spell deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		boltingDamage = 10.0
+		boltingDamage = 12.0
 		#Time to cast Bolting Spell, Default: 0
 		#Range: 0 ~ 72000
 		boltingTime = 0
@@ -634,7 +634,7 @@
 	[Spells."Flame Strike Spell"]
 		#How much base damage Flame Strike deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		flameStrikeDamage = 8.0
+		flameStrikeDamage = 10.0
 		#Time to cast Flame Strike Spell, Default: 120
 		#Range: 0 ~ 72000
 		flameStrikeTime = 120
@@ -671,7 +671,7 @@
 		corruptionTime = 0
 		#How much base damage Corrupted Beam Spell deals per tick, Default: 10.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		corruptedBeamDamage = 50.0
+		corruptedBeamDamage = 40.0
 		#Whether casting Corruption spell immobilizes the caster, Default: true
 		corruptionImmobile = true
 
@@ -689,7 +689,7 @@
 	[Spells."Water Whip Spell"]
 		#How much base damage the spell deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		waterWhipDamage = 4.0
+		waterWhipDamage = 6.0
 		#Time to cast Water Whip Spell, Default: 0
 		#Range: 0 ~ 72000
 		waterWhipTime = 0
@@ -751,7 +751,7 @@
 		tridentStormCoolDown = 200
 		#How much base damage Trident Storm from the spell deals, Default: 16.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		tridentStormDamage = 48.0
+		tridentStormDamage = 40.0
 		#Trident Storm Spell Cost, Default: 48
 		#Range: > 0
 		tridentStormCost = 48
@@ -793,7 +793,7 @@
 		razorWindDuration = 0
 		#How much base damage Razor Winds deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		razorWindDamage = 12.0
+		razorWindDamage = 14.0
 
 	[Spells."Glow Light Spell"]
 		#Time to cast Glow Light Spell, Default: 0
@@ -818,7 +818,7 @@
 		thunderstormCost = 64
 		#How much base damage Thunderstorm deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		thunderstormDamage = 15.0
+		thunderstormDamage = 12.0
 
 	[Spells."Heretic Spell"]
 		#Heretic Spell Cooldown, Default: 300
@@ -1015,7 +1015,7 @@
 		stellarCost = 16
 		#How much base damage the Void Shocks from Stellar spell deals, Default: 7.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		stellarDamage = 49.0
+		stellarDamage = 35.0
 
 	[Spells."Hail Spell"]
 		#Time to cast Hail Spell, Default: 40
@@ -1026,7 +1026,7 @@
 		hailCoolDown = 20
 		#How much base damage Hail deals, Default: 1.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		hailDamage = 1.0
+		hailDamage = 1.5
 		#Hail Spell Cost, Default: 8
 		#Range: > 0
 		hailCost = 8
@@ -1079,7 +1079,7 @@
 		leechingCost = 8
 		#How much base damage Leeching Spell deals per second, Default: 1.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		leechingDamage = 3.0
+		leechingDamage = 2.0
 		#Leeching Spell Cooldown, Default: 0
 		#Range: 0 ~ 72000
 		leechingCoolDown = 0
@@ -1099,7 +1099,7 @@
 		teethTime = 60
 		#How much base damage Vicious Tooth deals, Default: 12.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		viciousToothDamage = 24.0
+		viciousToothDamage = 20.0
 		#Teeth Spell Cost, Default: 8
 		#Range: > 0
 		teethCost = 8
@@ -1113,7 +1113,7 @@
 		swarmChargeUp = 0
 		#How much base damage Swarm deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		swarmDamage = 2.0
+		swarmDamage = 3.0
 		#Swarm Spell Cost per second, Default: 2
 		#Range: > 0
 		swarmCost = 2
@@ -1160,7 +1160,7 @@
 		dragonFireGriefing = true
 		#How much base damage Fire Breath deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		fireBreathDamage = 2.0
+		fireBreathDamage = 3.0
 		#Fire Breath Spell Cooldown, Default: 100
 		#Range: 0 ~ 72000
 		fireBreathCoolDown = 100
@@ -1183,7 +1183,7 @@
 		arrowRainCoolDown = 400
 		#How much extra damage the arrows deals, Default: 0.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		arrowRainDamage = 0.0
+		arrowRainDamage = 2.0
 		#How many ticks the Arrow Rain Spell much charge before casting, Default: 20
 		#Range: > 0
 		arrowRainChargeUp = 20
@@ -1191,7 +1191,7 @@
 	[Spells."Thunderbolt Spell"]
 		#How much base damage Thunderbolts deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		thunderboltDamage = 15.0
+		thunderboltDamage = 12.0
 		#Time to cast Thunderbolt Spell, Default: 40
 		#Range: 0 ~ 72000
 		thunderboltTime = 40
@@ -1230,7 +1230,7 @@
 		fireBlastDamage = 18.0
 		#How much base maximum damage Fire Blast Spell deals, Default: 12.0
 		#Range: 2.0 ~ 1.7976931348623157E308
-		fireBlastMaxDamage = 36.0
+		fireBlastMaxDamage = 30.0
 		#Fire Blast Spell Cooldown, Default: 100
 		#Range: > 0
 		fireBlastCoolDown = 100
@@ -1278,7 +1278,7 @@
 		updraftCost = 8
 		#How much base damage Updraft Blasts deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		updraftBlastDamage = 5.0
+		updraftBlastDamage = 7.0
 		#Time to cast Updraft Spell, Default: 0
 		#Range: 0 ~ 72000
 		updraftTime = 0
@@ -1359,7 +1359,7 @@
 		smackStoneCoolDown = 40
 		#How much base damage Smack Stones deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		smackStoneDamage = 4.0
+		smackStoneDamage = 6.0
 
 	[Spells."Weakening Spell"]
 		#Weakening Spell Cost, Default: 100
@@ -1378,7 +1378,7 @@
 		magicBoltTime = 0
 		#How much base damage Magic Bolts deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		magicBoltDamage = 12.0
+		magicBoltDamage = 10.0
 		#Magic Bolt Spell Cooldown, Default: 20
 		#Range: > 0
 		magicBoltCoolDown = 20
@@ -1392,7 +1392,7 @@
 		skullLimit = 8
 		#How much base damage Haunted Skulls deal when directly hitting a mob, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		hauntedSkullDamage = 12.0
+		hauntedSkullDamage = 10.0
 		#Skull Spell Cost, Default: 16
 		#Range: > 0
 		hauntedSkullCost = 16
@@ -1414,7 +1414,7 @@
 		ruptureCoolDown = 6000
 		#How much base damage the Void Rift deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		ruptureDamage = 6.0
+		ruptureDamage = 5.0
 		#Time to cast Rupture Spell, Default: 120
 		#Range: 0 ~ 72000
 		ruptureTime = 120
@@ -1495,7 +1495,7 @@
 	[Spells."Water Jet Spell"]
 		#How much base damage Water Jet deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		waterJetDamage = 2.0
+		waterJetDamage = 3.0
 		#How long the Water Jet Spell can be casted, setting it to 0 will allow the spell to be cast indefinitely, Default: 100
 		#Range: 0 ~ 72000
 		waterJetTime = 100
@@ -1534,7 +1534,7 @@
 		dragonFrostGriefing = true
 		#How much base damage Frost Breath deals, Default: 1.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		frostBreathDamage = 1.0
+		frostBreathDamage = 2.0
 		#How long the Frost Breath Spell can be casted, setting it to 0 will allow the spell to be cast indefinitely, Default: 100
 		#Range: 0 ~ 72000
 		frostBreathTime = 100
@@ -1579,7 +1579,7 @@
 		scatterTime = 0
 		#How much base damage Scatter Mines deal when directly hitting a mob, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		scatterMinesDamage = 12.0
+		scatterMinesDamage = 9.0
 
 	[Spells."Watching Spell"]
 		#Time to cast Watching Spell, Default: 40
@@ -1601,7 +1601,7 @@
 	[Spells."Iceology Spell"]
 		#How much base damage Iceology deals, Default: 8.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		iceChunkDamage = 24.0
+		iceChunkDamage = 16.0
 		#Iceology Spell Cost, Default: 16
 		#Range: > 0
 		iceChunkCost = 16
@@ -1649,13 +1649,13 @@
 		dischargeCost = 40
 		#How much base maximum damage Discharge Spell deals, Default: 12.0
 		#Range: 2.0 ~ 1.7976931348623157E308
-		dischargeMaxDamage = 30.0
+		dischargeMaxDamage = 24.0
 		#Discharge Spell Cooldown, Default: 100
 		#Range: > 0
 		dischargeCoolDown = 100
 		#How much base minimum damage Discharge Spell deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		dischargeMinDamage = 15.0
+		dischargeMinDamage = 16.0
 
 	[Spells."Slimy Spell"]
 		#Slimy Spell Cooldown, Default: 200
@@ -1686,7 +1686,7 @@
 		blossomCoolDown = 200
 		#How much base damage Blossoming Balls and Thorns deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		blossomDamage = 9.0
+		blossomDamage = 12.0
 
 	[Spells."Blasting Spell"]
 		#Blasting Spell Cooldown, Default: 400
@@ -1708,7 +1708,7 @@
 	[Spells."Ice Spike Spell"]
 		#How much base damage Ice Spike deals, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		iceSpikeDamage = 3.0
+		iceSpikeDamage = 5.0
 		#Ice Spike Spell Cooldown, Default: 20
 		#Range: > 0
 		iceSpikeCoolDown = 20
@@ -1742,7 +1742,7 @@
 		witherSkullCost = 24
 		#How much base damage Wither Skulls deal when directly hitting a mob, Default: 8.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		witherSkullDamage = 40.0
+		witherSkullDamage = 36.0
 		#Wither Skull Spell Cooldown, Default: 0
 		#Range: > 0
 		witherSkullCoolDown = 0
@@ -1839,10 +1839,10 @@
 		biomineCoolDown = 200
 		#How much base damage Biomine acid cloud deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		biomineAcidDamage = 2.0
+		biomineAcidDamage = 3.0
 		#How much base damage Biomine explosion deals, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		biomineDamage = 4.0
+		biomineDamage = 5.0
 		#Time to cast Biomine Spell, Default: 40
 		#Range: 0 ~ 72000
 		biomineTime = 40

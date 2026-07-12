@@ -979,16 +979,14 @@ ServerEvents.recipes(event=>{//kjs goety方法
     event.recipes.goety.ritual('goety:spider_mother_den','goety:craft',[//蜘蛛之母巢穴
         'goety_revelation:spider_fang',
         'goety:venomous_fang',
-        'goety:mystic_core',
-        'goety:animation_core',
+        "minecraft:lapis_lazuli",
+        "goety:ectoplasm",
         'goety:spider_egg',
-        'goety:spider_egg',
-        'minecraft:golden_apple',
         '#forge:raw_meat'
     ])
     .activationItem('goety:spider_nest')
     .craftType('overgrown')
-    .soulCost(2)
+    .soulCost(5)
     .duration(10)
     .id("curlamoety:spider_mother_den")
 
@@ -2521,6 +2519,112 @@ ServerEvents.recipes(event=>{//kjs goety方法
     .soulCost(25)
     .duration(34)
     .id("curlamoety:void_shaping_staff")
+
+    //山羊角
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:ponder_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "minecraft:snow_block",
+        "minecraft:white_concrete",
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:ponder_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:sing_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "touhou_little_maid:trumpet"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:sing_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:seek_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "minecraft:spyglass"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:seek_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:feel_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "minecraft:sculk_sensor"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:feel_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:admire_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "#touhou_little_maid:maid_tamed_item"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:admire_goat_horn")
+    
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:call_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "touhou_little_maid:servant_bell"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:call_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:yearn_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "#minecraft:flowers"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:yearn_goat_horn")
+
+    event.recipes.goety.ritual(Item.of("minecraft:goat_horn", '{instrument:"minecraft:dream_goat_horn"}'),"goety:craft",[
+        "#forge:bones",
+        "#minecraft:wool",
+        "#minecraft:beds"
+    ])
+    .activationItem("minecraft:bone_block")
+    .craftType("sky")
+    .soulCost(1)
+    .duration(5)
+    .entityToSacrificeTag("curlamoety:twilight_goat")
+    .entityToSacrificeDisplayName("entity.goety.twilight_goat")
+    .id("curlamoety:dream_goat_horn")
 
 })
 ServerEvents.recipes(event=>{//无封装方法

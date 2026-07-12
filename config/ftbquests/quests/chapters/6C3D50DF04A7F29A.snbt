@@ -1,9 +1,16 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "6C3D50DF04A7F29A"
 	group: "2ECA59494C73C5F0"
-	icon: "sophisticatedbackpacks:backpack"
+	icon: {
+		Count: 1
+		id: "sophisticatedbackpacks:backpack"
+		tag: {
+			inventorySlots: 27
+			upgradeSlots: 1
+		}
+	}
 	id: "6C3D50DF04A7F29A"
 	images: [{
 		height: 5.0d
@@ -27,7 +34,14 @@
 				""
 				"潜行右键可以放在地上，作为功能性容器，也可以担任自动收集，压缩等功能"
 			]
-			icon: "sophisticatedbackpacks:backpack"
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
 			id: "6239B78B5E51E6E6"
 			progression_mode: "linear"
 			rewards: [{
@@ -35,7 +49,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "第一章：普通的背包……第五百九十一章：杀神无悔"
 			tasks: [{
@@ -373,7 +387,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "奴役村民实在可耻"
 			tasks: [{
@@ -446,7 +460,7 @@
 				item: "easy_villagers:trader"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.5d
 			y: 4.5d
 		}
 		{
@@ -478,7 +492,7 @@
 				item: "easy_villagers:converter"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 4.5d
 		}
 		{
@@ -505,7 +519,7 @@
 				item: "easy_villagers:iron_farm"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 3.5d
 			y: 4.5d
 		}
 		{
@@ -545,7 +559,7 @@
 				item: "easy_villagers:farmer"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -564,7 +578,7 @@
 				item: "easy_villagers:auto_trader"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -591,7 +605,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "刚翻过了几座山，又跨过了几条河"
 			tasks: [{
@@ -1111,7 +1125,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "占卜？不，这是对未来的宣判"
 			tasks: [{
@@ -1983,7 +1997,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "从见习女仆到家政全能"
 			tasks: [{
@@ -2290,11 +2304,14 @@
 		{
 			dependencies: ["470147F2B38DCCC2"]
 			description: [
-				"抗性穿透：100%护甲穿透，100%附魔穿透"
-				"强化解除：攻击命中敌人时，驱散对方大部分常见正面效果"
-				"神速之舞：任意手持有时获得神速之舞效果，增加移动速度、飞行速度、攻击速度、多段跳，降低重力"
+				"&6抗性穿透&r：提供护甲穿透，附魔穿透"
+				"&a神速之舞&r：任意手持有时获得神速之舞效果，增加移动速度、飞行速度、攻击速度、多段跳，降低重力"
 				""
-				"可以升级为玛丽苏的枝杖+"
+				"可以升级为&e玛丽苏的枝杖+"
+				"&r"
+				"额外获得能力："
+				""
+				"&4强化解除&r：攻击命中敌人时，驱散对方大部分常见正面效果"
 			]
 			id: "2587E0D3C9C9CBAA"
 			rewards: [

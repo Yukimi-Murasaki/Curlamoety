@@ -1606,8 +1606,20 @@ EntityEvents.spawned("goety:apostle",event=>{
     let entity = event.entity
     entity.removeAttribute("goety_revelation:armor_penetration","dimension_modify")
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
-    entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
-    entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    if(entity.nbt.get("isApollyon") == true){
+        let dimension = entity.level.getDimension()
+        if(dimension == "minecraft:the_nether"){
+            entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.3,"addition")
+            entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.1,"addition")
+        }else{
+            entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.6,"addition")
+            entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.25,"addition")
+        }
+    }else{
+        entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
+        entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    }
+    entity.modifyAttribute("minecraft:generic.knockback_resistance","boss_mocify",0.23,"addition")
     entity.setItemSlot("head",Item.of("enigmaticlegacy:etherium_helmet", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}',))
     entity.setItemSlot("chest",Item.of("enigmaticlegacy:etherium_chestplate", '{Damage:0,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s},{id:"minecraft:protection",lvl:12s}],RepairCost:0,Unbreakable:1b}'))
     entity.setItemSlot("legs",Item.of("enigmaticlegacy:etherium_leggings", '{Unbreakable:1b,Enchantments:[{id:"enigmaticlegacy:eternal_binding",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]}'))
@@ -1630,6 +1642,10 @@ EntityEvents.spawned("goetyawaken:nameless_one",event=>{
     entity.removeAttribute("goety_revelation:enchantment_piercing","dimension_modify")
     entity.modifyAttribute("goety_revelation:armor_penetration","boss_modify",0.5,"addition")
     entity.modifyAttribute("goety_revelation:enchantment_piercing","boss_modify",0.2,"addition")
+    entity.setItemSlot("head",Item.of("minecraft:air"))
+    entity.setItemSlot("chest",Item.of("minecraft:air"))
+    entity.setItemSlot("legs",Item.of("minecraft:air"))
+    entity.setItemSlot("feet",Item.of("minecraft:air"))
 })
 EntityEvents.spawned("goetyawaken:hostile_mushroom_monstrosity",event=>{
     let entity = event.entity

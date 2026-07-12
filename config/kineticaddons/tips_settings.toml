@@ -1,4 +1,4 @@
 # 是否启用屏幕提示。开启后将在加载界面、世界转换界面和游戏暂停界面显示自定义的小贴士。
 #Whether to enable screen tips. Custom tips will be shown on loading, world transition, and pause screens.
-enableTips = false
+enableTips = true
 

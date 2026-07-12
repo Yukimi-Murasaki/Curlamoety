@@ -560,7 +560,7 @@
 	[Illagers."Illager Assaults"]
 		#How many Minecraft days of rest from Illager Assaults are added to Players killed by an Illager, Default: 2
 		#Range: > 0
-		illagerAssaultRestDeath = 2
+		illagerAssaultRestDeath = 5
 		#How many ticks it takes for Illager Assaults to spawn, Default: 12000
 		#Range: > 0
 		illagerAssaultSpawnFreq = 12000
@@ -579,7 +579,7 @@
 		illagerAssault = true
 		#How much Soul Energy the Player has is required for Special Illagers to spawn, Default: 2500
 		#Range: > 0
-		illagerAssaultThreshold = 2500
+		illagerAssaultThreshold = 12000
 
 	[Illagers.Raid]
 		#Whether Modded Illagers appears in Raids, Default: true

@@ -472,7 +472,7 @@
     "curlamoety.lang.yeti_armorset_4":"§5  - §6+15% §d仆从百分比伤害抗性",
     "curlamoety.lang.yeti_armorset_5":"§5  - 免疫§d爆炸和火焰伤害",
     "curlamoety.lang.yeti_armorset_6":"§5  - §6+72% §d魔法伤害抗性",
-    "curlamoety.lang.yeti_armorset_7":"§5  - 赋予 §6凛寒气场 I §5效果",
+    "curlamoety.lang.yeti_armorset_7":"§5  - 赋予 §6冻结之心 I §5效果",
     "curlamoety.lang.yeti_armorset_8_on":"§5  - 你的仆从在生成时穿戴上一套与你相似的强力装备（§a已启用§5，按 §6%s§5 禁用）",
     "curlamoety.lang.yeti_armorset_8_off":"§5  - 你的仆从在生成时穿戴上一套与你相似的强力装备（§4已禁用§5，按 §6%s§5 启用）",
     "curlamoety.lang.ignitium_armorset_1":"§6☆永恒腾炎",
@@ -553,6 +553,8 @@
     "curlamoety.lang.wicked_boline2":"它其实是一把锄头",
     "curlamoety.lang.armor_switch_on":"套装能力·仆从装备替换：§a已启用",
     "curlamoety.lang.armor_switch_off":"套装能力·仆从装备替换：§4已禁用",
+    "curlamoety.lang.goat_horn1":"可以通过在天空仪式献祭暮光山羊来制作",
+    "curlamoety.lang.goat_horn2":"暮光山羊可以通过烈风魔杖搭载狩猎聚晶来召唤",
 
     "patchouli.witch_brew.enigmaticaddons.pure_resistance":"至臻至纯的神之血！喝下去的话，能获得神明一般的防护力！",
     "patchouli.witch_brew.cataclysm.monstrous":"我的天，你的皮肤像巨兽一样硬，你的身材像巨兽一样壮",

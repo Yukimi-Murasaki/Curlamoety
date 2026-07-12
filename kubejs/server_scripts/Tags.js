@@ -271,5 +271,5 @@ ServerEvents.tags('block',event=>{
 })
 
 ServerEvents.tags('entity_type',event=>{
-    //event.add('curlamoety:stealable','minecraft:zombie')
+    event.add('curlamoety:twilight_goat',"goety:twilight_goat")
 })

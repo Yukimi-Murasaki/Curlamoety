@@ -1305,6 +1305,11 @@ ServerEvents.recipes(Event=>{//常规配方走这里
     }).id("curlamoety:voidliving_eye")
 
     Event.shapeless(Item.of("minecraft:paper", '{RepairCost:0,display:{Name:\'{"text":"巧手V怎么做"}\'}}'),["minecraft:cocoa_beans","5x curlamoety:zombie_arm"])
+    .id("curlamoety:qiao_shou_wu_zeng_me_zuo")
 
+    Event.shapeless("goeticlegacy:ominous_crystal",["goeticlegacy:ominous_crystal","enigmaticlegacy:mending_mixture"])
+    .id("curlamoety:ominous_crystal")
+
+    Event.remove("enigmaticaddons:false_justice")
 
 })  

@@ -78,7 +78,7 @@ namelessOneEasyMode = false
 enableLeapleafEnhancement = true
 #Heaven Rift Spell base damage per Pure Light (default: 9.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-heavenRiftBaseDamage = 90.0
+heavenRiftBaseDamage = 45.0
 #Sun Grace base damage (default: 11.0)
 #Range: 0.0 ~ 1.7976931348623157E308
 sunGraceDamage = 18.0
@@ -122,7 +122,7 @@ shulkerMissileFocusCastDuration = 0
 creeperServantLimit = 32
 #Shulker Missile Spell base damage (default: 4.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-shulkerMissileBaseDamage = 16.0
+shulkerMissileBaseDamage = 10.0
 #Enable Wildfire Enhancement(default: true)
 enableWildfireEnhancement = true
 #Claymore base damage (default: 10.0)
@@ -166,10 +166,10 @@ enderKeeperServantLimit = 3
 foundationScanBelow = 50
 #Mushroom Missile Spell base explosion damage (default: 12.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-mushroomMissileBaseDamage = 120.0
+mushroomMissileBaseDamage = 60.0
 #Blood Rain Spell base damage (default: 1.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-bloodRainBaseDamage = 8.0
+bloodRainBaseDamage = 5.0
 #Champion Focus cast duration in ticks (default: 180 - 9 seconds)
 #Range: > 0
 championFocusCastDuration = 180
@@ -216,7 +216,7 @@ allowPoisonousMushroomHealSpecialOwners = true
 glaiveAttackSpeed = 1.2
 #Desert Plagues Spell damage increase per potency level (default: 1.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-desertPlaguesPotencyDamage = 6.0
+desertPlaguesPotencyDamage = 1.0
 #Enable new texture for Hostile Nameless One. Default: false
 enableHostileNamelessOneNewTexture = false
 #Torment Focus cooldown in ticks (default: 600)
@@ -325,7 +325,7 @@ agonyFocusCooldown = 200
 creeperFocusCastDuration = 40
 #Death Ray Spell base damage (default: 5.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-deathRayBaseDamage = 36.0
+deathRayBaseDamage = 25.0
 #List of structures that will receive foundation generation. Format: modid:structure_name
 foundationWhitelist = ["goetyawaken:mirage", "goetyawaken:ominous_castle", "goetyawaken:arch_illusioner_keep"]
 #Killer Spell cast duration in ticks (default: 40)
@@ -375,7 +375,7 @@ wololoFocusCooldown = 140
 apostleServantLimit = 12
 #Infestation Spell base damage per egg (default: 6.0)
 #Range: 0.0 ~ 1.7976931348623157E308
-infestationBaseDamage = 8.0
+infestationBaseDamage = 12.0
 #Heaven Rift Focus cast duration in ticks (default: 0)
 #Range: > 0
 heavenRiftFocusCastDuration = 0

@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "0AD2953BDFA9B464"
 	group: "389115935D73552A"
 	icon: {
@@ -26,6 +26,12 @@
 					}
 				}
 				id: "goety:dark_wand"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 1
+					}
+				}
 			}
 			id: "3503920AABD62C73"
 			rewards: [
@@ -40,7 +46,7 @@
 					xp: 100
 				}
 			]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "工欲善其事，必先利其器"
 			tasks: [{
@@ -80,7 +86,7 @@
 					type: "item"
 				}
 			]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "我的仪式遍布全世界"
 			tasks: [{
@@ -103,7 +109,7 @@
 				item: "minecraft:string"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "人靠衣装马靠鞍"
 			tasks: [{
@@ -125,7 +131,7 @@
 				item: "goety:empty_focus"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "到底要选哪个呢，到底要选哪个呢"
 			tasks: [{

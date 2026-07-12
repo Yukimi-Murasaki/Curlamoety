@@ -29,7 +29,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 0.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			height: 3.0d
@@ -37,7 +37,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 0.0d
-			y: -11.0d
+			y: -12.5d
 		}
 		{
 			height: 5.0d
@@ -45,31 +45,31 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: -4.5d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			height: 3.0d
 			image: "enigmaticlegacy:item/iron_ring"
 			rotation: 0.0d
 			width: 3.0d
-			x: 4.5d
-			y: -8.0d
+			x: 4.0d
+			y: -10.0d
 		}
 		{
 			height: 3.0d
 			image: "enigmaticlegacy:item/golden_ring"
 			rotation: 0.0d
 			width: 3.0d
-			x: 4.5d
-			y: -11.0d
+			x: 4.0d
+			y: -12.0d
 		}
 		{
 			height: 3.0d
 			image: "enigmaticaddons:item/primeval_cube"
 			rotation: 0.0d
 			width: 3.0d
-			x: 5.0d
-			y: -5.0d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			height: 3.0d
@@ -242,7 +242,7 @@
 					type: "item"
 				}
 				{
-					id: "10FF932A5B465BC5"
+					id: "6E4B556794F86878"
 					item: {
 						Count: 1
 						id: "minecraft:lime_shulker_box"
@@ -314,14 +314,14 @@
 										Slot: 12b
 										id: "minecraft:cocoa_beans"
 									}
+									{
+										Count: 4b
+										Slot: 13b
+										id: "minecraft:sugar_cane"
+									}
 								]
 								id: "minecraft:shulker_box"
 							}
-							Enchantments: [{
-								id: "minecraft:protection"
-								lvl: 4s
-							}]
-							RepairCost: 1
 							display: {
 								Name: "{\"text\":\"种子包\"}"
 							}
@@ -654,7 +654,7 @@
 					type: "item"
 				}
 			]
-			size: 1.5d
+			size: 2.0d
 			subtitle: "无数千奇百怪的遗物将会进入你的视野"
 			tasks: [{
 				id: "76226061494D336E"
@@ -664,7 +664,7 @@
 			}]
 			title: "神秘遗物"
 			x: 0.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -766,8 +766,8 @@
 				type: "advancement"
 			}]
 			title: "七咒之戒"
-			x: -2.0d
-			y: -3.0d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -804,8 +804,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5F3EF50A5CE4693C"]
@@ -827,8 +827,8 @@
 				item: "enigmaticlegacy:infinimeal"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F3EF50A5CE4693C"]
@@ -861,8 +861,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -0.5d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -887,7 +887,7 @@
 			}]
 			title: "书籍类道具"
 			x: -4.5d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -917,13 +917,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "保护小动物，从你我做起"
 			tasks: [{
 				id: "2B6B92203C6DC30F"
 				item: "enigmaticlegacy:animal_guidebook"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.5d
 			y: -11.0d
 		}
 		{
@@ -1279,14 +1280,15 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "我赞美大自然的多姿多彩"
 			tasks: [{
 				id: "65CD5D266DFFAD36"
 				item: "enigmaticaddons:ode_to_living"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -12.5d
+			x: -5.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -1315,14 +1317,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "召唤师的福音"
 			tasks: [{
 				id: "36D9723A8E33787F"
 				item: "enigmaticlegacy:hunter_guidebook"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["18442EC41414DB90"]
@@ -1381,14 +1384,15 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "兄弟们我们上！"
 			tasks: [{
 				id: "7B32779AC23394E7"
 				item: "enigmaticaddons:sanguinary_handbook"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -9.5d
+			x: -5.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["18442EC41414DB90"]
@@ -1447,15 +1451,15 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			size: 1.25d
+			size: 1.5d
 			subtitle: "掌中秘宝"
 			tasks: [{
 				id: "3DBD1B4BC830C88A"
 				type: "checkmark"
 			}]
 			title: "术石"
-			x: 4.0d
-			y: -5.0d
+			x: 2.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -1479,7 +1483,7 @@
 			}]
 			title: "奥秘卷轴"
 			x: 0.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -1502,6 +1506,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "既生瑜，何生亮"
 			tasks: [{
 				id: "10EE5D23B02EBFBD"
@@ -1513,7 +1518,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1531,6 +1536,7 @@
 				type: "xp_levels"
 				xp_levels: 15
 			}]
+			shape: "square"
 			subtitle: "恶魔的契约"
 			tasks: [{
 				id: "65E1D7A4E9E815EE"
@@ -1542,7 +1548,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -1566,14 +1572,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "死亡不掉落低配版"
 			tasks: [{
 				id: "50B4F66F8A04E507"
 				item: "enigmaticlegacy:escape_scroll"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.0d
+			x: -1.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -1596,14 +1603,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "神圣套MC版"
 			tasks: [{
 				id: "74DD095B39E4AED0"
 				item: "enigmaticdelicacy:fading_scroll"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -9.5d
+			x: -1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -1626,14 +1634,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "建筑小玩具"
 			tasks: [{
 				id: "239D0E9E6BEC6648"
 				item: "enigmaticlegacy:heaven_scroll"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -8.0d
+			x: 1.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1659,14 +1668,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "将皮肤硬化成盔甲"
 			tasks: [{
 				id: "20D005CAC5878609"
 				item: "enigmaticlegacy:golem_heart"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1703,14 +1713,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "男子只是因为被雷劈，就被失落引擎活活打断了双腿"
 			tasks: [{
 				id: "24969F01FD6914DC"
 				item: "enigmaticaddons:lost_engine"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -6.5d
+			x: 4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1745,14 +1756,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "⑨"
 			tasks: [{
 				id: "69722464317383F8"
 				item: "enigmaticaddons:forgotten_ice"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.5d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1784,14 +1796,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我要飞得更高~飞得更高嗷~"
 			tasks: [{
 				id: "5B6DEDC166CC8201"
 				item: "enigmaticlegacy:angel_blessing"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.5d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1822,14 +1835,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我要成为海贼王（虽然说这话的人不能游泳）"
 			tasks: [{
 				id: "64C13335B8F57EBB"
 				item: "enigmaticlegacy:ocean_stone"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.5d
+			x: 5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1865,14 +1879,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "时间的沙漏缓缓流逝，而你并没有优雅地变老"
 			tasks: [{
 				id: "359F73F75FF00FEF"
 				item: "enigmaticaddons:revival_leaf"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.5d
+			x: 5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -1903,14 +1918,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "以我残躯化烈火"
 			tasks: [{
 				id: "35F72A450FD3F4E8"
 				item: "enigmaticlegacy:blazing_core"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.5d
+			x: 6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4E952C5766A7FCAD"]
@@ -1933,14 +1949,15 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "恭听，太阳的轰鸣"
 			tasks: [{
 				id: "7B585E6295F571D6"
 				item: "enigmaticaddons:scorched_charm"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -8.0d
+			x: 6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -1981,8 +1998,8 @@
 				}
 			]
 			title: "污染之心"
-			x: -3.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -2013,14 +2030,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "死亡如风，常伴吾身"
 			tasks: [{
 				id: "740BDCD2D1958908"
 				item: "enigmaticaddons:illusion_lantern"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.5d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -2049,14 +2067,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "你便是虚空"
 			tasks: [{
 				id: "14522F318FB9C4E3"
 				item: "enigmaticlegacy:void_pearl"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -6.5d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -2085,14 +2104,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "Walk like an Enderman"
 			tasks: [{
 				id: "7E1CB9266FB8DE22"
 				item: "enigmaticlegacy:eye_of_nebula"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -3.5d
+			x: 7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -2125,14 +2145,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "坚不可摧"
 			tasks: [{
 				id: "181D8477D84E3A4B"
 				item: "enigmaticaddons:etherium_core"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -5.0d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -2196,14 +2217,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "蘸豆，爽"
 			tasks: [{
 				id: "01D359417753B941"
 				item: "enigmaticaddons:night_scroll"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -14.0d
+			x: 1.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -2229,8 +2251,8 @@
 				item: "enigmaticlegacy:iron_ring"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.0d
+			x: 4.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -2256,14 +2278,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "绿宝石批发器"
 			tasks: [{
 				id: "061C4D8307CD7D51"
 				item: "enigmaticlegacy:avarice_scroll"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -12.5d
+			x: 1.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["1EFA0BEAA737B431"]
@@ -2282,14 +2305,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "吸星大法，开！"
 			tasks: [{
 				id: "779C3B58506693A2"
 				item: "enigmaticlegacy:magnet_ring"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -8.0d
+			x: 2.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["18393F1258AA5D1F"]
@@ -2313,14 +2337,15 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "我包里怎么这么多鸡蛋"
 			tasks: [{
 				id: "216BC0C6D80342DA"
 				item: "enigmaticlegacy:super_magnet_ring"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -9.5d
+			x: 2.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["1EFA0BEAA737B431"]
@@ -2337,6 +2362,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "诶？原来我没戴这个戒指吗"
 			tasks: [
 				{
@@ -2353,8 +2379,8 @@
 					type: "advancement"
 				}
 			]
-			x: 4.5d
-			y: -9.5d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1EFA0BEAA737B431"]
@@ -2379,18 +2405,21 @@
 				}
 			]
 			shape: "circle"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "哦，亮闪闪"
 			tasks: [{
 				id: "5CB03272E97FD836"
 				item: "enigmaticlegacy:golden_ring"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -11.0d
+			x: 4.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["40DBCEC3E3D790B3"]
+			dependencies: [
+				"40DBCEC3E3D790B3"
+				"05B9BDACFAF0CC00"
+			]
 			description: [
 				"无尽贪婪契约的戒指版，可以互相转化……不过细节好像差距有点大"
 				""
@@ -2413,6 +2442,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "低调奢华有内涵"
 			tasks: [{
 				id: "395EFC7FD83274C0"
@@ -2420,7 +2450,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -12.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["05B9BDACFAF0CC00"]
@@ -2438,13 +2468,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			tasks: [{
 				id: "3F28410589965CDB"
 				item: "enigmaticaddons:quartz_ring"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -12.5d
+			x: 4.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -2477,7 +2508,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -2516,8 +2547,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -12.5d
+			x: 5.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -2574,8 +2605,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -8.0d
+			x: 5.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["4BA50F64BD174EF5"]
@@ -2595,15 +2626,15 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			subtitle: "大地之威仪"
 			tasks: [{
 				id: "56A1E0C6EB5CA170"
 				item: "enigmaticaddons:earth_promise"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.5d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -2636,6 +2667,7 @@
 				}
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "比CarryOn更省力"
 			tasks: [
 				{
@@ -2660,7 +2692,7 @@
 				}
 			]
 			title: "超维运输"
-			x: -10.5d
+			x: -7.5d
 			y: -5.0d
 		}
 		{
@@ -2683,6 +2715,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "一刀千击"
 			tasks: [{
 				id: "44945314F9BF1A2F"
@@ -2714,14 +2747,15 @@
 					type: "command"
 				}
 			]
+			shape: "square"
 			subtitle: "一览众山小"
 			tasks: [{
 				id: "350C787444308769"
 				item: "enigmaticlegacy:fabulous_scroll"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -9.5d
+			x: 1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["647516FF9D076AB1"]
@@ -2774,13 +2808,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "英雄之证"
 			tasks: [{
 				id: "758EB42B2E405940"
 				item: "enigmaticlegacy:monster_charm"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -6.5d
 			y: -5.0d
 		}
 		{
@@ -2817,7 +2852,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.2d
+			size: 1.5d
 			subtitle: "能工巧匠"
 			tasks: [{
 				id: "27F8D3F60C68F910"
@@ -2825,7 +2860,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["647516FF9D076AB1"]
@@ -2844,6 +2879,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "附魔转移"
 			tasks: [{
 				id: "1FC0B978779EF184"
@@ -2871,6 +2907,7 @@
 				}
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "附魔擢升"
 			tasks: [{
 				id: "4044D20CC6435ACD"
@@ -2896,6 +2933,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "诅咒过滤器"
 			tasks: [{
 				id: "3B0164995D6C7ED7"
@@ -2922,6 +2960,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "是你吗，复刻凝胶"
 			tasks: [{
 				id: "4980FD8466D8F187"
@@ -2950,7 +2989,7 @@
 			}]
 			title: "虚伪审判"
 			x: -6.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -2968,18 +3007,20 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "不听老人言……"
 			tasks: [{
 				id: "3142D3F5EB44CE53"
 				item: "enigmaticlegacy:unholy_grail"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["653514C3696DCB4C"]
 			description: ["现在喝下它会获得很多正面状态"]
+			hide_details_until_startable: true
 			id: "4D189FA816254F5C"
 			rewards: [
 				{
@@ -2997,6 +3038,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "红药水在FTW种子Be Like:"
 			tasks: [{
 				id: "1A31165017222377"
@@ -3009,8 +3051,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.5d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -3059,8 +3101,8 @@
 				type: "advancement"
 			}]
 			title: "诅咒救赎"
-			x: -4.0d
-			y: -3.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -3078,14 +3120,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "完美控制"
 			tasks: [{
 				id: "5DD1BB666F8C4535"
 				item: "enigmaticdelicacy:hungry_charm"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -3120,8 +3163,8 @@
 				item: "enigmaticlegacy:the_cube"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -6.5d
+			x: 8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -3136,6 +3179,7 @@
 				item: "sophisticatedbackpacks:advanced_void_upgrade"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "自从有了湮灭心石，家里只剩它了"
 			tasks: [{
 				id: "7D6538B3177A1EDD"
@@ -3146,8 +3190,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.5d
+			x: -7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6247CE3FF35DA46D"]
@@ -3171,7 +3215,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6C4E921A0DDBEDC0"]
@@ -3585,6 +3629,7 @@
 					type: "item"
 				}
 			]
+			shape: "circle"
 			subtitle: "完美普通食物"
 			tasks: [{
 				id: "5780F85FD935D30B"
@@ -3603,6 +3648,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "这让你感到非常幸运"
 			tasks: [
 				{
@@ -3628,6 +3674,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "肚子暖暖的，很贴心"
 			tasks: [{
 				id: "6645B09D15F434D2"
@@ -3646,6 +3693,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "血管里流淌着美食"
 			tasks: [{
 				id: "69BD6239774A7B32"
@@ -3714,13 +3762,14 @@
 				item: "enigmaticaddons:ichor_droplet"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "破釜沉舟"
 			tasks: [{
 				id: "3831F7CE596244F8"
 				item: "enigmaticaddons:hell_blade_charm"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.5d
 			y: -5.0d
 		}
 		{
@@ -3940,14 +3989,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "刀枪剑戟样样精通"
 			tasks: [{
 				id: "436CA84B4E2B9A0D"
 				item: "enigmaticdelicacy:weapon_charm"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["18442EC41414DB90"]
@@ -4015,8 +4065,8 @@
 				item: "enigmaticlegacy:enigmatic_item"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -5.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["45A7D81C025C0DAF"]
@@ -4033,6 +4083,7 @@
 				item: "goetydelight:ectoplasm_jelly"
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "上得了厅堂下得了厨房"
 			tasks: [
 				{
@@ -4121,6 +4172,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "豌豆好像有点大"
 			tasks: [
 				{
@@ -4143,7 +4195,7 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -4.5d
 			y: 6.5d
 		}
 		{
@@ -4157,13 +4209,14 @@
 				item: "farmersdelight:milk_bottle"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "干了嗷兄弟们"
 			tasks: [{
 				id: "4A09CFF0C8FAE9AD"
 				item: "goetydelight:toxic_meal"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: 6.5d
 		}
 		{
@@ -4216,6 +4269,7 @@
 				item: "goetydelight:metamorphic_scent_grass"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "食物界的复刻凝胶……吗？"
 			tasks: [
 				{
@@ -4231,7 +4285,7 @@
 			]
 			title: "幻味草"
 			x: -3.5d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2E6E505153E83B3A"]
@@ -4243,6 +4297,7 @@
 				item: "minecraft:iron_ore"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "机遇迸发"
 			tasks: [{
 				id: "1DC19A0BB0D56B6B"
@@ -4311,13 +4366,14 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "体会纯粹的冒险"
 			tasks: [{
 				id: "0426B921D05AC3B7"
 				item: "enigmaticaddons:adventure_charm"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: -5.0d
 		}
 		{
@@ -4329,14 +4385,15 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "废寝忘食"
 			tasks: [{
 				id: "1D710DFF84D4FB1D"
 				item: "enigmaticdelicacy:gluttony_charm"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7486D86900B2EEFC"]
@@ -4347,14 +4404,15 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "浴血奋战"
 			tasks: [{
 				id: "4F9F4AF255B57724"
 				item: "enigmaticlegacy:berserk_charm"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.5d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0A077594F465E1F1"]
@@ -4382,14 +4440,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "越幸运，越强大"
 			tasks: [{
 				id: "4C6102F60F553461"
 				item: "goety_revelation:blessing_scroll"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -14.0d
+			x: -1.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0A077594F465E1F1"]
@@ -4503,14 +4562,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "万咒缠身"
 			tasks: [{
 				id: "6974ED6BFFA78618"
 				item: "enigmaticlegacy:cursed_scroll"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -12.5d
+			x: -1.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["35E79D000C349682"]
@@ -4625,14 +4685,15 @@
 				item: "goetydelight:metamorphic_scent_fruit"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "幻化之力的极致……完美的模仿"
 			tasks: [{
 				id: "48C65857E6AC172C"
 				item: "goetydelight:metamorphic_scent_fruit"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 8.0d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -4657,7 +4718,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -4701,6 +4762,7 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			subtitle: "暗夜的领主"
 			tasks: [{
@@ -4728,8 +4790,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -4753,6 +4815,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "知识的力量"
 			tasks: [
 				{
@@ -4785,7 +4848,7 @@
 			]
 			title: "指导书"
 			x: -4.5d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -4798,14 +4861,15 @@
 				"放入&a暗夜立方&r中时，玩家获得剧毒之手效果，蜘蛛仆从获得斗志5铁皮3"
 			]
 			id: "745CD3627132616F"
+			shape: "square"
 			subtitle: "蜘蛛啊！！！！"
 			tasks: [{
 				id: "3434D1239BEF4BD5"
 				item: "goeticlegacy:spider_specimen_book"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -8.0d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -4827,6 +4891,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
 			subtitle: "至尊的法师"
 			tasks: [{
 				id: "7FFAAFA937CF818E"
@@ -4838,7 +4903,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -15.5d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -4929,6 +4994,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
 			subtitle: "暴怒"
 			tasks: [{
 				id: "033367A73EA49571"
@@ -4936,7 +5002,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -12.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -4958,6 +5024,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
 			subtitle: "神明的怜悯"
 			tasks: [{
 				id: "2595AAF09F2D20C2"
@@ -4965,7 +5032,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -4985,6 +5052,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
 			subtitle: "这就是知识的力量明白吗"
 			tasks: [{
 				id: "65B5D44013008DBF"
@@ -5017,6 +5085,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "被神选召之人才可以拥有的卷轴"
 			tasks: [{
 				id: "6351A084F5CEE9E5"
@@ -5027,8 +5096,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -15.5d
+			x: 0.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["18442EC41414DB90"]
@@ -5204,13 +5273,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "可不能死在这种地方！"
 			tasks: [{
 				id: "5AF524355177687D"
 				item: "enigmaticaddons:survivor_scroll"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -11.0d
 		}
 		{
@@ -5227,6 +5297,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "在附近发现金！"
 			tasks: [{
 				id: "6F49735F4586B9D7"
@@ -5250,13 +5321,14 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "谁是下一个？"
 			tasks: [{
 				id: "6812F87E7E8F31D9"
 				item: "enigmaticaddons:hunter_scroll"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -11.0d
 		}
 		{
@@ -5298,8 +5370,8 @@
 				item: "curlamoety:chaos_cube"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.5d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6904CD36715B131E"]
@@ -5324,14 +5396,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我真的成为牢监了吗"
 			tasks: [{
 				id: "2B56872C561EB686"
 				item: "goeticlegacy:sculk_heart"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -5.5d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4AE6E65C4E79F26E"]
@@ -5396,6 +5469,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "新任宰相报到"
 			tasks: [{
 				id: "416A6578B3A84459"
@@ -5411,8 +5485,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.5d
+			x: -3.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -5429,14 +5503,15 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "一切都不会过去，但是新生会不断到来"
 			tasks: [{
 				id: "6AC33430FC4FA313"
 				item: "goeticlegacy:bygone_book"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -12.5d
+			x: -3.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["59EA2AE8EA24E798"]
@@ -5469,13 +5544,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "你这炼狱魔典怎么没有火"
 			tasks: [{
 				id: "7A4BE737B64ED166"
 				item: "goeticlegacy:wind_book"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: -11.0d
 		}
 	]

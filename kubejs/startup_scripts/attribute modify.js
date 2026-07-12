@@ -1,5 +1,4 @@
 ItemEvents.modification(Event=>{//数值调整
-
     //0主手
     let uuid_0_0 = '17403194-227c-4b58-a4b3-9aa26c00d472'
     let uuid_0_1 = '17846ae2-4fc6-4811-915d-4dd55ffc749b'
@@ -176,17 +175,12 @@ ItemEvents.modification(Event=>{//数值调整
         item.addAttribute('goeticlegacy:servant_final_damage_multiplier',uuid_4_5,'dark_iron_boots_sfdm',0.15,'addition')
     })
 
-    //玛丽苏的枝杖
-    Event.modify('curlamoety:mary_sue_staff',item=>{
-        item.addAttribute('forge:entity_reach',uuid_0_0,'elf_reach',2,'addition')
-        item.addAttribute('goety_revelation:armor_penetration',uuid_0_1,'elf_magic1',0.8,'addition')
-        item.addAttribute('goety_revelation:enchantment_piercing',uuid_0_2,'elf_magic2',0.15,'addition')
-    })
-    Event.modify('curlamoety:mary_sue_staff_plus',item=>{
-        item.addAttribute('forge:entity_reach',uuid_0_0,'elf_reach',3,'addition')
-        item.addAttribute('goety_revelation:armor_penetration',uuid_0_1,'elf_magic1',1,'addition')
-        item.addAttribute('goety_revelation:enchantment_piercing',uuid_0_2,'elf_magic2',0.3,'addition')
-    })
+    
+    // Event.modify('curlamoety:mary_sue_staff_plus',item=>{
+    //     item.addAttribute('forge:entity_reach',uuid_0_0,'elf_reach',3,'addition')
+    //     item.addAttribute('goety_revelation:armor_penetration',uuid_0_1,'elf_magic1',1,'addition')
+    //     item.addAttribute('goety_revelation:enchantment_piercing',uuid_0_2,'elf_magic2',0.3,'addition')
+    // })
 
     //疏离
     Event.modify('curlamoety:insulator',item=>{
@@ -507,12 +501,75 @@ BlockEvents.modification(event=>{
         block.setExplosionResistance(3600000)
     })
 })
-
+//玛丽苏的枝杖
+    // Event.modify('curlamoety:mary_sue_staff',item=>{
+    //     item.addAttribute('forge:entity_reach',uuid_0_0,'elf_reach',2,'addition')
+    //     item.addAttribute('goety_revelation:armor_penetration',uuid_0_1,'elf_magic1',0.8,'addition')
+    //     item.addAttribute('goety_revelation:enchantment_piercing',uuid_0_2,'elf_magic2',0.15,'addition')
+    // })
 ForgeEvents.onEvent('net.minecraftforge.event.ItemAttributeModifierEvent',event=>{
     let itemStack = event.getItemStack()
     let slot = event.getSlotType()
     let EquipmentSlot = Java.loadClass("net.minecraft.world.entity.EquipmentSlot")
     let AttribuetModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier")
+    if(itemStack.id == "curlamoety:mary_sue_staff" && slot == EquipmentSlot.MAINHAND ){
+        event.addModifier(
+            "forge:entity_reach",
+            new AttribuetModifier(
+                UUID.fromString("17403194-227c-4b58-a4b3-9aa26c00d472"),
+                "tool_modifier",
+                2,
+                AttribuetModifier.Operation.ADDITION
+            )
+        ),
+        event.addModifier(
+            "goety_revelation:armor_penetration",
+            new AttribuetModifier(
+                UUID.fromString("17846ae2-4fc6-4811-915d-4dd55ffc749b"),
+                "tool_modifier",
+                0.8,
+                AttribuetModifier.Operation.ADDITION
+            )
+        ),
+        event.addModifier(
+            "goety_revelation:enchantment_piercing",
+            new AttribuetModifier(
+                UUID.fromString("234413d6-aeba-4ce9-b746-4fad6f375f58"),
+                "tool_modifier",
+                0.15,
+                AttribuetModifier.Operation.ADDITION
+            )
+        )
+    }
+    if(itemStack.id == "curlamoety:mary_sue_staff_plus" && slot == EquipmentSlot.MAINHAND ){
+        event.addModifier(
+            "forge:entity_reach",
+            new AttribuetModifier(
+                UUID.fromString("17403194-227c-4b58-a4b3-9aa26c00d472"),
+                "tool_modifier",
+                3,
+                AttribuetModifier.Operation.ADDITION
+            )
+        ),
+        event.addModifier(
+            "goety_revelation:armor_penetration",
+            new AttribuetModifier(
+                UUID.fromString("17846ae2-4fc6-4811-915d-4dd55ffc749b"),
+                "tool_modifier",
+                1,
+                AttribuetModifier.Operation.ADDITION
+            )
+        ),
+        event.addModifier(
+            "goety_revelation:enchantment_piercing",
+            new AttribuetModifier(
+                UUID.fromString("234413d6-aeba-4ce9-b746-4fad6f375f58"),
+                "tool_modifier",
+                0.3,
+                AttribuetModifier.Operation.ADDITION
+            )
+        )
+    }
     if(itemStack.id == "goety:nameless_staff" &&(slot == EquipmentSlot.MAINHAND || slot == EquipmentSlot.OFFHAND)){
         event.addModifier(
             "goety_revelation:necromancy_power",
@@ -542,6 +599,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.ItemAttributeModifierEvent',event=
             )
         )
     }
+    
     if(itemStack.id == "goety_ladder:voiderror_staff" &&(slot == EquipmentSlot.MAINHAND || slot == EquipmentSlot.OFFHAND)){
         event.addModifier(
             "goety_revelation:void_power",

@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "7692F0340EF58681"
 	group: "389115935D73552A"
 	icon: "goety_revelation:curios_storage_crystal"
@@ -17,7 +17,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "提供较多巫法强度，灵魂洄流，幸运值"
 			tasks: [{
@@ -25,7 +25,7 @@
 				type: "checkmark"
 			}]
 			title: "项链系列"
-			x: -12.0d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
@@ -45,7 +45,7 @@
 				item: "curlamoety:old_necklace"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -7.0d
 			y: 3.0d
 		}
 		{
@@ -63,7 +63,7 @@
 				item: "curlamoety:soul_necklace"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.5d
 			y: 3.0d
 		}
 		{
@@ -80,7 +80,7 @@
 				item: "curlamoety:death_necklace"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 3.0d
 		}
 		{
@@ -104,14 +104,14 @@
 				item: "curlamoety:faith_necklace"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
 			icon: "curlamoety:explorer_gloves"
 			id: "04025055C206D674"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "提供物理、魔法、距离多方面的加成"
 			tasks: [{
@@ -119,8 +119,8 @@
 				type: "checkmark"
 			}]
 			title: "手套系列"
-			x: -12.0d
-			y: 6.0d
+			x: -9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["04025055C206D674"]
@@ -138,8 +138,8 @@
 				item: "curlamoety:explorer_gloves"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 6.0d
+			x: -7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -158,8 +158,8 @@
 				item: "curlamoety:pioneer_gloves"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: -5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5B7EE2A6B31C7C74"]
@@ -175,8 +175,8 @@
 				item: "curlamoety:conqueror_gloves"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["08A04443D35B3134"]
@@ -192,15 +192,15 @@
 				item: "curlamoety:elemental_gloves"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.0d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["300FE4F1E27EDEEC"]
 			icon: "curlamoety:evil_ring"
 			id: "357CC9BB040AE3A2"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "提供大量的巫法加成，七咒玩家专属"
 			tasks: [{
@@ -208,8 +208,8 @@
 				type: "checkmark"
 			}]
 			title: "戒指系列"
-			x: -12.0d
-			y: 9.0d
+			x: -9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["357CC9BB040AE3A2"]
@@ -230,8 +230,8 @@
 				item: "curlamoety:evil_ring"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 9.0d
+			x: -7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["23B8D84FECC2DD6B"]
@@ -255,8 +255,8 @@
 				item: "curlamoety:blood_ring"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: -5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5665EC007DB0FE6C"]
@@ -279,15 +279,15 @@
 				item: "curlamoety:stella_ring"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 9.0d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			hide_dependency_lines: false
 			hide_dependent_lines: true
 			icon: "curlamoety:hiker_boots"
 			id: "5B47050D1E6804B8"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "一些别的饰品"
 			tasks: [{
@@ -312,7 +312,7 @@
 				item: "curlamoety:hiker_boots"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
@@ -329,7 +329,7 @@
 				item: "curlamoety:runner_boots"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 3.0d
 		}
 		{
@@ -351,7 +351,7 @@
 				item: "curlamoety:faded_promise"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -390,15 +390,15 @@
 				item: "curlamoety:kitchen_gloves"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
 			description: [""]
 			icon: "curlamoety:witch_amulet_tier1"
 			id: "7AF9AE8720C8A778"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "提供巧手效果并解锁一些特殊交互"
 			tasks: [{
@@ -406,8 +406,8 @@
 				type: "checkmark"
 			}]
 			title: "女巫护身符系列"
-			x: -12.0d
-			y: 12.0d
+			x: -9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7AF9AE8720C8A778"]
@@ -449,8 +449,8 @@
 					type: "item"
 				}
 			]
-			x: -9.5d
-			y: 12.0d
+			x: -7.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["443D215B21FD552B"]
@@ -490,8 +490,8 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: 12.0d
+			x: -5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["1D216118471C66A8"]
@@ -532,8 +532,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: 12.0d
+			x: -4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0D10F90054C328EF"]
@@ -572,8 +572,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 12.0d
+			x: -2.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["62A98C7ADCFA1973"]
@@ -618,8 +618,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 12.0d
+			x: -1.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5B47050D1E6804B8"]
@@ -637,7 +637,7 @@
 				item: "curlamoety:desperate_attempt"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -658,8 +658,8 @@
 				item: "curlamoety:belt_of_glorious"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 3.5d
+			y: 5.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -667,7 +667,7 @@
 			icon: "cataclysm:belt_of_beginner"
 			id: "0F01FF72C09F5025"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "关于灾变饰品以及饰品栏位"
 			tasks: [{
@@ -676,7 +676,7 @@
 			}]
 			title: "灾变饰品拓展"
 			x: 1.5d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0F01FF72C09F5025"]
@@ -692,14 +692,14 @@
 				item: "curlamoety:survivor_will"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 5.0d
+			y: 5.5d
 		}
 		{
 			icon: "curlamoety:gloomy_circlet"
 			id: "18B0552E2A550765"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "提供巫法强度、灵魂亲和、巫法半径和范围加成"
 			tasks: [{
@@ -707,8 +707,8 @@
 				type: "checkmark"
 			}]
 			title: "头环系列"
-			x: -12.0d
-			y: 15.0d
+			x: -9.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["18B0552E2A550765"]
@@ -725,8 +725,8 @@
 				item: "curlamoety:gloomy_circlet"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 15.0d
+			x: -7.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4C67AF0FE0441D80"]
@@ -742,8 +742,8 @@
 				item: "curlamoety:moon_circlet"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 15.0d
+			x: -5.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0D3844F71228DF12"]
@@ -760,8 +760,8 @@
 				item: "curlamoety:twilight_crown"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 15.0d
+			x: -4.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["130781EDFFE3AE88"]
@@ -784,8 +784,8 @@
 				item: "curlamoety:dominator_ring"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.0d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
 			hide_dependency_lines: true
@@ -793,7 +793,7 @@
 			icon: "goety_revelation:dimensional_will"
 			id: "6E6BB43464313CA5"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "用于合成维度意志的，源自世界法则之物"
 			tasks: [{
@@ -802,7 +802,7 @@
 			}]
 			title: "世界法则饰品"
 			x: 1.5d
-			y: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["42952B4B0CE9F8F6"]
@@ -818,8 +818,8 @@
 				item: "curlamoety:goal_ty"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 9.0d
+			x: 3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["258D192FDA2B9041"]
@@ -835,8 +835,8 @@
 				item: "curlamoety:chaos_cube"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 9.0d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["35542704CE85F80F"]
@@ -852,8 +852,8 @@
 				item: "curlamoety:calamity_source"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.0d
+			x: 6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["10748D131B4FE8AC"]
@@ -870,8 +870,8 @@
 				item: "curlamoety:twilight_sparkle"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 9.0d
+			x: 8.0d
+			y: 8.0d
 		}
 	]
 	title: "饰品典藏室"

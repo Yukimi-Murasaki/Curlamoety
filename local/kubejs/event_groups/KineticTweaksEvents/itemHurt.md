@@ -19,39 +19,68 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| cancel |  |  | Object | ✘ |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | ItemEntity | ✘ |
-| getX |  |  | double | ✘ |
-| getDamageSource |  |  | DamageSource | ✘ |
-| getAmount |  |  | float | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getY |  |  | double | ✘ |
+| getAmount |  |  | float | ✘ |
+| getEntity |  |  | ItemEntity | ✘ |
+| getX |  |  | double | ✘ |
 | getZ |  |  | double | ✘ |
-| isFire |  |  | boolean | ✘ |
 | isCactus |  |  | boolean | ✘ |
 | isExplosion |  |  | boolean | ✘ |
-| getDamageType |  |  | String | ✘ |
-| getDamageMsgId |  |  | String | ✘ |
-| getDirectEntity |  |  | Entity | ✘ |
-| isDamageType | String |  | boolean | ✘ |
-| getSourceEntity |  |  | Entity | ✘ |
 | isDirectEntity | String |  | boolean | ✘ |
+| isDamageType | String |  | boolean | ✘ |
+| getDirectEntity |  |  | Entity | ✘ |
+| getDamageType |  |  | String | ✘ |
+| getSourceEntity |  |  | Entity | ✘ |
+| getDamageMsgId |  |  | String | ✘ |
 | isSourceEntity | String |  | boolean | ✘ |
-| getSourceEntityType |  |  | String | ✘ |
+| getDamageSource |  |  | DamageSource | ✘ |
+| isFire |  |  | boolean | ✘ |
 | isDirectEntityFromMod | String |  | boolean | ✘ |
 | getDirectEntityType |  |  | String | ✘ |
+| getSourceEntityType |  |  | String | ✘ |
 | isSourceEntityFromMod | String |  | boolean | ✘ |
-| cancel |  |  | Object | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
+| exit | Object |  | Object | ✘ |
+| exit |  |  | Object | ✘ |
+| cancel | Object |  | Object | ✘ |
 | success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
-| exit |  |  | Object | ✘ |
-| exit | Object |  | Object | ✘ |
-| cancel | Object |  | Object | ✘ |
 
 
 ### Documented members:
+
+- `Object exit(Object var0)`
+
+  Parameters:
+  - var0: Object
+
+```
+Stops the event with the given exit value. Execution will be stopped **immediately**.
+
+`exit` denotes a `default` outcome.
+```
+
+- `Object exit()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`exit` denotes a `default` outcome.
+```
+
+- `Object cancel(Object var0)`
+
+  Parameters:
+  - var0: Object
+
+```
+Cancels the event with the given exit value. Execution will be stopped **immediately**.
+
+`cancel` denotes a `false` outcome.
+```
 
 - `Object success(Object var0)`
 
@@ -69,35 +98,6 @@ Stops the event with the given exit value. Execution will be stopped **immediate
 Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
-```
-
-- `Object exit()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
-
-`exit` denotes a `default` outcome.
-```
-
-- `Object exit(Object var0)`
-
-  Parameters:
-  - var0: Object
-
-```
-Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`exit` denotes a `default` outcome.
-```
-
-- `Object cancel(Object var0)`
-
-  Parameters:
-  - var0: Object
-
-```
-Cancels the event with the given exit value. Execution will be stopped **immediately**.
-
-`cancel` denotes a `false` outcome.
 ```
 
 

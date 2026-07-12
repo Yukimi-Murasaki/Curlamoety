@@ -262,7 +262,7 @@
 	[Attributes."Scarlet Vex"]
 		#How much damage Scarlet Vexes deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		scarletVexDamage = 4.0
+		scarletVexDamage = 8.0
 		#How much Max Health Scarlet Vexes have, Default: 12.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		scarletVexHealth = 36.0
@@ -329,7 +329,7 @@
 		wraithNecromancerArmor = 5.0
 		#How much damage Wraith Necromancers deals, Default: 8.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		wraithNecromancerDamage = 10.0
+		wraithNecromancerDamage = 12.0
 		#How much Max Health Wraith Necromancers have, Default: 220.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		wraithNecromancerHealth = 2200.0

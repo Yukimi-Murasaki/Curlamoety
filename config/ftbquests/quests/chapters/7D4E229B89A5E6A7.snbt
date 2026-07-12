@@ -34,8 +34,8 @@
 			image: "goetydelight:textures/mob_effect/servant_reinforcement.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: -5.0d
-			y: 0.5d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			height: 5.0d
@@ -66,24 +66,24 @@
 			image: "goety:block/void_block"
 			rotation: 0.0d
 			width: 3.0d
-			x: 20.5d
-			y: 5.5d
+			x: 20.0d
+			y: 4.5d
 		}
 		{
 			height: 3.0d
 			image: "goety_ladder:item/common/voidliving_core"
 			rotation: 0.0d
 			width: 3.0d
-			x: 23.5d
-			y: 5.5d
+			x: 22.5d
+			y: 4.5d
 		}
 		{
 			height: 3.0d
 			image: "goety:item/void_echo"
 			rotation: 0.0d
 			width: 3.0d
-			x: 26.5d
-			y: 5.5d
+			x: 25.0d
+			y: 4.5d
 		}
 	]
 	order_index: 1
@@ -161,7 +161,7 @@
 			]
 			title: "新刌民"
 			x: -2.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["42952B4B0CE9F8F6"]
@@ -265,7 +265,7 @@
 				value: 1L
 			}]
 			title: "灾厄猎杀与袭击"
-			x: -2.0d
+			x: -3.5d
 			y: 4.5d
 		}
 		{
@@ -305,7 +305,7 @@
 				item: "goety:shriek_obelisk"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -332,7 +332,7 @@
 				type: "item"
 			}]
 			title: "召集之钟"
-			x: -3.5d
+			x: -5.0d
 			y: 3.0d
 		}
 		{
@@ -381,7 +381,7 @@
 				type: "advancement"
 			}]
 			title: "灾厄教父"
-			x: -3.5d
+			x: -5.0d
 			y: 6.0d
 		}
 		{
@@ -456,8 +456,8 @@
 				type: "structure"
 			}]
 			title: "埋葬仪式"
-			x: -0.5d
-			y: -3.5d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["42952B4B0CE9F8F6"]
@@ -499,8 +499,8 @@
 				type: "structure"
 			}]
 			title: "掘墓"
-			x: -1.5d
-			y: -3.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22F2C9A90322A01F"]
@@ -534,7 +534,7 @@
 				item: "goety:ice_bouquet_trap"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -689,12 +689,14 @@
 			}]
 			title: "孤魂尸鬼"
 			x: 2.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["182B0AC732643909"]
 			description: [
 				"暗兽是一只通过增生仪式召唤的永久仆从，召唤它需要阅读作祟卷轴。"
+				""
+				"{image:ftbquests:textures/black_beast.png width:120 height:100 align:center}"
 				""
 				"暗兽属于荒野仆从，不仅拥有强悍的生命与攻击，还可以间歇性给予自身生命回复III，你也可以通过喂食肉类来治疗它。"
 				""
@@ -733,8 +735,8 @@
 				type: "advancement"
 			}]
 			title: "召唤暗兽"
-			x: 3.5d
-			y: -3.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["182B0AC732643909"]
@@ -775,8 +777,8 @@
 				type: "item"
 			}]
 			title: "灵魂修补器"
-			x: 0.5d
-			y: -3.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -922,6 +924,7 @@
 				"{image:ftbquests:textures/quests.witch_brew.png width:100 height:100 align:center}"
 				"           &7示例：一套可用的女巫坩埚"
 			]
+			icon: "goety:witch_cauldron"
 			id: "500A9197561C0DB3"
 			rewards: [
 				{
@@ -1495,6 +1498,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "这让你想到砧板"
 			tasks: [{
 				id: "43BE9534B62DFCFE"
@@ -1528,6 +1532,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "法师小帮手"
 			tasks: [{
 				id: "11A5BB25431BE0BE"
@@ -1541,7 +1546,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5D47D64E81D71636"]
@@ -1558,6 +1563,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "自我保护"
 			tasks: [{
 				id: "58D25EF9F3301F25"
@@ -1586,6 +1592,12 @@
 					}
 				}
 				id: "goety:focus_bag"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 11
+					}
+				}
 			}
 			id: "2F8AB5209DEB719E"
 			rewards: [
@@ -1609,6 +1621,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "把聚晶装起来"
 			tasks: [
 				{
@@ -1644,7 +1657,7 @@
 				}
 			]
 			x: 3.0d
-			y: -6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5FCB86A1BBF9EE00"]
@@ -1714,6 +1727,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "你已经是个合格的唤魔者了"
 			tasks: [{
 				id: "7EFB8255046A570B"
@@ -1748,6 +1762,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "简单而有效"
 			tasks: [
 				{
@@ -1784,6 +1799,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "666这个入是桂"
 			tasks: [{
 				id: "6EDE932A1BDF0B57"
@@ -1791,7 +1807,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["42952B4B0CE9F8F6"]
@@ -1802,7 +1818,7 @@
 				""
 				"与仆从相关的基本知识："
 				""
-				"诡厄巫法的仆从，需要用法杖&l&e左键&r仆从切换状态，&l&e潜行左键&r强制销毁仆从（会被野猎指南替伤，请注意），贵重仆从需要进行一次确认，“&l&e,&r”键命令所有仆从停火/开始攻击，“&l&e.&r”键可以直接销毁所有非永久的仆从。"
+				"诡厄巫法的仆从，需要用法杖&l&e左键&r仆从切换状态&7（默认跟随，可以切换为闲逛、待命、警戒）&r，&l&e潜行左键&r强制销毁仆从&7（会被野猎指南替伤，请注意）&r，贵重仆从需要进行一次确认，“&l&e,&r”键命令所有仆从停火/开始攻击，“&l&e.&r”键可以直接销毁所有非永久的仆从。"
 				""
 				"仆从在佩戴对应系别的魔法头饰时获得永久寿命，佩戴对应系别的魔法袍时获得消耗主人灵魂恢复生命的能力，使用对应系别的法杖召唤时召唤数量增加，受到“强效”加成时获得相应等级的“强健”效果，增加攻击伤害。"
 				""
@@ -1827,7 +1843,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "这不是我们第四强的职业吗"
 			tasks: [
 				{
@@ -1841,9 +1857,9 @@
 					type: "item"
 				}
 			]
-			title: "召唤师的素养"
-			x: -4.0d
-			y: -0.5d
+			title: "召唤师的基本素养"
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["296DFEAC7E2C558B"]
@@ -1916,8 +1932,8 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
-			size: 1.5d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "这是什么，神秘时代？"
 			tasks: [{
 				id: "4DBCDA1ECF784EFC"
@@ -1953,6 +1969,7 @@
 				item: "goety:order_focus"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "小本本记下来"
 			tasks: [
 				{
@@ -1972,8 +1989,8 @@
 				}
 			]
 			title: "黑白名单"
-			x: -5.5d
-			y: 1.5d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -2013,8 +2030,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: -0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -2072,6 +2089,7 @@
 					type: "toast"
 				}
 			]
+			shape: "square"
 			subtitle: "“手握”千军万马"
 			tasks: [
 				{
@@ -2086,8 +2104,8 @@
 				}
 			]
 			title: "携带仆从"
-			x: -5.5d
-			y: 0.5d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4C9709D59DC8DC68"]
@@ -2116,14 +2134,15 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "全副武装"
 			tasks: [{
 				id: "25F9C63F51D9B2BC"
 				item: "goety:ring_of_the_forge"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["296DFEAC7E2C558B"]
@@ -2236,7 +2255,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: -2.0d
 			y: 7.5d
 		}
 		{
@@ -2268,7 +2287,7 @@
 				item: "goety:ominous_shackles"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
@@ -2281,6 +2300,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "STEEEEAAAAAAL!"
 			tasks: [{
 				id: "1A879B4812BDAB89"
@@ -2313,6 +2333,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "旅行者之靴——的变体旅者腰带——的精神续作，但是青春版"
 			tasks: [{
 				id: "05EE325131D5FBBB"
@@ -2335,6 +2356,7 @@
 				item: "minecraft:sunflower"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "我就是暗卫"
 			tasks: [{
 				id: "2745F14A8348DD33"
@@ -2348,7 +2370,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3022563E838057E3"]
@@ -2363,6 +2385,7 @@
 				item: "minecraft:iron_block"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "80！"
 			tasks: [{
 				id: "18FA0A30FBBB79F6"
@@ -2376,7 +2399,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3022563E838057E3"]
@@ -2392,6 +2415,7 @@
 				item: "minecraft:crying_obsidian"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "纯正的战士才能举起的巨剑"
 			tasks: [{
 				id: "3C2B5F9B0E10CFA8"
@@ -2405,7 +2429,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -2432,6 +2456,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "在下如果不懂音乐，那我也略懂一些武艺"
 			tasks: [{
 				id: "71E0736E2894AD38"
@@ -2445,7 +2470,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -2476,6 +2501,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "挖矿如探囊取物"
 			tasks: [{
 				id: "35902718232FC0AD"
@@ -2489,7 +2515,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -2501,6 +2527,7 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "羊刀叠起来了"
 			tasks: [{
 				id: "77C55FF5A0917B11"
@@ -2514,7 +2541,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4CFBD3F812B6AB7E"]
@@ -2567,6 +2594,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "内心深处的欲望"
 			tasks: [{
 				id: "5CAA1374D6CA2EEE"
@@ -2593,6 +2621,7 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "我就是先锋"
 			tasks: [{
 				id: "3C16CEF4D3036DC5"
@@ -2606,7 +2635,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -2626,6 +2655,7 @@
 				}
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "刚好躺下一个人"
 			tasks: [{
 				id: "0C323CF11013D44F"
@@ -2639,7 +2669,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -2664,7 +2694,7 @@
 			}]
 			title: "重武器与手套"
 			x: 13.5d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4CFBD3F812B6AB7E"]
@@ -2729,6 +2759,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "滑，平，刚"
 			tasks: [{
 				id: "09F2E0480CE3253A"
@@ -2742,7 +2773,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["37EEAADA0F32E33B"]
@@ -2786,6 +2817,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "冲刺，冲刺，冲！"
 			tasks: [{
 				id: "72430011A2AC95FF"
@@ -2832,6 +2864,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			size: 1.0d
 			subtitle: "暮色巫妖的影子在你的身上显现"
 			tasks: [{
@@ -2930,6 +2963,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			size: 1.0d
 			subtitle: "放弃抵抗，尽快投降"
 			tasks: [{
@@ -2984,6 +3018,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "小家伙们，开饭啦"
 			tasks: [{
 				id: "7CD47D0B8CBE104C"
@@ -3052,13 +3087,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "势不可当的战士"
 			tasks: [{
 				id: "0E6D303AFE0683F1"
 				item: "goety:blackguard_focus"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 16.5d
 			y: -10.5d
 		}
 		{
@@ -3103,6 +3139,7 @@
 				item: "minecraft:amethyst_block"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "小怪兽大麻烦"
 			tasks: [{
 				id: "7D2B966EE3ED39DE"
@@ -3129,13 +3166,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "马其顿方阵，准备！"
 			tasks: [{
 				id: "05F077AAA42486F0"
 				item: "goety:vanguard_focus"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.0d
 			y: -10.5d
 		}
 		{
@@ -3363,7 +3401,7 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "gear"
 			size: 1.5d
 			subtitle: "法师的标配穿搭，是饰品哦"
 			tasks: [
@@ -3416,6 +3454,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			subtitle: "前人的智慧"
 			tasks: [{
 				id: "4CF272A2A9FA0F4D"
@@ -3611,6 +3650,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "刌民秘密采访"
 			tasks: [
 				{
@@ -3628,7 +3668,7 @@
 			]
 			title: "劫掠卷轴"
 			x: 12.0d
-			y: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6DF7C15E2E5F666F"]
@@ -3651,6 +3691,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "已收录进《法老精选》"
 			tasks: [
 				{
@@ -3698,6 +3739,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "灾厄皇室的终极秘密"
 			tasks: [
 				{
@@ -3714,7 +3756,7 @@
 				}
 			]
 			x: 12.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6DF7C15E2E5F666F"]
@@ -3727,6 +3769,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "War Never Changes"
 			tasks: [
 				{
@@ -3742,7 +3785,7 @@
 					type: "advancement"
 				}
 			]
-			x: 13.5d
+			x: 13.0d
 			y: -3.5d
 		}
 		{
@@ -3768,6 +3811,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "狂风呼啸，站在你面前的是一个真正的风力发电机"
 			tasks: [
 				{
@@ -3783,8 +3827,8 @@
 					type: "advancement"
 				}
 			]
-			x: 13.5d
-			y: -2.0d
+			x: 13.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6DF7C15E2E5F666F"]
@@ -3807,6 +3851,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "丛林开始焦躁不安"
 			tasks: [
 				{
@@ -3822,8 +3867,8 @@
 					type: "advancement"
 				}
 			]
-			x: 13.5d
-			y: -5.0d
+			x: 13.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -3850,6 +3895,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "远古的死灵秘卷"
 			tasks: [
 				{
@@ -3865,8 +3911,8 @@
 					type: "advancement"
 				}
 			]
-			x: 15.0d
-			y: -5.0d
+			x: 14.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -3941,7 +3987,7 @@
 				}
 			]
 			title: "无名套装"
-			x: 15.0d
+			x: 14.0d
 			y: -6.5d
 		}
 		{
@@ -3992,7 +4038,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 14.0d
 			y: -8.0d
 		}
 		{
@@ -4018,7 +4064,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["26A37DB3B0DA0DB7"]
@@ -4036,7 +4082,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["019603FFC9139EE0"]
@@ -4905,6 +4951,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我便是末日"
 			tasks: [
 				{
@@ -4920,8 +4967,8 @@
 					type: "advancement"
 				}
 			]
-			x: 15.0d
-			y: -3.5d
+			x: 14.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0DF052CF3B237FE7"]
@@ -4932,6 +4979,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "呃，虽然我已经有连锁了……"
 			tasks: [{
 				id: "1ABF0843F58CD383"
@@ -4945,7 +4993,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4CFBD3F812B6AB7E"]
@@ -4963,6 +5011,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "你这个略猫区"
 			tasks: [{
 				id: "3D0062F3A5D7728C"
@@ -5018,13 +5067,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "一口把你头咬掉"
 			tasks: [{
 				id: "630F6AFE6B1FC842"
 				item: "goety:feast_focus"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 16.5d
 			y: -9.5d
 		}
 		{
@@ -5036,13 +5086,14 @@
 				item: "goety:hook_bell"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "全都不许跑！"
 			tasks: [{
 				id: "177BB57098189FCA"
 				item: "goety:rupture_focus"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 19.0d
 			y: 6.0d
 		}
 		{
@@ -5055,6 +5106,7 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "溶解之物？"
 			tasks: [{
 				id: "540D9AF778AC12AA"
@@ -5075,6 +5127,7 @@
 				item: "goety:magic_emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "弓箭手，放箭！"
 			tasks: [{
 				id: "3E676E302BF6234A"
@@ -5097,6 +5150,7 @@
 				item: "touhou_little_maid:power_point"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "baka~baka~"
 			tasks: [{
 				id: "0E07A8EDCA36B11A"
@@ -5108,6 +5162,7 @@
 		}
 		{
 			dependencies: ["3D052D2D34CE48E8"]
+			description: ["非常遗憾，由于破妄的削弱，箭雨依赖的破无敌帧能力现在只能依靠诡厄遗物的法术无敌帧减免来提供，这使得箭雨的可用性大大下降了"]
 			hide_dependency_lines: true
 			icon: "goety:arrow_rain_focus"
 			id: "6CE340DA9DEDCD18"
@@ -5119,6 +5174,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "加特林医生，你要做什么"
 			tasks: [
 				{
@@ -5175,13 +5231,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "请输入文本"
 			tasks: [{
 				id: "005C3FF0139D778D"
 				item: "goety:corruption_focus"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 18.0d
 			y: -9.5d
 		}
 		{
@@ -5193,13 +5250,14 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "这位更是重量级"
 			tasks: [{
 				id: "68808F822878F1B8"
 				item: "goety_revelation:wither_quietus_focus"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 19.0d
 			y: -9.5d
 		}
 		{
@@ -5211,13 +5269,14 @@
 				item: "minecraft:deepslate_diamond_ore"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "我们不生产矿，我们只是大自然的搬运工"
 			tasks: [{
 				id: "1A0E9E0C2B218A3E"
 				item: "goetyawaken:stare_focus"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 20.0d
 			y: 6.0d
 		}
 		{
@@ -5279,6 +5338,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "青出于蓝……是否胜于蓝呢"
 			tasks: [{
 				id: "468FAFE5895A2643"
@@ -5332,6 +5392,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "锁头小飞碟青春版"
 			tasks: [{
 				id: "130D0C01705AE9B9"
@@ -5367,7 +5428,7 @@
 				value: 1L
 			}]
 			title: "红石巨兽"
-			x: -3.5d
+			x: -5.0d
 			y: 4.5d
 		}
 		{
@@ -5418,6 +5479,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "一勺蜘蛛"
 			tasks: [{
 				consume_items: true
@@ -5427,8 +5489,8 @@
 				type: "item"
 			}]
 			title: "蜘蛛巢"
-			x: -4.0d
-			y: -2.0d
+			x: 1.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["54F62A8D57D2A032"]
@@ -5455,6 +5517,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我盔甲在动，我不玩儿了"
 			tasks: [
 				{
@@ -5470,8 +5533,8 @@
 					type: "advancement"
 				}
 			]
-			x: 15.0d
-			y: -2.0d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6CE340DA9DEDCD18"]
@@ -5482,6 +5545,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "哒哒哒哒哒哒"
 			tasks: [{
 				id: "153530878B1A090B"
@@ -5510,6 +5574,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "挖掉挖掉，统统挖掉！"
 			tasks: [{
 				id: "071BBC1D1F10AC8F"
@@ -5529,6 +5594,7 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "集体防护"
 			tasks: [{
 				id: "3DCFD9BA5EEB8B85"
@@ -5634,7 +5700,7 @@
 				}
 			]
 			title: "虚空素材（初步）"
-			x: 20.5d
+			x: 20.0d
 			y: 4.5d
 		}
 		{
@@ -5693,8 +5759,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: 8.5d
+			x: 20.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3FE02AEBD631E4B2"]
@@ -5742,7 +5808,7 @@
 				value: 1L
 			}]
 			title: "虚空死灵法师"
-			x: 22.5d
+			x: 22.0d
 			y: 4.5d
 		}
 		{
@@ -5776,7 +5842,7 @@
 				item: "goety_ladder:voidliving_scroll"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 23.5d
 			y: 4.5d
 		}
 		{
@@ -5811,7 +5877,7 @@
 				item: "goety_ladder:void_scroll"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 25.0d
 			y: 4.5d
 		}
 		{
@@ -5829,13 +5895,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "术士腰带，但是护符"
 			tasks: [{
 				id: "559670EC918AF39D"
 				item: "goety_ladder:clear_charm"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 19.5d
 			y: 3.5d
 		}
 		{
@@ -5846,13 +5913,14 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "在这里止步"
 			tasks: [{
 				id: "4DB401B209DA1DF7"
 				item: "goety_ladder:void_charm"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 20.5d
 			y: 3.5d
 		}
 		{
@@ -5865,6 +5933,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "狂风呼啸"
 			tasks: [{
 				id: "35FCB18EBD4ED6CD"
@@ -5884,6 +5953,7 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "我弹指之间便让世界电闪雷鸣"
 			tasks: [{
 				id: "3EB8F9C5488A785E"
@@ -5902,13 +5972,14 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "虚空僵尸"
 			tasks: [{
 				id: "01B5FF679B0FE387"
 				item: "goety_ladder:voidzombie_spell_focus"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 21.0d
 			y: 6.0d
 		}
 		{
@@ -5920,13 +5991,14 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "虚空骷髅"
 			tasks: [{
 				id: "6F73A7274C26A6CD"
 				item: "goety_ladder:voidskeleton_spell_focus"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 22.0d
 			y: 6.0d
 		}
 		{
@@ -5973,8 +6045,8 @@
 				}
 				type: "item"
 			}]
-			x: 27.0d
-			y: 8.5d
+			x: 25.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["794975E97C3CF60C"]
@@ -6013,7 +6085,7 @@
 				}
 			]
 			title: "虚空材料（高阶）"
-			x: 27.0d
+			x: 25.0d
 			y: 6.0d
 		}
 		{
@@ -6036,7 +6108,7 @@
 				item: "goety_ladder:voidliving_core"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 23.5d
 			y: 6.0d
 		}
 		{
@@ -6047,14 +6119,15 @@
 				item: "goety:treasure_pouch"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "扮演一名虚空死灵法师"
 			tasks: [{
 				id: "6EEB4CD29DEDB503"
 				item: "goety_ladder:voidnecromancer_spell_focus"
 				type: "item"
 			}]
-			x: 24.5d
-			y: 7.5d
+			x: 23.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["564DFCE6586C54AA"]
@@ -6077,13 +6150,14 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "我已经掌握了，虚空的核心！"
 			tasks: [{
 				id: "4B7F5073D9765EA3"
 				item: "goety_ladder:void_corerelic"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 26.5d
 			y: 6.0d
 		}
 		{
@@ -6110,6 +6184,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "僵尸生产线"
 			tasks: [{
 				id: "77AA45BEB19AC671"
@@ -6117,8 +6192,8 @@
 				type: "item"
 			}]
 			title: "暗影墓碑"
-			x: -5.0d
-			y: -2.0d
+			x: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["78E9423835E29DA7"]
@@ -6149,8 +6224,8 @@
 				type: "advancement"
 			}]
 			title: "下界合金巨兽仆从"
-			x: 16.5d
-			y: -5.0d
+			x: 15.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F8AB5209DEB719E"]
@@ -6184,6 +6259,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "名师一对一"
 			tasks: [{
 				id: "4B31CA7DDEFFF241"
@@ -6200,7 +6276,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -7.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["500A9197561C0DB3"]
@@ -6270,6 +6346,7 @@
 				item: "goety:forbidden_fragment"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "安息者的镇魂灯"
 			tasks: [{
 				id: "5F57A5D4FCBC5389"
@@ -6278,6 +6355,138 @@
 			}]
 			x: 7.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["4AB0DD1187229840"]
+			description: [
+				"用4紫水晶碎片+不祥核心可以仪式合成4个不祥水晶"
+				""
+				"不祥水晶可以利用&e染料&r或者&6写有颜色代码的书与笔&r来设置颜色，不祥水晶将具备指定颜色的&e发光背景"
+				""
+				"在&e铁砧&r上，将不祥水晶打入&6武器、工具&r，其会拥有相同颜色的发光背景"
+				""
+				"手持不祥水晶并&e右键&r，将为不祥水晶随机抽取&6属性加成&r，这些加成可以附加到被打入的武器工具上，&e最多3次&r。如果对属性不满意，可以用&6混合修补物&r来刷新不祥水晶"
+				""
+				"&b加成条目1：攻击伤害&r"
+				""
+				"随机池有：&a+1攻击伤害&r，&e+1.5攻击伤害&r，&6+2攻击伤害&r，&a+5%攻击伤害&r，&e+7.5%攻击伤害&r，&6+10%攻击伤害&r"
+				""
+				"&b加成条目2：法术加成&r"
+				""
+				"随机池有：&a+1强效&r，&e+1.5强效&r，&6+2强效&r，&a+10%法术伤害乘数&r，&e+15%法术伤害乘数&r，&6+20%法术伤害乘数&r"
+				""
+				"&e！警告：该条目仅对黑暗魔杖以外的法杖生效&r！"
+				""
+				"&4代价条目：降低总耐久&r"
+				""
+				"随机池有：&e-5%耐久&r，&6-7.5%耐久&r，&4-10%耐久&r"
+			]
+			id: "0C682EF930B52A60"
+			rewards: [
+				{
+					count: 4
+					id: "0F49FF803EF2AB5B"
+					item: {
+						Count: 1
+						id: "goeticlegacy:ominous_crystal"
+						tag: {
+							CrystalConfig: {
+								alpha: 0.6f
+								colors: [I;10141901]
+								gradientType: 0
+								pulseAmplitude: 0.15f
+								rayCount: 8
+								rotationDirection: 1
+								rotationSpeed: 1.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A3204AE96CAD8E7"
+					item: "enigmaticlegacy:mending_mixture"
+					type: "item"
+				}
+			]
+			subtitle: "我补药刷词条啊"
+			tasks: [{
+				id: "20CD81B0B6AADDB3"
+				item: {
+					Count: 1
+					id: "goeticlegacy:ominous_crystal"
+					tag: {
+						CrystalConfig: {
+							alpha: 0.6f
+							colors: [I;10141901]
+							gradientType: 0
+							pulseAmplitude: 0.15f
+							rayCount: 8
+							rotationDirection: 1
+							rotationSpeed: 1.0f
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B17D3CA49E52F0A"]
+			description: [
+				"在&5巫术反应台&r的东北、东南、西北、西南四个角落各放置1个&e符文镶嵌台&r，并在符文镶嵌台中镶嵌&b活力、神秘、饥饿、烈风四个核心中任意一个&r。巫术反应台将依据这些符文镶嵌台来构建一个&6领域&r"
+				""
+				"{image:ftbquests:textures/rune_reactor.png width:100 height:100 align:center}"
+				""
+				"符文镶嵌台的放置&e不需要&r严格按照矩形放置，领域的构建会自动选取包含4个符文镶嵌台的&6最小矩形&r，并且，符文镶嵌台与巫术反应台的横向&e距离不能超出9格&r，也就是说，一个巫术反应台的领域范围最大是&619*19&r"
+				""
+				"巫术反应台有领域模式和炮台模式两种模式"
+				""
+				"&a领域模式：在巫术反应台中放置图腾或连接宝石作为能量源"
+				""
+				"巫术反应台将根据&b4个符文镶嵌台中的核心类型&r，来构建不同类型的领域。巫术反应台将根据领域的大小持续消耗能量。例如，在4个符文镶嵌台中均镶嵌活力核心，会构建&a生长领域&r，这个领域会加快范围内植物的生长速率。更多类型领域可以查阅MC百科中关于巫术反应台的描述。"
+				""
+				"&6炮台模式：在巫术反应台中放置装载了聚晶的魔杖，并在巫术反应台下放置含有能量供给的诅咒之笼"
+				""
+				"此时符文镶嵌台中的核心类型无影响，巫术反应台将使用放置的魔杖，自动对范围内的敌人进行攻击"
+			]
+			id: "65C610D399E3075A"
+			rewards: [{
+				count: 4
+				id: "52A24A640CF6CA24"
+				item: "goety_revelation:runestone_engraved_table"
+				type: "item"
+			}]
+			subtitle: "领域展开！"
+			tasks: [{
+				id: "5357EF273DA7A619"
+				item: "goety_revelation:rune_reactor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3FE02AEBD631E4B2"]
+			description: ["大范围强控伤害"]
+			hide_dependency_lines: true
+			id: "21214C8E1B47F7E1"
+			rewards: [{
+				id: "4BD10CBD85C02C25"
+				item: "goety:treasure_pouch"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "吸力强劲"
+			tasks: [{
+				id: "744E22E58FB1E497"
+				item: "goety:rupture_focus"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -9.5d
 		}
 	]
 	title: "黑暗魔法"

@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "21C2C08BA5DA46FD"
 	group: "2ECA59494C73C5F0"
 	icon: {
@@ -24,7 +24,7 @@
 			}
 			id: "7E83A391921C9611"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "在这个世界，不是虾仁，就是背虾"
 			tasks: [{
@@ -461,7 +461,7 @@
 			icon: "minecraft:crafting_table"
 			id: "4B20BD54D0571099"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "我是贝尔·格利尔斯……"
 			tasks: [{
@@ -725,7 +725,7 @@
 			icon: "minecraft:chest"
 			id: "6FB4C1F1B3E5E8DA"
 			progression_mode: "linear"
-			shape: "square"
+			shape: "rsquare"
 			size: 2.0d
 			subtitle: "我的……都是我的……"
 			tasks: [{
